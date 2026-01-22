@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.calculator.controller.SetupController"
+      styleClass="setup-root"
+      spacing="20"
+      alignment="CENTER">
+
+    <!-- Title -->
+    <Label text="Create Your Secret Equation" styleClass="setup-title"/>
+
+    <!-- Instructions -->
+    <Label text="Enter an equation that you'll remember. You'll need to enter it in the calculator to access the app."
+           styleClass="setup-instructions"
+           wrapText="true"
+           maxWidth="400"/>
+
+    <!-- Equation Input Container -->
+    <HBox spacing="10" alignment="CENTER" styleClass="equation-input-container">
+        <TextField fx:id="leftOperandField"
+                   promptText="5"
+                   styleClass="equation-field"/>
+
+        <ChoiceBox fx:id="operatorChoice"
+                   styleClass="operator-choice"/>
+
+        <TextField fx:id="rightOperandField"
+                   promptText="3"
+                   styleClass="equation-field"/>
+
+        <Label text="=" styleClass="equals-label"/>
+
+        <TextField fx:id="resultField"
+                   promptText="8"
+                   styleClass="equation-field"/>
+    </HBox>
+
+    <!-- Preview -->
+    <Label fx:id="previewLabel"
+           text="Your equation: ___"
+           styleClass="preview-label"/>
+
+    <!-- Error Message -->
+    <Label fx:id="errorLabel"
+           styleClass="error-label"
+           visible="false"
+           wrapText="true"
+           maxWidth="400"/>
+
+    <!-- Confirm Button -->
+    <Button fx:id="confirmButton"
+            text="Set Secret Equation"
+            styleClass="confirm-button"
+            onAction="#handleConfirm"/>
+
+    <!-- Help Text -->
+    <Label text="💡 Tip: Choose something memorable but not obvious like 1+1=2"
+           styleClass="help-text"
+           wrapText="true"
+           maxWidth="400">
+        <VBox.margin>
+            <Insets top="20"/>
+        </VBox.margin>
+    </Label>
+</VBox>

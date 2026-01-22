@@ -1,0 +1,179 @@
+# Sexual Health App - .gitignore
+
+##########################
+# Maven
+##########################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##########################
+# Java
+##########################
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+##########################
+# IDE - IntelliJ IDEA
+##########################
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+##########################
+# IDE - Eclipse
+##########################
+.classpath
+.project
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+##########################
+# IDE - VS Code
+##########################
+.vscode/
+*.code-workspace
+
+##########################
+# IDE - NetBeans
+##########################
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+##########################
+# macOS
+##########################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+##########################
+# Windows
+##########################
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+##########################
+# Linux
+##########################
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+##########################
+# Logs
+##########################
+*.log
+logs/
+*.log.*
+
+##########################
+# Security & Sensitive Data
+##########################
+# Never commit these!
+*.key
+*.pem
+*.p12
+*.keystore
+secrets.properties
+local.properties
+application-local.properties
+
+# User data storage (if storing locally)
+user-data/
+*.db
+*.sqlite
+
+##########################
+# JavaFX
+##########################
+.cache/
+
+##########################
+# Test Coverage
+##########################
+*.exec
+jacoco.xml
+coverage/
+
+##########################
+# Temporary files
+##########################
+*.tmp
+*.temp
+*~
+.~lock.*
+
+##########################
+# Package Files
+##########################
+*.dmg
+*.gz
+*.iso
+*.tar
+*.tgz
+*.rar
+
+##########################
+# Project Specific
+##########################
+# Azure deployment files might contain sensitive info
+.azure/
+
+# Add any project-specific files here

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.calculator.controller.CalculatorController"
+      styleClass="calculator-root">
+
+    <!-- Display Container -->
+    <HBox styleClass="display-container">
+        <Label fx:id="displayLabel" styleClass="display" text="0"/>
+    </HBox>
+
+    <!-- Button Grid -->
+    <GridPane styleClass="button-grid">
+        <!-- Row 0: Clear, Backspace, Divide -->
+        <Button fx:id="clearButton" text="C" styleClass="calculator-button, clear-button"
+                onAction="#handleClear"
+                GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+        <Button fx:id="backspaceButton" text="⌫" styleClass="calculator-button, backspace-button"
+                onAction="#handleBackspace"
+                GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Button text="÷" styleClass="calculator-button, operation-button"
+                onAction="#handleOperation"
+                GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+        <Button text="×" styleClass="calculator-button, operation-button"
+                onAction="#handleOperation"
+                GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+        <!-- Row 1: 7, 8, 9, - -->
+        <Button text="7" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+        <Button text="8" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Button text="9" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+        <Button text="-" styleClass="calculator-button, operation-button"
+                onAction="#handleOperation"
+                GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+        <!-- Row 2: 4, 5, 6, + -->
+        <Button text="4" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+        <Button text="5" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Button text="6" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+        <Button text="+" styleClass="calculator-button, operation-button"
+                onAction="#handleOperation"
+                GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+        <!-- Row 3: 1, 2, 3 -->
+        <Button text="1" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+        <Button text="2" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Button text="3" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+        <!-- Equals button spans 2 rows -->
+        <Button fx:id="equalsButton" text="=" styleClass="calculator-button, equals-button"
+                onAction="#handleEquals"
+                GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2"/>
+
+        <!-- Row 4: 0 (spans 2 columns), decimal point -->
+        <Button text="0" styleClass="calculator-button, number-button"
+                onAction="#handleNumber"
+                GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4"/>
+
+        <Button text="." styleClass="calculator-button, decimal-button"
+                onAction="#handleDecimal"
+                GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+    </GridPane>
+</VBox>

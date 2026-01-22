@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.mainapp.controller.MainAppController"
+      styleClass="main-app-root"
+      spacing="30"
+      alignment="CENTER"
+      prefWidth="600"
+      prefHeight="400">
+
+    <!-- Title -->
+    <Label text="Welcome to the Sexual Health App"
+           styleClass="main-app-title"/>
+
+    <!-- Message -->
+    <Label text="You have successfully unlocked the app!"
+           styleClass="main-app-message"
+           wrapText="true"
+           textAlignment="CENTER"
+           maxWidth="500"/>
+
+    <!-- Placeholder Content -->
+    <VBox spacing="15" alignment="CENTER">
+        <Label text="This is a placeholder screen."
+               styleClass="main-app-message"/>
+
+        <Label text="The team will implement the main app features here:"
+               styleClass="main-app-message"/>
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="• Articles and information pages" style="-fx-text-fill: #7F8C8D;"/>
+            <Label text="• Event feed for appointments" style="-fx-text-fill: #7F8C8D;"/>
+            <Label text="• Medication reminders" style="-fx-text-fill: #7F8C8D;"/>
+            <Label text="• Community forum" style="-fx-text-fill: #7F8C8D;"/>
+            <Label text="• Settings and profile" style="-fx-text-fill: #7F8C8D;"/>
+        </VBox>
+    </VBox>
+
+    <!-- Back Button (for testing) -->
+    <Button text="Back to Calculator"
+            styleClass="back-button"
+            onAction="#handleBackToCalculator">
+        <VBox.margin>
+            <Insets top="30"/>
+        </VBox.margin>
+    </Button>
+</VBox>

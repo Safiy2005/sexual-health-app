@@ -1,0 +1,229 @@
+/*
+ * Calculator Application Stylesheet
+ * Professional calculator appearance with no obvious sexual health app indicators
+ *
+ * @author SDDP Group 30
+ * @version 1.0
+ */
+
+/* Root Calculator Container */
+.calculator-root {
+    -fx-background-color: #2C3E50;
+    -fx-pref-width: 320px;
+    -fx-pref-height: 480px;
+}
+
+/* Display Container */
+.display-container {
+    -fx-background-color: #34495E;
+    -fx-padding: 20px;
+    -fx-alignment: center-right;
+}
+
+/* Display Label */
+.display {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-family: "Monospaced", "Courier New", monospace;
+    -fx-alignment: center-right;
+    -fx-pref-width: 280px;
+    -fx-min-height: 60px;
+    -fx-padding: 5px;
+}
+
+/* Button Grid */
+.button-grid {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 10px;
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+}
+
+/* All Buttons Default Style */
+.calculator-button {
+    -fx-background-color: #95A5A6;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 2, 0, 0, 1);
+}
+
+.calculator-button:hover {
+    -fx-background-color: #7F8C8D;
+}
+
+.calculator-button:pressed {
+    -fx-background-color: #6C7A7B;
+    -fx-translate-y: 1px;
+}
+
+/* Number Buttons */
+.number-button {
+    -fx-background-color: #95A5A6;
+}
+
+.number-button:hover {
+    -fx-background-color: #7F8C8D;
+}
+
+/* Operation Buttons */
+.operation-button {
+    -fx-background-color: #3498DB;
+}
+
+.operation-button:hover {
+    -fx-background-color: #2980B9;
+}
+
+/* Clear Button */
+.clear-button {
+    -fx-background-color: #E67E22;
+}
+
+.clear-button:hover {
+    -fx-background-color: #D35400;
+}
+
+/* Backspace Button */
+.backspace-button {
+    -fx-background-color: #E67E22;
+}
+
+.backspace-button:hover {
+    -fx-background-color: #D35400;
+}
+
+/* Equals Button - Distinctive Red */
+.equals-button {
+    -fx-background-color: #E74C3C;
+}
+
+.equals-button:hover {
+    -fx-background-color: #C0392B;
+}
+
+/* Decimal Button */
+.decimal-button {
+    -fx-background-color: #95A5A6;
+}
+
+.decimal-button:hover {
+    -fx-background-color: #7F8C8D;
+}
+
+/* Setup Screen Styles */
+.setup-root {
+    -fx-background-color: white;
+    -fx-padding: 30px;
+}
+
+.setup-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+.setup-instructions {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7F8C8D;
+    -fx-wrap-text: true;
+}
+
+.equation-input-container {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-padding: 20px 0;
+}
+
+.equation-field {
+    -fx-pref-width: 80px;
+    -fx-font-size: 18px;
+    -fx-alignment: center;
+}
+
+.operator-choice {
+    -fx-pref-width: 60px;
+    -fx-font-size: 18px;
+}
+
+.equals-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+.preview-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3498DB;
+    -fx-padding: 10px 0;
+}
+
+.error-label {
+    -fx-text-fill: #E74C3C;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+}
+
+.confirm-button {
+    -fx-background-color: #27AE60;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px 30px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.confirm-button:hover {
+    -fx-background-color: #229954;
+}
+
+.confirm-button:pressed {
+    -fx-background-color: #1E8449;
+}
+
+.help-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #95A5A6;
+    -fx-font-style: italic;
+    -fx-wrap-text: true;
+}
+
+/* Main App Placeholder Styles */
+.main-app-root {
+    -fx-background-color: #ECF0F1;
+    -fx-padding: 40px;
+    -fx-alignment: center;
+}
+
+.main-app-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+.main-app-message {
+    -fx-font-size: 16px;
+    -fx-text-fill: #7F8C8D;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.back-button {
+    -fx-background-color: #3498DB;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: #2980B9;
+}
