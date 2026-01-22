@@ -300,7 +300,3 @@ Before submitting a pull request, make sure:
 - [ ] Pull request has a clear description
 
 ---
-
-**Good luck and happy coding!** 🚀
-
-If you get stuck, don't hesitate to ask the team for help!

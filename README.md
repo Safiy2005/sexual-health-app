@@ -104,30 +104,6 @@ src/test/java/com/sddp/sexualhealthapp/
 
 **Architecture Rule:** Each major feature gets its own folder (like `calculator/`). This keeps code organized, reduces merge conflicts, and makes ownership clear.
 
-## Troubleshooting
-
-### Common Issues
-
-**Build fails with "package does not exist"**
-```bash
-mvn clean compile  # Clean and rebuild
-```
-
-**JavaFX not found**
-- Check Java version: `java -version` (needs Java 17+)
-- Verify pom.xml has JavaFX dependencies
-
-**App won't start**
-- Ensure you're in the project root directory
-- Try: `mvn clean javafx:run`
-
-**Tests failing**
-```bash
-mvn clean test  # Clean build and run tests
-```
-
-**More help:** See [CONTRIBUTING.md](CONTRIBUTING.md) or ask in Discord dev channel
-
 ---
 
 ## Testing
@@ -144,14 +120,6 @@ mvn test -Dtest=CalculationEngineTest
 # Run with coverage report
 mvn clean test jacoco:report
 ```
-
-### Test Coverage
-
-**D5 Test Results:**
-- ✅ **55 tests** - All passing
-- ✅ **>80% coverage** on business logic
-- ✅ **27 tests** for CalculationEngine (arithmetic, edge cases)
-- ✅ **28 tests** for SecretAuthService (authentication flow, security)
 
 ### Test Structure
 
@@ -194,36 +162,6 @@ src/test/java/com/sddp/sexualhealthapp/
   - `feedbacks/` - Instructor feedback from previous sprints
   - Sprint reports and planning documents (add as needed)
 
-
----
-
-## Project Status
-
-### ✅ Completed (Sprint 1)
-
-- Calculator disguise interface
-- Secret equation authentication
-- Setup wizard
-- Secure storage (BCrypt)
-- Comprehensive testing
-- MVC architecture
-- Team documentation
-
-### 🔄 In Progress (Sprint 2)
-
-Per D5 sprint plan:
-- Event feed and calendar
-- Medication reminders
-- Account management
-- Integration and polish
-
-### 📋 Planned (Sprint 3)
-
-Per D5 sprint plan:
-- Forum and community features
-- Article search and tagging
-- Settings and preferences
-- Final evaluation
 
 ---
 
