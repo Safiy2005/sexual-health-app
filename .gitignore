@@ -177,3 +177,5 @@ coverage/
 .azure/
 
 # Add any project-specific files here
+*.md
+!project-info/**/*.md

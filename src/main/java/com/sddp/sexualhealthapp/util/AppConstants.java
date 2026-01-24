@@ -24,14 +24,14 @@ public final class AppConstants {
     public static final String APP_TITLE = "Calculator";
 
     /**
-     * Fixed width of the calculator window in pixels.
+     * Fixed width of the app window in pixels (9:16 mobile aspect ratio).
      */
-    public static final int CALCULATOR_WIDTH = 320;
+    public static final int APP_WIDTH = 360;
 
     /**
-     * Fixed height of the calculator window in pixels.
+     * Fixed height of the app window in pixels (9:16 mobile aspect ratio).
      */
-    public static final int CALCULATOR_HEIGHT = 480;
+    public static final int APP_HEIGHT = 640;
 
     // Secure Storage Keys
     /**
@@ -79,9 +79,9 @@ public final class AppConstants {
 
     // CSS Resource Paths
     /**
-     * Path to the calculator stylesheet.
+     * Path to the application stylesheet.
      */
-    public static final String CALCULATOR_CSS = "/css/calculator-styles.css";
+    public static final String CSS_STYLESHEET = "/css/styles.css";
 
     // Scene Names (for SceneManager)
     /**

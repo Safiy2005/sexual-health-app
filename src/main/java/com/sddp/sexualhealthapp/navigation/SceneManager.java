@@ -74,10 +74,8 @@ public class SceneManager {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
             Parent root = loader.load();
 
-            // Apply CSS if it's the calculator scene
-            if (sceneName.equals(AppConstants.SCENE_CALCULATOR)) {
-                root.getStylesheets().add(getClass().getResource(AppConstants.CALCULATOR_CSS).toExternalForm());
-            }
+            // Apply CSS to all scenes (calculator, setup, main app)
+            root.getStylesheets().add(getClass().getResource(AppConstants.CSS_STYLESHEET).toExternalForm());
 
             Scene scene = new Scene(root);
             sceneCache.put(sceneName, scene);
@@ -96,8 +94,12 @@ public class SceneManager {
 
     /**
      * Transitions to the calculator scene.
+     * Clears the setup scene from cache to ensure fresh state on next reset.
      */
     public void transitionToCalculator() {
+        // Clear setup scene from cache so it's fresh on next use
+        clearScene(AppConstants.SCENE_SETUP);
+
         transitionToScene(
             AppConstants.SCENE_CALCULATOR,
             AppConstants.CALCULATOR_FXML

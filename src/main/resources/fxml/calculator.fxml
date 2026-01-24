@@ -6,7 +6,8 @@
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.sddp.sexualhealthapp.calculator.controller.CalculatorController"
-      styleClass="calculator-root">
+      styleClass="calculator-root"
+      prefWidth="360" prefHeight="640">
 
     <!-- Display Container -->
     <HBox styleClass="display-container">
@@ -14,7 +15,7 @@
     </HBox>
 
     <!-- Button Grid -->
-    <GridPane styleClass="button-grid">
+    <GridPane styleClass="button-grid" VBox.vgrow="ALWAYS">
         <!-- Row 0: Clear, Backspace, Divide -->
         <Button fx:id="clearButton" text="C" styleClass="calculator-button, clear-button"
                 onAction="#handleClear"

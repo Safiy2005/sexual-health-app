@@ -1,70 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<!-- Setup screen uses instruction header at top instead of overlay -->
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.sddp.sexualhealthapp.calculator.controller.SetupController"
       styleClass="setup-root"
-      spacing="20"
-      alignment="CENTER">
+      prefWidth="360" prefHeight="640">
 
-    <!-- Title -->
-    <Label text="Create Your Secret Equation" styleClass="setup-title"/>
+    <!-- Instruction Header (fixed at top) -->
+    <VBox fx:id="instructionHeader" styleClass="instruction-header" alignment="CENTER" spacing="4">
+        <Label fx:id="instructionTitle" styleClass="instruction-title" text="Create Your Secret Equation"/>
+        <Label fx:id="instructionMessage" styleClass="instruction-message"
+               text="Enter an equation you'll remember"
+               wrapText="true" textAlignment="CENTER"/>
+    </VBox>
 
-    <!-- Instructions -->
-    <Label text="Enter an equation that you'll remember. You'll need to enter it in the calculator to access the app."
-           styleClass="setup-instructions"
-           wrapText="true"
-           maxWidth="400"/>
+    <!-- Calculator + Confirmation overlay -->
+    <StackPane VBox.vgrow="ALWAYS">
 
-    <!-- Equation Input Container -->
-    <HBox spacing="10" alignment="CENTER" styleClass="equation-input-container">
-        <TextField fx:id="leftOperandField"
-                   promptText="5"
-                   styleClass="equation-field"/>
+        <!-- Calculator Interface -->
+        <VBox styleClass="calculator-inner">
+            <!-- Display Container (compact for setup) -->
+            <HBox styleClass="display-container-compact">
+                <Label fx:id="displayLabel" styleClass="display" text="0"/>
+            </HBox>
 
-        <ChoiceBox fx:id="operatorChoice"
-                   styleClass="operator-choice"/>
+            <!-- Button Grid -->
+            <GridPane styleClass="button-grid" VBox.vgrow="ALWAYS">
+                <!-- Row 0: Clear, Backspace, Divide, Multiply -->
+                <Button fx:id="clearButton" text="C" styleClass="calculator-button, clear-button"
+                        onAction="#handleClear"
+                        GridPane.columnIndex="0" GridPane.rowIndex="0"/>
 
-        <TextField fx:id="rightOperandField"
-                   promptText="3"
-                   styleClass="equation-field"/>
+                <Button fx:id="backspaceButton" text="⌫" styleClass="calculator-button, backspace-button"
+                        onAction="#handleBackspace"
+                        GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
-        <Label text="=" styleClass="equals-label"/>
+                <Button text="÷" styleClass="calculator-button, operation-button"
+                        onAction="#handleOperation"
+                        GridPane.columnIndex="2" GridPane.rowIndex="0"/>
 
-        <TextField fx:id="resultField"
-                   promptText="8"
-                   styleClass="equation-field"/>
-    </HBox>
+                <Button text="×" styleClass="calculator-button, operation-button"
+                        onAction="#handleOperation"
+                        GridPane.columnIndex="3" GridPane.rowIndex="0"/>
 
-    <!-- Preview -->
-    <Label fx:id="previewLabel"
-           text="Your equation: ___"
-           styleClass="preview-label"/>
+                <!-- Row 1: 7, 8, 9, - -->
+                <Button text="7" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
-    <!-- Error Message -->
-    <Label fx:id="errorLabel"
-           styleClass="error-label"
-           visible="false"
-           wrapText="true"
-           maxWidth="400"/>
+                <Button text="8" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
-    <!-- Confirm Button -->
-    <Button fx:id="confirmButton"
-            text="Set Secret Equation"
-            styleClass="confirm-button"
-            onAction="#handleConfirm"/>
+                <Button text="9" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="2" GridPane.rowIndex="1"/>
 
-    <!-- Help Text -->
-    <Label text="💡 Tip: Choose something memorable but not obvious like 1+1=2"
-           styleClass="help-text"
-           wrapText="true"
-           maxWidth="400">
-        <VBox.margin>
-            <Insets top="20"/>
-        </VBox.margin>
-    </Label>
+                <Button text="-" styleClass="calculator-button, operation-button"
+                        onAction="#handleOperation"
+                        GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+                <!-- Row 2: 4, 5, 6, + -->
+                <Button text="4" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+                <Button text="5" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Button text="6" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+                <Button text="+" styleClass="calculator-button, operation-button"
+                        onAction="#handleOperation"
+                        GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+                <!-- Row 3: 1, 2, 3 -->
+                <Button text="1" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+                <Button text="2" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                <Button text="3" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+                <!-- Equals button spans 2 rows -->
+                <Button fx:id="equalsButton" text="=" styleClass="calculator-button, equals-button"
+                        onAction="#handleEquals"
+                        GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2"/>
+
+                <!-- Row 4: 0 (spans 2 columns), decimal point -->
+                <Button text="0" styleClass="calculator-button, number-button"
+                        onAction="#handleNumber"
+                        GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4"/>
+
+                <Button text="." styleClass="calculator-button, decimal-button"
+                        onAction="#handleDecimal"
+                        GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+            </GridPane>
+        </VBox>
+
+        <!-- Confirmation Panel (overlays bottom when shown) -->
+        <VBox fx:id="confirmationOverlay" alignment="BOTTOM_CENTER"
+              visible="false" managed="false" mouseTransparent="true">
+            <VBox fx:id="confirmationPanel" styleClass="confirmation-panel"
+                  alignment="CENTER" spacing="10">
+                <Label fx:id="equationPreview" styleClass="equation-preview" text="Your secret: 7+6=13"/>
+                <HBox alignment="CENTER" spacing="15">
+                    <Button fx:id="confirmButton" text="Confirm" styleClass="confirm-button"
+                            onAction="#handleConfirm"/>
+                    <Button fx:id="retryButton" text="Try Again" styleClass="retry-button"
+                            onAction="#handleRetry"/>
+                </HBox>
+            </VBox>
+        </VBox>
+
+    </StackPane>
 </VBox>

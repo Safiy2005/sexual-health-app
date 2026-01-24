@@ -8,45 +8,41 @@
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.sddp.sexualhealthapp.mainapp.controller.MainAppController"
       styleClass="main-app-root"
-      spacing="30"
+      spacing="16"
       alignment="CENTER"
-      prefWidth="600"
-      prefHeight="400">
+      prefWidth="360"
+      prefHeight="640">
 
-    <!-- Title -->
-    <Label text="Welcome to the Sexual Health App"
+    <padding>
+        <Insets top="50" right="24" bottom="40" left="24"/>
+    </padding>
+
+    <!-- Welcome Title -->
+    <Label text="Welcome"
            styleClass="main-app-title"/>
 
-    <!-- Message -->
-    <Label text="You have successfully unlocked the app!"
+    <!-- Subtitle Message -->
+    <Label text="This is a placeholder for the main sexual health a user will reach after entering their secret equation"
            styleClass="main-app-message"
            wrapText="true"
            textAlignment="CENTER"
-           maxWidth="500"/>
+           maxWidth="280"/>
 
-    <!-- Placeholder Content -->
-    <VBox spacing="15" alignment="CENTER">
-        <Label text="This is a placeholder screen."
-               styleClass="main-app-message"/>
+    <!-- Spacer -->
+    <Region VBox.vgrow="ALWAYS"/>
 
-        <Label text="The team will implement the main app features here:"
-               styleClass="main-app-message"/>
-
-        <VBox spacing="5" alignment="CENTER_LEFT">
-            <Label text="• Articles and information pages" style="-fx-text-fill: #7F8C8D;"/>
-            <Label text="• Event feed for appointments" style="-fx-text-fill: #7F8C8D;"/>
-            <Label text="• Medication reminders" style="-fx-text-fill: #7F8C8D;"/>
-            <Label text="• Community forum" style="-fx-text-fill: #7F8C8D;"/>
-            <Label text="• Settings and profile" style="-fx-text-fill: #7F8C8D;"/>
-        </VBox>
-    </VBox>
-
-    <!-- Back Button (for testing) -->
-    <Button text="Back to Calculator"
-            styleClass="back-button"
-            onAction="#handleBackToCalculator">
+    <!-- Coming Soon Notice -->
+    <Label text="More features coming soon"
+           styleClass="main-app-subtitle"
+           wrapText="true"
+           textAlignment="CENTER">
         <VBox.margin>
-            <Insets top="30"/>
+            <Insets bottom="24"/>
         </VBox.margin>
-    </Button>
+    </Label>
+
+    <!-- Lock Button -->
+    <Button text="Lock App"
+            styleClass="back-button"
+            onAction="#handleBackToCalculator"/>
 </VBox>

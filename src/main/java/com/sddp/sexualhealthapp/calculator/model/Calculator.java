@@ -202,6 +202,27 @@ public class Calculator {
     }
 
     /**
+     * Gets the full display string showing the complete equation being built.
+     * Shows "7+6" format when building an equation, or just the current number otherwise.
+     *
+     * @return the full display string
+     */
+    public String getFullDisplay() {
+        if (currentOperation == Operation.NONE || leftOperand.isEmpty()) {
+            // No operation set, just show current display
+            return currentDisplay;
+        }
+
+        if (isNewNumber) {
+            // Operation just pressed, show "7+"
+            return leftOperand + operator;
+        } else {
+            // Entering second number, show "7+6"
+            return leftOperand + operator + currentDisplay;
+        }
+    }
+
+    /**
      * Sets the current display value (for testing purposes).
      *
      * @param display the display string to set
