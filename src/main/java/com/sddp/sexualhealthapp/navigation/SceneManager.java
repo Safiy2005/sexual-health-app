@@ -1,12 +1,10 @@
 package com.sddp.sexualhealthapp.navigation;
 
 import com.sddp.sexualhealthapp.util.AppConstants;
-import javafx.animation.FadeTransition;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -153,48 +151,12 @@ public class SceneManager {
             System.err.println("Failed to transition to scene: " + sceneName);
             return;
         }
-
-        // Apply fade transition if not the first scene
-        if (!currentSceneName.isEmpty()) {
-            applyFadeTransition(scene);
-        } else {
-            primaryStage.setScene(scene);
-        }
+        
+        primaryStage.setScene(scene);
 
         currentSceneName = sceneName;
     }
 
-    /**
-     * Applies a fade transition effect when changing scenes.
-     *
-     * @param newScene the new scene to transition to
-     */
-    private void applyFadeTransition(Scene newScene) {
-        Scene currentScene = primaryStage.getScene();
-
-        if (currentScene != null && currentScene.getRoot() != null) {
-            // Fade out current scene
-            FadeTransition fadeOut = new FadeTransition(Duration.millis(200), currentScene.getRoot());
-            fadeOut.setFromValue(1.0);
-            fadeOut.setToValue(0.0);
-
-            fadeOut.setOnFinished(event -> {
-                // Switch to new scene
-                primaryStage.setScene(newScene);
-
-                // Fade in new scene
-                FadeTransition fadeIn = new FadeTransition(Duration.millis(200), newScene.getRoot());
-                fadeIn.setFromValue(0.0);
-                fadeIn.setToValue(1.0);
-                fadeIn.play();
-            });
-
-            fadeOut.play();
-        } else {
-            // No current scene, just set the new one
-            primaryStage.setScene(newScene);
-        }
-    }
 
     /**
      * Gets the name of the current scene.
