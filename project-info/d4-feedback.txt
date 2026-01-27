@@ -1,0 +1,59 @@
+REQUIREMENTS PLANNING
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Requirements Planning] (70 - 80%) Good user stories are presented, with clear detail and correct format. They broadly meet INVEST characteristics. A clear plan exists for testing user stories. Product backlog is well prioritised using MoSCoW.
+
+I have awarded a mark of 72%
+
+REQUIREMENTS PLANNING COMMENTS
+
+The user stories are clearly presented as a finalised list and are consistently written using the required “As a … I want … so that …” structure, with the “so that” clause explicitly present throughout. The coverage of user needs is strong, particularly around privacy, discretion, accessibility, community support, and offline access, and the use of MoSCoW prioritisation and story points is clear. However, there are some issues. Several user stories are very large (including 20- and 40-point items) and bundle multiple concerns into a single story, which reduces independence and makes them difficult to plan and validate within a sprint. In addition, some stories include implicit design decisions (e.g. specific interface behaviours or content presentation choices) rather than focusing purely on user goals.
+
+DESIGN
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Design] (70 - 80%) Good design decisions are made and justified, with a suitable architecture that supports maintainability. A variety of relevant design artifacts are presented and used effectively to support decisions.
+
+I have awarded a mark of 70%
+
+DESIGN COMMENTS
+
+Your class diagram shows a sensible separation of responsibilities, which should help with maintainability. The additional UML diagram you selected is appropriate for your system and helps explain the core behaviour. The sketches are missing annotations or contain only very short labels; improve them by adding brief notes that explain what users can do on each screen and how they move to the next one. The scenarios describe a generic role such as “user” instead of a specific persona; rewrite each scenario so that it is clearly tied to one persona with a concrete goal. 
+
+PROJECT PLANNING
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Project Planning] (80 - 100%) Excellent increment and sprint plans are presented, with well-chosen deliverables that maximise value and feasibility. Plans clearly reflect prioritisation. A detailed and complete sprint backlog is provided. The burndown chart is in the correct format and highly effective.
+
+I have awarded a mark of 78%
+
+PROJECT PLANNING COMMENTS
+
+The overall increment plan is sensible and shows how the system will deliver useful features over time. The sprint backlog is well structured and contains tasks that look achievable within the sprint. Integration is not mentioned within the planning section, even though it represents essential coordination work. Please add integration directly into the sprint plan with its own estimation and assigned member. Integration should not be placed in the burndown chart, which focuses only on user story effort. The burndown chart is in the correct format and gives a clear impression of progress through the sprint. 
+
+PROJECT SET-UP
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Project Set-up] (70 - 80%) Good project infrastructure is established, and agile tools are effectively used. Risks are clearly identified with strong mitigation strategies.
+
+I have awarded a mark of 75%
+
+PROJECT SET-UP COMMENTS
+
+You provided clear and sensible reasons for choosing your tools, and the selections fit well with the needs of your project. A detailed risk management plan is included and identifies a wide range of relevant technical, legal, project, and team risks. Likelihood, impact, severity, ownership, and mitigation actions are clearly specified. However, the risks focus primarily on mitigation and prevention, with limited emphasis on fallback or recovery actions if risks materialise despite mitigation. Making contingency actions more explicit would strengthen this section further.
+
+TEAMWORK
+
+It looks like you are working well as a team. 
+
+TECHNIQUES AND PROJECT MANAGEMENT
+
+It sounds like you are using group meetings to build a shared understanding and completing work together, keep doing so; productive working meetings are an important part of successful group working. 
+
+ISSUES TO ADDRESS FOR THE NEXT DELIVERABLE
+
+Good job.
