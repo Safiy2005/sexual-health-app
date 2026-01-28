@@ -7,6 +7,7 @@ import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
+import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -15,14 +16,34 @@ import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 /**
- * Controller for the setup wizard interface.
- * Uses the calculator interface with an instruction header at the top
- * to guide users through creating their secret equation.
+ * Controller for the combined onboarding tutorial and setup wizard.
+ *
+ * <p>The setup scene is a single carousel: pages 0–3 are the onboarding
+ * tutorial slides, and page 4 is the calculator interface where the user
+ * creates their secret equation. All pages slide within one StackPane,
+ * so the transition from tutorial to calculator feels seamless.</p>
  *
  * @author SDDP Group 30
  * @version 1.0
  */
 public class SetupController {
+
+    // --- Onboarding carousel pages ---
+    @FXML
+    private VBox onboardingPage1;
+
+    @FXML
+    private VBox onboardingPage2;
+
+    @FXML
+    private VBox onboardingPage3;
+
+    @FXML
+    private VBox onboardingPage4;
+
+    // --- Calculator setup page ---
+    @FXML
+    private VBox setupPage;
 
     // Calculator UI elements
     @FXML
@@ -63,23 +84,24 @@ public class SetupController {
     @FXML
     private Button retryButton;
 
+    // --- Carousel state ---
+    private VBox[] pages;
+    private int currentPage;
+
+    // --- Calculator state ---
     private final Calculator calculator;
     private final SecretAuthService authService;
-
-    // Tracks the equation that was entered (captured when equals is pressed)
     private String capturedEquation;
     private String capturedResult;
-
-    // Setup state
     private SetupState currentState;
 
     /**
-     * Enum representing the different states of the setup flow.
+     * Enum representing the different states of the calculator setup flow.
      */
     private enum SetupState {
-        ENTERING_EQUATION,  // User is entering an equation
-        AWAITING_CONFIRMATION,  // Equation entered, waiting for confirm/retry
-        CONFIRMED  // User confirmed, saving equation
+        ENTERING_EQUATION,
+        AWAITING_CONFIRMATION,
+        CONFIRMED
     }
 
     /**
@@ -93,13 +115,75 @@ public class SetupController {
 
     /**
      * Initializes the controller after FXML injection.
-     * Called automatically by JavaFX.
+     * Positions all carousel pages (onboarding + calculator setup) side by side.
      */
     @FXML
     private void initialize() {
+        pages = new VBox[]{onboardingPage1, onboardingPage2, onboardingPage3, onboardingPage4, setupPage};
+        currentPage = 0;
+
+        for (int i = 0; i < pages.length; i++) {
+            pages[i].setTranslateX(i * AppConstants.APP_WIDTH);
+        }
+
         updateDisplay();
         showEnteringState();
     }
+
+    // =========================================================
+    // Onboarding carousel handlers
+    // =========================================================
+
+    /**
+     * Handles the "Next" button on onboarding pages 1–3.
+     * Slides to the next page in the carousel.
+     */
+    @FXML
+    public void handleOnboardingNext() {
+        slideTo(currentPage + 1);
+    }
+
+    /**
+     * Handles the "Continue" button on onboarding page 4.
+     * Slides into the calculator setup page.
+     */
+    @FXML
+    public void handleOnboardingContinue() {
+        slideTo(currentPage + 1);
+    }
+
+    /**
+     * Animates a slide from the current page to the target page.
+     *
+     * @param targetPage the 0-based index of the destination page
+     */
+    private void slideTo(int targetPage) {
+        if (targetPage < 0 || targetPage >= pages.length || targetPage == currentPage) {
+            return;
+        }
+
+        VBox outgoing = pages[currentPage];
+        VBox incoming = pages[targetPage];
+        Duration duration = Duration.millis(AppConstants.ONBOARDING_SLIDE_DURATION_MS);
+        int direction = targetPage > currentPage ? 1 : -1;
+
+        TranslateTransition slideOut = new TranslateTransition(duration, outgoing);
+        slideOut.setFromX(0);
+        slideOut.setToX(-direction * AppConstants.APP_WIDTH);
+
+        TranslateTransition slideIn = new TranslateTransition(duration, incoming);
+        slideIn.setFromX(direction * AppConstants.APP_WIDTH);
+        slideIn.setToX(0);
+
+        slideOut.play();
+        slideIn.play();
+
+        currentPage = targetPage;
+    }
+
+    // =========================================================
+    // Calculator setup handlers (unchanged logic, page 4)
+    // =========================================================
 
     /**
      * Handles number button clicks.
@@ -109,13 +193,11 @@ public class SetupController {
     @FXML
     private void handleNumber(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
-            // User started typing again, reset to entering state
             resetToEnteringState();
         }
 
         Button button = (Button) event.getSource();
-        String digit = button.getText();
-        calculator.appendDigit(digit);
+        calculator.appendDigit(button.getText());
         updateDisplay();
     }
 
@@ -141,10 +223,10 @@ public class SetupController {
             case "-":
                 operation = Calculator.Operation.SUBTRACT;
                 break;
-            case "×":
+            case "\u00D7":
                 operation = Calculator.Operation.MULTIPLY;
                 break;
-            case "÷":
+            case "\u00F7":
                 operation = Calculator.Operation.DIVIDE;
                 break;
             default:
@@ -164,23 +246,18 @@ public class SetupController {
     @FXML
     private void handleEquals(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
-            return; // Ignore equals while in confirmation state
+            return;
         }
 
-        // Capture the equation before calculating
         capturedEquation = calculator.getCurrentEquation();
-
-        // Calculate the result
         calculator.calculateResult();
         capturedResult = calculator.getCurrentDisplay();
         updateDisplay();
 
-        // Check if we have a valid equation
         if (capturedEquation != null && !capturedEquation.isEmpty()
                 && !capturedResult.equals(AppConstants.CALC_ERROR_DIV_ZERO)) {
             showConfirmationState();
         } else {
-            // Show error message
             showErrorMessage("Please enter a valid equation first");
         }
     }
@@ -240,7 +317,6 @@ public class SetupController {
     private void handleConfirm(ActionEvent event) {
         currentState = SetupState.CONFIRMED;
 
-        // Parse the captured equation to create a SecretEquation
         SecretEquation equation = parseEquation(capturedEquation, capturedResult);
 
         if (equation == null) {
@@ -249,26 +325,22 @@ public class SetupController {
             return;
         }
 
-        // Check if equation is trivial
         if (equation.isTrivial()) {
             showErrorMessage(AppConstants.ERROR_TRIVIAL_EQUATION);
             resetToEnteringState();
             return;
         }
 
-        // Validate the math
         if (!equation.isValid()) {
             showErrorMessage(AppConstants.ERROR_INVALID_MATH);
             resetToEnteringState();
             return;
         }
 
-        // Save the secret equation
         boolean success = authService.setupSecretEquation(equation);
 
         if (success) {
             showSuccessMessage();
-            // Transition to calculator after a brief delay
             PauseTransition pause = new PauseTransition(Duration.millis(1500));
             pause.setOnFinished(e -> SceneManager.getInstance().transitionToCalculator());
             pause.play();
@@ -291,18 +363,14 @@ public class SetupController {
         resetToEnteringState();
     }
 
-    /**
-     * Updates the display label with the full equation being built.
-     * Shows "7+6" format while entering, or just the result after equals.
-     */
+    // =========================================================
+    // Calculator UI state helpers
+    // =========================================================
+
     private void updateDisplay() {
         displayLabel.setText(calculator.getFullDisplay());
     }
 
-    /**
-     * Shows the entering equation state (initial state).
-     * Instruction header shows guidance, confirmation panel is hidden.
-     */
     private void showEnteringState() {
         currentState = SetupState.ENTERING_EQUATION;
 
@@ -310,28 +378,20 @@ public class SetupController {
         instructionMessage.setText("Enter an equation you'll remember");
         instructionHeader.getStyleClass().removeAll("instruction-error", "instruction-success");
 
-        // Hide confirmation panel
         confirmationOverlay.setVisible(false);
         confirmationOverlay.setManaged(false);
         confirmationOverlay.setMouseTransparent(true);
     }
 
-    /**
-     * Shows the confirmation state after equation is entered.
-     * Updates instruction header and shows confirmation panel.
-     */
     private void showConfirmationState() {
         currentState = SetupState.AWAITING_CONFIRMATION;
 
-        // Build the full equation string for preview
         String fullEquation = capturedEquation + "=" + capturedResult;
         equationPreview.setText("Your secret: " + fullEquation);
 
-        // Update instruction header
         instructionTitle.setText("Confirm Your Choice");
         instructionMessage.setText("Is this the equation you want?");
 
-        // Show confirmation panel with fade animation
         confirmationOverlay.setVisible(true);
         confirmationOverlay.setManaged(true);
         confirmationOverlay.setMouseTransparent(false);
@@ -342,30 +402,20 @@ public class SetupController {
         fadeIn.play();
     }
 
-    /**
-     * Resets back to the entering equation state.
-     */
     private void resetToEnteringState() {
         capturedEquation = null;
         capturedResult = null;
         showEnteringState();
     }
 
-    /**
-     * Shows an error message in the instruction header.
-     *
-     * @param message the error message to display
-     */
     private void showErrorMessage(String message) {
         instructionTitle.setText("Oops!");
         instructionMessage.setText(message);
         instructionHeader.getStyleClass().add("instruction-error");
 
-        // Hide confirmation panel
         confirmationOverlay.setVisible(false);
         confirmationOverlay.setManaged(false);
 
-        // Remove error styling after a delay
         PauseTransition pause = new PauseTransition(Duration.seconds(3));
         pause.setOnFinished(e -> {
             instructionHeader.getStyleClass().remove("instruction-error");
@@ -374,40 +424,28 @@ public class SetupController {
         pause.play();
     }
 
-    /**
-     * Shows a success message in the instruction header.
-     */
     private void showSuccessMessage() {
         instructionTitle.setText("Success!");
         instructionMessage.setText("Your secret equation has been saved.");
         instructionHeader.getStyleClass().add("instruction-success");
 
-        // Hide confirmation panel
         confirmationOverlay.setVisible(false);
         confirmationOverlay.setManaged(false);
     }
 
-    /**
-     * Parses a calculator equation string into a SecretEquation object.
-     *
-     * @param equation the equation string (e.g., "7+6")
-     * @param result the result string (e.g., "13")
-     * @return the parsed SecretEquation, or null if parsing fails
-     */
     private SecretEquation parseEquation(String equation, String result) {
         if (equation == null || equation.isEmpty() || result == null) {
             return null;
         }
 
         try {
-            // Find the operator
             String operator = null;
             int operatorIndex = -1;
-            String[] operators = {"+", "-", "×", "÷"};
+            String[] operators = {"+", "-", "\u00D7", "\u00F7"};
 
             for (String op : operators) {
                 int idx = equation.lastIndexOf(op);
-                if (idx > 0) { // Must not be at start (negative numbers)
+                if (idx > 0) {
                     operatorIndex = idx;
                     operator = op;
                     break;
@@ -421,7 +459,6 @@ public class SetupController {
             String leftOperand = equation.substring(0, operatorIndex);
             String rightOperand = equation.substring(operatorIndex + 1);
 
-            // Validate that operands are numbers
             Double.parseDouble(leftOperand);
             Double.parseDouble(rightOperand);
             Double.parseDouble(result);

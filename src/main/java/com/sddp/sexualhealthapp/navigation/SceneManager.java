@@ -105,9 +105,13 @@ public class SceneManager {
     }
 
     /**
-     * Transitions to the setup wizard scene.
+     * Transitions to the setup scene (onboarding tutorial + calculator setup).
+     * Clears the setup scene from cache so the carousel always restarts
+     * at the first onboarding page, even after a reset-code flow.
      */
     public void transitionToSetup() {
+        clearScene(AppConstants.SCENE_SETUP);
+
         transitionToScene(
             AppConstants.SCENE_SETUP,
             AppConstants.SETUP_FXML

@@ -367,3 +367,116 @@
     -fx-text-fill: #9AABAB;
     -fx-font-style: italic;
 }
+
+/* ============================================
+   ONBOARDING TUTORIAL STYLES
+   ============================================ */
+
+/* Onboarding Root Container (StackPane) */
+.onboarding-root {
+    -fx-background-color: #1C1C1E;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+    -fx-min-width: 360px;
+    -fx-min-height: 640px;
+    -fx-max-width: 360px;
+    -fx-max-height: 640px;
+    -fx-clip-content: true;
+}
+
+/* Individual onboarding page */
+.onboarding-page {
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+    -fx-min-width: 360px;
+    -fx-min-height: 640px;
+    -fx-max-width: 360px;
+    -fx-max-height: 640px;
+    -fx-padding: 0 24px;
+}
+
+/* Page title */
+.onboarding-title {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Page subtitle / description text */
+.onboarding-subtitle {
+    -fx-text-fill: #9AABAB;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 2px;
+}
+
+/* Example equation box on page 2 */
+.onboarding-example-box {
+    -fx-background-color: #2C2C2E;
+    -fx-background-radius: 12px;
+    -fx-padding: 16px 24px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 4);
+}
+
+/* Teal equation text inside the example box */
+.onboarding-example-equation {
+    -fx-text-fill: #7DBBB5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Caption below the equation in the example box */
+.onboarding-example-caption {
+    -fx-text-fill: #8E8E93;
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Progress dot (inactive) */
+.onboarding-dot {
+    -fx-fill: #48484A;
+}
+
+/* Progress dot (active page indicator) */
+.onboarding-dot-active {
+    -fx-fill: #7DBBB5;
+}
+
+/* Next button (neutral dark) */
+.onboarding-button {
+    -fx-background-color: #48484A;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-pref-width: 312px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+}
+
+.onboarding-button:hover {
+    -fx-background-color: #5A5A5C;
+}
+
+.onboarding-button:pressed {
+    -fx-background-color: #3A3A3C;
+}
+
+/* Continue button (teal primary action) */
+.onboarding-button-primary {
+    -fx-background-color: #7DBBB5;
+    -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.4), 8, 0, 0, 4);
+}
+
+.onboarding-button-primary:hover {
+    -fx-background-color: #6AADA6;
+}
+
+.onboarding-button-primary:pressed {
+    -fx-background-color: #5A9D97;
+    -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.2), 4, 0, 0, 2);
+}

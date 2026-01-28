@@ -147,11 +147,10 @@ public class CalculatorController {
     }
 
     /**
-     * Updates the display label with the full equation being built.
-     * Shows "7+6" format while entering, or just the result after equals.
+     * Updates the display label with the current calculator state.
      */
     private void updateDisplay() {
-        displayLabel.setText(calculator.getFullDisplay());
+        displayLabel.setText(calculator.getCurrentDisplay());
     }
 
     /**

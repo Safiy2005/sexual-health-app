@@ -39,7 +39,7 @@ public class SexualHealthApp extends Application {
             // Returning user - go straight to calculator
             SceneManager.getInstance().transitionToCalculator();
         } else {
-            // First-time user - show setup wizard
+            // First-time user - show onboarding + setup
             SceneManager.getInstance().transitionToSetup();
         }
 

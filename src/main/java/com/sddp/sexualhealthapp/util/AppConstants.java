@@ -99,6 +99,16 @@ public final class AppConstants {
      */
     public static final String SCENE_MAIN_APP = "MAIN_APP";
 
+    /**
+     * Number of onboarding pages in the setup carousel (before the calculator).
+     */
+    public static final int ONBOARDING_PAGE_COUNT = 4;
+
+    /**
+     * Duration in milliseconds for onboarding slide animations.
+     */
+    public static final int ONBOARDING_SLIDE_DURATION_MS = 150;
+
     // Validation Constants
     /**
      * List of trivial equations that should be rejected during setup.
