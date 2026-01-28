@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.mainapp.controller.MainAppController"
+      styleClass="main-app-root"
+      spacing="16"
+      alignment="CENTER"
+      prefWidth="360"
+      prefHeight="640">
+
+    <padding>
+        <Insets top="50" right="24" bottom="40" left="24"/>
+    </padding>
+
+    <!-- Welcome Title -->
+    <Label text="Welcome"
+           styleClass="main-app-title"/>
+
+    <!-- Subtitle Message -->
+    <Label text="This is a placeholder for the main sexual health a user will reach after entering their secret equation"
+           styleClass="main-app-message"
+           wrapText="true"
+           textAlignment="CENTER"
+           maxWidth="280"/>
+
+    <!-- Spacer -->
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <!-- Coming Soon Notice -->
+    <Label text="More features coming soon"
+           styleClass="main-app-subtitle"
+           wrapText="true"
+           textAlignment="CENTER">
+        <VBox.margin>
+            <Insets bottom="24"/>
+        </VBox.margin>
+    </Label>
+
+    <!-- Lock Button -->
+    <Button text="Lock App"
+            styleClass="back-button"
+            onAction="#handleBackToCalculator"/>
+</VBox>

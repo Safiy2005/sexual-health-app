@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<!-- Combined onboarding + setup carousel. Pages 0-3 are the tutorial,
+     page 4 is the calculator setup. All slide within one StackPane. -->
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.sddp.sexualhealthapp.calculator.controller.SetupController"
+           styleClass="onboarding-root"
+           prefWidth="360" prefHeight="640">
+
+    <!-- Onboarding Page 1: Protect your Privacy -->
+    <VBox fx:id="onboardingPage1" styleClass="onboarding-page" alignment="CENTER" spacing="16">
+        <VBox.margin>
+            <Insets top="120"/>
+        </VBox.margin>
+
+        <Label text="Protect your Privacy" styleClass="onboarding-title"/>
+        <Label text="This feature allows the app to be initially disguised as a calculator. Anyone snooping on your device doesn't need to know what's inside."
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+
+        <VBox spacing="0">
+            <VBox.margin>
+                <Insets top="40"/>
+            </VBox.margin>
+            <HBox alignment="CENTER" spacing="8">
+                <Circle radius="4" styleClass="onboarding-dot-active"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+            </HBox>
+            <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
+                <VBox.margin>
+                    <Insets top="16"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </VBox>
+
+    <!-- Onboarding Page 2: How It Works -->
+    <VBox fx:id="onboardingPage2" styleClass="onboarding-page" alignment="CENTER" spacing="16">
+        <VBox.margin>
+            <Insets top="100"/>
+        </VBox.margin>
+
+        <Label text="How It Works" styleClass="onboarding-title"/>
+        <Label text="Choose an equation as your personal 'password' of sorts. Only when you enter that exact equation will the main app open."
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+
+        <VBox styleClass="onboarding-example-box" alignment="CENTER" spacing="4">
+            <VBox.margin>
+                <Insets top="8"/>
+            </VBox.margin>
+            <Label text="7 + 6 = 13" styleClass="onboarding-example-equation"/>
+            <Label text="Equation that you remember to open the app" styleClass="onboarding-example-caption"/>
+        </VBox>
+
+        <VBox spacing="0">
+            <VBox.margin>
+                <Insets top="24"/>
+            </VBox.margin>
+            <HBox alignment="CENTER" spacing="8">
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot-active"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+            </HBox>
+            <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
+                <VBox.margin>
+                    <Insets top="16"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </VBox>
+
+    <!-- Onboarding Page 3: Resetting Your Key -->
+    <VBox fx:id="onboardingPage3" styleClass="onboarding-page" alignment="CENTER" spacing="16">
+        <VBox.margin>
+            <Insets top="100"/>
+        </VBox.margin>
+
+        <Label text="Resetting Your Key" styleClass="onboarding-title"/>
+        <Label text="If you ever forget your equation, there is a way to reset it from the calculator. This reset code was chosen because no one would ever type it by accident."
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+
+        <VBox styleClass="onboarding-example-box" alignment="CENTER" spacing="4">
+            <VBox.margin>
+                <Insets top="8"/>
+            </VBox.margin>
+            <Label text="999 &#xF7; 0" styleClass="onboarding-example-equation"/>
+            <Label text="Enter this into the calculator to reset your equation" styleClass="onboarding-example-caption"/>
+        </VBox>
+
+        <VBox spacing="0">
+            <VBox.margin>
+                <Insets top="24"/>
+            </VBox.margin>
+            <HBox alignment="CENTER" spacing="8">
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot-active"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+            </HBox>
+            <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
+                <VBox.margin>
+                    <Insets top="16"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </VBox>
+
+    <!-- Onboarding Page 4: Let's Get Started -->
+    <VBox fx:id="onboardingPage4" styleClass="onboarding-page" alignment="CENTER" spacing="16">
+        <VBox.margin>
+            <Insets top="120"/>
+        </VBox.margin>
+
+        <Label text="Let's Get Started" styleClass="onboarding-title"/>
+        <Label text="Take a moment to pick an equation you'll remember. We'll walk you through setting it up."
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+
+        <VBox spacing="0">
+            <VBox.margin>
+                <Insets top="40"/>
+            </VBox.margin>
+            <HBox alignment="CENTER" spacing="8">
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot"/>
+                <Circle radius="4" styleClass="onboarding-dot-active"/>
+            </HBox>
+            <Button text="Continue" styleClass="onboarding-button, onboarding-button-primary" onAction="#handleOnboardingContinue" alignment="CENTER">
+                <VBox.margin>
+                    <Insets top="16"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </VBox>
+
+    <!-- Page 5: Calculator Setup -->
+    <VBox fx:id="setupPage" styleClass="setup-root">
+
+        <!-- Instruction Header (fixed at top) -->
+        <VBox fx:id="instructionHeader" styleClass="instruction-header" alignment="CENTER" spacing="4">
+            <Label fx:id="instructionTitle" styleClass="instruction-title" text="Create Your Secret Equation"/>
+            <Label fx:id="instructionMessage" styleClass="instruction-message"
+                   text="Enter an equation you'll remember"
+                   wrapText="true" textAlignment="CENTER"/>
+        </VBox>
+
+        <!-- Calculator + Confirmation overlay -->
+        <StackPane VBox.vgrow="ALWAYS">
+
+            <!-- Calculator Interface -->
+            <VBox styleClass="calculator-inner">
+                <!-- Display Container (compact for setup) -->
+                <HBox styleClass="display-container-compact">
+                    <Label fx:id="displayLabel" styleClass="display" text="0"/>
+                </HBox>
+
+                <!-- Button Grid -->
+                <GridPane styleClass="button-grid" VBox.vgrow="ALWAYS">
+                    <!-- Row 0: Clear, Backspace, Divide, Multiply -->
+                    <Button fx:id="clearButton" text="C" styleClass="calculator-button, clear-button"
+                            onAction="#handleClear"
+                            GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+                    <Button fx:id="backspaceButton" text="&#x232B;" styleClass="calculator-button, backspace-button"
+                            onAction="#handleBackspace"
+                            GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                    <Button text="&#xF7;" styleClass="calculator-button, operation-button"
+                            onAction="#handleOperation"
+                            GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+                    <Button text="&#xD7;" styleClass="calculator-button, operation-button"
+                            onAction="#handleOperation"
+                            GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+                    <!-- Row 1: 7, 8, 9, - -->
+                    <Button text="7" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+                    <Button text="8" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                    <Button text="9" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+                    <Button text="-" styleClass="calculator-button, operation-button"
+                            onAction="#handleOperation"
+                            GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+                    <!-- Row 2: 4, 5, 6, + -->
+                    <Button text="4" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+                    <Button text="5" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                    <Button text="6" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+                    <Button text="+" styleClass="calculator-button, operation-button"
+                            onAction="#handleOperation"
+                            GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+                    <!-- Row 3: 1, 2, 3 -->
+                    <Button text="1" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+                    <Button text="2" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                    <Button text="3" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+                    <!-- Equals button spans 2 rows -->
+                    <Button fx:id="equalsButton" text="=" styleClass="calculator-button, equals-button"
+                            onAction="#handleEquals"
+                            GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2"/>
+
+                    <!-- Row 4: 0 (spans 2 columns), decimal point -->
+                    <Button text="0" styleClass="calculator-button, number-button"
+                            onAction="#handleNumber"
+                            GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4"/>
+
+                    <Button text="." styleClass="calculator-button, decimal-button"
+                            onAction="#handleDecimal"
+                            GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+                </GridPane>
+            </VBox>
+
+            <!-- Confirmation Panel (overlays bottom when shown) -->
+            <VBox fx:id="confirmationOverlay" alignment="BOTTOM_CENTER"
+                  visible="false" managed="false" mouseTransparent="true">
+                <VBox fx:id="confirmationPanel" styleClass="confirmation-panel"
+                      alignment="CENTER" spacing="10">
+                    <Label fx:id="equationPreview" styleClass="equation-preview" text="Your secret: 7+6=13"/>
+                    <HBox alignment="CENTER" spacing="15">
+                        <Button fx:id="confirmButton" text="Confirm" styleClass="confirm-button"
+                                onAction="#handleConfirm"/>
+                        <Button fx:id="retryButton" text="Try Again" styleClass="retry-button"
+                                onAction="#handleRetry"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+
+        </StackPane>
+    </VBox>
+
+</StackPane>

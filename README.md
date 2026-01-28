@@ -1,93 +1,198 @@
-# Sexual Health App
+# Sexual Health App - D5 Increment 1
+
+**Course:** COMP2300 SDDP Group 30
+**Sprint:** Increment 1 (D5 Deliverable)
+**Delivered User Story:** SDDP30-19 - Calculator Disguise Interface (20 story points)
+
+---
+
+## Quick Start
 
 
+### Prerequisites
 
-## Getting started
+Before you begin, ensure you have:
+- **Java 17 or higher** - Check with `java -version`
+- **Maven 3.6+** - Check with `mvn -version`
+- **Git** - For version control
+- **IDE** - IntelliJ IDEA recommended (JavaFX support built-in)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Setup
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+```bash
+# 1. Clone the repository
+git clone https://git.soton.ac.uk/sddp-team-30-2025/sexual-health-app.git
+cd sexual-health-app
 
-## Add your files
+# 2. Build the project
+mvn clean compile
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+# 3. Run the app
+mvn javafx:run
+
+# 4. Run tests
+mvn test
+```
+
+### First Run
+
+1. App opens to **Setup Wizard**
+2. Create a secret equation (e.g., `7 + 6 = 13`)
+3. Calculator appears
+4. Enter your secret equation to unlock main app
+5. Click "Back to Calculator" to return to disguise
+
+### Resetting Your Secret Equation
+
+If you forget your secret equation or need to reset it:
+
+1. Open the calculator
+2. Enter `999 ÷ 0` and press equals
+3. The secret equation will be deleted
+4. You'll be redirected to the Setup Wizard to create a new one
+
+
+---
+### Package Organization
 
 ```
-cd existing_repo
-git remote add origin https://git.soton.ac.uk/sddp-team-30-2025/sexual-health-app.git
-git branch -M main
-git push -uf origin main
+src/main/java/com/sddp/sexualhealthapp/
+├── SexualHealthApp.java          # ← Main entry point
+│
+├── calculator/                   # ← Calculator disguise
+│   ├── controller/               #    Calculator UI controllers
+│   ├── model/                    #    Calculator data models
+│   └── service/                  #    Calculator business logic
+│
+├── articles/                     # ← Example feature (YOUR FEATURES GO HERE! ✅)
+│   ├── controller/               #    ArticleController, SearchController
+│   ├── model/                    #    Article, Category
+│   └── service/                  #    ArticleService, SearchService
+│
+├── calendar/                     # ← Another feature example
+│   ├── controller/               #    CalendarController, EventController
+│   ├── model/                    #    Event, Reminder
+│   └── service/                  #    EventService
+│
+├── [your-feature]/               # ← Create new feature folders like these!
+│   ├── controller/               #    Feature-specific controllers
+│   ├── model/                    #    Feature-specific models
+│   └── service/                  #    Feature-specific business logic
+│
+├── security/                     # ← Shared utilities
+├── navigation/                   # ← Shared (read only - SceneManager)
+└── util/                         # ← Shared (read only - constants)
+
+src/main/resources/
+├── fxml/                         # ← Your FXML files go here
+│   ├── calculator.fxml           #    (calculator disguise)
+│   ├── setup.fxml                #    (calculator disguise)
+│   ├── main-app.fxml             #    (main menu)
+│   ├── articles.fxml             # ← Feature-specific FXML
+│   ├── calendar.fxml             # ← Feature-specific FXML
+│   └── [your-feature].fxml       # ← Add your FXML files here
+│
+└── css/                          # ← Your CSS files go here
+    ├── calculator-styles.css     #    (calculator styling)
+    └── [your-feature].css        # ← Feature-specific styles
+
+src/test/java/com/sddp/sexualhealthapp/
+├── calculator/                   # Tests for calculator feature
+├── articles/                     # Tests for articles feature
+└── [your-feature]/               # Tests for your feature
 ```
 
-## Integrate with your tools
+**Architecture Rule:** Each major feature gets its own folder (like `calculator/`). This keeps code organized, reduces merge conflicts, and makes ownership clear.
 
-- [ ] [Set up project integrations](https://git.soton.ac.uk/sddp-team-30-2025/sexual-health-app/-/settings/integrations)
+---
 
-## Collaborate with your team
+## Testing
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+### Running Tests
 
-## Test and Deploy
+```bash
+# Run all tests
+mvn test
 
-Use the built-in continuous integration in GitLab.
+# Run specific test class
+mvn test -Dtest=CalculationEngineTest
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+# Run with coverage report
+mvn clean test jacoco:report
+```
 
-***
+### Test Structure
 
-# Editing this README
+```
+src/test/java/com/sddp/sexualhealthapp/
+├── calculator/
+│   └── service/
+│       ├── CalculationEngineTest.java      # Tests calculator operations
+│       └── SecretAuthServiceTest.java      # Tests authentication
+│
+├── articles/                                # YOUR TESTS GO HERE (feature-based)
+│   ├── controller/                          # Test article controllers
+│   ├── model/                               # Test article models
+│   └── service/                             # Test article services
+│
+├── calendar/                                # Calendar feature tests
+│   └── [controller/model/service tests]
+│
+└── [your-feature]/                          # Your feature tests
+    └── [controller/model/service tests]
+```
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+**Test Pattern:** Mirror your feature structure in the test folder. If you have 
+`articles/model/Article.java`, create `articles/model/ArticleTest.java` in the test folder.
 
-## Suggestions for a good README
+---
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## Documentation
 
-## Name
-Choose a self-explaining name for your project.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+### Technical Documentation
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+- **[package-info.java](src/main/java/com/sddp/sexualhealthapp/package-info.java)** - Architecture overview
+- **Javadoc** - Every class and method is documented
+- **[pom.xml](pom.xml)** - Maven dependencies and build configuration
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### Project Information
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+- **project-info/** - Sprint documentation, feedback, and reports
+  - `feedbacks/` - Instructor feedback from previous sprints
+  - Sprint reports and planning documents (add as needed)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+---
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## Team
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+**SDDP Group 30** - Southampton University COMP2300
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+| Name | Email | Role (Sprint 1) |
+|------|-------|-----------------|
+| Josh Wilcox | jw14g24@soton.ac.uk | Calculator interface lead |
+| Safiy Hussain | sh6n24@soton.ac.uk | Article system design |
+| Taran McVay | tm2n24@soton.ac.uk | Scrum Master, Article display |
+| Sam Wiles | sw14g22@soton.ac.uk | Article search, Data privacy |
+| Oliver Punter | op2g24@soton.ac.uk | Article packaging |
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Educational project for COMP2300 Software Development & Design Patterns course.
+
+---
+
+## Quick Links
+
+- 📖 **New to the project?** Read [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🐛 **Found a bug?** Create an issue on GitLab
+- 💬 **Questions?** Ask in Discord dev channel
+- 📊 **Check progress?** View Jira board
+- 🔧 **Build failing?** Run `mvn clean compile`
+
+---
+
+**For detailed feature addition examples, testing guides, and Git workflows, see [CONTRIBUTING.md](CONTRIBUTING.md).**
