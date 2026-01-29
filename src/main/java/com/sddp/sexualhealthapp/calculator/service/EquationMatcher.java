@@ -32,12 +32,6 @@ public class EquationMatcher {
         return history.get(history.size() - 1);
     }
 
-    public static boolean compareEquations(String equation1, String equation2) {
-        String norm1 = normalizeEquation(equation1);
-        String norm2 = normalizeEquation(equation2);
-        return norm1.equals(norm2);
-    }
-
     public static boolean isCompleteEquation(String equation) {
         if (equation == null || equation.trim().isEmpty()) {
             return false;
@@ -65,29 +59,6 @@ public class EquationMatcher {
         return false;
     }
 
-    public static String formatEquationForDisplay(String equation) {
-        if (equation == null || equation.trim().isEmpty()) {
-            return "";
-        }
-
-        String normalized = normalizeEquation(equation);
-        StringBuilder formatted = new StringBuilder();
-
-        for (int i = 0; i < normalized.length(); i++) {
-            char c = normalized.charAt(i);
-            if (c == '+' || c == '×' || c == '÷' || c == '=') {
-                formatted.append(' ').append(c).append(' ');
-            } else if (c == '-' && i > 0 && Character.isDigit(normalized.charAt(i - 1))) {
-                // This is a minus operator, not a negative sign
-                formatted.append(' ').append(c).append(' ');
-            } else {
-                formatted.append(c);
-            }
-        }
-
-        return formatted.toString().replaceAll("\\s+", " ").trim();
-    }
-
     /**
      * Checks if an equation is the reset code (999÷0 or 999/0).
      * This special code is used to reset the secret equation.
@@ -104,39 +75,5 @@ public class EquationMatcher {
 
         // Check for reset code patterns: 999÷0, with optional decimal (999÷0.0)
         return normalized.matches("999[÷]0(\\.0*)?");
-    }
-
-    public static boolean matchesEquationPattern(String equation) {
-        if (!isCompleteEquation(equation)) {
-            return false;
-        }
-
-        String normalized = normalizeEquation(equation);
-
-        String[] parts = normalized.split("=");
-        if (parts.length != 2) {
-            return false;
-        }
-
-        String leftSide = parts[0];
-        String rightSide = parts[1];
-
-        if (!isNumeric(rightSide)) {
-            return false;
-        }
-
-        return containsOperator(leftSide);
-    }
-
-    private static boolean isNumeric(String str) {
-        if (str == null || str.trim().isEmpty()) {
-            return false;
-        }
-        try {
-            Double.parseDouble(str);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
     }
 }

@@ -76,27 +76,6 @@ public class SecretAuthService {
     }
 
     /**
-     * Updates the secret equation with a new one.
-     * This requires the old equation to be provided for verification.
-     *
-     * @param oldEquation the current equation (for verification)
-     * @param newEquation the new equation to set
-     * @return true if update was successful, false otherwise
-     */
-    public boolean updateSecretEquation(SecretEquation oldEquation, SecretEquation newEquation) {
-        if (oldEquation == null || !verifyEquation(oldEquation.getFullEquation())) {
-            return false;
-        }
-
-        if (newEquation == null || !newEquation.isValid()) {
-            return false;
-        }
-
-        secureStorage.delete(AppConstants.SECRET_EQUATION_KEY);
-        return setupSecretEquation(newEquation);
-    }
-
-    /**
      * Removes the secret equation from storage.
      * This effectively resets the authentication, requiring setup again.
      *
@@ -106,35 +85,5 @@ public class SecretAuthService {
         boolean deletedEquation = secureStorage.delete(AppConstants.SECRET_EQUATION_KEY);
         boolean deletedDate = secureStorage.delete(AppConstants.SECRET_CREATION_DATE_KEY);
         return deletedEquation && deletedDate;
-    }
-
-    public LocalDateTime getSecretCreationDate() {
-        return secureStorage.load(AppConstants.SECRET_CREATION_DATE_KEY)
-            .map(dateStr -> LocalDateTime.parse(dateStr, DateTimeFormatter.ISO_LOCAL_DATE_TIME))
-            .orElse(null);
-    }
-
-    /**
-     * Gets a hint about the secret equation structure (without revealing the equation itself).
-     * This is for future password recovery features.
-     *
-     * @return a hint string, or null if no secret is set
-     */
-    public String getSecretEquationHint() {
-        if (!hasSecretEquation()) {
-            return null;
-        }
-
-        LocalDateTime creationDate = getSecretCreationDate();
-        if (creationDate != null) {
-            return "Secret equation created on: " +
-                   creationDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        }
-
-        return "Secret equation is set";
-    }
-
-    public boolean isValidEquation(SecretEquation equation) {
-        return equation != null && equation.isValid();
     }
 }
