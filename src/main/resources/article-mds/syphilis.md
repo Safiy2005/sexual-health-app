@@ -1,0 +1,125 @@
+# Syphilis
+
+**Syphilis is a sexually transmitted infection (STI). If it's not treated, it can cause serious and potentially life-threatening problems.**
+
+## Check if you have syphilis
+
+The symptoms of syphilis are often mild and hard to notice. They tend to change over time and may come and go.
+
+Symptoms of syphilis include:
+
+- small sores (ulcers) on your penis, vagina, or around your bottom (anus) – these are usually painless and you may only have one of them
+- sores in other areas, including in your mouth or on your lips, hands or bottom
+- white or grey warty growths most commonly on your penis, vagina or around your anus
+- a rash on the palms of your hands and soles of your feet that can sometimes spread all over your body – this is not usually itchy
+- white patches in your mouth
+- flu-like symptoms, such as a high temperature, headaches and tiredness
+- swollen glands
+- patchy hair loss on the head, beard and eyebrows
+
+It can take 3 weeks or more for the symptoms of syphilis to appear after you're infected.
+
+Sometimes the symptoms can improve or go away completely, but if you have not been treated the infection is still in your body.
+
+This means you can still pass it on and you're at risk of getting serious problems later on.
+
+## Non-urgent advice: Go to a sexual health clinic or see a GP if:
+
+- you or a sexual partner have symptoms of syphilis
+- a sexual partner has told you they have syphilis or another sexually transmitted infection (STI)
+- you've recently had sex with a new partner and did not use a condom
+- you're pregnant or planning to get pregnant and think you might have syphilis
+- you've injected drugs using a needle that's been used by someone who might have syphilis
+
+Having a test is the only way to confirm if you have syphilis. If you do, treatment will need to be started as soon as possible. Tests for STIs are free on the NHS.
+
+[Find a sexual health clinic](https://www.nhs.uk/service-search/sexual-health/find-a-sexual-health-clinic)
+
+### Other ways to get a syphilis test
+
+You can also have a syphilis test:
+
+- during a pregnancy (antenatal) appointment, if you're pregnant
+- using a self-test kit – you may be able to order a kit online from your [local STI testing and treatment service](https://www.nhs.uk/service-search/other-health-services/sti-testing-and-treatment) or buy one from a pharmacy
+
+You use a self-test kit at home and send it to a lab to be tested.
+
+## What happens during a syphilis test
+
+If you have symptoms of syphilis, a doctor or nurse will check your penis, vagina and bottom (anus) for syphilis sores (ulcers). They may use a swab (like a cotton bud) to collect a fluid sample from any sores.
+
+They'll also check the rest of your body for other signs of syphilis like a rash, sores or wart-like growths. They may also take a blood sample.
+
+You may also have tests for other sexually transmitted infections (STIs) at the same time.
+
+Information:
+
+### Contacting sexual partners
+
+If you have syphilis, your current and any recent sexual partners will also need to be tested and treated.
+
+The GP or sexual health clinic can advise you about contacting your sexual partners. This can be done without naming you.
+
+## Treatment for syphilis
+
+Syphilis is treated with [antibiotics](/medicines/antibiotics/), which you may have as injections, tablets or capsules.
+
+Treatment may be started before your test result is known. How long you need treatment for will depend on the stage of your syphilis.
+
+In some people, treatment can cause flu-like symptoms, such as a high temperature, headache and aching muscles. This usually lasts for up to 24 hours.
+
+You'll need to go back to the GP surgery or sexual health clinic 6 and 12 weeks after starting treatment to be retested.
+
+### Important
+
+Do not have sex (vaginal, anal or oral) until you and your partner have finished treatment and tests have shown treatment has worked.
+
+## Complications of syphilis
+
+If it's not treated, syphilis can cause serious and potentially life-threatening problems including:
+
+- heart problems like [angina](/conditions/angina/), [aortic aneurysm](/conditions/abdominal-aortic-aneurysm/) and [heart failure](/conditions/heart-failure/)
+- brain problems like fits (seizures), memory problems, personality changes and dementia
+- nerve problems like shooting pains, [pins and needles](/symptoms/pins-and-needles/), joint pain and gradual damage the joints
+- problems with the skin, bones, testicles, liver and any other organ
+
+Some of these problems may not appear for many years after being infected with syphilis.
+
+### Syphilis during pregnancy
+
+If you're pregnant and have syphilis, you can pass it on to your baby before they're born. This is known as congenital syphilis.
+
+Having syphilis during pregnancy can also increase your risk of [miscarriage](/conditions/miscarriage/), premature birth and [stillbirth](/conditions/stillbirth/).
+
+You'll be offered [screening for syphilis](/pregnancy/your-pregnancy-care/screening-for-hepatitis-b-hiv-and-syphilis/) if you're pregnant so it can be found and treated before it causes any serious problems.
+
+## How you get syphilis
+
+The most common way of getting syphilis is by having unprotected sex (vaginal, anal or oral sex without a condom) with someone who's infected.
+
+You can get the infection if you come into contact with an ulcer on their penis, vagina, bottom (anus), or inside their mouth.
+
+It's also possible for syphilis to be passed on:
+
+- to an unborn baby during pregnancy (congenital syphilis)
+- by injecting drugs with a needle that's been used by an infected person
+- during a blood or organ transplant (this is rare as all blood and organ donations in the UK are checked for syphilis)
+
+## Preventing syphilis
+
+There are some things you can do to avoid getting syphilis and passing it on to others.
+
+### Do
+
+- use a condom when you have vaginal or anal sex
+- use a condom to cover the penis or a latex or plastic square (dam) to cover the vagina if you have oral sex
+- make sure you complete treatment if you or your partner have syphilis
+
+### Don’t
+
+- do not share sex toys (or wash and cover them with a new condom before anyone else uses them)
+- do not share needles if you inject drugs
+
+Page last reviewed: 25 May 2022  
+Next review due: 25 May 2025
+
