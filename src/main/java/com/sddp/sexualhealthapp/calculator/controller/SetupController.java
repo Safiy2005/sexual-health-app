@@ -325,12 +325,6 @@ public class SetupController {
             return;
         }
 
-        if (equation.isTrivial()) {
-            showErrorMessage(AppConstants.ERROR_TRIVIAL_EQUATION);
-            resetToEnteringState();
-            return;
-        }
-
         if (!equation.isValid()) {
             showErrorMessage(AppConstants.ERROR_INVALID_MATH);
             resetToEnteringState();

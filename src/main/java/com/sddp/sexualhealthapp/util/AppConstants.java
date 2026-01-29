@@ -100,56 +100,15 @@ public final class AppConstants {
     public static final String SCENE_MAIN_APP = "MAIN_APP";
 
     /**
-     * Number of onboarding pages in the setup carousel (before the calculator).
-     */
-    public static final int ONBOARDING_PAGE_COUNT = 4;
-
-    /**
      * Duration in milliseconds for onboarding slide animations.
      */
     public static final int ONBOARDING_SLIDE_DURATION_MS = 150;
-
-    // Validation Constants
-    /**
-     * List of trivial equations that should be rejected during setup.
-     * These are considered too easy to guess.
-     */
-    public static final String[] TRIVIAL_EQUATIONS = {
-        "1+1=2",
-        "0+0=0",
-        "1-1=0",
-        "0-0=0",
-        "1*1=1",
-        "0*0=0",
-        "1/1=1",
-        "2+2=4"
-    };
-
-    /**
-     * Maximum number of authentication attempts to track (for future rate limiting).
-     */
-    public static final int MAX_AUTH_ATTEMPTS = 5;
 
     // Error Messages
     /**
      * Error message displayed when equation validation fails due to incorrect math.
      */
     public static final String ERROR_INVALID_MATH = "The equation doesn't match! Please check your math.";
-
-    /**
-     * Error message displayed when equation is too trivial.
-     */
-    public static final String ERROR_TRIVIAL_EQUATION = "Please choose a more complex equation for better security.";
-
-    /**
-     * Error message displayed when required fields are empty.
-     */
-    public static final String ERROR_EMPTY_FIELDS = "Please fill in all fields.";
-
-    /**
-     * Error message displayed when input is not a valid number.
-     */
-    public static final String ERROR_INVALID_NUMBER = "Please enter valid numbers.";
 
     // Calculator Display Messages
     /**

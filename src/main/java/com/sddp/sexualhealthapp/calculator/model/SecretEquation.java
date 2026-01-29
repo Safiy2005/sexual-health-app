@@ -1,9 +1,6 @@
 package com.sddp.sexualhealthapp.calculator.model;
 
-import com.sddp.sexualhealthapp.util.AppConstants;
-
 import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -121,24 +118,13 @@ public class SecretEquation {
                 return false;
             }
 
-            // Check if equation is trivial (too easy to guess)
-            return !isTrivial();
+            return true;
 
         } catch (NumberFormatException e) {
             return false;
         }
     }
 
-    /**
-     * Checks if this equation is considered trivial (too easy to guess).
-     *
-     * @return true if the equation is trivial, false otherwise
-     */
-    public boolean isTrivial() {
-        String normalized = fullEquation.toLowerCase();
-        return Arrays.stream(AppConstants.TRIVIAL_EQUATIONS)
-                .anyMatch(trivial -> trivial.equalsIgnoreCase(normalized));
-    }
 
     /**
      * Gets the full equation string.
