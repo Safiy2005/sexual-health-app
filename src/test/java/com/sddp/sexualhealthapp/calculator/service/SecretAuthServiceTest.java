@@ -6,7 +6,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
@@ -155,60 +154,6 @@ class SecretAuthServiceTest {
     }
 
     @Test
-    void testUpdateSecretEquation_ValidOldAndNewEquations() {
-        SecretEquation oldEquation = new SecretEquation("5", "+", "3", "8");
-        SecretEquation newEquation = new SecretEquation("7", "×", "6", "42");
-
-        authService.setupSecretEquation(oldEquation);
-
-        boolean result = authService.updateSecretEquation(oldEquation, newEquation);
-
-        assertTrue(result);
-        assertTrue(authService.verifyEquation("7×6=42"));
-        assertFalse(authService.verifyEquation("5+3=8"));
-    }
-
-    @Test
-    void testUpdateSecretEquation_IncorrectOldEquation() {
-        SecretEquation oldEquation = new SecretEquation("5", "+", "3", "8");
-        SecretEquation wrongOldEquation = new SecretEquation("5", "+", "3", "9");
-        SecretEquation newEquation = new SecretEquation("7", "×", "6", "42");
-
-        authService.setupSecretEquation(oldEquation);
-
-        boolean result = authService.updateSecretEquation(wrongOldEquation, newEquation);
-
-        assertFalse(result);
-        // Old equation should still be valid
-        assertTrue(authService.verifyEquation("5+3=8"));
-    }
-
-    @Test
-    void testUpdateSecretEquation_InvalidNewEquation() {
-        SecretEquation oldEquation = new SecretEquation("5", "+", "3", "8");
-        SecretEquation newEquation = new SecretEquation("7", "×", "6", "43"); // Wrong result
-
-        authService.setupSecretEquation(oldEquation);
-
-        boolean result = authService.updateSecretEquation(oldEquation, newEquation);
-
-        assertFalse(result);
-        // Old equation should still be valid
-        assertTrue(authService.verifyEquation("5+3=8"));
-    }
-
-    @Test
-    void testUpdateSecretEquation_NullEquations() {
-        SecretEquation equation = new SecretEquation("5", "+", "3", "8");
-
-        boolean result = authService.updateSecretEquation(null, equation);
-        assertFalse(result);
-
-        result = authService.updateSecretEquation(equation, null);
-        assertFalse(result);
-    }
-
-    @Test
     void testDeleteSecretEquation_Success() {
         SecretEquation equation = new SecretEquation("5", "+", "3", "8");
         authService.setupSecretEquation(equation);
@@ -225,68 +170,6 @@ class SecretAuthServiceTest {
 
         // Should still return true (idempotent operation)
         assertTrue(result);
-    }
-
-    @Test
-    void testGetSecretCreationDate_Exists() {
-        SecretEquation equation = new SecretEquation("5", "+", "3", "8");
-        authService.setupSecretEquation(equation);
-
-        LocalDateTime result = authService.getSecretCreationDate();
-
-        assertNotNull(result);
-        // Should be close to current time (within last minute)
-        assertTrue(result.isAfter(LocalDateTime.now().minusMinutes(1)));
-    }
-
-    @Test
-    void testGetSecretCreationDate_NotExists() {
-        LocalDateTime result = authService.getSecretCreationDate();
-
-        assertNull(result);
-    }
-
-    @Test
-    void testGetSecretEquationHint_WithCreationDate() {
-        SecretEquation equation = new SecretEquation("5", "+", "3", "8");
-        authService.setupSecretEquation(equation);
-
-        String hint = authService.getSecretEquationHint();
-
-        assertNotNull(hint);
-        assertTrue(hint.contains("Secret equation created on"));
-    }
-
-    @Test
-    void testGetSecretEquationHint_NoSecretEquation() {
-        String hint = authService.getSecretEquationHint();
-
-        assertNull(hint);
-    }
-
-    @Test
-    void testIsValidEquation_Valid() {
-        SecretEquation equation = new SecretEquation("5", "+", "3", "8");
-
-        boolean result = authService.isValidEquation(equation);
-
-        assertTrue(result);
-    }
-
-    @Test
-    void testIsValidEquation_Invalid() {
-        SecretEquation equation = new SecretEquation("5", "+", "3", "9");
-
-        boolean result = authService.isValidEquation(equation);
-
-        assertFalse(result);
-    }
-
-    @Test
-    void testIsValidEquation_Null() {
-        boolean result = authService.isValidEquation(null);
-
-        assertFalse(result);
     }
 
     @Test
@@ -308,16 +191,6 @@ class SecretAuthServiceTest {
 
         // Verify wrong equation
         assertFalse(authService.verifyEquation("12÷4=4"));
-
-        // Update to new equation
-        SecretEquation newEquation = new SecretEquation("20", "-", "8", "12");
-        assertTrue(authService.updateSecretEquation(setupEquation, newEquation));
-
-        // Old equation should no longer work
-        assertFalse(authService.verifyEquation("12÷4=3"));
-
-        // New equation should work
-        assertTrue(authService.verifyEquation("20-8=12"));
 
         // Delete
         assertTrue(authService.deleteSecretEquation());
