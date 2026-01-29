@@ -39,11 +39,6 @@ public final class AppConstants {
      */
     public static final String SECRET_EQUATION_KEY = "secret_equation_hash";
 
-    /**
-     * Key used to store when the secret equation was created.
-     */
-    public static final String SECRET_CREATION_DATE_KEY = "secret_creation_date";
-
     // Calculator Configuration
     /**
      * Maximum number of equations to keep in history for secret matching.

@@ -4,9 +4,6 @@ import com.sddp.sexualhealthapp.calculator.model.SecretEquation;
 import com.sddp.sexualhealthapp.security.SecureStorage;
 import com.sddp.sexualhealthapp.util.AppConstants;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 public class SecretAuthService {
 
     private final SecureStorage secureStorage;
@@ -38,17 +35,10 @@ public class SecretAuthService {
 
         String normalizedEquation = EquationMatcher.normalizeEquation(equation.getFullEquation());
 
-        boolean saved = secureStorage.saveHashed(
+        return secureStorage.saveHashed(
             AppConstants.SECRET_EQUATION_KEY,
             normalizedEquation
         );
-
-        if (saved) {
-            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-            secureStorage.save(AppConstants.SECRET_CREATION_DATE_KEY, timestamp);
-        }
-
-        return saved;
     }
 
     /**
@@ -82,8 +72,6 @@ public class SecretAuthService {
      * @return true if deletion was successful, false otherwise
      */
     public boolean deleteSecretEquation() {
-        boolean deletedEquation = secureStorage.delete(AppConstants.SECRET_EQUATION_KEY);
-        boolean deletedDate = secureStorage.delete(AppConstants.SECRET_CREATION_DATE_KEY);
-        return deletedEquation && deletedDate;
+        return secureStorage.delete(AppConstants.SECRET_EQUATION_KEY);
     }
 }

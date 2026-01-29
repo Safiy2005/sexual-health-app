@@ -1,8 +1,5 @@
 package com.sddp.sexualhealthapp.calculator.model;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class CalculatorState {
 
     public enum AppMode {
@@ -16,13 +13,10 @@ public class CalculatorState {
 
     private AppMode currentMode;
     private boolean isSecretEquationSet;
-    private Queue<String> recentAttemptedEquations;
-    private static final int MAX_TRACKED_ATTEMPTS = 10;
 
     public CalculatorState() {
         this.currentMode = AppMode.SETUP;
         this.isSecretEquationSet = false;
-        this.recentAttemptedEquations = new LinkedList<>();
     }
 
     public void transitionTo(AppMode newMode) {
@@ -53,36 +47,6 @@ public class CalculatorState {
         }
     }
 
-    /**
-     * Adds an attempted equation to the tracking queue.
-     * This is used for analytics and future rate-limiting features.
-     *
-     * @param equation the equation that was attempted
-     */
-    public void addAttemptedEquation(String equation) {
-        recentAttemptedEquations.offer(equation);
-        if (recentAttemptedEquations.size() > MAX_TRACKED_ATTEMPTS) {
-            recentAttemptedEquations.poll();
-        }
-    }
-
-    public String getLastAttemptedEquation() {
-        if (recentAttemptedEquations.isEmpty()) {
-            return null;
-        }
-        // Peek at the last element without removing it
-        String[] attempts = recentAttemptedEquations.toArray(new String[0]);
-        return attempts[attempts.length - 1];
-    }
-
-    public int getAttemptCount() {
-        return recentAttemptedEquations.size();
-    }
-
-    public void clearAttempts() {
-        recentAttemptedEquations.clear();
-    }
-
     public AppMode getCurrentMode() {
         return currentMode;
     }
@@ -107,6 +71,5 @@ public class CalculatorState {
     public void reset() {
         this.currentMode = AppMode.SETUP;
         this.isSecretEquationSet = false;
-        this.recentAttemptedEquations.clear();
     }
 }

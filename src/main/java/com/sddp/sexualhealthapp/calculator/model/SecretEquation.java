@@ -1,6 +1,5 @@
 package com.sddp.sexualhealthapp.calculator.model;
 
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 /**
@@ -18,7 +17,6 @@ public class SecretEquation {
     private final String rightOperand;
     private final String result;
     private final String fullEquation;
-    private final LocalDateTime createdDate;
 
     public SecretEquation(String leftOperand, String operator, String rightOperand, String result) {
         this.leftOperand = leftOperand.trim();
@@ -26,12 +24,10 @@ public class SecretEquation {
         this.rightOperand = rightOperand.trim();
         this.result = result.trim();
         this.fullEquation = this.leftOperand + this.operator + this.rightOperand + "=" + this.result;
-        this.createdDate = LocalDateTime.now();
     }
 
     public SecretEquation(String fullEquation) {
         this.fullEquation = fullEquation.replaceAll("\\s+", "");
-        this.createdDate = LocalDateTime.now();
 
         String[] parts = parseEquation(this.fullEquation);
         this.leftOperand = parts[0];
@@ -113,10 +109,6 @@ public class SecretEquation {
 
     public String getResult() {
         return result;
-    }
-
-    public LocalDateTime getCreatedDate() {
-        return createdDate;
     }
 
     private String[] parseEquation(String equation) {
