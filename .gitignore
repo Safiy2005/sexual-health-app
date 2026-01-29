@@ -61,15 +61,6 @@ local.properties
 *.code-workspace
 
 ##########################
-# IDE - NetBeans
-##########################
-nbproject/private/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-##########################
 # macOS
 ##########################
 .DS_Store
@@ -159,23 +150,3 @@ coverage/
 *.temp
 *~
 .~lock.*
-
-##########################
-# Package Files
-##########################
-*.dmg
-*.gz
-*.iso
-*.tar
-*.tgz
-*.rar
-
-##########################
-# Project Specific
-##########################
-# Azure deployment files might contain sensitive info
-.azure/
-
-# Add any project-specific files here
-*.md
-!project-info/**/*.md
