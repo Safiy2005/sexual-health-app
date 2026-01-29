@@ -20,14 +20,6 @@ public class SecretEquation {
     private final String fullEquation;
     private final LocalDateTime createdDate;
 
-    /**
-     * Constructs a new SecretEquation.
-     *
-     * @param leftOperand the left operand (e.g., "5")
-     * @param operator the operator ("+", "-", "×", "÷")
-     * @param rightOperand the right operand (e.g., "3")
-     * @param result the expected result (e.g., "8")
-     */
     public SecretEquation(String leftOperand, String operator, String rightOperand, String result) {
         this.leftOperand = leftOperand.trim();
         this.operator = operator.trim();
@@ -37,17 +29,10 @@ public class SecretEquation {
         this.createdDate = LocalDateTime.now();
     }
 
-    /**
-     * Constructs a SecretEquation from a full equation string.
-     *
-     * @param fullEquation the full equation string (e.g., "5+3=8")
-     * @throws IllegalArgumentException if the equation format is invalid
-     */
     public SecretEquation(String fullEquation) {
-        this.fullEquation = fullEquation.replaceAll("\\s+", ""); // Remove all whitespace
+        this.fullEquation = fullEquation.replaceAll("\\s+", "");
         this.createdDate = LocalDateTime.now();
 
-        // Parse the equation
         String[] parts = parseEquation(this.fullEquation);
         this.leftOperand = parts[0];
         this.operator = parts[1];
@@ -55,13 +40,6 @@ public class SecretEquation {
         this.result = parts[3];
     }
 
-    /**
-     * Checks if this secret equation matches the given input equation.
-     * The comparison is case-insensitive and whitespace-agnostic.
-     *
-     * @param inputEquation the input equation to check
-     * @return true if the equations match, false otherwise
-     */
     public boolean matches(String inputEquation) {
         if (inputEquation == null || inputEquation.trim().isEmpty()) {
             return false;
@@ -71,25 +49,17 @@ public class SecretEquation {
         return this.fullEquation.equalsIgnoreCase(normalized);
     }
 
-    /**
-     * Validates whether this secret equation is mathematically correct and secure.
-     *
-     * @return true if the equation is valid and secure, false otherwise
-     */
     public boolean isValid() {
-        // Check if all fields are non-empty
         if (leftOperand.isEmpty() || operator.isEmpty() ||
             rightOperand.isEmpty() || result.isEmpty()) {
             return false;
         }
 
-        // Check if operands and result are valid numbers
         try {
             double left = Double.parseDouble(leftOperand);
             double right = Double.parseDouble(rightOperand);
             double expectedResult = Double.parseDouble(result);
 
-            // Calculate the actual result
             double actualResult;
             switch (operator) {
                 case "+":
@@ -125,70 +95,31 @@ public class SecretEquation {
         }
     }
 
-
-    /**
-     * Gets the full equation string.
-     *
-     * @return the full equation (e.g., "5+3=8")
-     */
     public String getFullEquation() {
         return fullEquation;
     }
 
-    /**
-     * Gets the left operand.
-     *
-     * @return the left operand
-     */
     public String getLeftOperand() {
         return leftOperand;
     }
 
-    /**
-     * Gets the operator.
-     *
-     * @return the operator
-     */
     public String getOperator() {
         return operator;
     }
 
-    /**
-     * Gets the right operand.
-     *
-     * @return the right operand
-     */
     public String getRightOperand() {
         return rightOperand;
     }
 
-    /**
-     * Gets the result.
-     *
-     * @return the result
-     */
     public String getResult() {
         return result;
     }
 
-    /**
-     * Gets the creation date of this equation.
-     *
-     * @return the creation date
-     */
     public LocalDateTime getCreatedDate() {
         return createdDate;
     }
 
-    /**
-     * Parses an equation string into its components.
-     *
-     * @param equation the equation string to parse
-     * @return array of [leftOperand, operator, rightOperand, result]
-     * @throws IllegalArgumentException if the equation format is invalid
-     */
     private String[] parseEquation(String equation) {
-        // Find the equals sign
         int equalsIndex = equation.indexOf('=');
         if (equalsIndex == -1) {
             throw new IllegalArgumentException("Invalid equation format: missing '='");
@@ -197,7 +128,6 @@ public class SecretEquation {
         String leftPart = equation.substring(0, equalsIndex);
         String result = equation.substring(equalsIndex + 1);
 
-        // Find the operator in the left part
         int operatorIndex = -1;
         String operator = "";
 

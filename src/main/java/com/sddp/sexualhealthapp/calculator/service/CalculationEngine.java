@@ -17,35 +17,14 @@ public class CalculationEngine {
         throw new AssertionError("Cannot instantiate CalculationEngine class");
     }
 
-    /**
-     * Adds two numbers.
-     *
-     * @param a the first number
-     * @param b the second number
-     * @return the sum of a and b
-     */
     public static double add(double a, double b) {
         return a + b;
     }
 
-    /**
-     * Subtracts the second number from the first.
-     *
-     * @param a the first number
-     * @param b the second number
-     * @return the difference (a - b)
-     */
     public static double subtract(double a, double b) {
         return a - b;
     }
 
-    /**
-     * Multiplies two numbers.
-     *
-     * @param a the first number
-     * @param b the second number
-     * @return the product of a and b
-     */
     public static double multiply(double a, double b) {
         return a * b;
     }
@@ -64,14 +43,6 @@ public class CalculationEngine {
         return a / b;
     }
 
-    /**
-     * Evaluates a simple arithmetic expression.
-     * Supported format: "number operator number" (e.g., "5+3", "10-2")
-     *
-     * @param expression the expression to evaluate
-     * @return the result of the expression
-     * @throws IllegalArgumentException if the expression is invalid
-     */
     public static double evaluateExpression(String expression) {
         if (expression == null || expression.trim().isEmpty()) {
             throw new IllegalArgumentException("Expression cannot be null or empty");
@@ -122,12 +93,6 @@ public class CalculationEngine {
         }
     }
 
-    /**
-     * Checks if an expression is valid (can be evaluated).
-     *
-     * @param expression the expression to validate
-     * @return true if the expression is valid, false otherwise
-     */
     public static boolean isValidExpression(String expression) {
         try {
             evaluateExpression(expression);
@@ -137,34 +102,14 @@ public class CalculationEngine {
         }
     }
 
-    /**
-     * Calculates the percentage of a number.
-     *
-     * @param number the number
-     * @param percentage the percentage (e.g., 50 for 50%)
-     * @return the percentage value of the number
-     */
     public static double percentage(double number, double percentage) {
         return (number * percentage) / 100.0;
     }
 
-    /**
-     * Calculates the square of a number.
-     *
-     * @param number the number to square
-     * @return the square of the number
-     */
     public static double square(double number) {
         return number * number;
     }
 
-    /**
-     * Calculates the square root of a number.
-     *
-     * @param number the number
-     * @return the square root of the number
-     * @throws IllegalArgumentException if the number is negative
-     */
     public static double squareRoot(double number) {
         if (number < 0) {
             throw new IllegalArgumentException("Cannot calculate square root of negative number");

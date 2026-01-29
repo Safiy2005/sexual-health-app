@@ -5,19 +5,8 @@ import com.sddp.sexualhealthapp.util.AppConstants;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Model class representing the state and operations of the calculator.
- * This class maintains the current display, operation state, and equation history
- * for secret equation matching.
- *
- * @author SDDP Group 30
- * @version 1.0
- */
 public class Calculator {
 
-    /**
-     * Enum representing the possible operations the calculator can perform.
-     */
     public enum Operation {
         ADD, SUBTRACT, MULTIPLY, DIVIDE, NONE
     }
@@ -30,9 +19,6 @@ public class Calculator {
     private String leftOperand;
     private String operator;
 
-    /**
-     * Constructs a new Calculator with default values.
-     */
     public Calculator() {
         this.currentDisplay = AppConstants.CALC_INITIAL_DISPLAY;
         this.previousValue = 0.0;
@@ -43,11 +29,6 @@ public class Calculator {
         this.operator = "";
     }
 
-    /**
-     * Appends a digit to the current display.
-     *
-     * @param digit the digit to append (0-9)
-     */
     public void appendDigit(String digit) {
         if (isNewNumber) {
             currentDisplay = digit;
@@ -63,9 +44,6 @@ public class Calculator {
         }
     }
 
-    /**
-     * Appends a decimal point to the current display.
-     */
     public void appendDecimal() {
         if (isNewNumber) {
             currentDisplay = "0.";
@@ -75,11 +53,6 @@ public class Calculator {
         }
     }
 
-    /**
-     * Sets the current operation and stores the previous value.
-     *
-     * @param operation the operation to set
-     */
     public void setOperation(Operation operation) {
         if (currentOperation != Operation.NONE && !isNewNumber) {
             // Chain operations: calculate current result first
@@ -93,11 +66,6 @@ public class Calculator {
         isNewNumber = true;
     }
 
-    /**
-     * Calculates the result of the current operation and updates the display.
-     *
-     * @return the calculated result
-     */
     public double calculateResult() {
         if (currentOperation == Operation.NONE) {
             return parseDisplayValue();
@@ -144,9 +112,6 @@ public class Calculator {
         return result;
     }
 
-    /**
-     * Clears the calculator state completely.
-     */
     public void clear() {
         currentDisplay = AppConstants.CALC_INITIAL_DISPLAY;
         previousValue = 0.0;
@@ -156,9 +121,6 @@ public class Calculator {
         operator = "";
     }
 
-    /**
-     * Removes the last digit from the current display.
-     */
     public void backspace() {
         if (!isNewNumber && currentDisplay.length() > 0) {
             if (currentDisplay.length() == 1 ||
@@ -171,11 +133,6 @@ public class Calculator {
         }
     }
 
-    /**
-     * Gets the current equation being built (e.g., "5+3").
-     *
-     * @return the current equation string, or empty string if no operation is set
-     */
     public String getCurrentEquation() {
         if (currentOperation == Operation.NONE || leftOperand.isEmpty()) {
             return "";
@@ -183,20 +140,10 @@ public class Calculator {
         return leftOperand + operator + currentDisplay;
     }
 
-    /**
-     * Gets the equation history for secret matching.
-     *
-     * @return list of recent equations
-     */
     public List<String> getEquationHistory() {
         return new ArrayList<>(equationHistory);
     }
 
-    /**
-     * Gets the current display value.
-     *
-     * @return the current display string
-     */
     public String getCurrentDisplay() {
         return currentDisplay;
     }
@@ -241,20 +188,10 @@ public class Calculator {
         return isNewNumber;
     }
 
-    /**
-     * Gets the current operation.
-     *
-     * @return the current operation
-     */
     public Operation getCurrentOperation() {
         return currentOperation;
     }
 
-    /**
-     * Parses the current display value as a double.
-     *
-     * @return the parsed double value, or 0.0 if parsing fails
-     */
     private double parseDisplayValue() {
         try {
             return Double.parseDouble(currentDisplay);
@@ -263,12 +200,6 @@ public class Calculator {
         }
     }
 
-    /**
-     * Formats a result for display, removing unnecessary decimal points and trailing zeros.
-     *
-     * @param result the result to format
-     * @return the formatted string
-     */
     private String formatResult(double result) {
         // Check if result is an integer
         if (result == (long) result) {
@@ -288,13 +219,6 @@ public class Calculator {
         }
     }
 
-    /**
-     * Builds an equation string from the current operation.
-     *
-     * @param rightValue the right operand value
-     * @param result the result value
-     * @return the equation string (e.g., "5+3=8")
-     */
     private String buildEquationString(double rightValue, double result) {
         String left = formatResult(previousValue);
         String right = formatResult(rightValue);
@@ -302,11 +226,6 @@ public class Calculator {
         return left + operator + right + "=" + res;
     }
 
-    /**
-     * Adds an equation to the history, maintaining the maximum size.
-     *
-     * @param equation the equation to add
-     */
     private void addToHistory(String equation) {
         equationHistory.add(equation);
         if (equationHistory.size() > AppConstants.MAX_EQUATION_HISTORY) {
@@ -314,12 +233,6 @@ public class Calculator {
         }
     }
 
-    /**
-     * Gets the operator symbol for an operation.
-     *
-     * @param operation the operation
-     * @return the operator symbol
-     */
     private String getOperatorSymbol(Operation operation) {
         switch (operation) {
             case ADD:

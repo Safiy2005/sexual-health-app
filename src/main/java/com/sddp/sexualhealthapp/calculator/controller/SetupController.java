@@ -95,18 +95,12 @@ public class SetupController {
     private String capturedResult;
     private SetupState currentState;
 
-    /**
-     * Enum representing the different states of the calculator setup flow.
-     */
     private enum SetupState {
         ENTERING_EQUATION,
         AWAITING_CONFIRMATION,
         CONFIRMED
     }
 
-    /**
-     * Constructs a new SetupController with default services.
-     */
     public SetupController() {
         this.calculator = new Calculator();
         this.authService = new SecretAuthService();
@@ -134,29 +128,16 @@ public class SetupController {
     // Onboarding carousel handlers
     // =========================================================
 
-    /**
-     * Handles the "Next" button on onboarding pages 1–3.
-     * Slides to the next page in the carousel.
-     */
     @FXML
     public void handleOnboardingNext() {
         slideTo(currentPage + 1);
     }
 
-    /**
-     * Handles the "Continue" button on onboarding page 4.
-     * Slides into the calculator setup page.
-     */
     @FXML
     public void handleOnboardingContinue() {
         slideTo(currentPage + 1);
     }
 
-    /**
-     * Animates a slide from the current page to the target page.
-     *
-     * @param targetPage the 0-based index of the destination page
-     */
     private void slideTo(int targetPage) {
         if (targetPage < 0 || targetPage >= pages.length || targetPage == currentPage) {
             return;
@@ -185,11 +166,6 @@ public class SetupController {
     // Calculator setup handlers (unchanged logic, page 4)
     // =========================================================
 
-    /**
-     * Handles number button clicks.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleNumber(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
@@ -201,11 +177,6 @@ public class SetupController {
         updateDisplay();
     }
 
-    /**
-     * Handles operation button clicks (+, -, ×, ÷).
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleOperation(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
@@ -237,12 +208,6 @@ public class SetupController {
         updateDisplay();
     }
 
-    /**
-     * Handles equals button click.
-     * Captures the equation and shows the confirmation panel.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleEquals(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
@@ -262,11 +227,6 @@ public class SetupController {
         }
     }
 
-    /**
-     * Handles decimal point button click.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleDecimal(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
@@ -277,11 +237,6 @@ public class SetupController {
         updateDisplay();
     }
 
-    /**
-     * Handles clear button click.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleClear(ActionEvent event) {
         calculator.clear();
@@ -292,11 +247,6 @@ public class SetupController {
         }
     }
 
-    /**
-     * Handles backspace button click.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleBackspace(ActionEvent event) {
         if (currentState == SetupState.AWAITING_CONFIRMATION) {
@@ -307,12 +257,6 @@ public class SetupController {
         updateDisplay();
     }
 
-    /**
-     * Handles the confirm button click.
-     * Validates and saves the secret equation.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleConfirm(ActionEvent event) {
         currentState = SetupState.CONFIRMED;
@@ -344,12 +288,6 @@ public class SetupController {
         }
     }
 
-    /**
-     * Handles the retry button click.
-     * Resets the calculator and returns to entering state.
-     *
-     * @param event the action event from the button click
-     */
     @FXML
     private void handleRetry(ActionEvent event) {
         calculator.clear();
