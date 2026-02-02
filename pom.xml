@@ -43,6 +43,13 @@
             <version>0.4</version>
         </dependency>
 
+        <!-- CommonMark for Markdown parsing -->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark</artifactId>
+            <version>0.24.0</version>
+        </dependency>
+
         <!-- JUnit 5 API for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
