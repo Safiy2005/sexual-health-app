@@ -4,7 +4,7 @@
 - Used GitHub Copilot with Claude Sonnet 4.5
 
 # Taran
-- Used Github Copilot with Claude Opus 4.5
+- Used Github Copilot with Claude Opus 4.5 & Claude Sonnet 4.5
 
 ## Uses
 
@@ -13,3 +13,4 @@
 - Creating unit tests for the calculator
 
 - Building logic for reading article folder contents
+- Writing unit tests for the Article model
