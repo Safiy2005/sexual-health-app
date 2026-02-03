@@ -3,8 +3,13 @@
 - Used Claude Code with Claude Sonnet 4.5
 - Used GitHub Copilot with Claude Sonnet 4.5
 
+# Taran
+- Used Github Copilot with Claude Opus 4.5
+
 ## Uses
 
 - For initial project structuring to ensure maintainability follows standard Software Engineering Procedure
 - Building the logic of the calculator and secure storage of secret equations
 - Creating unit tests for the calculator
+
+- Building logic for reading article folder contents
