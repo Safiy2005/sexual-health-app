@@ -100,5 +100,7 @@ public class Article {
     public static void main(String[] args) {
         var article = new Article(
                 "# test\nlolol\n\ntesting\n ## section 1 \n section 1 text \n\nsection 1 text2 \n ## section 2 \n section 2 text \n\n section 2 text2 \nmaybe new text\n# test2");
+        System.out.println(article.getTitle());
     }
+
 }
