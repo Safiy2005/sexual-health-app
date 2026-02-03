@@ -9,7 +9,7 @@ import org.commonmark.parser.Parser;
 import org.commonmark.renderer.text.*;
 
 public class Article {
-    private record Section(String heading, String content) {
+    public record Section(String heading, String content) {
     }
 
     private String title;
