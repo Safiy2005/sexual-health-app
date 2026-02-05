@@ -60,6 +60,14 @@ However, if you are considering purchasing your own PrEP medication online you s
 
 ---
 
+## Will PrEP affect my contraception?
+
+It is safe to use PrEP with all hormonal contraception (ring, patch, the pill, or an implant). PrEP will not affect your contraception and contraception will not affect PrEP.
+
+## Can I take PrEP if I'm pregnant or breastfeeding?
+
+PrEP is safe to use if you are pregnant, and if you are breast/chestfeeding.
+
 ## What is PEP?
 
 PEP (post-exposure prophylaxis) is a medicine which you can take if you think you may have been exposed to HIV within the last 72 hours (three days). It is a 28-day treatment of powerful drugs and is not guaranteed to work. It is only recommended after high-risk of exposure (for example, if a partner is known to be HIV positive).
