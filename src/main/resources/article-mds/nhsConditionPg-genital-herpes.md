@@ -1,19 +1,18 @@
-# Genital herpes
-
 **Genital herpes is a sexually transmitted infection (STI) passed on through vaginal, anal and oral sex. Treatment from a sexual health clinic can help. Symptoms clear up on their own but can come back.**
 
 ## Symptoms of genital herpes
 
 Symptoms of genital herpes include:
 
-- small blisters that burst to leave red, open sores around your genitals, anus, thighs or bottom – the sores may be less red on brown or black skin
-- tingling, burning or itching around your genitals
-- pain when you pee
-- discharge that is not usual for you
+* small blisters that burst to leave red, open sores around your genitals, anus, thighs or bottom – the sores may be less red on brown or black skin
+* tingling, burning or itching around your genitals
+* pain when you pee
+* discharge that is not usual for you
 
 Where genital herpes symptoms appear and what they look like
 
 ![A small white blister on the lips outside the vagina. Shown on white skin.](https://assets.nhs.uk/nhsuk-cms/images/S_0817_genital-herpes_C0169315.original.width-320.jpg)
+
 
 Genital herpes can appear as a blister on the vagina.
 
@@ -21,7 +20,9 @@ Credit:
 
 DR P. MARAZZI/SCIENCE PHOTO LIBRARY https://www.sciencephoto.com/media/529674/view
 
+
 ![A group of small light brown blisters on the shaft of a penis. Shown on dark brown skin.](https://assets.nhs.uk/nhsuk-cms/images/S_0817_penile-herpes_C0365827.original.width-320.jpg)
+
 
 Blisters can also appear on the penis in a group.
 
@@ -29,7 +30,9 @@ Credit:
 
 Clinical Photography/SCIENCE PHOTO LIBRARY https://www.sciencephoto.com/media/861692/view
 
+
 ![A group of small white blisters that are pink around the edge, including burst ones, on the buttocks. Shown on white skin.](https://assets.nhs.uk/nhsuk-cms/images/S_0817_herpes-buttocks_C0263431.original.width-320.jpg)
+
 
 You can also get blisters and sores on the buttocks.
 
@@ -39,11 +42,11 @@ DR P. MARAZZI/SCIENCE PHOTO LIBRARY https://www.sciencephoto.com/media/683453/vi
 
 ## Non-urgent advice: Go to a sexual health clinic as soon as possible if:
 
-- you have symptoms of genital herpes
+* you have symptoms of genital herpes
 
 Go even if you have not had sex for a long time, as blisters can take months or years to appear.
 
-Information:
+Information: 
 
 ### Why you should go to a sexual health clinic
 
@@ -55,19 +58,19 @@ Many sexual health clinics offer a walk-in service, where you do not need an app
 
 They'll often get test results quicker than GP practices and you do not have to pay a prescription fee for treatment.
 
-[Find a sexual health clinic](https://www.nhs.uk/service-search/sexual-health/find-a-sexual-health-clinic)
+Find a sexual health clinic
 
 ## What happens at a sexual health clinic
 
 The doctor or nurse at the sexual health clinic will:
 
-- ask about your symptoms and your sexual partners
-- use a small cotton bud (swab) to take some fluid from 1 of your blisters or sores for testing
+* ask about your symptoms and your sexual partners
+* use a small cotton bud (swab) to take some fluid from 1 of your blisters or sores for testing
 
 The test cannot:
 
-- be done if you do not have visible blisters or sores
-- tell you how long you've had herpes or who you got it from
+* be done if you do not have visible blisters or sores
+* tell you how long you've had herpes or who you got it from
 
 Symptoms might not appear for weeks or even years after you're infected with the herpes virus.
 
@@ -81,8 +84,8 @@ Treatment from a sexual health clinic can help.
 
 You may be prescribed:
 
-- antiviral medicine to stop the symptoms getting worse – you need to start taking this within 5 days of the symptoms appearing
-- cream for the pain
+* antiviral medicine to stop the symptoms getting worse – you need to start taking this within 5 days of the symptoms appearing
+* cream for the pain
 
 If you've had symptoms for more than 5 days before you go to a sexual health clinic, you can still get tested to find out the cause.
 
@@ -108,18 +111,18 @@ There are things you can do if you've been diagnosed with genital herpes and you
 
 ### Do
 
-- keep the area clean using plain or salt water to prevent blisters becoming infected
-- apply an ice pack wrapped in a flannel to soothe pain
-- apply petroleum jelly (such as Vaseline) or painkilling cream (such as 5% [lidocaine](/medicines/lidocaine-skin-cream/)) to reduce pain when you pee
-- wash your hands before and after applying cream or jelly
-- pee while pouring water over your genitals to ease the pain
+* keep the area clean using plain or salt water to prevent blisters becoming infected
+* apply an ice pack wrapped in a flannel to soothe pain
+* apply petroleum jelly (such as Vaseline) or painkilling cream (such as 5% lidocaine) to reduce pain when you pee
+* wash your hands before and after applying cream or jelly
+* pee while pouring water over your genitals to ease the pain
 
 ### Don’t
 
-- do not wear tight clothing that may irritate blisters or sores
-- do not put ice directly on the skin
-- do not touch your blisters or sores unless you're applying cream
-- do not have vaginal, anal or oral sex until the sores have gone away
+* do not wear tight clothing that may irritate blisters or sores
+* do not put ice directly on the skin
+* do not touch your blisters or sores unless you're applying cream
+* do not have vaginal, anal or oral sex until the sores have gone away
 
 ## How genital herpes is passed on
 
@@ -129,11 +132,11 @@ You may also be able to pass on the virus even if you do not have any symptoms.
 
 You can get genital herpes:
 
-- from skin-to-skin contact with the infected area (including vaginal, anal and oral sex)
-- when there are no visible sores or blisters
-- if a [cold sore](/conditions/cold-sores/) touches your genitals
-- by transferring the infection on fingers from someone else to your genitals
-- by sharing sex toys with someone who has herpes
+* from skin-to-skin contact with the infected area (including vaginal, anal and oral sex)
+* when there are no visible sores or blisters
+* if a cold sore touches your genitals
+* by transferring the infection on fingers from someone else to your genitals
+* by sharing sex toys with someone who has herpes
 
 You cannot get genital herpes from towels, swimming pools, saunas or toilet seats as there is no skin-to-skin contact.
 
@@ -141,9 +144,9 @@ You cannot get genital herpes from towels, swimming pools, saunas or toilet seat
 
 You can reduce the chances of passing on genital herpes by:
 
-- using a condom every time you have vaginal, anal or oral sex – but herpes can still be passed on if the condom does not cover the infected area
-- avoiding vaginal, anal or oral sex if you or your partner has blisters or sores, or a tingle or itch that means an outbreak is coming
-- not sharing sex toys – if you do, wash them and put a condom on them
+* using a condom every time you have vaginal, anal or oral sex – but herpes can still be passed on if the condom does not cover the infected area
+* avoiding vaginal, anal or oral sex if you or your partner has blisters or sores, or a tingle or itch that means an outbreak is coming
+* not sharing sex toys – if you do, wash them and put a condom on them
 
 ### Why genital herpes comes back
 
@@ -155,22 +158,22 @@ If you can, avoid things that trigger your symptoms.
 
 Triggers can include:
 
-- ultraviolet light on the affected area – for example, from sunbathing or sunbeds
-- friction in your genital area – for example, from sex (lubricant may help) or tight clothing
-- smoking
-- drinking alcohol
+* ultraviolet light on the affected area – for example, from sunbathing or sunbeds
+* friction in your genital area – for example, from sex (lubricant may help) or tight clothing
+* smoking
+* drinking alcohol
 
 Some triggers are unavoidable, including:
 
-- being unwell
-- stress
-- during the menstrual cycle
-- surgery on your genital area
-- a weakened immune system – for example, from having chemotherapy for cancer
+* being unwell
+* stress
+* during the menstrual cycle
+* surgery on your genital area
+* a weakened immune system – for example, from having chemotherapy for cancer
 
 ## Genital herpes and HIV
 
-Genital herpes can be a more serious condition for people with [HIV](/conditions/hiv-and-aids/).
+Genital herpes can be a more serious condition for people with HIV.
 
 If you have HIV and herpes, you'll be referred to a genitourinary medicine (GUM) specialist.
 
@@ -178,7 +181,7 @@ If you have HIV and herpes, you'll be referred to a genitourinary medicine (GUM)
 
 Women who have had genital herpes before pregnancy can usually expect to have a healthy baby and a vaginal delivery.
 
-However, if you have a herpes outbreak when you give birth, or you get genital herpes for the first time during pregnancy, there's a risk your baby could develop a serious illness called [neonatal herpes](/conditions/neonatal-herpes/). You'll be offered medicine from around 32 weeks of pregnancy to reduce this risk.
+However, if you have a herpes outbreak when you give birth, or you get genital herpes for the first time during pregnancy, there's a risk your baby could develop a serious illness called neonatal herpes. You'll be offered medicine from around 32 weeks of pregnancy to reduce this risk.
 
 Neonatal herpes can be fatal, but most babies recover with treatment.
 
@@ -194,9 +197,9 @@ See your midwife or a GP if you think you have genital herpes in pregnancy.
 
 You may be offered antiviral treatment:
 
-- to treat outbreaks in pregnancy
-- from week 32 of pregnancy to reduce the chance of an outbreak during birth
-- from diagnosis until the birth if you first get herpes after week 28 of pregnancy
+* to treat outbreaks in pregnancy
+* from week 32 of pregnancy to reduce the chance of an outbreak during birth
+* from diagnosis until the birth if you first get herpes after week 28 of pregnancy
 
 Many women with genital herpes have a vaginal delivery. You may be offered a caesarean, depending on your circumstances.
 
@@ -209,4 +212,3 @@ Media review due: 13 January 2027
 
 Page last reviewed: 27 June 2023  
 Next review due: 27 June 2026
-

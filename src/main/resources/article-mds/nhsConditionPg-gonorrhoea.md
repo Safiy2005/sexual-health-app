@@ -1,7 +1,3 @@
-# Gonorrhoea
-
-Gonorrhoea is a sexually transmitted infection (STI) passed on through unprotected sex (sex without a condom). It's treated with antibiotics. If it's not treated, it can cause serious health problems.
-
 ## Symptoms of gonorrhoea
 
 Not everyone gets symptoms of gonorrhoea. So it's important to get tested if you think you might have it.
@@ -12,18 +8,18 @@ If you do get symptoms, they usually start around 2 weeks after infection, altho
 
 Gonorrhoea can cause symptoms in women. These symptoms can affect anyone with a vagina:
 
-- a yellow or greenish discharge from your vagina
-- burning pain when you pee
-- pain in your lower abdomen
-- bleeding between your periods (this is rare)
+* a yellow or greenish discharge from your vagina
+* burning pain when you pee
+* pain in your lower abdomen
+* bleeding between your periods (this is rare)
 
 ### Symptoms in men
 
 Gonorrhoea can cause symptoms in men. These symptoms can affect anyone with a penis:
 
-- burning pain when you pee
-- fluid or discharge coming out of your penis
-- sore testicles
+* burning pain when you pee
+* fluid or discharge coming out of your penis
+* sore testicles
 
 ### Gonorrhoea in the anus, throat or eyes
 
@@ -31,17 +27,15 @@ Gonorrhoea can affect other parts of your body that come into contact with semen
 
 This can cause:
 
-- pain, itching and discharge from your anus (bottom)
-- a sore throat
-- eye redness, pain and discharge
+* pain, itching and discharge from your anus (bottom)
+* a sore throat
+* eye redness, pain and discharge
 
 ## Non-urgent advice: Go to a sexual health clinic or see a GP if:
 
-- you or a sexual partner think you might have gonorrhoea
-- you or a sexual partner have had sex without a condom
-- you're pregnant or planning to get pregnant and think you might have gonorrhoea
-
-[Find a sexual health clinic](https://www.nhs.uk/service-search/sexual-health/find-a-sexual-health-clinic)
+* you or a sexual partner think you might have gonorrhoea
+* you or a sexual partner have had sex without a condom
+* you're pregnant or planning to get pregnant and think you might have gonorrhoea
 
 ### Self-test kits
 
@@ -51,25 +45,23 @@ If the test shows you have gonorrhoea, you'll be contacted and told what to do n
 
 You may be able to get a free self-test kit from:
 
-- a sexual health clinic
-- some pharmacies
+* a sexual health clinic
+* some pharmacies
 
 You can also buy a self-test kit for gonorrhoea from some pharmacies.
-
-[Find your local STI testing and treatment service](https://www.nhs.uk/service-search/sexual-health-services/find-sti-testing-and-treatment)
 
 ## Urgent advice: Ask for an urgent GP appointment or get help from NHS 111 if:
 
 You have gonorrhoea (or think you might have it) and:
 
-- your eyes are red, itchy or painful, or you have pus that sticks to your eyelashes
-- a high temperature (fever)
-- joint pain or swelling
-- a bumpy, spotty or blotchy rash
+* your eyes are red, itchy or painful, or you have pus that sticks to your eyelashes
+* a high temperature (fever)
+* joint pain or swelling
+* a bumpy, spotty or blotchy rash
 
 These can be signs of a more serious gonorrhoea infection that needs to be treated quickly.
 
-You can call 111 or [get help from 111 online](https://111.nhs.uk/triage/check-your-symptoms).
+You can call 111 or get help from 111 online.
 
 ## What happens at your appointment
 
@@ -83,9 +75,9 @@ You might also be asked to give a pee sample.
 
 You might have a swab of your bottom (anus), throat or eyes if these areas are affected.
 
-You can be tested even if you do not have any symptoms. You may also have tests for other [sexually transmitted infections (STIs)](/conditions/sexually-transmitted-infections-stis/) at the same time.
+You can be tested even if you do not have any symptoms. You may also have tests for other sexually transmitted infections (STIs) at the same time.
 
-Information:
+Information: 
 
 ### Contacting sexual partners
 
@@ -109,15 +101,15 @@ Do not have vaginal, anal or oral sex until you and your sexual partner (if you 
 
 If gonorrhoea is not treated, it can cause serious problems including:
 
-- eye infection (gonococcal conjunctivitis) if you touch your eyes after touching infected fluid from your penis or vagina
-- an infection of the womb, fallopian tubes and ovaries ([pelvic inflammatory disease](/conditions/pelvic-inflammatory-disease-pid/)), which can lead to infertility if not treated
-- infection in the testicles or prostate ([prostatitis](/conditions/prostatitis/))
+* eye infection (gonococcal conjunctivitis) if you touch your eyes after touching infected fluid from your penis or vagina
+* an infection of the womb, fallopian tubes and ovaries (pelvic inflammatory disease), which can lead to infertility if not treated
+* infection in the testicles or prostate (prostatitis)
 
 The sooner you get treatment, the easier these complications are to treat.
 
 ### Gonorrhoea in pregnancy
 
-Having gonorrhoea during pregnancy can increase your risk of [premature birth](/pregnancy/labour-and-birth/premature-labour-and-birth/) and your baby having a low birth weight.
+Having gonorrhoea during pregnancy can increase your risk of premature birth and your baby having a low birth weight.
 
 Theres also a risk the infection could spread to your baby's eyes (gonococcal conjunctivitis) during birth. This can cause blindness if it’s not treated with antibiotics.
 
@@ -133,15 +125,15 @@ There are some things you can do to avoid getting gonorrhoea and spreading it to
 
 ### Do
 
-- use condoms when you have vaginal or anal sex
-- use condoms to cover the penis or a latex or plastic square (dam) to cover the vagina if you have oral sex
-- get tested once a year, or if you have a new sexual partner
-- complete the full treatment if you or your sexual partner have gonorrhoea
-- get vaccinated if you're offered the MenB vaccine for gonorrhoea
+* use condoms when you have vaginal or anal sex
+* use condoms to cover the penis or a latex or plastic square (dam) to cover the vagina if you have oral sex
+* get tested once a year, or if you have a new sexual partner
+* complete the full treatment if you or your sexual partner have gonorrhoea
+* get vaccinated if you're offered the MenB vaccine for gonorrhoea
 
 ### Don’t
 
-- do not share sex toys (if you do, wash and cover them with a new condom before anyone else uses them)
+* do not share sex toys (if you do, wash and cover them with a new condom before anyone else uses them)
 
 ### Vaccination to protect against gonorrhoea
 
@@ -151,11 +143,10 @@ You may be offered the MenB vaccine for gonorrhoea if you're a man who has sex w
 
 This includes if you:
 
-- currently have or recently had gonorrhoea or another bacterial STI (such as chlamydia or syphilis)
-- have had multiple sexual partners in the last 3 months
+* currently have or recently had gonorrhoea or another bacterial STI (such as chlamydia or syphilis)
+* have had multiple sexual partners in the last 3 months
 
-Find out more about the [MenB vaccine for gonorrhoea](/vaccinations/menb-vaccine-for-gonorrhoea/).
+Find out more about the MenB vaccine for gonorrhoea.
 
 Page last reviewed: 16 December 2024  
 Next review due: 16 December 2027
-
