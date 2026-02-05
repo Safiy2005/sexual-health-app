@@ -1,0 +1,157 @@
+{
+  "nhsConditionPg-genital-herpes.md": {
+    "title": "Genital Herpes",
+    "source": "NHS",
+    "filePath": "article-mds/nhsConditionPg-genital-herpes.md",
+    "tags": [
+      "STI",
+      "viral",
+      "herpes",
+      "sexual-health",
+      "recurring"
+    ],
+    "keywords": [
+      "genital herpes",
+      "herpes simplex",
+      "blisters",
+      "sores",
+      "antiviral",
+      "outbreak",
+      "recurrence",
+      "neonatal herpes",
+      "HSV"
+    ]
+  },
+  "nhsConditionPg-gonorrhoea.md": {
+    "title": "Gonorrhoea",
+    "source": "NHS",
+    "filePath": "article-mds/nhsConditionPg-gonorrhoea.md",
+    "tags": [
+      "STI",
+      "bacterial",
+      "gonorrhoea",
+      "sexual-health",
+      "curable"
+    ],
+    "keywords": [
+      "gonorrhoea",
+      "gonorrhea",
+      "antibiotics",
+      "discharge",
+      "self-test kit",
+      "MenB vaccine",
+      "pelvic inflammatory disease",
+      "gonococcal conjunctivitis"
+    ]
+  },
+  "brook-condom-mistakes.md": {
+    "title": "Common Mistakes When Using Condoms",
+    "source": "Brook",
+    "filePath": "article-mds/brook-condom-mistakes.md",
+    "tags": [
+      "contraception",
+      "condom",
+      "safety",
+      "sexual-health",
+      "prevention"
+    ],
+    "keywords": [
+      "condom mistakes",
+      "condom use",
+      "STI prevention",
+      "pregnancy prevention",
+      "condom breakage",
+      "condom storage",
+      "condom disposal",
+      "water-based lubricant",
+      "condom size",
+      "condom expiry",
+      "condom application",
+      "condom removal",
+      "condom sharing",
+      "condom on sex toys",
+      "stealthing"
+    ]
+  },
+  "brook-sex-for-first-time.md": {
+    "title": "Sex for the First Time",
+    "source": "Brook",
+    "filePath": "article-mds/brook-sex-for-first-time.md",
+    "tags": [
+      "sexual-health",
+      "consent",
+      "communication",
+      "first-time",
+      "relationships"
+    ],
+    "keywords": [
+      "first time sex",
+      "virginity",
+      "consent",
+      "communication",
+      "pressure",
+      "anxiety",
+      "pain",
+      "lube",
+      "vaginal sex",
+      "anal sex",
+      "erection",
+      "wetness",
+      "awkwardness",
+      "enjoyment",
+      "sexual health"
+    ]
+  },
+  "brook-crabs.md": {
+    "title": "Pubic Lice (Crabs)",
+    "source": "Brook",
+    "filePath": "article-mds/brook-crabs.md",
+    "tags": [
+      "STI",
+      "parasitic",
+      "crabs",
+      "sexual-health",
+      "pubic lice"
+    ],
+    "keywords": [
+      "pubic lice",
+      "crabs",
+      "Phthirus pubis",
+      "itching",
+      "pubic hair",
+      "treatment",
+      "insecticide",
+      "sexual contact",
+      "hygiene",
+      "transmission",
+      "prevention"
+    ]
+  },
+  "brook-prep-and-pep.md": {
+    "title": "PrEP and PEP",
+    "source": "Brook",
+    "filePath": "article-mds/brook-prep-and-pep.md",
+    "tags": [
+      "HIV",
+      "prevention",
+      "PrEP",
+      "PEP",
+      "sexual-health"
+    ],
+    "keywords": [
+      "PrEP",
+      "PEP",
+      "HIV prevention",
+      "antiretroviral",
+      "sexual health",
+      "STI prevention",
+      "condom",
+      "sexual health clinic",
+      "LVNDR",
+      "post-exposure prophylaxis",
+      "pre-exposure prophylaxis",
+      "HIV testing",
+      "sexual health services"
+    ]
+  }
+}
