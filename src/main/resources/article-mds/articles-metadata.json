@@ -1,0 +1,16 @@
+{
+  "nhsConditionPg-genital-herpes.md": {
+    "title": "Genital Herpes",
+    "source": "NHS",
+    "filePath": "article-mds/nhsConditionPg-genital-herpes.md",
+    "tags": ["STI", "viral", "herpes", "sexual-health", "recurring"],
+    "keywords": ["genital herpes", "herpes simplex", "blisters", "sores", "antiviral", "outbreak", "recurrence", "neonatal herpes", "HSV"]
+  },
+  "nhsConditionPg-gonorrhoea.md": {
+    "title": "Gonorrhoea",
+    "source": "NHS",
+    "filePath": "article-mds/nhsConditionPg-gonorrhoea.md",
+    "tags": ["STI", "bacterial", "gonorrhoea", "sexual-health", "curable"],
+    "keywords": ["gonorrhoea", "gonorrhea", "antibiotics", "discharge", "self-test kit", "MenB vaccine", "pelvic inflammatory disease", "gonococcal conjunctivitis"]
+  }
+}
