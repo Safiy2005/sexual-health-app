@@ -2,9 +2,11 @@ import requests
 from markdownify import markdownify as md
 from bs4 import BeautifulSoup as bs
 
+folder_path = "src/main/resources/article-mds/"
+
 def scrape_page (url):
     headers = {'User-Agent':'Mozilla/5.0'}  # acts as a normal browser
-    folder_path = "src/main/resources/article-mds/"
+    
     
     try:
         response = requests.get(url, headers=headers)
@@ -36,3 +38,14 @@ def scrape_page (url):
     except Exception as e:
         return f"Error: {e}"
     
+
+if __name__ == "__main__":
+    with open(folder_path + "nhs_links.txt", "r") as f:
+        links = [line.strip() for line in f if line.strip()]
+        
+    print(f"Starting scrape for {len(links)} links...")
+
+    for link in links:
+        scrape_page(link)
+
+    print("Done!")
