@@ -2,45 +2,60 @@ import requests
 from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer, util
 import os
+import time
 
-def pure_ai_scan():
+def smart_sexual_health_scan():
     folder_path = "src/main/resources/article-mds/"
-    input_file_path = folder_path+"Conditions A to Z - NHS.html" 
-  
+    input_file_path = folder_path + "Conditions A to Z - NHS.html" 
     output_file_path = os.path.join(folder_path, "nhs_links.txt")
 
-    print("1. Loading High-Accuracy Model (all-mpnet-base-v2)...")
+    print("1. Loading Model...")
     model = SentenceTransformer('all-mpnet-base-v2')
 
-    # --- THE CONCEPTS ---
-    
-    # CONCEPT A: WHAT WE WANT (Sexual Health)
-    # We use strong keywords for genitals and transmission.
+    # --- 1. TARGET CONCEPT (What we WANT) ---
     target_concept = (
-        "Comprehensive sexual and reproductive health, including sexually transmitted infections (STIs), "
-        "genital and reproductive organ conditions (penis, vagina, vulva, testicles, uterus, ovaries, cervix), "
-        "sexual dysfunction, libido, and arousal issues. It covers contraception, birth control, "
-        "fertility, pregnancy prevention, and hormone-related sexual health (menopause, testosterone). "
-        "Also includes clinical symptoms like genital discharge, lumps, sores, pelvic pain, "
-        "and cancers of the reproductive system (cervical, penile, testicular, ovarian)."
+        "Sexually transmitted infections (STIs), HIV, AIDS, Syphilis, Gonorrhoea, Chlamydia, "
+        "Genital herpes, Genital warts, Trichomoniasis, Pubic lice, Scabies, Hepatitis B and C. "
+        "Reproductive organ health (penis, vagina, vulva, testicles, uterus, ovaries, cervix, prostate). "
+        "Sexual dysfunction, erectile dysfunction, premature ejaculation, vaginismus, vulvodynia, "
+        "menopause, libido, hormone replacement therapy, testosterone, fertility, and contraception. "
+        "Conditions involving genital lumps, discharge, pelvic pain, or soreness."
     )
     
-    # CONCEPT B: WHAT WE WANT TO FILTER (The "Distractors")
-    # This concept attracts the false positives so they score higher here than on Concept A.
+    # --- 2. DISTRACTOR CONCEPT (The "Anti-Target") ---
+    # This list pushes down conditions that sound similar but are wrong.
     distractor_concept = (
-        "Childhood rashes like chickenpox and measles, fungal nail infections on feet, "
-        "general skin infections on hands, face or legs (cellulitis, impetigo), "
-        "respiratory flu, lung viruses, asthma, coughing, "
-        "digestive issues like stomach ache, bowel problems, food poisoning, "
-        "kidney stones, bladder cancer, general urinary issues not related to sex, "
-        "routine pregnancy, labour and childbirth, bedsores, gangrene, and mouth ulcers."
+        # SKIN & NAILS (Confused with Syphilis/Warts/Thrush)
+        "Dermatological skin conditions like eczema, psoriasis, acne, hives, cellulitis, impetigo. "
+        "Fungal infections of the feet, toes, or nails (athlete's foot, fungal nail). "
+        "Childhood viral rashes (chickenpox, measles, hand foot and mouth, slapped cheek). "
+        "Warts on hands, fingers or feet (verrucas). Ringworm on the body. "
+        
+        # RESPIRATORY (Confused with 'Contact' or 'Sex Life' sections)
+        "Respiratory illnesses, lung viruses, flu, covid, asthma, bronchitis, "
+        "chronic obstructive pulmonary disease (COPD), emphysema, pneumonia, tuberculosis. "
+        
+        # GENERAL SYSTEMIC (Confused due to 'pain' or 'relationship' mentions)
+        "Heart disease, high blood pressure, stroke, diabetes, arthritis, back pain. "
+        "Gastrointestinal issues like stomach ache, food poisoning, ibs, diarrhoea, piles. "
+        "Dental issues, mouth ulcers, cold sores on the lips. "
+        "Orthopedic issues like broken bones, sprains, bunions."
     )
 
-    # Encode both
+    # --- 3. MINIMAL HARD BLOCK ---
+    # Only block things that are strictly irrelevant parts of the body (Feet, Lungs).
+    # I removed 'Gynaecomastia', 'Toxic Shock', 'Actinomycosis' so the AI can judge them.
+    hard_block_slugs = [
+        "fungal-nail-infection", "athletes-foot", "corns-and-calluses", "bunions", 
+        "chronic-obstructive-pulmonary-disease-copd", "bronchitis", "emphysema",
+        "middle-east-respiratory-syndrome-mers", "flu", "common-cold"
+    ]
+
+    print("2. Encoding concepts...")
     target_emb = model.encode(target_concept, convert_to_tensor=True)
     distractor_emb = model.encode(distractor_concept, convert_to_tensor=True)
 
-    print("2. Reading file...")
+    print("3. Reading file...")
     all_links = set()
     try:
         with open(input_file_path, "r", encoding="utf-8") as f:
@@ -51,11 +66,11 @@ def pure_ai_scan():
                 full_url = f"https://www.nhs.uk{href}" if not href.startswith("http") else href
                 all_links.add(full_url)
     except FileNotFoundError:
-        print("File not found.")
+        print(f"File not found at {input_file_path}")
         return
 
     link_list = sorted(list(all_links))
-    print(f"3. Scanning {len(link_list)} pages with Pure AI Logic...")
+    print(f"4. Scanning {len(link_list)} pages...")
     
     confirmed_links = []
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -63,50 +78,65 @@ def pure_ai_scan():
     for i, url in enumerate(link_list):
         slug = url.split("/")[-2].lower()
         
-        # Progress log
-        if i > 0 and i % 25 == 0: print(f"   ...processed {i}...")
-
-        try:
-            # Fetch
-            response = requests.get(url, headers=headers, timeout=5)
-            if response.status_code != 200: continue
-
-            # Read text: Intro + Symptoms (first 3000 chars)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            page_text = soup.get_text(" ", strip=True)[:3000]
-            
-            # Prepare content for AI
-            content_to_grade = f"Condition: {slug}. Text: {page_text}"
-            page_embedding = model.encode(content_to_grade, convert_to_tensor=True)
-
-            # SCORING
-            sex_score = util.cos_sim(target_emb, page_embedding)[0].item()
-            general_score = util.cos_sim(distractor_emb, page_embedding)[0].item()
-
-            # --- PURE LOGIC (No Hard Blocks) ---
-            
-            # 1. Base Relevance: Must be decently related to sexual health
-            if sex_score > 0.35:
-                
-                # 2. The "Battle": Sexual score must be HIGHER than Distractor score
-                if sex_score > general_score:
-                    print(f"[MATCH] {slug} (Sex: {sex_score:.2f} > Distractor: {general_score:.2f})")
-                    confirmed_links.append(url)
-                else:
-                    # It was related, but looked MORE like a general skin/childhood issue
-                    # print(f"[DROP ] {slug} (More like distractor: {general_score:.2f})")
-                    pass
-
-        except Exception:
+        # Hard Block Check
+        if any(bad == slug for bad in hard_block_slugs):
             continue
 
-    # --- SAVE ---
+        if i > 0 and i % 50 == 0: 
+            print(f"   ...processed {i}...")
+
+        try:
+            # Polite delay to avoid 429 Errors
+            time.sleep(0.1) 
+            
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code != 200: 
+                print(f"[ERROR] {response.status_code} on {slug}")
+                continue
+
+            soup = BeautifulSoup(response.text, 'html.parser')
+            # Read 4000 chars to cover "Symptoms" and "Causes"
+            page_text = soup.get_text(" ", strip=True)[:4000]
+            
+            content = f"Condition: {slug}. Text: {page_text}"
+            page_emb = model.encode(content, convert_to_tensor=True)
+
+            sex_score = util.cos_sim(target_emb, page_emb)[0].item()
+            gen_score = util.cos_sim(distractor_emb, page_emb)[0].item()
+
+            # --- LOGIC ---
+            
+            # 1. HIGH CONFIDENCE KEEPER (> 0.55)
+            # HIV, Syphilis, and Endometriosis will land here.
+            if sex_score > 0.55:
+                print(f"[KEEP-HIGH] {slug} ({sex_score:.2f})")
+                confirmed_links.append(url)
+                continue
+
+            # 2. THE BATTLE (> 0.30)
+            # Lowered threshold to 0.30 to catch edge cases (like Toxic Shock),
+            # BUT they must beat the distractor score significantly.
+            if sex_score > 0.30:
+                # If Sex Score is clearly higher than Distractor Score
+                if sex_score > gen_score:
+                    print(f"[KEEP-BATTLE] {slug} (Sex: {sex_score:.2f} > Dist: {gen_score:.2f})")
+                    confirmed_links.append(url)
+                
+                # OPTIONAL: Debug what we dropped to verify
+                # else:
+                #    print(f"[DROP] {slug} (Distractor: {gen_score:.2f} > Sex: {sex_score:.2f})")
+
+        except Exception as e:
+            print(f"[FAIL] {slug}: {e}")
+            continue
+
+    # Save
     os.makedirs(folder_path, exist_ok=True)
     with open(output_file_path, "w") as f:
         for link in sorted(confirmed_links):
             f.write(link + "\n")
 
-    print(f"\nSaved {len(confirmed_links)} links to {output_file_path}")
+    print(f"\nSaved {len(confirmed_links)} links.")
 
 if __name__ == "__main__":
-    pure_ai_scan()
+    smart_sexual_health_scan()
