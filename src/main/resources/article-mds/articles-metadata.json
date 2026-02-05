@@ -126,5 +126,32 @@
       "transmission",
       "prevention"
     ]
+  },
+  "brook-prep-and-pep.md": {
+    "title": "PrEP and PEP",
+    "source": "Brook",
+    "filePath": "article-mds/brook-prep-and-pep.md",
+    "tags": [
+      "HIV",
+      "prevention",
+      "PrEP",
+      "PEP",
+      "sexual-health"
+    ],
+    "keywords": [
+      "PrEP",
+      "PEP",
+      "HIV prevention",
+      "antiretroviral",
+      "sexual health",
+      "STI prevention",
+      "condom",
+      "sexual health clinic",
+      "LVNDR",
+      "post-exposure prophylaxis",
+      "pre-exposure prophylaxis",
+      "HIV testing",
+      "sexual health services"
+    ]
   }
 }
