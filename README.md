@@ -84,6 +84,10 @@ src/main/java/com/sddp/sexualhealthapp/
 └── util/                         # ← Shared (read only - constants)
 
 src/main/resources/
+├── article-mds/                  # ← Article Content
+│   ├── articles-metadata.json    #    (Registry: Add metadata here for every new .md file)
+│   └── [source]-[articlename].md #    (Format for article files, e.g., nhs-chlamydia.md)
+│
 ├── fxml/                         # ← Your FXML files go here
 │   ├── calculator.fxml           #    (calculator disguise)
 │   ├── setup.fxml                #    (calculator disguise)
