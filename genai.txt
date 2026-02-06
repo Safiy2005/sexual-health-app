@@ -1,6 +1,6 @@
 # Josh
 
-- Used Claude Code with Claude Sonnet 4.5
+- Used Claude Code with Claude Sonnet 4.5, Claude Opus 4.6
 - Used GitHub Copilot with Claude Sonnet 4.5
 
 # Taran
@@ -14,3 +14,4 @@
 
 - Building logic for reading article folder contents
 - Writing unit tests for the Article model
+- Implementing semantic search
