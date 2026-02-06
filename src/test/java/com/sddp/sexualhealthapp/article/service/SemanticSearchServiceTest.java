@@ -106,16 +106,12 @@ public class SemanticSearchServiceTest {
     }
 
     @Test
-    void testSearch_LazyInitialization() {
+    void testPreload_InitializesModel() {
         SemanticSearchService freshService = new SemanticSearchService(articleCollection);
-
-        assertFalse(freshService.isInitialized(),
-                "Service should not be initialized before first search");
-
-        freshService.search("test");
+        freshService.preload();
 
         assertTrue(freshService.isInitialized(),
-                "Service should be initialized after first search");
+                "Service should be initialized after preload()");
     }
 
     @Test

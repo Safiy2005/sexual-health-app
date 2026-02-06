@@ -17,7 +17,9 @@ import java.util.*;
 /**
  * Semantic search using local ONNX vector embeddings (all-MiniLM-L6-v2).
  * Embeds article sections and searches by cosine similarity.
- * Lazy-initialized on first search for fast app startup.
+ *
+ * <p>The ONNX model and embedding store are static (shared across instances)
+ * so that {@link #preload()} from any instance warms the cache for all.</p>
  */
 public class SemanticSearchService {
 
@@ -26,9 +28,9 @@ public class SemanticSearchService {
 
     private final ArticleCollection articleCollection;
 
-    private volatile EmbeddingModel embeddingModel;
-    private volatile InMemoryEmbeddingStore<TextSegment> embeddingStore;
-    private final Object initLock = new Object();
+    private static volatile EmbeddingModel embeddingModel;
+    private static volatile InMemoryEmbeddingStore<TextSegment> embeddingStore;
+    private static final Object initLock = new Object();
 
     /** Production: uses singleton collection. */
     public SemanticSearchService() {
@@ -89,7 +91,12 @@ public class SemanticSearchService {
         return sorted;
     }
 
-    /** Lazy initialization: loads ONNX model and embeds all article sections. */
+    /** Pre-loads the ONNX model and embeds all articles. Thread-safe. */
+    public void preload() {
+        ensureInitialized();
+    }
+
+    /** Loads ONNX model and embeds all article sections if not already done. */
     private void ensureInitialized() {
         if (embeddingModel == null) {
             synchronized (initLock) {
@@ -98,7 +105,7 @@ public class SemanticSearchService {
                     EmbeddingModel model = new AllMiniLmL6V2QuantizedEmbeddingModel();
                     embedArticles(model);
                     // Set embeddingModel last so other threads see fully initialized state
-                    this.embeddingModel = model;
+                    SemanticSearchService.embeddingModel = model;
                 }
             }
         }
