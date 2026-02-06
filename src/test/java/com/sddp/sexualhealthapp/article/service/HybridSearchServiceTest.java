@@ -151,4 +151,14 @@ public class HybridSearchServiceTest {
     void testSearchTop_NegativeLimit_ReturnsEmpty() {
         assertTrue(hybridService.searchTop("test", -1).isEmpty());
     }
+
+    @Test
+    void testSearch_GarbageQuery_ScoresLow() {
+        // Before fix: garbage always scored 60% due to normalized semantic.
+        // After fix: floor-adjusted cosine similarity means garbage scores reflect actual (low) similarity.
+        List<SearchResult> results = hybridService.search("asdfghjkl xyzzy qqq", 0.0);
+
+        assertTrue(results.isEmpty() || results.get(0).score() < 0.15,
+                "Garbage query should score below 0.15 after floor adjustment");
+    }
 }

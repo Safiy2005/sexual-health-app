@@ -61,7 +61,7 @@ public class MainAppController {
         }
 
         for (Article article : articles) {
-            articleListContainer.getChildren().add(createArticleCard(article, -1));
+            articleListContainer.getChildren().add(createArticleCard(article, -1.0));
         }
     }
 
@@ -93,7 +93,7 @@ public class MainAppController {
 
                 for (SearchResult result : results) {
                     articleListContainer.getChildren().add(
-                            createArticleCard(result.article(), result.getRelevancePercent()));
+                            createArticleCard(result.article(), result.score()));
                 }
             });
         });
@@ -101,9 +101,16 @@ public class MainAppController {
         searchThread.start();
     }
 
-    private VBox createArticleCard(Article article, int relevancePercent) {
+    private VBox createArticleCard(Article article, double score) {
         VBox card = new VBox(4);
         card.getStyleClass().add("article-card");
+
+        // Colour-code the card based on relevance tier (only during search)
+        if (score >= 0.5) {
+            card.getStyleClass().add("article-card-relevant");
+        } else if (score >= 0.25) {
+            card.getStyleClass().add("article-card-possible");
+        }
 
         // Title row
         HBox titleRow = new HBox(8);
@@ -115,9 +122,14 @@ public class MainAppController {
         title.setMaxWidth(260);
         titleRow.getChildren().add(title);
 
-        if (relevancePercent >= 0) {
-            Label badge = new Label(relevancePercent + "%");
+        // Relevance badge: only shown during search (score >= 0)
+        if (score >= 0.5) {
+            Label badge = new Label("Relevant");
             badge.getStyleClass().add("article-card-badge");
+            titleRow.getChildren().add(badge);
+        } else if (score >= 0.25) {
+            Label badge = new Label("Possible match");
+            badge.getStyleClass().add("article-card-badge-amber");
             titleRow.getChildren().add(badge);
         }
 

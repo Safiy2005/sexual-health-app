@@ -292,9 +292,9 @@ public class ArticleSearchIntegrationTest {
     void testHybridSearch_UnrelatedQuery() {
         List<SearchResult> results = hybridService.search("quantum physics");
 
-        // Semantic search may find loose associations, but score should not be very high
-        assertTrue(results.isEmpty() || results.get(0).score() < 0.8,
-                "Unrelated query should not produce high-confidence hybrid results");
+        // With floor-adjusted cosine similarity, unrelated queries should score very low
+        assertTrue(results.isEmpty() || results.get(0).score() < 0.15,
+                "Unrelated query should score below 0.15 after semantic floor adjustment");
     }
 
     @Test

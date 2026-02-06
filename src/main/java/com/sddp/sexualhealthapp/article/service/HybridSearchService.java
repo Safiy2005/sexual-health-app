@@ -8,13 +8,18 @@ import java.util.stream.Collectors;
 
 /**
  * Hybrid search combining TF-IDF lexical scores with semantic vector similarity.
- * Formula: hybrid = 0.4 × normalized_tfidf + 0.6 × normalized_semantic
+ * Formula: hybrid = 0.4 × normalized_tfidf + 0.6 × adjusted_semantic
+ *
+ * Semantic scores are adjusted by subtracting a baseline floor because sentence
+ * embedding models produce non-zero cosine similarity (~0.5) even for unrelated text.
  */
 public class HybridSearchService {
 
     static final double TFIDF_WEIGHT = 0.4;
     static final double SEMANTIC_WEIGHT = 0.6;
-    private static final double DEFAULT_MIN_SCORE = 0.01;
+    /** Cosine similarity baseline for unrelated text in all-MiniLM-L6-v2. */
+    static final double SEMANTIC_FLOOR = 0.45;
+    private static final double DEFAULT_MIN_SCORE = 0.05;
 
     private final ArticleSearchService tfidfService;
     private final SemanticSearchService semanticService;
@@ -58,9 +63,9 @@ public class HybridSearchService {
             return Collections.emptyList();
         }
 
-        // Normalize scores to [0,1]
+        // Normalize TF-IDF to [0,1] (arbitrary scale needs normalization).
+        // Cosine similarity is already [0,1] and meaningful — use raw values.
         double[] tfidfRange = getRange(tfidfScoreMap.values());
-        double[] semanticRange = getRange(semanticScores.values());
 
         // Compute hybrid scores
         List<SearchResult> results = new ArrayList<>();
@@ -70,9 +75,12 @@ public class HybridSearchService {
             double rawSemantic = semanticScores.getOrDefault(article, 0.0);
 
             double normTfidf = normalize(rawTfidf, tfidfRange[0], tfidfRange[1]);
-            double normSemantic = normalize(rawSemantic, semanticRange[0], semanticRange[1]);
 
-            double hybridScore = TFIDF_WEIGHT * normTfidf + SEMANTIC_WEIGHT * normSemantic;
+            // Subtract baseline floor and rescale to [0,1].
+            // Cosine similarity from MiniLM is ~0.45-0.55 even for unrelated text.
+            double adjustedSemantic = Math.max(0.0, (rawSemantic - SEMANTIC_FLOOR) / (1.0 - SEMANTIC_FLOOR));
+
+            double hybridScore = TFIDF_WEIGHT * normTfidf + SEMANTIC_WEIGHT * adjustedSemantic;
 
             if (hybridScore >= minScore) {
                 Map<String, Double> fieldScores = Map.of(
