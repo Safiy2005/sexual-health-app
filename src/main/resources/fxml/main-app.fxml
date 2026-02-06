@@ -4,45 +4,69 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.sddp.sexualhealthapp.mainapp.controller.MainAppController"
-      styleClass="main-app-root"
-      spacing="16"
-      alignment="CENTER"
-      prefWidth="360"
-      prefHeight="640">
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.sddp.sexualhealthapp.mainapp.controller.MainAppController"
+           styleClass="main-app-root"
+           prefWidth="360"
+           prefHeight="640">
 
-    <padding>
-        <Insets top="50" right="24" bottom="40" left="24"/>
-    </padding>
+    <!-- Layer 1: Search View (articles list + search) -->
+    <VBox fx:id="searchView" spacing="0">
 
-    <!-- Welcome Title -->
-    <Label text="Welcome"
-           styleClass="main-app-title"/>
+        <!-- Header bar with title and lock button -->
+        <HBox styleClass="search-header" alignment="CENTER_LEFT" spacing="10">
+            <padding>
+                <Insets top="16" right="16" bottom="12" left="16"/>
+            </padding>
+            <Label text="Articles" styleClass="search-header-title" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+            <Button text="Lock" styleClass="lock-button" onAction="#handleBackToCalculator"/>
+        </HBox>
 
-    <!-- Subtitle Message -->
-    <Label text="This is a placeholder for the main sexual health a user will reach after entering their secret equation"
-           styleClass="main-app-message"
-           wrapText="true"
-           textAlignment="CENTER"
-           maxWidth="280"/>
+        <!-- Search bar -->
+        <HBox styleClass="search-bar-container" alignment="CENTER">
+            <padding>
+                <Insets top="0" right="16" bottom="12" left="16"/>
+            </padding>
+            <TextField fx:id="searchField"
+                       promptText="Search symptoms, conditions..."
+                       styleClass="search-field"
+                       HBox.hgrow="ALWAYS"/>
+        </HBox>
 
-    <!-- Spacer -->
-    <Region VBox.vgrow="ALWAYS"/>
+        <!-- Results / articles list -->
+        <ScrollPane fx:id="listScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
+                    styleClass="search-scroll-pane" hbarPolicy="NEVER">
+            <VBox fx:id="articleListContainer" spacing="8" styleClass="article-list-container">
+                <padding>
+                    <Insets top="4" right="16" bottom="16" left="16"/>
+                </padding>
+                <!-- Article cards are added programmatically -->
+            </VBox>
+        </ScrollPane>
+    </VBox>
 
-    <!-- Coming Soon Notice -->
-    <Label text="More features coming soon"
-           styleClass="main-app-subtitle"
-           wrapText="true"
-           textAlignment="CENTER">
-        <VBox.margin>
-            <Insets bottom="24"/>
-        </VBox.margin>
-    </Label>
+    <!-- Layer 2: Article Detail View (hidden initially) -->
+    <VBox fx:id="articleView" visible="false" styleClass="article-detail-root">
 
-    <!-- Lock Button -->
-    <Button text="Lock App"
-            styleClass="back-button"
-            onAction="#handleBackToCalculator"/>
-</VBox>
+        <!-- Back bar -->
+        <HBox styleClass="article-back-bar" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="16" right="16" bottom="12" left="16"/>
+            </padding>
+            <Button text="Back" styleClass="article-back-button" onAction="#handleBackToSearch"/>
+            <Region HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <!-- Article content -->
+        <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS"
+                    styleClass="search-scroll-pane" hbarPolicy="NEVER">
+            <VBox fx:id="articleContentContainer" spacing="12" styleClass="article-content-container">
+                <padding>
+                    <Insets top="4" right="20" bottom="24" left="20"/>
+                </padding>
+            </VBox>
+        </ScrollPane>
+    </VBox>
+
+</StackPane>
