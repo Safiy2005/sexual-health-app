@@ -153,5 +153,35 @@
       "HIV testing",
       "sexual health services"
     ]
+  },
+  "brook-hiv.md": {
+    "title": "HIV",
+    "source": "Brook",
+    "filePath": "article-mds/brook-hiv.md",
+    "tags": [
+      "HIV",
+      "viral",
+      "sexual-health",
+      "treatment",
+      "prevention"
+    ],
+    "keywords": [
+      "HIV",
+      "AIDS",
+      "antiretroviral therapy",
+      "undetectable",
+      "U=U",
+      "PrEP",
+      "PEP",
+      "condom",
+      "sexual health clinic",
+      "sexual health services",
+      "STI prevention",
+      "HIV testing",
+      "viral load",
+      "CD4 count",
+      "sexual health adviser",
+      "partner notification"
+    ]
   }
 }
