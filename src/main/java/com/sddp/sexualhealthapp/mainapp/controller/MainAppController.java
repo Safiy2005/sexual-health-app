@@ -15,6 +15,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -198,9 +199,13 @@ public class MainAppController {
         buildPageIndicators();
         updatePageCounter();
 
-        // Set up swipe gesture handling on the container
-        articlePageContainer.setOnMousePressed(e -> swipeStartX = e.getSceneX());
-        articlePageContainer.setOnMouseReleased(e -> {
+        // Use event filters (capture phase) so the StackPane sees the press
+        // before the child ScrollPane consumes it for its own panning.
+        articlePageContainer.addEventFilter(MouseEvent.MOUSE_PRESSED, e -> {
+            swipeStartX = e.getSceneX();
+        });
+
+        articlePageContainer.addEventFilter(MouseEvent.MOUSE_RELEASED, e -> {
             double deltaX = e.getSceneX() - swipeStartX;
             if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
                 if (deltaX < 0) {
