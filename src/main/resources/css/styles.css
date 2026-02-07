@@ -589,6 +589,90 @@
 }
 
 /* ============================================
+   SWIPABLE ARTICLE PAGES
+   ============================================ */
+
+/* Container that holds all swipable pages */
+.article-page-container {
+    -fx-background-color: transparent;
+    -fx-clip-content: true;      /* clip children so off-screen pages are hidden */
+}
+
+/* Wrapper around each page (fills the StackPane) */
+.article-page-wrapper {
+    -fx-background-color: transparent;
+}
+
+/* Inner content of each page */
+.article-page {
+    -fx-background-color: transparent;
+}
+
+/* Table-of-contents header on title page */
+.article-toc-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #4A7A7A;
+    -fx-padding: 12px 0 4px 0;
+}
+
+/* Individual TOC item */
+.article-toc-item {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+    -fx-padding: 4px 0 4px 8px;
+}
+
+/* Swipe hint label */
+.article-swipe-hint {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-font-style: italic;
+    -fx-padding: 18px 0 0 0;
+    -fx-alignment: center;
+}
+
+/* Section number badge */
+.article-section-badge {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 3px 10px;
+    -fx-background-radius: 10px;
+    -fx-max-width: 140px;
+    -fx-alignment: center;
+}
+
+/* Page indicator bar */
+.page-indicator-bar {
+    -fx-background-color: transparent;
+}
+
+/* Inactive page dot */
+.page-dot {
+    -fx-fill: #C8BFB6;
+    -fx-cursor: hand;
+}
+
+/* Active page dot */
+.page-dot-active {
+    -fx-fill: #7DBBB5;
+    -fx-cursor: hand;
+}
+
+/* Page counter label (e.g. "1 / 5") */
+.page-counter-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+}
+
+/* ============================================
    ONBOARDING TUTORIAL STYLES
    ============================================ */
 
