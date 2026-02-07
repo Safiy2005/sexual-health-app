@@ -33,6 +33,8 @@ public class ArticleViewController {
     private int currentPageIndex;
     private double swipeStartX;
 
+    private boolean hasSetUpSwipeEvents = false;
+
     private static final double SWIPE_THRESHOLD = 50.0;
     private static final int SLIDE_DURATION_MS = 250;
 
@@ -80,22 +82,27 @@ public class ArticleViewController {
         buildPageIndicators();
         updatePageCounter();
 
-        // Use event filters (capture phase) so the StackPane sees the press
-        // before the child ScrollPane consumes it for its own panning.
-        articlePageContainer.addEventFilter(MouseEvent.MOUSE_PRESSED, e -> {
-            swipeStartX = e.getSceneX();
-        });
+        // Repeated registering of these events will cause pages to be skipped over
+        if (!hasSetUpSwipeEvents) {
+            hasSetUpSwipeEvents = true;
 
-        articlePageContainer.addEventFilter(MouseEvent.MOUSE_RELEASED, e -> {
-            double deltaX = e.getSceneX() - swipeStartX;
-            if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
-                if (deltaX < 0) {
-                    navigateToPage(currentPageIndex + 1);
-                } else {
-                    navigateToPage(currentPageIndex - 1);
+            // Use event filters (capture phase) so the StackPane sees the press
+            // before the child ScrollPane consumes it for its own panning.
+            articlePageContainer.addEventFilter(MouseEvent.MOUSE_PRESSED, e -> {
+                swipeStartX = e.getSceneX();
+            });
+
+            articlePageContainer.addEventFilter(MouseEvent.MOUSE_RELEASED, e -> {
+                double deltaX = e.getSceneX() - swipeStartX;
+                if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
+                    if (deltaX < 0) {
+                        navigateToPage(currentPageIndex + 1);
+                    } else {
+                        navigateToPage(currentPageIndex - 1);
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     /**
