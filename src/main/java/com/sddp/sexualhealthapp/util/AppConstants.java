@@ -115,4 +115,7 @@ public final class AppConstants {
      * Initial display value when calculator starts.
      */
     public static final String CALC_INITIAL_DISPLAY = "0";
+
+    // ARTICLE CONSTANTS
+    public static final String ARTICLE_MARKDOWN_PATH = "article-mds";
 }

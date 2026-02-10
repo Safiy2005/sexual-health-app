@@ -369,6 +369,310 @@
 }
 
 /* ============================================
+   SEARCH & ARTICLE READER STYLES
+   ============================================ */
+
+/* Search header bar */
+.search-header {
+    -fx-background-color: transparent;
+}
+
+.search-header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+/* Lock button (small, top-right) */
+.lock-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+}
+
+.lock-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.lock-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+/* Search text field */
+.search-field {
+    -fx-background-color: #EDE5DD;
+    -fx-text-fill: #3D5A5B;
+    -fx-prompt-text-fill: #9AABAB;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 10px 14px;
+    -fx-background-radius: 12px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12px;
+}
+
+.search-field:focused {
+    -fx-background-color: #E5DDD5;
+    -fx-border-color: #7DBBB5;
+    -fx-border-width: 1.5px;
+}
+
+/* ScrollPane transparency */
+.search-scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.search-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.search-scroll-pane > .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.search-scroll-pane > .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.search-scroll-pane > .scroll-bar:vertical .thumb {
+    -fx-background-color: #C8BFB6;
+    -fx-background-radius: 4px;
+}
+
+/* Article list container */
+.article-list-container {
+    -fx-background-color: transparent;
+}
+
+/* Article card */
+.article-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);
+}
+
+.article-card:hover {
+    -fx-background-color: #F7F3EF;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.14), 8, 0, 0, 3);
+}
+
+/* Relevance-coloured card variants */
+.article-card-relevant {
+    -fx-background-color: #F2FAF8;
+    -fx-border-color: #5BA69E;
+    -fx-border-width: 0 0 0 4px;
+    -fx-border-radius: 12px;
+}
+
+.article-card-relevant:hover {
+    -fx-background-color: #E6F4F1;
+}
+
+.article-card-possible {
+    -fx-background-color: #FDF8F0;
+    -fx-border-color: #C4A96A;
+    -fx-border-width: 0 0 0 4px;
+    -fx-border-radius: 12px;
+}
+
+.article-card-possible:hover {
+    -fx-background-color: #F7EFE0;
+}
+
+.article-card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.article-card-badge {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 2px 8px;
+    -fx-background-radius: 10px;
+}
+
+.article-card-badge-amber {
+    -fx-background-color: #F0E6D2;
+    -fx-text-fill: #8A7355;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 2px 8px;
+    -fx-background-radius: 10px;
+}
+
+.article-card-subtitle {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+}
+
+/* Empty / loading state */
+.search-empty-label {
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-padding: 40px 0 0 0;
+    -fx-alignment: center;
+}
+
+/* ============================================
+   ARTICLE DETAIL VIEW
+   ============================================ */
+
+.article-detail-root {
+    -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
+}
+
+.article-back-bar {
+    -fx-background-color: transparent;
+}
+
+.article-back-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+}
+
+.article-back-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.article-back-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+.article-content-container {
+    -fx-background-color: transparent;
+}
+
+.article-detail-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+    -fx-padding: 0 0 8px 0;
+}
+
+.article-section-heading {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #4A7A7A;
+    -fx-padding: 12px 0 4px 0;
+}
+
+.article-section-content {
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+    -fx-line-spacing: 3px;
+}
+
+/* ============================================
+   SWIPABLE ARTICLE PAGES
+   ============================================ */
+
+/* Container that holds all swipable pages */
+.article-page-container {
+    -fx-background-color: transparent;
+    -fx-clip-content: true;      /* clip children so off-screen pages are hidden */
+}
+
+/* Wrapper around each page (fills the StackPane) */
+.article-page-wrapper {
+    -fx-background-color: transparent;
+}
+
+/* Inner content of each page */
+.article-page {
+    -fx-background-color: transparent;
+}
+
+/* Table-of-contents header on title page */
+.article-toc-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #4A7A7A;
+    -fx-padding: 12px 0 4px 0;
+}
+
+/* Individual TOC item */
+.article-toc-item {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+    -fx-padding: 4px 0 4px 8px;
+}
+
+/* Swipe hint label */
+.article-swipe-hint {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-font-style: italic;
+    -fx-padding: 18px 0 0 0;
+    -fx-alignment: center;
+}
+
+/* Section number badge */
+.article-section-badge {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 3px 10px;
+    -fx-background-radius: 10px;
+    -fx-max-width: 140px;
+    -fx-alignment: center;
+}
+
+/* Page indicator bar */
+.page-indicator-bar {
+    -fx-background-color: transparent;
+}
+
+/* Inactive page dot */
+.page-dot {
+    -fx-fill: #C8BFB6;
+    -fx-cursor: hand;
+}
+
+/* Active page dot */
+.page-dot-active {
+    -fx-fill: #7DBBB5;
+    -fx-cursor: hand;
+}
+
+/* Page counter label (e.g. "1 / 5") */
+.page-counter-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+}
+
+/* ============================================
    ONBOARDING TUTORIAL STYLES
    ============================================ */
 

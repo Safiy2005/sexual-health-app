@@ -1,5 +1,6 @@
 package com.sddp.sexualhealthapp;
 
+import com.sddp.sexualhealthapp.article.service.SemanticSearchService;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
@@ -47,6 +48,11 @@ public class SexualHealthApp extends Application {
         primaryStage.setTitle(AppConstants.APP_TITLE);
         primaryStage.setResizable(false);
         primaryStage.show();
+
+        // Pre-load the ONNX embedding model in the background so first search is fast
+        Thread preloadThread = new Thread(() -> new SemanticSearchService().preload());
+        preloadThread.setDaemon(true);
+        preloadThread.start();
     }
 
     /**
