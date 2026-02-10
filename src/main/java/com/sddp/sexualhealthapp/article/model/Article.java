@@ -8,8 +8,6 @@ import org.commonmark.node.*;
 import org.commonmark.parser.Parser;
 import org.commonmark.renderer.text.*;
 
-// TODO: Use commonmark to render to HTML and then render it in a JavaFX webview component?
-
 public class Article {
     public record Section(String heading, String content) {
     }

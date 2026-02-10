@@ -15,7 +15,6 @@ import java.util.function.Consumer;
 public final class ArticleCardFactory {
 
     private ArticleCardFactory() {
-        // Utility class
     }
 
     /**
