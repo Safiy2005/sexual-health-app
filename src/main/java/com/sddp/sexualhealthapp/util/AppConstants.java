@@ -99,6 +99,27 @@ public final class AppConstants {
      */
     public static final int ONBOARDING_SLIDE_DURATION_MS = 150;
 
+    // Scene transition animation durations
+    /**
+     * Default crossfade duration for setup↔calculator transitions (ms).
+     */
+    public static final int SCENE_CROSSFADE_MS = 300;
+
+    /**
+     * Fast crossfade duration for the lock button transition (ms).
+     */
+    public static final int LOCK_CROSSFADE_MS = 150;
+
+    /**
+     * Slower, elegant crossfade for calculator→main app reveal (ms).
+     */
+    public static final int REVEAL_FADE_MS = 400;
+
+    /**
+     * Slide duration for search↔article view transitions within the main app (ms).
+     */
+    public static final int VIEW_SLIDE_MS = 250;
+
     // Error Messages
     /**
      * Error message displayed when equation validation fails due to incorrect math.
