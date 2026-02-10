@@ -11,7 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit tests for HybridSearchService.
- * Tests normalization utilities directly and hybrid behavior with real services.
+ * Tests normalization utilities directly and hybrid behavior with real
+ * services.
  */
 public class HybridSearchServiceTest {
 
@@ -154,11 +155,9 @@ public class HybridSearchServiceTest {
 
     @Test
     void testSearch_GarbageQuery_ScoresLow() {
-        // Before fix: garbage always scored 60% due to normalized semantic.
-        // After fix: floor-adjusted cosine similarity means garbage scores reflect actual (low) similarity.
-        List<SearchResult> results = hybridService.search("asdfghjkl xyzzy qqq", 0.0);
+        List<SearchResult> results = hybridService.search("jkewghklhregkjewhds;ofoirf4ufuhi", 0.0);
 
-        assertTrue(results.isEmpty() || results.get(0).score() < 0.15,
+        assertTrue(results.get(0).score() < 0.15,
                 "Garbage query should score below 0.15 after floor adjustment");
     }
 }

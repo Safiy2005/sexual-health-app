@@ -7,18 +7,20 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Hybrid search combining TF-IDF lexical scores with semantic vector similarity.
+ * Hybrid search combining TF-IDF lexical scores with semantic vector
+ * similarity.
  * Formula: hybrid = 0.4 × normalized_tfidf + 0.6 × adjusted_semantic
  *
  * Semantic scores are adjusted by subtracting a baseline floor because sentence
- * embedding models produce non-zero cosine similarity (~0.5) even for unrelated text.
+ * embedding models produce non-zero cosine similarity (~0.5-0.6) even for
+ * unrelated text.
  */
 public class HybridSearchService {
 
     static final double TFIDF_WEIGHT = 0.4;
     static final double SEMANTIC_WEIGHT = 0.6;
     /** Cosine similarity baseline for unrelated text in all-MiniLM-L6-v2. */
-    static final double SEMANTIC_FLOOR = 0.45;
+    static final double SEMANTIC_FLOOR = 0.50;
     private static final double DEFAULT_MIN_SCORE = 0.05;
 
     private final ArticleSearchService tfidfService;
@@ -85,8 +87,7 @@ public class HybridSearchService {
             if (hybridScore >= minScore) {
                 Map<String, Double> fieldScores = Map.of(
                         "tfidf", rawTfidf,
-                        "semantic", rawSemantic
-                );
+                        "semantic", rawSemantic);
                 results.add(new SearchResult(article, hybridScore, fieldScores));
             }
         }
@@ -106,7 +107,10 @@ public class HybridSearchService {
                 .toList();
     }
 
-    /** Min-max normalize a value to [0,1]. Returns 1.0 if min == max (all scores equal). */
+    /**
+     * Min-max normalize a value to [0,1]. Returns 1.0 if min == max (all scores
+     * equal).
+     */
     static double normalize(double value, double min, double max) {
         if (max == min) {
             return value > 0 ? 1.0 : 0.0;
@@ -114,13 +118,16 @@ public class HybridSearchService {
         return (value - min) / (max - min);
     }
 
-    /** Returns [min, max] of a collection of values. Returns [0,0] for empty collections. */
+    /**
+     * Returns [min, max] of a collection of values. Returns [0,0] for empty
+     * collections.
+     */
     static double[] getRange(Collection<Double> values) {
         if (values.isEmpty()) {
-            return new double[]{0.0, 0.0};
+            return new double[] { 0.0, 0.0 };
         }
         double min = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
         double max = values.stream().mapToDouble(Double::doubleValue).max().orElse(0.0);
-        return new double[]{min, max};
+        return new double[] { min, max };
     }
 }
