@@ -105,7 +105,7 @@ public class CalculatorController {
     }
 
     private void updateDisplay() {
-        displayLabel.setText(calculator.getCurrentDisplay());
+        displayLabel.setText(calculator.getFullDisplay());
     }
 
     /**
