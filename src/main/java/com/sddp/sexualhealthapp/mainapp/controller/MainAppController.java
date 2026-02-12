@@ -7,7 +7,10 @@ import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
+import com.sddp.sexualhealthapp.util.AppConstants;
+import javafx.animation.Interpolator;
 import javafx.animation.PauseTransition;
+import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -40,6 +43,7 @@ public class MainAppController {
 
     private HybridSearchService searchService;
     private PauseTransition searchDebounce;
+    private boolean isViewTransitioning = false;
 
     @FXML
     private void initialize() {
@@ -114,19 +118,51 @@ public class MainAppController {
     }
 
     private void openArticle(Article article) {
+        if (isViewTransitioning) return;
+        isViewTransitioning = true;
+
         articleViewController.openArticle(article);
-        searchView.setVisible(false);
+
+        // Position article view off-screen to the right, then slide in
+        articleView.setTranslateX(AppConstants.APP_WIDTH);
         articleView.setVisible(true);
+
+        TranslateTransition slide = new TranslateTransition(
+            Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
+        slide.setFromX(AppConstants.APP_WIDTH);
+        slide.setToX(0);
+        slide.setInterpolator(Interpolator.EASE_OUT);
+        slide.setOnFinished(e -> {
+            searchView.setVisible(false);
+            isViewTransitioning = false;
+        });
+        slide.play();
     }
 
     private void handleBackToSearch() {
-        articleView.setVisible(false);
+        if (isViewTransitioning) return;
+        isViewTransitioning = true;
+
+        // Make search view visible underneath before sliding article away
         searchView.setVisible(true);
+
+        TranslateTransition slide = new TranslateTransition(
+            Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
+        slide.setFromX(0);
+        slide.setToX(AppConstants.APP_WIDTH);
+        slide.setInterpolator(Interpolator.EASE_IN);
+        slide.setOnFinished(e -> {
+            articleView.setVisible(false);
+            articleView.setTranslateX(0);
+            isViewTransitioning = false;
+        });
+        slide.play();
     }
 
     @FXML
     private void handleBackToCalculator(ActionEvent event) {
-        SceneManager.getInstance().transitionToCalculator();
+        if (SceneManager.getInstance().isTransitioning()) return;
+        SceneManager.getInstance().transitionToCalculator(AppConstants.LOCK_CROSSFADE_MS);
     }
 
     private void showEmptyState(String message) {

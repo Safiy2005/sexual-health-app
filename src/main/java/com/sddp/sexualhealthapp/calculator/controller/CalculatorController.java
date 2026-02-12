@@ -117,6 +117,7 @@ public class CalculatorController {
 
         if (lastEquation != null && !lastEquation.isEmpty()) {
             if (authService.verifyEquation(lastEquation)) {
+                if (SceneManager.getInstance().isTransitioning()) return;
                 // Successful authentication - transition to main app
                 System.out.println("Authentication successful!");
                 SceneManager.getInstance().transitionToMainApp();
@@ -137,6 +138,7 @@ public class CalculatorController {
             boolean deleted = authService.deleteSecretEquation();
 
             if (deleted) {
+                if (SceneManager.getInstance().isTransitioning()) return;
                 System.out.println("Secret equation deleted successfully.");
                 calculator.clear();
                 updateDisplay();

@@ -47,17 +47,6 @@ public final class ArticleCardFactory {
         title.setMaxWidth(260);
         titleRow.getChildren().add(title);
 
-        // Relevance badge: only shown during search (score >= 0)
-        if (score >= 0.5) {
-            Label badge = new Label("Relevant");
-            badge.getStyleClass().add("article-card-badge");
-            titleRow.getChildren().add(badge);
-        } else if (score >= 0.25) {
-            Label badge = new Label("Possible match");
-            badge.getStyleClass().add("article-card-badge-amber");
-            titleRow.getChildren().add(badge);
-        }
-
         card.getChildren().add(titleRow);
 
         // Section count subtitle
