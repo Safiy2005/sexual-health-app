@@ -72,7 +72,7 @@ public class MainAppController {
 
         for (Article article : articles) {
             articleListContainer.getChildren().add(
-                    ArticleCardFactory.createArticleCard(article, -1.0, this::openArticle));
+                    ArticleCardFactory.createArticleCard(article, -1.0, "", this::openArticle));
         }
     }
 
@@ -105,7 +105,7 @@ public class MainAppController {
                 for (SearchResult result : results) {
                     articleListContainer.getChildren().add(
                             ArticleCardFactory.createArticleCard(
-                                    result.article(), result.score(), this::openArticle));
+                                    result.article(), result.score(), query, this::openArticle));
                 }
             });
         });

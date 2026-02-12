@@ -14,6 +14,8 @@ public class Article {
 
     private String title;
     private List<Section> sections;
+    private List<String> tags = List.of();
+    private String fileName;
 
     private Optional<String> extractText(Node node) {
         String rendered = TextContentRenderer.builder().build().render(node);
@@ -88,6 +90,22 @@ public class Article {
 
     public String getTitle() {
         return title;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags != null ? List.copyOf(tags) : List.of();
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public Article(String fileContent) {
