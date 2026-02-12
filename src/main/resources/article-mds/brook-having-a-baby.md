@@ -1,52 +1,61 @@
 # Having a baby
 
 ## Summary
-*   **Overview** Each year in England and Wales around 35,000 young women under the age of twenty will give birth, so if you’re pregnant and you decide to continue the pregnancy you’re not alone. There is loads of information and support on offer to help you have a safe and healthy pregnancy and birth.
-*   **Disclaimer** The following content is from brook.org.
+*   **Overview** Information and support for those deciding to continue a pregnancy, including medical care, rights at school and work, and preparing for life with a baby.
+*   **Disclaimer** The following content is from brook.org
 
-## Healthcare and advice
-*   **Initial steps** Your first step will be to book an appointment to see your GP, or directly with the midwifery service. These healthcare professionals will give you advice and information on how to stay healthy while you are pregnant. 
-*   **Healthy pregnancy** There are many places you can go for more information about being pregnant, but here are a few things that we can tell you about to start you off. You can get advice about how to have a healthy pregnancy, including how to eat and drink healthily from your midwife, doctor or another healthcare professional.
-*   **Smoking and drinking alcohol** All healthcare professionals will advise that smoking and drinking alcohol should be avoided during pregnancy. The NHS runs a stop smoking service called Smokefree which offers free help, support and advice, including specialist help with stopping smoking when you’re pregnant.
-*   **Healthy food and vitamins** If you’re under 18 and/or receive certain benefits you can get Healthy Start vouchers, which can be used towards certain healthy foods as well as free vitamins. Folic acid is a vitamin which is especially important to take in the early weeks of pregnancy. 
-*   **Folic acid** It can help to reduce the risk of some serious birth defects such as spina bifida. The National Institute for Health and Care Excellence (NICE) recommends a daily supplement of 400 micrograms of folic acid before pregnancy and during the first 12 weeks of pregnancy when the baby’s spine is developing.
+## Getting started: Part 1
+*   **Support** Each year in England and Wales around 35,000 young women under the age of twenty will give birth, so if you’re pregnant and you decide to continue the pregnancy you’re not alone. There is loads of information and support on offer to help you have a safe and healthy pregnancy and birth. Your first step will be to book an appointment to see your GP, or directly with the midwifery service. These healthcare professionals will give you advice and information on how to stay healthy while you are pregnant. 
+*   **General advice** There are many places you can go for more information about being pregnant, but here are a few things that we can tell you about to start you off. You can get advice about how to have a healthy pregnancy, including how to eat and drink healthily from your midwife, doctor or another healthcare professional.
 
-## Antenatal care
-*   **Antenatal classes** ‘Antenatal’ means ‘before birth’ (some people may also refer to it as prenatal – but it means the same thing). Antenatal classes are run at your local hospital, birth centre or community centre and they give you a chance to meet and share information with other parents-to-be. 
-*   **Preparation for birth** They are your opportunity to ask any questions you have about your pregnancy or the birth and are a great way to prepare for birth. To find out about antenatal classes you can ask your midwife, health visitor, or GP about courses provided by the NHS, or you can contact NCT about their antenatal classes which vary in price depending on the type of course and location.
-*   **Midwives** The word ‘midwife’ means ‘with woman’, and midwives are specialists in normal pregnancy and birth. They are qualified to look after a pregnant woman and her baby throughout the antenatal period, during labour and birth, and for up to 28 days after the baby has been born. 
-*   **Midwifery appointments** You will meet your midwife early on in your pregnancy and will have regular appointments with them to check how you are getting on. Many areas have midwives who are specially trained to work with young parents.
-*   **Ultrasound scans** Hospitals offer at least two ultrasound scans during pregnancy. The first is usually when you’re around 8-14 weeks pregnant and is sometimes called the dating scan, because it estimates when your baby is due. The second scan usually takes place between 18 weeks and 21 weeks. This scan checks to see if there are any problems with the developing foetus.
+## Smoking and drinking alcohol
+*   **Advice** All healthcare professionals will advise that smoking and drinking alcohol should be avoided during pregnancy. The NHS runs a stop smoking service called Smokefree which offers free help, support and advice, including specialist help with stopping smoking when you’re pregnant.
 
-## Education and work rights
-*   **At school** If you are still in school when you get pregnant, you can take up to 18 weeks off school before and after the birth. However you are expected to stay on at school until the end of Year 11, and if that isn’t possible the law says the local authority has to provide alternative education. 
-*   **Alternative education** It may be that in your local area there is specialised provision for young people who are pregnant and are still in education. After Year 11 and until you are 18, you either have to stay in full-time education, start an apprenticeship, or work/volunteer for 20 hours a week or more (whilst studying part time).
-*   **At work** There are laws to protect you if you are working when you get pregnant. For example, you can request flexible hours when you come back to work. New mothers are entitled to up to a year of maternity leave, and new fathers are also allowed to take two weeks paternity leave. 
-*   **Shared leave** In some circumstances part of this leave can also be shared to allow both parents to spend time with their child at the same time.
-*   **Equality law** You shouldn’t worry about being treated differently while in education or at work, as the Equality Act is a law which says that places like schools, colleges, universities and employers cannot treat someone differently just because they are pregnant. 
-*   **Challenging unfair treatment** If someone is being treated unfairly when they’re pregnant, they can get advice about how to challenge this by contacting: The Equality Advisory and Support Service on 0808 800 0082, The Children’s Legal Centre for information on family law (0300 330 5480) or education law (0300 330 5485) or the local Citizen’s Advice Bureau.
+## Healthy food and vitamins
+*   **Nutrition** If you’re under 18 and/or receive certain benefits you can get Healthy Start vouchers, which can be used towards certain healthy foods as well as free vitamins. Folic acid is a vitamin which is especially important to take in the early weeks of pregnancy. It can help to reduce the risk of some serious birth defects such as spina bifida. The National Institute for Health and Care Excellence (NICE) recommends a daily supplement of 400 micrograms of folic acid before pregnancy and during the first 12 weeks of pregnancy when the baby’s spine is developing.
 
-## Health and safety during pregnancy
-*   **Medical care and confidentiality** You might be tempted to keep the pregnancy secret while you pluck up the courage to talk to your parents or partner, but it is important to get good medical care and advice from early on in pregnancy. As soon as possible, talk to a professional who can help you and will keep your conversation confidential.
-*   **Risk of harm** You might want to continue with the pregnancy against the wishes of your family or partner. If you feel that you are at risk of harm within the home because of your decision, you need to contact someone who can help. 
-*   **ChildLine** ChildLine provide help and advice about a wide range of issues, you talk to a counsellor online, send an email, post on the message boards or call 0800 1111 anytime.
-*   **Symptoms** During your pregnancy you may feel tired or experience nausea or sickness (known as ‘morning sickness’ although this can be at any time of day). If you are worried about any of your symptoms you should speak to your GP or midwife. 
-*   **Trimesters** Pregnancies are around 40 weeks long and each stage is divided into three ‘trimesters’.
+## Antenatal: Part 1
+*   **Classes** ‘Antenatal’ means ‘before birth’ (some people may also refer to it as prenatal – but it means the same thing). Antenatal classes are run at your local hospital, birth centre or community centre and they give you a chance to meet and share information with other parents-to-be. They are your opportunity to ask any questions you have about your pregnancy or the birth and are a great way to prepare for birth. To find out about antenatal classes you can ask your midwife, health visitor, or GP about courses provided by the NHS, or you can contact NCT about their antenatal classes which vary in price depending on the type of course and location.
 
-## Birth and early parenting
-*   **Labour** When you go into labour, your midwife and the antenatal care you have received will prepare you to recognise the symptoms. There are different choices for where you have the baby and the type of birth you may want to have. 
-*   **After the birth** After the birth, you may stay in hospital overnight, or longer, depending on how the birth went and the health of you and your baby. You will need to register the birth within 42 days – the hospital staff will give you guidance on this, or you can contact the local register office for the area where the baby was born. 
-*   **Post-natal care** Your hospital, midwife or GP will advise when you should have a post-natal check after the birth. You can also discuss contraception at this appointment. 
-*   **Emotional wellbeing** Settling in to new family life can be a busy time, but if you find you are not feeling quite right emotionally or are worried about how you are feeling you should make an appointment to speak to your GP. Post-natal depression can develop around six weeks after giving birth, and it is a lot more common than people realise.
+## Midwives: Part 1
+*   **Specialists** The word ‘midwife’ means ‘with woman’, and midwives are specialists in normal pregnancy and birth. They are qualified to look after a pregnant woman and her baby throughout the antenatal period, during labour and birth, and for up to 28 days after the baby has been born. You will meet your midwife early on in your pregnancy and will have regular appointments with them to check how you are getting on. Many areas have midwives who are specially trained to work with young parents. 
 
-## Support systems and options
-*   **Preparation** Before the baby is born, you may find it helpful to think about the following things: Is there anyone you know who will help out or babysit on a regular basis? How do they feel about doing this? What sort of things could your parents or other adults you know do to help?
-*   **Support for partners** If you have a partner, are they feeling 100% ready to become a parent? What help might they need? It can also be helpful to think about things like finance and housing. Parenting is a lifelong commitment, and means being the legal guardian and carer of a child. 
-*   **Gingerbread** Gingerbread is an organisation which provides information on benefits, money, housing and childcare to single parents or young women who are pregnant and living with a parent. You can call their helpline on 0808 802 0925. 
-*   **Family Lives** Family Lives provides a free helpline on 0808 800 2222. It also provides support through online discussion forums.
-*   **Tommy’s** The charity Tommy’s have produced a book, The young woman’s guide to pregnancy, written especially for women under the age of 20. The book includes the real pregnancy experiences of young mums. 
-*   **Family Nurse Partnership** If you are a teenager and have had your first child, in some parts of England you can get extra support from the local Family Nurse Partnership – your GP or midwife will be able to give you more information about this.
-*   **Partner rights** A woman’s partner doesn’t have a right to decide if she continues her pregnancy or not. That is her decision. When a baby is born however, the man that the woman conceived with has rights and responsibilities, even if he is not in a relationship with the mother. He has a duty to provide financially for the child.
-*   **Adoption** Adoption is one of the choices a woman can make if she does not want to keep the baby. It is a way of placing a baby with new legal parents, so you would continue with the pregnancy and give birth, but you wouldn’t look after the baby, and you won’t have responsibility or legal rights once it’s adopted. 
-*   **Sexual and gender identity** A lot of information about pregnancy and parenting can assume that the person getting pregnant is in a heterosexual relationship, and/or is cisgender. Actually, people of different sexual identities and gender identities can and do get pregnant, or parent in other ways. 
-*   **LGBTQ+ parenting** Stonewall has a lot of information on parenting for those who identify as gay, lesbian and bisexual. You don’t have to be heterosexual, or even in a couple to adopt a child in the UK. CoramBAAF can provide more information.
+## What Happens At a Scan
+*   **Ultrasound** Hospitals offer at least two ultrasound scans during pregnancy. The first is usually when you’re around 8-14 weeks pregnant and is sometimes called the dating scan, because it estimates when your baby is due. The second scan usually takes place between 18 weeks and 21 weeks. This scan checks to see if there are any problems with the developing foetus.
+
+## At school
+*   **Education** If you are still in school when you get pregnant, you can take up to 18 weeks off school before and after the birth. However you are expected to stay on at school until the end of Year 11, and if that isn’t possible the law says the local authority has to provide alternative education. It may be that in your local area there is specialised provision for young people who are pregnant and are still in education. After Year 11 and until you are 18, you either have to stay in full-time education, start an apprenticeship, or work/volunteer for 20 hours a week or more (whilst studying part time).
+
+## At work
+*   **Maternity and paternity** There are laws to protect you if you are working when you get pregnant. For example, you can request flexible hours when you come back to work. New mothers are entitled to up to a year of maternity leave, and new fathers are also allowed to take two weeks paternity leave. In some circumstances part of this leave can also be shared to allow both parents to spend time with their child at the same time.
+
+## Equality law
+*   **Legal protection** You shouldn’t worry about being treated differently while in education or at work, as the Equality Act is a law which says that places like schools, colleges, universities and employers cannot treat someone differently just because they are pregnant. If someone is being treated unfairly when they’re pregnant, they can get advice about how to challenge this by contacting: The Equality Advisory and Support Service on 0808 800 0082, The Children’s Legal Centre for information on family law (0300 330 5480) or education law (0300 330 5485), Or the local Citizen’s Advice Bureau.
+
+## Support: Part 1
+*   **Confidentiality** You might be tempted to keep the pregnancy secret while you pluck up the courage to talk to your parents or partner, but it is important to get good medical care and advice from early on in pregnancy. As soon as possible, talk to a professional who can help you and will keep your conversation confidential. 
+*   **Risk of harm** You might want to continue with the pregnancy against the wishes of your family or partner. If you feel that you are at risk of harm within the home because of your decision, you need to contact someone who can help. ChildLine provide help and advice about a wide range of issues, you talk to a counsellor online, send an email, post on the message boards or call 0800 1111 anytime.
+
+## During your pregnancy
+*   **Symptoms and stages** During your pregnancy you may feel tired or experience nausea or sickness (known as ‘morning sickness’ although this can be at any time of day). If you are worried about any of your symptoms you should speak to your GP or midwife. Pregnancies are around 40 weeks long and each stage is divided into three ‘trimesters’. To see how your body and baby are developing throughout your pregnancy click on the NHS pregnancy week-by-week visual tool. 
+
+## Labour and birth
+*   **Process** When you go into labour, your midwife and the antenatal care you have received will prepare you to recognise the symptoms. There are different choices for where you have the baby and the type of birth you may want to have. After the birth, you may stay in hospital overnight, or longer, depending on how the birth went and the health of you and your baby. You will need to register the birth within 42 days – the hospital staff will give you guidance on this, or you can contact the local register office for the area where the baby was born.
+
+## After you've had a baby: Part 1
+*   **Post-natal care** Your hospital, midwife or GP will advise when you should have a post-natal check after the birth. You can discuss contraception at this appointment. Settling in to new family life can be a busy time, but if you find you are not feeling quite right emotionally or are worried about how you are feeling you should make an appointment to speak to your GP. Post-natal depression can develop around six weeks after giving birth, and it is a lot more common than people realise. 
+
+## After you've had a baby: Part 2
+*   **Life changes** Before the baby is born, you may find it helpful to think about the following things: Is there anyone you know who will help out or babysit on a regular basis? How do they feel about doing this? What sort of things could your parents or other adults you know do to help? If you have a partner, are they feeling 100% ready to become a parent? What help might they need? It can also be helpful to think about things like finance and housing. Parenting is a lifelong commitment, and means being the legal guardian and carer of a child. 
+
+## Parenting support: Part 1
+*   **Organisations** Some organisations that can provide advice on parenting are below. Gingerbread is an organisation which provides information on benefits, money, housing and childcare to single parents or young women who are pregnant and living with a parent. You can call their helpline on 0808 802 0925. Family Lives provides a free helpline on 0808 800 2222. It also provides support through online discussion forums. The charity Tommy’s have produced a book, The young woman’s guide to pregnancy, written especially for women under the age of 20.
+
+## Parenting support: Part 2
+*   **Additional resources** If you are a teenager and have had your first child, in some parts of England you can get extra support from the local Family Nurse Partnership – your GP or midwife will be able to give you more information about this. A woman’s partner doesn’t have a right to decide if she continues her pregnancy or not. That is her decision. When a baby is born however, the man that the woman conceived with has rights and responsibilities, even if he is not in a relationship with the mother. He has a duty to provide financially for the child.
+
+## Adoption
+*   **Making a choice** Adoption is one of the choices a woman can make if she does not want to keep the baby. It is a way of placing a baby with new legal parents, so you would continue with the pregnancy and give birth, but you wouldn’t look after the baby, and you won’t have responsibility or legal rights once it’s adopted. 
+
+## Identity and parenting
+*   **Inclusivity** A lot of information about pregnancy and parenting can assume that the person getting pregnant is in a heterosexual relationship, and/or is cisgender. Actually, people of different sexual identities and gender identities can and do get pregnant, or parent in other ways. Stonewall has a lot of information on parenting for those who identify as gay, lesbian and bisexual. You don’t have to be heterosexual, or even in a couple to adopt a child in the UK. CoramBAAF can provide more information.

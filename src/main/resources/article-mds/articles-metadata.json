@@ -10,22 +10,22 @@
       "Mental Health & Wellbeing"
     ],
     "keywords": [
-      "Lois' story",
       "gender identity",
-      "sexual orientation",
+      "sexuality",
       "non-binary",
       "Gen Z",
       "online communities",
       "social media",
-      "Instagram",
+      "pronouns",
       "self-discovery",
+      "fluidity",
       "bisexual",
       "pansexual",
-      "identity fluidity"
+      "coming out"
     ]
   },
   "brook-getting-your-cervical-screening.md": {
-    "title": "Getting your Cervical Screening: Smear Test",
+    "title": "Getting your Cervical Screening",
     "source": "Brook",
     "filePath": "article-mds/brook-getting-your-cervical-screening.md",
     "tags": [
@@ -40,34 +40,37 @@
       "HPV",
       "human papillomavirus",
       "cervix",
-      "cancer prevention",
+      "vagina",
       "speculum",
-      "vaginal health",
       "abnormal cells",
-      "sexual health appointment"
+      "cancer prevention",
+      "sexual health",
+      "NHS screening",
+      "vulva"
     ]
   },
   "brook-internal-or-female-condoms.md": {
-    "title": "Internal Condoms: How Femidom Works & What You Can Expect?",
+    "title": "Internal (or female) condoms",
     "source": "Brook",
     "filePath": "article-mds/brook-internal-or-female-condoms.md",
     "tags": [
       "Contraception",
       "STIs",
+      "Pregnancy & Choices",
       "Vulva, Vagina & Uterus",
       "Everyone"
     ],
     "keywords": [
-      "internal condoms",
-      "female condoms",
-      "Femidom",
+      "internal condom",
+      "female condom",
+      "femidom",
+      "polyurethane",
       "barrier method",
-      "pregnancy prevention",
       "STI protection",
-      "polyurethane condoms",
-      "safe sex",
-      "vagina health",
-      "non-hormonal contraception"
+      "pregnancy prevention",
+      "latex-free",
+      "contraception instructions",
+      "sexual health"
     ]
   },
   "brook-coming-out.md": {
@@ -82,17 +85,18 @@
     ],
     "keywords": [
       "coming out",
-      "LGBTQ+",
+      "LGBT+",
       "gender identity",
       "sexuality",
-      "gay",
-      "transgender",
-      "bisexual",
-      "queer",
       "cisgender",
+      "heterosexual",
       "being outed",
+      "support groups",
       "hate crime",
-      "disclosure"
+      "safety",
+      "bisexual",
+      "gay",
+      "trans"
     ]
   },
   "brook-queerness-sexual-health-and-mental-health-cassies-story.md": {
@@ -100,24 +104,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-queerness-sexual-health-and-mental-health-cassies-story.md",
     "tags": [
-      "Mental Health & Wellbeing",
       "LGBTQ+",
+      "Mental Health & Wellbeing",
       "Sex & Pleasure",
       "Relationships & Consent"
     ],
     "keywords": [
-      "Cassie",
-      "queer",
-      "lesbian",
-      "mental health",
+      "queerness",
       "sexual health",
+      "mental health",
+      "queerphobia",
       "internalised queerphobia",
       "heteronormativity",
       "sex education",
-      "porn",
+      "lesbian",
       "libido",
       "body image",
-      "lesbian bed death"
+      "queer community"
     ]
   },
   "brook-vagina-and-vulva-faqs.md": {
@@ -125,24 +128,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-vagina-and-vulva-faqs.md",
     "tags": [
+      "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
       "STIs",
-      "Anatomy & Cycles",
-      "Sex & Pleasure"
+      "Sex & Pleasure",
+      "Everyone"
     ],
     "keywords": [
       "vagina",
       "vulva",
-      "discharge",
-      "thrush",
-      "bacterial vaginosis",
-      "STI testing",
       "labiaplasty",
+      "discharge",
       "painful sex",
       "pubic hair",
+      "bacterial vaginosis",
+      "thrush",
       "cystitis",
       "vaginal dryness",
-      "menopause"
+      "STI testing"
     ]
   },
   "brook-about-enduring-love.md": {
@@ -151,22 +154,21 @@
     "filePath": "article-mds/brook-about-enduring-love.md",
     "tags": [
       "Relationships & Consent",
-      "Everyone",
+      "Mental Health & Wellbeing",
       "LGBTQ+",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "Enduring Love",
       "Jacqui Gabb",
-      "The Open University",
+      "Open University",
       "long-term relationships",
       "relationship diversity",
       "monogamy",
       "non-monogamy",
-      "relationship success",
-      "intimacy research",
-      "family dynamics",
-      "sociology of relationships"
+      "intimacy",
+      "sociology",
+      "relationship success"
     ]
   },
   "brook-casual-relationships.md": {
@@ -174,27 +176,27 @@
     "source": "Brook",
     "filePath": "article-mds/brook-casual-relationships.md",
     "tags": [
-      "Relationships & Consent",
-      "Sex & Pleasure",
-      "Mental Health & Wellbeing",
       "STIs",
+      "Relationships & Consent",
+      "Mental Health & Wellbeing",
+      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
+      "casual relationships",
       "situationships",
       "casual dating",
       "casual sex",
       "friends with benefits",
       "sneaky links",
-      "commitment",
-      "boundaries",
       "STI testing",
       "consent",
+      "relationship boundaries",
       "dating apps",
-      "exclusivity",
+      "emotional intimacy",
       "breadcrumbing",
-      "emotional support",
-      "relationship health"
+      "breakups",
+      "sexual health"
     ]
   },
   "brook-physical-health.md": {
@@ -203,22 +205,22 @@
     "filePath": "article-mds/brook-physical-health.md",
     "tags": [
       "Mental Health & Wellbeing",
-      "Anatomy & Cycles",
-      "Everyone"
+      "Everyone",
+      "Anatomy & Cycles"
     ],
     "keywords": [
       "physical health",
       "exercise",
+      "healthy diet",
       "nutrition",
-      "mental wellbeing",
-      "endorphins",
-      "moderate intensity",
-      "vigorous intensity",
-      "Eatwell Guide",
-      "balanced diet",
+      "NHS activity guidelines",
+      "moderate intensity activity",
+      "vigorous intensity activity",
       "muscle strengthening",
-      "fitness",
-      "healthy lifestyle"
+      "wellbeing",
+      "mental health",
+      "one minute movement challenge",
+      "fitness tips"
     ]
   },
   "brook-trauma-and-mental-illness-nats-story.md": {
@@ -229,21 +231,23 @@
       "Mental Health & Wellbeing",
       "Relationships & Consent",
       "Neurodivergent",
-      "LGBTQ+"
+      "LGBTQ+",
+      "Everyone"
     ],
     "keywords": [
       "trauma",
       "mental illness",
       "depression",
       "anorexia",
-      "OCD",
-      "EUPD",
+      "obsessive compulsive disorder",
+      "emotionally unstable personality disorder",
       "autism",
+      "abusive relationship",
       "sexual assault",
       "rape",
       "recovery",
-      "abuse",
-      "queer"
+      "queer",
+      "healing"
     ]
   },
   "brook-pubic-lice.md": {
@@ -258,14 +262,15 @@
     "keywords": [
       "pubic lice",
       "crabs",
-      "parasitic insects",
-      "louse saliva",
-      "STI symptoms",
-      "insecticide lotions",
-      "sexual health clinic",
-      "GUM clinic",
       "lice treatment",
-      "body hair"
+      "lice symptoms",
+      "body hair parasites",
+      "insecticide",
+      "sexual health",
+      "itching",
+      "transmission",
+      "diagnosis",
+      "pregnancy and lice"
     ]
   },
   "brook-adhd-and-navigating-sex-and-relationships.md": {
@@ -274,21 +279,25 @@
     "filePath": "article-mds/brook-adhd-and-navigating-sex-and-relationships.md",
     "tags": [
       "Neurodivergent",
+      "Mental Health & Wellbeing",
       "Relationships & Consent",
       "Sex & Pleasure",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "ADHD",
       "neurodiversity",
-      "Rejection Sensitivity Dysphoria",
+      "rejection sensitivity dysphoria",
       "RSD",
-      "libido",
       "hyperfocus",
-      "dating",
       "dopamine",
-      "emotional dysregulation",
-      "communication"
+      "libido",
+      "sex drive",
+      "dating",
+      "emotional regulation",
+      "communication",
+      "counselling",
+      "mental health"
     ]
   },
   "brook-abortion-helens-story.md": {
@@ -301,17 +310,18 @@
       "Everyone"
     ],
     "keywords": [
+      "abortion",
       "Helen's story",
-      "abortion experience",
-      "teenage pregnancy",
-      "GCSEs",
-      "surgical abortion",
       "pregnancy options",
-      "decision making",
+      "surgical abortion",
+      "medical abortion",
+      "teenage pregnancy",
+      "abortion experience",
+      "abortion relief",
+      "cervix",
       "anaesthesia",
-      "reproductive health",
-      "personal narrative",
-      "aftercare"
+      "contraception",
+      "sex education"
     ]
   },
   "brook-period-products.md": {
@@ -330,12 +340,11 @@
       "menstrual cups",
       "period pants",
       "toxic shock syndrome",
-      "menstruation",
-      "menstrual hygiene",
       "reusable period products",
       "period poverty",
-      "free tampons",
-      "free pads"
+      "free sanitary products",
+      "menstrual hygiene",
+      "menstrual health"
     ]
   },
   "brook-sarahs-story-navigating-anxiety-at-work.md": {
@@ -344,22 +353,20 @@
     "filePath": "article-mds/brook-sarahs-story-navigating-anxiety-at-work.md",
     "tags": [
       "Mental Health & Wellbeing",
-      "Everyone",
-      "Digital Life"
+      "Digital Life",
+      "Everyone"
     ],
     "keywords": [
       "anxiety",
-      "workplace mental health",
       "social anxiety",
+      "workplace wellbeing",
       "post-pandemic",
+      "working from home",
+      "self-care toolbox",
       "introversion",
-      "mental health toolbox",
-      "self-care",
+      "mental health awareness",
       "burnout",
-      "wellbeing techniques",
-      "emotional depletion",
-      "social battery",
-      "journaling"
+      "coping strategies"
     ]
   },
   "brook-starting-your-period.md": {
@@ -372,17 +379,17 @@
       "Everyone"
     ],
     "keywords": [
-      "starting period",
+      "starting your period",
       "first period",
       "menstruation",
       "puberty",
       "pads",
       "tampons",
       "menstrual cups",
-      "period pants",
+      "period products",
       "period leaks",
-      "school products",
-      "menstrual hygiene"
+      "menstrual health",
+      "period advice"
     ]
   },
   "brook-menopause-myths.md": {
@@ -394,7 +401,7 @@
       "Sex & Pleasure",
       "Mental Health & Wellbeing",
       "Contraception",
-      "Vulva, Vagina & Uterus"
+      "Pregnancy & Choices"
     ],
     "keywords": [
       "menopause",
@@ -403,12 +410,11 @@
       "hot flushes",
       "libido",
       "vaginal dryness",
-      "contraception",
-      "hormones",
+      "hormone replacement therapy",
+      "surgical menopause",
+      "chemical menopause",
       "FSH test",
-      "menopause symptoms",
-      "menopause myths",
-      "reproductive health"
+      "menopause symptoms"
     ]
   },
   "brook-challenging-masculinity-and-the-manosphere.md": {
@@ -416,23 +422,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-challenging-masculinity-and-the-manosphere.md",
     "tags": [
-      "Mental Health & Wellbeing",
       "Digital Life",
+      "Mental Health & Wellbeing",
       "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "masculinity",
       "manosphere",
-      "incel culture",
       "misogyny",
+      "incel culture",
       "gender stereotypes",
-      "social media",
-      "active bystander",
       "online safety",
+      "active bystander",
+      "social media algorithms",
       "radicalisation",
-      "healthy relationships",
-      "toxic masculinity"
+      "toxic masculinity",
+      "sexism",
+      "mental health"
     ]
   },
   "brook-smoking-and-vaping.md": {
@@ -445,18 +452,18 @@
       "Pregnancy & Choices"
     ],
     "keywords": [
-      "vaping",
       "smoking",
+      "vaping",
       "nicotine",
       "addiction",
+      "quitting",
       "e-cigarettes",
-      "quitting smoking",
-      "health risks",
-      "withdrawal symptoms",
-      "lung disease",
+      "withdrawal",
       "heart disease",
-      "environmental impact",
-      "mental health benefits"
+      "lung cancer",
+      "anxiety",
+      "carbon monoxide",
+      "fertility"
     ]
   },
   "brook-contraception-during-perimenopause-and-menopause.md": {
@@ -465,8 +472,9 @@
     "filePath": "article-mds/brook-contraception-during-perimenopause-and-menopause.md",
     "tags": [
       "Contraception",
-      "Anatomy & Cycles",
       "Pregnancy & Choices",
+      "Anatomy & Cycles",
+      "Vulva, Vagina & Uterus",
       "Everyone"
     ],
     "keywords": [
@@ -477,13 +485,11 @@
       "hormone replacement therapy",
       "Mirena coil",
       "combined pill",
-      "injection",
-      "implant",
-      "hormonal coil",
+      "progestogen-only pill",
       "copper coil",
-      "condoms",
+      "fertility",
       "sterilisation",
-      "emergency contraception"
+      "hormonal coil"
     ]
   },
   "brook-safety-on-dating-apps-rachels-story.md": {
@@ -491,22 +497,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-safety-on-dating-apps-rachels-story.md",
     "tags": [
-      "Digital Life",
       "Relationships & Consent",
+      "Digital Life",
       "STIs",
-      "LGBTQ+"
+      "LGBTQ+",
+      "Sex & Pleasure"
     ],
     "keywords": [
       "dating apps",
-      "online dating",
-      "safety",
-      "STI testing",
-      "LGBTQ+",
-      "relationships",
+      "online safety",
       "Hinge",
-      "safety tips",
-      "sharing location",
-      "Rachel's story"
+      "STI testing",
+      "location sharing",
+      "first date safety",
+      "LGBTQ dating",
+      "authenticity",
+      "sexual health",
+      "meeting people online"
     ]
   },
   "brook-abuse.md": {
@@ -516,7 +523,6 @@
     "tags": [
       "Relationships & Consent",
       "Mental Health & Wellbeing",
-      "Digital Life",
       "Everyone"
     ],
     "keywords": [
@@ -525,40 +531,39 @@
       "coercive control",
       "sexual abuse",
       "emotional abuse",
-      "psychological abuse",
       "financial abuse",
       "gaslighting",
-      "physical abuse",
+      "Clare's Law",
       "digital abuse",
       "stalking",
-      "Clare's Law",
-      "intimate partner violence",
-      "consent"
+      "relationship safety",
+      "intimate partner violence"
     ]
   },
   "brook-what-is-virginity.md": {
-    "title": "What is \u2018virginity\u2019?",
+    "title": "Virginity: What Does It Mean and Why Is Is Outdated?",
     "source": "Brook",
     "filePath": "article-mds/brook-what-is-virginity.md",
     "tags": [
       "Relationships & Consent",
       "Anatomy & Cycles",
+      "Vulva, Vagina & Uterus",
       "Sex & Pleasure",
-      "Vulva, Vagina & Uterus"
+      "Everyone"
     ],
     "keywords": [
       "virginity",
       "hymen",
       "sexual debut",
       "vaginal sex",
-      "consent",
       "virginity testing",
       "hymenoplasty",
+      "consent",
       "gender stereotypes",
-      "purity myths",
-      "FGM",
+      "female genital mutilation",
       "honour violence",
-      "sexual health"
+      "vulva",
+      "vagina"
     ]
   },
   "brook-love-your-penis.md": {
@@ -566,50 +571,48 @@
     "source": "Brook",
     "filePath": "article-mds/brook-love-your-penis.md",
     "tags": [
-      "Penis & Testicles",
       "Anatomy & Cycles",
+      "Penis & Testicles",
       "Sex & Pleasure",
-      "Mental Health & Wellbeing",
-      "Everyone"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
       "penis",
       "testicles",
       "erections",
       "puberty",
-      "sexual health",
-      "anatomy",
       "erectile dysfunction",
       "involuntary erections",
       "orgasm",
-      "pornography",
       "masturbation",
-      "sexual pleasure"
+      "porn",
+      "body image",
+      "sexual pleasure",
+      "anatomy"
     ]
   },
   "brook-porn-fionas-story.md": {
-    "title": "Porn: Fiona\u2019s story",
+    "title": "Porn: Fiona's story",
     "source": "Brook",
     "filePath": "article-mds/brook-porn-fionas-story.md",
     "tags": [
       "Relationships & Consent",
       "Mental Health & Wellbeing",
-      "Sex & Pleasure",
-      "Digital Life"
+      "Digital Life",
+      "Sex & Pleasure"
     ],
     "keywords": [
       "pornography",
-      "relationship impact",
-      "self-esteem",
+      "personal story",
+      "relationship issues",
       "depression",
-      "mental health",
-      "masturbation",
+      "self-esteem",
+      "intimacy",
+      "addiction",
       "counselling",
       "sexual health",
-      "personal story",
-      "partner support",
-      "sexual boundaries",
-      "communication"
+      "digital life",
+      "masturbation"
     ]
   },
   "brook-oral-sex.md": {
@@ -617,25 +620,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-oral-sex.md",
     "tags": [
+      "Sex & Pleasure",
       "STIs",
       "Relationships & Consent",
-      "Sex & Pleasure",
-      "Penis & Testicles",
-      "Vulva, Vagina & Uterus"
+      "Everyone"
     ],
     "keywords": [
       "oral sex",
-      "blowjobs",
-      "giving head",
+      "blowjob",
       "rimming",
       "analingus",
       "STIs",
       "HPV",
-      "consent",
-      "dental dams",
       "condoms",
+      "dental dams",
+      "consent",
       "sexual health",
-      "masturbation"
+      "masturbation",
+      "barrier methods"
     ]
   },
   "brook-vaginal-sex.md": {
@@ -644,20 +646,23 @@
     "filePath": "article-mds/brook-vaginal-sex.md",
     "tags": [
       "Sex & Pleasure",
-      "Contraception",
+      "Vulva, Vagina & Uterus",
+      "Penis & Testicles",
       "STIs",
-      "Relationships & Consent",
-      "Vulva, Vagina & Uterus"
+      "Contraception"
     ],
     "keywords": [
       "vaginal sex",
-      "penetration",
-      "consent",
-      "pregnancy",
+      "penetrative sex",
+      "penis-in-vagina",
+      "contraception",
       "condoms",
-      "emergency contraception",
-      "orgasm",
+      "STIs",
+      "pregnancy",
+      "consent",
       "clitoris",
+      "orgasm",
+      "pleasure",
       "erogenous zones",
       "masturbation",
       "painful sex",
@@ -670,25 +675,25 @@
     "filePath": "article-mds/brook-period-faqs.md",
     "tags": [
       "Anatomy & Cycles",
-      "Vulva, Vagina & Uterus",
-      "Contraception",
       "Pregnancy & Choices",
-      "Trans & Non-Binary"
+      "Contraception",
+      "Trans & Non-Binary",
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
-      "period",
+      "periods",
       "menstruation",
+      "menstrual cycle",
       "tampons",
       "sanitary pads",
       "menstrual cups",
-      "period cramps",
-      "toxic shock syndrome",
-      "irregular periods",
       "heavy periods",
-      "period sex",
+      "period pain",
       "puberty",
-      "ovulation",
-      "hormonal contraception"
+      "contraception",
+      "pregnancy",
+      "gender identity",
+      "toxic shock syndrome"
     ]
   },
   "brook-menopause-and-mental-health.md": {
@@ -706,14 +711,14 @@
       "perimenopause",
       "mental health",
       "anxiety",
-      "depression",
-      "hormones",
-      "oestrogen",
       "progesterone",
-      "serotonin",
+      "oestrogen",
+      "depression",
       "mood swings",
+      "hormones",
       "brain fog",
-      "self-care"
+      "serotonin",
+      "emotional health"
     ]
   },
   "brook-unprotected-sex-sex-without-a-condom.md": {
@@ -728,15 +733,17 @@
     ],
     "keywords": [
       "unprotected sex",
-      "condom failure",
       "emergency contraception",
-      "morning after pill",
-      "IUD",
       "STI testing",
-      "missed pill",
+      "IUD",
+      "condom failure",
       "split condom",
-      "sexual health clinic",
-      "unplanned pregnancy"
+      "missed pill",
+      "sexual health service",
+      "unplanned pregnancy",
+      "vaginal sex",
+      "anal sex",
+      "window period"
     ]
   },
   "brook-anxiety-sex-ionas-story.md": {
@@ -746,21 +753,22 @@
     "tags": [
       "Mental Health & Wellbeing",
       "Sex & Pleasure",
-      "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Relationships & Consent",
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "anxiety",
       "orgasm",
-      "sex drive",
       "mental health",
       "meditation",
       "communication",
-      "vaginal dryness",
-      "sexual dysfunction",
-      "relationships",
+      "sex drive",
+      "sexual health",
+      "vagina",
+      "emotional wellbeing",
       "self-help",
-      "body-mind connection"
+      "stigma",
+      "stress"
     ]
   },
   "brook-drugs.md": {
@@ -774,17 +782,17 @@
     ],
     "keywords": [
       "drugs",
-      "illegal drugs",
       "addiction",
+      "illegal drugs",
+      "prescription drugs",
+      "alcohol",
+      "nicotine",
       "peer pressure",
       "overdose",
-      "class A drugs",
-      "cannabis",
-      "cocaine",
-      "drink spiking",
-      "recreational drugs",
-      "side effects",
-      "prescription drugs"
+      "consent",
+      "spiking",
+      "health risks",
+      "drug treatment"
     ]
   },
   "brook-stis-and-stigma.md": {
@@ -793,23 +801,22 @@
     "filePath": "article-mds/brook-stis-and-stigma.md",
     "tags": [
       "STIs",
-      "Sex & Pleasure",
+      "Mental Health & Wellbeing",
       "LGBTQ+",
-      "Everyone"
+      "Everyone",
+      "Sex & Pleasure"
     ],
     "keywords": [
-      "stigma",
-      "sexual health",
-      "HIV",
+      "STI stigma",
+      "sexual health myths",
+      "HIV facts",
+      "STI testing",
+      "chlamydia treatment",
       "genital herpes",
-      "chlamydia",
-      "myths",
-      "testing",
-      "transmission",
-      "PrEP",
-      "PEP",
-      "undetectable",
-      "untransmissible"
+      "HIV transmission",
+      "safe sex",
+      "untransmissible HIV",
+      "social consequences STIs"
     ]
   },
   "brook-how-to-break-up-with-someone.md": {
@@ -823,17 +830,15 @@
     ],
     "keywords": [
       "break up",
-      "breakup",
-      "relationships",
-      "ending a relationship",
-      "splitting up",
       "relationship advice",
-      "abuse",
-      "safety planning",
-      "communication",
-      "feelings",
+      "ending a relationship",
+      "toxic relationships",
+      "safety",
       "pros and cons",
-      "kindness"
+      "communication",
+      "long distance relationship",
+      "emotional health",
+      "abuse"
     ]
   },
   "brook-pms-pmdd-and-mental-health.md": {
@@ -841,26 +846,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-pms-pmdd-and-mental-health.md",
     "tags": [
-      "Anatomy & Cycles",
       "Mental Health & Wellbeing",
-      "Trans & Non-Binary",
-      "Everyone"
+      "Anatomy & Cycles",
+      "Everyone",
+      "Trans & Non-Binary"
     ],
     "keywords": [
       "PMS",
       "PMDD",
       "premenstrual syndrome",
       "premenstrual dysphoric disorder",
+      "mental health",
       "menstrual cycle",
-      "hormone changes",
+      "hormones",
       "ovulation",
-      "luteal phase",
+      "cycle tracking",
+      "anxiety",
       "progesterone",
-      "oestrogen",
-      "premenstrual exacerbation",
-      "SSRIs",
-      "combined pill",
-      "CBT"
+      "lifestyle changes"
     ]
   },
   "brook-porn-rachels-story.md": {
@@ -868,24 +871,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-porn-rachels-story.md",
     "tags": [
-      "Sex & Pleasure",
       "Digital Life",
+      "Sex & Pleasure",
       "Relationships & Consent",
-      "LGBTQ+",
-      "Everyone"
+      "LGBTQ+"
     ],
     "keywords": [
       "pornography",
-      "Rachel's story",
-      "feminist porn",
-      "Erika Lust",
+      "erotica",
       "fan fiction",
-      "MindGeek",
-      "misogyny",
-      "sexual consent",
+      "sexuality discovery",
+      "feminist porn",
+      "ethical porn",
       "porn industry",
-      "exploitation",
-      "sex positivity"
+      "consent",
+      "sexual pleasure",
+      "online safety",
+      "misogyny",
+      "Rachel's story"
     ]
   },
   "brook-arguing.md": {
@@ -899,16 +902,16 @@
     ],
     "keywords": [
       "arguments",
+      "communication",
       "conflict resolution",
-      "healthy communication",
+      "healthy relationships",
       "gaslighting",
       "stonewalling",
       "emotional intelligence",
-      "relationship advice",
-      "forgiveness",
-      "relationship abuse",
+      "boundaries",
+      "trust",
       "jealousy",
-      "trust issues"
+      "emotional abuse"
     ]
   },
   "brook-single-by-choice-hannahs-story.md": {
@@ -921,18 +924,18 @@
       "Everyone"
     ],
     "keywords": [
-      "Hannah's Story",
       "single by choice",
-      "relationships",
-      "friendships",
+      "Hannah's story",
       "independence",
+      "friendship balance",
+      "identity in relationships",
+      "codependency",
       "personal growth",
-      "psychology degree",
-      "sexual health activism",
-      "healthy boundaries",
-      "dating advice",
-      "self-worth",
-      "work-life balance"
+      "university life",
+      "activism",
+      "relationship advice",
+      "fulfillment",
+      "setting boundaries"
     ]
   },
   "brook-vaginismus-rosies-story.md": {
@@ -947,15 +950,14 @@
     ],
     "keywords": [
       "vaginismus",
+      "Rosie's story",
       "painful sex",
-      "penetration",
-      "tampons",
+      "penetration pain",
       "vaginal dilators",
       "primary vaginismus",
       "secondary vaginismus",
-      "sexual health",
-      "Rosie's story",
-      "pelvic floor",
+      "sexual health education",
+      "tampon difficulty",
       "penetration-free sex"
     ]
   },
@@ -965,22 +967,23 @@
     "filePath": "article-mds/brook-female-genital-mutilation-fgm-real-story.md",
     "tags": [
       "Vulva, Vagina & Uterus",
+      "Mental Health & Wellbeing",
       "Anatomy & Cycles",
-      "Relationships & Consent",
-      "Everyone"
+      "Relationships & Consent"
     ],
     "keywords": [
       "FGM",
       "female genital mutilation",
       "cutting",
       "female circumcision",
-      "Integrate UK",
-      "personal story",
+      "survivor story",
+      "personal account",
       "trauma",
-      "health complications",
-      "menstruation",
-      "cultural beliefs",
-      "survivor account"
+      "women's health",
+      "period problems",
+      "Integrate UK",
+      "cultural practices",
+      "bodily autonomy"
     ]
   },
   "brook-anti-depressants-and-sex-drive-jasmins-story.md": {
@@ -995,40 +998,39 @@
     "keywords": [
       "Sertraline",
       "anti-depressants",
+      "anxiety",
       "sex drive",
       "libido",
-      "anxiety medication",
-      "SSRI side effects",
-      "emotional numbing",
-      "Jasmin's story",
       "mental health",
-      "relationship intimacy",
-      "serotonin",
-      "low libido"
+      "medication side effects",
+      "relationships",
+      "emotional numbness",
+      "sexual desire",
+      "Jasmin"
     ]
   },
   "brook-get-free-condoms.md": {
-    "title": "Get free condoms",
+    "title": "How to get free condoms",
     "source": "Brook",
     "filePath": "article-mds/brook-get-free-condoms.md",
     "tags": [
       "Contraception",
       "STIs",
+      "Pregnancy & Choices",
       "Everyone"
     ],
     "keywords": [
       "free condoms",
       "C-Card scheme",
+      "sexual health clinic",
       "contraception",
+      "lube",
       "STI protection",
       "pregnancy prevention",
-      "sexual health clinic",
-      "UK free condoms",
-      "sexual health service",
-      "lube",
-      "pharmacies",
-      "youth services",
-      "condoms by post"
+      "sexual health services",
+      "condom distribution",
+      "UK sexual health",
+      "free contraception"
     ]
   },
   "brook-breasts-and-chests.md": {
@@ -1038,21 +1040,22 @@
     "tags": [
       "Anatomy & Cycles",
       "Sex & Pleasure",
-      "Everyone",
-      "Trans & Non-Binary"
+      "Trans & Non-Binary",
+      "Everyone"
     ],
     "keywords": [
-      "breast tissue",
-      "chest development",
+      "breasts",
+      "chests",
       "puberty",
-      "hormones",
-      "oestrogen",
+      "breast development",
+      "nipples",
       "testosterone",
-      "nipple sensitivity",
+      "oestrogen",
       "erogenous zones",
-      "pectoral muscles",
+      "breast health",
       "body image",
-      "breast growth"
+      "hormones",
+      "pectoral muscles"
     ]
   },
   "brook-mental-health-alexs-story.md": {
@@ -1062,21 +1065,20 @@
     "tags": [
       "Mental Health & Wellbeing",
       "Sex & Pleasure",
-      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
-      "mental health",
+      "mental health journey",
       "anxiety",
-      "depression",
       "antidepressants",
-      "side effects",
+      "medication side effects",
       "sexual health",
       "libido",
-      "therapy",
-      "education impact",
       "social isolation",
-      "recovery"
+      "education impact",
+      "therapy",
+      "mental illness recovery",
+      "family carers"
     ]
   },
   "brook-alcohol.md": {
@@ -1090,17 +1092,17 @@
     ],
     "keywords": [
       "alcohol",
-      "binge drinking",
+      "drinking",
       "alcohol units",
-      "blood alcohol concentration",
-      "BAC",
-      "peer pressure",
-      "alcohol dependence",
+      "binge drinking",
+      "alcohol poisoning",
+      "hangover",
       "liver disease",
-      "sobriety",
+      "alcohol dependence",
+      "peer pressure",
+      "sexual consent",
       "drink spiking",
-      "ethanol",
-      "depressant"
+      "alcohol and mental health"
     ]
   },
   "brook-combined-pill.md": {
@@ -1111,22 +1113,21 @@
       "Contraception",
       "Pregnancy & Choices",
       "Anatomy & Cycles",
-      "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "combined pill",
+      "the pill",
       "contraception",
-      "birth control",
       "oestrogen",
       "progestogen",
       "ovulation",
-      "pregnancy prevention",
       "withdrawal bleed",
-      "hormonal contraception",
-      "Microgynon",
-      "Logynon",
-      "pill side effects"
+      "missed pill",
+      "monophasic",
+      "phasic",
+      "every day pill",
+      "pregnancy prevention"
     ]
   },
   "brook-divorce-and-separation.md": {
@@ -1145,11 +1146,15 @@
       "family",
       "coping",
       "emotions",
+      "living arrangements",
+      "support",
+      "feelings",
       "changes",
-      "moving house",
       "social worker",
-      "mediator",
-      "feelings"
+      "mediation",
+      "Childline",
+      "anxiety",
+      "relationships"
     ]
   },
   "brook-abortion.md": {
@@ -1159,47 +1164,47 @@
     "tags": [
       "Pregnancy & Choices",
       "Vulva, Vagina & Uterus",
-      "Everyone",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "abortion",
       "termination",
+      "pregnancy",
+      "NHS",
       "medical abortion",
       "surgical abortion",
+      "abortion pill",
       "vacuum aspiration",
+      "suction method",
       "mifepristone",
       "misoprostol",
-      "NHS",
-      "abortion pill",
-      "reproductive health",
-      "pregnancy options",
-      "abortion safety"
+      "fertility",
+      "consent",
+      "reproductive health"
     ]
   },
   "brook-thrush-isabels-story.md": {
-    "title": "Thrush: Isabel's story",
+    "title": "Thrush: Isabel\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-thrush-isabels-story.md",
     "tags": [
       "STIs",
-      "Anatomy & Cycles",
+      "Vulva, Vagina & Uterus",
       "Sex & Pleasure",
-      "Vulva, Vagina & Uterus"
+      "Everyone"
     ],
     "keywords": [
       "thrush",
       "yeast infection",
-      "vaginal itching",
-      "vaginal soreness",
+      "vaginal health",
+      "itching",
+      "soreness",
       "intimate wash",
-      "pubic hair",
+      "grooming",
       "shaving",
       "sexual health education",
       "RSE",
-      "grooming",
-      "yeast infection symptoms",
-      "vaginal health"
+      "vagina care"
     ]
   },
   "brook-accessing-abortion-services.md": {
@@ -1214,16 +1219,16 @@
     "keywords": [
       "abortion",
       "termination",
-      "NHS abortion",
-      "pregnancy options",
+      "NHS",
       "BPAS",
       "MSI Reproductive Choices",
-      "abortion law UK",
-      "Northern Ireland abortion",
+      "UK abortion law",
       "under 16 consent",
-      "abortion pills",
-      "sexual health services",
-      "GP referral"
+      "medical abortion",
+      "surgical abortion",
+      "pregnancy options",
+      "Northern Ireland abortion",
+      "Republic of Ireland abortion"
     ]
   },
   "brook-how-to-support-a-friend-with-their-mental-health.md": {
@@ -1237,16 +1242,17 @@
     ],
     "keywords": [
       "mental health",
-      "support",
       "friendship",
-      "active listening",
-      "toxic positivity",
-      "boundaries",
-      "wellbeing",
+      "support",
+      "listening",
       "empathy",
-      "conversation starters",
-      "validation",
-      "safety"
+      "boundaries",
+      "toxic positivity",
+      "wellbeing",
+      "active listening",
+      "communication",
+      "self-care",
+      "mental health awareness"
     ]
   },
   "brook-depression.md": {
@@ -1262,16 +1268,15 @@
       "depression",
       "mental health",
       "low mood",
-      "suicidal thoughts",
-      "libido",
-      "sexual health",
-      "antidepressants",
-      "therapy",
+      "symptoms of depression",
+      "anti-depressants",
       "counselling",
-      "self-care",
-      "mood diary",
       "seasonal affective disorder",
-      "CBT"
+      "postnatal depression",
+      "libido",
+      "self-care",
+      "cognitive behavioural therapy",
+      "mood diary"
     ]
   },
   "brook-support-with-the-menopause.md": {
@@ -1281,21 +1286,22 @@
     "tags": [
       "Anatomy & Cycles",
       "Mental Health & Wellbeing",
+      "LGBTQ+",
       "Trans & Non-Binary",
-      "Neurodivergent",
-      "Everyone"
+      "Neurodivergent"
     ],
     "keywords": [
       "menopause",
       "perimenopause",
-      "workplace adjustments",
+      "workplace support",
+      "reasonable adjustments",
       "Equality Act 2010",
-      "hot flushes",
+      "transgender menopause",
+      "non-binary",
+      "ADHD and menopause",
+      "autism and menopause",
       "gender dysphoria",
-      "hormone replacement",
-      "ADHD",
-      "autism",
-      "ethnic minority healthcare",
+      "hormone treatment",
       "menopause symptoms"
     ]
   },
@@ -1305,23 +1311,23 @@
     "filePath": "article-mds/brook-contraceptive-implant.md",
     "tags": [
       "Contraception",
-      "Anatomy & Cycles",
       "Pregnancy & Choices",
-      "Vulva, Vagina & Uterus"
+      "Anatomy & Cycles",
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
       "Nexplanon",
-      "contraceptive implant",
       "progestogen",
       "LARC",
-      "long-acting reversible contraception",
-      "birth control",
+      "contraceptive implant",
+      "birth control implant",
       "hormonal contraception",
-      "period changes",
+      "pregnancy prevention",
+      "long-acting reversible contraception",
       "implant fitting",
       "implant removal",
-      "ovulation",
-      "pregnancy prevention"
+      "period changes"
     ]
   },
   "brook-free-sti-home-testing-kits.md": {
@@ -1331,21 +1337,18 @@
     "tags": [
       "STIs",
       "Everyone",
-      "Sex & Pleasure",
-      "Penis & Testicles",
-      "Vulva, Vagina & Uterus"
+      "Contraception"
     ],
     "keywords": [
-      "STI home test kit",
-      "sexual health",
-      "chlamydia treatment",
-      "gonorrhoea treatment",
-      "HIV testing",
-      "syphilis treatment",
-      "unprotected sex",
-      "free STI testing",
-      "UK sexual health services",
+      "STI home test",
+      "chlamydia kit",
+      "gonorrhoea testing",
+      "HIV home test",
+      "syphilis screening",
+      "sexual health UK",
+      "free STI kit",
       "partner notification",
+      "STI treatment",
       "antibiotics for STIs"
     ]
   },
@@ -1355,21 +1358,23 @@
     "filePath": "article-mds/brook-heavy-periods-helens-story.md",
     "tags": [
       "Anatomy & Cycles",
-      "Mental Health & Wellbeing",
-      "Vulva, Vagina & Uterus"
+      "Vulva, Vagina & Uterus",
+      "Contraception",
+      "Everyone"
     ],
     "keywords": [
       "heavy periods",
-      "menstruation",
-      "copper coil",
+      "menorrhagia",
       "tranexamic acid",
-      "period pain",
-      "cramps",
-      "GP appointment",
+      "copper coil",
       "menstrual cycle",
-      "heavy bleeding",
       "period anxiety",
-      "menstrual health"
+      "GP appointment",
+      "contraceptive pill",
+      "period cramps",
+      "sexual health nurse",
+      "menstrual health",
+      "Helen's story"
     ]
   },
   "brook-deciding-to-have-sex.md": {
@@ -1383,17 +1388,17 @@
       "Everyone"
     ],
     "keywords": [
-      "consent",
-      "sexual health",
-      "first time",
-      "intimacy",
-      "peer pressure",
-      "boundaries",
-      "sexual experience",
+      "deciding to have sex",
+      "first time sex",
+      "sexual consent",
       "healthy relationships",
-      "manipulation",
-      "self-worth",
-      "communication"
+      "sexual pressure",
+      "sexual readiness",
+      "peer pressure sex",
+      "intimacy",
+      "sexual boundaries",
+      "sexual validation",
+      "manipulation in relationships"
     ]
   },
   "brook-menorrhagia-heavy-periods.md": {
@@ -1409,17 +1414,17 @@
     "keywords": [
       "menorrhagia",
       "heavy periods",
+      "period bleeding",
       "blood clots",
-      "period pain",
       "anaemia",
       "iron deficiency",
       "PCOS",
       "endometriosis",
-      "fibroids",
       "adenomyosis",
-      "hormonal coil",
-      "tranexamic acid",
-      "menstrual cycle"
+      "fibroids",
+      "hormonal contraception",
+      "NSAIDs",
+      "tranexamic acid"
     ]
   },
   "brook-sex-and-menopause.md": {
@@ -1427,23 +1432,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-sex-and-menopause.md",
     "tags": [
-      "Sex & Pleasure",
       "Mental Health & Wellbeing",
+      "Sex & Pleasure",
       "Vulva, Vagina & Uterus",
-      "Relationships & Consent"
+      "Everyone"
     ],
     "keywords": [
       "menopause",
       "perimenopause",
       "sex drive",
       "libido",
-      "oestrogen",
-      "HRT",
       "vaginal dryness",
+      "HRT",
+      "hormone replacement therapy",
       "overactive bladder",
-      "pelvic floor",
-      "sexual pleasure",
-      "hormone replacement therapy"
+      "pelvic floor exercises",
+      "oestrogen",
+      "pain during sex",
+      "arousal"
     ]
   },
   "brook-endometriosis-louises-story.md": {
@@ -1453,22 +1459,20 @@
     "tags": [
       "Anatomy & Cycles",
       "Mental Health & Wellbeing",
-      "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "endometriosis",
-      "PCOS",
       "period pain",
+      "PCOS",
       "heavy periods",
-      "blood clots",
-      "medical dismissal",
-      "gynaecology",
+      "menstrual health",
       "excision surgery",
-      "diagnosis journey",
+      "medical diagnosis",
+      "gynaecology",
       "chronic pain",
-      "teen health",
-      "bloating"
+      "reproductive health",
+      "blood clots"
     ]
   },
   "brook-sexuality-as-a-neurodiverse-person-sians-story.md": {
@@ -1477,29 +1481,28 @@
     "filePath": "article-mds/brook-sexuality-as-a-neurodiverse-person-sians-story.md",
     "tags": [
       "Neurodivergent",
-      "Sex & Pleasure",
       "Mental Health & Wellbeing",
-      "Vulva, Vagina & Uterus",
-      "Relationships & Consent"
+      "Sex & Pleasure",
+      "Relationships & Consent",
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "ADHD",
-      "dyslexia",
+      "Dyslexia",
       "PCOS",
-      "vaginismus",
-      "poly cystic ovary syndrome",
-      "neurodiversity",
-      "penetrative sex",
-      "rejection sensitivity",
-      "dilators",
-      "anxiety",
-      "sexual education",
-      "virginity",
-      "hypersensitivity"
+      "Vaginismus",
+      "Neurodiversity",
+      "Rejection Sensitivity",
+      "Painful sex",
+      "Dilators",
+      "Sexual health education",
+      "Virginity construct",
+      "Anxiety",
+      "Hypersensitivity"
     ]
   },
   "brook-recognising-an-abusive-relationship-sophies-story.md": {
-    "title": "Recognising an abusive relationship: Sophie\u2019s story",
+    "title": "Recognising an abusive relationship: Sophie's story",
     "source": "Brook",
     "filePath": "article-mds/brook-recognising-an-abusive-relationship-sophies-story.md",
     "tags": [
@@ -1508,21 +1511,21 @@
       "Everyone"
     ],
     "keywords": [
-      "abusive relationships",
       "domestic abuse",
       "emotional abuse",
-      "coercive control",
-      "relationship red flags",
-      "toxic relationships",
-      "teen relationships",
-      "non-physical abuse",
+      "controlling behavior",
+      "teenage relationships",
+      "red flags",
       "gaslighting",
-      "survivor story",
-      "mental health"
+      "Sophie's story",
+      "relationship advice",
+      "self-esteem",
+      "recovery from abuse",
+      "jealousy"
     ]
   },
   "brook-sexual-assault-jade-blues-story.md": {
-    "title": "Sexual Assault: Jade Blue's Story",
+    "title": "Sexual Assault: Jade Blue\u2019s Story",
     "source": "Brook",
     "filePath": "article-mds/brook-sexual-assault-jade-blues-story.md",
     "tags": [
@@ -1534,17 +1537,16 @@
     "keywords": [
       "sexual assault",
       "rape",
-      "Jade Blue",
       "police report",
       "The Havens",
+      "Sexual Assault Referral Clinic",
       "SARC",
       "Crown Prosecution Service",
-      "GP services",
-      "mental health",
       "STI testing",
-      "Hepatitis B",
-      "sexual health clinic",
-      "consent"
+      "trauma",
+      "mental health support",
+      "GP services",
+      "sexual health clinic"
     ]
   },
   "brook-homophobic-biphobic-and-transphobic-bullying.md": {
@@ -1554,23 +1556,23 @@
     "tags": [
       "LGBTQ+",
       "Mental Health & Wellbeing",
-      "Digital Life",
       "Relationships & Consent",
+      "Digital Life",
       "Everyone"
     ],
     "keywords": [
-      "homophobia",
-      "transphobia",
-      "biphobia",
-      "bullying",
-      "harassment",
-      "cyberbullying",
-      "assertiveness",
-      "internalised homophobia",
-      "LGBT+ rights",
-      "online safety",
+      "Bullying",
+      "Homophobia",
+      "Biphobia",
+      "Transphobia",
+      "LGBT+",
+      "Cyberbullying",
+      "Assertiveness",
       "ChildLine",
-      "anti-bullying policy"
+      "Internalised homophobia",
+      "Safety",
+      "Mental health support",
+      "LGBTQ rights"
     ]
   },
   "brook-tubalocclusion.md": {
@@ -1584,17 +1586,16 @@
       "Vulva, Vagina & Uterus"
     ],
     "keywords": [
-      "female sterilisation",
       "tubal occlusion",
+      "female sterilisation",
       "permanent contraception",
       "fallopian tubes",
       "salpingectomy",
-      "surgical contraception",
-      "sterilisation reversal",
+      "sterilization surgery",
+      "sterilization reversal",
       "NHS sterilisation",
-      "Essure",
-      "vasectomy comparison",
-      "99% effective"
+      "birth control operation",
+      "Essure"
     ]
   },
   "brook-anxiety.md": {
@@ -1603,25 +1604,23 @@
     "filePath": "article-mds/brook-anxiety.md",
     "tags": [
       "Mental Health & Wellbeing",
-      "Everyone",
       "Sex & Pleasure",
-      "Penis & Testicles",
-      "Vulva, Vagina & Uterus"
+      "Everyone"
     ],
     "keywords": [
       "anxiety",
       "panic attacks",
       "mental health",
-      "sexual health",
       "libido",
-      "erection",
+      "sexual health",
       "vaginismus",
+      "erection problems",
+      "STI anxiety",
       "OCD",
       "social anxiety",
+      "counselling",
       "self-care",
-      "mindfulness",
-      "STIs",
-      "counselling"
+      "mindfulness"
     ]
   },
   "brook-im-15-can-i-have-sex.md": {
@@ -1630,21 +1629,22 @@
     "filePath": "article-mds/brook-im-15-can-i-have-sex.md",
     "tags": [
       "Relationships & Consent",
-      "Everyone",
-      "Sex & Pleasure"
+      "Sex & Pleasure",
+      "Everyone"
     ],
     "keywords": [
       "age of consent",
+      "16",
       "legal age",
-      "sexual activity",
-      "consent",
-      "15 years old",
-      "sexual health services",
-      "confidentiality",
       "UK law",
-      "abuse protection",
+      "consent",
+      "sexual health services",
+      "contraception",
+      "STIs",
       "Childline",
-      "sexual health clinic"
+      "sexual abuse",
+      "safeguarding",
+      "legal rights"
     ]
   },
   "brook-whats-needed-for-a-healthy-relationship.md": {
@@ -1658,17 +1658,18 @@
       "Everyone"
     ],
     "keywords": [
-      "healthy relationships",
       "communication",
       "trust",
-      "acts of kindness",
-      "quality time",
+      "healthy relationships",
+      "kindness",
+      "love languages",
       "jealousy",
-      "cheating",
-      "boundaries",
       "online communication",
+      "boundaries",
+      "cheating",
+      "friendship",
       "listening",
-      "me-time"
+      "quality time"
     ]
   },
   "brook-diaphragms-and-caps.md": {
@@ -1677,21 +1678,21 @@
     "filePath": "article-mds/brook-diaphragms-and-caps.md",
     "tags": [
       "Contraception",
-      "Vulva, Vagina & Uterus",
       "Anatomy & Cycles",
-      "Everyone"
+      "Vulva, Vagina & Uterus",
+      "Pregnancy & Choices"
     ],
     "keywords": [
       "diaphragm",
       "cervical cap",
+      "contraception",
+      "birth control",
       "spermicide",
-      "barrier method",
-      "non-hormonal contraception",
+      "non-hormonal",
       "cervix",
-      "vagina",
       "toxic shock syndrome",
-      "contraceptive fitting",
-      "pregnancy prevention"
+      "pregnancy prevention",
+      "silicone cap"
     ]
   },
   "brook-dating-apps-chloes-story.md": {
@@ -1706,18 +1707,18 @@
       "Mental Health & Wellbeing"
     ],
     "keywords": [
-      "Chloe",
       "dating apps",
-      "Queer",
-      "Non-Binary",
-      "Disabled",
-      "online romance",
-      "support needs",
+      "disability",
+      "queer",
+      "non-binary",
       "accessibility",
-      "dopamine",
-      "companionship",
+      "support needs",
       "online dating",
-      "relationships"
+      "dopamine",
+      "connection",
+      "dating tips",
+      "relationships",
+      "peer pressure"
     ]
   },
   "brook-periods.md": {
@@ -1728,21 +1729,23 @@
       "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
       "Trans & Non-Binary",
+      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
       "menstruation",
-      "menstrual cycle",
+      "period cycle",
       "ovulation",
       "irregular periods",
-      "PMS",
-      "cramps",
-      "period blood",
-      "tampons",
+      "PMS symptoms",
+      "period cramps",
       "toxic shock syndrome",
-      "period poos",
+      "tampon safety",
+      "transgender health",
       "period sex",
-      "pregnancy risk"
+      "pregnancy risk",
+      "hormones",
+      "menstrual health"
     ]
   },
   "brook-contraceptive-injection.md": {
@@ -1757,17 +1760,17 @@
     ],
     "keywords": [
       "contraceptive injection",
-      "depo-provera",
-      "sayana press",
-      "noristerat",
+      "Depo-Provera",
+      "Sayana Press",
+      "Noristerat",
       "progestogen",
-      "long-acting reversible contraception",
       "LARC",
+      "long-acting reversible contraception",
       "ovulation",
-      "bone mineral density",
       "fertility",
       "menstrual cycle",
-      "birth control shot"
+      "contraception side effects",
+      "pregnancy prevention"
     ]
   },
   "brook-mental-health-and-emotional-wellbeing.md": {
@@ -1785,39 +1788,40 @@
       "mental health",
       "emotional wellbeing",
       "stress management",
-      "self-esteem",
-      "sleep quality",
+      "sleep hygiene",
       "physical activity",
-      "healthy relationships",
-      "cyberbullying",
-      "social media impact",
+      "healthy diet",
+      "social media",
+      "bullying",
+      "self-esteem",
+      "unhealthy relationships",
       "substance use",
-      "sexual health",
-      "burnout"
+      "sexual health"
     ]
   },
   "brook-premature-ejaculation-coming-too-soon.md": {
-    "title": "Premature ejaculation - coming too soon",
+    "title": "Premature ejaculation",
     "source": "Brook",
     "filePath": "article-mds/brook-premature-ejaculation-coming-too-soon.md",
     "tags": [
-      "Sex & Pleasure",
       "Penis & Testicles",
+      "Sex & Pleasure",
       "Anatomy & Cycles",
       "Everyone"
     ],
     "keywords": [
       "premature ejaculation",
-      "ejaculation",
-      "stop-start technique",
       "coming too soon",
-      "sexual anxiety",
+      "stop-start technique",
+      "ejaculation",
+      "orgasm",
+      "semen",
+      "squirting",
+      "sexual performance",
+      "anxiety",
       "condoms",
       "sexual health",
-      "orgasm",
-      "sexual pleasure",
-      "performance pressure",
-      "delaying ejaculation"
+      "arousal"
     ]
   },
   "brook-having-a-baby.md": {
@@ -1826,23 +1830,23 @@
     "filePath": "article-mds/brook-having-a-baby.md",
     "tags": [
       "Pregnancy & Choices",
-      "Mental Health & Wellbeing",
+      "Everyone",
       "LGBTQ+",
-      "Everyone"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
       "pregnancy",
-      "antenatal classes",
+      "antenatal",
       "midwife",
       "maternity leave",
       "paternity leave",
-      "equality act",
-      "adoption",
+      "morning sickness",
       "post-natal depression",
-      "ultrasound scan",
+      "adoption",
+      "parenting",
+      "Equality Act",
       "folic acid",
-      "young parents",
-      "labour"
+      "ultrasound scan"
     ]
   },
   "brook-thrush-marlenas-story.md": {
@@ -1851,47 +1855,45 @@
     "filePath": "article-mds/brook-thrush-marlenas-story.md",
     "tags": [
       "STIs",
-      "Sex & Pleasure",
       "Vulva, Vagina & Uterus",
+      "Sex & Pleasure",
       "Relationships & Consent"
     ],
     "keywords": [
       "Thrush",
-      "Marlena",
-      "Chronic thrush",
       "Yeast infection",
+      "Marlena",
       "Fluconazole",
-      "Doxycycline",
+      "Chronic thrush",
       "Vaginal health",
-      "Painful sex",
       "PIV",
-      "Sexual health transmission",
-      "Health education",
-      "Stigma"
+      "Antibiotics",
+      "Sexual health",
+      "Transmission"
     ]
   },
   "brook-dating-apps-with-a-disability-emilys-story.md": {
-    "title": "Dating apps with a disability: Emily\u2019s Story",
+    "title": "Dating apps with a disability: Emily's Story",
     "source": "Brook",
     "filePath": "article-mds/brook-dating-apps-with-a-disability-emilys-story.md",
     "tags": [
       "Relationships & Consent",
-      "Sex & Pleasure",
       "Digital Life",
-      "Everyone"
+      "Everyone",
+      "Sex & Pleasure"
     ],
     "keywords": [
+      "dating apps",
       "disability",
-      "online dating",
       "wheelchair",
+      "online dating",
       "Tinder",
       "disclosure",
-      "relationships",
-      "dating apps",
       "Emily Yates",
       "Enhance the UK",
       "accessibility",
-      "dating safety"
+      "dating safety",
+      "relationships"
     ]
   },
   "brook-anal-sex.md": {
@@ -1899,24 +1901,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-anal-sex.md",
     "tags": [
+      "Sex & Pleasure",
       "STIs",
       "Relationships & Consent",
-      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
       "anal sex",
-      "rimming",
-      "analingus",
-      "prostate stimulation",
-      "douching",
-      "anal hygiene",
-      "lubrication",
+      "consent",
       "condoms",
+      "lubricant",
+      "douching",
+      "hygiene",
+      "prostate stimulation",
       "anal fissures",
-      "sexual consent",
+      "STI prevention",
       "sexual health",
-      "rectal health"
+      "rimming",
+      "analingus"
     ]
   },
   "brook-georgias-story.md": {
@@ -1926,20 +1928,22 @@
     "tags": [
       "Contraception",
       "Mental Health & Wellbeing",
-      "Relationships & Consent"
+      "Relationships & Consent",
+      "Everyone"
     ],
     "keywords": [
       "Georgia's story",
-      "combined pill",
-      "progesterone-only pill",
-      "hormonal contraception",
+      "contraception",
+      "hormones",
       "mental health",
       "depression",
       "anxiety",
+      "combined pill",
+      "progesterone-only pill",
+      "NHS",
       "migraines",
-      "NHS contraception",
-      "sexual health clinic",
-      "contraceptive advice"
+      "mood swings",
+      "sexual health clinic"
     ]
   },
   "brook-penises-and-testicles.md": {
@@ -1947,28 +1951,27 @@
     "source": "Brook",
     "filePath": "article-mds/brook-penises-and-testicles.md",
     "tags": [
-      "Anatomy & Cycles",
       "Penis & Testicles",
+      "Anatomy & Cycles",
       "Sex & Pleasure",
       "STIs",
-      "Contraception"
+      "Everyone"
     ],
     "keywords": [
       "penis",
       "testicles",
       "scrotum",
-      "urethra",
-      "prostate",
-      "testosterone",
-      "erection",
+      "anatomy",
       "ejaculation",
+      "erection",
+      "sperm",
+      "testosterone",
       "smegma",
       "grooming",
+      "hygiene",
       "testicular cancer",
-      "puberty",
-      "nocturnal emission",
-      "erogenous zones",
-      "hygiene"
+      "prostate gland",
+      "sexual health"
     ]
   },
   "brook-puberty.md": {
@@ -1977,49 +1980,50 @@
     "filePath": "article-mds/brook-puberty.md",
     "tags": [
       "Anatomy & Cycles",
-      "Everyone",
+      "Mental Health & Wellbeing",
       "Penis & Testicles",
       "Vulva, Vagina & Uterus",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "puberty",
-      "adolescence",
       "hormones",
       "testosterone",
       "oestrogen",
       "menstruation",
-      "erections",
+      "periods",
       "ejaculation",
-      "growth spurt",
-      "body hair",
-      "physical changes",
-      "emotional health"
+      "erections",
+      "vaginal discharge",
+      "intersex",
+      "transgender",
+      "adolescence",
+      "secondary sex characteristics"
     ]
   },
   "brook-vaginas-and-vulvas.md": {
-    "title": "Vaginas and Vulvas",
+    "title": "Get to know your vulva",
     "source": "Brook",
     "filePath": "article-mds/brook-vaginas-and-vulvas.md",
     "tags": [
       "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
-      "Sex & Pleasure",
-      "Everyone"
+      "Sex & Pleasure"
     ],
     "keywords": [
-      "vagina",
       "vulva",
+      "vagina",
       "clitoris",
       "labia",
       "hymen",
       "cervical screening",
-      "smear test",
       "thrush",
       "bacterial vaginosis",
       "douching",
+      "arousal",
+      "orgasm",
       "contraception",
-      "urethra"
+      "sexual health"
     ]
   },
   "brook-dating-apps-nicoles-story.md": {
@@ -2027,23 +2031,22 @@
     "source": "Brook",
     "filePath": "article-mds/brook-dating-apps-nicoles-story.md",
     "tags": [
-      "Digital Life",
       "Relationships & Consent",
       "Sex & Pleasure",
-      "Everyone"
+      "Digital Life"
     ],
     "keywords": [
       "dating apps",
       "online dating",
       "boundaries",
-      "sexual exploration",
-      "respect",
-      "consent",
-      "kindness",
+      "sexual preferences",
       "kinky",
-      "digital communication",
-      "first dates",
-      "Nicole's story"
+      "dating etiquette",
+      "consent",
+      "communication",
+      "exploring sexuality",
+      "modern dating",
+      "respect"
     ]
   },
   "brook-living-away-from-home.md": {
@@ -2060,16 +2063,16 @@
     "keywords": [
       "freshers",
       "university",
-      "student health",
+      "student halls",
       "GP registration",
-      "meningitis",
+      "sexual health clinic",
       "sexual harassment",
+      "meningitis symptoms",
+      "vaccinations",
+      "mental health support",
       "emergency contraception",
       "STI testing",
-      "condoms",
-      "mental health support",
-      "vaccinations",
-      "student halls"
+      "student wellbeing"
     ]
   },
   "brook-what-if-something-goes-wrong.md": {
@@ -2080,21 +2083,21 @@
       "Contraception",
       "STIs",
       "Pregnancy & Choices",
+      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "unprotected sex",
-      "contraception failure",
       "emergency contraception",
       "morning after pill",
-      "STI testing",
-      "pregnancy test",
-      "sexual assault",
-      "condom split",
+      "condom failure",
       "missed pill",
+      "STI testing",
       "copper coil",
+      "sexual health",
       "pregnancy risk",
-      "STI symptoms"
+      "sexual assault support",
+      "consent"
     ]
   },
   "brook-genital-herpes.md": {
@@ -2103,22 +2106,23 @@
     "filePath": "article-mds/brook-genital-herpes.md",
     "tags": [
       "STIs",
-      "Pregnancy & Choices",
       "Everyone",
+      "Vulva, Vagina & Uterus",
       "Penis & Testicles",
-      "Vulva, Vagina & Uterus"
+      "Pregnancy & Choices"
     ],
     "keywords": [
-      "Genital herpes",
+      "genital herpes",
+      "HSV",
       "Herpes Simplex Virus",
-      "HSV symptoms",
-      "asymptomatic shedding",
+      "STI symptoms",
+      "herpes treatment",
+      "antiviral medication",
       "aciclovir",
-      "antiviral tablets",
-      "suppressive treatment",
-      "STI testing",
-      "herpes triggers",
-      "sexual health"
+      "asymptomatic shedding",
+      "sexual health",
+      "herpes testing",
+      "pregnancy and herpes"
     ]
   },
   "brook-online-relationships-ishas-story.md": {
@@ -2131,18 +2135,17 @@
       "Mental Health & Wellbeing"
     ],
     "keywords": [
+      "Isha's Story",
       "online relationships",
-      "social media",
-      "digital safety",
-      "mental health",
-      "internet boundaries",
-      "self-image",
-      "Instagram",
-      "Facebook",
-      "texting",
-      "dating safety",
-      "cyberstalking",
-      "adolescent relationships"
+      "digital dating",
+      "texting obsession",
+      "social media impact",
+      "online safety",
+      "boundaries",
+      "identity curation",
+      "catfishing fears",
+      "relationship projection",
+      "internet dating"
     ]
   },
   "brook-polycystic-ovary-syndrome-scarletts-story.md": {
@@ -2151,23 +2154,22 @@
     "filePath": "article-mds/brook-polycystic-ovary-syndrome-scarletts-story.md",
     "tags": [
       "Anatomy & Cycles",
-      "Vulva, Vagina & Uterus",
       "Mental Health & Wellbeing",
-      "Pregnancy & Choices"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "PCOS",
       "Polycystic Ovary Syndrome",
       "irregular periods",
+      "menstrual pain",
       "dermoid cyst",
       "hormonal health",
       "acupuncture",
-      "Chinese herbs",
+      "holistic health",
       "fertility",
-      "weight gain",
-      "facial hair",
-      "medical advocacy",
-      "perimenopause"
+      "perimenopause",
+      "reproductive health",
+      "medical dismissal"
     ]
   },
   "brook-progestogen-only-pill.md": {
@@ -2177,22 +2179,21 @@
     "tags": [
       "Contraception",
       "Pregnancy & Choices",
-      "Anatomy & Cycles",
+      "Vulva, Vagina & Uterus",
       "Everyone"
     ],
     "keywords": [
-      "progestogen-only pill",
       "mini pill",
+      "progestogen-only pill",
       "POP",
       "desogestrel",
       "levonorgestrel",
-      "hormonal contraception",
       "contraceptive pill",
-      "ovulation",
-      "cervical mucus",
-      "pregnancy prevention",
+      "hormonal contraception",
+      "missing a pill",
+      "fertility return",
       "breastfeeding contraception",
-      "norethisterone"
+      "contraception side effects"
     ]
   },
   "brook-how-to-complete-your-sti-test-at-home.md": {
@@ -2201,8 +2202,8 @@
     "filePath": "article-mds/brook-how-to-complete-your-sti-test-at-home.md",
     "tags": [
       "STIs",
-      "Penis & Testicles",
       "Vulva, Vagina & Uterus",
+      "Penis & Testicles",
       "Everyone"
     ],
     "keywords": [
@@ -2210,12 +2211,14 @@
       "home test kit",
       "chlamydia test",
       "gonorrhoea test",
-      "HIV blood test",
+      "HIV testing",
       "syphilis test",
       "vaginal swab",
       "urine sample",
+      "blood sample",
       "finger prick test",
-      "sexual health instructions"
+      "sexual health results",
+      "STI treatment"
     ]
   },
   "brook-fertility-awareness-methods.md": {
@@ -2232,13 +2235,15 @@
       "fertility awareness",
       "natural family planning",
       "ovulation",
-      "menstrual cycle",
-      "cervical mucus",
-      "basal body temperature",
       "fertile window",
-      "pregnancy prevention",
-      "contraception",
-      "LAM method"
+      "basal body temperature",
+      "cervical mucus",
+      "menstrual cycle",
+      "contraceptive effectiveness",
+      "LAM",
+      "breastfeeding and fertility",
+      "tracking ovulation",
+      "fertility apps"
     ]
   },
   "brook-mental-health-in-relationships-samanthas-story.md": {
@@ -2251,19 +2256,18 @@
       "Everyone"
     ],
     "keywords": [
-      "Samantha",
       "mental health",
+      "Samantha's story",
+      "relationships",
       "anxiety",
       "depression",
-      "abusive behavior",
-      "therapy",
       "support system",
-      "male mental health",
-      "antidepressants",
+      "therapy",
+      "men's mental health",
       "stigma",
-      "relationships",
+      "abusive behavior",
       "emotional availability",
-      "personal story"
+      "wellbeing"
     ]
   },
   "brook-prep-and-pep.md": {
@@ -2273,24 +2277,20 @@
     "tags": [
       "STIs",
       "LGBTQ+",
-      "Sex & Pleasure",
-      "Everyone"
+      "Everyone",
+      "Contraception"
     ],
     "keywords": [
       "PrEP",
       "PEP",
       "HIV prevention",
+      "sexual health",
       "antiretroviral",
       "Truvada",
-      "NHS",
-      "sexual health clinic",
-      "chemsex",
-      "contraception",
-      "pregnancy",
-      "breastfeeding",
-      "prophylaxis",
-      "Tenofovir",
-      "Emtricitabine"
+      "condoms",
+      "post-exposure prophylaxis",
+      "pre-exposure prophylaxis",
+      "STI protection"
     ]
   },
   "brook-contraception-jasmins-story.md": {
@@ -2301,21 +2301,22 @@
       "Contraception",
       "Anatomy & Cycles",
       "Mental Health & Wellbeing",
-      "Vulva, Vagina & Uterus"
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
       "Jasmin's story",
-      "contraceptive pill",
       "Rigevidon",
+      "contraceptive pill",
       "contraceptive implant",
       "side effects",
       "anxiety",
-      "weight gain",
-      "GP appointment",
+      "hormone dosage",
       "heavy periods",
-      "hormones",
-      "Nexplanon",
-      "spotting"
+      "spotting",
+      "GP appointment",
+      "weight gain",
+      "local anaesthetic"
     ]
   },
   "brook-penises-and-testicles-do-i-need-to-see-a-doctor.md": {
@@ -2324,25 +2325,23 @@
     "filePath": "article-mds/brook-penises-and-testicles-do-i-need-to-see-a-doctor.md",
     "tags": [
       "Penis & Testicles",
-      "STIs",
       "Anatomy & Cycles",
+      "STIs",
       "Everyone"
     ],
     "keywords": [
       "penis",
       "testicles",
-      "anus",
       "GP",
-      "discharge",
+      "doctor",
       "lumps",
-      "bumps",
+      "discharge",
+      "infection",
       "thrush",
       "cystitis",
       "urethritis",
       "proctitis",
-      "genitals",
-      "medical exam",
-      "sexual health"
+      "genital health"
     ]
   },
   "brook-thrush-candidiasis.md": {
@@ -2351,23 +2350,23 @@
     "filePath": "article-mds/brook-thrush-candidiasis.md",
     "tags": [
       "STIs",
-      "Penis & Testicles",
       "Vulva, Vagina & Uterus",
+      "Penis & Testicles",
       "Everyone"
     ],
     "keywords": [
-      "thrush",
-      "candidiasis",
-      "yeast infection",
-      "fungus",
-      "vaginal discharge",
-      "penis discharge",
-      "pessary",
-      "antifungal cream",
-      "antibiotics",
-      "sexual health clinic",
-      "pregnancy",
-      "recurrent thrush"
+      "Thrush",
+      "Candidiasis",
+      "Yeast infection",
+      "Fungus",
+      "Vaginal discharge",
+      "Pessary",
+      "Itching",
+      "Antibiotics",
+      "Swab",
+      "Sexual health",
+      "Treatment",
+      "Symptoms"
     ]
   },
   "brook-visiting-a-sexual-health-clinic-rachels-story.md": {
@@ -2377,44 +2376,46 @@
     "tags": [
       "Contraception",
       "Relationships & Consent",
-      "Vulva, Vagina & Uterus"
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
+      "sexual health clinic",
+      "Rachel's story",
       "emergency contraception",
       "morning after pill",
-      "IUD",
-      "sexual health clinic",
-      "condom breakage",
-      "self-advocacy",
+      "IUD insertion",
+      "patient advocacy",
+      "informed consent",
+      "contraception choices",
+      "sexual stigma",
       "sex education",
-      "contraceptive pill",
-      "stigma",
-      "clinic visit",
-      "patient experience"
+      "clinic visit experience"
     ]
   },
   "brook-implant-fitting.md": {
-    "title": "Implant fitting: What you need to know",
+    "title": "implant fitting: What you need to know",
     "source": "Brook",
     "filePath": "article-mds/brook-implant-fitting.md",
     "tags": [
       "Contraception",
-      "Anatomy & Cycles",
+      "STIs",
+      "Pregnancy & Choices",
       "Everyone"
     ],
     "keywords": [
       "contraceptive implant",
       "implant fitting",
       "Nexplanon",
-      "long-acting reversible contraception",
-      "implant side effects",
+      "birth control procedure",
+      "STI testing",
+      "pregnancy risk",
+      "needle anxiety",
       "implant aftercare",
       "irregular bleeding",
       "local anaesthetic",
-      "pregnancy risk",
-      "needle anxiety",
-      "implant migration",
-      "bruising"
+      "contraception effectiveness",
+      "implant migration"
     ]
   },
   "brook-urethritis.md": {
@@ -2428,18 +2429,18 @@
       "Everyone"
     ],
     "keywords": [
-      "Urethritis",
-      "urethra inflammation",
-      "painful urination",
-      "penis discharge",
-      "STI symptoms",
-      "pelvic inflammatory disease",
-      "PID",
+      "urethritis",
+      "inflammation",
+      "urethra",
+      "STI",
       "chlamydia",
       "gonorrhoea",
+      "symptoms",
+      "discharge",
+      "painful urination",
+      "pelvic inflammatory disease",
       "antibiotics",
-      "sexual health clinic",
-      "urethra irritation"
+      "sexual health"
     ]
   },
   "brook-the-hormonal-coil.md": {
@@ -2453,18 +2454,18 @@
       "Anatomy & Cycles"
     ],
     "keywords": [
-      "hormonal coil",
-      "Mirena coil",
-      "IUS",
-      "progestogen",
-      "LARC",
-      "long-acting reversible contraception",
-      "contraception fitting",
+      "Mirena",
       "Kyleena",
       "Levosert",
       "Jaydess",
-      "heavy periods",
-      "intrauterine system"
+      "hormonal coil",
+      "IUS",
+      "long-acting reversible contraception",
+      "LARC",
+      "progestogen",
+      "coil fitting",
+      "contraceptive threads",
+      "womb lining"
     ]
   },
   "brook-talking-to-your-partner-about-contraception.md": {
@@ -2476,21 +2477,20 @@
       "STIs",
       "Pregnancy & Choices",
       "Relationships & Consent",
-      "Sex & Pleasure"
+      "Everyone"
     ],
     "keywords": [
-      "Communication",
-      "Safe sex",
-      "Condoms",
-      "Emergency contraception",
-      "Sexual health",
-      "Partners",
-      "Pregnancy prevention",
-      "Side effects",
+      "talking to partner",
+      "contraception communication",
+      "safe sex",
+      "pregnancy prevention",
+      "condoms",
       "STI testing",
-      "Consent",
-      "Birth control",
-      "Relationships"
+      "sexual health clinic",
+      "consent",
+      "barrier methods",
+      "emergency contraception",
+      "side effects"
     ]
   },
   "brook-red-flags-in-dating-and-situationships.md": {
@@ -2512,7 +2512,10 @@
       "gaslighting",
       "jealousy",
       "coercive control",
-      "healthy relationships"
+      "healthy relationships",
+      "boundaries",
+      "manipulation",
+      "emotional abuse"
     ]
   },
   "brook-gender-a-few-definitions.md": {
@@ -2522,6 +2525,7 @@
     "tags": [
       "LGBTQ+",
       "Trans & Non-Binary",
+      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
@@ -2529,16 +2533,15 @@
       "transgender",
       "non-binary",
       "cisgender",
-      "gender dysphoria",
       "gender expression",
-      "gender roles",
-      "intersex",
       "pronouns",
-      "queer",
+      "gender dysphoria",
       "transitioning",
+      "intersex",
       "gender binary",
       "AFAB",
-      "AMAB"
+      "AMAB",
+      "queer"
     ]
   },
   "brook-sex-and-relationships-guidance-during-lockdown.md": {
@@ -2546,26 +2549,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-sex-and-relationships-guidance-during-lockdown.md",
     "tags": [
-      "Contraception",
       "Relationships & Consent",
       "Mental Health & Wellbeing",
       "Sex & Pleasure",
-      "Digital Life"
+      "Digital Life",
+      "Everyone"
     ],
     "keywords": [
-      "lockdown",
       "coronavirus",
+      "lockdown",
       "social distancing",
-      "masturbation",
+      "sexual health services",
       "contraception",
-      "emergency contraception",
-      "mental health",
-      "domestic abuse",
-      "online safety",
+      "masturbation",
       "sexting",
-      "pornography",
-      "established relationship",
-      "support bubble"
+      "online safety",
+      "relationship strain",
+      "domestic abuse"
     ]
   },
   "brook-morning-after-pill.md": {
@@ -2575,19 +2575,22 @@
     "tags": [
       "Contraception",
       "Pregnancy & Choices",
-      "Vulva, Vagina & Uterus"
+      "Anatomy & Cycles",
+      "Everyone"
     ],
     "keywords": [
       "morning after pill",
       "emergency contraception",
-      "Levonelle",
+      "levonorgestrel",
       "ellaOne",
-      "Levonorgestrel",
-      "Ulipristal Acetate",
       "unprotected sex",
-      "pregnancy prevention",
+      "prevent pregnancy",
       "ovulation",
-      "BMI and contraception"
+      "sexual health",
+      "STI risk",
+      "contraceptive pill",
+      "menstrual cycle",
+      "Levonelle"
     ]
   },
   "brook-how-to-get-over-a-breakup.md": {
@@ -2601,16 +2604,16 @@
     ],
     "keywords": [
       "breakup",
-      "heartbreak",
-      "ex-partner",
-      "grief",
-      "healing",
-      "moving on",
       "relationships",
-      "anger management",
+      "heartbreak",
+      "healing",
+      "grief",
       "self-care",
-      "emotional health",
-      "dating after breakup"
+      "social media",
+      "anger",
+      "recovery",
+      "mental health",
+      "boundaries"
     ]
   },
   "brook-myths-about-long-acting-reversible-contraception-larc.md": {
@@ -2625,17 +2628,16 @@
     ],
     "keywords": [
       "LARC",
+      "long-acting reversible contraception",
       "contraceptive implant",
       "contraceptive injection",
       "IUD",
       "IUS",
       "copper coil",
-      "hormonal coil",
-      "fertility",
+      "fertility myths",
       "weight gain",
       "ectopic pregnancy",
-      "emergency contraception",
-      "contraceptive myths"
+      "emergency contraception"
     ]
   },
   "brook-becoming-parents-with-no-warning-hannah-and-kierans-story.md": {
@@ -2644,22 +2646,21 @@
     "filePath": "article-mds/brook-becoming-parents-with-no-warning-hannah-and-kierans-story.md",
     "tags": [
       "Pregnancy & Choices",
-      "Contraception",
+      "Relationships & Consent",
       "Mental Health & Wellbeing",
-      "Everyone"
+      "Contraception"
     ],
     "keywords": [
       "cryptic pregnancy",
       "unplanned pregnancy",
+      "surprise labor",
       "young parents",
-      "contraceptive failure",
+      "parenting advice",
+      "adoption",
+      "contraception failure",
       "maternity leave",
-      "paternity leave",
       "childcare costs",
-      "pregnancy testing",
-      "medication interaction",
-      "adoption choice",
-      "family support"
+      "support systems"
     ]
   },
   "brook-period-survival-guide.md": {
@@ -2669,22 +2670,20 @@
     "tags": [
       "Anatomy & Cycles",
       "Mental Health & Wellbeing",
-      "Vulva, Vagina & Uterus",
-      "Contraception"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
-      "period",
+      "periods",
       "menstruation",
       "PMS",
       "cramps",
       "hormones",
       "pain relief",
-      "menstrual cycle",
-      "contraception",
       "period tracking",
+      "contraception",
+      "menstrual cycle",
       "wellbeing",
-      "self-care",
-      "hormonal coil"
+      "health advice"
     ]
   },
   "brook-condom-excuses.md": {
@@ -2695,26 +2694,25 @@
       "Contraception",
       "STIs",
       "Sex & Pleasure",
-      "Penis & Testicles",
+      "Pregnancy & Choices",
       "Everyone"
     ],
     "keywords": [
       "condoms",
+      "safe sex",
       "STI prevention",
       "pregnancy prevention",
-      "unprotected sex",
-      "withdrawal method",
-      "erection loss",
-      "internal condoms",
       "lubrication",
-      "non-latex condoms",
-      "sexual consent",
+      "latex allergy",
+      "erection loss",
+      "withdrawal method",
       "emergency contraception",
-      "STI testing"
+      "sexual health clinic",
+      "consent"
     ]
   },
   "brook-social-media-and-cyberbulling-bouchras-story.md": {
-    "title": "Social media and Cyberbulling: Bouchra\u2019s story",
+    "title": "Social media and Cyberbulling: Bouchra's story",
     "source": "Brook",
     "filePath": "article-mds/brook-social-media-and-cyberbulling-bouchras-story.md",
     "tags": [
@@ -2725,16 +2723,16 @@
     "keywords": [
       "cyberbullying",
       "Instagram",
-      "suicidal thoughts",
-      "Bouchra",
+      "mental health",
       "cyberflashing",
-      "unwanted sexual imagery",
+      "suicidal thoughts",
       "anxiety",
       "panic attacks",
-      "lockdown",
       "online safety",
-      "bullying",
-      "mental health support"
+      "lockdown impact",
+      "social media",
+      "peer support",
+      "counselling"
     ]
   },
   "brook-realising-i-was-bisexual-pippas-story.md": {
@@ -2748,18 +2746,18 @@
       "Everyone"
     ],
     "keywords": [
+      "bisexual",
       "bisexuality",
       "coming out",
       "sexual orientation",
       "sexual identity",
+      "LGBTQ+",
       "Pippa's story",
-      "LGBT support",
-      "biphobia",
+      "misconceptions",
       "mental health",
-      "anxiety",
-      "depression",
-      "university LGBT groups",
-      "identity realization"
+      "support",
+      "denial",
+      "bi-erasure"
     ]
   },
   "brook-cystitis.md": {
@@ -2768,27 +2766,26 @@
     "filePath": "article-mds/brook-cystitis.md",
     "tags": [
       "STIs",
-      "Anatomy & Cycles",
-      "Penis & Testicles",
       "Vulva, Vagina & Uterus",
+      "Penis & Testicles",
       "Everyone"
     ],
     "keywords": [
       "cystitis",
-      "bladder infection",
-      "UTI",
       "urinary tract infection",
-      "urethra",
-      "inflammation",
-      "antibiotics",
-      "bacteria",
-      "paracetamol",
+      "UTI",
+      "bladder infection",
+      "bladder inflammation",
       "recurrent cystitis",
+      "painful urination",
+      "cloudy urine",
+      "urethra",
+      "antibiotics",
       "kidney infection"
     ]
   },
   "brook-racism-and-mental-health-kenyas-story.md": {
-    "title": "Racism and mental health: Kenya\u2019s story",
+    "title": "Racism and mental health: Kenya's story",
     "source": "Brook",
     "filePath": "article-mds/brook-racism-and-mental-health-kenyas-story.md",
     "tags": [
@@ -2800,16 +2797,16 @@
     "keywords": [
       "racism",
       "mental health",
-      "Kenya's story",
-      "systemic racism",
-      "Windrush generation",
+      "Windrush",
+      "identity",
       "activism",
-      "allyship",
-      "gaslighting",
-      "intersectionality",
+      "systemic racism",
       "therapy",
-      "suicide prevention",
-      "othering"
+      "intersectionality",
+      "gaslighting",
+      "allyship",
+      "personal story",
+      "anti-racism"
     ]
   },
   "brook-masturbation-dees-story-a-year-on.md": {
@@ -2820,21 +2817,20 @@
       "Sex & Pleasure",
       "LGBTQ+",
       "Trans & Non-Binary",
-      "Vulva, Vagina & Uterus",
-      "Mental Health & Wellbeing"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
-      "Masturbation",
-      "Gender identity",
-      "Gender diverse",
-      "Vulva owner",
-      "Sex toys",
-      "Gender dysphoria",
-      "Anatomy",
-      "Orgasm",
-      "Self-love",
-      "Queer",
-      "Inclusion"
+      "masturbation",
+      "gender diverse",
+      "sex toys",
+      "gender identity",
+      "gender dysphoria",
+      "orgasm",
+      "self-love",
+      "inclusive pleasure",
+      "vulva owner",
+      "AFAB",
+      "sexual empowerment"
     ]
   },
   "brook-orgasms.md": {
@@ -2846,20 +2842,22 @@
       "Anatomy & Cycles",
       "Penis & Testicles",
       "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
       "orgasm",
-      "climaxing",
       "arousal",
+      "climax",
+      "erection",
       "ejaculation",
       "refractory period",
       "clitoris",
       "masturbation",
+      "porn",
       "premature ejaculation",
+      "consent",
       "hormones",
-      "sexual pleasure",
-      "sexual tension"
+      "menstrual cycle"
     ]
   },
   "brook-emergency-contraception.md": {
@@ -2869,8 +2867,8 @@
     "tags": [
       "Contraception",
       "Pregnancy & Choices",
-      "Anatomy & Cycles",
-      "Vulva, Vagina & Uterus"
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
       "emergency contraception",
@@ -2878,15 +2876,17 @@
       "IUD",
       "morning after pill",
       "unprotected sex",
-      "ovulation",
       "pregnancy test",
+      "ovulation",
       "menstrual cycle",
       "sexual health clinic",
-      "contraception"
+      "fitting",
+      "side effects",
+      "contraceptive method"
     ]
   },
   "brook-anxiety-melissas-story.md": {
-    "title": "Anxiety: Melissa's story",
+    "title": "Anxiety: Melissa\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-anxiety-melissas-story.md",
     "tags": [
@@ -2897,15 +2897,16 @@
     "keywords": [
       "anxiety",
       "depression",
-      "suicidal thoughts",
       "mental health",
       "puberty",
       "panic attacks",
+      "school",
       "GCSEs",
-      "school stress",
-      "mental illness recovery",
+      "suicidal thoughts",
+      "coping mechanisms",
       "wellbeing",
-      "mental health support"
+      "mental illness",
+      "recovery"
     ]
   },
   "brook-best-condom-for-you.md": {
@@ -2915,23 +2916,22 @@
     "tags": [
       "Contraception",
       "STIs",
-      "Pregnancy & Choices",
       "Sex & Pleasure",
-      "Penis & Testicles"
+      "Penis & Testicles",
+      "Everyone"
     ],
     "keywords": [
       "condom size",
+      "latex allergy",
       "measuring penis",
-      "latex condoms",
-      "polyurethane condoms",
-      "polyisoprene condoms",
       "internal condoms",
+      "polyurethane",
+      "polyisoprene",
       "lambskin condoms",
       "STI protection",
-      "contraception types",
-      "safe sex",
+      "pregnancy prevention",
       "textured condoms",
-      "spermicide warning"
+      "spermicide"
     ]
   },
   "brook-relationship-myths.md": {
@@ -2950,12 +2950,12 @@
       "communication",
       "monogamy",
       "non-monogamy",
-      "personal boundaries",
       "long-term relationships",
-      "arguing",
-      "intimacy",
-      "prioritising needs",
-      "independence"
+      "relationship arguments",
+      "independence in relationships",
+      "relationship expectations",
+      "emotional support",
+      "prioritising needs"
     ]
   },
   "brook-menopause.md": {
@@ -2966,6 +2966,7 @@
       "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
       "Mental Health & Wellbeing",
+      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
@@ -2974,14 +2975,14 @@
       "postmenopause",
       "oestrogen",
       "progesterone",
-      "hormone levels",
       "hot flushes",
       "night sweats",
-      "vaginal dryness",
-      "chemical menopause",
-      "overactive bladder",
       "brain fog",
-      "hormone replacement therapy"
+      "vaginal dryness",
+      "hormone replacement therapy",
+      "HRT",
+      "chemical menopause",
+      "irregular periods"
     ]
   },
   "brook-being-bisexual-gareths-story.md": {
@@ -2991,20 +2992,21 @@
     "tags": [
       "LGBTQ+",
       "Mental Health & Wellbeing",
-      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
-      "bisexual",
-      "Gareth",
+      "bisexuality",
       "bi-erasure",
-      "coming out",
-      "sexual identity",
+      "Gareth's story",
+      "sexual orientation",
+      "Freddie Mercury",
       "representation",
-      "LGBTQ+",
-      "community",
+      "coming out",
       "biphobia",
-      "Freddie Mercury"
+      "LGBTQ+ community",
+      "sexual identity",
+      "queer youth",
+      "isolation"
     ]
   },
   "brook-contraception-faqs-and-myth-busters.md": {
@@ -3019,18 +3021,18 @@
     ],
     "keywords": [
       "contraception",
-      "myth-busters",
+      "birth control",
       "LARC",
-      "hormonal contraception",
-      "barrier methods",
       "condoms",
+      "pill",
       "emergency contraception",
       "fertility",
-      "libido",
       "weight gain",
+      "libido",
       "antibiotics",
+      "missed pill",
       "pull-out method",
-      "sexual health"
+      "pregnancy prevention"
     ]
   },
   "brook-porn-and-the-law.md": {
@@ -3038,24 +3040,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-porn-and-the-law.md",
     "tags": [
-      "Relationships & Consent",
       "Digital Life",
+      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "pornography",
       "UK law",
-      "legal age",
-      "nudes",
-      "sexting",
+      "under 18",
       "revenge porn",
       "cyberflashing",
-      "reporting",
-      "online safety",
-      "Internet Watch Foundation",
+      "nudes",
+      "sexting",
       "CEOP",
+      "Internet Watch Foundation",
+      "legal age",
       "consent",
-      "outcome 21"
+      "online safety"
     ]
   },
   "brook-mental-health-problems.md": {
@@ -3068,42 +3069,40 @@
     ],
     "keywords": [
       "mental health",
+      "mental illness",
       "depression",
       "anxiety",
-      "panic attacks",
-      "schizophrenia",
-      "bipolar disorder",
-      "eating problems",
-      "trauma",
-      "psychosis",
+      "symptoms",
       "warning signs",
-      "mental health diagnosis",
-      "mental health support"
+      "bipolar disorder",
+      "schizophrenia",
+      "wellbeing",
+      "mental health support",
+      "diagnosis",
+      "eating problems"
     ]
   },
   "brook-finding-balance-in-my-relationship-rachels-story.md": {
-    "title": "Finding balance in my relationship: Rachel\u2019s Story",
+    "title": "Finding balance in my relationship: Rachel's Story",
     "source": "Brook",
     "filePath": "article-mds/brook-finding-balance-in-my-relationship-rachels-story.md",
     "tags": [
       "Relationships & Consent",
       "Mental Health & Wellbeing",
-      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
-      "Rachel",
+      "Rachel's Story",
       "self-love",
       "boundaries",
-      "relationship balance",
-      "self-growth",
       "independence",
-      "lockdown",
-      "dating yourself",
+      "healthy relationship",
       "personal growth",
-      "individuality",
-      "communication",
-      "wellbeing"
+      "long-term relationship",
+      "self-care",
+      "relationship balance",
+      "dating yourself",
+      "mental wellbeing"
     ]
   },
   "brook-female-genital-mutilation-fgm.md": {
@@ -3112,48 +3111,48 @@
     "filePath": "article-mds/brook-female-genital-mutilation-fgm.md",
     "tags": [
       "Vulva, Vagina & Uterus",
-      "Pregnancy & Choices",
       "Anatomy & Cycles",
+      "Mental Health & Wellbeing",
+      "Pregnancy & Choices",
       "Everyone"
     ],
     "keywords": [
       "FGM",
       "female genital mutilation",
       "cutting",
-      "female circumcision",
-      "UK law",
-      "illegal",
+      "circumcision",
       "clitoridectomy",
+      "excision",
       "infibulation",
       "NSPCC helpline",
-      "child protection",
-      "reproductive health",
-      "deinfibulation"
+      "FORWARD",
+      "UK law",
+      "safeguarding",
+      "women's health"
     ]
   },
   "brook-chlamydia-rosas-story.md": {
-    "title": "Chlamydia: Rosa's story",
+    "title": "Chlamydia: Rosa\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-chlamydia-rosas-story.md",
     "tags": [
       "STIs",
       "Mental Health & Wellbeing",
-      "Everyone",
-      "Sex & Pleasure"
+      "Sex & Pleasure",
+      "Everyone"
     ],
     "keywords": [
       "Chlamydia",
-      "Rosa's story",
       "STI testing",
-      "home test kit",
-      "sexual health clinic",
+      "sexual health",
+      "university students",
       "antibiotics",
+      "asymptomatic STIs",
       "condoms",
-      "stigma",
-      "safe sex",
-      "asymptomatic",
-      "partner notification",
-      "university"
+      "STI stigma",
+      "home testing kit",
+      "sexual health clinic",
+      "safe sex"
     ]
   },
   "brook-consent-and-sex-in-long-term-relationships.md": {
@@ -3169,15 +3168,14 @@
     "keywords": [
       "consent",
       "long-term relationships",
-      "communication",
       "intimacy",
-      "boundaries",
-      "withdrawing consent",
-      "libido",
-      "sexual health",
+      "sexual communication",
+      "rejecting sex",
       "rejection",
-      "honesty",
-      "trust"
+      "boundaries",
+      "healthy relationships",
+      "sexual desire",
+      "verbal consent"
     ]
   },
   "brook-im-coming-out-again-and-again-saorlaiths-story.md": {
@@ -3190,17 +3188,16 @@
       "Everyone"
     ],
     "keywords": [
+      "coming out",
+      "bisexual",
+      "queer",
+      "sexual identity",
       "Saorlaith",
-      "coming out story",
-      "queer identity",
-      "bisexuality",
       "Northern Ireland",
       "biphobia",
-      "questioning sexuality",
-      "YouTube coming out",
       "self-discovery",
-      "sexual orientation",
-      "identity journey"
+      "LGBTQ+ stories",
+      "questioning sexuality"
     ]
   },
   "brook-mental-illness-chanels-story.md": {
@@ -3217,15 +3214,14 @@
       "depression",
       "anxiety",
       "eating disorder",
-      "recovery",
       "panic attacks",
       "social anxiety",
-      "sexuality",
-      "therapy",
+      "recovery",
       "counselling",
+      "therapy",
+      "mental illness",
       "coping mechanisms",
-      "body image",
-      "mental illness"
+      "sexuality"
     ]
   },
   "brook-living-with-an-sti.md": {
@@ -3239,17 +3235,16 @@
       "Everyone"
     ],
     "keywords": [
-      "STI",
-      "HIV",
-      "Herpes",
+      "STI treatment",
+      "HIV management",
+      "genital herpes",
       "HPV",
       "Hepatitis B",
-      "stigma",
-      "sexual health",
-      "diagnosis",
-      "partner notification",
-      "STI treatment",
-      "viral infections"
+      "sexual health stigma",
+      "STI diagnosis",
+      "partner communication",
+      "sexual health testing",
+      "emotional support"
     ]
   },
   "brook-talking-about-condoms.md": {
@@ -3260,19 +3255,20 @@
       "Contraception",
       "STIs",
       "Relationships & Consent",
+      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
       "condoms",
       "sexual health",
-      "communication",
       "stealthing",
-      "C-Card",
-      "STI prevention",
-      "safe sex",
       "consent",
-      "internal condoms",
+      "safer sex",
+      "STI prevention",
+      "communication",
       "external condoms",
+      "internal condoms",
+      "contraception",
       "sexual assault"
     ]
   },
@@ -3284,24 +3280,27 @@
       "Relationships & Consent",
       "Sex & Pleasure",
       "Digital Life",
-      "Everyone",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "consent",
-      "enthusiastic consent",
       "sexual activity",
-      "communication",
+      "enthusiastic consent",
       "withdrawing consent",
+      "sexual health services",
+      "communication",
       "body language",
       "sexting",
       "cyberflashing",
-      "sexual health support",
-      "reporting sexual violence"
+      "sexual violence",
+      "reporting",
+      "emergency help",
+      "healthy relationships",
+      "non-verbal cues"
     ]
   },
   "brook-sexting-rachels-story.md": {
-    "title": "Sexting: Rachel\u2019s Story",
+    "title": "Sexting: Rachel's Story",
     "source": "Brook",
     "filePath": "article-mds/brook-sexting-rachels-story.md",
     "tags": [
@@ -3313,16 +3312,40 @@
     "keywords": [
       "sexting",
       "nudes",
-      "Snapchat",
-      "validation",
       "harassment",
+      "validation",
       "online safety",
       "body image",
       "consent",
-      "objectification",
+      "digital boundaries",
       "social media",
       "stalking",
-      "digital boundaries"
+      "self-esteem",
+      "personal boundaries"
+    ]
+  },
+  "brook-my-sister-was-in-an-abusive-relationship-kates-story.md": {
+    "title": "My sister was in an abusive relationship: Kate\u2019s story",
+    "source": "Brook",
+    "filePath": "article-mds/brook-my-sister-was-in-an-abusive-relationship-kates-story.md",
+    "tags": [
+      "Relationships & Consent",
+      "Mental Health & Wellbeing",
+      "Digital Life",
+      "Everyone"
+    ],
+    "keywords": [
+      "abusive relationship",
+      "coercive control",
+      "warning signs",
+      "toxic relationships",
+      "domestic abuse",
+      "emotional abuse",
+      "isolation",
+      "sibling support",
+      "relationship safety",
+      "cyberbullying",
+      "family advice"
     ]
   },
   "brook-tinder-snapchat-and-sextortion-ethans-story.md": {
@@ -3336,17 +3359,18 @@
       "Everyone"
     ],
     "keywords": [
-      "sextortion",
-      "Ethan's story",
+      "Sextortion",
       "Tinder",
       "Snapchat",
-      "catfishing",
-      "online dating safety",
-      "blackmail",
-      "sending nudes",
+      "Catfishing",
+      "Blackmail",
+      "Online Dating",
+      "Digital Safety",
+      "Nudes",
       "Internet Watch Foundation",
-      "peer pressure",
-      "digital privacy"
+      "Cyberbullying",
+      "Ethan's Story",
+      "Consent"
     ]
   },
   "brook-hiv.md": {
@@ -3356,26 +3380,25 @@
     "tags": [
       "STIs",
       "Everyone",
-      "LGBTQ+",
       "Sex & Pleasure"
     ],
     "keywords": [
       "HIV",
       "AIDS",
-      "PrEP",
-      "PEP",
-      "condoms",
       "U=U",
       "undetectable",
-      "HIV testing",
       "antiretroviral",
+      "PrEP",
+      "PEP",
+      "transmission",
+      "HIV symptoms",
+      "HIV testing",
       "immune system",
-      "viral load",
-      "transmission"
+      "viral load"
     ]
   },
   "brook-mental-health-rachels-tips.md": {
-    "title": "Supporting a partner with their mental health: Rachel's tips",
+    "title": "Supporting a partner with their mental health: Rachel\u2019s tips",
     "source": "Brook",
     "filePath": "article-mds/brook-mental-health-rachels-tips.md",
     "tags": [
@@ -3385,40 +3408,41 @@
     ],
     "keywords": [
       "mental health",
+      "partner support",
       "anxiety",
       "depression",
       "reassurance",
-      "partners",
-      "support",
       "sexual intimacy",
       "libido",
+      "boundaries",
       "counselling",
       "communication",
+      "wellbeing",
       "patience"
     ]
   },
   "brook-pain-during-sex-frans-story.md": {
-    "title": "Pain during sex: Fran's story",
+    "title": "Pain during sex: Fran\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-pain-during-sex-frans-story.md",
     "tags": [
-      "Vulva, Vagina & Uterus",
       "Sex & Pleasure",
-      "Relationships & Consent",
+      "Vulva, Vagina & Uterus",
+      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
-      "painful sex",
-      "vaginismus",
-      "dyspareunia",
-      "female sexual dysfunction",
+      "pain during sex",
       "vaginal pain",
-      "sexual health",
-      "lube",
-      "penetration",
-      "communication in sex",
       "Fran Bushe",
-      "sexual pleasure"
+      "Female Sexual Dysfunction",
+      "painful sex",
+      "dyspareunia",
+      "lubrication",
+      "sexual communication",
+      "clitoral stimulation",
+      "sexual health",
+      "vaginismus symptoms"
     ]
   },
   "brook-consent-myths-and-facts.md": {
@@ -3428,22 +3452,21 @@
     "tags": [
       "Relationships & Consent",
       "Sex & Pleasure",
-      "LGBTQ+",
-      "Everyone"
+      "Everyone",
+      "LGBTQ+"
     ],
     "keywords": [
       "consent",
       "sexual assault",
       "rape",
-      "myths",
       "age of consent",
-      "sexual activity",
+      "sexual myths",
+      "legal age",
+      "UK law",
       "physical arousal",
-      "statutory rape",
-      "position of trust",
+      "intoxication",
       "sexual violence",
-      "penetration",
-      "intoxication"
+      "capacity to consent"
     ]
   },
   "brook-what-is-sexuality.md": {
@@ -3463,12 +3486,13 @@
       "lesbian",
       "bisexual",
       "asexual",
-      "queer",
-      "coming out",
       "LGBTQ+",
+      "coming out",
+      "attraction",
       "fluidity",
-      "heterosexual",
-      "sexual identity"
+      "identity",
+      "queer",
+      "heterosexual"
     ]
   },
   "brook-top-tips-for-dating-apps.md": {
@@ -3476,22 +3500,24 @@
     "source": "Brook",
     "filePath": "article-mds/brook-top-tips-for-dating-apps.md",
     "tags": [
-      "Mental Health & Wellbeing",
       "Relationships & Consent",
+      "Mental Health & Wellbeing",
       "Digital Life",
       "Everyone"
     ],
     "keywords": [
       "dating apps",
       "online dating",
+      "wellbeing",
       "tinder",
       "bumble",
       "hinge",
       "ghosting",
       "mental health",
-      "wellbeing",
-      "online safety",
-      "dating tips"
+      "relationships",
+      "dating tips",
+      "digital safety",
+      "queer dating"
     ]
   },
   "brook-condoms.md": {
@@ -3501,22 +3527,20 @@
     "tags": [
       "Contraception",
       "STIs",
-      "Pregnancy & Choices",
       "Penis & Testicles",
       "Everyone"
     ],
     "keywords": [
+      "condoms",
       "external condoms",
-      "barrier method",
-      "latex-free",
+      "safe sex",
       "STI protection",
       "pregnancy prevention",
+      "latex-free",
+      "C-Card",
       "water-based lubricant",
-      "C-Card scheme",
-      "emergency contraception",
-      "safe sex",
-      "how to use a condom",
-      "sexual health services"
+      "sexual health clinic",
+      "contraceptive effectiveness"
     ]
   },
   "brook-types-of-abuse.md": {
@@ -3526,21 +3550,22 @@
     "tags": [
       "Relationships & Consent",
       "Mental Health & Wellbeing",
+      "Digital Life",
       "Everyone"
     ],
     "keywords": [
-      "abuse types",
-      "signs of abuse",
       "verbal abuse",
       "emotional abuse",
       "physical abuse",
-      "sexual abuse",
       "financial abuse",
+      "sexual abuse",
       "controlling behaviour",
       "coercive control",
       "domestic abuse",
       "FGM",
-      "consent"
+      "consent",
+      "online abuse",
+      "signs of abuse"
     ]
   },
   "brook-syphilis.md": {
@@ -3556,14 +3581,14 @@
       "Syphilis",
       "STI",
       "chancre",
-      "treponema pallidum",
-      "bacterial infection",
-      "sexual health testing",
+      "Treponema pallidum",
       "primary syphilis",
       "secondary syphilis",
       "tertiary syphilis",
-      "antibiotics",
       "penicillin",
+      "sexual health testing",
+      "antibody blood test",
+      "unprotected sex",
       "partner notification"
     ]
   },
@@ -3574,23 +3599,21 @@
     "tags": [
       "Contraception",
       "Anatomy & Cycles",
-      "Pregnancy & Choices",
-      "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Everyone",
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "contraceptive patch",
-      "birth control patch",
       "Evra",
+      "birth control",
       "oestrogen",
       "progestogen",
       "ovulation",
-      "hormonal contraception",
-      "patch effectiveness",
       "withdrawal bleed",
-      "skin irritation",
-      "emergency contraception",
-      "birth control side effects"
+      "skin patch",
+      "hormonal contraception",
+      "pregnancy prevention",
+      "missed patch"
     ]
   },
   "brook-pcos-and-heavy-periods-leahs-story.md": {
@@ -3599,9 +3622,8 @@
     "filePath": "article-mds/brook-pcos-and-heavy-periods-leahs-story.md",
     "tags": [
       "Anatomy & Cycles",
-      "Mental Health & Wellbeing",
       "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
       "PCOS",
@@ -3611,10 +3633,9 @@
       "menstruation",
       "irregular periods",
       "period pain",
-      "medical dismissal",
-      "reproductive health",
+      "medical gaslighting",
       "fertility anxiety",
-      "menstrual cycle"
+      "hormonal health"
     ]
   },
   "brook-miscarriage.md": {
@@ -3633,7 +3654,7 @@
       "ectopic pregnancy",
       "molar pregnancy",
       "stillbirth",
-      "bleeding",
+      "vaginal bleeding",
       "expectant management",
       "medical management",
       "surgical management",
@@ -3647,26 +3668,24 @@
     "filePath": "article-mds/brook-sex-toys-and-aids.md",
     "tags": [
       "Sex & Pleasure",
+      "Relationships & Consent",
       "STIs",
       "LGBTQ+",
-      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "sex toys",
       "sexual aids",
-      "arousal",
       "pleasure",
-      "CE mark",
-      "STI prevention",
-      "disability accessibility",
-      "sexual assault recovery",
+      "arousal",
+      "vibrators",
+      "sexual health",
+      "disability and sex",
       "vaginismus",
       "vulvodynia",
-      "transgender inclusion",
-      "menopause",
-      "erectile problems",
-      "sexual consent"
+      "transgender sexual health",
+      "sexual consent",
+      "cleaning sex toys"
     ]
   },
   "brook-porn.md": {
@@ -3674,24 +3693,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-porn.md",
     "tags": [
-      "Digital Life",
       "Sex & Pleasure",
+      "Digital Life",
       "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "porn",
       "pornography",
-      "sexual arousal",
+      "internet safety",
       "masturbation",
+      "arousal",
       "consent",
-      "body image",
-      "ethical porn",
-      "online safety",
       "fetishes",
       "kinks",
-      "sexual health",
-      "cyber safety"
+      "body image",
+      "ethical porn",
+      "sexual health"
     ]
   },
   "brook-things-you-only-know-when-you-start-a-new-relationship.md": {
@@ -3704,16 +3722,17 @@
       "Everyone"
     ],
     "keywords": [
-      "communication",
       "new relationship",
+      "communication",
       "boundaries",
       "expectations",
-      "healthy relationships",
-      "dating advice",
-      "friendship",
-      "self-care",
+      "friendships",
       "independence",
-      "emotional wellbeing"
+      "dating advice",
+      "healthy relationships",
+      "self-care",
+      "social life",
+      "partner support"
     ]
   },
   "brook-difference-between-sex-and-gender.md": {
@@ -3727,20 +3746,18 @@
       "Everyone"
     ],
     "keywords": [
-      "sex vs gender",
-      "biological sex",
       "gender identity",
+      "biological sex",
       "AMAB",
       "AFAB",
       "intersex",
       "VSD",
-      "VSC",
-      "gender expression",
+      "gender stereotypes",
       "masculinity",
       "femininity",
-      "gender stereotypes",
-      "social construct",
-      "non-binary"
+      "gender expression",
+      "non-binary",
+      "sex spectrum"
     ]
   },
   "brook-find-mental-health-and-emotional-support.md": {
@@ -3750,24 +3767,21 @@
     "tags": [
       "Mental Health & Wellbeing",
       "LGBTQ+",
-      "Trans & Non-Binary",
       "Everyone"
     ],
     "keywords": [
-      "mental health support",
-      "eating disorders",
+      "mental health",
+      "emotional support",
       "suicide prevention",
+      "eating disorders",
       "crisis support",
-      "LGBT helpline",
-      "youth counselling",
-      "emotional wellbeing",
-      "confidential help",
+      "helpline",
       "Samaritans",
-      "anxiety",
-      "depression",
-      "peer support",
-      "UK mental health charities",
-      "young people"
+      "Childline",
+      "CALM",
+      "text support",
+      "wellbeing",
+      "counselling"
     ]
   },
   "brook-transitioning.md": {
@@ -3782,43 +3796,43 @@
     "keywords": [
       "transitioning",
       "gender identity",
+      "gender dysphoria",
       "social transition",
       "medical transition",
       "legal transition",
       "hormone therapy",
-      "gender dysphoria",
-      "pronouns",
       "puberty blockers",
       "gender affirming surgery",
-      "gender recognition certificate",
-      "NHS gender clinics"
+      "gender recognition act",
+      "pronouns",
+      "testosterone",
+      "oestrogen"
     ]
   },
   "brook-masturbation-charlottes-story.md": {
-    "title": "Masturbation: Charlotte\u2019s story",
+    "title": "Masturbation: Charlotte's story",
     "source": "Brook",
     "filePath": "article-mds/brook-masturbation-charlottes-story.md",
     "tags": [
       "Sex & Pleasure",
+      "Vulva, Vagina & Uterus",
       "Digital Life",
       "LGBTQ+",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "masturbation",
-      "Charlotte",
+      "Charlotte's story",
       "pleasure",
+      "sexual discovery",
       "vulva",
       "clitoris",
-      "pornography",
+      "porn",
       "shame",
-      "self-worth",
       "sex toys",
-      "UK law",
-      "sexual discovery",
-      "adolescence",
+      "vibrator",
       "body confidence",
-      "boundaries"
+      "self-worth"
     ]
   },
   "brook-talking-about-sex.md": {
@@ -3826,47 +3840,47 @@
     "source": "Brook",
     "filePath": "article-mds/brook-talking-about-sex.md",
     "tags": [
-      "Sex & Pleasure",
       "Relationships & Consent",
-      "Everyone",
-      "Mental Health & Wellbeing"
+      "Sex & Pleasure",
+      "Mental Health & Wellbeing",
+      "Everyone"
     ],
     "keywords": [
       "talking about sex",
-      "sexual communication",
+      "communication",
       "consent",
-      "sexual boundaries",
+      "boundaries",
+      "sexual desires",
       "masturbation",
       "physical intimacy",
-      "sexual desires",
       "sexual orientation",
-      "libido changes",
-      "healthy relationships",
-      "pleasure",
-      "intimacy"
+      "libido",
+      "relationship changes",
+      "sexual health"
     ]
   },
   "brook-meeting-a-partner-online-fionastory.md": {
-    "title": "Meeting a partner online: Fiona\u2019s story",
+    "title": "Meeting a partner online: Fiona\u2019story",
     "source": "Brook",
     "filePath": "article-mds/brook-meeting-a-partner-online-fionastory.md",
     "tags": [
       "Relationships & Consent",
       "Digital Life",
-      "Mental Health & Wellbeing",
-      "Everyone"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
+      "Fiona",
       "online dating",
       "WhatsApp",
       "long distance relationship",
+      "technology",
       "Discord",
-      "digital communication",
       "matchmaking",
-      "Fiona's story",
-      "international dating",
-      "relationship technology",
-      "remote bonding"
+      "Austria",
+      "Scotland",
+      "digital connection",
+      "PC building",
+      "communication"
     ]
   },
   "brook-non-monogamous-relationships.md": {
@@ -3876,7 +3890,6 @@
     "tags": [
       "Relationships & Consent",
       "Sex & Pleasure",
-      "LGBTQ+",
       "Everyone"
     ],
     "keywords": [
@@ -3884,14 +3897,13 @@
       "non-monogamy",
       "ethical non-monogamy",
       "open relationships",
-      "hierarchical polyamory",
-      "egalitarian polyamory",
-      "solo polyamory",
-      "relationship anarchy",
+      "relationship spectrum",
       "jealousy",
       "compersion",
-      "frubble",
-      "relationship spectrum"
+      "hierarchical polyamory",
+      "relationship rules",
+      "monogamy",
+      "egalitarian polyamory"
     ]
   },
   "brook-lgbt-abuse-and-violence.md": {
@@ -3900,24 +3912,22 @@
     "filePath": "article-mds/brook-lgbt-abuse-and-violence.md",
     "tags": [
       "LGBTQ+",
-      "Trans & Non-Binary",
       "Relationships & Consent",
       "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
-      "LGBT+ abuse",
-      "domestic violence",
-      "sexual violence",
+      "abuse",
+      "violence",
+      "domestic abuse",
       "hate crime",
       "conversion therapy",
-      "honour-based violence",
       "sexual harassment",
+      "LGBT+",
       "Galop",
-      "reporting abuse",
-      "LGBT Foundation",
-      "Equality Act 2020",
-      "chemsex"
+      "reporting crime",
+      "sexual orientation",
+      "gender identity"
     ]
   },
   "brook-sexuality-a-few-definitions.md": {
@@ -3926,23 +3936,25 @@
     "filePath": "article-mds/brook-sexuality-a-few-definitions.md",
     "tags": [
       "LGBTQ+",
+      "Everyone",
+      "Relationships & Consent",
       "Mental Health & Wellbeing",
-      "Sex & Pleasure",
-      "Relationships & Consent"
+      "Sex & Pleasure"
     ],
     "keywords": [
       "sexuality",
-      "sexual orientation",
+      "definitions",
       "LGBTQ+",
+      "sexual orientation",
+      "romantic orientation",
       "identity",
-      "glossary",
+      "gay",
+      "lesbian",
       "bisexual",
-      "asexual",
       "pansexual",
-      "coming out",
-      "romantic attraction",
-      "gender identity",
-      "definitions"
+      "asexual",
+      "queer",
+      "glossary"
     ]
   },
   "brook-contraceptive-vaginal-ring.md": {
@@ -3952,22 +3964,21 @@
     "tags": [
       "Contraception",
       "Vulva, Vagina & Uterus",
-      "Pregnancy & Choices",
-      "Anatomy & Cycles"
+      "Anatomy & Cycles",
+      "Pregnancy & Choices"
     ],
     "keywords": [
-      "vaginal ring",
       "Nuvaring",
-      "contraception",
-      "birth control",
-      "hormones",
+      "vaginal ring",
+      "contraceptive ring",
+      "hormonal contraception",
       "oestrogen",
       "progestogen",
-      "pregnancy prevention",
       "withdrawal bleed",
-      "menstrual cycle",
-      "reproductive health",
-      "contraceptive ring"
+      "ovulation",
+      "birth control",
+      "fertility",
+      "pregnancy prevention"
     ]
   },
   "brook-online-dating-and-staying-safe.md": {
@@ -3975,27 +3986,26 @@
     "source": "Brook",
     "filePath": "article-mds/brook-online-dating-and-staying-safe.md",
     "tags": [
-      "Digital Life",
       "Relationships & Consent",
+      "Digital Life",
       "Everyone"
     ],
     "keywords": [
       "online dating",
-      "safety tips",
       "dating apps",
       "catfishing",
-      "verified profile",
-      "reverse image search",
-      "Ask for Angela",
-      "sexting",
-      "cyberflashing",
       "first date safety",
-      "location sharing",
-      "personal safety"
+      "Ask for Angela",
+      "cyberflashing",
+      "personal safety",
+      "identity verification",
+      "online safety tips",
+      "digital consent",
+      "reporting scammers"
     ]
   },
   "brook-looking-for-the-one-ems-story.md": {
-    "title": "Looking for \u2018The One\u2019: Em\u2019s Story",
+    "title": "Looking for 'The One': Em's Story",
     "source": "Brook",
     "filePath": "article-mds/brook-looking-for-the-one-ems-story.md",
     "tags": [
@@ -4005,20 +4015,18 @@
       "Everyone"
     ],
     "keywords": [
-      "Em's story",
+      "Em's Story",
       "The One",
-      "romance-based films",
-      "dating cycle",
-      "bisexual",
-      "repressing queerness",
+      "rom-coms",
+      "romance",
+      "toxic relationships",
+      "abusive behavior",
       "Borderline Personality Disorder",
       "BPD",
-      "toxic relationship",
-      "abusive behaviour",
-      "red flags",
-      "mental health problems",
+      "bisexual",
+      "queerness",
       "self-love",
-      "heteronormative"
+      "mental health support"
     ]
   },
   "brook-what-is-sexual-harassment.md": {
@@ -4027,23 +4035,22 @@
     "filePath": "article-mds/brook-what-is-sexual-harassment.md",
     "tags": [
       "Relationships & Consent",
-      "Mental Health & Wellbeing",
       "Digital Life",
+      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
       "sexual harassment",
-      "unwanted sexual behaviour",
-      "cyberflashing",
-      "upskirting",
-      "revenge porn",
-      "intimate image abuse",
-      "Equality Act 2010",
-      "sexual assault",
-      "street harassment",
-      "catcalling",
       "consent",
+      "cyberflashing",
+      "revenge porn",
+      "upskirting",
+      "sexual assault",
+      "Equality Act 2010",
+      "street harassment",
+      "unwanted sexual behaviour",
       "reporting harassment",
+      "harassment support",
       "victim support"
     ]
   },
@@ -4055,19 +4062,22 @@
       "Mental Health & Wellbeing",
       "Relationships & Consent",
       "LGBTQ+",
+      "Digital Life",
       "Everyone"
     ],
     "keywords": [
       "masculinity",
       "gender stereotypes",
       "alpha male",
-      "mental health",
-      "body dysmorphia",
       "manosphere",
+      "body dysmorphia",
+      "toxic masculinity",
+      "men's mental health",
+      "body neutrality",
+      "rizz",
       "sexual harassment",
-      "emotional expression",
-      "bigorexia",
-      "gender roles"
+      "gender roles",
+      "male body image"
     ]
   },
   "brook-what-is-gender-identity.md": {
@@ -4086,12 +4096,11 @@
       "non-binary",
       "gender expression",
       "misgendering",
-      "pronouns",
-      "gender binary",
       "gender fluid",
       "agender",
-      "sex vs gender",
-      "gender stereotypes"
+      "sex and gender",
+      "gender binary",
+      "pronouns"
     ]
   },
   "brook-asexuality-heidis-story.md": {
@@ -4106,18 +4115,17 @@
     ],
     "keywords": [
       "asexuality",
-      "asexual",
+      "Heidi's story",
       "ace",
       "alloromantic",
-      "LGBTQ+",
+      "asexual spectrum",
       "sex-repulsion",
+      "queer identity",
       "coming out",
-      "Pride",
-      "sexual attraction",
       "romantic attraction",
-      "identity discovery",
-      "sex education",
-      "asexual spectrum"
+      "sexual attraction",
+      "Pride",
+      "LGBTQ+ community"
     ]
   },
   "brook-looking-after-your-breasts-or-chest.md": {
@@ -4127,21 +4135,21 @@
     "tags": [
       "Anatomy & Cycles",
       "Trans & Non-Binary",
-      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
       "breast health",
       "chest health",
       "breast cancer symptoms",
-      "breast checking",
-      "chest checking",
+      "CoppaFeel",
       "bra fitting",
-      "bra myths",
       "chest binding",
       "gender dysphoria",
-      "binder safety",
-      "breast tissue"
+      "breast tissue",
+      "bra myths",
+      "mammogram",
+      "breast awareness",
+      "menstrual cycle"
     ]
   },
   "brook-why-you-should-get-tested-for-stis.md": {
@@ -4154,18 +4162,17 @@
       "Everyone"
     ],
     "keywords": [
-      "STI testing",
       "sexual health",
+      "STI testing",
       "chlamydia",
       "gonorrhoea",
-      "HIV",
+      "HIV management",
       "syphilis",
-      "home testing kit",
       "condoms",
-      "partner notification",
-      "sexual health clinic",
+      "home testing kit",
       "asymptomatic",
-      "STI stigma"
+      "partner notification",
+      "sexual safety"
     ]
   },
   "brook-masturbation.md": {
@@ -4174,24 +4181,25 @@
     "filePath": "article-mds/brook-masturbation.md",
     "tags": [
       "Sex & Pleasure",
-      "Mental Health & Wellbeing",
       "Anatomy & Cycles",
+      "Mental Health & Wellbeing",
+      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "masturbation",
-      "sexual pleasure",
-      "self-care",
       "orgasm",
-      "arousal",
+      "self-care",
+      "sexual pleasure",
       "erogenous zones",
-      "genitals",
+      "fantasies",
       "sex toys",
-      "clitoris",
-      "vagina",
-      "penis",
-      "sexual health",
-      "body exploration"
+      "misconceptions",
+      "sexual exploration",
+      "health",
+      "arousal",
+      "menstruation",
+      "wellbeing"
     ]
   },
   "brook-mental-health-rachels-story.md": {
@@ -4204,18 +4212,21 @@
       "Everyone"
     ],
     "keywords": [
-      "mental health",
       "Rachel's story",
+      "mental health",
+      "suicide",
       "panic attack",
-      "suicide prevention",
       "dissociation",
+      "18th birthday",
+      "20th birthday",
+      "21st birthday",
       "lockdown",
-      "COVID-19",
       "Fluoxetine",
-      "counselling",
+      "recovery",
+      "NHS",
+      "counseling",
       "mental illness",
-      "birthday",
-      "recovery"
+      "anxiety"
     ]
   },
   "brook-the-contraceptive-implant-annies-story.md": {
@@ -4224,25 +4235,25 @@
     "filePath": "article-mds/brook-the-contraceptive-implant-annies-story.md",
     "tags": [
       "Contraception",
-      "Pregnancy & Choices",
       "Anatomy & Cycles",
       "Everyone"
     ],
     "keywords": [
       "contraceptive implant",
       "birth control",
+      "implant insertion",
       "hormonal contraception",
       "pregnancy prevention",
-      "Nexplanon",
-      "long-acting reversible contraception",
-      "menstrual cycle",
-      "side effects",
-      "insertion experience",
-      "contraception choices"
+      "menstrual cycle changes",
+      "no periods",
+      "LARC",
+      "implant side effects",
+      "long-acting contraception",
+      "Annie's story"
     ]
   },
   "brook-my-first-break-up-adams-story.md": {
-    "title": "My first break up: Adam\u2019s story",
+    "title": "My first break up: Adam's story",
     "source": "Brook",
     "filePath": "article-mds/brook-my-first-break-up-adams-story.md",
     "tags": [
@@ -4252,18 +4263,18 @@
       "Everyone"
     ],
     "keywords": [
+      "breakup",
       "break up",
       "Adam's story",
-      "relationship advice",
+      "first breakup",
       "communication",
       "open relationship",
-      "emotional health",
       "closure",
-      "healthy relationships",
+      "emotional health",
       "support network",
       "conflict resolution",
-      "dating",
-      "first breakup"
+      "healthy relationships",
+      "coping mechanisms"
     ]
   },
   "brook-menstrual-cycle-and-pregnancy.md": {
@@ -4273,28 +4284,27 @@
     "tags": [
       "Anatomy & Cycles",
       "Pregnancy & Choices",
-      "Vulva, Vagina & Uterus"
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
       "menstrual cycle",
-      "period",
+      "periods",
       "ovulation",
       "hormones",
       "oestrogen",
       "progesterone",
       "pregnancy",
-      "conception",
-      "uterus",
-      "vagina",
-      "vulva",
-      "menopause",
-      "perimenopause",
+      "fertility",
+      "luteal phase",
       "follicular phase",
-      "luteal phase"
+      "pms",
+      "menopause",
+      "conception"
     ]
   },
   "brook-abusive-relationship-chlos-story.md": {
-    "title": "Abusive relationship: Chlo's story",
+    "title": "Abusive relationship: Chlo\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-abusive-relationship-chlos-story.md",
     "tags": [
@@ -4304,18 +4314,18 @@
       "Everyone"
     ],
     "keywords": [
+      "abusive relationship",
       "emotional abuse",
       "sexual assault",
-      "coercive control",
-      "domestic violence",
-      "online harassment",
-      "eating disorders",
-      "self-harm",
-      "Ask.fm bullying",
-      "restraining order",
+      "harassment",
+      "stalking",
+      "cyberbullying",
+      "domestic abuse",
+      "grooming",
       "consent",
-      "police investigation",
-      "Speak Out project"
+      "victim support",
+      "restraining order",
+      "anorexia"
     ]
   },
   "brook-sleep.md": {
@@ -4328,18 +4338,16 @@
       "Everyone"
     ],
     "keywords": [
-      "sleep cycles",
-      "REM sleep",
+      "sleep",
       "circadian rhythm",
       "melatonin",
-      "sleep hygiene",
-      "puberty development",
-      "deep sleep",
+      "REM sleep",
       "insomnia",
+      "puberty",
+      "wellbeing",
       "mental health",
-      "sleep routine",
-      "cortisol",
-      "sleep deprivation"
+      "recovery",
+      "sleep hygiene"
     ]
   },
   "brook-gender-queerness-and-autism-maxs-story.md": {
@@ -4354,16 +4362,18 @@
       "Sex & Pleasure"
     ],
     "keywords": [
+      "Max",
       "autism",
       "non-binary",
       "queer",
-      "neurodiversity",
+      "neurodivergence",
       "relationships",
-      "intimacy",
-      "communication",
       "gender identity",
-      "identity intersectionality",
-      "personal story"
+      "intimacy",
+      "Dylan",
+      "self-understanding",
+      "communication",
+      "LGBTQ+ health"
     ]
   },
   "brook-supporting-a-trans-partner-emmas-story.md": {
@@ -4377,17 +4387,17 @@
       "Mental Health & Wellbeing"
     ],
     "keywords": [
-      "Emma",
       "trans partner",
       "coming out",
+      "transitioning",
+      "relationship advice",
       "bisexual",
       "gender identity",
-      "relationship advice",
-      "transition support",
       "LGBTQ support",
-      "emotional wellbeing",
       "partner transition",
-      "support tips"
+      "healthy relationships",
+      "communication",
+      "self-care"
     ]
   },
   "brook-getting-tested-for-stis.md": {
@@ -4397,8 +4407,9 @@
     "tags": [
       "STIs",
       "Everyone",
-      "Anatomy & Cycles",
-      "Sex & Pleasure"
+      "Penis & Testicles",
+      "Vulva, Vagina & Uterus",
+      "Contraception"
     ],
     "keywords": [
       "STI testing",
@@ -4408,37 +4419,11 @@
       "HIV",
       "syphilis",
       "home test kit",
-      "sexual health clinic",
-      "vaginal swab",
-      "urine test",
       "blood sample",
-      "STI symptoms",
-      "window period"
-    ]
-  },
-  "brook-low-libido-annies-story.md": {
-    "title": "Low Libido: Annie\u2019s Story",
-    "source": "Brook",
-    "filePath": "article-mds/brook-low-libido-annies-story.md",
-    "tags": [
-      "Relationships & Consent",
-      "Mental Health & Wellbeing",
-      "Sex & Pleasure",
-      "Everyone"
-    ],
-    "keywords": [
-      "low libido",
-      "sex drive",
-      "stress",
-      "work-life balance",
-      "relationships",
-      "communication",
-      "exercise",
-      "mental health",
-      "intimacy",
-      "self-care",
-      "romantasy",
-      "doctor life"
+      "urine test",
+      "vaginal swab",
+      "positive test",
+      "STI symptoms"
     ]
   },
   "brook-cyber-bullying.md": {
@@ -4446,24 +4431,22 @@
     "source": "Brook",
     "filePath": "article-mds/brook-cyber-bullying.md",
     "tags": [
-      "Mental Health & Wellbeing",
       "Digital Life",
-      "Relationships & Consent",
+      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
       "cyberbullying",
-      "trolling",
       "online harassment",
+      "trolling",
       "social media safety",
+      "digital safety",
+      "ChildLine",
+      "blocking bullies",
+      "reporting online abuse",
+      "revenge porn",
       "internet safety",
-      "blocking",
-      "reporting online",
-      "Childline",
-      "harassment laws",
-      "digital wellbeing",
-      "screenshots",
-      "online safety"
+      "mental health support"
     ]
   },
   "brook-miscarriage-at-7-weeks-holly-maes-story.md": {
@@ -4474,20 +4457,22 @@
       "Pregnancy & Choices",
       "Mental Health & Wellbeing",
       "Relationships & Consent",
+      "Vulva, Vagina & Uterus",
       "Everyone"
     ],
     "keywords": [
       "miscarriage",
       "pregnancy loss",
+      "early miscarriage",
       "Holly-mae",
-      "18 years old",
+      "miscarriage at 7 weeks",
       "grief",
-      "emotional support",
-      "guilt",
+      "pregnancy options",
       "Miscarriage Association",
+      "mental health",
+      "relationship issues",
       "emergency scan",
-      "ultrasound",
-      "relationship breakdown"
+      "young pregnancy"
     ]
   },
   "brook-what-is-sexual-violence.md": {
@@ -4506,19 +4491,18 @@
       "rape",
       "sexual assault",
       "consent",
-      "sexual harassment",
-      "domestic abuse",
-      "female genital mutilation",
       "stealthing",
+      "domestic abuse",
+      "sexual harassment",
+      "sexual abuse",
+      "SARCs",
       "emergency contraception",
-      "SARC",
-      "forensic medical examination",
-      "Independent Sexual Violence Advocates",
-      "STIs"
+      "STI testing",
+      "forensic medical examination"
     ]
   },
   "brook-loneliness-ferns-story.md": {
-    "title": "Loneliness: Fern's story",
+    "title": "Loneliness: Fern\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-loneliness-ferns-story.md",
     "tags": [
@@ -4527,18 +4511,18 @@
       "Everyone"
     ],
     "keywords": [
-      "Loneliness",
-      "Anxiety",
+      "loneliness",
+      "anxiety",
       "GAD",
-      "University",
-      "Graduation",
-      "Mental Health",
-      "Isolation",
-      "Solo dining",
-      "Social media",
-      "Support",
-      "UK health statistics",
-      "Wellbeing"
+      "university graduation",
+      "mental health support",
+      "isolation",
+      "social media",
+      "solo dining",
+      "resilience",
+      "emotional wellbeing",
+      "long distance relationships",
+      "NHS mental health stats"
     ]
   },
   "brook-endometriosis-libbys-story.md": {
@@ -4546,23 +4530,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-endometriosis-libbys-story.md",
     "tags": [
-      "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
-      "Contraception"
+      "Anatomy & Cycles",
+      "Everyone"
     ],
     "keywords": [
       "endometriosis",
       "endo",
       "period pain",
       "laparoscopy",
-      "gynaecological condition",
+      "pelvic pain",
+      "gynaecology",
+      "chronic pain",
       "mini-pill",
       "copper coil",
-      "excision surgery",
-      "pelvic pain",
-      "menstrual cycle",
       "IUS",
-      "fertility"
+      "diagnosis",
+      "menstrual health"
     ]
   },
   "brook-porn-daniels-story.md": {
@@ -4570,24 +4554,22 @@
     "source": "Brook",
     "filePath": "article-mds/brook-porn-daniels-story.md",
     "tags": [
-      "Sex & Pleasure",
       "Digital Life",
+      "Sex & Pleasure",
       "Mental Health & Wellbeing",
-      "Everyone"
+      "Relationships & Consent"
     ],
     "keywords": [
-      "Daniel's story",
       "pornography",
       "body image",
       "male insecurity",
       "sex education",
-      "first time having sex",
       "contraception",
-      "digital media",
-      "peer pressure",
-      "school culture",
-      "expectations vs reality",
-      "online content"
+      "first time sex",
+      "expectations",
+      "digital content",
+      "adolescent development",
+      "youth experiences"
     ]
   },
   "brook-coming-out-as-a-lesbian-chloes-story.md": {
@@ -4604,17 +4586,16 @@
       "coming out",
       "sexuality",
       "LGBTQ+ identity",
-      "dating apps",
-      "family support",
-      "personal story",
+      "dating",
+      "family acceptance",
+      "self-love",
+      "coming out story",
       "sexual orientation",
-      "self-acceptance",
-      "pride",
-      "relationships"
+      "mental wellbeing"
     ]
   },
   "brook-body-dysmorphia-disorder-abbys-story.md": {
-    "title": "Body Dysmorphia Disorder: Abby\u2019s Story",
+    "title": "Body Dysmorphia Disorder: Abby's Story",
     "source": "Brook",
     "filePath": "article-mds/brook-body-dysmorphia-disorder-abbys-story.md",
     "tags": [
@@ -4625,15 +4606,15 @@
     "keywords": [
       "Body Dysmorphia Disorder",
       "BDD",
+      "Abby's Story",
       "body image",
-      "self-esteem",
-      "puberty",
       "mental health",
+      "puberty",
+      "first period",
       "racial identity",
+      "self-esteem",
       "weight loss",
-      "periods",
-      "wellbeing",
-      "self-perception"
+      "wellbeing"
     ]
   },
   "brook-hepatitis.md": {
@@ -4652,23 +4633,25 @@
       "Hepatitis C",
       "Liver inflammation",
       "Jaundice",
-      "STI testing",
-      "Sexual health",
-      "Antiviral medication",
       "Cirrhosis",
+      "STI testing",
+      "Vaccination",
+      "Antiviral medication",
       "Partner notification",
-      "Vaccination"
+      "Sexual health",
+      "Blood-borne virus",
+      "Liver health"
     ]
   },
   "brook-online-dating-emmies-story.md": {
-    "title": "Online Dating: Emmie's Story",
+    "title": "Online Dating: Emmie\u2019s Story",
     "source": "Brook",
     "filePath": "article-mds/brook-online-dating-emmies-story.md",
     "tags": [
-      "Relationships & Consent",
       "Digital Life",
-      "LGBTQ+",
-      "Mental Health & Wellbeing"
+      "Relationships & Consent",
+      "Mental Health & Wellbeing",
+      "LGBTQ+"
     ],
     "keywords": [
       "online dating",
@@ -4679,10 +4662,11 @@
       "bisexuality",
       "queer",
       "mental health",
-      "boundaries",
+      "loneliness",
       "self-esteem",
-      "validation",
-      "safety"
+      "boundaries",
+      "dating safety",
+      "validation"
     ]
   },
   "brook-foreskins-and-circumcision.md": {
@@ -4690,8 +4674,8 @@
     "source": "Brook",
     "filePath": "article-mds/brook-foreskins-and-circumcision.md",
     "tags": [
-      "Anatomy & Cycles",
       "Penis & Testicles",
+      "Anatomy & Cycles",
       "Everyone"
     ],
     "keywords": [
@@ -4700,13 +4684,13 @@
       "phimosis",
       "balanitis",
       "paraphimosis",
-      "penis health",
-      "tight foreskin",
-      "balanoposthitis",
+      "penis",
       "glans",
-      "sexual health",
+      "inflammation",
       "medical circumcision",
-      "hygiene"
+      "cultural circumcision",
+      "hygiene",
+      "penis health"
     ]
   },
   "brook-girls-can-like-sex-too.md": {
@@ -4720,16 +4704,16 @@
       "Everyone"
     ],
     "keywords": [
-      "female sexual pleasure",
+      "Sophie's Story",
+      "sexual pleasure",
       "gender stereotypes",
-      "teen magazines",
-      "sexual readiness",
       "sexual empowerment",
-      "consent",
-      "Sophie's story",
-      "societal expectations",
-      "double standards",
-      "sexual health awareness"
+      "media influence",
+      "teen magazines",
+      "sexual consent",
+      "female sexuality",
+      "pressure to have sex",
+      "sexual expectations"
     ]
   },
   "brook-how-do-i-use-a-condom.md": {
@@ -4744,16 +4728,17 @@
       "Penis & Testicles"
     ],
     "keywords": [
-      "condom guide",
+      "condom",
       "how to use a condom",
+      "contraception",
       "safe sex",
       "STI prevention",
       "pregnancy prevention",
-      "contraception",
-      "water-based lubricant",
+      "lubricant",
+      "water-based lube",
       "condom safety",
-      "barrier method",
-      "sexual health education"
+      "sexual health",
+      "ejaculation"
     ]
   },
   "brook-building-intimacy-in-a-relationship.md": {
@@ -4763,20 +4748,19 @@
     "tags": [
       "Relationships & Consent",
       "Sex & Pleasure",
-      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
       "intimacy",
-      "relationships",
+      "relationship advice",
       "quality time",
       "communication",
       "vulnerability",
-      "emotional connection",
-      "love languages",
       "sexual intimacy",
-      "bonding",
-      "romance",
+      "emotional connection",
+      "shared activities",
+      "personal space",
+      "building trust",
       "sexual tension"
     ]
   },
@@ -4786,52 +4770,50 @@
     "filePath": "article-mds/brook-masturbation-dees-story.md",
     "tags": [
       "Sex & Pleasure",
-      "Relationships & Consent",
       "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Relationships & Consent",
+      "Trans & Non-Binary"
     ],
     "keywords": [
       "masturbation",
       "sex toys",
       "internalised misogyny",
       "female pleasure",
-      "empowerment",
       "orgasm",
+      "sexual confidence",
       "feminism",
-      "sexual health",
-      "communication",
-      "solo sex",
-      "RSE",
-      "sexual confidence"
+      "wand",
+      "patriarchy",
+      "sexual health education",
+      "climax",
+      "self-pleasure"
     ]
   },
   "brook-how-brook-helped-me-cassies-story.md": {
-    "title": "How the service helped me: Cassie\u2019s story",
+    "title": "How she was helped: Cassie's story",
     "source": "Brook",
     "filePath": "article-mds/brook-how-brook-helped-me-cassies-story.md",
     "tags": [
       "Relationships & Consent",
-      "STIs",
       "Contraception",
+      "STIs",
       "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
-      "Cassie",
       "sexual health",
-      "sex education",
-      "nurse",
-      "school workshops",
-      "STI testing",
-      "pregnancy testing",
-      "sexual assault support",
       "contraception injection",
-      "depo injection",
-      "confidentiality",
-      "sex positive",
-      "youth services",
+      "STI testing",
+      "sexual assault support",
+      "sex education",
+      "student nurse",
       "Liverpool",
-      "relationship education"
+      "non-judgemental care",
+      "youth services",
+      "sex positive",
+      "depo injection",
+      "pelvic health",
+      "sexual health clinic"
     ]
   },
   "brook-do-i-have-an-sti.md": {
@@ -4845,17 +4827,20 @@
       "Everyone"
     ],
     "keywords": [
+      "STIs",
+      "sexually transmitted infections",
       "STI symptoms",
-      "unprotected sex",
+      "STI testing",
       "chlamydia",
       "gonorrhoea",
-      "HIV testing",
-      "genital herpes",
-      "trichomoniasis",
+      "HIV",
       "syphilis",
+      "trichomoniasis",
+      "genital herpes",
       "pubic lice",
-      "sexual health clinic",
-      "home testing kit"
+      "condoms",
+      "sexual health",
+      "discharge"
     ]
   },
   "brook-abuse-getting-help.md": {
@@ -4868,17 +4853,18 @@
       "Everyone"
     ],
     "keywords": [
-      "abuse help",
+      "abuse",
+      "getting help",
       "safety planning",
       "domestic violence",
-      "emergency contact",
-      "childline",
-      "reporting abuse",
-      "toxic relationships",
       "safety bag",
+      "emergency contact",
       "code word",
-      "supporting friends",
-      "police report"
+      "location sharing",
+      "supporting a friend",
+      "immediate danger",
+      "trusted adult",
+      "Childline"
     ]
   },
   "brook-find-lgbt-support-near-you.md": {
@@ -4893,18 +4879,16 @@
     ],
     "keywords": [
       "LGBT support",
-      "LGBTQ youth groups",
-      "gender identity",
+      "youth groups",
       "transgender services",
       "non-binary support",
+      "sexual health clinic",
       "counselling",
-      "peer support",
-      "mentoring",
-      "sexual health advice",
-      "regional support services",
-      "Northern Ireland LGBT",
-      "Scotland LGBT",
-      "Wales LGBT"
+      "gender identity",
+      "peer mentoring",
+      "LGBTQIA+",
+      "local support groups",
+      "community services"
     ]
   },
   "brook-remembering-to-take-your-pill.md": {
@@ -4920,14 +4904,15 @@
       "contraceptive pill",
       "perfect use",
       "typical use",
-      "pill reminders",
-      "habit forming",
-      "progestogen-only pill",
+      "POP pill",
       "combined pill",
-      "travel contraception",
+      "pill reminders",
+      "traveling with the pill",
       "time zones",
       "LARC",
-      "pregnancy prevention"
+      "pregnancy prevention",
+      "daily routine",
+      "long-acting reversible contraception"
     ]
   },
   "brook-painful-sex.md": {
@@ -4939,21 +4924,19 @@
       "Vulva, Vagina & Uterus",
       "Penis & Testicles",
       "STIs",
-      "Relationships & Consent"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
       "painful sex",
       "vaginismus",
       "vulvodynia",
-      "dyspareunia",
-      "sexual discomfort",
       "arousal",
       "lubrication",
-      "sexual health",
+      "STI",
       "penetration",
-      "masturbation",
-      "thrush",
-      "UTI"
+      "dyspareunia",
+      "pelvic pain",
+      "sexual health"
     ]
   },
   "brook-treating-menopause-symptoms.md": {
@@ -4964,21 +4947,25 @@
       "Anatomy & Cycles",
       "Mental Health & Wellbeing",
       "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Contraception"
     ],
     "keywords": [
       "menopause",
       "perimenopause",
       "HRT",
       "hormone replacement therapy",
-      "hot flushes",
       "oestrogen",
       "progestogen",
-      "Mirena coil",
+      "hot flushes",
+      "anxiety",
+      "depression",
+      "brain fog",
+      "overactive bladder",
+      "hormonal coil",
+      "Mirena",
       "hysterectomy",
       "calcium",
-      "bone density",
-      "menopause symptoms"
+      "bone density"
     ]
   },
   "brook-love-your-vulva.md": {
@@ -4999,10 +4986,10 @@
       "pubic hair",
       "labiaplasty",
       "FGM",
+      "female genital mutilation",
       "body positivity",
-      "sexual health",
       "anatomy",
-      "diversity"
+      "sexual health"
     ]
   },
   "brook-the-copper-coil.md": {
@@ -5011,27 +4998,26 @@
     "filePath": "article-mds/brook-the-copper-coil.md",
     "tags": [
       "Contraception",
-      "Vulva, Vagina & Uterus",
-      "Anatomy & Cycles",
-      "Pregnancy & Choices"
+      "Pregnancy & Choices",
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "copper coil",
       "IUD",
       "intrauterine device",
       "non-hormonal contraception",
-      "emergency contraception",
-      "LARC",
-      "contraceptive coil",
-      "coil fitting",
       "long-acting reversible contraception",
-      "pregnancy prevention",
-      "copper IUD",
-      "sexual health services"
+      "LARC",
+      "emergency contraception",
+      "coil fitting",
+      "IUD threads",
+      "contraceptive clinic",
+      "fertility after removal",
+      "copper IUD side effects"
     ]
   },
   "brook-mycoplasma-genitalium-mg.md": {
-    "title": "Mycoplasma Genitalium (MG)",
+    "title": "Mycoplasma Genitalium (MG): What are The Symptoms, Tests & Treatments",
     "source": "Brook",
     "filePath": "article-mds/brook-mycoplasma-genitalium-mg.md",
     "tags": [
@@ -5041,16 +5027,15 @@
       "Everyone"
     ],
     "keywords": [
-      "Mycoplasma Genitalium",
+      "Mycoplasma genitalium",
       "MG",
       "Mgen",
       "STI symptoms",
       "STI testing",
-      "antibiotics",
+      "antibiotic resistance",
       "pelvic inflammatory disease",
+      "PID",
       "partner notification",
-      "bacterial infection",
-      "sexual health",
       "urethritis",
       "vaginal discharge"
     ]
@@ -5061,23 +5046,22 @@
     "filePath": "article-mds/brook-genital-warts.md",
     "tags": [
       "STIs",
+      "Everyone",
       "Penis & Testicles",
-      "Vulva, Vagina & Uterus",
-      "Everyone"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "genital warts",
       "HPV",
       "human papillomavirus",
       "Gardasil 9",
-      "sexual health",
-      "symptoms",
-      "treatment",
-      "transmission",
-      "diagnosis",
-      "prevention",
-      "vaccine",
-      "STI testing"
+      "STI symptoms",
+      "wart treatment",
+      "cryotherapy",
+      "sexual health clinic",
+      "HPV vaccine",
+      "skin-to-skin contact",
+      "STI diagnosis"
     ]
   },
   "brook-having-great-sex-safely.md": {
@@ -5087,23 +5071,22 @@
     "tags": [
       "Sex & Pleasure",
       "Relationships & Consent",
-      "Contraception",
+      "Everyone",
       "STIs",
-      "Everyone"
+      "Contraception"
     ],
     "keywords": [
-      "sexuality",
-      "masturbation",
+      "safe sex",
       "consent",
-      "boundaries",
-      "communication",
-      "contraception",
-      "STIs",
-      "condoms",
+      "sexual desire",
+      "masturbation",
       "physical intimacy",
+      "communication",
       "erogenous zones",
-      "orgasm",
-      "pleasure",
+      "condoms",
+      "pregnancy prevention",
+      "boundaries",
+      "privacy",
       "sexual health"
     ]
   },
@@ -5115,21 +5098,22 @@
       "Contraception",
       "STIs",
       "Pregnancy & Choices",
-      "Sex & Pleasure",
+      "Relationships & Consent",
       "Penis & Testicles"
     ],
     "keywords": [
-      "condom safety",
-      "contraception mistakes",
+      "condoms",
+      "sexual health",
+      "contraception",
       "STI prevention",
       "pregnancy prevention",
-      "water-based lubricant",
-      "condom sizing",
+      "lubrication",
       "stealthing",
-      "safe sex",
-      "condom expiry",
+      "condom size",
+      "expiry dates",
+      "sex toys",
       "emergency contraception",
-      "sex toy safety"
+      "C-Card"
     ]
   },
   "brook-how-porn-affected-my-sex-experience.md": {
@@ -5137,23 +5121,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-how-porn-affected-my-sex-experience.md",
     "tags": [
-      "Digital Life",
       "Relationships & Consent",
+      "Digital Life",
       "Sex & Pleasure",
       "Mental Health & Wellbeing"
     ],
     "keywords": [
       "pornography",
-      "first sexual experience",
+      "Sian's story",
       "sex education",
+      "first sexual experience",
       "consent",
       "peer pressure",
       "body image",
       "pubic hair",
-      "shame",
+      "misinformation",
       "teenage relationships",
-      "intimacy",
-      "sexual health"
+      "online influence"
     ]
   },
   "brook-talking-to-people-about-stis.md": {
@@ -5163,44 +5147,48 @@
     "tags": [
       "STIs",
       "Relationships & Consent",
+      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
       "STI",
       "sexual health",
       "disclosure",
-      "HIV",
-      "transmission",
+      "HIV law",
       "partner notification",
-      "sexual history",
-      "legal",
       "communication",
-      "support",
-      "safety",
-      "testing"
+      "relationships",
+      "safe sex",
+      "condoms",
+      "health status",
+      "support"
     ]
   },
   "brook-erections-and-staying-hard.md": {
-    "title": "Erections and staying hard",
+    "title": "Erections and staying hard - 6 things that affect erections",
     "source": "Brook",
     "filePath": "article-mds/brook-erections-and-staying-hard.md",
     "tags": [
       "Penis & Testicles",
       "Sex & Pleasure",
-      "Mental Health & Wellbeing"
+      "Mental Health & Wellbeing",
+      "Anatomy & Cycles",
+      "Everyone"
     ],
     "keywords": [
       "erections",
       "staying hard",
       "erectile dysfunction",
       "performance anxiety",
-      "pornography",
       "sexual health",
       "stress",
-      "anxiety",
+      "pornography",
+      "blood flow",
+      "arousal",
       "sexual pleasure",
-      "communication",
-      "libido"
+      "mental health",
+      "anxiety",
+      "relationships"
     ]
   },
   "brook-learning-to-love-my-skin-millys-story.md": {
@@ -5210,21 +5198,21 @@
     "tags": [
       "Mental Health & Wellbeing",
       "Anatomy & Cycles",
+      "Contraception",
       "Everyone"
     ],
     "keywords": [
-      "Milly",
-      "eczema",
       "acne",
-      "skin conditions",
+      "eczema",
+      "skin health",
       "Accutane",
       "contraceptive pill",
-      "skin barrier",
       "self-confidence",
-      "puberty",
+      "body image",
       "dermatology",
-      "skincare routine",
-      "mental health"
+      "skin barrier",
+      "hormonal contraception",
+      "puberty"
     ]
   },
   "brook-proctitis.md": {
@@ -5234,25 +5222,28 @@
     "tags": [
       "STIs",
       "Anatomy & Cycles",
+      "Sex & Pleasure",
       "Everyone"
     ],
     "keywords": [
       "proctitis",
       "rectum inflammation",
-      "anal health",
+      "anal soreness",
+      "STI symptoms",
       "gonorrhoea",
-      "chlamydia",
       "syphilis",
       "herpes",
-      "bowel movements",
-      "GUM clinic",
-      "sexual health testing",
-      "Crohn's disease",
-      "ulcerative colitis"
+      "chlamydia",
+      "anal sex",
+      "bowel movement pain",
+      "Crohns disease",
+      "ulcerative colitis",
+      "sexual health clinic",
+      "partner notification"
     ]
   },
   "brook-kanikas-story-anxiety.md": {
-    "title": "Anxiety: Kanika's story",
+    "title": "Anxiety: Kanika\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-kanikas-story-anxiety.md",
     "tags": [
@@ -5260,18 +5251,43 @@
       "Everyone"
     ],
     "keywords": [
-      "anxiety",
-      "social anxiety",
-      "depression",
+      "Anxiety",
+      "Kanika",
+      "Mental health",
       "Sertraline",
-      "antidepressants",
-      "therapy",
-      "CAMHS",
-      "mental health support",
-      "university student",
-      "side effects",
-      "health anxiety",
-      "medication"
+      "Medication",
+      "Therapy",
+      "Social anxiety",
+      "Health anxiety",
+      "University mental health",
+      "NHS CAMHS",
+      "Counselling",
+      "Antidepressants"
+    ]
+  },
+  "brook-my-first-period-milas-story.md": {
+    "title": "My first period: Mila\u2019s story",
+    "source": "Brook",
+    "filePath": "article-mds/brook-my-first-period-milas-story.md",
+    "tags": [
+      "Anatomy & Cycles",
+      "Mental Health & Wellbeing",
+      "Vulva, Vagina & Uterus",
+      "Pregnancy & Choices"
+    ],
+    "keywords": [
+      "first period",
+      "menstruation",
+      "heavy periods",
+      "tampons",
+      "puberty",
+      "early bloomer",
+      "period cramps",
+      "menstrual depression",
+      "acne",
+      "health education",
+      "PMS",
+      "pregnancy risk"
     ]
   },
   "brook-loneliness.md": {
@@ -5280,7 +5296,6 @@
     "filePath": "article-mds/brook-loneliness.md",
     "tags": [
       "Mental Health & Wellbeing",
-      "Relationships & Consent",
       "Digital Life",
       "Everyone"
     ],
@@ -5290,36 +5305,37 @@
       "mental health",
       "wellbeing",
       "young people",
-      "social media comparison",
+      "social media",
       "bullying",
-      "relationships",
-      "disconnection",
-      "support",
       "emotional health",
-      "helplines"
+      "support",
+      "connection",
+      "feeling left out"
     ]
   },
   "brook-herpes-gemmas-story.md": {
-    "title": "Herpes: Gemma's story",
+    "title": "Herpes: Gemma\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-herpes-gemmas-story.md",
     "tags": [
       "STIs",
+      "Sex & Pleasure",
       "Vulva, Vagina & Uterus",
       "Everyone"
     ],
     "keywords": [
       "herpes",
       "genital herpes",
-      "STI testing",
-      "cold sores",
+      "STI story",
       "sexual health clinic",
-      "blisters",
+      "cold sores",
+      "oral sex",
       "antivirals",
       "salt water bath",
+      "STI testing",
       "stigma",
-      "oral sex",
-      "STI symptoms"
+      "blisters",
+      "first-hand account"
     ]
   },
   "brook-adoption.md": {
@@ -5333,17 +5349,17 @@
     ],
     "keywords": [
       "adoption",
-      "birth parents",
-      "legal rights",
+      "pregnancy choices",
+      "legal parents",
       "adoption order",
       "social workers",
-      "pregnancy choices",
+      "birth parents",
+      "parental rights",
       "adoptive parents",
-      "birth father",
-      "unplanned pregnancy",
-      "post-natal depression",
-      "adoption agency",
-      "parental responsibility"
+      "pregnancy options",
+      "postnatal depression",
+      "adoption process",
+      "legal advice"
     ]
   },
   "brook-gonorrhoea.md": {
@@ -5361,15 +5377,14 @@
       "STI",
       "bacterial infection",
       "symptoms",
-      "testing",
-      "treatment",
-      "antibiotics",
       "infertility",
-      "unprotected sex",
+      "discharge",
       "swab test",
-      "urine test",
-      "partner notification",
-      "super-strain"
+      "antibiotics",
+      "super-strain",
+      "sexual health",
+      "unprotected sex",
+      "partner notification"
     ]
   },
   "brook-heavy-and-painful-periods-edens-story.md": {
@@ -5383,21 +5398,21 @@
     ],
     "keywords": [
       "heavy periods",
-      "painful periods",
-      "endometriosis",
-      "menstrual health",
+      "menstrual bleeding",
       "menstrual cramps",
-      "heavy bleeding",
-      "menstrual cycle",
       "period pain",
-      "Eden's story",
-      "menstrual education",
-      "period fatigue",
-      "menstruation"
+      "endometriosis",
+      "migraine",
+      "A&E",
+      "teen periods",
+      "menstrual health",
+      "school exams",
+      "insomnia",
+      "fatigue"
     ]
   },
   "brook-how-my-friends-support-my-mental-health-rachels-story.md": {
-    "title": "How my friends support my mental health: Rachel's story",
+    "title": "How my friends support my mental health: Rachel\u2019s story",
     "source": "Brook",
     "filePath": "article-mds/brook-how-my-friends-support-my-mental-health-rachels-story.md",
     "tags": [
@@ -5409,42 +5424,42 @@
     "keywords": [
       "Rachel's story",
       "mental health",
-      "queer friendships",
       "support system",
+      "queer friendships",
       "chosen family",
       "wellbeing",
-      "authenticity",
       "platonic relationships",
-      "Pride",
       "sexual health",
-      "identity",
-      "emotional support"
+      "authentic living",
+      "Pride",
+      "LGBTQ support",
+      "emotional health"
     ]
   },
   "brook-am-i-pregnant.md": {
-    "title": "Pregnancy test: Am I pregnant?",
+    "title": "Pregnancy Test: Am I Pregnant?",
     "source": "Brook",
     "filePath": "article-mds/brook-am-i-pregnant.md",
     "tags": [
-      "Contraception",
       "Pregnancy & Choices",
+      "Contraception",
+      "Anatomy & Cycles",
       "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "pregnancy test",
+      "am I pregnant",
+      "ovulation",
       "emergency contraception",
       "morning after pill",
       "copper coil",
       "IUD",
-      "early pregnancy signs",
-      "missed period",
+      "HCG",
       "implantation bleeding",
-      "abortion",
+      "pregnancy symptoms",
+      "abortion options",
       "adoption",
-      "ovulation",
-      "HCG hormone",
-      "conception",
-      "sexual health"
+      "missed period"
     ]
   },
   "brook-do-i-need-to-see-a-doctor.md": {
@@ -5454,25 +5469,23 @@
     "tags": [
       "STIs",
       "Anatomy & Cycles",
-      "Vulva, Vagina & Uterus",
-      "Contraception"
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "vagina",
       "vulva",
+      "vaginal discharge",
       "thrush",
-      "discharge",
-      "itching",
-      "dryness",
       "bacterial vaginosis",
       "trichomoniasis",
-      "bartholins cyst",
+      "Bartholins cyst",
       "genital warts",
       "herpes",
       "vaginismus",
-      "cystitis",
       "STI testing",
-      "emergency contraception"
+      "vaginal dryness",
+      "cystitis",
+      "HPV"
     ]
   },
   "brook-after-the-date.md": {
@@ -5487,42 +5500,40 @@
     ],
     "keywords": [
       "dating",
-      "first date",
-      "second date",
-      "rejection",
+      "relationships",
       "ghosting",
+      "rejection",
+      "second date",
       "communication",
-      "dating apps",
-      "letting someone down",
-      "self-esteem",
-      "closure",
+      "mental health",
+      "advice",
       "social skills",
+      "texting",
+      "dating apps",
       "online dating"
     ]
   },
   "brook-finding-the-right-contraception-for-me-ionas-story.md": {
-    "title": "Finding the right contraception for me: Iona\u2019s story",
+    "title": "Finding the right contraception for me: Iona's story",
     "source": "Brook",
     "filePath": "article-mds/brook-finding-the-right-contraception-for-me-ionas-story.md",
     "tags": [
       "Contraception",
       "Anatomy & Cycles",
-      "Mental Health & Wellbeing",
-      "Vulva, Vagina & Uterus"
+      "Mental Health & Wellbeing"
     ],
     "keywords": [
       "Iona's story",
-      "contraceptive pill",
+      "contraception",
       "blood clot",
+      "side effects",
       "progesterone only pill",
       "contraceptive implant",
       "migraines",
-      "headaches",
-      "Clexane",
-      "Warfarin",
-      "hormonal contraception risks",
+      "hormonal contraception",
       "condoms",
-      "side effects"
+      "medical advocacy",
+      "menstrual cycle"
     ]
   },
   "brook-making-a-decision-about-a-pregnancy.md": {
@@ -5535,17 +5546,16 @@
       "Everyone"
     ],
     "keywords": [
-      "pregnancy",
+      "unplanned pregnancy",
       "abortion",
       "adoption",
       "parenting",
-      "unplanned pregnancy",
-      "choices",
-      "decision making",
-      "mental health",
-      "counselling",
-      "pro-choice",
-      "crisis pregnancy centres"
+      "pregnancy options",
+      "British Pregnancy Advisory Service",
+      "MSI Reproductive Choices",
+      "crisis pregnancy centres",
+      "reproductive rights",
+      "counselling"
     ]
   },
   "brook-having-sex-for-the-first-time.md": {
@@ -5562,39 +5572,39 @@
     "keywords": [
       "first time sex",
       "consent",
-      "sexual health",
-      "condoms",
-      "body positivity",
-      "erogenous zones",
-      "pain during sex",
-      "nerves",
       "communication",
-      "losing virginity",
-      "sexual pleasure"
+      "contraception",
+      "condoms",
+      "erogenous zones",
+      "body image",
+      "sexual health",
+      "pleasure",
+      "nerves"
     ]
   },
   "brook-the-abortion-process.md": {
-    "title": "The Abortion Process",
+    "title": "The Abortion Process: What happens when you get an abortion?",
     "source": "Brook",
     "filePath": "article-mds/brook-the-abortion-process.md",
     "tags": [
       "Pregnancy & Choices",
+      "Mental Health & Wellbeing",
       "Vulva, Vagina & Uterus",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
-      "abortion process",
+      "abortion",
       "termination",
+      "pregnancy",
       "medical abortion",
       "surgical abortion",
-      "abortion pill",
       "mifepristone",
       "misoprostol",
+      "abortion clinic",
       "abortion recovery",
-      "pregnancy options",
-      "abortion clinics",
-      "reproductive health",
-      "abortion aftercare"
+      "abortion procedure",
+      "post-abortion feelings",
+      "abortion consent"
     ]
   },
   "brook-setting-boundaries-cassies-story.md": {
@@ -5610,13 +5620,15 @@
       "boundaries",
       "people pleasing",
       "self-worth",
+      "emotional labour",
       "self-love",
-      "emotional limits",
-      "communication",
-      "rejection",
-      "toxic behavior",
       "healthy relationships",
-      "mental health"
+      "personal limits",
+      "saying no",
+      "assertiveness",
+      "mental health",
+      "healing",
+      "communication"
     ]
   },
   "brook-social-media-and-relationships.md": {
@@ -5626,22 +5638,22 @@
     "tags": [
       "Relationships & Consent",
       "Digital Life",
-      "Mental Health & Wellbeing"
+      "Mental Health & Wellbeing",
+      "Everyone"
     ],
     "keywords": [
       "social media",
       "relationships",
       "online dating",
       "jealousy",
-      "insecurities",
-      "Instagram",
-      "Facebook",
-      "digital habits",
-      "long distance relationships",
-      "public declarations of love",
-      "communication",
-      "authenticity",
-      "Sophie's story"
+      "instagram",
+      "facebook",
+      "digital communication",
+      "long distance",
+      "trust",
+      "insecurity",
+      "cyberstalking",
+      "digital wellbeing"
     ]
   },
   "brook-being-a-teen-mum-amber-and-chloes-story.md": {
@@ -5650,23 +5662,20 @@
     "filePath": "article-mds/brook-being-a-teen-mum-amber-and-chloes-story.md",
     "tags": [
       "Pregnancy & Choices",
-      "Relationships & Consent",
       "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
-      "teen pregnancy",
-      "teenage mum",
-      "Teen Mom UK",
-      "Amber",
-      "Chloe",
+      "teen mum",
+      "teenage pregnancy",
       "telling parents",
-      "motherhood",
       "pregnancy test",
+      "young parents",
+      "judgment",
+      "motherhood",
+      "support for young mums",
       "family nurse",
-      "social judgment",
-      "parenting advice",
-      "young parents"
+      "parenting advice"
     ]
   },
   "brook-masturbation-and-body-disassociation-zois-story.md": {
@@ -5677,69 +5686,70 @@
       "Mental Health & Wellbeing",
       "Sex & Pleasure",
       "LGBTQ+",
-      "Everyone"
+      "Anatomy & Cycles"
     ],
     "keywords": [
-      "body disassociation",
       "masturbation",
-      "childhood trauma",
-      "mental health",
+      "body dissociation",
+      "trauma",
       "sexual intimacy",
-      "queer identity",
+      "queer",
+      "self-love",
       "feminism",
-      "internalised misogyny",
-      "self-worth",
-      "university pressure",
-      "sexual expression",
-      "recovery"
+      "misogyny",
+      "mental health",
+      "asexuality",
+      "pleasure",
+      "body image"
     ]
   },
   "brook-looking-for-a-relationship.md": {
-    "title": "Looking for a relationship",
+    "title": "Are you ready for a relationship?",
     "source": "Brook",
     "filePath": "article-mds/brook-looking-for-a-relationship.md",
     "tags": [
       "Relationships & Consent",
+      "Everyone",
       "Mental Health & Wellbeing",
-      "Digital Life",
-      "Everyone"
+      "Digital Life"
     ],
     "keywords": [
       "dating",
       "relationships",
-      "self-worth",
       "green flags",
-      "asking someone out",
-      "consent",
       "first kiss",
+      "asking someone out",
       "rejection",
-      "friendship",
-      "break ups"
+      "break up",
+      "friendzone",
+      "online dating",
+      "boundaries",
+      "self-worth",
+      "consent"
     ]
   },
   "brook-chronic-bv-and-thrush-nadines-story.md": {
-    "title": "Chronic BV and thrush: Nadine\u2019s story",
+    "title": "Chronic BV and thrush: Nadine's story",
     "source": "Brook",
     "filePath": "article-mds/brook-chronic-bv-and-thrush-nadines-story.md",
     "tags": [
       "Vulva, Vagina & Uterus",
       "Mental Health & Wellbeing",
-      "Everyone",
-      "Sex & Pleasure"
+      "Everyone"
     ],
     "keywords": [
-      "BV",
       "Bacterial Vaginosis",
+      "BV",
       "Thrush",
       "Chronic infection",
       "Vaginal health",
       "Nadine's story",
-      "Self-love",
-      "Health anxiety",
-      "Vaginal discharge",
-      "Body image",
-      "Women's health",
-      "Sexual health"
+      "Vagina",
+      "Vulva",
+      "Mental wellbeing",
+      "Personal experience",
+      "Self-care",
+      "Chronic illness"
     ]
   },
   "brook-homesickness-at-university-jasmins-story.md": {
@@ -5748,25 +5758,25 @@
     "filePath": "article-mds/brook-homesickness-at-university-jasmins-story.md",
     "tags": [
       "Mental Health & Wellbeing",
-      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
-      "university",
       "homesickness",
-      "mental health",
+      "university",
+      "student life",
       "moving away",
       "independence",
-      "student life",
+      "loneliness",
+      "mental health",
       "wellbeing",
-      "anxiety",
-      "family",
       "adulthood",
-      "loneliness"
+      "Jasmin",
+      "freshers",
+      "family"
     ]
   },
   "brook-first-relationship-nicoles-story.md": {
-    "title": "First relationship: Nicole\u2019s story",
+    "title": "First relationship: Nicole's story",
     "source": "Brook",
     "filePath": "article-mds/brook-first-relationship-nicoles-story.md",
     "tags": [
@@ -5776,17 +5786,17 @@
       "Everyone"
     ],
     "keywords": [
+      "Nicole",
       "first relationship",
-      "Nicole's story",
-      "anxiety",
-      "mental health support",
-      "cheating",
       "breakup",
-      "long distance relationship",
-      "emotional dependency",
+      "cheating",
+      "anxiety",
       "sex education",
       "independence",
-      "university life"
+      "long distance",
+      "university",
+      "emotional dependency",
+      "mental health support"
     ]
   },
   "brook-hpv.md": {
@@ -5796,22 +5806,21 @@
     "tags": [
       "STIs",
       "Vulva, Vagina & Uterus",
-      "Everyone",
-      "Anatomy & Cycles"
+      "Everyone"
     ],
     "keywords": [
       "HPV",
       "Human papillomavirus",
       "genital warts",
       "cervical cancer",
-      "HPV vaccine",
       "Gardasil",
+      "vaccination",
       "cervical screening",
       "smear test",
+      "skin-to-skin contact",
       "STI",
-      "sexual health",
-      "Gardasil 9",
-      "anal screening"
+      "anal cancer",
+      "NHS"
     ]
   },
   "brook-my-adhd-perimenopause-journey-vickys-story.md": {
@@ -5819,9 +5828,9 @@
     "source": "Brook",
     "filePath": "article-mds/brook-my-adhd-perimenopause-journey-vickys-story.md",
     "tags": [
-      "Mental Health & Wellbeing",
       "Neurodivergent",
       "Anatomy & Cycles",
+      "Mental Health & Wellbeing",
       "Everyone"
     ],
     "keywords": [
@@ -5830,13 +5839,12 @@
       "menopause",
       "HRT",
       "neurodiversity",
-      "mental health",
-      "hormones",
-      "GP diagnosis",
-      "neurodivergent women",
-      "ADHD medication",
-      "anxiety",
-      "hormonal health"
+      "hormonal health",
+      "ADHD diagnosis",
+      "vagina atrophy",
+      "mental health awareness",
+      "hormonal rage",
+      "executive dysfunction"
     ]
   },
   "brook-realising-im-on-the-aromantic-asexual-spectrum-vins-story.md": {
@@ -5847,7 +5855,8 @@
       "LGBTQ+",
       "Mental Health & Wellbeing",
       "Relationships & Consent",
-      "Sex & Pleasure"
+      "Sex & Pleasure",
+      "Everyone"
     ],
     "keywords": [
       "aromantic",
@@ -5859,9 +5868,9 @@
       "platonic life partner",
       "relationships",
       "sexuality",
-      "self-care",
       "community",
-      "romantic partner"
+      "self-care",
+      "queer"
     ]
   },
   "brook-penis-and-testicle-faqs.md": {
@@ -5876,17 +5885,18 @@
       "Trans & Non-Binary"
     ],
     "keywords": [
-      "penis",
-      "testicles",
-      "condoms",
-      "sexual health",
-      "masturbation",
+      "penis size",
+      "testicle lumps",
       "blue balls",
       "penile fracture",
-      "lumps",
+      "frenulum tear",
+      "masturbation myths",
+      "condom effectiveness",
       "STI testing",
-      "hygiene",
-      "medical transition"
+      "smegma",
+      "genital hygiene",
+      "medical transition",
+      "pubic hair"
     ]
   },
   "brook-lgbt-and-mental-health.md": {
@@ -5894,24 +5904,25 @@
     "source": "Brook",
     "filePath": "article-mds/brook-lgbt-and-mental-health.md",
     "tags": [
-      "Mental Health & Wellbeing",
       "LGBTQ+",
-      "Trans & Non-Binary"
+      "Mental Health & Wellbeing",
+      "Trans & Non-Binary",
+      "STIs",
+      "Everyone"
     ],
     "keywords": [
-      "LGBT+",
+      "LGBTQ+",
       "mental health",
       "anxiety",
       "depression",
-      "discrimination",
       "coming out",
+      "discrimination",
       "homophobia",
-      "biphobia",
       "transphobia",
-      "support groups",
+      "wellbeing",
+      "community support",
       "sexual health",
-      "social media",
-      "pronouns"
+      "social media boundaries"
     ]
   },
   "brook-bisexuality-and-bi-erasure-alices-story.md": {
@@ -5921,20 +5932,21 @@
     "tags": [
       "LGBTQ+",
       "Mental Health & Wellbeing",
+      "Relationships & Consent",
       "Everyone"
     ],
     "keywords": [
       "bisexuality",
       "bi-erasure",
       "biphobia",
-      "queer identity",
-      "Pride month",
-      "representation",
+      "bisexual woman",
       "straight-presenting relationship",
-      "LGBTQ+ education",
-      "monogamy",
+      "pride month",
+      "LGBTQ+ identity",
+      "visibility",
+      "queer representation",
       "mental health",
-      "bisexual visibility"
+      "inclusive education"
     ]
   },
   "brook-keeping-clean.md": {
@@ -5944,21 +5956,22 @@
     "tags": [
       "Anatomy & Cycles",
       "Everyone",
-      "Mental Health & Wellbeing"
+      "Penis & Testicles",
+      "Vulva, Vagina & Uterus"
     ],
     "keywords": [
       "hygiene",
       "puberty",
-      "body odour",
       "sweat",
-      "oily hair",
+      "body odour",
       "shaving",
-      "facial hair",
-      "body hair removal",
-      "deodorant",
-      "antiperspirant",
+      "oily hair",
       "sebaceous glands",
-      "skincare"
+      "deodorant",
+      "facial hair",
+      "hair removal",
+      "skincare",
+      "hormones"
     ]
   },
   "brook-sexting.md": {
@@ -5976,13 +5989,13 @@
       "cyberflashing",
       "intimate image abuse",
       "revenge porn",
-      "consent",
       "online safety",
-      "youth produced sexual imagery",
+      "consent",
       "legal age",
-      "digital privacy",
+      "YPSI",
+      "digital footprints",
       "blackmail",
-      "sexual messages"
+      "reporting"
     ]
   },
   "brook-dental-dams.md": {
@@ -5997,16 +6010,15 @@
     ],
     "keywords": [
       "dental dams",
-      "oral sex",
-      "STI prevention",
+      "oral sex protection",
       "safe sex",
-      "latex barriers",
-      "polyurethane dams",
+      "STI prevention",
+      "latex barrier",
       "water-based lubricant",
-      "GUM clinic",
-      "sexual health",
-      "how to use a dental dam",
-      "DIY dental dam"
+      "polyurethane dam",
+      "DIY dental dam",
+      "sexual health clinic",
+      "oral sex hygiene"
     ]
   },
   "brook-endometriosis-justynas-story.md": {
@@ -6016,22 +6028,23 @@
     "tags": [
       "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
-      "Sex & Pleasure",
-      "LGBTQ+"
+      "LGBTQ+",
+      "Mental Health & Wellbeing",
+      "Sex & Pleasure"
     ],
     "keywords": [
       "endometriosis",
-      "chronic pain",
-      "laparoscopy",
-      "period pain",
-      "endo belly",
-      "PMDD",
-      "ovarian cysts",
-      "painful sex",
-      "hormonal contraception",
       "Justyna",
-      "keyhole surgery",
-      "gynaecology"
+      "period pain",
+      "heavy periods",
+      "laparoscopy",
+      "PMDD",
+      "endo belly",
+      "chronic pain",
+      "gynaecology",
+      "birth control side effects",
+      "invisible illness",
+      "painful sex"
     ]
   },
   "brook-endometriosis.md": {
@@ -6044,45 +6057,45 @@
       "Everyone"
     ],
     "keywords": [
-      "Endometriosis",
+      "endometriosis",
       "chronic condition",
       "womb lining",
-      "periods",
-      "pelvic pain",
+      "painful periods",
+      "heavy periods",
       "infertility",
       "diagnosis",
       "hormonal contraception",
-      "menstruation",
-      "womb health",
-      "painful periods"
+      "menstrual cycle",
+      "reproductive health",
+      "pelvic pain"
     ]
   },
   "brook-bacterial-vaginosis-bv.md": {
-    "title": "Bacterial Vaginosis (BV)",
+    "title": "Bacterial Vaginosis (BV): What are The Symptoms, Tests & Treatments",
     "source": "Brook",
     "filePath": "article-mds/brook-bacterial-vaginosis-bv.md",
     "tags": [
-      "Vulva, Vagina & Uterus",
       "STIs",
       "Pregnancy & Choices",
-      "Contraception"
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
-      "bacterial vaginosis",
-      "BV",
+      "Bacterial Vaginosis",
+      "BV symptoms",
       "vaginal discharge",
       "fishy smell",
-      "vagina health",
+      "vaginal pH",
       "antibiotics",
-      "douching",
       "IUD",
-      "GUM clinic",
-      "vaginal acidity",
-      "pH level"
+      "douching",
+      "pregnancy complications",
+      "vaginal bacteria",
+      "sexual health clinic"
     ]
   },
   "brook-vaginitis.md": {
-    "title": "Vaginitis",
+    "title": "Vaginitis: What are The Symptoms, Tests & Treatments",
     "source": "Brook",
     "filePath": "article-mds/brook-vaginitis.md",
     "tags": [
@@ -6091,19 +6104,18 @@
       "Vulva, Vagina & Uterus"
     ],
     "keywords": [
-      "Vaginitis",
+      "vaginitis",
       "inflammation",
       "vaginal discharge",
       "itching",
       "thrush",
       "bacterial vaginosis",
+      "chlamydia",
+      "trichomoniasis",
+      "genital herpes",
       "douching",
-      "antibiotics",
-      "antifungal",
-      "sexual health",
-      "Trichomoniasis",
-      "Chlamydia",
-      "Genital herpes"
+      "vagina health",
+      "antibiotics"
     ]
   },
   "brook-trichomoniasis.md": {
@@ -6112,71 +6124,47 @@
     "filePath": "article-mds/brook-trichomoniasis.md",
     "tags": [
       "STIs",
+      "Pregnancy & Choices",
       "Penis & Testicles",
-      "Vulva, Vagina & Uterus"
+      "Vulva, Vagina & Uterus",
+      "Everyone"
     ],
     "keywords": [
       "Trichomoniasis",
       "Trichomonas vaginalis",
-      "TV parasite",
+      "TV",
       "STI",
-      "metronidazole",
+      "parasite",
       "vaginal discharge",
       "penis discharge",
-      "sexual health",
+      "metronidazole",
       "antibiotics",
+      "sexual health",
       "partner notification",
-      "urethra infection",
-      "sexual health clinic"
-    ]
-  },
-  "brook-power-imbalances-in-relationships.md": {
-    "title": "Age gaps and Power imbalances in relationships",
-    "source": "Brook",
-    "filePath": "article-mds/brook-power-imbalances-in-relationships.md",
-    "tags": [
-      "Relationships & Consent",
-      "Mental Health & Wellbeing",
-      "Everyone"
-    ],
-    "keywords": [
-      "power imbalance",
-      "age gaps",
-      "coercive control",
-      "relationship abuse",
-      "dating safety",
-      "financial power",
-      "age of consent",
-      "position of trust",
-      "manipulation",
-      "healthy relationships",
-      "domestic abuse signs",
-      "authority in relationships"
+      "contact slip"
     ]
   },
   "brook-masturbation-rachels-story.md": {
-    "title": "Masturbation: Rachel\u2019s Story",
+    "title": "Masturbation: Rachel's Story",
     "source": "Brook",
     "filePath": "article-mds/brook-masturbation-rachels-story.md",
     "tags": [
       "Sex & Pleasure",
       "Vulva, Vagina & Uterus",
-      "Anatomy & Cycles",
-      "Everyone"
+      "Anatomy & Cycles"
     ],
     "keywords": [
       "masturbation",
-      "Rachel's story",
       "orgasm",
-      "clitoral stimulation",
-      "vaginal penetration",
-      "vibrators",
-      "sex positive",
-      "internal clitoris",
-      "body confidence",
-      "self-pleasure",
+      "clitoris",
+      "vagina",
       "sexual discovery",
-      "vulva"
+      "body confidence",
+      "vibrator",
+      "sex positivity",
+      "personal story",
+      "stress relief",
+      "sexual health"
     ]
   },
   "brook-sex-and-consent.md": {
@@ -6185,22 +6173,22 @@
     "filePath": "article-mds/brook-sex-and-consent.md",
     "tags": [
       "Relationships & Consent",
-      "Everyone",
       "Sex & Pleasure",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "consent",
       "sexual activity",
       "sexual violence",
-      "UK law",
+      "sexual assault",
+      "rape",
       "Sexual Offences Act 2003",
+      "freedom and capacity",
       "age of consent",
       "enthusiastic consent",
-      "mental capacity",
-      "sexual health",
-      "sexual assault",
-      "freedom to consent"
+      "reporting sexual abuse",
+      "Childline",
+      "sexual health services"
     ]
   },
   "brook-discharge.md": {
@@ -6208,24 +6196,23 @@
     "source": "Brook",
     "filePath": "article-mds/brook-discharge.md",
     "tags": [
-      "Anatomy & Cycles",
       "Vulva, Vagina & Uterus",
-      "STIs",
-      "Everyone"
+      "Anatomy & Cycles",
+      "STIs"
     ],
     "keywords": [
-      "vaginal discharge",
-      "vagina",
-      "vulva",
-      "menstrual cycle",
-      "ovulation",
+      "discharge",
+      "vaginal health",
       "thrush",
       "bacterial vaginosis",
-      "douching",
-      "sexual arousal",
-      "vaginal health",
+      "menstrual cycle",
+      "ovulation",
       "hygiene",
-      "STIs"
+      "vulva",
+      "infection",
+      "sexual health",
+      "lubrication",
+      "arousal"
     ]
   },
   "brook-chlamydia.md": {
@@ -6239,23 +6226,17 @@
       "Everyone"
     ],
     "keywords": [
-      "Chlamydia",
-      "STI",
-      "UK",
-      "symptoms",
-      "bacterial infection",
-      "testing",
+      "chlamydia",
+      "STI symptoms",
+      "chlamydia test",
+      "chlamydia treatment",
       "antibiotics",
-      "transmission",
+      "bacterial infection",
+      "sexual health",
       "infertility",
       "pelvic inflammatory disease",
-      "swab test",
-      "urine test",
-      "azithromycin",
-      "doxycycline",
       "partner notification",
-      "sexual health clinics",
-      "unprotected sex"
+      "National Chlamydia Screening Programme"
     ]
   },
   "brook-coil-fitting.md": {
@@ -6265,6 +6246,7 @@
     "tags": [
       "Contraception",
       "Vulva, Vagina & Uterus",
+      "Pregnancy & Choices",
       "Everyone"
     ],
     "keywords": [
@@ -6274,12 +6256,12 @@
       "hormonal coil",
       "copper coil",
       "contraception preparation",
+      "Mirena",
       "ectopic pregnancy",
       "womb perforation",
-      "Mirena",
-      "sexual health",
-      "cervix",
-      "STI testing"
+      "coil threads",
+      "pelvic infection",
+      "contraceptive advice"
     ]
   },
   "brook-pornography-and-relationships.md": {
@@ -6288,45 +6270,44 @@
     "filePath": "article-mds/brook-pornography-and-relationships.md",
     "tags": [
       "Relationships & Consent",
-      "Digital Life",
       "Sex & Pleasure",
-      "Everyone"
+      "Digital Life"
     ],
     "keywords": [
       "pornography",
       "relationships",
-      "communication",
       "libido",
+      "communication",
       "cheating",
       "boundaries",
       "legal",
       "under 18",
-      "arousal",
-      "expectations",
-      "trust"
+      "self-esteem",
+      "trust",
+      "honesty",
+      "sexual health"
     ]
   },
   "brook-abortion-advice-for-partners.md": {
-    "title": "Abortion: Advice for Partners",
+    "title": "Abortion: advice for partners",
     "source": "Brook",
     "filePath": "article-mds/brook-abortion-advice-for-partners.md",
     "tags": [
       "Pregnancy & Choices",
       "Relationships & Consent",
-      "Everyone",
-      "Mental Health & Wellbeing"
+      "Everyone"
     ],
     "keywords": [
       "abortion",
-      "partner support",
-      "pregnancy decisions",
+      "pregnancy advice",
+      "partners",
       "bodily autonomy",
-      "legal rights",
-      "healthy relationships",
       "unplanned pregnancy",
-      "coercion",
-      "communication",
-      "reproductive health"
+      "legal rights",
+      "reproductive health",
+      "supporting partners",
+      "abortion law",
+      "coercion"
     ]
   },
   "brook-vasectomy.md": {
@@ -6335,20 +6316,22 @@
     "filePath": "article-mds/brook-vasectomy.md",
     "tags": [
       "Contraception",
-      "Penis & Testicles",
-      "Everyone"
+      "Pregnancy & Choices",
+      "Penis & Testicles"
     ],
     "keywords": [
       "vasectomy",
       "male sterilisation",
       "permanent contraception",
       "sperm",
+      "testicles",
+      "scrotum",
       "semen test",
       "no-scalpel vasectomy",
-      "NHS vasectomy",
+      "conventional vasectomy",
       "sterilisation reversal",
-      "scrotum",
-      "local anaesthetic"
+      "contraceptive efficacy",
+      "sexual health"
     ]
   },
   "brook-i-forgot-to-take-my-pill-or-use-my-contraception-method.md": {
@@ -6367,13 +6350,12 @@
       "progestogen-only pill",
       "emergency contraception",
       "pregnancy test",
-      "contraceptive patch",
-      "contraceptive ring",
       "LARC",
-      "condoms",
       "birth control",
-      "Microgynon",
-      "Cerazette"
+      "contraceptive advice",
+      "unprotected sex",
+      "contraceptive patch",
+      "contraceptive ring"
     ]
   }
 }

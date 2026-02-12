@@ -1,55 +1,27 @@
 # Vagina and Vulva FAQs
 
 ## Summary
-*   **Overview** A collection of common questions and answers regarding the health, anatomy, and appearance of the vagina and vulva, including guidance on symptoms, hygiene, and medical concerns.
+*   **Overview** This article provides answers to common questions regarding vaginal and vulvar health, including anatomy, hygiene, discharge, surgical concerns, and symptoms of infections.
 *   **Disclaimer** The following content is from brook.org.
 
-## Common Questions and Answers
-
-Common questions and answers about vaginas and vulvas.
-
+## Common Questions and Anatomy
 *   **What is the vulva?** The vulva is often mistakenly referred to as the vagina. The vagina is the muscular tube inside your body. You can’t see it but it’s where you might put tampons during your period. The vulva is the visible, external bit of your genitals.
 *   **How do I know if my vulva is normal?** Vulvas come in lots of different shapes, sizes and colours. 
 *   **Do I need to see a Doctor about my vulva?** If you have noticed changes or are experiencing symptoms such as itchiness, dryness, discharge or soreness in your vagina or vulva, it is recommended that you see a doctor. 
-*   **Why do I have discharge?** Discharge is the vagina’s way of cleaning itself and healthy discharge is exactly that – healthy. 
-    
-    Discharge can be thick, watery, white, pink or brown depending on the different stages of your menstrual cycle. It can also have a faint smell to it. 
-    
-    However if your discharge is making you itch, or if it smells unpleasant or has the texture of cottage cheese, you should speak to a doctor or nurse. 
-*   **Can I get surgery if I am unhappy with the way my vulva looks?** It is possible to have surgery to shorten and/or reshape the labia. This surgery is known as labiaplasty. 
-    
-    According to NHS figures, in 2015-16 more than 200 girls under 18 had labiaplasty and more than 150 of the girls were under 15. This doesn’t include the girls having private treatment. 
-    
-    However, experts say these operations do not have a medical justification and are considered to be cosmetic surgery. 
-    
-    For this reason, it is important that we educate young people about how our bodies can vary, celebrate diversity, and learn to love our vulvas. 
-    
-    After all, the vagina and vulva are amazing parts of our bodies, especially when it comes to feeling pleasure and giving birth.
-*   **Penetrative sex hurts. Is there something wrong with me?** This happens sometimes and could happen for a number of reasons such as not enough lubrication in the vagina, the position, your emotions, or it could be cause by an infection. 
-    
-    If penetrative sex hurts, either stop or try some different things (e.g. use lube or change position). Talk to you partner about what feels good for you. 
-    
-    If you are worried or penetrative sex is consistently painful, speak to a doctor or nurse. 
-*   **Should I remove my pubic hair?** Lots of people choose to leave their pubic hair exactly the way it is. Some people like to trim or remove some or all of it. Everyone is different and the way you choose to keep your pubic hair is entirely up to you. 
-    
-    Bear in mind though that pubic hair does exist for a reason. It is designed to provide protection from bacteria and reduce friction during penetrative sex. Removing it can result in soreness and ingrown hairs.
-*   **Is it a bad sign if my vulva smells bad?** You know what’s normal for you and every vulva will have its own aroma. 
-    
-    However, fishy-smelling discharge which is thin and grey-white in colour could mean you have bacterial vaginosis , caused by a change in the acidity of your vagina. 
-    
-    Fishy smelling, yellowy-green frothy discharge suggests trichomoniasis , an STI caused by a tiny parasite. A strong, unpleasant smell after sex can suggest vaginitis.
+*   **Why do I have discharge?** Discharge is the vagina’s way of cleaning itself and healthy discharge is exactly that – healthy. Discharge can be thick, watery, white, pink or brown depending on the different stages of your menstrual cycle. It can also have a faint smell to it. However if your discharge is making you itch, or if it smells unpleasant or has the texture of cottage cheese, you should speak to a doctor or nurse. 
+
+## Can I get surgery if I am unhappy with the way my vulva looks?: Part 1
+It is possible to have surgery to shorten and/or reshape the labia. This surgery is known as labiaplasty. According to NHS figures, in 2015-16 more than 200 girls under 18 had labiaplasty and more than 150 of the girls were under 15. This doesn’t include the girls having private treatment. 
+
+## Can I get surgery if I am unhappy with the way my vulva looks?: Part 2
+However, experts say these operations do not have a medical justification and are considered to be cosmetic surgery. For this reason, it is important that we educate young people about how our bodies can vary, celebrate diversity, and learn to love our vulvas. After all, the vagina and vulva are amazing parts of our bodies, especially when it comes to feeling pleasure and giving birth.
+
+## Symptoms and Physical Health
+*   **Penetrative sex hurts. Is there something wrong with me?** This happens sometimes and could happen for a number of reasons such as not enough lubrication in the vagina, the position, your emotions, or it could be cause by an infection. If penetrative sex hurts, either stop or try some different things (e.g. use lube or change position). Talk to you partner about what feels good for you. If you are worried or penetrative sex is consistently painful, speak to a doctor or nurse. 
+*   **Should I remove my pubic hair?** Lots of people choose to leave their pubic hair exactly the way it is. Some people like to trim or remove some or all of it. Everyone is different and the way you choose to keep your pubic hair is entirely up to you. Bear in mind though that pubic hair does exist for a reason. It is designed to provide protection from bacteria and reduce friction during penetrative sex. Removing it can result in soreness and ingrown hairs.
+*   **Is it a bad sign if my vulva smells bad?** You know what’s normal for you and every vulva will have its own aroma. However, fishy-smelling discharge which is thin and grey-white in colour could mean you have bacterial vaginosis , caused by a change in the acidity of your vagina. Fishy smelling, yellowy-green frothy discharge suggests trichomoniasis , an STI caused by a tiny parasite. A strong, unpleasant smell after sex can suggest vaginitis .
 *   **Can tight trousers cause vulva infections?** Wearing tight, restrictive or synthetic clothing will not cause an infection but could irritate the vulva and make symptoms worse.
-*   **Why does it burn when I wee?** If you have a burning sensation or pain when weeing, this could indicate that you have an inflammation of the bladder ( cystitis ), vagina ( vaginitis ) or urethra ( urethritis ). 
-    
-    However it could also be the symptom of a sexually transmitted infection such as chlamydia, gonorrhoea or trichomoniasis. 
-*   **Why am I suffering from vaginal dryness?** Vaginal dryness might be a result of your contraception, medication such an antidepressants, using perfumed products around your vagina and not being aroused during sex. 
-    
-    Vaginal dryness is also a common symptom of menopause which usually usually happens between the ages of 44 and 56 .
-*   **Why is my vulva and/or vagina itchy?** Itching around the vulva and/or vagina is a common symptom of thrush, a yeast infection that is caused by a fungus that lives naturally in the body. 
-    
-    You may also notice a white cottage-cheese like discharge if you have thrush. 
-    
-    Some sexually transmitted infections (STIs) may also result in vaginal itching so it’s really important to make sure you are tested after any unprotected sexual contact.
-*   **I have had unprotected sex but have no symptoms of STIs. Do I need to get tested?** Yes! Not all STIs will give you symptoms so don’t delay, get an STI test for your peace of mind. 
-    
-    Testing is quick, easy and painless. If left untreated, some STIs can cause you more serious problems such as infertility.
+*   **Why does it burn when I wee?** If you have a burning sensation or pain when weeing, this could indicate that you have an inflammation of the bladder ( cystitis ), vagina ( vaginitis ) or urethra ( urethritis ). However it could also be the symptom of a sexually transmitted infection such as chlamydia, gonorrhoea or trichomoniasis. 
+*   **Why am I suffering from vaginal dryness?** Vaginal dryness might be a result of your contraception, medication such an antidepressants, using perfumed products around your vagina and not being aroused during sex. Vaginal dryness is also a common symptom of menopause which usually usually happens between the ages of 44 and 56 .
+*   **Why is my vulva and/or vagina itchy?** Itching around the vulva and/or vagina is a common symptom of thrush, a yeast infection that is caused by a fungus that lives naturally in the body. You may also notice a white cottage-cheese like discharge if you have thrush. Some sexually transmitted infections (STIs) may also result in vaginal itching so it’s really important to make sure you are tested after any unprotected sexual contact.
+*   **I have had unprotected sex but have no symptoms of STIs. Do I need to get tested?** Yes! Not all STIs will give you symptoms so don’t delay, get an STI test for your peace of mind. Testing is quick, easy and painless. If left untreated, some STIs can cause you more serious problems such as infertility.

@@ -1,76 +1,41 @@
 # Masturbation
 
 ## Summary
-*   **Overview** Masturbation is the act of stimulating oneself for sexual pleasure. It is a normal, healthy activity practiced by people of all genders to explore their bodies, relieve stress, and improve mental wellbeing.
+*   **Overview** ‘Masturbation’ means stimulating yourself for sexual pleasure. It is a natural, normal, and harmless way to explore your body, relieve stress, and improve your mental and emotional wellbeing.
 *   **Disclaimer** The following content is from brook.org.
 
-## Masturbation
-‘Masturbation’ means stimulating yourself for sexual pleasure. It can help you to get to know your body and what you enjoy sexually, and can be a great way of relieving stress.
+## What is Masturbation?
+‘Masturbation’ means stimulating yourself for sexual pleasure. It can help you to get to know your body and what you enjoy sexually, and can be a great way of relieving stress. ‘Masturbation’ means stimulating yourself for sexual pleasure. Masturbation is completely normal. According to a 2019 TENGA study on masturbation in the UK , 91% of people said they masturbate, with an average starting age of 14 years old. It is natural and harmless for people of any gender and is a way of exploring your own body that can help you to find out what you like and don’t like sexually.
 
-Masturbation is completely normal. According to a 2019 TENGA study on masturbation in the UK, 91% of people said they masturbate, with an average starting age of 14 years old.
+## What is Masturbation?: Part 2
+Besides being safe and fun, it helps you know how to please yourself so that you can let others know how they can please you. It can be a great way to get to know your body and what makes you feel good sexually. It can also be beneficial for your mental and emotional wellbeing, and can be a good way of relieving stress. In fact, 64% of people polled in TENGA’s study said they consider masturbation to be a form of self-care, and 90% said it impacts their mood in a positive way.
 
-It is natural and harmless for people of any gender and is a way of exploring your own body that can help you to find out what you like and don’t like sexually.
+## What is Masturbation?: Part 3
+It is fine to masturbate as often or as little as you like. Some people don’t masturbate at all and that’s OK too. There is nothing to feel embarrassed about either way. Everyone is different and enjoys different types of touch People with a penis and testicles often rub the shaft and head of their penis, and might touch their scrotum, anus or rectum using their hand or a sex toy . People with a vulva and vagina may use their their fingers or a sex toy, like a vibrator, to rub the area around their clitoris and/or inside their vagina.
 
-Besides being safe and fun, it helps you know how to please yourself so that you can let others know how they can please you. It can be a great way to get to know your body and what makes you feel good sexually.
+## What is Masturbation?: Part 4
+When people are masturbating they can get an intense pleasurable feeling which spreads all over their bodies – this is called an orgasm . There is no one correct way to masturbate but here are some tips if you are thinking about trying it or have already tried it and are interested in learning more.
 
-It can also be beneficial for your mental and emotional wellbeing, and can be a good way of relieving stress. In fact, 64% of people polled in TENGA’s study said they consider masturbation to be a form of self-care, and 90% said it impacts their mood in a positive way.
+## Tips
+*   **Choosing the space** Make sure you are somewhere private and comfortable , where you won’t be interrupted. It is important to always masturbate in private. It is also an intimate and personal activity, and although there is nothing to be ashamed of it can be embarrassing to be interrupted while you are masturbating. Being somewhere you don’t have to worry about someone walking in, such as a room at home with a lock, can help you relax and enjoy yourself. 
+*   **Choosing the space: Part 2** It is not appropriate to masturbate in public , where other people haven’t consented to witnessing sexual touch. It is also important not to share any details or videos/images of you masturbating digitally, such as via sexting or online.
+*   **Arousal** Often, people masturbate when they are already experiencing arousal. Other times, they might choose to arouse themselves so they can masturbate. You may like to imagine, or ‘fantasise’ about, things that turn you on while you’re masturbating. These could be things you have experienced, or things you would like to experience one day – whatever works for you. If you are over 18, you might also like to watch pornography to get aroused.
+*   **Starting Touch** You might want to explore your erogenous zones to give yourself a sensory experience and build up to touching your genitals. 
+*   **What are Erogenous zones?** An erogenous zone is an area of your body which is very sensitive, and can produce a sexual response when it is touched. An important part of discovering your sexuality is learning which parts of your body feel good to be touched. Common examples of erogenous zones for people with penises include the penis, scrotum, anus, prostate and nipples. Common examples of erogenous zones for people with vulvas include the vulva, vagina, anus and nipples. They can also include, but are not limited to, other areas of your body such as your neck, ears, back, hips and thighs.
+*   **Starting Touch: Part 2** Explore your genitals gently, paying attention to what sensations you feel. Make sure to breathe! You might want to use your hands, or use sex toys.
+*   **Take your time** Most people have their first orgasm through masturbation, but this probably won’t happen right away. Take your time and focus on the sensations and what it feels like rather than masturbating just to have an orgasm.
+*   **Practice** The more you do it the more familiar you’ll be with your body and how you respond to touch.
 
-It is fine to masturbate as often or as little as you like. Some people don’t masturbate at all and that’s OK too. There is nothing to feel embarrassed about either way.
+## Common Misconceptions
+There is lots of misinformation about masturbation and the effects that it can have. Here are a few common ones:
 
-## Everyone is different and enjoys different types of touch
-People with a penis and testicles often rub the shaft and head of their penis, and might touch their scrotum, anus or rectum using their hand or a sex toy.
-
-People with a vulva and vagina may use their fingers or a sex toy, like a vibrator, to rub the area around their clitoris and/or inside their vagina.
-
-When people are masturbating they can get an intense pleasurable feeling which spreads all over their bodies – this is called an orgasm.
-
-There is no one correct way to masturbate but here are some tips if you are thinking about trying it or have already tried it and are interested in learning more.
-
-## Choosing the space
-Make sure you are somewhere private and comfortable, where you won’t be interrupted. It is important to always masturbate in private.
-
-It is also an intimate and personal activity, and although there is nothing to be ashamed of it can be embarrassing to be interrupted while you are masturbating.
-
-Being somewhere you don’t have to worry about someone walking in, such as a room at home with a lock, can help you relax and enjoy yourself.
-
-It is not appropriate to masturbate in public, where other people haven’t consented to witnessing sexual touch. It is also important not to share any details or videos/images of you masturbating digitally, such as via sexting or online.
-
-## Arousal
-Often, people masturbate when they are already experiencing arousal. Other times, they might choose to arouse themselves so they can masturbate.
-
-You may like to imagine, or ‘fantasise’ about, things that turn you on while you’re masturbating. These could be things you have experienced, or things you would like to experience one day – whatever works for you.
-
-If you are over 18, you might also like to watch pornography to get aroused.
-
-## Starting Touch
-You might want to explore your erogenous zones to give yourself a sensory experience and build up to touching your genitals.
-
-An erogenous zone is an area of your body which is very sensitive, and can produce a sexual response when it is touched. An important part of discovering your sexuality is learning which parts of your body feel good to be touched.
-
-Common examples of erogenous zones for people with penises include the penis, scrotum, anus, prostate and nipples. Common examples of erogenous zones for people with vulvas include the vulva, vagina, anus and nipples.
-
-They can also include, but are not limited to, other areas of your body such as your neck, ears, back, hips and thighs.
-
-Explore your genitals gently, paying attention to what sensations you feel. Make sure to breathe! You might want to use your hands, or use sex toys.
-
-## Take your time
-Most people have their first orgasm through masturbation, but this probably won’t happen right away.
-
-Take your time and focus on the sensations and what it feels like rather than masturbating just to have an orgasm.
-
-## Practice
-The more you do it the more familiar you’ll be with your body and how you respond to touch.
-
-## There is lots of misinformation about masturbation and the effects that it can have. Here are a few common ones:
 *   **Masturbation will cause permanent changes to your body.** While you masturbate, and especially if you orgasm, you might notice changes in your body such as increased heart rate, breathing and sweating, but these will return to normal shortly after you stop masturbating. If you masturbate a lot in a short period of time, you might notice changes in sensitivity to your genitals, and as they become flooded with blood they may change colour for a little while, but they will always return to normal. You will not experience any permanent changes to your body as a result of masturbating.
 *   **Only people with penises masturbate.** Most people masturbate, regardless of their sex or gender. There is a slight difference in the number of men who masturbate and women who masturbate, but this is probably due to misconceptions in society that masturbation isn’t for women or people with vaginas! Masturbation is something anyone can enjoy, regardless of their gender identity or what genitals they have.
-*   **You shouldn’t need to masturbate if you are in a relationship.** Masturbating and sex are very different experiences, and many people still enjoy masturbating while they are in a relationship. They might find it easier to reach orgasm by masturbating, they might find masturbation is good for relieving stress or relaxing, and they may just enjoy both masturbation and partnered sex for the different sensations, feelings and emotions they offer! If you masturbate, it says nothing about the state of your relationship or sex life. In fact, masturbation can be good for your sex with your partner(s), because it can help you work out what you like and therefore what to ask for or try with your partner.
+*   **You shouldn’t need to masturbate if you are in a relationship.** Masturbating and sex are very different experiences, and many people still enjoy masturbating while they are in a relationship. They might find it easier to reach orgasm by masturbating, they might find masturbation is good for relieving stress or relaxing, and they may just enjoy both masturbation and partnered sex for the different sensations, feelings and emotions they offer!
+*   **You shouldn’t need to masturbate if you are in a relationship: Part 2** If you masturbate, it says nothing about the state of your relationship or sex life. In fact, masturbation can be good for your sex with your partner(s), because it can help you work out what you like and therefore what to ask for or try with your partner. It can also help you explore your fantasies and what you find sexy, which you may then want to explore with your partner.
 *   **Masturbation is cheating.** ‘Cheating’ is when you are emotionally or physically unfaithful to your partner, usually by engaging in sexual activity with another person without the consent of your partner. Masturbation is something which you do by yourself, for yourself, and is not a betrayal of trust or the boundaries of a relationship. If your partner is making you feel guilty or like you have broken their trust for masturbating, then you may be in a controlling or abusive relationship.
 *   **Masturbation is bad for your health.** There is absolutely no risk to your health from masturbation. In fact, it is the safest form of sexual activity because you cannot contract an STI, as long as you are not sharing toys with other people. The only risks are of allergic reaction to any toys you are using or lube ingredients, or infection from cross-contamination. To avoid infection, never use anything on your genitals which has been in contact with your anus or rectum without washing it or putting a condom on it first.
 *   **You shouldn’t masturbate while you are on your period.** There is no reason why you shouldn’t masturbate while on your period. In fact, some people find that orgasms can be a great way of relieving cramps, and of relaxing if you experience PMS (pre-menstrual stress). If you are worried about mess, you can put down a towel so you don’t get blood on your bed/floor/furniture.
 
-Masturbation should be fun, and is not bad for you, but sometimes people can end up masturbating compulsively or for the sake of it, or might start feeling like they need to masturbate more than they are actually enjoying.
-
-People can also start to feel the effects of watching lots of porn, such as on their perception of sex or their body.
-
-If you find you are masturbating so much or so often that it starts interfering with other aspects of your life, or if you are worried about your relationship with porn, you might want to speak to a trusted adult about what’s going on.
+## When to talk to someone
+Masturbation should be fun, and is not bad for you, but sometimes people can end up masturbating compulsively or for the sake of it, or might start feeling like they need to masturbate more than they are actually enjoying. People can also start to feel the effects of watching lots of porn, such as on their perception of sex or their body. If you find you are masturbating so much or so often that it starts interfering with other aspects of your life, or if you are worried about your relationship with porn, you might want to speak to a trusted adult about what’s going on.
