@@ -116,8 +116,9 @@ public class ArticleCollection {
             String content = Files.readString(path);
             Article article = new Article(content);
 
-            // Look up the source from metadata by filename
+            // Store filename on article for metadata lookup (tags, source, etc.)
             String filename = path.getFileName().toString();
+            article.setFileName(filename);
             String source = sourcesByFilename.get(filename);
             if (source != null) {
                 article.setSource(source);
