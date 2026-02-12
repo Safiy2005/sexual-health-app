@@ -13,6 +13,7 @@ public class Article {
     }
 
     private String title;
+    private String source;
     private List<Section> sections;
     private List<String> tags = List.of();
     private String fileName;
@@ -106,6 +107,14 @@ public class Article {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
     }
 
     public Article(String fileContent) {

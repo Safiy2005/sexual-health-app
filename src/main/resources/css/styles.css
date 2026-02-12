@@ -590,6 +590,14 @@
     -fx-padding: 0 0 8px 0;
 }
 
+.article-source-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7DBBB5;
+    -fx-font-style: italic;
+    -fx-padding: 0 0 4px 0;
+}
+
 .article-section-heading {
     -fx-font-size: 16px;
     -fx-font-weight: bold;

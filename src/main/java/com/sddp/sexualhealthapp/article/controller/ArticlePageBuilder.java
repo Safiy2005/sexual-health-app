@@ -40,6 +40,14 @@ public final class ArticlePageBuilder {
         title.setWrapText(true);
         page.getChildren().add(title);
 
+        // Show the article source if available
+        if (article.getSource() != null) {
+            Label sourceLabel = new Label("Source: " + article.getSource());
+            sourceLabel.getStyleClass().add("article-source-label");
+            sourceLabel.setWrapText(true);
+            page.getChildren().add(sourceLabel);
+        }
+
         // Show a summary of available sections as a table of contents
         List<Article.Section> sections = article.getSections();
         if (!sections.isEmpty()) {

@@ -6,6 +6,10 @@
 # Taran
 - Used Github Copilot with Claude Opus 4.5 & Claude Sonnet 4.5
 
+# Oli
+
+- Used Gemini API with Gemini 3 Flash
+
 ## Uses
 
 - For initial project structuring to ensure maintainability follows standard Software Engineering Procedure
@@ -15,3 +19,5 @@
 - Building logic for reading article folder contents
 - Writing unit tests for the Article model
 - Implementing semantic search
+
+- Scraping article content from the Brook website 
