@@ -1,84 +1,116 @@
-# The Copper Coil (IUD): Non-Hormonal Contraception
+# Copper Coil: What is it & How Does A Intrauterine Device Work?
 
-The copper coil (also known as an intrauterine device or IUD) is a small, T-shaped flexible plastic and copper device that is placed into the uterus (womb) by a specially trained doctor or nurse. It is a form of long-acting reversible contraception (LARC) and does not contain any hormones.
+## Summary
+*   **Overview** The copper (non-hormonal) coil (also known as IUD, intrauterine device) is a small, T-shaped plastic device which contains copper. It is put into the uterus (womb) through the vagina by a specially trained doctor or nurse. It is more than 99% effective and can last up to 10 years.
+*   **Disclaimer** The following content is from brook.org.
 
-## Quick Facts
-* **Effectiveness:** More than 99% effective.
-* **Duration:** Lasts for 5 to 10 years, depending on the type.
-* **Hormones:** Contains no hormones; it will not affect your mood or skin.
-* **Periods:** May make periods heavier, longer, or more painful, especially in the first few months.
-* **STI Protection:** Does not protect against sexually transmitted infections; condoms should be used for STI protection.
-* **Visibility:** It is not visible to anyone else, and it does not interrupt sex.
+## Key Features
+*   **Hormones** No hormones
+*   **Mood/Emotions** No effect on mood
+*   **STIs** No protection against STIs
+*   **Visibility** No one else can see it
+*   **Periods** May make periods heavier or last longer
+*   **Lasts for** Lasts up to 10 years
+*   **Acne/Skin** Skin will stay the same
+*   **Preventing pregnancy** More than 99% effective
+*   **Starting on this method** Requires an appointment with a specialist nurse or doctor to have it fitted. It works immediately, meaning you won’t need to use any other contraception once it’s fitted.
 
-## How It Works
-The IUD is slightly bigger than a 50p coin. It prevents pregnancy by:
-* Releasing copper, which is toxic to sperm and prevents them from surviving inside the body.
-* Preventing a fertilised egg from implanting in the womb.
+## How it works
+The non-hormonal coil or IUD is a T-shaped flexible plastic device, slightly bigger than a 50p coin, that is placed in the uterus. 
 
-Because it is non-hormonal, your fertility returns to normal immediately after the device is removed.
+It prevents pregnancy by:
+*   Preventing the sperm from surviving inside the body as copper is toxic to sperm
+*   Stopping a fertilised egg implanting in the womb
 
-## Emergency Contraception
-The copper coil can be used as the most effective form of emergency contraception if it is fitted within five days (120 hours) of unprotected sex, or within five days of the earliest time you could have ovulated.
+The IUD is a method of long-acting reversible contraception (or LARC). These methods don’t rely on you remembering to take them, but they do need a trained doctor or nurse to administer or fit them for you.
 
-## Pros and Cons
+## Emergency contraception
+The non-hormonal coil can also be used as a form of emergency contraception if fitted within five days of unprotected sex.
 
-### Pros
-* Provides immediate protection from pregnancy once fitted.
-* Lasts for 5–10 years but can be removed at any time.
-* Does not rely on you remembering to take it every day.
-* Unaffected by other medicines, vomiting, or diarrhoea.
-* An eco-friendly option due to its long duration.
+## Pros
+*   Immediate protection from pregnancy – method of emergency contraception
+*   Not visible and no interruption to sex
+*   99% effective and lasts 5 -10 years
+*   Non-hormonal method and fertility returns to normal immediately after removing it
+*   Unaffected by vomiting, diarrhoea or other medicines
+*   Eco-friendly due to its long duration
 
-### Cons
-* Does not protect against STIs.
-* May cause periods to become heavier or more painful.
-* The fitting process can be uncomfortable or painful for some people.
-* Rare risks include infection after insertion, the device being pushed out (displacement), or perforation of the womb.
-* Small risk of ectopic pregnancy if the method fails.
+## Cons
+*   No protection against sexually transmitted infections (STIs)
+*   Periods may be heavier, more painful or last longer
+*   Other risks with the IUD that occur in rare circumstances and are very uncommon; infection after insertion, IUD becomes pushed out or displaced, perforation of the uterus, ectopic pregnancy (if you do become pregnant while you are using the IUD)
+*   The fitting can be painful for some people
 
-## The Fitting Process
-The IUD must be fitted by a specially trained health professional. It is available free of charge from contraceptive clinics, GP surgeries, and Brook centres.
+## Fitting information
+As the copper coil is a non-hormonal contraceptive method, you will continue to get your period as normal. Periods can become longer, heavier or more painful during the first few months of use.
 
-### Step 1: Appointment
-The initial appointment will involve:
-* A discussion of your medical and family history.
-* An internal examination to check the size and position of your uterus.
-* Screening for infections (sometimes antibiotics are provided).
+While using the copper coil, your provider may recommend you don’t use menstrual cups or tampons for the first few weeks of use.
 
-### Step 2: The Fitting
-The procedure usually takes about 5 minutes:
-1. You will be asked to undress from the waist down and lie on a bed with your knees bent.
-2. A speculum is inserted into the vagina to hold it open.
-3. The doctor or nurse inserts the coil through the cervix into the uterus.
-4. The threads of the coil are trimmed, and the speculum is removed.
+The non-hormonal coil needs to be fitted by a doctor or nurse who has been specially trained. It is available free of charge from a range of services including contraceptive clinics and your GP.
 
-Local anaesthetic or painkillers can be discussed beforehand to make the process more comfortable.
+Contraception and sexual health services are free and confidential, including for people under the age of 16. Health professionals work to strict guidelines and won’t tell anyone else about your visit unless they believe you’re at serious risk of immediate harm.
 
-## After the Fitting
-Most people feel well enough to leave immediately, though some may experience period-like cramps or light spotting for a few days. 
+## Step 1: Appointment
+You will need to book an appointment at a contraceptive clinic or with your doctor. This appointment will typically include:
+*   A few questions about your medical and family history to work out what method would suit you best.
+*   An internal examination – a doctor or nurse will look inside your vagina to check the position and size of your uterus before the non-hormonal coil can be fitted
+*   They will also check for any signs of infection, sometimes you may also be given antibiotics.
 
-The coil has two thin threads that hang through the cervix. You should check these threads a few times in the first month and then once a month after that to ensure the device is still in place. While using the coil, providers may recommend avoiding menstrual cups or tampons for the first few weeks.
+Some services may be able to fit it at the same appointment, or you may need a second appointment.
 
-### When to Consult a Doctor
-Contact a medical professional if:
-* You cannot feel the threads.
-* You can feel the plastic part of the coil itself.
-* You experience severe or prolonged abdominal pain.
-* You feel hot, clammy, or generally unwell.
-* You experience unusually heavy vaginal bleeding.
+## Step 2: Fitting the coil
+The doctor or nurse may discuss painkiller tablets/using local anaesthetic to make the fitting more comfortable. You can also bring someone with you for support.
 
-## Timing and Pregnancy
+Fitting the coil shouldn’t take longer than 5 minutes:
+*   You’ll be asked to remove the lower half of your clothing (e.g. trousers/skirt and underwear) and lay on the bed with your legs open and knees bent
+*   The doctor or nurse will use a speculum (instrument inserted into your vagina) to slightly widen your vagina this might feel uncomfortable but it shouldn’t be painful.
+*   The doctor or nurse will then insert the coil into the uterus through the cervix.
 
-### General Timing
-The copper coil can be fitted at any time during your menstrual cycle if it is certain you are not pregnant. You are protected against pregnancy immediately after it is fitted.
+You may feel some discomfort which may last a minute or two after the coil is inserted, for other people it may last longer. The doctor or nurse will then trim the strings and remove the speculum.
 
-### After Giving Birth
-You can get pregnant as early as three weeks after giving birth. An IUD can sometimes be fitted within 48 hours of birth, but otherwise, you must usually wait four weeks. It is safe to use while breastfeeding.
+The coil fitting may be uncomfortable for some people. The doctor or nurse may discuss painkiller tablets and/or using local anaesthetic to make the fitting more comfortable.
 
-### After Abortion or Miscarriage
-An IUD can be inserted immediately following an abortion or miscarriage, providing immediate protection.
+## After the coil is fitted
+Most people feel well enough to leave straight after the appointment. You may get some period-type pain and possibly some light bleeding for a few days afterwards.
 
-## Removal
-The coil must be removed by a trained professional. The process is generally quicker and less painful than the fitting. If you do not wish to become pregnant, you should use additional contraception (like condoms) for seven days before the removal, or have the removal during the first few days of your period.
+The coil has two threads which hang through the opening at the entrance of your uterus (cervix). You should check the threads a few times during the first month and then at least once a month.
 
-***
+You will then only need to go back when the coil needs to be replaced (5 to 10 years depending on the type of non-hormonal coil).
+
+## When to talk to a doctor
+*   If you cannot feel the threads
+*   If you can feel the coil itself
+*   If you experience severe or prolonged abdominal pain, especially if you feel unwell, hot and clammy
+*   If you experience heavy vaginal bleeding with or without clots
+
+The non-hormonal coil can be fitted at any time in your cycle if it is certain that you are not pregnant. It may also be possible to fit the copper coil as emergency contraception.
+
+As soon as the non-hormonal coil is fitted then you will be protected immediately. You will be asked to take a pregnancy test before the non-hormonal coil is fitted and another three weeks later if there is a pregnancy risk.
+
+## Getting a non-hormonal coil after pregnancy
+You can get a non-hormonal coil fitted after a birth, abortion or miscarriage but when you can get it fitted does vary.
+
+*   **After giving birth** You can get pregnant from as little as three weeks after giving birth. The copper coil can sometimes be fitted 48 hours after giving birth. However, in most cases you will need to wait four weeks meaning you will need to use alternative contraception from week three (21 days) after the birth until the coil is fitted. The copper coil is safe to use whilst breastfeeding.
+*   **After an abortion or miscarriage** You can become pregnant from two weeks after an abortion or miscarriage. The copper coil can be inserted immediately after an abortion or miscarriage and you will be protected immediately from pregnancy.
+
+Always speak to your midwife, GP or nurse at a sexual health clinic to check this is the right method for you.
+
+The coil must be removed by a trained doctor or nurse, the procedure should be less painful and quicker than having the coil fitted.
+
+If you are not going to have another coil you will need to use additional contraception, such as condoms, for the seven days before the coil is taken out if you do not want to become pregnant. Your fertility should return to normal as soon as the coil is removed.
+
+## Does having a coil fitted hurt?
+Some people may find the fitting painful but you can have pain relief (local anaesthetic) to help. If this is something you would like, it’s a good idea to talk to the nurse or doctor beforehand.
+
+For most people pain only lasts a couple of minutes and then you don’t have to worry about contraception for the next five to ten years!
+
+## Can I only get the coil fitted during my period?
+You can get a copper coil or a hormonal coil fitted at any time during your cycle. There is no medical evidence to prove that having it fitted during your period has any additional benefits.
+
+## Do non-hormonal coils cause abortions?
+No. This is a common myth based on the fact that copper coils can be used as emergency contraception even if ovulation has occurred. 
+
+However, emergency contraception does not cause an abortion but prevents a pregnancy from taking place. In the case of the IUD, the copper in the coil kills the sperm before it reaches the egg and is fertilised.
+
+## Can you get the non-hormonal coil while you are pregnant?
+No, the copper coil and hormonal coil are used to prevent pregnancy so should not be used if there is any chance of pregnancy as this may cause an ectopic pregnancy.

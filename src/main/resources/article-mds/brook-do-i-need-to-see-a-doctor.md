@@ -1,69 +1,61 @@
 # Do I need to see a doctor?
 
-The most important thing is to know your body and what is normal for you. It is likely that you will notice subtle changes in your vagina and vulva as you go through life, and these are usually nothing to worry about. 
+## Summary
+*   **Overview** Understanding vaginal and vulval health involves knowing what is normal for your body and recognizing how hormones, lifestyle, and infections can cause changes like dryness, itching, or unusual discharge.
+*   **Disclaimer** The following content is from brook.org.
 
-These changes are often connected to hormone levels. Significant changes may occur during:
-* Puberty and the start of periods (due to oestrogen)
-* Pregnancy
-* Breastfeeding
-* Menopause
+## Knowing your body
+The first thing to say is that it is important to know your body and what is normal for you.
 
-If you are worried about any aspect of your vagina or vulva, help is available. You can use a "Find a Service" tool to locate sexual health clinics near you.
+It is likely that you will notice subtle changes in your vagina and vulva as you go through life and these are nothing to worry about. These changes are often connected to hormone levels in your body.
 
-## Vaginal Dryness
-Causes of dryness can include:
-* Not being aroused during sex or sexual activity
-* Using perfumed products in or around your vagina
-* The contraceptive pill or antidepressants
-* Breastfeeding
+The first major change you might notice could be when puberty and your periods start. This is because your ovaries are producing and releasing a hormone called oestrogen.
 
-If you’re experiencing dryness during sex, water-based lube is a great way to overcome this. Avoid using any products not specifically designed for the vagina. 
+Other life changes such as pregnancy, breastfeeding and later, the menopause can also cause changes as they affect hormone levels in the body.
 
-**See a doctor if:**
-* You think dryness is connected to medication you are taking.
-* You experience other symptoms like unusual discharge or bleeding.
-* You experience bleeding after sex or between periods.
-* The problem lasts for several weeks or affects your daily life.
+Remember: if you are worried about any aspect of your vagina or vulva, help is available.
 
-## Itchiness and Burning
-Intense internal and external vaginal burning and itching can suggest several conditions:
-* **Thrush:** A yeast infection often accompanied by thick, white, "cottage-cheese" like discharge.
-* **Vaginitis:** An inflammation often caused as a side-effect of other conditions.
-* **STIs:** Various infections can cause itchiness, including pubic lice, genital herpes, and trichomoniasis. 
+## Causes of dryness
+*   **Dryness** Causes of dryness can include:
+*   Not being aroused during sex or sexual activity
+*   Using perfumed products in or around your vagina
+*   The contraceptive pill or antidepressants
+*   Breastfeeding
 
-If you have had unprotected sex, you should get tested to see if your symptoms are connected to an STI.
+If you’re experiencing dryness during sex or sexual activity, water based lube can be a great way to overcome this. Avoid using any products not designed for your vagina and if you think your dryness could be connected to medication you are taking, see the doctor who prescribed it.
 
-## Vaginal Discharge
-Normal discharge is produced by the body to keep the vagina moist and protected from infection. The amount may fluctuate during your cycle or when you are sexually excited. Normal discharge can look:
-* Thick and white
-* Stringy and clear
-* Yellowish
-* Slightly brown or pink (around the time of your period)
-* It may have a faint smell
+Also see your doctor if you are experiencing other symptoms together with dryness, such as unusual discharge or bleeding from your vagina, bleeding after sex or in between your periods or if the problem has been going on for a few weeks and/or is affecting your daily life.
 
-**Signs of infection include changes in:**
-* **Colour:** Thin and grey-white (suggests Bacterial Vaginosis); yellowy-green and frothy (suggests Trichomoniasis).
-* **Smell:** A fishy smell or a strong, unpleasant smell after sex.
-* **Texture and Volume:** Significant changes from your "normal."
-* **Comfort:** If the discharge makes you itchy or sore.
+## Itchiness and burning
+*   **Thrush** Intense internal and external vaginal burning and itching can suggest thrush, a yeast infection that is caused by a fungus that lives naturally in the body. This is sometimes accompanied by a thick, white cottage-cheese like discharge.
+*   **Vaginitis** Vaginitis is another possible cause. Because vaginitis is often a side-effect of other conditions, treatment depends on what is causing it.
+*   **STIs** Various STIs can also cause itchiness including pubic lice, genital herpes and trichomoniasis. If you have had unprotected sex, get tested to see if your symptoms could be connected.
 
-## Lumps and Bumps
-If you notice a lump or bump, it could be caused by several things:
-* **Ingrowing hairs:** Common in areas where you remove pubic hair.
-* **Bartholin’s cyst:** A soft, painless, fluid-filled sac caused by a blocked gland. While rarely serious, you should see a GP to rule out other issues.
-* **Genital Herpes:** Small fluid-filled blisters which burst to leave small, red, painful sores.
-* **Genital Warts:** Small, painless growths or bumps caused by the Human Papilloma Virus (HPV).
+## Vaginal discharge
+*   **Normal discharge** Some vaginal discharge is perfectly normal and is produced by the body to keep the vagina moist and protected from infection. The amount of discharge your body produces may fluctuate during the month.
+*   **Sexual excitement** You may also notice more discharge when you’re feeling sexually excited. Sometimes discharge looks thick and white, other times it can be stringy and clear or even yellowish in colour.
+*   **Changes and infections** It may be slightly brown or pink, around the time of your period. All of this is normal. It is also normal for discharge to have a faint smell. The key is to know what is normal for you.
+*   **Bacterial vaginosis** If your discharge changes in colour, texture or volume, smells unpleasant, makes you itchy or sore, or is accompanied by other symptoms, these can be signs of an infection. Fishy-smelling discharge which is thin and grey-white in colour could mean you have bacterial vaginosis.
+*   **Trichomoniasis** Fishy smelling, yellowy-green frothy discharge suggests trichomoniasis, an STI caused by a tiny parasite. A strong, unpleasant smell after sex can suggest vaginitis.
 
-## Pain and Discomfort
-Pain in the vagina or vulva should not be ignored. Possible causes include:
-* Painful periods
-* Cystitis (irritation of the bladder)
-* Urinary Tract Infection (UTI) causing stinging when peeing
-* Thrush
-* Infection with the cold sore virus (HSV)
-* Vaginismus (involuntary tightening of vaginal muscles)
+## Lumps or bumps
+*   **Ingrowing hairs** If the lumps or bumps are in areas where you have removed pubic hair, they could simply be ingrowing hairs.
+*   **Bartholins cyst** If you notice a soft, painless lump on your vulva, this could be a Bartholins cyst. Bartholins glands release fluid that lubricate the vagina and vulva during sex.
+*   **Cyst symptoms** A cyst (a small fluid-filled sac) can form if they become blocked. They rarely cause problems but it is always recommended to see your GP to rule anything more serious out.
+*   **Herpes and warts** If you have had unprotected sex or sexual activity, then there could be two further causes of lumps or bumps. Small fluid-filled blisters which burst to leave small, red painful sores could be herpes.
+*   **HPV** If you notice small, painless growths or bumps, this could be genital warts. This is caused by the Human Papilloma Virus which is why the HPV vaccine is so important for young people.
 
-## Unprotected Sex
-If you have had sex without a condom, you should:
-1. **Get tested for STIs:** Many STIs do not show symptoms, so it is important to get checked regardless of how you feel.
-2. **Access Emergency Contraception:** If you are not using another method of contraception (like the pill), you may need emergency contraception to prevent pregnancy.
+## Discomfort or pain
+*   **Causes of discomfort** There are many possible causes of discomfort or pain including:
+*   Painful periods
+*   Cystitis: an irritation of the bladder causing need to pee frequently
+*   A Urinary Tract Infection (UTI) causing pain and stinging
+*   Thrush
+*   Infection with the cold sore virus (HSV)
+*   Vaginismus: Painful sex due to involuntarily tightening of the vaginal muscles
+
+Pain and discomfort in the vagina or vulva is not something you should have to live with and should not be ignored. Speak to a doctor or nurse who can help you treat the cause or help you manage the symptoms.
+
+## Unprotected sex
+*   **STI testing** If you have had sex without a condom, you need to get tested for sexually transmitted infections (STIs). Not all STIs will give you symptoms so don’t wait and hope for the best, go and get tested.
+*   **Emergency contraception** If you’re not using another method of contraception (such as the pill) then you’ll also need to access emergency contraception to prevent pregnancy.

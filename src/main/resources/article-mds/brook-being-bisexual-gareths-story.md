@@ -1,41 +1,47 @@
-# Being Bisexual: Gareth's Story
+# Being bisexual: Gareth’s story
 
-Gareth, 21, shares their experience of realizing they were bisexual and discusses the importance of representation, the challenges of bi-erasure, and the power of community.
+## Summary
+*   **Overview** Gareth shares their personal journey of discovering their bisexuality, the impact of isolation, the need for better media representation, and the importance of finding community support.
+*   **Disclaimer** The following content is from brook.org.
 
-## Realizing Identity and Overcoming Isolation
+## Being bisexual: Gareth’s story
 
-For many young people, the journey to understanding their sexuality begins with a period of self-reflection and, often, a sense of isolation. Gareth recalls initially believing they were gay after finding men attractive, but eventually realizing they were attracted to women as well.
+Gareth, 21, shares their experience of realising they were bisexual, and talks about the importance of representation and community.
 
-At thirteen, Gareth felt uniquely alone, even believing they had invented the term "bisexual." This highlights the significant impact that a lack of education and representation can have on queer youth, leading them to feel like "isolated sexuality rebels" rather than part of a global community.
+I remember when I first started realising that I wasn’t straight. I remember looking at men, finding them attractive, and thinking “it’s ok if I’m gay, there’s nothing wrong with that”, but as time went on I realised that I still found myself attracted to women as well. 
 
-## The Role of Community and the Reality of Discrimination
+This wasn’t so much confusing, as a bit of a novelty. I’d never heard of anyone like this before, I genuinely thought, at thirteen years of age, that maybe I was the only person in the world like this.
 
-With increased access to the internet, Gareth found forums and groups that provided a sense of belonging. However, entering the wider LGBTQ+ community also revealed harsh realities, including:
+I had it all figured out as well – I knew what that would be called. I was attracted to both, right? That’s two… I know! Bisexual is the perfect term for this! 
 
-* **Discrimination:** Facing prejudice from both outside and within the queer community.
-* **Erasure of identity:** Having their bisexuality ignored or invalidated.
-* **Exclusion:** Feeling unwelcome in both straight-dominated and gay-dominated spaces.
+There was an embarrassingly long period of time during which I thought I had actually invented that word, and that I was the only person like that, such is the impact of isolation on queer youth.
 
-## Defining Bisexuality
+As time went on I got more and more access to the internet; I was able to google things and find forums, groups, and communities of people just like me. 
 
-While some may have a narrow view of the term, the definition used by the community today is broader. Bisexuality is understood as an attraction to both the same gender and opposite genders. Understanding this definition helps in recognizing the validity of the identity beyond simple binary "phases."
+But with that came the reality of the community I was a part of: discrimination, erasure of identity, exclusion from both straight and gay-dominated queer spaces. 
 
-## The Impact of Bi-Erasure in Media
+Even though I was a part of this wonderful community, it was very much a community isolated from others. Not only that, but it was a community that was not represented.
 
-Representation plays a crucial role in how young people perceive themselves. Gareth notes that while gay characters and celebrities are becoming more common, bisexual representation remains slim.
+I also became more aware of other identities, and how mine had evolved and changed. Bisexual didn’t just mean attraction to men and women, but in fact was an attraction to the same gender and opposite genders. This is the definition used by the community now.
 
-A significant issue is "bi-erasure," where bisexual individuals are labeled as either gay or straight by the media. Gareth points to Freddie Mercury as a primary example—someone who had relationships with both men and women but is frequently described only as gay. This erasure makes it difficult for questioning youth to find role models they can relate to.
+When was the last time you heard of a gay celebrity? Or a gay character in a film or a TV series? While not commonplace, there are surely one or two that you’ve heard of. 
 
-## How to Support Bisexual Friends and Family
+Now what about a bisexual celebrity, or character? Probably a little bit harder. This lack of representation really does not help the kids growing up and questioning their sexuality. 
 
-Support from friends and family is vital for those questioning or confirming their sexuality. To be a supportive ally, it is important to accept a person's identity at face value without judgment.
+If I had known of a bisexual character or celebrity I probably would not have seen myself the isolated sexuality rebel that I thought I was.
 
-**What to avoid saying:**
-* "It's just a phase."
-* "You're just experimenting."
-* "You're just looking for attention."
-* Labels that the person has not chosen for themselves (e.g., "You're actually asexual/gay/straight").
+I suppose I’ve told a little white lie; I actually did know of a bisexual celebrity at the time. I probably knew of more than one – you probably do too. 
 
-## Finding Support and Resources
+The problem is that whenever we heard about them they were either described as gay or straight, or even “doesn’t like labels” (not that there is anything wrong with someone who chooses to describe themselves that way, but when it’s used in media it’s always the bisexual people and is a form of bi-erasure).
 
-Despite the ongoing challenges of biphobia and erasure, there are more resources available today than ever before. Online communities and dedicated organizations provide essential spaces for young people to connect, share their experiences, and feel less alone. If you are questioning your sexuality, remember that your experience is valid and there is a community ready to support you.
+Take Freddie Mercury for example, who had relationships with both men and women, yet is usually described as gay, or only his relationships with men are shown in the media. This erasure of the identity in the media means representation of the bisexual community is slim-to-none.
+
+It’s important for you to support your bisexual friends and family. So don’t call it “just a phase”, or “experimenting”, or “looking for attention”, (or possibly one of the most bizarre responses I ever got: “you’re actually asexual”). 
+
+Just accept it on face value; nothing has changed about that person, you just know a little bit more.
+
+For me, my friends online were some of the most supportive whenever I was questioning anything, or had issues relating to my bisexuality. It’s important that young people have access to these resources, so they don’t end up even more marginalised than they already might feel.
+
+Some aspects of my experience will be vastly different to that of someone now – but most of it will be the same, and the young bisexual kid who comes out tomorrow will still face the same biphobia and erasure that I did.
+
+There are resources out there, there are communities out there, dedicated to helping you. Just remember, you are not alone.

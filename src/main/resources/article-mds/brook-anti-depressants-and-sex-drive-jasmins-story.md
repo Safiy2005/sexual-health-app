@@ -1,37 +1,70 @@
-# Anti-depressants and Sex Drive: Jasmin’s Story
+# Anti-depressants and sex drive: Jasmin’s story
 
-Jasmin, 23, shares her experience with the anti-depressant Sertraline and how she feels it has impacted her sexual desire and relationships.
+## Summary
+*   **Overview** Jasmin shares her personal experience using the anti-depressant Sertraline to manage anxiety. She discusses the emotional numbing she felt, the transition into a relationship while on medication, and the challenges of dealing with a significantly lowered sex drive.
+*   **Disclaimer** The following content is from brook.org.
 
-*Disclaimer: This story is solely my personal experience. I am not suggesting that everyone will have the same feelings or that my experience is universal. However, if anyone out there feels similarly, I hope this helps you feel less alone.*
+## Anti-depressants and sex drive: Jasmin’s story
+*   **Mental Health & Wellbeing** Jasmin, 23, talks about her experience with the anti-depressant Sertraline and how she feels it has impacted her sexual desire and relationships.
+    
+    I would like to preface this by saying the story below is solely my experience, I am in no way expressing that everyone must feel the same as me nor am I assuming that my experience is universal.
+    
+    But if there is one person out there that feels the same or similar to how I do about this situation then this is for you to not feel so alone.
+    
+    I have been diagnosed with anxiety for years, I have tried (and often used) all the ‘typical’ techniques; breathing exercises, counselling, you name it.
+    
+    In certain situations these helped, but at a time in my life where I had personal and family issues overwhelming me, I felt that I had lost control of my ability to regulate my emotions.
+    
+    After discussing with a counsellor, I realised I needed something a little extra than talking through my problems. I decided I was going to ask if I would be able to try anti-depressants.
+    
+    In October 2022 I was given Sertraline, an anti-depressant mostly used to deal with anxiety, with the aim to boost levels of serotonin (the happy hormone in your body).
+    
+    At first I felt… well, I felt nothing.
+    
+    And although it was terrifying to feel as though your feelings have been numbed, what I was actually feeling was my anxiety reducing.
+    
+    The feeling of constantly feeling on edge or stressed felt lighter, it felt incredibly calming.
+    
+    However, I will admit I would have moments where I would get stuck in a spiral of my emotions and stress more about the fact I felt so numb; I was sad that I felt nothing because everything I had felt before was so intense and I wasn’t used to that being lessened.
+    
+    After a few months on sertraline, I noticed a change in myself. I felt more relaxed and carefree, but also a lack of motivation and hunger.
+    
+    At the time I was single, and being on sertraline helped me feel more confident in myself because I didn’t feel overwhelmed by my anxiety and the need to panic about everything. Instead, I could develop relationships with anyone and just enjoy my 20s at university.
+    
+    Looking back now however, for someone used to constantly overthinking everything, the fact that I was happily having one-night stands and ‘situationships’ makes me feel concerned for how much I fully understood and felt what I was doing.
+    
+    I consented to everything and knew what I was doing, but I just don’t know if I fully realised what this meant for someone who normally would worry about everything.
+    
+    Fast forward to May 2023 when I started dating my now boyfriend. We were both open from the get-go about our lives and experiences, and I explained my anxiety and how I take sertraline.
+    
+    (Disclaimer: no, I didn’t feel like I had to tell him it was just in a deep conversation we had one night at like 4am! He is my best friend so I’ve always felt comfortable being completely open and honest with him.)
+    
+    He’s been completely understanding (as he should) and helpful whenever I’ve needed him and whenever I’ve felt overwhelmed or upset that I feel nothing.
 
-## My Journey to Anti-depressants
-
-For years, I have lived with an anxiety diagnosis, employing various typical techniques like breathing exercises and counselling. While these offered some help in certain situations, a period overwhelmed by personal and family issues led me to feel a loss of control over my emotions. After discussions with a counsellor, I realized I needed more than just talking through my problems. I decided to explore the possibility of trying anti-depressants.
-
-## Starting Sertraline
-
-In October 2022, I began taking Sertraline, an anti-depressant commonly prescribed for anxiety, aimed at boosting serotonin levels in the body. Initially, I felt a sense of numbness. While this initial feeling was unsettling, it actually signified a reduction in my anxiety. The constant feeling of being on edge or stressed began to lighten, replaced by a profound calmness. However, I did experience moments where I would spiral, stressing over the numbness itself, feeling sad that the intense emotions I was accustomed to had lessened.
-
-## Early Impacts and Relationships
-
-After a few months on Sertraline, I noticed significant changes. I felt more relaxed and carefree, though I also experienced a lack of motivation and hunger. While single, Sertraline helped me feel more confident as my anxiety no longer overwhelmed me. This allowed me to develop relationships and enjoy my twenties at university. Reflecting now, as someone who typically overthinks everything, my comfort with casual encounters and 'situationships' during this period makes me question the depth of my emotional understanding and engagement at the time. I always consented and was aware of my actions, but I wonder if I fully grasped the implications for someone who normally worries extensively.
-
-## Relationship and Understanding
-
-By May 2023, I started dating my current boyfriend. We were open from the beginning about our lives and experiences. I explained my anxiety and my use of Sertraline. He has been incredibly understanding and supportive, particularly when I've felt overwhelmed or upset by emotional numbness.
-
-## The Impact on Sex Drive
-
-A known side effect of Sertraline for some individuals is a reduced sex drive, and this has certainly been my experience. This was a significant shift for me, as I had a higher sex drive prior to medication. Navigating this lower sense of desire has been an interesting transition.
-
-While society often speaks of a "honeymoon stage" where sexual activity is frequent, my experience since starting Sertraline has made it consistently challenging to feel "in the mood." I deeply love my boyfriend and find him attractive, but my body struggles to initiate or sustain sexual desire once it's begun. I maintain open and honest communication with him, ensuring he understands that this is not a reflection of him. In reality, it's not anyone's "fault" – it's a matter of hormones and bodily responses.
-
-## Navigating the Challenge
-
-It is crucial to state that neither my boyfriend nor my own thoughts have ever compelled me to engage in sex when I wasn't in the mood. I am merely describing the internal mental struggle between understanding the effects of Sertraline and understanding my body. When you desire sex but your brain isn't cooperating, deciphering how to manage Sertraline's influence can be challenging.
-
-*If you have felt this way, please remember you are not alone and you are not the problem.*
-
-I have considered reducing my dosage to manage the diminished feeling, especially regarding sexual desire. However, I believe that with time, self-understanding, and open discussions with a partner, one can begin to grasp their body's desires and recognize their feelings in the moment. Another approach might involve discussing your feelings with a doctor to explore whether a dosage adjustment could be beneficial.
-
-I am continuing to understand my new hormonal landscape and body, maintaining honesty with myself and my feelings. Should the need arise, I will speak to a doctor. I feel this is an area not always discussed publicly, and I wanted to share my experience for those who have felt similarly or for those who wish to understand how mental health medication can sometimes affect relationships.
+*   **Sex** For some, a side effect of taking sertraline is a lower sex drive, and that has definitely been my experience.
+    
+    This was bizarre for me as I had a higher sex drive before being on this medication, and understanding the lower feeling of desire was an interesting transition.
+    
+    There’s a common saying that “you’ve left the honeymoon stage”, which is when you don’t feel like you have to have sex with each other 24/7 (if you do, then I love that for you, no judgement and no disrespect intended).
+    
+    As society implies, yes, we’ve left the socially constructed “honeymoon stage” but it has always been difficult for me to be “in the mood” since being on sertraline.
+    
+    I love my boyfriend, I find him very attractive and my better half, but that doesn’t stop my body from finding it difficult to want sex or to continue wanting it when it’s been initiated.
+    
+    I have been honest with my boyfriend, which he completely understands, and we discuss it often as I want to make sure he knows it’s not a him problem.
+    
+    But in actual fact, it’s no one’s problem, it’s no one’s fault, it’s just hormones and bodies.
+    
+    Importantly, never has my boyfriend or my own brain forced myself into having sex when I’m not in the mood, I’m just explaining how I have felt when I have that internal, mental battle between understanding sertraline and understanding my body.
+    
+    When you know you want to have sex but your brain is just not cooperating, it can be really challenging trying to decipher how to manage the use of sertraline. (If you have ever felt this way just remember you’re not alone and you are not the problem).
+    
+    I have debated dropping my dose just to manage the lack of feeling whenever I know I want to have sex but my body just doesn’t seem completely ‘in it’.
+    
+    But for me, I think with time, understanding and open discussions with your partner, you can begin to grasp what your body wants, and how to recognise what you feel in that moment.
+    
+    Another idea might be discussing with doctors about how you feel and whether dropping the dosage would help you.
+    
+    I’m continuing to understand my new hormones and body, being honest with myself and my feelings, and if I need to speak to a doctor I will.
+    
+    I feel that this is an area not always discussed publicly, so I wanted to express my experience for those who have felt the same, or for those who just want to understand how mental health medication can sometimes affect relationships.

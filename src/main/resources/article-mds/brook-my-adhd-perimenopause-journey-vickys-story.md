@@ -1,37 +1,27 @@
-# My ADHD & Perimenopause Journey: Vicky's Story
+# My ADHD & perimenopause journey: Vicky’s story
 
-## Introduction
+## Summary
+    *   **Overview** Vicky shares her experience of navigating a late ADHD diagnosis and perimenopause, discussing the impact of hormonal changes on her neurodivergence and her journey to finding the right treatment through HRT and medication.
+    *   **Disclaimer** The following content is from brook.org.
 
-For ADHD Awareness Month, Vicky, 46, shares her experience with ADHD and perimenopause.
-
-## The Struggle
-
-In 2021, Vicky questioned her sanity, fearing early onset dementia, depression, or anxiety. She experienced drastic changes in her skin, hair, attitude, and overall life, coupled with an inability to move from her chair. While her recent ADHD diagnosis didn't change her past, she had always managed her ADHD, particularly during monthly hormonal fluctuations. However, perimenopause changed everything, and she could no longer cope.
-
-In 2019, her stepson's intense battle with cancer and the terrifying COVID-19 pandemic meant a new normal. Vicky didn't notice the slow onset of perimenopause symptoms or how they exacerbated her undiagnosed ADHD. She had always been adept at navigating challenges, but suddenly, she couldn't push through. As the world reopened, she found herself frozen, scrolling on her phone, unable to perform basic tasks. Her usual mild anxiety, once a motivator, transformed into waves of panic and "hormonal rage." Her innate sense of justice, amplified by hormonal shifts, left her overwhelmed with sorrow and rage. She knew something was wrong and struggled to differentiate between perimenopause and ADHD symptoms.
-
-Hot flashes and lack of sleep were the final triggers that led her to address perimenopause. Her GP dismissed her concerns due to her age (44), stating it couldn't be perimenopause. However, her ADHD-driven hyperfocus enabled her to research in advance, anticipating the brush-off. She was determined not to be immobilized by hormonal changes for years until she reached the "average" age for treatment. When she mentioned vaginal atrophy and sexual concerns, the GP quickly ended the call.
-
-Vicky sought a private appointment with a local specialist, ensuring she received the correct dosage and advice for Hormone Replacement Therapy (HRT). HRT provided immediate relief for most of her symptoms, and she became a strong advocate. Her husband was no longer fearful of her, and she no longer felt like she was going mad.
-
-## Post-HRT Realizations
-
-While HRT addressed her perimenopausal symptoms, it did not resolve the challenges posed by her lifelong ADHD coping mechanisms, which had been disrupted by the COVID-19 era's routine changes. She recognized the need for a structured routine and decided to return to work. However, the effort to appear "normal" and functional was immense, requiring the entire evening to recover after a workday.
-
-Despite her struggles, she wanted to continue working and knew she needed support. She felt foolish and fraudulent considering she had ADHD, especially since her two brothers were diagnosed, and she had always been the "normal" one. She realized her subtle, people-pleasing demeanor masked her internal struggles, contrasting with her brothers' more outwardly apparent ADHD. She had heard the phrase "aren't we all just a little ADHD," but for her, it was disabling, impacting her life, family, colleagues, and self-perception.
-
-## Seeking an ADHD Diagnosis
-
-Lacking the strength to navigate the GP referral process for ADHD, Vicky contacted a local ADHD charity. After a lengthy period, she received her official ADHD diagnosis and began medication. The diagnosis allowed her to acknowledge and process past experiences, plan strategies for managing her ADHD, and be kinder to herself.
-
-ADHD medications involve trial and error; some days they are highly effective, while on others, they cause adverse effects, making the effort seem unrewarding. However, they do help, and she has the autonomy to decide when to take them. She recounts a significant experience: the first time she took her medication, she got up to get a glass of water. This simple act, without distraction or detours, felt like "absolute witchcraft."
-
-## Living with Fluctuating Hormones and ADHD
-
-As Vicky is perimenopausal, her hormone levels continue to fluctuate, impacting her ADHD. By recognizing these fluctuations, she can plan her work and daily schedule to accommodate her brain's capacity and avoid burnout. She reflects with sorrow on her past struggles and wonders how different things might have been if she had known sooner. However, she finds acceptance and looks forward with self-awareness and kindness.
-
-## Conclusion and Call to Action
-
-Vicky encourages anyone suspecting perimenopause or ADHD and struggling to seek help and/or a diagnosis. While HRT and ADHD medications haven't "solved" 46 years of existence, the world is evolving. Brook is at the forefront of adapting services and learning about neurodiversity and women's sexual health across all ages, making Vicky excited to share her story openly.
-
----
+## Menopause
+*   **Vicky's Journey** For ADHD Awareness Month, Vicky, 46, talks about her ADHD and perimenopause journey in her own words. Am I going mad? Could it be early onset dementia? Depression? Anxiety? What’s happening to my skin, hair, attitude, life?! Why can’t I move off this chair? This was me in 2021.
+*   **Hormonal Impact** My recent ADHD diagnosis doesn’t change anything in the past. I’ve always had ADHD and managed just fine. In hindsight it affected me regularly, especially when my hormones were fluctuating (so once a month then!). But ok, fine, I survived. That was until perimenopause hit and I was no longer fine and just couldn’t manage anymore.
+*   **A Challenging Time** 2019 had been tough for us as my stepson had a successful but intensive battle with cancer. Covid was terrifying as he had no immune system, but we got through it all ok. Covid changed everything for everyone didn’t it?
+*   **A New Normal** I didn’t notice the slow creep of symptoms of perimenopause, or how they elevated my undiagnosed ADHD, as we were all dealing with a global pandemic. It was hard to measure what was outside of my normal because we were all living under a new normal.
+*   **The Inability to Push Through** I’ve always just got on with things and worked around problems. Meeting people where they are, not where I am! But suddenly I couldn’t push through. The world was opening back up and I was stuck in a chair scrolling on my phone, frozen, and unable to do basic tasks.
+*   **Anxiety and Rage** The slow fluttering of anxiety I’d always felt used to be my tool to get things done. But suddenly it became chest thumping waves of panic. And the rage! The sweet, hormonal rage! At the same time, my ADHD sense of justice was now on hormonal steroids, and I was beside myself with sorrow and rage about what was happening around us.
+*   **Solving the Perimenopause Problem** I just couldn’t cope with it all and I knew something wasn’t right. I wasn’t sure if it was perimenopause or ADHD? The hot flashes and lack of sleep were the final symptoms that pushed me to solve the perimenopause problem first.
+*   **Navigating the GP** My GP told me I was too young (44) and it couldn’t be perimenopause. But my ADHD helped me hyperfocus and do my research in advance, so I was expecting a brush off. I knew what I wanted.
+*   **Advocating for Access** As I explained to my GP, I had put up with being ruled by hormones since I was a teenager, and I was not going to be immobilised in my own life for a few years until I reached the “average” age that fits in with accessing treatment. Once I began discussing vagina atrophy and sex, he couldn’t get me off the phone quick enough.
+*   **Starting HRT** I found a local specialist and booked a private appointment to make sure I got the right dosage and advice. The Hormone Replacement Therapy (HRT) provided instant relief to nearly all my symptoms and I’m an advocate for it 100%. My husband was no longer frightened of me, and I stopped feeling like I was going mad.
+*   **Lifelong Coping Mechanisms** Excellent, problem solved! …Or not! The lifelong coping mechanisms I had established to get through school, my working life and home had been blown out the water during the change to routine in the Covid era. Plus, now I had some understanding of ADHD and realised that the HRT didn’t help solve those problems.
+*   **Returning to Routine** I decided a routine was what I needed – time to go back to work! But I’d changed too much. It was a massive effort to get by and appear to be normal and functioning. After I finished work for the day it took me the evening to recover.
+*   **Diagnosis and Identity** But at least I was doing something. I desperately wanted to carry on working and knew I’d need help but felt stupid and fake for thinking I had ADHD. My two brothers are both diagnosed, but I was the “normal” one.
+*   **Internalized Symptoms** I think it was hard to see my symptoms when there were two ‘classic’ bouncy ADHD boys and I was the people-pleasing girl who was quietly exploding within but saying nothing. I’ve heard people say, “aren’t we all just a little ADHD”, but when it affects you and your life, your family, colleagues, how you see the world and (more importantly) yourself that’s when it can be disabling.
+*   **The Diagnosis Process** I decided to contact a local ADHD charity and start the process of getting a diagnosis. I didn’t have the strength to work and deal with my GP for a referral. It took a while and eventually I received my official diagnosis and started meds.
+*   **Managing Medication** The diagnosis helped me recognise and acknowledge and begin to deal with things in the past, plan what helps and be a bit kinder to myself. The ADHD meds are trial and error, sometimes they’re super helpful and sometimes make me feel rotten and just not worth it. But they do help, and I can decide when I need to take them.
+*   **The Power of Meds** The first time I took them I got up to get a glass of water. That is the story. No noise, no side quests. I got up, got a drink, returned to my desk. Absolute witchcraft!
+*   **Planning for Burnout** As I’m perimenopausal my hormones still fluctuate, so my ADHD can too. If I recognise it I can plan my work and day/week to fit in with how I’m feeling and what my brain can physically do without burning out.
+*   **Awareness and Kindness** I could weep for how bad things have been for “past me” and how things may have been different if I’d have known then. But I didn’t and that’s fine, at least I can look forward with awareness and kindness to myself.
+*   **Seeking Help** If you suspect you are perimenopausal or have ADHD and you’re struggling, then don’t hesitate to seek help and/or a diagnosis. Ultimately, HRT & ADHD Meds haven’t solved 46 years of existing, but the world is changing.

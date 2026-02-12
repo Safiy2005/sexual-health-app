@@ -1,42 +1,34 @@
-# Girls Can Like Sex, Too!: Sophie’s Story
+# Girls can like sex, too!: Sophie’s Story
 
-Sophie, a 25-year-old communications officer and blogger, challenges the societal perceptions and media narratives surrounding women and their enjoyment of sex.
+## Summary
+*   **Overview** Sophie, 25, challenges the perceptions that people have about men and women and their enjoyment of sex, reflecting on how media and societal expectations often overlook female pleasure and excitement.
+*   **Disclaimer** The following content is from brook.org.
 
-## Challenging Perceptions of Pleasure
+## Early Perceptions and Magazines
+*   **The influence of magazines** Sophie, 25, challenges the perceptions that people have about men and women and their enjoyment of sex. I love a good magazine. When I was younger I spent hours reading my horoscope, crying with relief when I realised the person who’d written in to the problem page didn’t know how to shave THEIR legs properly either, and deciding which member of Boyzone was probably going to be my future husband. 
+*   **Life lessons** ‘00s teen magazines were exciting and vaguely grown-up, and I felt like I was taking in some important life lessons from them. I picked up some more serious stuff from these mags, too – that girls shouldn’t allow themselves to be pressured into sex, for example. 
+*   **Expectations of readiness** Sex was a BIG DEAL and a LIFE-CHANGING EXPERIENCE, I found out, and it became apparent that it was something I would eventually feel comfortable enough with to allow a boy to ‘do’ to me. Boys, it seemed, were ready to have sex from a young-ish age, but girls wouldn’t really be up for it for a long while, so boys had to be patient and not pressure them to do anything ahead of schedule.
 
-Traditional media, particularly teen magazines from the 2000s, often reinforced specific stereotypes regarding gender and sexual desire. These narratives frequently suggested that:
+## Shifting Perspectives
+*   **Good intentions versus fear** I guess there’s something well-meaning about this. It comes from a good place, I think. No-one wants to feel like they have to rush into anything, and it’s important to make sure that sex isn’t the be-all and end-all for young relationships if either party isn’t up for it. But somewhere along the way, I stopped feeling like my magazines were looking out for me and started to feel as if they were trying to scare me. 
+*   **Gender stereotypes** These boys they spoke of would supposedly sleep with anything that moved and were automatically void of any emotional attachment to sex, ever. The girls I read about were the opposite. They were supposed to feel used and disappointed afterwards – and the only way to avoid that would be to wait the PERFECT amount of time to have sex and maybe buy silky bedsheets.
+*   **The cinematic script** These girls – every girl, it seemed – wanted a big build-up, a boyfriend who’d said “I love you” while looking deeply into their eyes, and to set the entire thing to mood music and musky candles. Even in straight-boy-meets-straight-girl movies it seemed to go this way. You’d know when it was about to happen. The boy would say “Are you sure?” and the girl’d whisper “…Yeah” slightly sadly, while looking at the floor.
 
-* **Boys** are ready for sex at a young age, possess an inherent drive for it, and are often perceived as lacking emotional attachment to the act.
-* **Girls** should view sex as a "big deal" or a life-changing event that requires significant caution and a long waiting period.
-* **Sexual readiness** for girls was often framed as something that should be postponed to avoid feeling used or disappointed.
+## Questioning the Narrative
+*   **Shared enjoyment** I wondered why the girl felt differently to the boy. Sex was usually for two, I figured. And it was supposed to be fun. So why was it only the boy who was desperate to do it? I didn’t get why his girlfriend wasn’t excited as well. 
+*   **The mindset of the past** But despite my critical thinking, I still grew up with the candles-and-bedsheets mindset, and once this kind of thinking gets into your head, it’s hard to get it out. Even now, when I write pieces for my blog, I’ll find myself typing “Ella was pressured into doing something she didn’t want to do…” – and then I’ll cringe really heavily as I read it back and realise what kind of stuff I’m perpetuating. 
+*   **Ellas versus Jennas** Don’t get me wrong – there’s no doubt in my mind that there have been plenty of Ellas over the years, who’ve come away from a house feeling sick and wishing they could wind the clock back a few hours. And that’s really sad. But for every Ella, I bet there have also been a lot of Jennas – girls who’ve had sex, thought “Great!” and headed on home for dinner.
 
-While these messages were intended to prevent pressure, they often created a culture where female pleasure was sidelined in favor of caution and fear.
+## Challenging Social Norms
+*   **Celebrating enjoyment** So why don’t we pat Jenna on the back, make sure she’s up to speed on all things contraception and wish her a good time for next time? Why do we insist on suggesting that Jenna probably has very low self esteem? Why is the idea that teenage girls could actually enjoy sex so foreign to us? 
+*   **The standard for self-respect** There’s an oddly thin line when it comes to all this – while I understand the logic behind educating young women to ‘respect’ themselves and not feel pressured to do, say or be anything they’re not comfortable with, I can’t help but feel confused as to why a ‘self-respecting’ girl also apparently equals a girl who doesn’t have sex for a reeeeeeally long time, or only has sex with a long-term, serious boyfriend who strokes her face afterwards.
+*   **Inequality in education** For boys, the education and warning is minimal – it’s expected that they’ll enjoy sex, that they’ll want to do it with as many people as possible, and that it won’t really affect their reputation (except maybe positively) or their self-worth at all. But for girls, it’s another story.
 
-## Beyond the "Candles and Bedsheets" Myth
+## Defining Readiness
+*   **Fear as a deterrent** This “Wait ’til you’re ready! Don’t rush! Boys will want to use you but don’t let them! Give it as long as you want!” mentality suggests that sex is dangerous, that it’s a trap, set by boys who don’t care. It’s built up to be some weird, semi-scary act that they should put off for as long as possible to avoid anything from pregnancy to severe emotional repercussions. 
+*   **The meaning of ready** Plus, what does “Wait until you’re ready” really MEAN? Ready for what? Some girls might be ready to have sex the first time they meet someone. The next time, they might not be. Some girls might have a ‘six month’ rule. Some girls might not be ready to have sex until they get married. Some girls might NEVER want to have sex. This is all okay – and all true for boys, as well.
+*   **Living in the moment** In my experience, there isn’t a life-altering moment where someone looks up into the sunlight and says “I AM READY” – they just plod along like everybody else and have sex when they want to have sex. As long as the protection side of things is taken care of and both parties are comfortable, that’s really where the worry should end.
 
-The media often portrays a "perfect" scenario for a girl's first time, involving long-term commitment, romantic settings, and emotional declarations. However, this narrow focus can lead to harmful double standards:
-
-* **Self-Respect vs. Celibacy:** Society often equates a girl's "self-respect" with how long she waits to have sex, a standard rarely applied to boys.
-* **The Fear Narrative:** Constant warnings to "wait until you’re ready" can frame sex as a dangerous "trap" rather than a shared, enjoyable experience.
-* **Diverse Experiences:** While some girls may have negative experiences (the "Ella" archetype), many others have positive, casual experiences (the "Jenna" archetype) without suffering from low self-esteem.
-
-## Defining "Ready"
-
-The concept of being "ready" for sex is entirely subjective and varies from person to person. There is no single "life-altering moment" of readiness. Instead:
-
-* Readiness can change depending on the partner and the situation.
-* Some may be ready quickly, while others may choose to wait for marriage or a specific timeframe.
-* Some individuals may never desire to have sex.
-* These variations are normal and applicable to all genders.
-
-## Safety, Consent, and Empowerment
-
-While it is vital to stand up for oneself and ensure consent, girls should not feel they must be constantly guarded or frightened. A healthy approach to sex focuses on:
-
-* **Consent:** Enthusiastic, mutual consent is essential in every sexual encounter.
-* **Protection:** Prioritizing contraception and STI prevention allows individuals to focus on their well-being.
-* **Empowerment:** Recognizing that sex can be fun, exciting, and empowering, rather than just something to be worriedly "given into."
-
-As long as protection is managed and all parties are comfortable and consenting, the focus can shift from fear to mutual enjoyment.
-
-***
+## Conclusion and Final Thoughts
+*   **Consent and caution** And yes, if someone is trying to make you do something you don’t want to do, you need to say a big, fat “NO”. Of course it’s important to stand up for yourself and take care of yourself – consent in the bedroom is vital. But what I don’t like is the idea that girls need to be so cautious in their selection, so meticulous in their planning, that they can’t ever relax and enjoy themselves. 
+*   **Empowerment through fun** Girls shouldn’t have to be constantly guarded and frightened. Sure, it’s okay to wait, but it’s also okay to find out yourself that that sex can be fun and exciting and empowering – not just something you should worriedly give into after six months of dating and candle-purchasing. Sophie is a communications officer and blogger. She loves to write and wants to use that skill to talk about sex and relationships.

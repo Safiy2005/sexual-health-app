@@ -1,125 +1,116 @@
 # Periods: What are they and what to expect
 
-## My Body: Periods
+## Summary
+*   **Overview** A period, also known as menstruation, is the part of the menstrual cycle where the lining of the uterus is shed through the vagina. This guide covers the biological process, what to expect in terms of flow and frequency, how to identify irregular cycles, managing symptoms like PMS and cramps, and considerations for gender identity and sexual health.
+*   **Disclaimer** The following content is from brook.org
 
+## Periods
 A period, also known as menstruation, is the part of the menstrual cycle where blood is shed from the vagina. Girls and people with vaginas will start to have periods between the ages of 8 and 15.
 
-### The Menstrual Cycle
+Between the ages of 8 and 15, girls and people with vaginas begin their monthly cycle known as the menstrual cycle. This is what makes pregnancy possible. Every month, the ovaries release an egg – this is called ovulation.
 
-The menstrual cycle is a monthly process that makes pregnancy possible. Here's what happens:
+This egg travels down the fallopian tubes to the uterus, which you might hear being called the ‘womb’. At the same time, the lining of the uterus thickens with blood and body tissue – this is to prepare for a pregnancy as the blood and tissue will provide nutrients for a foetus.
 
-* **Ovulation:** Every month, the ovaries release an egg.
-* **Egg's Journey:** This egg travels down the fallopian tubes to the uterus (womb).
-* **Uterine Lining:** At the same time, the lining of the uterus thickens with blood and body tissue to prepare for a potential pregnancy, providing nutrients for a fetus.
-* **Shedding:** If the egg is not fertilized by sperm, it is shed through the vagina along with the uterine lining. This is a period.
+Once an egg has been released, if it not fertilised by a sperm (which is what causes pregnancy) then it is shed through the vagina along with the lining of the womb. This is a period.
 
-Period bleeding usually lasts for 2-7 days and typically occurs every four to five weeks, or about once a month. Some individuals may have longer or shorter intervals between periods. Periods continue throughout life until pregnancy or menopause, which usually occurs between the ages of 44 and 56, at which point fertility and periods cease.
+Period bleeding will usually last for 2-7 days. Periods usually happen every four to five weeks, so once a month. However, some people will have a longer or shorter gap between periods.
 
-## When is a Period Irregular?
+Periods continue throughout your life unless you become pregnant or when you reach menopause, which usually happens between the ages of 44 and 56. This is when you stop being able to get pregnant and your periods stop, too.
 
-An irregular cycle or irregular periods occur when the time between periods changes. While not necessarily indicative of a problem, it's advisable to consult a GP for a check-up.
+## When is a period irregular?
+Some people might find that the gap between their periods changes – this is called having an irregular cycle or irregular periods. Having an irregular cycle doesn’t mean that there is anything wrong but it’s a good idea to see your GP to check.
 
-What constitutes an irregular period depends on how long someone has been menstruating:
+What a irregular period looks like, will depend on how long you’ve had periods for.
 
-* **Within the first year of starting periods:** Irregular periods are normal; they might occur every few months or a month might be skipped.
-* **Within the first 3 years of starting periods:** Irregular periods last less than 21 days or more than 45 days.
-* **3 years or more after periods started:** Irregular periods last less than 21 days or more than 35 days, or if there are fewer than 8 cycles per year.
+*   **Within the first year of starting your period:** Irregular periods are normal, they might happen every few months or you might skip a month
+*   **Within the first 3 years of starting your period:** Irregular periods last less than 21 days or more than 45 days
+*   **3 years or more after your period started:** Irregular periods last less than 21 days or more than 35 days. Or if you have less than 8 cycles per year
 
-If you experience irregular periods, or if your usually regular periods become irregular without an obvious reason, it is recommended to see your GP.
+If you are experiencing irregular periods or if you usually have regular periods and they start becoming irregular without any obvious reason, it’s worth seeing your GP.
 
-### Period Blood Volume and Flow
+## What a normal period looks and feels like
+It’s usually about one to five tablespoons’ worth of period blood that leaves your body during your period (around 20-90ml) – though it sometimes feels like more than that!
 
-The amount of blood leaving the body during a period is typically one to five tablespoons (around 20-90ml), though it can feel like more. Periods are often described as 'light' with minimal blood or 'heavy' with a lot of blood. Many find their flow is lighter at the start and end of their period, and heavier in the middle, requiring different period products for management.
+Often when people talk about periods, they will describe them as being ‘light’ if there is only a little bit of blood or ‘heavy’ if there is lots of blood. Most people find that their period is light at the very start and then again at the end, but that it gets heavier during the middle. This means they might need to use different products on different days of their period to help them manage it.
 
-It's helpful to understand what a normal period looks and feels like for you to identify any changes that may require medical attention. Factors like contraception can also influence period flow.
+It’s helpful to learn what a normal period looks and feels like for you so you can spot any changes, which might mean something needs to be checked by a doctor. And remember – lots of things can affect how light or heavy your period is, including contraception.
 
-### What's Normal During a Period?
+Like with a lot of things to do with our bodies, everyone’s period will be a bit different. But there are some things that lots of people will notice and wonder if it’s normal. It’s totally normal if:
 
-While every period is unique, some common experiences are considered normal:
+*   Period blood isn’t red – it can be any colour from bright pink to red to brown. The blood changes during your period, so it might look different at the start compared to the end of your period.
+*   The blood is watery or quite thick, or the consistency seems to change from one day to the next.
+*   You see ‘lumps’ in the blood – these are blood clots and are nothing to worry about.
+*   Bleeding stops and starts – you may bleed for a few hours, and then stop for a few hours. Or you may stop bleeding all through the night, or all through one day.
+*   Sometimes your period is a bit lighter or heavier than normal.
+*   You see some spots of blood a few days before or a few days after your period.
+*   You think it’s your period is over but then there’s one final wave!
 
-* **Period blood color:** It can range from bright pink to red to brown and may change during the period.
-* **Blood consistency:** The blood can be watery or thick, and the consistency may vary from day to day.
-* **Blood clots:** Seeing 'lumps' in the blood is normal; these are blood clots and are not a cause for concern.
-* **Intermittent bleeding:** Bleeding can stop and start throughout the day or night.
-* **Varying flow:** Periods can sometimes be lighter or heavier than usual.
-* **Spotting:** Small spots of blood may appear a few days before or after your period.
-* **Final wave:** A final period flow after it seems to have ended is not uncommon.
+## Cramps
+During your period, you might experience cramps, these are when happens when the muscular walls of the uterus tighten (contract) to help the lining shred.
 
-## Period Symptoms and PMS
+It’s normal to feel a bit of pain and discomfort from cramps, but again they shouldn’t stop you living your life normally and there are lots of things you can try to help make them better.
 
-During a period, you might experience cramps, which are caused by the muscular walls of the uterus tightening (contracting) to help shed the lining. Mild pain and discomfort from cramps are normal, but they should not prevent you from living your life normally. There are many ways to manage cramps.
+## PMS and PMT
+Your period is started by a drop in hormones (chemicals produced by the body) and the walls of the uterus contracting and tightening. In the days (or possibly weeks) leading up to your period, you may experience some uncomfortable symptoms, this is called premenstrual syndrome (PMS) or premenstrual tension (PMT).
 
-Periods are initiated by a drop in hormone levels and uterine contractions. In the days or weeks leading up to a period, some people experience uncomfortable symptoms known as premenstrual syndrome (PMS) or premenstrual tension (PMT). While the exact cause of PMS is unknown, it's thought to be linked to fluctuating hormone levels.
+No one knows exactly what causes PMS, but it’s thought to be linked to the drop in hormone levels. PMS can have different symptoms:
 
-PMS symptoms can include:
+*   **Physical** Breast pain, Cramps, Muscle pain, Spots, An upset stomach, Diarrhoea or constipation
+*   **Emotional** Mood swings, Feeling more irritable, Difficulty concentrating, Anxiety, Less sociable, Difficulty sleeping
 
-* **Physical:**
- * Breast pain
- * Cramps
- * Muscle pain
- * Spots
- * Upset stomach
- * Diarrhea or constipation
-* **Emotional:**
- * Mood swings
- * Increased irritability
- * Difficulty concentrating
- * Anxiety
- * Reduced sociability
- * Difficulty sleeping
+You might have none, some, or all of these symptoms. Sometimes the symptoms last through your period, or you may find they disappear when you start to bleed. PMS isn’t fun, but it shouldn’t interfere too much with your day-to-day life. If you find that you are struggling, there are things that might help.
 
-You may experience none, some, or all of these symptoms. Some symptoms may persist throughout your period, while others might disappear once bleeding begins. PMS is not enjoyable but shouldn't significantly disrupt daily life. If symptoms are challenging, various coping strategies are available.
+## Things to look out for
+Everyone’s period is different. It’s good to pay attention to what is normal for you and to notice if anything changes. If you notice anything outside the normal for you, it’s a good idea to tell someone or speak to your GP. 
 
-## When to See a Doctor About Your Period
+Some things to look out for are:
 
-It's beneficial to be aware of what is normal for your body and to notice any changes. If you observe anything outside your usual pattern, it's a good idea to inform someone or consult your GP.
+*   Blood clots measuring over 2.5cm, or noticeably more clots than usual
+*   Obviously lighter or heavier periods for several cycles
+*   Pain during your period that painkillers don’t help with and affects your daily life
+*   Irregular periods – if your periods are still irregular after two years of having them, or have suddenly become irregular
 
-Consider seeking medical advice if you experience:
+There might be nothing wrong but it’s a good idea to check with a doctor.
 
-* Blood clots larger than 2.5cm or noticeably more clots than usual.
-* Significantly lighter or heavier periods for several consecutive cycles.
-* Period pain that is not relieved by painkillers and significantly affects your daily life.
-* Irregular periods that persist after two years of having them or have suddenly become irregular.
+## Gender identity and periods
+If your gender is different to the one given you at birth, you may find periods triggering or uncomfortable. For many transgender people, periods directly challenge their identity and gender. This can make it difficult to:
 
-While there may be no underlying issue, it's always wise to get checked by a doctor.
+*   Deal with period blood
+*   Insert something into their vagina
+*   Wear a chest binder when breasts are swollen or tender
+*   Use the men’s toilets during their period, particularly when it comes to throwing away used pads and tampons without sanitary bins
 
-## Periods and Transgender Identity
+There are things that can make it easier:
 
-For individuals whose gender identity differs from the sex assigned at birth, periods can be triggering or uncomfortable. For many transgender people, periods can challenge their identity and gender. This can create difficulties with:
+*   Some companies do period boxers
+*   Some period products, like period pants and menstrual cups, hold more blood meaning they don’t need changing as often
+*   Some contraception methods can stop your period, but this isn’t advisable if you’re looking at taking, or are currently taking, testosterone.
 
-* Managing period blood.
-* Inserting menstrual products into the vagina.
-* Wearing chest binders when breasts are swollen or tender.
-* Using men's restrooms during their period, especially regarding the disposal of sanitary products without accessible sanitary bins.
+In a similar way, if someone doesn’t have a period this can challenge their identity. For example, transwomen or women who have had a hysterectomy (removal of the uterus by surgery) may struggle with their identity as a woman.
 
-There are resources and products that can help ease these challenges:
+For this reason, some people choose to use the moon’s cycle (which is around 27 days) to plan a time for rest and reflection that would normally take place during a period.
 
-* Some companies offer period boxers.
-* Period products like period pants and menstrual cups can hold more blood, reducing the frequency of changes.
-* Certain contraception methods can stop periods. However, this may not be advisable for individuals taking or considering testosterone.
+## How often should I change a tampon?
+It is important to use a tampon that is the right absorbency for you. Always choose a tampon with the lowest absorbency necessary for your blood flow.
 
-Conversely, the absence of a period can also challenge an individual's identity. For example, transwomen or women who have undergone a hysterectomy might struggle with their sense of womanhood. Some individuals choose to align their periods with the moon's cycle (approximately 27 days) for periods of rest and reflection.
+There is a very small risk of Toxic Shock Syndrome (TSS) with tampon use. This is extremely rare but using the lowest absorbency tampon for your flow and not leaving your tampon in for longer than needed reduces this risk.
 
-## Tampon Use
+If your tampon leaks, then you have either left it in too long, or you need to try a higher absorbency. If your tampon doesn’t come out easily, or it feels uncomfortable when you pull it out, this can mean that it hasn’t soaked enough blood yet, so leave it in a bit longer.
 
-It's crucial to use tampons with the appropriate absorbency for your flow. Always select the lowest absorbency necessary to minimize the risk of Toxic Shock Syndrome (TSS), which is very rare. Changing tampons regularly and not leaving them in for longer than needed also reduces this risk.
+If your tampon is still difficult to remove after four to six hours, switch to using a lower absorbency tampon. Aim to take a tampon out every four to six hours, depending on your flow. It is safe to wear a tampon overnight, but it’s important to take it out as soon as you wake up in the morning.
 
-* If a tampon leaks, it may need to be changed more frequently or a higher absorbency tampon might be required.
-* If a tampon is difficult to remove or feels uncomfortable, it may not have absorbed enough blood yet. Leave it in longer.
-* If a tampon remains difficult to remove after four to six hours, switch to a lower absorbency tampon.
-* Aim to change tampons every four to six hours, depending on your flow.
-* Tampons can be worn overnight, but they must be removed immediately upon waking.
+## Are ‘period poos’ a real thing?
+You might notice that in the days leading up to your period or during your period you may poo more or have diarrhea. This is completely normal!
 
-## "Period Poos" and Bowel Changes
+As your body is preparing to shed the lining of your uterus it produces prostaglandins which cause your uterus to contract but also cause your stool to move quicker through your intestines.
 
-Changes in bowel movements, such as increased frequency or diarrhea, in the days leading up to or during a period are completely normal. This is due to prostaglandins, which cause uterine contractions and can also speed up stool transit through the intestines. Constipation can also occur.
+It’s also normal to experience the opposite, constipation. Focusing on your diet is a great way to help with these symptoms but if this is affecting your ability to go about your daily life, you should speak to your GP to get extra support. It might be that using hormonal contraception might be useful for you.
 
-Dietary adjustments can help manage these symptoms. If bowel changes significantly impact daily life, consult your GP for additional support. Hormonal contraception may also be beneficial.
+## Is it safe to have sex on my period?
+It’s perfectly safe from a health point of view to have sex on your period – although you can still get pregnant as a result! So make sure to use contraception, if you don’t want to get pregnant, and to use condoms to protect against sexually transmitted infections.
 
-## Sex During Your Period
+Period sex can sometimes get messy, too, because of the blood – so think about putting down an old towel first to soak up any escaping fluids!
 
-Having sex during your period is safe from a health perspective, though pregnancy is still possible. Therefore, use contraception if you do not wish to become pregnant and condoms to protect against sexually transmitted infections.
+Technically, you are more likely to become pregnant at a certain time of the month, during ovulation, but it’s impossible to tell when you will next ovulate. This is because your menstrual cycle can vary from month to month.
 
-Period sex can sometimes be messy due to blood. Using an old towel underneath can help manage any leaks. While pregnancy is more likely around ovulation, predicting this can be difficult due to variations in the menstrual cycle. Sperm can survive in the body for up to seven days, making unprotected sex up to a week before ovulation risky. Always use contraception, even during your period.
-
-***
+Also, sperm can live in your body for up to seven days, which means it is high risk to have unprotected sex up to seven days before ovulation. Always use a method of contraception, even when you are on your period.

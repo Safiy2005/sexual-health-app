@@ -1,75 +1,33 @@
-# Polycystic Ovary Syndrome: Scarlett's Story
+# Polycystic Ovary Syndrome: Scarlett’s story
 
-## Introduction
+## Summary
+*   **Overview** Scarlett shares her personal journey with Polycystic Ovary Syndrome (PCOS), discussing the challenges of early symptoms, the frustration of being dismissed by medical professionals, and her success in managing the condition through holistic and alternative treatments.
+*   **Disclaimer** The following content is from brook.org
 
-Scarlett shares her experiences with Polycystic Ovary Syndrome (PCOS), detailing the physical and emotional challenges, the journey to seeking help, and how she now manages her condition.
+## Early experiences and diagnosis
+*   **Initial symptoms** I was diagnosed with PCOS when I was about 16 years old. It all started when I began menstruating around the age of 14. From the beginning, I experienced irregular and painful periods. Unfortunately, my GP initially dismissed my concerns, attributing them to the normal adjustment period for girls before their cycles settle down.
+*   **Physical and mental impact** But my struggles went beyond just irregular periods. I also dealt with weight gain, excessive facial hair, intense mood swings, and even depression. Back in the mid-90s, there were limited resources for me to research or connect with others facing similar issues.
+*   **Seeking guidance** Fortunately, my school arranged for local sexual health advisors to speak with us. I decided to seek their guidance and shared my problems with them. As a result, I was able to get a referral for an ultrasound to investigate the underlying causes of my symptoms.
+*   **The diagnosis** During the ultrasound, they discovered not only the presence of PCOS but also a dermoid cyst. It was all quite bewildering, and by that point, I was experiencing pain even when I wasn’t on my period.
 
-## Early Symptoms and Diagnosis
+## Challenges with medical treatment
+*   **Misinformation** My GP provided me with a lot of misinformation, including the belief that I would never be able to conceive. They also advised me to start taking birth control pills.
+*   **Side effects of medication** Between the ages of 16 and 18, I began taking the microgynon pill to regulate my periods and alleviate the pain. Unfortunately, the pill only seemed to exacerbate my problems. I experienced fainting spells, headaches, and continued weight gain. It felt like everything was spiralling out of control.
 
-* Scarlett was diagnosed with PCOS at approximately 16 years old.
-* Her menstrual cycle began around age 14 and was immediately irregular and painful.
-* Her General Practitioner (GP) initially dismissed her concerns, attributing them to a normal adjustment period for young menstruating individuals.
-* Beyond menstrual irregularities, Scarlett experienced:
- * Weight gain
- * Excessive facial hair growth
- * Intense mood swings
- * Depression
+## Exploring alternative treatments
+*   **Acupuncture** During this period, I was living in a Stonewall hostel for young people, and they offered the residents the opportunity to try acupuncture for free. Having grown up with alternative medicine like herbs and homeopathy, I decided to give it a chance. 
+*   **Managing PCOS through lifestyle** My acupuncturist had also faced gynaecological issues and introduced me to the idea that PCOS could be managed through alternative treatments and dietary adjustments. Over the course of six months, the acupuncture sessions seemed to regulate my hormones and improve my emotional and mental wellbeing. 
+*   **Incorporating herbs** However, some physical symptoms persisted, so my acupuncturist suggested I also try incorporating Chinese herbs. Personally, the herbs seemed to help me manage my symptoms. I was also able to get pregnant and gave birth to my son in my late 20s.
 
-## Seeking Help and Initial Treatment
+## A holistic approach to health
+*   **Considering the whole person** Throughout this journey, I attempted surgical methods for the removal of my dermoid cyst. However, I felt that these approaches failed to consider my holistic experience—the intersection of culture, stress levels, sleep quality, diet, and more. 
+*   **The value of being heard** For me, the complementary therapies took into account my entire being, providing a sense of being heard that I had never experienced with my GPs or gynaecological hospital teams.
 
-* In the mid-1990s, resources for researching PCOS or connecting with others were limited.
-* A school initiative involving local sexual health advisors provided Scarlett with a pathway to seek guidance.
-* She shared her symptoms with the advisors, leading to a referral for an ultrasound.
-* The ultrasound revealed the presence of PCOS and a dermoid cyst.
-* Scarlett experienced pain even when not menstruating.
-* Her GP provided misinformation, including the incorrect belief that she would be unable to conceive.
-* She was advised to start taking birth control pills.
+## Current status and outlook
+*   **Stability** I no longer suffer from the symptoms of PCOS. I have regular periods, minimal excess hair growth and I feel my hormones are more stable – although I am now beginning perimenopause so I am expecting the unexpected. 
+*   **Individual journeys** I’m aware that I am fortunate to have found a way to manage my PCOS symptoms but everyone’s journey is different. It is disheartening to know that countless people with PCOS continue to be dismissed and told that their struggles are merely commonplace.
 
-## Experiencing Adverse Effects from Medication
-
-* Between the ages of 16 and 18, Scarlett took the Microgynon pill to regulate her periods and manage pain.
-* However, the pill seemed to worsen her symptoms, leading to:
- * Fainting spells
- * Headaches
- * Continued weight gain
-* These side effects contributed to a feeling of losing control.
-
-## Exploring Alternative and Complementary Therapies
-
-* While living in a hostel for young people, Scarlett had the opportunity to try acupuncture for free.
-* Having grown up with alternative medicine practices (herbs and homeopathy), she decided to pursue acupuncture.
-* Her acupuncturist, who had personal experience with gynecological issues, introduced the concept of managing PCOS through alternative treatments and dietary adjustments.
-* Over six months, acupuncture appeared to regulate Scarlett's hormones and improve her emotional and mental well-being.
-* To address persistent physical symptoms, her acupuncturist recommended incorporating Chinese herbs.
-* Scarlett found that the herbs helped manage her symptoms.
-
-## Conception and Holistic Approach to Health
-
-* Scarlett was able to conceive and gave birth to her son in her late twenties.
-* She attempted surgical removal of the dermoid cyst but felt these approaches did not consider her holistic experience (culture, stress, sleep quality, diet, etc.).
-* Scarlett found that complementary therapies took her entire being into account, making her feel heard in a way her GPs and gynecological hospital teams had not.
-
-## Current Management and Future Outlook
-
-* Scarlett no longer experiences the symptoms of PCOS.
-* She has regular periods, minimal excess hair growth, and her hormones feel more stable.
-* She acknowledges that she is entering perimenopause, anticipating potential changes.
-* Scarlett recognizes that her journey to managing PCOS is unique and that many others face dismissal of their symptoms.
-
-## The Role of Online Resources
-
-* The internet has become an invaluable resource for individuals with PCOS.
-* Online forums and shared testimonials foster a sense of community and solidarity.
-* These platforms provide recommendations for:
- * Books
- * Recipes supporting PCOS symptoms
- * Information on experimental treatments.
-* Instagram and TikTok can also be sources of information, but it is crucial to verify the reliability of the source and consult with a doctor before trying new approaches.
-
-## Advocacy and Conclusion
-
-* Scarlett's personal experience has fueled her passion for improving sexual and reproductive health.
-* She is an active member of Brook's Participation Forum.
-* She advocates for challenging the existing medical framework and promoting better understanding, research, and support for women's health.
-
----
+## Community and digital resources
+*   **The power of the internet** Fortunately, the advent of the internet has proven to be an invaluable resource for those grappling with PCOS, like me. Online forums and shared testimonials have fostered a sense of belonging and solidarity, assuring me that I’m not alone in their struggles.
+*   **Finding recommendations** From the forums I was able to get recommendations for books, recipes for food that supports some of the symptoms of PCOS and also hear about different outcomes from experimental treatments. If you can’t find any forums then Instagram and Tiktok can be a good source of information, but always check the reliability of the source and consult with your doctor before trying anything new out!
+*   **Advocacy** My experience has made me passionate about improving sexual and reproductive health. I believe that we need to continue challenging the existing medical framework and I am a proud advocate for better understanding, research and support for women’s health.

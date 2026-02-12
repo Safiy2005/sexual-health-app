@@ -1,59 +1,57 @@
-# Thrush (Candidiasis)
+# Thrush: The Symptoms, Tests & Treatments
 
-Thrush is a yeast infection caused by a fungus that lives naturally in the body. While it is not a sexually transmitted infection (STI), it can be passed on during sex. Although anyone can get thrush, it is significantly more common in people with a vagina; it is estimated that three out of four women will develop it at some point in their lives.
+## Summary
+*   **Overview** Find out about the symptoms, causes and treatment of thrush. Thrush is a yeast infection that is caused by a fungus that lives naturally in the body. It’s not a sexually transmitted infection (STI), but it can be passed on during sex. Anyone can both get thrush but it’s much more common in people with a vagina. It’s estimated that three out of four women will develop it at some point in their lives.
+*   **Disclaimer** The following content is from brook.org.
 
-## Symptoms of Thrush
+## Symptoms of thrush for people with a vagina can include:
+*   Vaginal discharge that has no smell but is either thick and white (a bit like cottage cheese) or thin and watery.
+*   Itching and soreness around the vagina entrance.
+*   In more serious cases, you may experience swelling of the vagina and cracked skin around the entrance.
+*   Stinging when you wee.
 
-### In people with a vagina
-Symptoms can include:
-* Vaginal discharge that is usually odorless and either thick and white (resembling cottage cheese) or thin and watery.
-* Itching and soreness around the entrance of the vagina.
-* Stinging sensations when urinating.
-* In more serious cases, swelling of the vagina and cracked skin around the entrance.
+## Symptoms of thrush for people with a penis can include:
+*   A cottage cheese-like discharge under the foreskin of the penis that may smell.
+*   The penis may become sore, itchy and inflamed.
+*   Stinging when you wee.
 
-### In people with a penis
-Symptoms can include:
-* A cottage cheese-like discharge under the foreskin that may have a smell.
-* Soreness, itching, and inflammation of the penis.
-* Stinging sensations when urinating.
+Thrush is a yeast infection caused by fungus that exists naturally in the body. The fungus that causes thrush tends to grow in warm, moist conditions. 
 
-## Causes
-The fungus that causes thrush thrives in warm, moist conditions. In the vagina, thrush can develop when the natural balance of bacteria changes. Common triggers include:
-* **Antibiotics:** These can kill the "good" bacteria in the vagina, leading to thrush in about a third of women.
-* **Hormonal changes:** Such as those occurring during pregnancy.
-* **Medical conditions:** Including diabetes or a weakened immune system.
+With vaginal thrush, it can develop when conditions in the vagina change – such as when taking antibiotics, when hormone changes occur due to pregnancy, when you have diabetes or if your immune system is weak. 
 
-## Diagnosis
-Thrush is usually diagnosed by a GP or at a sexual health clinic, such as Brook. The process typically involves:
-* A discussion about your symptoms and medical history.
-* A physical examination.
-* If symptoms are recurrent, a clinician may use a swab (a small cotton bud) to take a sample from the affected area to confirm the presence of yeast or rule out STIs.
+Taking antibiotics will cause thrush in about a third of women because they kill off the good bacteria in the vagina.
 
-While treatments are available over the counter at pharmacies, it is recommended to get a professional diagnosis first, as other infections can present with similar symptoms.
+Thrush can usually be diagnosed by describing your symptoms or being examined at your GP surgery or sexual health clinic. 
 
-## Treatment
-Treatment options vary depending on the individual and the severity of the infection:
-* **Pessaries:** A pill inserted into the vagina that dissolves, usually overnight.
-* **Creams:** Applied topically to the genital area.
-* **Oral tablets:** Pills taken by mouth.
-* **For men:** Treatment usually involves the application of an antifungal cream to the affected area.
+You will be asked some questions about your symptoms, whether you’ve had thrush before and whether you’re taking antibiotics for something else. If you keep experiencing thrush, you may need to provide a swab. 
 
-If you experience recurrent thrush, you should seek medical advice for further management and potential health tests.
+The swab looks like a small cotton bud, which is wiped over the affected area. Taking the swab may be slightly uncomfortable but should not be painful. 
 
-### Thrush Treatment and Condoms
-Some thrush treatments (particularly creams and pessaries) can weaken latex condoms, diaphragms, and caps. Consult a pharmacist or clinic staff for advice on how your treatment might affect your contraception.
+The swab will be used to see if you have a yeast infection and may also be used to look for a sexually transmitted infection (STI). 
 
-## Self-Care and Prevention
+If you are having recurrent symptoms of thrush the doctor or nurse at the sexual health clinic may suggest that you go and see your GP for further health tests.
 
-### Recommended Actions
-* Avoid sex until the infection has completely cleared up.
-* Take showers instead of baths.
-* Ensure the affected area is dried properly after washing.
+Although you can buy treatments for thrush at the chemist, it’s always best to get it diagnosed by a doctor or nurse first; this is because lots of other infections can have similar symptoms and you may not get the right treatment. 
 
-### Things to Avoid
-* Wearing tight, restrictive, or synthetic clothing (e.g., nylon underwear or tights).
-* Washing and wiping the genital area from back to front.
-* Using highly perfumed soaps, bubble baths, genital sprays, or deodorants, as these can cause irritation.
+Treatment may include a combination of pills, creams or pessaries. A pessary is a pill that you insert into your vagina and dissolves, usually overnight. Cream is applied to the genital area. 
 
-## Pregnancy
-If you are pregnant or think you might be, always inform your doctor, nurse, or pharmacist before starting treatment. Pregnant individuals are usually advised to use creams and pessaries rather than oral tablets. Thrush is not harmful to the pregnant person or the baby.
+In men, treatment usually involves a cream that you apply to the area affected. 
+
+Some people can get recurrent thrush, while others seem to only have one episode. If you find that you are getting repeated symptoms it is important to go to seek medical advice for further management.
+
+## Thrush treatment and condoms
+Some thrush treatments can weaken latex condoms, diaphragms and caps. Ask the staff at the clinic or pharmacist for further advice. 
+
+## Make sure to…
+*   Avoid sex until thrush has cleared up.
+*   Take showers instead of baths.
+*   Dry the affected area properly.
+
+## Avoid…
+*   Wearing tight, restrictive or synthetic clothing (e.g. tights and nylon underwear).
+*   Washing and wiping the genital area from back to front.
+*   Using highly perfumed soap, bubble bath, genital sprays and deodorants, as this can irritate the area.
+
+Before taking any medication you should always inform the doctor, nurse or pharmacist if you think you may be pregnant. 
+
+If you are pregnant then you should use the cream and pessaries and not the oral tablets. Thrush is not harmful to you or the baby.

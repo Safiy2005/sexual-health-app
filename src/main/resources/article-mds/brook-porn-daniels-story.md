@@ -1,36 +1,27 @@
-# Porn: Daniel's Story
+# Porn: Daniel’s story
 
-Daniel shares his personal journey regarding the role pornography has played in his life, from his first exposure as a child to the impact it had on his real-life sexual experiences and body image.
+## Summary
+*   **Overview** Daniel talks about the changing role porn has played in his life so far, and what he thinks about its impact on young people.
+*   **Disclaimer** The following content is from brook.org.
 
-## Early Exposure and Social Context
+## Daniel’s story
 
-Daniel’s introduction to pornography began around the age of 10 or 11, driven by curiosity and a sense that "everyone was doing it." 
+I don’t know exactly the first time I watched porn but it would have been around 10 or 11. It was all curiosity and everyone was doing it. I first found it when I was exploring on the TV guide and it just came up.
 
-* **First Discovery:** He first encountered adult content while exploring the TV guide.
-* **Normalization among Peers:** During his school years, porn was a constant topic of conversation. Boys would share hardcore videos on their phones, and some students even went as far as selling pornographic content in school corridors.
-* **Desensitization:** At a young age, the age gap between the performers and the viewers didn't feel strange, as the consumption was fueled by curiosity and peer pressure.
+It was weird to watch it. It was weird that it felt good. It didn’t feel strange that the women were much older. Around this time boys were always talking about it, they would have it on their phones and everything.
 
-## Pornography as Informal Sex Education
+There was even a kid who would sell porn from his phone in the school corridors. He got caught and excluded. People were sharing all different types of videos, they were pretty hard core.
 
-For many young people, including Daniel, pornography serves as the primary source of information about sex due to gaps in formal education.
+Porn was the first time I really started learning about sex. I was 17 when I first had sex so I had about 6 years of porn leading up to it. Sex education for us was awful though, no one took it seriously and if they did they would get the piss taken out of them.
 
-* **The Lead-up to Sex:** Daniel had approximately six years of exposure to pornography before his first sexual experience at age 17.
-* **Inadequate School Education:** He describes his school’s sex education as ineffective, noting that students often did not take it seriously.
-* **The Contraception Gap:** Daniel highlights a significant danger in using porn as a learning tool: the lack of contraception. Because condoms are rarely shown in porn, he did not prioritize or even think about contraception during his first real-life sexual encounters.
+When they are really young they should put a focus on contraception because it is basically never used in porn. When I first started having sex I never thought about contraception I was more interested in just doing it.
 
-## Expectations vs. Reality
+Porn and real sex are very different. I did expect sex to be similar to porn but it obviously wasn’t. Porn is like, professional. With sex it’s more awkward when it’s your first few times.
 
-One of the most significant impacts of long-term porn consumption is the distorted view it provides of what sex is actually like.
+Porn has definitely made me feel bad about myself. The male actors are totally huge and it definitely makes you insecure. I think people are inspired by porn when it comes to sex. It can obviously make couples want to explore more.
 
-* **Professionalism vs. Awkwardness:** Daniel notes that while porn is "professional" and staged, real sex—especially for the first few times—is often awkward and unpolished.
-* **Body Image and Insecurity:** Watching male actors can lead to feelings of inadequacy. Daniel admits that the physical appearance of performers in pornography made him feel insecure about his own body.
-* **Inspiration vs. Function:** While some people use pornography as inspiration to explore new things with partners, Daniel reflects that for many, it becomes a functional tool used simply "to get off."
+I don’t really use porn for inspiration I just use it to get off. There is so much porn that is very dark; it is ridiculous how many types there are. It was probably within a year that I was coming across some really crazy videos, it is so easy.
 
-## The Availability of Dark Content
+I am sure some people will find it quite damaging and it will probably cause a lot of issues. I think it depends on the person, some people will see stuff and want to do it in real life.
 
-The ease of access to increasingly "dark" or extreme content is a major concern for young viewers.
-
-* **Rapid Escalation:** Within a year of his first exposure, Daniel was already coming across "crazy" and hardcore videos due to how easy they are to find online.
-* **Potential for Damage:** He suggests that the impact of pornography depends on the individual, but warns that it can be damaging and may cause issues if viewers attempt to replicate extreme scenarios in real life without understanding the difference between performance and reality.
-
-***
+‘Daniel’ is a pseudonym and not the real name of the person who wrote this story.

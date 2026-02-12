@@ -1,146 +1,122 @@
-# Contraceptive Vaginal Ring: What it is and How it Works
+# Contraceptive Ring: What is a Vaginal Ring & How Does Nuvaring Work?
 
-The contraceptive vaginal ring is a soft, flexible, plastic ring that is inserted into the vagina. It releases the hormones oestrogen and progestogen into the bloodstream to prevent pregnancy by controlling fertility. The most common brand name for the contraceptive vaginal ring is NuvaRing.
+## Summary
+*   **Overview** The contraceptive vaginal ring is a soft, flexible, plastic ring that goes into the vagina. It releases the hormones oestrogen and progestogen into the bloodstream to prevent pregnancy by controlling your fertility. It is more than 99% effective if used without mistakes.
+*   **Disclaimer** The following content is from brook.org.
 
-## Overview
+## Key Information
+*   **Hormones** Contains oestrogen and progestogen
+*   **Mood/Emotions** Usually helps with feeling low or anxious
+*   **STIs** No protection against STIs
+*   **Visibility** Only people involved in the sexual activity might see it
+*   **Periods** Usually makes periods regular, lighter and less painful
+*   **Lasts for** Lasts as long as you use it
+*   **Acne/Skin** Can improve skin appearance
+*   **Preventing pregnancy** More than 99% effective if used without mistakes
+*   **Starting on this method** Requires a prescription from a doctor or nurse. You may have to use additional contraception for seven days depending where you are in your cycle when you first start using the ring.
+*   **Maintenance** Remembering to take out the ring on day 21 and insert a new one after the ring-free week
 
-* **Hormones:** Contains oestrogen and progestogen.
-* **Effectiveness:** More than 99% effective if used without mistakes.
-* **Maintenance:** Requires removing the ring on day 21 and inserting a new one after a seven-day ring-free interval.
-* **Periods:** Usually makes periods regular, lighter, and less painful.
-* **STIs:** Provides no protection against sexually transmitted infections.
-* **Visibility:** Not visible; only people involved in sexual activity might feel or see it.
-* **Skin:** Can improve acne for some users.
-* **Prescription:** Requires a prescription from a doctor or nurse.
+## The Vaginal Ring
+The contraceptive vaginal ring is a soft, flexible, plastic ring that goes into the vagina. It is about 4mm thick and 5.5cm diameter. The brand name of the contraceptive vaginal ring is Nuvaring.
 
-## How it Works
+Pregnancy happens when sperm reaches an egg and fertilises it. The contraceptive vaginal ring releases the hormones oestrogen and progestogen through the vaginal wall into the bloodstream, which works in three ways to interrupt fertilisation:
 
-The ring is approximately 4mm thick and 5.5cm in diameter. Once inserted, it releases hormones through the vaginal wall into the bloodstream. It prevents pregnancy in three ways:
+*   Stopping an egg being released (ovulation)
+*   Thickening the mucus around the cervix, which makes it harder for sperm to get reach an egg
+*   Thinning the lining of the womb so that a fertilised egg cannot implant
 
-* Stopping an egg from being released (ovulation).
-* Thickening the mucus around the cervix, making it harder for sperm to reach an egg.
-* Thinning the lining of the womb so that a fertilised egg cannot implant.
+## Pros
+*   Over 99% effective at preventing pregnancy
+*   No interruption to sex
+*   Can make periods lighter, more regular, and reduce period pains
+*   Don’t have to think about it every day – each ring stays in place for 21 days
+*   Unaffected by diarrhoea or vomiting because the hormones don’t need to be absorbed by the stomach
+*   Can help improve acne in some people
+*   Additional health benefits, e.g. reducing the risk of some cancers
 
-## Pros and Cons
+## Cons
+*   No protection against sexually transmitted infections (STIs)
+*   Temporary side effects during the first few months are common. These can include headaches, nausea, breast tenderness, mood swings, breakthrough bleeding or spotting
+*   Some people can experience vaginal irritation and discharge
+*   Some people may not feel comfortable inserting or removing it
 
-### Pros
-* Over 99% effective at preventing pregnancy.
-* Does not interrupt sex.
-* Can make periods lighter, more regular, and less painful.
-* You do not have to think about it every day; each ring stays in place for 21 days.
-* Effectiveness is unaffected by vomiting or diarrhoea.
-* Can help improve acne.
-* May reduce the risk of certain cancers.
+## Periods
+The vaginal ring can make periods lighter, more regular, and reduce period pains. During your ring-free week you will get a bleed. This isn’t a proper period, but is called a ‘withdrawal bleed’ and is caused by you not taking hormones in the ring-free week. 
 
-### Cons
-* No protection against STIs.
-* Temporary side effects (headaches, nausea, breast tenderness, mood swings, or spotting) are common in the first few months.
-* May cause vaginal irritation or increased discharge.
-* Some people may find insertion or removal uncomfortable.
+Bleeds usually become shorter, less painful and more regular. This can happen at any point during this ring-free week, and you should insert your ring on time whether or not you are still bleeding. 
 
-## Periods and the Vaginal Ring
+It is also possible to insert a new ring instead of having a ring-free week. This means you are unlikely to get a withdrawal bleed. Speak to your doctor or nurse to see what is right for you. 
 
-During your ring-free week, you will typically experience a "withdrawal bleed." This is not a biological period but is caused by the drop in hormones during the break. These bleeds are usually shorter and lighter. 
+You can have spotting and bleeding in the first few months but this isn’t usually anything to worry about and should settle down within 3 months. If you are worried, talk to a doctor or nurse for advice.
 
-You should always insert your new ring on time, even if you are still bleeding. If you prefer not to have a bleed, you can choose to use the ring continuously by inserting a new ring immediately after the 21 days, skipping the ring-free week.
+## Accessing the Vaginal Ring
+The vaginal ring is available free of charge from a range of services including contraceptive clinics, GUM clinics and your GP. 
 
-## Where to Get the Vaginal Ring
+Contraception and sexual health services are free and confidential, including for people under the age of 16. Health professionals work to strict guidelines and won’t tell anyone else about your visit unless they believe you’re at serious risk of immediate harm. 
 
-The vaginal ring is available free of charge from:
-* Contraceptive clinics
-* Sexual health (GUM) clinics
-* GP surgeries
-* Young people's services like Brook
+## At the appointment
+When you go to get the vaginal ring, an appointment will typically include:
 
-Contraception services are free and confidential, even for those under 16, provided there is no immediate risk of serious harm.
+*   A few questions about your medical and family history, to work out what would suit you best
+*   You’ll discuss other medicines you are taking in case they make the vaginal ring less effective
+*   The doctor or nurse will take your blood pressure and weigh you
 
-## At the Appointment
+You will usually be given a four month supply to see how you get on. You only need to return for further supplies and to have your blood pressure checked. You will not be required to have a breast examination or smear test for the vaginal ring.
 
-During your consultation, a healthcare professional will:
-* Ask about your medical and family history.
-* Discuss any other medications you are taking.
-* Check your blood pressure and weight.
-* Usually provide a four-month supply initially.
+## Starting the ring
+If you insert the ring in the first five days of your period you will be protected straight away. 
 
-## Starting the Vaginal Ring
+If you have a short menstrual cycle, where your period is normally 23 days or less, you will need to start taking the vaginal ring in the first four days to be immediately protected (because you might ovulate early). 
 
-* **First 5 days of period:** You are protected from pregnancy immediately.
-* **Short cycles (23 days or less):** Start within the first 4 days for immediate protection.
-* **Any other time:** Use additional contraception (like condoms) for the first seven days.
+If you start using the contraceptive vaginal ring at any other time in your menstrual cycle you will need to use additional contraception such as condoms for the first seven days.
 
-### Starting after Pregnancy, Abortion, or Miscarriage
-* **After giving birth:** If not breastfeeding, you can usually start on day 21. If breastfeeding, it is usually advised to wait until six weeks after birth.
-* **After abortion or miscarriage:** If started within five days, you are protected immediately. If started later, use additional contraception for seven days.
+## Starting the vaginal ring after pregnancy
+*   **After giving birth** You can become pregnant from as little as three weeks after giving birth. If you are not breastfeeding, it’s likely you can start the pill on day 21 after the birth (check with a doctor). If you start after day 21, you will need to use alternative contraception for the first seven days. If you are breastfeeding, you’re not advised to start on the ring until six weeks after the birth and use additional contraception in the meantime and for seven days after you start on the ring.
+*   **After an abortion or miscarriage** You can become pregnant from two weeks after an abortion or miscarriage. If you start on the ring within five days of the abortion of miscarriage you are protected from pregnancy straight away. Any later than day five and you will need to use additional contraception for the first seven days.
 
-## How to Use the Vaginal Ring
+## How to use it
+A ring is inserted into the vagina and left in continuously for 21 days. The ring is then removed and you have a seven day break. After this break a new ring should be inserted. 
 
-### Insertion
-1. Wash your hands.
-2. Squeeze the ring between your thumb and finger.
-3. Gently insert the tip into your vagina and push it up until it feels comfortable.
+*   **To insert the contraceptive vaginal ring** With clean hands, squeeze the ring between your thumb and finger, and gently insert the tip into your vagina. Gently push the ring up into your vagina until it feels comfortable.
+*   **After 21 days you should remove the ring** Hook a finger under the ring and gently pull it out. Throw the vaginal ring away (in a bin) in the bag provided – don’t flush it down the toilet. Removing the vaginal ring should be pain-free, if you experience any discomfort or bleeding tell your doctor or nurse.
 
-### Removal
-1. After 21 days, hook a finger under the ring and gently pull it out.
-2. Dispose of it in a bin using the bag provided (do not flush).
-3. Removal should be pain-free.
+If you are having a ring-free week, you will have a withdrawal bleed. You can use both towels and tampons whilst using the vaginal ring. 
 
-### During Sex
-The ring is designed to stay in during sex. You or your partner may feel it, but it should not be uncomfortable. If you choose to remove it for sex, wash it with lukewarm water and reinsert it as soon as possible. You remain protected if it is out for less than 48 hours.
+## Sex and the ring
+The ring is designed to stay in the vagina during sex. It is completely safe although you or your partner may be able to feel the ring. 
 
-## What to do if you Forget to Remove or Replace the Ring
+The less you take the ring out the better but if you do take it out during sex remember to wash the ring with lukewarm water and insert it again when you’re done. 
 
-### Left in for up to 7 extra days (up to 4 weeks total)
-* Remove the ring as soon as you remember.
-* If you want a break, start the 7-day interval now. If not, insert a new ring immediately.
-* You are still protected; no extra contraception is needed.
+The sooner you reinsert the ring, the better but if you forget don’t worry you’re still protected from pregnancy as long as you remove it for less than 48 hours.
 
-### Left in for more than 7 extra days (more than 4 weeks total)
-* Remove the ring and insert a new one immediately.
-* Use additional contraception (condoms) for the next seven days.
-* Consult a professional regarding emergency contraception if you have had sex in the previous few days.
+## Continuous use
+You may choose to use the ring continuously instead of having a ring-free week, you insert the new ring immediately after the old one. Using the ring in this way will likely prevent any bleeding. It is safe to use the ring continuously. You should talk to a doctor or nurse to find out what’s best for you.
 
-### Forgot to put a new ring in (48 hours or more late)
-* Insert a new ring as soon as you remember.
-* Use additional contraception for seven days.
-* Seek advice regarding emergency contraception if you have had sex during the break.
+## What to do if you forget to take the ring out or put in a new ring
+*   **Left in for up to 7 extra days (up to 4 weeks in total)** Remove the ring as soon as you remember. If you were planning on having a ring-free week, start this week now and insert the new ring after the seven day interval and start your new cycle. If you weren’t planning on having a ring-free week, insert the new ring now. You don’t need to use additional contraception and you will be protected from pregnancy.
+*   **Left in for more than 7 extra days (more than 4 weeks in total)** Remove the ring and insert a new ring as soon as you remember. You will need to use additional contraception such as condoms until the new ring has been in place for seven days. You may also need to use emergency contraception depending how long the ring has been in for and if you have had sex in the previous few days – speak to your doctor or nurse.
+*   **Forgot to put the new ring in 48 hours or more after when it should have been inserted** Insert a new ring as soon as you remember. You will need to use additional contraception such as condoms for seven days. You may also need to use emergency contraception if you have had sex in the previous few days – speak to your doctor or nurse if you’re unsure.
 
-## What to do if the Vaginal Ring Falls Out
+## What to do if the vaginal ring falls out
+The contraceptive vaginal ring is held in place by the muscles of your vagina. Occasionally it may come out (expulsion) and what you need to do depends on how long the vaginal ring has been out for, and where you are in your ring-cycle.
 
-### Out for less than 48 hours
-* Rinse with cool or lukewarm water and reinsert.
-* You are still protected from pregnancy.
+*   **The ring has been out for less than 48 hours** If you’ve been using that ring for less than 3 weeks, rinse the contraceptive vaginal ring (cool or lukewarm water) and re-insert the same ring. You are protected from pregnancy and you don’t need to use additional contraception if it has been used correctly in previous weeks. Speak to a doctor or nurse if unsure.
+*   **The ring has been out for more than 48 hours in the first week of use** Rinse the vaginal ring and put it back in as soon as possible. You will need to use additional contraception such as condoms until the ring has been in place for seven days. You may also need emergency contraception if you have had sex in the previous few days – ask your doctor or nurse for advice.
+*   **The ring has been out for more than 48 hours in the second or third week of use** Insert a new ring as soon as possible. If you are in your third week and due to start a ring-free break, skip it and insert a new ring. (You may not experience a withdrawal bleed but you may have some breakthrough bleeding or spotting). Use additional contraception until the vaginal ring has been in place for seven days. You do not need emergency contraception if you have used the ring correctly for the previous 7 days. Speak to a doctor or nurse if unsure.
 
-### Out for more than 48 hours (Week 1)
-* Reinsert the ring as soon as possible.
-* Use condoms for the next seven days.
-* You may need emergency contraception if you had sex in the previous few days.
+If you lose the vaginal ring insert a new one and continue with the cycle that you were on.
 
-### Out for more than 48 hours (Week 2 or 3)
-* Insert a new ring immediately.
-* If in Week 3, skip the ring-free break and start a new cycle.
-* Use condoms for the next seven days.
+## Factors impacting its effectiveness
+Some medicines can reduce its effectiveness such as those used to treat epilepsy, HIV and TB and the complementary medicine St John’s Wort.
 
-## Factors Impacting Effectiveness
-
-Certain medications can reduce the effectiveness of the ring, including treatments for:
-* Epilepsy
-* HIV
-* Tuberculosis (TB)
-* St John’s Wort (herbal remedy)
-
-## Stopping the Vaginal Ring
-
-* **Fertility:** There is no delay in the return of fertility. Hormones leave your body within a few days.
-* **Conception:** You can get pregnant almost immediately after stopping, though for some, it may take a few months for cycles to regulate.
-* **Physical changes:** You may notice skin changes or irregular periods initially as your body self-regulates.
+## Stopping the vaginal ring
+*   **How quickly the hormones leave your system** There is no delay in the return of fertility when you stop using the contraceptive vaginal ring. The hormones from the ring will usually leave your body within a couple of days – no matter how long you have been using the ring for.
+*   **How quickly you can get pregnant** This will vary, and will depend on when ovulation (releasing an egg) starts up again – for some people, it may be days or weeks, while for others it could take up to three months. Fertility levels should return quite rapidly to the levels they were before you started using the ring.
+*   **What happens to your periods** If you find you have irregular periods after stopping using the ring and are worried, or if it’s taking a long time for your periods to start again, you can ask your GP for advice.
+*   **What physical changes there might be** Everyone reacts slightly differently when they stop using the contraceptive vaginal ring. Some people may find they have skin problems initially, although as your hormone levels self-regulate over the course of a few weeks or months, symptoms may subside once again.
 
 ## Frequently Asked Questions
-
-**Can I lose the ring inside me?**
-No. The cervix is too small to let the ring pass into the uterus. If you have trouble finding it, try squatting or putting one leg up.
-
-**Will it come out by itself?**
-Vaginal muscles generally hold it in place. It may occasionally move down or come out if you are straining (e.g., during a bowel movement). If it falls out, follow the displacement guidance above.
-
-**Can I feel it?**
-When inserted correctly, you should not be able to feel it. If you can, it may need to be pushed higher.
+*   **Can you have sex with the ring still in?** Yes, it’s completely fine to keep the ring in while you have sex. Your partner may be able to feel it but it shouldn’t be uncomfortable. You can take the ring out while you have sex but you need to remember to wash and insert it again as soon as possible.
+*   **Can you feel the ring when it’s in?** As it’s flexible and smooth you shouldn’t be able to feel the ring at all. If you can feel it it might be that you haven’t inserted it high enough.
+*   **Can you lose the ring inside your vagina?** It’s not possible to lose the ring inside your body as the cervix is no way near wide enough to allow the ring through to your uterus. However, it can be tricky to find the ring if you’re not used to it – it can help if you put one leg up or squat.
+*   **Will the ring come out by itself at all?** The walls of your vagina will hold the ring in place even during exercise. It is possible for the ring to come out or move further down, for example if you’re straining when having a poo. Follow the guidance above about what to do if the ring falls out.

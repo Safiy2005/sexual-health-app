@@ -1,77 +1,68 @@
-# Hepatitis: Symptoms, Tests, and Treatment
+# Hepatitis: What are The Symptoms, Tests & Treatments
 
-Hepatitis is the medical term for inflammation of the liver. It can be caused by various factors, including viruses that can be transmitted through sexual activity and the consumption of alcohol. In many cases, hepatitis may present no symptoms at all.
+## Summary
+*   **Overview** Hepatitis is the medical name for inflammation of the liver. There are different causes of hepatitis, some of which are viruses and can be transmitted through sexual activity, others can be caused by alcohol. In many cases, hepatitis can have no symptoms, but it can lead to chronic conditions such as cirrhosis.
+*   **Disclaimer** The following content is from brook.org
 
-## Symptoms of Hepatitis
+## Hepatitis
+Hepatitis is the medical name for inflammation of the liver. There are different causes of hepatitis, some of which are viruses and can be transmitted through sexual activity, others can be caused by alcohol.
 
-Early signs of hepatitis often resemble the flu and can include:
-* Muscle and joint pain
-* Headheads
-* Feeling sick (nausea)
-* High temperature
-* Jaundice (yellowing of the skin and eyes)
+In many cases, hepatitis can have no symptoms. However, early signs can include flu-like symptoms such as:
+*   muscle and joint pain
+*   headaches
+*   feeling sick
+*   temperature
+*   jaundice (yellowing of the skin and eyes)
 
-While some types of hepatitis pass without causing permanent damage, others can become chronic, lasting for many years and leading to cirrhosis (scarring of the liver). 
+Some types of hepatitis can pass without affecting the liver, but others can become chronic and last for many years, or cause cirrhosis (scarring of the liver). 
 
 Symptoms of chronic hepatitis include:
-* Constant fatigue
-* Generally feeling unwell
-* Jaundice
-* Depression
-* Itching (specifically associated with types like Hepatitis A)
+*   feeling tired all the time
+*   generally feeling unwell
+*   jaundice
+*   depression
+*   some types of hepatitis (such as hepatitis A) can also cause itching
 
-## Types of Hepatitis
+There are several different types of hepatitis, but only hepatitis A and B can be transmitted through unprotected sexual activity.
 
-There are several types of hepatitis, but Hepatitis A and B are the primary types transmitted through unprotected sexual activity.
+## Hepatitis A
+*   **Where you can get hepatitis A** It is uncommon in the UK but widespread in parts of the world where sanitation is poor.
+*   **Cause** Through unprotected anal sex or oral sex.
+*   **Treatment** There is no treatment for hepatitis A, although symptoms can be managed by getting plenty of rest and taking painkillers to relieve discomfort.
+*   **How long it lasts** The infection usually passes within three months.
+*   **Vaccination** A hepatitis A vaccination is recommended if you are travelling to countries where hepatitis A is common.
 
-### Hepatitis A
-* **Where it occurs:** Uncommon in the UK but widespread in areas with poor sanitation.
-* **Cause:** Transmitted through unprotected anal or oral sex.
-* **Treatment:** There is no specific treatment; symptoms are managed with rest and painkillers.
-* **Duration:** Usually passes within three months.
-* **Vaccination:** Recommended for those travelling to high-risk countries.
+## Hepatitis B
+*   **Where you can get hepatitis B** It’s not common in the UK, but your risk is increased if your partner is from – or if you travel to – parts of the world where it is relatively common, such as sub-Saharan Africa, east and southeast Asia, the Middle East and southern and eastern Europe.
+*   **Cause** Coming into contact with the blood or bodily fluids (such as semen and vaginal fluids) of an infected person. It can be passed on during unprotected vaginal, anal and oral sex, pregnancy, and sharing needles to inject drugs.
+*   **Treatment** There is no specific treatment for hepatitis B, however in some people it can lead to chronic hepatitis B which, although treatable with antiviral medication, is a long-term condition which can cause cirrhosis (scarring) of the liver.
+*   **How long it lasts** Most cases pass within a couple of months, but sometimes it can become a long term condition.
+*   **Vaccination** A vaccination is available for travellers or people in high-risk groups such as drug users and healthcare workers.
 
-### Hepatitis B
-* **Where it occurs:** Less common in the UK, but risk is higher if a partner is from or if you travel to sub-Saharan Africa, east and southeast Asia, the Middle East, or southern and eastern Europe.
-* **Cause:** Contact with infected blood or bodily fluids (semen and vaginal fluids). It can be passed via unprotected vaginal, anal, or oral sex, during pregnancy, or by sharing needles.
-* **Treatment:** There is no specific treatment for acute infection. Chronic Hepatitis B is treatable with antiviral medication to prevent liver scarring.
-* **Duration:** Most cases pass within a couple of months, but it can become a long-term condition.
-* **Vaccination:** Available for travellers and high-risk groups (e.g., healthcare workers and drug users).
+## Hepatitis C
+*   **Where you can get hepatitis C** Hepatitis C is the most common type of viral hepatitis in the UK and around 215,000 people in the UK have chronic hepatitis C.
+*   **Cause** Although the virus can be spread via saliva, vaginal fluids and semen this is rare and it is most commonly spread through blood to blood contact (9/10 cases are spread through sharing needles to inject drugs).
+*   **Treatment** Antiviral medication can be prescribed to relieve symptoms, which may also sometimes cure the infection.
+*   **How long it lasts** Some people recover from the infection, however the majority will have the virus for many years (this is known as chronic hepatitis C).
+*   **Vaccination** There is no vaccination for hepatitis C.
 
-### Hepatitis C
-* **Where it occurs:** The most common viral hepatitis in the UK, with approximately 215,000 people living with the chronic form.
-* **Cause:** Primarily spread through blood-to-blood contact (90% of cases involve sharing needles). Transmission via saliva or sexual fluids is rare.
-* **Treatment:** Antiviral medications can relieve symptoms and often cure the infection.
-* **Duration:** While some recover, the majority develop chronic Hepatitis C.
-* **Vaccination:** There is currently no vaccination for Hepatitis C.
+Other types of hepatitis include hepatitis D, hepatitis E, alcoholic hepatitis and autoimmune hepatitis.
 
-### Other Types
-Other forms include Hepatitis D, Hepatitis E, alcoholic hepatitis, and autoimmune hepatitis.
+Hepatitis is tested by a blood test, designed to look for evidence that your immune system is trying to fight the virus. Testing can also include a check of your liver function, an ultrasound scan, or a liver biopsy (where a small sample of liver tissue is taken for testing).
 
-## Testing for Hepatitis
+You can get tested for hepatitis at young people’s services, GUM or sexual health clinics and GP surgeries. 
 
-Hepatitis is diagnosed via a blood test that looks for immune system responses to the virus. Other diagnostic tools include:
-* Liver function tests
-* Ultrasound scans
-* Liver biopsy (taking a small tissue sample)
+If you test positive for hepatitis your doctor or nurse will advise you what to do and may prescribe antiviral medication. If you test positive for hepatitis C you will be referred to a specialist to discuss treatment options. It is thought that treatment is more effective the sooner it is started.
 
-Testing is available at Brook services, GUM or sexual health clinics, and GP surgeries.
+Some types of viral hepatitis will also require Public Health England to be notified. This is for types of hepatitis which are rarer in the UK such as hepatitis A and hepatitis B.
 
-## Treatment and Management
+For many types of hepatitis there is no treatment, although symptoms can be managed with antiviral medication. It is also important to rest, stay hydrated and also rest your liver (such as not drinking any alcohol). You may also be advised to take painkillers such as ibuprofen.
 
-If you test positive, a healthcare professional will advise on the next steps. For many types, there is no specific cure, but symptoms are managed by:
-* Taking antiviral medication
-* Resting and staying hydrated
-* Avoiding alcohol to rest the liver
-* Using painkillers like ibuprofen
+Some infections pass within a few months while others can become chronic. If you test positive for hepatitis you should tell your current and any recent sexual partners (last six months) so that they can get tested too. 
 
-If you test positive for Hepatitis C, you will be referred to a specialist. For rarer types like Hepatitis A and B, Public Health England must be notified.
+Some clinics also offer partner notification which is a way to contact your partner using a ‘contact slip’. This process doesn’t mention your name and lets your partner/s know that they may have been exposed to an STI and advising them to get tested.
 
-## Partner Notification and Prevention
+## Protection from other STIs
+It is important to remember that the vaccinations for Hepatitis A and B will not protect you from other sexually transmitted infections (STIs).
 
-If you are diagnosed with hepatitis, it is important to inform any sexual partners from the last six months so they can be tested. Many clinics offer a confidential "partner notification" service using contact slips that do not mention your name.
-
-**Prevention methods include:**
-* **Vaccination:** Available for Hepatitis A and B (note: these do not protect against other STIs).
-* **Condoms:** Using condoms for oral, anal, and vaginal sex (including sex toys) is the only way to prevent the transmission of other STIs.
-* **Regular Testing:** Essential for maintaining sexual health.
+The only way to prevent the transmission of other STIs is to get regularly tested and to use a condom whenever you have oral, anal or vaginal sex, including when using sex toys.

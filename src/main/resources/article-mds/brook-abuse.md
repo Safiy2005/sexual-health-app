@@ -1,53 +1,55 @@
-# Abuse in Relationships and Domestic Violence
+# Abuse in relationships and Domestic Violence
 
-Abuse in a relationship can take many forms. People of any gender, age, background, or walk of life can be victims or perpetrators of abuse. Abuse is sometimes invisible to those outside the relationship, but it is always wrong and never the fault of the person being abused. 
+## Summary
+*   **Overview** Abuse in a relationship can take many forms and people of any gender, and any age, can be abusive partners or victims of abuse. Learn how to recognise the signs of abuse in a relationship, and how to seek help. You can be affected by abuse at any age, and people from all backgrounds and walks of life can be both abusers and victims of abuse. Sometimes abuse can be invisible to people outside a relationship, but that doesn’t mean it’s not happening.
+*   **Disclaimer** The following content is from brook.org.
 
-Domestic abuse, domestic violence, or intimate partner violence is a pattern of behavior used to exert power and control over a partner, ex-partner, family member, or cohabitant. It often involves a combination of different types of abuse, and in many cases (approximately 45%), there is no physical violence involved.
+## It’s not your fault
+Abuse is always wrong, and never the fault of the person who is being abused. 
 
-## Types of Abuse
+A person who commits abuse always has a choice, and if they choose to be abusive, it’s no-one else’s fault but the person who is committing the abuse.
 
-### Coercive Control
-Coercive control refers to behaviors used to isolate a person from support, intimidate them, or deprive them of their independence. This often underpins many other forms of abuse.
+## Domestic abuse or violence
+Domestic abuse or violence or sometimes called intimate partner violence is a pattern of behaviour that someone uses to control or have power over their partner, ex-partner, family member, or someone they live with.
 
-### Sexual Abuse
-This includes manipulating a partner into having sex, forcing sexual acts, or performing unwanted acts during sex. Rape is rape, even within a marriage or relationship. No one has the right to your body without your consent.
+Domestic abuse and abuse in relationships more generally comes in many different forms and often involves more than one type of abuse. The combination of different types can make it difficult to leave. 
 
-### Emotional Abuse
-Emotional abuse involves undermining a person's self-worth. Examples include:
-* Criticizing your accomplishments or appearance.
-* Embarrassing you in front of others.
-* Telling you that you will never find anyone else.
-* Making you feel reliant on the abuser or that you deserve the treatment.
+It’s also common for there to be no physical abuse (hitting, pushing, grabbing) – 45% of domestic abuse survivors were not physically abused . Other types of abuse can be just as damaging as physical abuse.
 
-### Psychological Abuse
-This involves using fear and intimidation to gain control. Common tactics include:
-* Threatening self-harm or harm to others.
-* Isolating the victim from friends and family.
-* Using children to threaten or control a partner.
-* **Gaslighting**: Causing a person to question their own sanity or memory by denying events or claiming they are exaggerating.
+*   **Coercive control** Coercive control refers to any behaviour that isolates the person from support, intimidates them and deprives them of their independence. It can come in many forms including the different types of abuse mentioned below.
+*   **Sexual abuse** Abusers may manipulate their partner into having sex, force sex upon them or do things during sex that are not wanted. All of these are sexual abuse and assault. Rape is always rape even if it is within a marriage or relationship. No one ever has the right to your body without your consent.
+*   **Emotional abuse** Often involves undermining the person’s self-worth by putting down their accomplishments, criticising them and embarrassing them in front of others. This can cause the person to feel reliant on the abuser and can make them feel that they deserve the abuse. Examples may include: 
+    *   Criticising the way you look or dress 
+    *   Saying you’ll never find anyone better than them
+*   **Psychological abuse** Using intimidation and fear tactics to gain control. For example, threatening to harm themselves or isolate the person being abused from sources of support including family and friends. 
+    
+    If there are children involved in the relationship, this can make getting away from the safely far more challenging, especially if the abuser uses the children to control or threaten their partner. 
+    
+    Gaslighting is also common in abusive relationships. This is where the abusers causes the person to question their sanity or memories. They may deny that something happened or claim they are exaggerating what actually happened.
+*   **Financial abuse** Abusers can sometimes use money to control the other person. By withholding their access to money, preventing them from getting a job, or controlling what they can spend money on, the person being abused has less independence and is more likely to stay in the abusive situation.
+*   **Physical abuse** This includes treating the other person roughly – for example grabbing, hitting or pushing them with an intent to harm them, acting aggressively and raising a hand to hit them.
+*   **Digital abuse** This can include checking social media accounts and emails, tracking their location through social media or other apps and posting videos or photos online without their consent, for example sharing nudes- this is known as intimate image abuse or revenge porn.
+*   **Stalking** This could be online and/or in person- for example, following their partner/ex-partner or sending messages, letters or gifts that are unwanted.
 
-### Financial Abuse
-Abusers may use money to limit a victim's independence. This includes withholding access to funds, preventing them from working, or strictly controlling all spending.
+If you have experience any of these or feel scared of your partner or someone you live with or monitor and change your own behaviour to avoid their reaction, you need to get help. 
 
-### Physical Abuse
-Physical abuse includes any rough treatment intended to harm or intimidate, such as grabbing, hitting, pushing, or raising a hand aggressively.
+It’s sometimes really tempting to make excuses or misinterpret violence, possessiveness, or anger as an expression of love. But, even if you believe that the person hurting you loves you, it is not healthy or acceptable. 
 
-### Digital Abuse
-This involves controlling behavior via technology, such as:
-* Checking social media accounts and emails.
-* Tracking location through apps.
-* **Intimate image abuse** (revenge porn): Posting or sharing nude photos or videos without consent.
+People often try to change their own behaviour so that their partner will stop being abusive, but the reality is , only the person being abusive can stop the abuse . 
 
-### Stalking
-Stalking can occur online or in person. It includes following a partner or ex-partner, or sending unwanted messages, letters, or gifts.
+It is never your fault or something you have done that prompts abuse – it is the choice of your partner. Abusive people hardly ever change their behaviour, however much they promise to. 
 
-## Recognizing Abuse and Seeking Help
+Abuse almost never stops by itself, it just gets worse over time. If you are in a situation where someone is hurting you, even if it’s someone you love, it’s not your fault and seeking help and advice is the best option.
 
-It is common to attempt to misinterpret violence, anger, or possessiveness as expressions of love. However, abuse is never healthy or acceptable. People often try to change their own behavior to stop the abuse, but only the person being abusive can choose to stop. Abusive behavior rarely improves on its own and typically escalates over time.
+The law on domestic abuse defines it as between two people over the age of 16. If the person is under 16, this is considered child abuse. 
 
-### The Law and Support
-* **Age of Consent and Abuse**: In the UK, the law defines domestic abuse as occurring between people aged 16 or over. If the person is under 16, it is legally considered child abuse. Support is available regardless of age.
-* **Clare’s Law**: Also known as the Domestic Violence Disclosure Scheme, this allows individuals to ask the police for information regarding a partner’s (or someone else's partner’s) history of abusive offenses.
-* **Childline**: If you are under 19, you can contact Childline at 0800 1111 for confidential support.
+However, this is not to say you cannot experience abuse or be in an abusive relationship if you are under 16, even if your partner is a similar age. Always seek help and support.
 
-If you feel scared of your partner, or if you find yourself monitoring and changing your own behavior to avoid their reaction, please seek help.
+## Clare’s Law
+If you feel unsafe or uncertain about someone’s behaviour and are worried they could become abusive or violent, you can use the Domestic Violence Disclosure Scheme also known as Clare’s Law to find out more information about them from the police. 
+
+If after submitting a request, they find evidence of a history of abusive offences they will consider sharing this with the person at risk so they can make an informed decision about their relationship with them. 
+
+You can also submit a Clare’s Law request on behalf of someone else if you are worried for their safety.
+
+There are also many dedicated helplines for domestic abuse to support you. If you are a young person or are worried about a young person you can call 0800 1111.

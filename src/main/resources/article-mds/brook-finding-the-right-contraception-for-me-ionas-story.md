@@ -1,44 +1,31 @@
-# Finding the Right Contraception for Me: Iona’s Story
+# Finding the right contraception for me: Iona’s story
 
-Iona, 21, explains her journey to find the right contraception and her experience with a serious side effect caused by hormonal contraception.
+## Summary
+*   **Overview** Iona, 21, shares her personal journey through different forms of contraception, from the pill for period management to the implant. She details her experience with a serious medical emergency involving a blood clot in her brain linked to hormonal contraception and her eventual move to non-hormonal methods.
+*   **Disclaimer** The following content is from brook.org.
 
-## Starting with the Pill
-Iona began taking the contraceptive pill at age 14 or 15. This was primarily to manage extremely heavy and irregular periods caused by a genetic condition that affected her sex hormones. Managing her GCSE studies was difficult while dealing with erratic cycles, and the pill provided the control she needed to manage her symptoms during school.
+## Iona, 21, explains her battle finding the right contraception
+*   **Iona, 21, explains her battle finding the right contraception** after her encounter with a serious side effect due to her pill. I was on the pill when I was about 14 or 15. Not because I was sexually active, but because my periods were just really bad. I had had irregular periods when I first got them, and I was bleeding a lot.
+*   **If it wasn’t for the pill**, I would have just had random, horrible periods. I have a genetic condition that makes my like sex hormones a little bit unusual. One of the ways that the condition can manifest is you can have quite erratic periods. 
+*   **Doing 14-15 GCSEs is hard enough** without feeling out of control of your periods. So, I went on the pill. It was when I started having penetrative sex that I swapped to the implant.
 
-## Experience with the Implant
-When she became sexually active, Iona switched to the contraceptive implant. However, this method proved unsuccessful for her:
-* **Persistent bleeding:** she experienced continuous bleeding for nine months.
-* **Mood changes:** within the first two weeks, she felt agitated, angry, and emotionally heightened.
-* **Physical exhaustion:** the constant bleeding took a toll on her energy levels and concentration during her music degree.
+## Unfortunately, I had very little luck with this working for me
+*   **Unfortunately, I had very little luck with this working for me**, as I bled every day for 9 months. I recall my emotions being heightened and within the first two weeks of the implant I felt agitated and angry about nothing in particular.
+*   **At the time I was studying for my music degree** at and the extra pressure from the constant bleeding and mood swings did not help my concentration. I was getting quite poorly, because my body was just taking up so much energy bleeding all the time, so I got the implant taken out.
+*   **After this I went back on the pill.** Due to my condition I had to take the progesterone only pill, but I started getting these headaches every day. I am prone to migraines anyway, but these kept occurring every day and I didn’t want to be consuming so much paracetamol to get by.
 
-Due to these side effects, she had the implant removed.
+## After several weeks of this I was diagnosed with a blood clot in my brain
+*   **After several weeks of this I was diagnosed with a blood clot in my brain.** This was in September 2020. And it just happened all at once. It was a really hot day, and I was moving into my new house. So, I thought I’m just exhausted because I took some paracetamol, and it made no difference and then I tried to ignore it for a little while. 
+*   **But every time I leant over it got even worse**, like a pressure. The standard pain of the headache was probably a seven out of 10 and leaning down it was completely unbearable. After this I went to my local pharmacy for some stronger ibuprofen but they advised I should go to A&E.
+*   **My symptoms had progressed to a headache** that was waking me up in the middle of the night, I was in pain every time I moved my head and my eyes were really sensitive to light. After 36 hours I went through every exam the doctors could do, a CT scan, including with contrast dye and a lumbar puncture. 
+*   **It was only after the second analysis** made by the chief of medicine that it was concluded I had a blood clot. It was in between my brain and skull. That sort of spacious bit at the front of your head, that was where I had a blood clot. 
 
-## Developing a Blood Clot
-Following the removal of the implant, Iona returned to the progesterone-only pill (POP). Soon after, she began experiencing daily headaches. While she was already prone to migraines, these occurrences became more frequent and severe. During the first COVID-19 lockdown in the UK, the pain became unbearable.
+## Blood clots are a possible dangerous side effect
+*   **Blood clots are a possible dangerous side effect** with certain hormonal contraceptives like the progesterone only pill, however it is not discussed as a predominant issue because so many people take the pill. I just didn’t think it could happen to me because it’s so rare.
+*   **I’m just so relieved I listened to my body** because pushing for medical tests saved my life. I was put on Clexane, which stops blood clots getting any bigger. I had to inject this into my own stomach. 
+*   **I also took a blood thinner called Warfarin** which thins your blood so that the blood can sort of push through and take the clots with it in a way that doesn’t hurt you. I was on this process for a good six months. Over these six months I went on to finish my music degree and graduated from university.
 
-In September 2020, she was diagnosed with a blood clot in her brain. Her symptoms included:
-* **Severe pressure:** standard headache pain was rated a "seven out of 10," becoming unbearable when leaning over.
-* **Sleep disruption:** the pain was severe enough to wake her up in the middle of the night.
-* **Light sensitivity:** her eyes became extremely sensitive to light.
-* **Movement pain:** experiencing pain every time she moved her head.
-
-After seeking advice from a pharmacist, she went to A&E. Following a CT scan with contrast dye and a lumbar puncture, it was concluded that she had a blood clot between her brain and skull.
-
-## Treatment and Recovery
-Blood clots are a rare but dangerous side effect associated with certain hormonal contraceptives. Iona’s treatment lasted six months and included:
-* **Clexane:** An injectable medication used to stop blood clots from getting larger.
-* **Warfarin:** A blood thinner used to help the blood move past and eventually clear the clot.
-
-Despite the medical emergency, Iona was able to finish her music degree and graduate during her recovery period.
-
-## Moving to Non-Hormonal Methods
-Following her experience, Iona decided that hormonal contraception was no longer a safe option for her. She now uses non-hormonal methods:
-* **Condoms:** She views the use of condoms as non-negotiable for any sexual encounter.
-* **Shared Responsibility:** She and her partner share the responsibility of contraception, taking turns to purchase condoms.
-
-## Iona’s Advice
-Iona encourages others to be proactive about their sexual health and choice of contraception:
-* **Listen to your body:** If you feel "miserable" or are having a terrible time with a specific method, it is okay to stop.
-* **Shop around:** There are many different pills and methods (like the coil or implant) to try until you find a fit.
-* **Push for medical tests:** Listening to your body and insisting on medical investigations can be life-saving.
-* **Consider non-hormonal options:** It is possible that hormonal contraception may not be suitable for everyone.
+## My advice for anyone who is thinking about starting contraception
+*   **My advice for anyone who is thinking about starting contraception** or having side effects is listen to your body and if there’s something you don’t like, just come off it. If you’re really struggling with a new contraception and suddenly, and you’re miserable, or you’re having a terrible time, just stop taking it. It really isn’t worth it.
+*   **Try different methods and shop around.** If you’re keen to try the pill, give it a go. Try lots of different pills until you find one that works best for you. And then if you don’t like that, you can try the implant, or the coil. 
+*   **It might be that no hormonal contraception fits you**, which is what I’ve found. So, my partner and I share the responsibility now, taking it in turns to buy condoms. Just keep trying until you find something that fits you.

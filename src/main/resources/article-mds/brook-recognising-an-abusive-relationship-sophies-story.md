@@ -1,39 +1,76 @@
 # Recognising an abusive relationship: Sophie’s story
 
-Sophie, 25, shares her personal experience of being in an abusive relationship as a teenager and reflects on the lessons she learned. This story was originally published on Sophie’s blog to help others identify the signs of domestic abuse and controlling behaviour.
+## Summary
+*   **Overview** Sophie shares her personal journey of identifying and leaving an abusive relationship, detailing eight critical insights she gained about non-physical abuse, coercive control, and the process of reclaiming her identity.
+*   **Disclaimer** The following content is from brook.org.
 
-**Content warning:** This page discusses emotional and physical abuse and may be distressing for some readers. If you are worried about yourself or someone else, please seek support.
+## Content warning
+This page is about emotional and physical abuse, and may be distressing for some readers. If you are worried about yourself or someone else, you can seek support with abuse.
 
-## Identifying Abuse in Teenage Relationships
+Sophie, 25, talks about her experience of being in an abusive relationship, and eight things she wishes she had known while she was in it. This is Sophie’s own story ‘Recognising an abusive relationship – 8 things I wish I’d known’ which was first published on Sophie’s blog.
 
-Many young people struggle to define their experiences because the term "domestic abuse" is often associated with married couples or adults living together. This can lead to self-doubt and the feeling that a teenage situation isn't "bad enough" to seek help. However, violence and controlling behaviour in teen relationships are real and significant issues.
+When I was a teenager, I was in a relationship, and it wasn’t a good one. I’m the world’s worst when it comes to self-doubt and one of the hardest things for me was not knowing whether what was happening was abusive or just… sort-of-bad.
 
-Abuse is not always physical. While it can involve sharp pinches or scratches, it also manifests through:
-* **Degrading behaviour:** Teasing, bullying, or humiliating a partner to put them down.
-* **Property damage:** Breaking or ruining possessions.
-* **Extreme jealousy:** Exploding over minor interactions with family or clothing choices.
-* **Digital monitoring:** Bombarding a partner with texts and becoming angry if they do not reply immediately.
+Was I overreacting? Had he just had a hard life? Did he need my help? I’d always been taught that proper, grown-up, real relationships are based on forgiveness and ‘trying again’ and give and take. 
 
-## 8 Things I Wish I’d Known
+That kind of mindset is good, when you’re in a healthy relationship and your partner takes the same viewpoint – not so good when your significant other grabs that giving side of you and metaphorically throws up all over it.
 
-Reflecting on her experience, Sophie identifies eight key realisations that might help others in similar situations:
+There are a bunch of things I wish I’d known back then – and with the tiniest hint of clarity, years later, I’d like to be able to pass them on.
 
-* **Abuse doesn’t always look like the stereotypes:** You don't need a black eye for a situation to be considered abusive. Hurting someone you claim to care for is never okay, regardless of the severity of the physical marks.
-* **Jealousy is not a sign of love:** In many stories and films, possessive or "stalker-like" behaviour is romanticised. In reality, a partner who is constantly checking your location or isolating you is exhibiting controlling behaviour, not affection.
-* **You define your own "normal":** While every relationship has different boundaries, you are under no obligation to stay if you feel stressed, uncomfortable, or forced to compromise your well-being.
-* **Trust the perspective of those who care for you:** If your friends and family are consistently uncomfortable with your partner or have to defend your partner’s actions, there is likely a valid reason for their concern.
-* **Abusers can be charming to others:** Someone may be "Mr. or Mrs. Hilarious" in public while being abusive in private. Just because other people think your partner is wonderful doesn't mean your feelings or experiences are invalid.
-* **Abusers rarely see themselves as abusers:** Many people who commit abuse believe their behaviour is normal or justified. They do not fit the "monster in a dark alley" stereotype; they are often peers who use the word "love" to mask their actions.
-* **Abuse is designed to "shrink" your personality:** Emotional abuse often feels like being trapped in a box that keeps getting smaller. You may find yourself removing parts of your personality to avoid conflict, eventually feeling like you've lost who you are.
-* **The insults are a tactic for control:** When an abuser tells you that you are ugly, boring, or a waste of space, it is often an investment in making you feel bad enough that you won't have the courage to leave.
+## Recognising an abusive relationship – 8 things I wish I’d known
 
-## The Path to Recovery
+*   **I didn’t know what to call it.** Whenever I typed ‘domestic abuse’ into Google, anything that came up was always to do with wives who cried and husbands who drank and people who lived together. I wound up feeling like my teenage situation clearly wasn’t worth a charity website and therefore wasn’t as bad as I felt it to be. I think this was pretty damaging, and although I’m glad that more is done now to reassure younger people that their situation is just as real and scary as a 40 year-old’s, I still don’t think we’re THERE.
+*   **Misconceptions of violence.** I think there are some big misconceptions when it comes to violence and controlling behaviour in teen relationships, and I think there are some even bigger gender inequality issues that still lurk around and rear their ugly heads every day. When someone tells you about abuse, you picture black eyes – not sharp pinches when you get wolf whistled at or arm scratches if you do something wrong – and when you’re being abused you tell yourself that unless you get punched in the face, it’s not really anything that anyone would care about. Isn’t that sad? Don’t listen to that nasty, doubting voice in your head that says “It’s nothing” or “I’m overreacting” – if someone who claims to care for you is hurting you, that’s NOT okay.
+*   **Non-physical elements.** Sometimes there’s no physical element to things at all. If your partner seems to enjoy teasing or bullying you (I don’t mean joking around, I mean degrading and humiliating teasing that’s designed to put you down), or breaking or ruining your possessions, that’s abuse. If they get jealous and explode over seemingly minor things, like when you spend the morning with your grandad or the fact that you wore a tight t-shirt last Thursday, that’s also abuse. If the word ‘abuse’ feels a bit much, that’s okay. But I think inside you’ll know.
+*   **Care vs Control.** There’s a difference between someone who cares about you and wants to check you’re safe when you’re home late from work and someone who bombards you with texts all day to see where you are and swears at you when you take longer than 30 seconds to reply. As a teenage girl, I had this weird, ingrained THING where I thought that a jealous, clingy boyfriend equalled a boyfriend who cared.
+*   **Internal alarm bells.** I feel like a lot of the men who reside in Young Adult Fiction Land do really creepy/lurky things, like turning up in the middle of the night unannounced and uninvited (I’M LOOKING AT YOU, EDWARD CULLEN), or appearing out of a far-off hedge to punch someone who is harassing the female lead – so as someone who was used to reading and watching that sort of thing, I didn’t pay attention to the loud alarm bells ringing in my head at the start of my relationship. I just guessed that I had not known a truly caring boyfriend before. I HAD.
+*   **Setting boundaries.** Only you can decide what works for you in a relationship, what’s normal and what’s not – some couples are happy to be joined at the hip and other people like to not speak for two weeks. I guess it’s whatever you and your partner prefer. But if you’re becoming stressed or uncomfortable with what’s being asked of you, let them know. If they refuse to compromise or it doesn’t feel right, you’re under no obligation to stick around.
+*   **Defending your partner.** If you feel like you’re constantly having to defend your partner to others, that adds an extra strain to everything – you’re not only getting sh*t from them all the time but also from everyone else. Why do people feel this way about them? Why are you always having to reassure everyone that they’re not the worst? There are always exceptions to the rule, but I think that, chances are, if the people closest to you seem uncomfortable with them and can give you solid examples as to why, there’s something there.
+*   **The charm offensive.** I get that this is a little different to part 4, but what I mean is that sometimes people who are abusive can really turn on the charm. One minute you’re being shouted at and called a slut but the next minute everything’s perfect for your evening out and your pals are giggling away at Mr/Mrs Hilarious who has magically forgotten everything that made them so angry but a moment ago. Everyone else has a great night and basks in how wonderful your partner is, while you sit there shaking and afraid to speak.
+*   **Validation of feelings.** My point is, not everyone will cotton on to your partner’s behaviour. Some people might think they’re the bee’s knees. That doesn’t make your feelings about them any less valid – you know what’s happening better than anyone else. Kick that bee in the back of the leg and run.
 
-Being in an abusive relationship can leave a deep-rooted sense of self-dislike. Even years later, survivors may struggle with self-esteem or feel triggered by media portrayals of domestic violence.
+## The lack of apology
 
-It is important to remember:
-* **Insecurity is not an excuse:** Having a hard life or feeling insecure does not give someone the right to chip away at another person's happiness.
-* **The key to happiness is not someone else’s sadness:** Healthy relationships are built on compassion and self-control, not guilt and fear.
-* **Recovery is possible:** Moving away from an abusive situation is the first step toward getting to know yourself again.
+My ex has never apologised to me. Everyone has their own truth and I think that in his head he’s a normal guy with normal behaviours and if someone at work asked him if he’d ever been abusive I’m 99% sure his response would be an immediate “No!” 
 
-If you recognise these signs in your own relationship, trust your gut. You deserve to be in a relationship where you feel safe and valued.
+But in my experience, no-one thinks they’re an abuser. I imagine it’s incredibly rare for someone to hold their hands up, even years later, and say those words, just like I don’t think anyone would call themselves a rapist.
+
+People imagine abusers as beer-drinking 40 year-old men with anger issues and terrible backstories. They picture rapists as greasy monsters in long coats who lurk down the alleyways your mum always told you to avoid. And so the ones we encounter get away with it. 
+
+Why would people who’d hurt us be disguised as eighteen year-olds who are only just beginning to shed their childhood faces and keep using the word “love”?
+
+## Losing your identity
+
+I always remember this one day where I cried so hard my stomach hurt and my head felt like it had a crack in it and I said out loud “You are trying to ruin me.” 
+
+I think one of the most awful things that someone in an abusive relationship can experience is that feeling that you’re no longer the person you were – and now you’ve lost it, you’re too far gone to get that person back, and even if you weren’t, you can’t remember what they were even like to begin with.
+
+I still tell my boyfriend now that I don’t have a proper personality, even though the roots of me know that’s not true. I feel as if I softened it a lot for my ex. 
+
+I remember reading a piece about emotional abuse by Lauren Laverne – she said that when you’re with someone abusive, you feel like they’ve trapped you in a box, and even though you remove all of the loud, offensive parts of your personality for that person so you won’t touch the sides, the box keeps getting smaller anyway. I think that’s a really good way of describing it.
+
+## The crux of the investment
+
+I think this is the crux of it all and it’s what I wish I’d kept in my head from the get-go. You might be told how awful you are and how embarrassing it was when you did this and how disgusting you looked when you wore that, but surely they don’t really feel that way about the person they’re dating. 
+
+Don’t you think it’s more likely that their investment is in making you feel bad and slowly turning you into someone who’ll stick around? Who can hear that they’re ugly and boring and a waste of space every day and then find the courage to disappear?
+
+I used to feel bad for my abuser and told myself (and others) that it was probably insecurity and worry that had caused him to act that way. I made out that it wasn’t his fault. 
+
+But the thing is, I’m as insecure as they come and I worry about pretty much everything ever. I think I am probably as neurotic as they come, but I try to have the self control and compassion not to shift that onto someone else who doesn’t deserve it and has done nothing to make me feel that way.
+
+The key to your happiness is not someone else’s sadness. The way to maintain a relationship is not to guilt and frighten the other person into staying. 
+
+If someone tells you that the reason they act the way they do is _______ or ______ then fine – people get hurt and events affect us and we all struggle. But we need to be able to recognise this in ourselves and work to better our flaws and tell our insecurities to leave us alone. It’s not okay to use them as an excuse to chip away at others.
+
+## The lasting impact
+
+Being in a relationship like this left a deep-rooted self-dislike in me which other people who’ve cared for me have struggled to remove. No matter how much someone tells you you’re swell, the words of someone else who said the complete opposite will always somehow ring truer. 
+
+It’s been years since I was with my ex but I still get upset when I see a domestic violence storyline on TV or if someone is being intimidating towards their partner in Tesco or something.
+
+I walk into a room and I have to repeat in my head “You’re as good as everyone else in here” over and over again to keep myself from running back out. I am still working really hard on getting to know myself again but I know I can do it. I got away from it, and so can you.
+
+I’m angry. Please trust your gut.
+
+Sophie is a communications officer and blogger. She loves to write and wants to use that skill to talk about sex and relationships.

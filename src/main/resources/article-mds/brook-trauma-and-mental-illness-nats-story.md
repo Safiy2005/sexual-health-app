@@ -1,54 +1,51 @@
-# Trauma and mental illness: Nat's story
+# Trauma and mental illness: Nat’s story
 
-Nat shares their personal experience of living with multiple mental health conditions, neurodivergence, and the long-term impact of trauma following an abusive relationship.
+## Summary
+*   **Overview** Nat shares their personal experience of living with multiple mental health conditions and autism while processing past trauma from an abusive relationship. They discuss the challenges of recognizing abuse, the journey of healing through open communication, and finding safety in a new, healthy relationship.
+*   **Disclaimer** The following content is from brook.org.
 
-**Content Warning:** This article contains discussions of mental illness, eating disorders, trauma, abuse, sexual assault, and rape.
+Content Warning: This page has discussion of mental illness, eating disorders, trauma, abuse, sexual assault and rape.
 
-## Living with Mental Illness and Trauma
+I am safe. That’s what I tell myself most days. I can be hit by fear at any given moment, out of the blue most of the time. You would not know this by looking at me, or if you talked to me but didn’t know me well. 
 
-On the surface, Nat is a 20-year-old with a fulfilling job, a happy relationship, and passionate hobbies. However, internal reality often differs from external appearances. Nat lives with several diagnosed conditions and experiences that impact their daily life:
+I’m 20 years old with a job that I love, close family and friends, a happy relationship and hobbies that I’m passionate about. My day-to-day life, from the outside, seems to be a nice one to be living.
 
-* Depression
-* Anorexia
-* Obsessive Compulsive Disorder (OCD)
-* Emotionally Unstable Personality Disorder (EUPD)
-* Autism
-* Trauma resulting from past experiences
+Things have not always been this way. You see, I live with four mental illnesses – depression, anorexia, obsessive compulsive disorder, and emotionally unstable personality disorder – as well as having autism. 
 
-Nat's challenges began early, with significant difficulties at age 10 and a first psychiatric admission at age 15. The most impactful trauma occurred at age 16 during their first serious relationship.
+I also have trauma that impacts my daily life and way of thinking. A lot of this trauma stems from various parts of my life. Aged 10 a lot was difficult for me. Then at 15 I had my first of several psychiatric admissions. 
 
-## Understanding Relationship Abuse
+The thing that’s currently impacting me the most happened when I was 16. However, at the time I felt too unsafe to fully process what was happening. I’ve only accepted and understood what went on in the last couple of months.
 
-At 16, Nat entered a relationship with someone they trusted. Over time, the relationship became abusive, though it was not immediately recognizable as such. The abuse took several forms:
+At that age, I was in my first proper relationship. I was happy in this relationship most of the time. I thought this was a funny and caring boy. I trusted him. Not all of it was as I thought, though. 
 
-* **Manipulation:** Using declarations of love to justify controlling behavior.
-* **Enabling Disordered Eating:** Helping to hide or dispose of food during the development of anorexia.
-* **Sexual Violence:** The relationship involved sexual assault and rape.
+He was manipulative in some ways, telling me that he loved me very early on and leading me to believe that everything he did was because of that. When my anorexia developed during our relationship, he would help me hide food, or eat it for me. Some days the food he got rid of was all I would’ve faced having that day. 
 
-Nat notes that they did not initially recognize the abuse for what it was and suggests that even with understanding, fear often prevents individuals from leaving such situations. It took several years for Nat to fully process and accept these events.
+He also sexually assaulted me, and later raped me. Yes, I was in a relationship with someone I loved. No, I did not see the abuse for what it was, so no, I did not leave him. I think even if I had understood the situation, I would have stayed out of fear.
 
-## The Process of Healing and Support
+Whilst I won’t go into details about the abuse, I feel the constant need to explain that much. I still feel like people don’t believe me, or understand the facts for what they are. After all, I didn’t believe it for years.
 
-Healing is a non-linear process that continues even when life circumstances improve. Despite being in a safe, loving relationship now, Nat still experiences moments of fear and the need to reaffirm their safety.
+Now things are different. I’m in a relationship that really is happy and loving. As mentioned, I have an established and fulfilling life. But of course these things still impact me. 
 
-Key elements of Nat's recovery include:
-* **Safe Environment:** Establishing a life that is stable and supportive.
-* **Communication:** Sharing the experience with trusted individuals, including family, friends, a partner, and a mental health worker.
-* **Professional Support:** Working with key mental health workers to gain a new perspective on past events.
-* **Patience:** Recognizing that bad days still occur and that recovery takes time.
+When it first all rushed back to me in full clarity, I was incredibly depressed and genuinely terrified that it would happen again. I trust my boyfriend, and know he is nothing like my ex, but the fear was still there. 
 
-## Identity and Resilience
+It didn’t take me long to tell some trusted people. This may sound positive, but I think it mostly came from internal pressure. It had been so long since it actually happened, that I felt I wasn’t where I should be in the process of healing those wounds. 
 
-Following the abuse, Nat initially felt unable to pursue romantic relationships with men, dating women exclusively for two years. Nat identifies as queer and has since learned to be true to all aspects of their identity while healing.
+Telling people was the best thing for me. I was able to talk to my mum, my partner, my friends and my key mental health worker, surrounding myself with a new understanding. When I couldn’t comprehend what had happened, I was able to ask them for support. 
 
-Nat highlights several important perspectives on recovery:
-* **Moving On Without Forgiveness:** It is possible to move forward without feeling the need to forgive the perpetrator or feeling completely "over" the trauma.
-* **Carrying the Past:** Healing involves learning to live alongside the past, making the burden lighter over time.
-* **Self-Validation:** Recognizing that even when things are not okay, it is possible to cope and carry on.
+My relationship with my boyfriend, if anything, has improved. He is incredibly patient and understanding with me on my bad days, and on my good days, he shows me that he’s nothing like this ex through his actions.
 
-## Support and Resources
+I still repeat to myself that I am safe every day. I still fight against my four illnesses and my trauma. But I am starting to see just how much better my life is now than ever before. I’m proud of myself. 
 
-Approximately 1 in 4 people in the UK experience a mental health problem each year. If you are concerned about your mental health or the wellbeing of someone else, support is available. You do not need a formal diagnosis to seek help.
+After I left the abuse, I didn’t think I would ever have a romantic or intimate relationship with a man again, and dated women exclusively for two years. I identify as queer, so I was attracted to them, but I still felt I was denying part of myself by not even acknowledging that I also liked men. 
 
-**Important Note on Abuse:**
-Abuse in a relationship can take many forms and can affect anyone regardless of gender or age. Abuse is always wrong and is never the fault of the person being abused.
+Now, I know I am being true to myself and doing my best to heal from illness and past pain. I also know that I don’t have to forgive or feel like I’m over it in order to move on from it. 
+
+Living despite everything, continuing whilst carrying it with me, is best for me. And it is getting lighter to carry. I am safe. And even after there have been times where I was not, I can cope with that. I can carry on. I am carrying on.
+
+## It’s OK not to be OK
+
+Approximately 1 in 4 people in the UK will experience a mental health problem each year. If you are worried about your mental health, or about someone else’s, there are lots of places that can offer you help and support. 
+
+You don’t have to be diagnosed, you don’t even have to know exactly what’s wrong. Whenever you are ready to talk to someone, you can.
+
+*Abuse in a relationship can take many forms and people of any gender, and any age, can be abusive partners or victims of abuse. Whatever the situation, abuse is always wrong, and never the fault of the person who is being abused.

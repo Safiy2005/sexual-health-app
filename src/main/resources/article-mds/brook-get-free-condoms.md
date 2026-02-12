@@ -1,136 +1,161 @@
-# How to Get Free Condoms
+# Get free condoms
 
-The C-Card scheme is a condom distribution program that allows individuals to pick up free condoms and lubricant from various local outlets, including pharmacies, youth services, and shops.
+## Summary
+*   **Overview** The C-Card scheme allows you to pick up free condoms from local outlets like pharmacies, youth services and shops. See if you can join C-Card in your area to access free condoms and lube.
+*   **Disclaimer** The following content is from brook.org
 
-## Benefits of Using Condoms
+## Get free condoms
+Condoms protect against unwanted pregnancy by stopping the sperm contained in semen coming into contact with the vagina (which could lead to an egg being fertilised).
 
-Condoms are a highly effective method of contraception and sexual health protection:
-* **Pregnancy Prevention:** They stop sperm from entering the vagina and fertilising an egg.
-* **STI Protection:** They are the only method of contraception that provides protection against sexually transmitted infections (STIs).
+They are also the only method of contraception that provides protection against sexually transmitted infections (STIs).
 
-## How the C-Card Scheme Works
+C-Card is a condom distribution scheme which provides access to free condoms and lube from local outlets.
 
-C-Card runs in various locations across the UK. While specific rules may vary by location, the general process is as follows:
-1. **Registration:** You must first register with your local C-Card scheme.
-2. **Collection:** Once registered, you can collect free condoms from participating outlets.
-3. **Identification:** Outlets typically display the C-Card logo in their window to indicate they are part of the scheme.
+It runs in various locations across the UK (sometimes age criteria apply).
 
-Please note that age criteria often apply depending on the specific regional program.
+Once you’ve registered with your local C-Card scheme, you will be able to collect free condoms from a number of outlets, including pharmacies, shops and public services.
 
-## Where to Access C-Card by Region
+Outlets will let you know they are part of the scheme by displaying the C-Card logo in their window.
 
-### North East England
-* **County Durham & Darlington:** Age 13-24. Available at various local providers.
-* **Gateshead:** Age 16+. Online ordering available.
-* **Hull:** Free condom providers available.
-* **Newcastle upon Tyne:** Age 13-25. Registration required at local providers.
-* **North Tyneside:** Age 13-24 (Online ordering for 18+).
-* **Northumbria:** Age 13-24 (Online ordering for 18+).
-* **South Tyneside:** Age 16+. Online ordering available.
-* **Sunderland:** Age 13-24. Registration required at local providers.
-* **Tees Valley and Teesside:** Age 13-24. Online ordering available for ages 16-24.
+## North East England
+*   **County Durham & Darlington** Age range: 13-24 Free condom providers in County Durham, and how to register
+*   **Gateshead** Age range: 16+ Order free condoms online in Gateshead
+*   **Hull** Free condom provider in Hull
+*   **Newcastle upon Tyne** Age range: 13-25 Free condom providers in Newcastle upon Tyne, and how to register
+*   **North Tyneside** Age range: 13-24 Free condom providers in North Tyneside Order free condoms online in North Tyneside (over 18s only)
+*   **Northumbria** Age range: 13-24 Free condom providers in Northumbria Order free condoms online in Northumbria (over 18s only)
+*   **South Tyneside** Age range: 16+ Order free condoms online in South Tyneside
+*   **Sunderland** Age range: 13-24 Free condom providers in Sunderland, and how to register
+*   **Tees Valley and Teesside** Age range: 13-24 Register for free condoms in South Tees and Hartlepool (13-24) Order free condoms online in Teesside (16-24)
 
-### North West England
-* **Barnsley:** Age 13-25.
-* **Blackburn with Darwen:** Age 13-25.
-* **Blackpool:** Age 16-24. Available by post.
-* **Bradford:** Age 13-24.
-* **Bury:** Age 16+. Online ordering available.
-* **Cheshire & Cheshire West:** Age 16+.
-* **Cheshire East:** Age 16+. Online ordering available.
-* **Halton:** Age 16+. Online ordering available.
-* **Kirklees:** Age 13-24.
-* **Knowsley:** Age 16+. Online ordering available.
-* **Lancashire:** Age 16-24. Available by post.
-* **Leeds:** Under 25s.
-* **Liverpool:** All ages (Online ordering for 16+).
-* **Manchester:** Under 25s can sign up via Brook.
-* **North Yorkshire:** Age 16-24. Online ordering available.
-* **Oldham:** Age 16+. Online ordering available.
-* **Rochdale:** Age 16+. Online ordering available.
-* **Sefton:** Age 13-19. Postal registration available.
-* **Stockport:** Age 13-24.
-* **Wakefield:** Age 13-25.
-* **Warrington:** Age 16+. Online ordering available.
-* **Wigan & Leigh:** Age 13-25.
-* **Yorkshire:** Age 16-24. Online ordering available.
+## North West England
+*   **Barnsley** Age range: 13-25 Register for free condoms in Barnsley
+*   **Blackburn with Darwen** Age range: 13-25 Free condom providers in Blackburn with Darwen How to register for free condoms in Blackburn with Darwen
+*   **Blackpool** Age range: 16-24 Free condoms by post in Blackpool
+*   **Bradford** Age range: 13-24 Free condom providers in Bradford, and how to register
+*   **Bury** Age range: 16+ Order free condoms online in Bury
+*   **Cheshire and Cheshire West** Age range: 16+ Register for free condoms in Cheshire
+*   **Cheshire East** Age range: 16+ Order free condoms online in Cheshire East
+*   **Halton** Age range: 16+ Order free condoms online in Halton
+*   **Kirklees** Age range: 13-24 Free condom providers in Kirklees, and how to register
+*   **Knowsley** Age range: 16+ Order free condoms online in Knowsley
+*   **Lancashire** Age range: 16-24 Free condoms by post in Lancashire
+*   **Leeds** Age range: under 25s Free condom providers in Leeds
+*   **Liverpool** Age range: all ages Free condom providers in Liverpool for people of all ages, and how to register Order condoms online if you are over 16 in Liverpool
+*   **Manchester** If you live in Manchester and are under 25 you can sign-up to the C-Card scheme.
+*   **North Yorkshire** Age range: 16-24 Order condoms online in North Yorkshire
+*   **Oldham** Age range: 16+ How to get free condoms in Oldham Order free condoms online in Oldham
+*   **Rochdale** Age range: 16+ Order free condoms online in Rochdale
+*   **Sefton** Age range: 13-19 Free condom providers in Sefton Register for free condoms by post in Sefton
+*   **Stockport** Age range: 13-24 Free condom providers in Stockport, and how to register
+*   **Wakefield** Age range: 13-25 Register for free condoms in Wakefield
+*   **Warrington** Age range: 16+ Order free condoms online in Warrington
+*   **Wigan & Leigh** Age range: 13-25 Register for free condoms in Wigan & Leigh
+*   **Yorkshire** Age range: 16-24 Order condoms online in Yorkshire
 
-### East Midlands
-* **Derbyshire:** Age 13-24.
-* **Leicestershire & Rutland:** Age 13+.
-* **Lincolnshire:** Age 13-19 (up to 25 for those with learning disabilities).
-* **Nottingham:** Age 16-25.
-* **Nottinghamshire:** Age 13-25 (Online applications for 16+).
+## East Midlands
+*   **Derbyshire** Age Range: 13-24 Free condom providers in Derbyshire How to register for free condoms in Derbyshire
+*   **Leicestershire & Rutland** Age Range: 13+ Free condom providers in Leicester How to register for free condoms in Leicester
+*   **Lincolnshire** Age Range: 13-19 (up to 25 for people with learning disabilities) Free condom providers in Lincolnshire, and how to register
+*   **Nottingham** Age range: 16-25 How to register for free condoms in Nottingham
+*   **Nottinghamshire** Age range: 13-25 More about C-Card in Nottinghamshire Apply online (over 16s only)
 
-### West Midlands
-* **Coventry:** Age 13-25.
-* **Dudley:** Age 13-25.
-* **Sandwell:** Under 25s. Registration by post available.
-* **Shropshire:** Age 13-24.
-* **Staffordshire:** Age 13-24.
-* **Stoke-on-Trent:** Age 13+.
-* **Telford & Wrekin:** Age 13-24.
-* **Walsall:** Age 16-24.
-* **Warwickshire:** Age 13-25.
-* **Wolverhampton:** Age 13-24.
+## West Midlands
+*   **Coventry** Age range: 13-25 Free condom providers in Coventry How to register for free condoms in Coventry
+*   **Dudley** Age range: 13-25 Free condom providers in Dudley
+*   **Sandwell** Age range: under 25s Register for free condoms by post in Sandwell
+*   **Shropshire** Age range: 13-24 Free condom providers in Shropshire, and how to register
+*   **Staffordshire** Age range: 13-24 Free condom providers in Staffordshire, and how to register
+*   **Stoke-on-Trent** Age range: 13+ Free condom providers in Stoke-on-Trent, and how to register
+*   **Telford & Wrekin** Age range: 13-24 Free condom providers in Telford & Wrekin, and how to register
+*   **Walsall** Age range: 16-24 Find free condom providers in Walsall, and how to register
+*   **Warwickshire** Age range: 13-25 Free condom providers in Warwickshire How to register for free condoms in Warwickshire
+*   **Wolverhampton** Age range: 13-24 Free condom providers in Wolverhampton, and how to register
 
-### East of England
-* **Bedfordshire:** Age 13-24.
-* **Cambridgeshire:** Age 13-24.
-* **Essex:** Age 16-24.
-* **Hertfordshire:** Under 25s.
-* **Luton:** All ages.
-* **Norfolk:** Age 13-24.
-* **Southend:** Age 13+.
-* **Suffolk:** Age 13-24.
-* **Thurrock:** Under 25s.
+## East of England
+*   **Bedfordshire** Age range: 13-24 Free condom providers in Bedfordshire How to register for free condoms in Bedfordshire
+*   **Cambridgeshire** Age range: 13-24 Free condom providers in Cambridgeshire How to register for free condoms in Cambridgeshire
+*   **Essex** Age range: 16-24 How to get free condoms in Essex
+*   **Hertfordshire** Age range: under 25s Free condom providers in Hertfordshire More information about free condoms in Hertfordshire
+*   **Luton** Age range: all ages Free condom providers in Luton How to register for free condoms in Luton
+*   **Norfolk** Age range: 13-24 Free condom providers in Norfolk How to register for free condoms in Norfolk
+*   **Southend** Age range: 13+ Free condom providers in Southend How to register for free condoms in Southend
+*   **Suffolk** Age range: 13-24 Free condom providers in Suffolk How to register for free condoms in Suffolk
+*   **Thurrock** Age range: under 25s How to get free condoms in Thurrock
 
-### London and Greater London
-Most London boroughs offer the C-Card scheme for individuals under 25 or within the 13-24 age bracket. These include Barking & Dagenham, Barnet, Bexley, Brent, Bromley, Camden, Croydon, Ealing, Enfield, Greenwich (post available for 16-21), Hackney, Haringey, Harrow, Havering, Hillingdon, Hounslow, Islington, Kingston upon Thames, Lambeth, Lewisham, Merton, Newham (under 22s), Redbridge (15-25), Richmond upon Thames, Southwark, Sutton, Tower Hamlets, Waltham Forest, and Wandsworth.
+## London and Greater London
+*   **Barking & Dagenham** Age range: under 25s Free condom providers in Barking & Dagenham How to register for free condoms in Barking and Dagenham
+*   **Barnet** Age range: under 25s Free condom providers in Barnet How to register for free condoms in Barnet
+*   **Bexley** Age range: 13-24 Free condom providers in Bexley How to register for free condoms in Bexley
+*   **Brent** Age range: under 25s Free condom providers in Brent, and how to register
+*   **Bromley** Age range: 13-24 Free condom providers in Bromley How to register for free condoms in Bromley
+*   **Camden** Age range: 13-24 Free condom providers in Camden How to register for free condoms in Camden
+*   **Croydon** Age range: under 25s Free condom providers in Croydon How to register for free condoms in Croydon
+*   **Ealing** Age range: under 25s Free condom providers in Ealing, and how to register
+*   **Enfield** Age range: 13-24 Free condom providers in Enfield How to register for free condoms in Enfield
+*   **Greenwich** Age range: 16-21 Register for condoms by post in Greenwich
+*   **Hackney** Age range: under 25s Free condom providers in Hackney
+*   **Haringey** Age range: under 25s Free condom providers in Haringey, and how to register
+*   **Harrow** Age range: under 25s Free condom providers in Harrow, and how to register
+*   **Havering** Age range: under 25s Free condom providers in Havering, and how to register
+*   **Hillingdon** Age range: under 25s How to find free condoms in Hillingdon
+*   **Hounslow** Age range: under 25s Free condom providers in Hounslow, and how to register
+*   **Islington** Age range: 13-24 Free condom providers in Islington How to register for free condoms in Islington
+*   **Kingston upon Thames** Age range: under 25s Free condom providers in Kingston upon Thames How to register for free condoms in Kingston upon Thames
+*   **Lambeth** Age range: under 25s Free condom providers in Lambeth How to register for free condoms in Lambeth
+*   **Lewisham** Age range: under 25s Free condom providers in Lewisham How to register for free condoms in Lewisham
+*   **Merton** Age range: under 25s Free condom providers in Merton, and how to register
+*   **Newham** Age range: under 22s How to access free condoms in Newham
+*   **Redbridge** Age range: 15-25 Free condom providers in Redbridge How to register for free condoms in Redbridge
+*   **Richmond upon Thames** Age range: 13-24 Free condom providers in Richmond upon Thames How to register for free condoms in Richmond upon Thames
+*   **Southwark** Age range: under 25s Free condom providers in Southwark How to register for free condoms in Southwark
+*   **Sutton** Age range: 13-24 Free condom providers in Sutton How to register for free condoms in Sutton
+*   **Tower Hamlets** Age range: 13-24 Free condom providers in Tower Hamlets How to register for free condoms in Tower Hamlets
+*   **Waltham Forest** Age range: under 25s Free condom providers in Waltham Forest How to register for free condoms in Waltham Forest
+*   **Wandsworth** Age range: 13-24 Free condom providers in Wandsworth How to register for free condoms in Wandsworth
 
-### South East England
-* **Brighton & Hove:** Under 25s.
-* **Buckinghamshire:** All ages.
-* **East Sussex:** Under 25s.
-* **Hampshire:** Under 25s.
-* **Isle of Wight:** Under 25s.
-* **Kent:** Age 13-24.
-* **Medway:** Age 13-24.
-* **Milton Keynes:** Age 13-24.
-* **Oxfordshire:** Age 13-24.
-* **Portsmouth:** Under 25s.
-* **Southampton:** Under 25s.
-* **Surrey:** Age 13-24.
-* **West Sussex:** Age 13-24. Postal registration available.
+## South East England
+*   **Brighton & Hove** Age range: under 25s How to access free condoms in Brighton & Hove
+*   **Buckinghamshire** Age range: All ages Get free condoms in Buckinghamshire
+*   **East Sussex** Age range: under 25s How to access free condoms in East Sussex How to register for free condoms in East Sussex
+*   **Hampshire** Age range: under 25s Free condom providers in Hampshire How to register for free condoms in Hampshire
+*   **Isle of Wight** Age range: under 25s How to register for free condoms in the Isle of Wight
+*   **Kent** Age range: 13-24 How to access free condoms in Kent
+*   **Medway** Age range: 13-24 How to access free condoms in Medway
+*   **Milton Keynes** Age range: 13-24 Free condom providers in Milton Keynes How to register for free condoms in Milton Keynes
+*   **Oxfordshire** Age range: 13-24 Free condom providers in Oxfordshire How to register for free condoms in Oxfordshire
+*   **Portsmouth** Age range: under 25s How to register for free condoms in Portsmouth
+*   **Southampton** Age range: under 25s How to register for free condoms in Southampton
+*   **Surrey** Age range: 13-24 Free condom providers in Surrey
+*   **West Sussex** Age range: 13-24 Register for condoms by post in West Sussex
 
-### South West England
-* **Bath & North East Somerset:** Age 13-24.
-* **Bristol and South Gloucestershire:** Under 20s.
-* **Cornwall and the Isles of Scilly:** Age 13-24.
-* **Devon:** Age 13-24.
-* **Dorset:** Age 13-24.
-* **Gloucestershire:** Under 25s.
-* **Plymouth:** Under 25s.
-* **Somerset:** Age 13-19 (up to 25 for young people with SEND).
+## South West England
+*   **Bath & North East Somerset** Age range: 13-24 How to access free condoms in Bath and North East Somerset
+*   **Bristol and South Gloucestershire** Age range: under 20s How to access free condoms in Bristol and South Gloucestershire
+*   **Cornwall and the Isles of Scilly** Age range: 13-24 Free condom providers in Cornwall How to register for free condoms in Cornwall
+*   **Devon** Age range: 13-24 Free condom providers in Devon How to register for free condoms in Devon
+*   **Dorset** Age range: 13-24 Free condom providers in Dorset How to register for free condoms in Dorset
+*   **Gloucestershire** Age range: under 25s Free condom providers in Gloucestershire How to register for free condoms in Gloucestershire
+*   **Plymouth** Age range: under 25s Free condom providers in Plymouth How to register for free condoms in Plymouth
+*   **Somerset** Age range: 13-19 (up to age 25 for young people with SEND) Free condom providers in Somerset How to register for free condoms in Somerset
 
-### Wales
-* **Cardiff:** Age 13-25.
-* **North Wales:** Under 25s.
-* **All of Wales:** General schemes available for those under 25.
+## Wales
+*   **Cardiff** Age range: 13-25 Free condom providers in Cardiff How to register for free condoms in Cardiff
+*   **North Wales** Age range: under 25s Free condoms in North Wales
+*   **All of Wales** Age range: under 25s Free condom providers in Wales
 
-### Scotland
-* **Ayrshire:** Age 14+.
-* **Edinburgh:** Age 13+. Postal orders available.
-* **Forth Valley:** All ages. Postal orders available.
-* **Greater Glasgow and Clyde:** Age 13+. Postal orders available.
-* **Lanarkshire:** Under 25s. Postal orders available.
-* **Tayside:** Age 14+. Postal orders available.
-* **Scottish Borders:** Age 13-25.
+## Scotland
+*   **Ayrshire** Age range: 14+ How to access free condoms in Ayrshire
+*   **Edinburgh** Age range: 13+ How to access free condoms in Edinburgh Order free condoms by post in Edinburgh
+*   **Forth Valley** Age range: all ages Order free condoms by post in Forth Valley
+*   **Greater Glasgow and Clyde** Age range: 13+ Free condom providers in Greater Glasgow and Clyde How to register for free condoms in Greater Glasgow and Clyde Order free condoms by post in Greater Glasgow and Clyde
+*   **Lanarkshire** Age range: under 25s How to access free condoms in Lanarkshire Order free condoms by post in Lanarkshire
+*   **Tayside** Age range: 14+ Order free condoms by post in Tayside
+*   **The Scottish Borders** Age range: 13-25 How to access free condoms in the Scottish Borders
 
-## Alternative Options for Accessing Condoms
+## What if C-Card doesn’t run in my area?
+If C-Card isn’t active in your area, you can always visit your local sexual health service , such as a sexual health clinic, to access free condoms.
 
-If the C-Card scheme is not active in your area or you do not meet the age criteria, you have other options:
-* **Sexual Health Clinics:** Most local sexual health services provide free condoms to visitors.
-* **GPs:** Some General Practitioners may provide free condoms.
-* **Retailers:** You can purchase condoms at pharmacies, supermarkets, and other shops. There is no minimum age to buy condoms in the UK, and you do not need to provide ID.
-* **Online:** Condoms can be purchased online, often for a very low cost.
+You can also buy condoms at most shops and pharmacies, as well as online for as little as £1 and your GP may be able to provide free condoms too.
+
+There’s no minimum age to buy condoms so you won’t need ID or your purchase approved at the till.

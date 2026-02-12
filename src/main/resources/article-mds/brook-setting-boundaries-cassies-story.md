@@ -1,49 +1,56 @@
-# Setting boundaries: Cassie's Story
+# Setting boundaries: Cassie’s Story
 
-Cassie, 22, explains how she learned the importance of setting boundaries in her relationships and why doing so is a vital act of self-love.
+## Summary
+*   **Overview** Cassie, 22, shares her personal journey of moving from being a "people pleaser" with no boundaries to understanding and implementing them as an act of self-care and self-love.
+*   **Disclaimer** The following content is from brook.org.
 
-## The Struggle with People Pleasing
+## Cassie's Story
 
-For most of my life, I was a people pleaser. I had an uncomfortable need to be liked and wanted to be everyone’s “go-to” person. I believed my worth was heavily tied to pleasing others, deriving self-worth from putting the needs of others well above my own.
+Cassie, 22, explains how she learned the importance of setting boundaries in her relationships and why that is an act of self-love.
 
-I would neglect my own needs to help someone or provide excessive emotional labour. While it gave me a temporary "rush" to feel special or needed, it left me exhausted and mentally drained. By the end of the day, I had no energy left for myself.
+Boundaries are relatively new to me and definitely something I’m still working on. However, implementing boundaries and honouring them has without a doubt, changed my life.
 
-In 2018, I reached a dark place where I felt like a disappointment and believed I wasn't good enough. This began a journey of healing and unlearning toxic behavior patterns.
+For the most part of my life, I’ve been a people pleaser. Someone who had a very uncomfortable need to be liked. I wanted to be everything for everyone and be everybody’s “go-to” friend or family member.
 
-## Discovering Personal Boundaries
+This led to me believing that my own worth was heavily tied to pleasing others. I would pay special attention to the positive feedback I received for being “nice” and pleasing others and I derived almost all of my self-worth from putting the feelings and needs of other people well above my own.
 
-I first encountered the concept of personal boundaries through social media. Initially skeptical, I soon realized I had zero boundaries. I never said no, never put my physical or mental needs first, and frequently compromised my beliefs to make others comfortable. 
+When I would neglect my own needs to help somebody, or do what somebody asked, or would give excessive emotional labour to someone, I would get a rush that I was their person and that I was special to them. They came to me for help and that would almost make me smug! I must be a good person if they’ve chosen me to help them!!
 
-I would apologize constantly. For example, if friends wanted to go out after work and I was exhausted, I would go anyway just to avoid upsetting them. If I did say no, I would follow it with a thousand apologies.
+I would pour so much energy into being there for other people that at the end of the day, when I was left on my own, I was exhausted, mentally drained and had next to no relationship with myself.
 
-## Defining Boundaries
+Then, in 2018, I found myself in a very dark place. My brain was telling me I was a disappointment, I was lazy, that I wasn’t good enough and that nobody actually benefitted from me being in their life. I thankfully got out of that mess and began a long journey of healing and unlearning some incredibly toxic behaviour patterns.
 
-Through research, I learned that boundaries represent the physical and emotional limits you do not want others to cross. They help define your sense of self by separating your needs, desires, thoughts, and feelings from those of other people. 
+Then one day whilst scrolling through Instagram I found a post about boundaries. This was genuinely the first time I’d ever heard about the idea of having personal boundaries with yourself and in relationships. I scoffed and continued reading to see what rubbish this person was spewing but the more I read, the more things made sense.
 
-I realized that my "laziness" was actually total exhaustion from fixing everyone else’s problems and ignoring my own basic needs. To change this, I began writing down things that made me feel bad and looked for ways to remove them from my life.
+I had zero boundaries. Not one. I never said no to people. I never put my physical or mental needs first. I would compromise my moral or beliefs to make others feel comfortable. And I apologised A LOT.
 
-## Implementing Boundaries
+An example of this is if friends wanted me to go out after work but I was too tired, I would still say yes in fear of them being upset with me. I’d much rather be tired than have upset my friends. And then if I ever did say no, it was followed by 1000 apologies.
 
-Communicating boundaries can be difficult. They are often mistaken for being "difficult," "sensitive," or putting limits on a relationship. If you change a long-standing dynamic, it may cause the other person to feel rejected.
+After I read that post I did some more research. I read up on boundaries for hours! I learnt that boundaries represent physical and emotional limits that you don’t want other people to cross. They help define your sense of self by separating your needs, desires, thoughts, and feelings from other people.
 
-When implementing boundaries, it is important to:
-* **Be direct:** Communicate clearly and honestly.
-* **Explain your needs:** Say what you need and why.
-* **Identify consequences:** Explain the effect on the relationship if the boundary is crossed.
-* **Expect resistance:** The people who get most upset about boundaries are often those who benefited from you having none.
+I realised that it was no wonder I felt like I was lazy because all my energy was going into fixing family and friends’ problems, being in situations I didn’t like, going out too much when I didn’t want to and not caring for my basic needs. I sat down and wrote out things that didn’t make me feel good and then found ways to get it out of my life.
 
-## Boundaries as Self-Love
+Then came the hard part, implementing them. Sitting down and telling somebody you have a new boundary that you hope they will respect can sometimes seem like an attack.
 
-Setting boundaries is a generous act because it teaches others how to love us properly. While I have been accused of being "difficult" or "dramatic" since setting limits, the truth is that I simply respect myself too much to allow myself to be exhausted by unhealthy dynamics.
+Boundaries are often mistaken as putting limits on a relationship or someone being “difficult” or “too sensitive”. If you’ve allowed someone to come and sit with you in your place of work during your shift every week for a year and all of a sudden you ask them not to, then that may bring up some feelings of rejection.
 
-You disrespect yourself every time you say "yes" when you really mean "no." If someone responds poorly to your boundaries, it may be a sign that they do not respect you or your needs.
+This is why it’s important to be direct with your boundaries and communicate them clearly. Say what you need, why you need it and what effect it could have on your relationship if this boundary is crossed. Expect resistance but don’t let it deter you.
 
-## Examples of Setting Boundaries
+The only people who get upset about you having no boundaries are the ones who were benefitting from you having none. Someone who valued your feelings and cared for your wellbeing would respect that this is what you need to have a healthy relationship with them.
 
-Using clear language can help establish your limits effectively:
+If asking someone to respect your needs causes tension in your relationship, then that relationship was not benefitting you in the first place and is possibly one for the bin.
 
-* **To protect your opinion:** “I respect that you disagree with my opinion, but don’t force your own onto me.”
-* **To stop verbal abuse:** “If you can’t speak to me without shouting or calling me names, then I am going to end this conversation.” (Then follow through and end it).
-* **To buy yourself time:** “Let me think about it and get back to you.” Use this time to ask yourself if you actually have the energy to help.
-* **To decline an invitation:** “I won’t be able to make it this time.” 
-* **Remember:** You don’t always need to give a reason. “No” is a complete sentence.
+Once I set some boundaries with family and friends, I started to realise just how many people took advantage of me being a people pleaser. As I mentioned before, I used to HATE being disliked (and still do to some extent) so I would do anything for anybody at any given point. This was UNHEALTHY.
+
+Now that I no longer do this or no longer keep quiet about things that upset me, I’m “difficult” or “dramatic” or have even been accused of losing love for certain people. That is simply not true. I still love these people but I love and respect myself more than to allow myself to be exhausted by the unhealthy methods I used to use to show love.
+
+Setting boundaries is GENEROUS. Boundaries teach others how to love us. Never feel guilty for saying no. Or for loving yourself enough to no longer accept what you used to.
+
+You disrespect yourself every time you say yes when you really mean no, or when you give in to something you don’t want to do, or when you compromise your own comfort to please others. If people respond poorly to your boundaries, then it’s time to show those people the door. They don’t respect you or your needs. Don’t allow yourself to be treated poorly just because you love them. Love yourself more!
+
+## Examples of setting boundaries
+*   **“I respect that you disagree with my opinion, but don’t force your own onto me”**
+*   **“If you can’t speak to me without (shouting, calling me names), then I am going to end this conversation.”** – Then end it.
+*   **“Let me think about it and get back to you.”** – Before committing, ask yourself if you have the time, support and energy to help out? If you do, great. If you don’t, follow up with a decline.
+*   **“I won’t be able to make it this time.”** – You don’t always need to give a reason. ‘No’ is a complete sentence.
+*   **“I can understand that you’re angry, but I won’t be shouted at.”**

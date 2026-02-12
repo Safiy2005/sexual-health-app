@@ -1,43 +1,39 @@
 # Endometriosis
 
-## What is Endometriosis?
+## Summary
+*   **Overview** Endometriosis can affect anyone who has started their period. Endometriosis is a chronic condition that causes cells like those found in the lining of the womb to grow elsewhere in the body.
+*   **Disclaimer** The following content is from brook.org.
 
-Endometriosis is a chronic condition that affects anyone who has started their period. It occurs when cells similar to those lining the uterus (womb) grow elsewhere in the body. These cells behave like the uterine lining, building up, breaking down, and bleeding each month. However, unlike menstrual blood, which exits the body through the vagina, these trapped cells have no way to escape, leading to various symptoms.
+## Endometriosis
+Endometriosis can affect anyone who has started their period. Endometriosis is a chronic condition that causes cells like those found in the lining of the womb to grow elsewhere in the body. 
 
-## Symptoms of Endometriosis
+These cells behave the same way as the womb lining; every month they build up, then break down and bleed. 
 
-Symptoms can include:
+Unlike the lining of the womb (which leaves through the vagina as a period), these cells don’t have anywhere to go when they break down, leaving them trapped inside the body. 
 
-* Pain in the lower back or abdomen
-* Painful and heavy periods
-* Painful sex
-* Pain when urinating or passing stools
-* Feeling sick or constipated
+This can lead to symptoms such as:
+*   pain in the lower back or abdomen
+*   painful and heavy periods
+*   painful sex 
+*   pain when weeing or pooing
+*   feeling sick or constipated
 
-In some cases, endometriosis can lead to infertility.
+In some cases, endometriosis can lead to infertility. 
 
-## Prevalence and Diagnosis
+Endometriosis affects approximately 1 in 10 people who have a womb. 
 
-Endometriosis affects approximately 1 in 10 people who have a womb. On average, it takes 7.5 years to receive a diagnosis.
+On average, it takes 7.5 years to get a diagnosis of endometriosis.
 
-## What is a Womb?
+*   **What is a womb?** A womb is the reproductive organ that sits in the abdomen of people with a vulva. It is where a baby grows if the person becomes pregnant, and where period blood comes from. Someone will probably have a womb if they have a vagina and vulva, but this is not the case for everyone; not all women have a womb, and not all people with a womb are women. 
 
-A womb is a reproductive organ located in the abdomen of individuals with a vulva. It is where a baby develops during pregnancy and where menstrual blood originates. Individuals with a vagina and vulva are likely to have a womb, but this is not universally true. Not all women have a womb, and not all people with a womb identify as women.
+The exact cause of endometriosis is currently not known and there isn’t a cure yet, but there is treatment available. 
 
-## Causes and Treatment
+Treatment can involve hormonal contraception, painkillers or surgery to remove the cells. 
 
-The exact cause of endometriosis is currently unknown, and there is no cure. However, treatment options are available, which can include:
+Everyone will experience endometriosis differently and so no one method of treatment is better than any other.
 
-* Hormonal contraception
-* Painkillers
-* Surgery to remove the affected cells
+While some period pain is normal, if your periods are causing you so much pain you can’t move then you should ask someone (like a parent, carer, or doctor) for help. 
 
-Treatment approaches vary for each individual, as no single method is universally superior.
+You might want to talk to family members to see how they experience their menstrual cycle. 
 
-## Seeking Help
-
-While some period pain is considered normal, if your periods cause severe pain that impedes your movement, it is important to seek help from a trusted adult, such as a parent, carer, or doctor. Discussing your experiences with family members about their menstrual cycles may also be beneficial.
-
-The Endometriosis UK website offers a pain and symptom diary that can assist in tracking your symptoms before consulting with your GP. Painful periods do not automatically mean you have endometriosis, but seeking support and advice can help you manage your menstrual cycle effectively.
-
----
+Painful periods don’t mean you definitely have endometriosis but talking to somebody means you can get the help and support you need to manage your periods.

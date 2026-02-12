@@ -1,30 +1,40 @@
 # STIs and Stigma
 
-In society, there can be stigma attached to being diagnosed with an STI. This stigma is harmful and unhelpful, often causing people to feel anxious about their sex lives or worried about how others perceive them. The fear of social consequences can even become a barrier that prevents people from getting tested.
+## Summary
+*   **Overview** In society, there can be stigma attached to being diagnosed with an STI, however this is harmful and unhelpful for people with STIs. Stigma is the disapproval of, or prejudice against, an individual or group based on characteristics that make them seem different from other members of a society. It often comes from misinformation and myths, which can fuel a lack of knowledge and understanding about STIs.
+*   **Disclaimer** The following content is from brook.org.
 
-Stigmatising people with STIs is unfair. Having an STI is very normal and nothing to be ashamed of. STIs are common; in 2020, over 300,000 people in the UK were diagnosed with a new STI. Most STIs can be cured, and those that cannot (such as HIV and genital herpes) can be effectively treated. An STI diagnosis does not mean the end of your sex life.
+## STIs and Stigma
 
-## What is Stigma?
+In society, there can be stigma attached to being diagnosed with an STI.
 
-Stigma is the disapproval of, or prejudice against, an individual or group based on characteristics that make them seem different from other members of a society. Stigma against STIs occurs when people are judged or condemned for having an infection.
+People often feel anxious that it will affect their sex lives or that it will change how others think about them.
 
-While other illnesses can also carry stigma, it is often more severe for STIs due to societal perceptions of sex being "naughty" or shameful. Stigma is frequently fueled by misinformation and myths, which lead to a lack of knowledge and understanding.
+The fear of the social consequences of being diagnosed with an STI can even be a barrier to people getting tested at all.
 
-## Common Myths About STIs
+Stigmatising people with STIs is unfair, as it can make them feel like there is something wrong with them, when actually it is very normal.
 
-* **Myth: "Having an STI will ruin my sex life"**
- Many people who have, or have had, STIs continue to have safe and fulfilling sex lives. While some infections require avoiding sex during treatment, others can be managed by using protection such as condoms or preventative medications like PrEP (Pre-Exposure Prophylaxis) and PEP (Post-Exposure Prophylaxis).
-* **Myth: "If someone has an STI it means they are unclean"**
- STIs have nothing to do with hygiene. They are infections transmitted through sexual contact, similar to how other infections are transmitted through different means. Most STIs have minimal symptoms and can affect anyone, regardless of how "clean" they are.
-* **Myth: "Having an STI will take over your life"**
- Curable STIs only affect your life for a brief period during testing and treatment. For example, treating chlamydia typically takes about two weeks of antibiotics. Non-curable STIs, like HIV and genital herpes, can be managed so they do not intrude on your daily life. Modern HIV treatment can make the virus untransmissible and allows for a long, healthy life.
-* **Myth: "Gay women can’t get STIs"**
- STIs can be passed through all types of sexual contact, including oral sex, sharing sex toys, and skin-to-skin genital contact. Anyone having sexual contact of any kind could potentially contract an STI. Testing needs depend on the type of sex you have; for instance, oral sex may require an oral swab rather than a urine test or vaginal swab.
-* **Myth: "Only gay men get HIV"**
- While certain demographics may have higher diagnosis rates, HIV is not restricted by sexuality. Transmission risk is related to the type of activity; anal sex carries a higher risk of transmission due to the delicate nature of the skin, but HIV can also be transmitted through vaginal and oral sex. Anyone can potentially contract HIV, which is why regular testing and protection are important for everyone.
-* **Myth: "HIV is always fatal"**
- While the 1980s saw high fatality rates before effective treatments existed, today it is likely for a person living with HIV to have a normal life expectancy. Modern treatment can reduce the "viral load" to the point where it is undetectable and therefore untransmissible (U=U), making it impossible to pass the virus to others.
+An STI diagnosis won’t mean the end of your sex life and is nothing to be ashamed of.
 
-## Accessing Services
+STIs are very common; over 300,000 people were diagnosed in the UK with a new STI in 2020.
 
-If you are unsure about what kind of test you need or have concerns about your sexual health, you can speak to your local sexual health service. Many services offer free, 100% confidential testing and advice, including home testing kits.
+Just like any other infection, most STIs can be cured, and those which can’t (such as HIV and genital herpes) can be very effectively treated.
+
+Stigma is the disapproval of, or prejudice against, an individual or group based on characteristics that make them seem different from other members of a society.
+
+Stigma against STIs is when people are judged or condemned for having an STI.
+
+There can be stigma attached to other types of infections and illnesses, too.
+
+However, it can be worse for STIs because of societal ideas about sex being something ‘naughty’ or even shameful.
+
+Stigma often comes from misinformation and myths, which can fuel a lack of knowledge and understanding about STIs.
+
+## Common myths about STIs
+
+*   **“Having an STI will ruin my sex life”** Plenty of people who have, or have had, STIs continue to have safe and fulfilling sex lives. There are some STIs for which you have to avoid sex whilst you receive treatment (it’s important that you do this if you are told to). With others, you can have sex as long as you are using protection such as a condom or, in the case of HIV, preventative drugs like PrEP or PEP.
+*   **“If someone has an STI it means they are unclean”** STIs have nothing to do with hygiene. An STI is no different than any other infection, except in how it’s transmitted. Most of them have minimal symptoms, and have nothing to do with your hygiene. They are nothing to be ashamed of, and lots of people have them regardless of how clean they are!
+*   **“Having an STI will take over your life”** STIs that are curable will only affect your life for a brief period, as long as you get tested and treated. For instance, treating chlamydia takes about two weeks from the point you start antibiotics. STIs that aren’t curable, like HIV and genital herpes, are possible to live with in a way that doesn’t intrude on other parts of your life. HIV treatment can make the virus untransmissable, and can boost your immune system enough to live a long, healthy life, while people with genital herpes will occasionally have outbreaks but the virus will mostly be undetectable and largely untransmissable.
+*   **“Gay women can’t get STIs”** There is a myth that you can only get STIs from penetrative vaginal or anal sex, which might lead people to think that women who have sex with women can’t get STIs. However, STIs can be passed on through all kinds of sex, including oral sex, sharing sex toys and fingering/hand jobs (for example if you touch someone else’s genitals and then your own). This means that anyone having sexual contact of any kind could potentially contract an STI. How you test for STIs depends on what kind of sex you have been having and what genitals you have. For instance, if you have had oral sex, you will need an oral swab, rather than a vaginal swab, anal swab or urine test. If you are unsure what kind of test you need, you can speak to your local sexual health service.
+*   **“Only gay men get HIV”** This common myth is based on the high levels of HIV in the gay community in the 1980s. While men who have sex with men make up a large proportion of new diagnoses of HIV, they are not more likely to get HIV because of their sexuality; Instead, it is because anal sex is the most likely to transmit HIV due to tearing of the delicate skin of the anus. Nonetheless, vaginal and oral sex can also transmit HIV. Anyone can potentially transmit and contract HIV, so it is important to use condoms and lube, and to get regularly tested.
+*   **“HIV is always fatal”** When the HIV/AIDS epidemic began in the 1980s, there was a high rate of fatality because medical professionals didn’t know what was happening or how to prevent or treat the virus. Today, it is not only possible but likely to live a long and healthy life while living with HIV. It is also possible to reduce the ‘viral load’ to the point where it is undetectable and, therefore, untransmissible; in other words, HIV treatment can make it impossible to pass the virus on to other people.

@@ -1,39 +1,48 @@
-# Dating Apps With a Disability: Emily’s Story
+# Dating apps with a disability: Emily’s Story
 
-Emily Yates, from the charity Enhance the UK, shares her personal experiences navigating the world of online dating as a wheelchair user. From the initial hurdles of creating a profile to finding long-term love, she explores the unique challenges and rewards of dating with a disability.
+## Summary
+*   **Overview** Emily Yates from Enhance the UK shares her personal journey with online dating as a wheelchair user, discussing the challenges of disclosure, handling inappropriate messages, and findng a long-term relationship.
+*   **Disclaimer** The following content is from brook.org.
 
-## The Challenges of Disclosure
+## Disclosing a disability
+If you’ve ever completed a CV, you’ll know it’s tricky to write about how wonderful you are. It’s the same with online dating, but the fear of rejection is worse, especially when you’re getting over a break-up.
 
-Writing an online dating profile can be daunting for anyone, but for those with a disability, there is the added layer of deciding how and when to disclose an impairment.
+My friends, both online dating veterans and virgins to the scene, helped me out.
 
-* **Visible vs. Invisible Disabilities:** For Emily, her wheelchair makes her disability visible from the start. However, many people with less visible impairments face a dilemma regarding when to share that information with a potential partner.
-* **Honesty and Confidence:** Emily suggests that being honest and confident is the best approach. Not everyone will be the right match, and it is important to accept that while also maintaining high standards for how you are treated.
-* **Fear of Rejection:** The fear of rejection can feel heightened when dating with a disability, particularly when returning to the dating scene after a breakup.
+I didn’t have to worry about disclosing my disability as, let’s face it, my wheelchair and I wouldn’t get far without one another, but several of my loved ones have less visible impairments, and never quite know when to present that to potential partners.
 
-## Navigating Interactions and Boundaries
+We encouraged each other to be confident and honest, as that really is the best way to go. I know that I’m not everyone’s cup of tea and I’m perfectly fine with that because frankly, they’re not mine.
 
-Once matches are made, the next challenge involves filtering through messages and managing inappropriate inquiries.
+## Handling matches and notifications
+The second hurdle with online dating really starts when the matches are made and the notifications start coming in. One bloke wanted to know if I was physically able to have sex, not quite the introduction I was looking for.
 
-* **Inappropriate Questions:** It is not uncommon for disabled people to receive invasive questions about their physical capabilities or sexual function early in a conversation. Emily emphasizes the importance of setting boundaries and not feeling obligated to answer intrusive questions.
-* **The "Spark":** Like all online dating, many matches may fizzle out. Finding a genuine connection often requires patience and moving beyond surface-level interactions.
+(My response to things like that are always ‘I can, but I won’t be having it with you!’)
 
-## Finding a Meaningful Connection
+I enjoyed several dates, and I met a few guys that said and did all the right things, but time passed by and things fizzled out. As they so often do when you’ve got a myriad of other matches waiting for you in a app.
 
-Emily’s experience with her partner, CJ, highlights what a positive dating experience can look like.
+To quote Bruce Springsteen, you need a spark to start a fire.
 
-* **Genuine Interest:** A successful connection often starts with a partner who is genuinely interested in getting to know the person behind the profile.
-* **Comfort with Disability:** CJ demonstrated "quiet confidence" regarding Emily’s disability, such as naturally assisting with her wheelchair without making it a central focus of anxiety.
-* **Thoughtful Planning:** Moving beyond standard coffee dates to more personalized activities—like a road trip through meaningful locations—can help build a deeper bond.
-* **Underrated Values:** Kindness and support are often more important for long-term success than a "magic formula" for dating.
+## Meeting CJ
+And then I met CJ. I’d love to tell you there was a magic formula. There wasn’t. We matched on Tinder, he seemed genuinely interested in getting to know me, and we met up the next day.
 
-## Advice for Online Dating with a Disability
+I’d just presented a documentary for BBC Three, and he keenly watched it before meeting me in person. Brownie points from the get-go!
 
-While online dating with a disability presents specific challenges, it can also lead to fulfilling relationships. Emily offers the following advice:
+On our third date, I picked him up in my car to go out for a day. He moved my wheelchair out of the passenger seat and into the boot with quiet confidence, before getting in.
 
-* **Safety First:** Always meet new people in public places and prioritize your personal safety.
-* **Expect Some Setbacks:** Be prepared for the possibility of being ghosted or facing awkward questions, but do not let these experiences discourage you.
-* **Take the Leap:** The rewards of finding a supportive partner often outweigh the risks of trying.
+We went on a road trip tour of his childhood – where he grew up, went to school, his first jobs and his favourite haunts like Loch Lomond with its stunning views.
 
-## About the Author
+It was just so thoughtful, different and cool for a girl that hadn’t seen much of Scotland, and such a refreshing change to another coffee or meal.
 
-Emily Yates is a representative of **Enhance the UK** and manages the **Undressing Disability** campaign. This campaign aims to remove the taboos surrounding sex and disability, while raising standards in sexual health and awareness for disabled people. Free information and educational resources are available through their website.
+## Building a life together
+By the time I’d arrived home, CJ had already texted to say what a great time he’d had and asked when I was next free. Within six weeks there were city breaks and friends’ parties.
+
+Nine months later CJ moved in with me. He’s lazy, untidy and leaves the toilet seat up, but he’s the kindest, most supportive man I’ve ever met.
+
+He’s the BEST cuddler I know, has me in stitches every day and has taught me that kindness is vastly underrated. We got engaged last year and I know he’ll make a great dad one day…
+
+## Is it worth it?
+Online dating with a disability isn’t easy. There’re worries about disclosure, awkward questions that need to be answered, and the likelihood of getting ghosted a little more often than you’d like.
+
+But if you are meeting people in public places and staying safe then I’d say it’s worth a go. Nothing is worse than not trying, and always wondering ‘what if’. Go for it, and you might be pleasantly surprised.
+
+Thanks to Emily Yates of Enhance The UK for sharing her experience of online dating with a disability. Emily manages the charity’s Undressing Disability campaign, which aims to remove the taboo around sex and disability and raise standards in sexual health and sexual awareness for disabled people. Free information and educational resources are available on their website.

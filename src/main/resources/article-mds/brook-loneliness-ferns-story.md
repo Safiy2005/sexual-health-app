@@ -1,39 +1,34 @@
-# Loneliness: Fern’s Story
+# Loneliness: Fern's story
 
-Fern, 24, shares her personal experience with loneliness, how it has impacted her mental health, and the steps she has taken to build resilience and feel more connected to others.
+## Summary
+*   **Overview** Fern shares her personal journey with loneliness following her graduation from university. She discusses the impact of Generalised Anxiety Disorder (GAD), the transition from a busy student life to living alone, and the coping mechanisms she developed, such as solo dining and being more transparent about her mental health on social media.
+*   **Disclaimer** The following content is from brook.org.
 
-**Content Warning:** This article contains discussions regarding mental illness.
+## Fern’s Story
+Fern, 24, talks to us about how loneliness has affected her life, and things she has done in the past to feel more connected and resilient.
 
-## Early Experiences of Isolation
+My first experiences were probably when I moved away from university. I think it went unnoticed during my university years as I had a massive group of friends and lots of housemates and I just thought of it as home sickness, but once I graduated and the 24/7 group of housemates and uni friends that used to surround me were gone I realised that I was very much alone and lonely.
 
-Loneliness often goes unnoticed during transitional periods. For Fern, the realization hit after graduating from university. While university provided a constant social environment with housemates and friends, the transition to post-graduate life created a significant void. 
+I had no family around and no one to call on when I was feeling low. I have GAD (generalised anxiety disorder) and probably don’t do as many activities as I should, because of this I’ve not really had an opportunity to meet new people in place of friends that moved away after university.
 
-Without family nearby or immediate peer support, the shift from a 24/7 social circle to living alone highlighted a profound sense of isolation.
+I was also in a long distance relationship which meant I also spent lots of time by myself between seeing my boyfriend. I had periods of being very happy and very busy, but also a big contrast of spending days alone.
 
-## The Impact of Anxiety and Life Circumstances
+I think the worse bit is when you’ve had a long and hard day, and not having a welcome when you get home. You never really value having people around you until they’re not around; even knowing someone is downstairs or in the room next door is a comfort.
 
-Several factors contributed to Fern's experience of loneliness:
+I’ve always hated when I feel down, stressed out or poorly that no one has been around to take care of me. I suffer with migraines and things like not having someone to bring me a glass of water when I’m in bed is horrible, it really makes you feel alone and vulnerable.
 
-* **Generalized Anxiety Disorder (GAD):** Managing anxiety made it difficult to participate in new activities or meet new people to replace the friends who moved away after graduation.
-* **Long-Distance Relationships:** Spending significant time alone between visits with a partner increased the contrast between periods of busyness and periods of total isolation.
-* **Physical Vulnerability:** Dealing with physical health issues, such as migraines, while living alone can increase feelings of vulnerability. Not having someone available to offer simple support, like a glass of water, can intensify the emotional weight of being alone.
+Sometimes just seeing another human or speaking to someone can make you feel so much better. I used to phone my mum or FaceTime my family but it’s hard feeling so negative and having them feel so helpless.
 
-## Finding Ways to Connect
+I did get support for my anxiety and felt that 1-2-1 conversation about myself was really filling a void from loneliness, rather than helping with my anxiety. I’ve always been into food, and really enjoy eating out.
 
-Through her journey, Fern identified several ways to fill the "void" of loneliness and build a sense of presence in her life:
+Once I got over the embarrassment of going for meals solo, I actually really embraced it. 9 times out of 10 when I felt lonely or bored I’d go out for dinner. This way I was surrounded by people and atmosphere, I could have a pressure free conversation with restaurant staff about my meal and did something I was enjoying. 
 
-* **Professional Support:** While initially seeking help for anxiety, Fern found that 1-2-1 conversations provided a necessary social connection that helped mitigate her feelings of loneliness.
-* **Solo Dining:** To combat the silence of home, Fern began eating out alone. This allowed her to be surrounded by people and atmosphere, providing a "pressure-free" environment to interact with others.
-* **Embracing Hobbies:** While Fern found her niche in food, she recommends exploring sports or group hobbies as a way to integrate into new communities.
+I guess most people do sport or activities, but this was my way of dealing with being lonely. I think if you can, definitely take up a sport or hobby. I’ve always been envious of people who are outgoing enough to do this. 
 
-## Advice for Managing Loneliness
+I also think you need to put yourself out there as much as possible, don’t shy away or choose not to see people because you can’t be bothered. You should take advantage of opportunities. 
 
-Based on her experience, Fern offers the following advice for those struggling with similar feelings:
+Also – be open with people. On social media I probably looked like I was having a great time and out doing things, when in fact I was always by myself doing these things. If I had been honest with people they might have made more effort to see me.
 
-* **Put yourself out there:** Even when it feels difficult, try to take advantage of opportunities to see people rather than shying away.
-* **Be honest about your situation:** Social media often creates a false image of a busy social life. Being open with friends and family about feeling lonely can encourage them to make more effort to reach out.
-* **Take up a hobby:** Engaging in organized activities or sports is an effective way to meet new people in a structured environment.
-
-## It is OK Not to Be OK
-
-Approximately 1 in 4 people in the UK experience a mental health problem each year. If you are worried about your mental health or the wellbeing of someone else, support is available. You do not need a formal diagnosis to seek help; whenever you are ready to talk, there are services available to listen and support you.
+## Mental Health & Wellbeing
+*   **Content Warning** This page has discussion of mental illness.
+*   **It’s OK not to be OK** Approximately 1 in 4 people in the UK will experience a mental health problem each year (NHS England, 2020). If you are worried about your mental health, or about someone else’s, there are lots of places that can offer you help and support. You don’t have to be diagnosed, you don’t even have to know exactly what’s wrong. Whenever you are ready to talk to someone, you can.

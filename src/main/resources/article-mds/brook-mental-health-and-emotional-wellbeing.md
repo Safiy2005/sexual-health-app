@@ -1,75 +1,109 @@
-# Mental Health and Emotional Wellbeing
+# Mental health and emotional wellbeing
 
-We all have mental health in the same way we all have physical health. Mental health includes our emotional, psychological, and social wellbeing, and helps determine how we handle stress, relate to others, and make choices.
+## Summary
+*   **Overview** Mental health includes our emotional, psychological, and social well being, and helps determine how we handle stress, relate to others, and make choices. Looking after your mental health involves a balance of self-care, physical health, healthy relationships, and seeking support when needed.
+*   **Disclaimer** The following content is from brook.org.
 
-## Looking After Your Mental Health
+## Mental health and emotional wellbeing
+We all have mental health in the same way we all have physical health. Mental health includes our emotional, psychological, and social well being, and helps determine how we handle stress, relate to others, and make choices.
 
-There are simple things everyone can do to support their emotional wellbeing:
+Here are some things that everyone can do to look after their mental health and emotional wellbeing.
 
-* **Do things you enjoy:** Engaging in activities that make you laugh or cheer you up is one of the quickest ways to improve your mood. This could include talking to a friend, watching a favorite film, cooking, or taking a bath.
-* **Avoid negative short-term fixes:** Try to limit things that feel good in the moment but make you feel worse later, such as overspending or drinking excessive alcohol.
-* **Share your problems:** Talking to someone you trust can make a problem seem more manageable. If you aren't ready for a deep conversation, even just sharing a laugh can help.
-* **Seek professional support:** If you don’t feel able to talk to anyone you know, there are many helplines available for support.
+It sounds simple, but doing things that cheer you up and make you laugh are one of the quickest ways to improving your wellbeing. Think of simple things that make you feel happy, such as talking with a friend who makes you smile, watching your favourite film, cooking your favourite food or having a long, hot bath.
 
-## Managing Stress
+Try to avoid too much of the things that you know will make you feel good short term but worse in time, for example spending more money than you can afford or drinking lots of alcohol.
 
-Stress refers to the feeling of being under too much emotional or mental pressure. It can be caused by school, work, relationships, or money. When stress becomes overwhelming, it can affect your sleep, concentration, and appetite.
+## Connecting with others
+Have you ever heard the saying “a problem shared is a problem halved”? Connecting with those we care about, talking and sharing what’s going on in our lives has huge benefits for our mental health.
 
-* **Spot the signs:** The first step to managing stress is recognizing how it affects you physically and emotionally (e.g., feeling fidgety, tearful, having headaches, or feeling queasy).
-* **Take time out:** Taking a break is not a sign of weakness; it is necessary to avoid burnout. 
-* **Adjust your workload:** If you feel overwhelmed, speak to a teacher, employer, or GP about getting extra support or adjusting your responsibilities.
+If there are things going on that you are struggling with, try not to bottle it up. Talking about how you feel to someone you trust can make a problem seem much more manageable.
 
-## The Link Between Physical and Mental Health
+It doesn’t have to be an in-depth chat if you’re not ready for that. It could just be trying to see the funny side of a situation and having a laugh. If you don’t feel able to talk to anyone you know, there are lots of helplines you can contact for support.
 
-Keeping our bodies healthy helps maintain good mental health. Conversely, poor mental health can make it harder to take care of our physical wellbeing.
+## Stress
+Stress is a general term that refers to feelings of being under too much emotional or mental pressure. It can be caused by any number of things (known as ‘stressors’), including school, college or work, relationships with family or friends, and money.
 
-### 1. Physical Activity
-Physical activity releases "feel-good" hormones and cortisol, which help manage stress. It can also improve sleep, self-esteem, and social connections.
-* **Note:** If you are feeling unwell or have an eating problem, physical activity might not always be helpful. It is important to find a balance that works for you.
+When it becomes too much, it can affect how you think, feel or behave, and can make it hard to think clearly about things.
 
-### 2. Eating Well
-A balanced diet helps you feel your best. While "comfort food" can boost your mood in the short term, your body needs proper nutrients to function correctly. If mental health issues are preventing you from eating well, seek help.
+Stress can make your mind race, and can make you feel like your brain is stuck in a loop, where it is constantly going over and over things. This can affect your sleep, concentration and appetite. It can also make you think negatively and react badly to things.
 
-### 3. Illness
-Short-term illness can naturally lower your mood. Long-term illness can have a more significant impact, potentially leading to depression or anxiety. It is important to talk to a trusted adult or support group if a health condition is affecting your mental state.
+However, stress can often be controlled and managed. Learning to spot the signs of stress is the first step. For example, does it make you fidgety or tearful? Do you get headaches or feel queasy?
 
-### 4. Getting Good Sleep
-Sleep allows the brain to process information and the body to repair itself. Poor sleep is linked to weakened immune systems and mental health struggles.
-* **Children:** 9-13 hours
-* **Teens:** 8-10 hours
-* **Adults:** 7-9 hours
+Knowing this will not only help you tackle it before it gets out of hand but it will also help you manage your ways of coping with stress.
 
-### 5. Limiting Alcohol, Smoking, and Drugs
-While some people use these substances to cope with stress or anxiety, they often make mental health problems worse in the long run. If you need help with substance use, you can speak with a GP or a Brook service professional.
+## Taking time out
+We all need a bit of time out every now and then, especially if we have been experiencing a lot of stress for a sustained period of time.
 
-### 6. Taking Care of Your Sexual Health
-Sexual health and mental health are closely linked.
-* Get tested for STIs regularly.
-* Use contraception if you are sexually active.
-* Be aware that hormonal contraception can affect your mood; if you notice negative changes, consult a healthcare professional about other options.
+It doesn’t make you lazy or weak if you feel the need to take a break – it’s just your mind and body telling you that it’s what is needed right now to avoid ‘burnout’.
 
-## Social Media and the Internet
+If you find yourself feeling overwhelmed or exhausted, try to speak to someone you trust who can help you work out where you can make some time for yourself. Are there things you are doing that you could pause for a little while? Can you get help from, or hand over some responsibility to, someone else?
 
-Social media can help us stay connected and access support, but it can also lead to bullying, low self-esteem, and social comparison.
-* If social media makes you feel anxious, try turning off notifications or logging out for a few days.
-* If you feel you are losing control of the time you spend online, reach out for help.
+It might be that you need to speak to your employer or someone at school/college/university about how you could adjust your workload or get some extra support to enable you to have more downtime.
 
-## Bullying and Cyberbullying
+If you’re really struggling, you could also speak with your GP about options for time off work or getting extra support with your mental health.
 
-Bullying is never okay, whether it happens in person or online (cyberbullying). If you are being bullied or feel frightened, tell a trusted adult—such as a family member, teacher, or youth worker—exactly what is happening.
+## Physical health and wellbeing
+Our physical health can have a huge impact on our mental health and wellbeing. Keeping our bodies healthy can help maintain good mental health. On the flipside, poor mental health can make it harder for us to take care of our bodies and we might see a decline in our physical health.
+
+*   **Physical activity** Physical activity boosts our wellbeing, both in the short and long term. Even shorts bursts of physical activity can boost our mental alertness, energy and positive mood, and on a regular basis it can increase self-esteem and reduce stress and anxiety. Being physically active means sitting still less and moving our bodies more. This could be planned exercise or sports, or it could be just building a bit more movement into our daily lives. Lots of studies have shown that doing physical activity can improve mental health by:
+    *   Making you more tired so you sleep better
+    *   Releasing “feel-good” hormones that boost your mood and give you more energy
+    *   Releasing cortisol, a hormone which helps manage stress
+    *   Giving your brain something to focus on, which can help with intrusive thoughts and can be a positive coping strategy for difficult times
+    *   Improving self-esteem as you see yourself make progress and meet your goals
+    *   Helping you connect with people – doing group or team activities can help you meet new and like-minded people, and make new friends.
+*   **Eating well** Eating a healthy, balanced diet is an important part of maintaining good mental and physical health, and can help you feel your best. Sometimes, we might not feel like preparing or eating the foods that are best for us and instead turn to things that are quick, convenient and tasty. There’s nothing wrong with this in the short term and eating things we enjoy, even if they are not the best things for our bodies, can boost our mood. However, it’s important that our bodies receive the nutrients they need to function, so if you think your mental health is stopping you from eating a balanced diet or you find you’re relying on unhealthy foods, it’s important that you seek help.
+*   **Illness** When you’re ill, it’s natural to feel a bit down. As well as taking care of your body when you are sick, try to take care of your mind by doing little things that make you happy. This could be watching your favourite films or TV shows (even if you’ve seen them a hundred times already!), enjoying some tasty snacks, chatting with friends, reading, playing games or doing jigsaw puzzles – anything that you feel helps lift your mood. As you start to feel better, your mood will hopefully also improve and you’ll feel more like yourself again. Long-term illness can have a bigger impact on your mental health and you might find that you are experiencing more frequent or longer periods of low mood, depression or anxiety. It’s important that you try to let someone know if you are struggling.
+*   **Get good sleep** Sleep is as important to our health as eating, drinking and breathing! It allows our bodies to repair themselves and our brains to process information from the day. If you’re not getting enough sleep, or if your sleep is inconsistent and not restful, it can affect your mood and general emotional wellbeing, as well as your physical health. Studies show that the pattern and quality of our sleep is not only closely linked with our mental health, but also with our immune system, brain functioning and blood pressure. General recommendation is that:
+    *   Children should aim for 9-13 hours
+    *   Teens should aim for 8-10 hours
+    *   Adults should aim for 7-9 hours
+*   **Limit alcohol, smoking and drugs** Drinking alcohol, smoking (and vaping) and drugs all involve us taking substances into our bodies that can alter how we feel and behave and can impact on our mental health. Alcohol and drugs, whether legal or illegal, can worsen existing mental health problems and some studies suggest that certain drugs may even trigger mental health problems. They can also make your quality of life worse in general. People sometimes drink alcohol or smoke cigarettes/vape as a way to cope when they are feeling stressed, anxious or down. However, whilst they can boost your mood temporarily, in the long term they can leave you feeling worse than you did to start with and are not a solution as they don’t make the problems disappear.
+*   **Take care of your sexual health** Your sexual health can have an impact on your mental health and the other way around. If you’re struggling with your mental health you might find it difficult to look after your sexual health. If you’re concerned about your sexual health, this can affect your mental health. Some important things to do are:
+    *   Get tested for STIs regularly and each time you have sex with someone new
+    *   Use contraception if you are sexually active.
+    *   Make sure that you are happy with the contraceptive method you are using – not all methods suit everyone and being on the wrong method for you can affect your mental health.
+    *   Hormonal contraception can impact how you feel and your mood – sometimes this is in a positive way, but if you feel it’s having a negative impact, talk to a healthcare professional to explore your other options.
+
+## Social media and the internet
+Social media, and the internet in general, can have both positive and negative effects on our mental health.
+
+Using social media can help us access support, share our stories, feel more heard and less alone during difficult times, and, importantly, keep us connected with our friends and family.
+
+However, it can also leave us vulnerable to bullying, make us feel less satisfied with life, impact our self-esteem as we compare ourselves to others and sometimes we can feel it’s taking up more of our time than we want it to.
+
+If you start to feel like what you see on social media is getting you down, worried or anxious, or if you find you are spending a lot of time online and it’s affecting other areas of your life, you might want to think about taking a break.
+
+Try turning off notifications or even logging out of your accounts for a few days and see if that helps you to feel a bit better. If it does, think about how you can manage the time you spend online going forward.
+
+## Bullying and cyberbullying
+Bullying is when a person or a group of people do or say things again and again to hurt or upset another person or group of people. When bullying happens online, either through direct messaging or more publicly on threads and walls, this is called cyberbullying.
+
+It doesn’t matter if it’s online or offline – bullying is never ok. If you think someone is bullying you or if you are worried or frightened, tell a trusted adult (like a family member, teacher or youth worker) exactly what is happening.
 
 ## Relationships
+The relationships we have with other people can have a huge impact on our mental health and wellbeing. This includes relationships with our family, our friends and colleagues, and romantic relationships.
 
-Healthy relationships provide support and love, while unhealthy relationships can cause stress, worry, and isolation.
-* If you are in an unhealthy or abusive situation (verbal, emotional, physical, or sexual), it is not your fault. 
-* Seeking help and advice from trusted individuals or specialized organizations is the best way to move forward.
+Healthy relationships will provide us with support that promotes good mental health, make us feel loved and cared for, and give us somewhere to turn when we need a bit of extra help.
 
-## Building Self-Esteem
+Unhealthy relationships can cause our mental health to decline as they can generate worry, stress and low self-esteem. They may also isolate us from people who can offer us the help and support we need, which can be particularly difficult for people with existing mental health problems.
 
-Self-esteem is how you feel about yourself. To improve your confidence:
-* Spend time with people who make you feel good.
-* Plan fun and enjoyable activities.
-* Keep a diary of nice things people say about you.
-* Practice kind self-talk and reframe negative thoughts.
+If you think that you are in an unhealthy relationship and that it is impacting on your mental health, you should try and talk to someone you trust about getting help.
 
-If you feel worthless or deeply depressed, speak to a trusted adult. Help is available and you will be taken seriously.
+## Abuse
+Abuse can be many different things. It can be verbal, emotional, physical or sexual but it can also be less obvious and take the form of controlling behaviour.
+
+If you are in a situation where someone is hurting you physically or emotionally, even if it’s someone you love, this is abuse. It’s not your fault and seeking help and advice is the best option.
+
+## Self-esteem
+Self-esteem refers to how you feel about yourself, and lots of things can affect it. People who really don’t like themselves can be more at risk of having unhappy or even abusive relationships as they don’t feel like they deserve to be loved.
+
+There can be lots of reasons for not feeling confident, including having had a hard time growing up, bad experiences in relationships, and comparing yourself to other people too much.
+
+There are some things you can do to improve your self-esteem, such as:
+
+*   Spending time with people who make you feel good. If you’re having a bad time, spend more time (in person or virtually) with people who make you feel good about yourself.
+*   Doing fun and enjoyable things. Having fun things planned into your life can help you to feel better and enjoy life more.
+*   Keeping a diary of nice things people say about you or do for you. It’s easy to only look at the bad and forget the good.
+*   Thinking about what’s good about you. Making a list of what is good about you can help you feel better.
+*   Speaking kindly about yourself. Recognise any negative thoughts you have about yourself and reframe them.

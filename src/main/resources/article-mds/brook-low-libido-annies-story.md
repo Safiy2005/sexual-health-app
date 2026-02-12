@@ -1,42 +1,45 @@
 # Low Libido: Annie’s Story
 
-Annie, a 29-year-old hospital doctor, shares her personal journey navigating changes in her sex drive following a move to London and the onset of high-stress work environments. Her story highlights how lifestyle factors, internal pressure, and communication impact sexual desire.
+## Summary
+*   **Overview** Annie, a 29-year-old hospital doctor, shares her personal experience with how workplace stress, moving to a new city, and living in a shared flat impacted her sex drive, highlighting how she moved away from external comparisons toward better communication and self-care.
+*   **Disclaimer** The following content is from brook.org.
 
-## Life Transitions and Stress
+## Low Libido: Annie’s Story
 
-The transition to a new city and a high-pressure career can significantly impact personal wellbeing and relationships. For Annie, several factors converged to affect her libido:
+Annie, 29, talks about how work, stress and a move to London have affected her sex drive and what has helped her through this changing time.
 
-* **Work-related stress:** As a hospital doctor, long shifts combined with the pressure of exams and CV-building activities created a constant state of edge.
-* **Living arrangements:** Moving into a shared flat with a partner while also having a parent visit unexpectedly created a lack of privacy and space.
-* **Environmental factors:** Adjusting to a "tiny, run-down flat" added to the mental load of daily life.
+I’ll preface this article by saying I haven’t found the secret to constant hot sex! But if you’re looking for some reassurance that you’re not odd, broken or unlucky, then please join me for my tale of stress, libido and unnecessary comparisons.
 
-## The Trap of Comparison
+A bit about me: I work as a hospital doctor, which is a busy and quite stressful job. That stress doesn’t end when the shift does – there are also unpaid CV-building activities and exams that are essential for staying in employment.
 
-Annie describes the negative impact of trying to meet external expectations regarding sexual frequency. After reading that couples "should" have sex once a week, she began tracking encounters on a calendar.
+I moved to London two years ago with my partner Tom. It was our first time living together and also my first year working as a doctor. We’d been together for three years at the time of moving, and we’re now happily engaged and approaching five years together (woo!).
 
-* **Performative sex:** Treating intimacy as a task to be "ticked off" often leads to a decrease in genuine desire.
-* **Partner communication:** Open dialogue with her partner helped alleviate the pressure. Her partner emphasized that they should only have sex when both parties truly felt "up for it," which removed the burden of comparison.
+We’d both been living independently in Birmingham, but the move to London meant we were moving into my dad’s flat, and he stays here 2-3 nights a week, in an unpredictable and unannounced pattern.
 
-## Finding What Works
+Now picture this: a tiny, run-down flat in London, daily panic at work, and the challenge of constantly sharing every bit of space (including the bed). It was a lot to adjust to. We also had the additional burden of my dad randomly turning up in the week.
 
-Through reflection, Annie identified specific triggers and activities that helped her reconnect with her libido:
+For quite a while, I put pressure on myself to have sex regularly. I’d read an article online that said most couples have sex once a week, and I convinced myself I needed to live up to that. 
 
-* **Stress reduction:** Recognizing that libido often returns during holidays when work stress is absent.
-* **Engaging in hobbies:** Returning to reading for pleasure—specifically "romantasy" (fantasy romance)—allowed her to reconnect with her imagination and sexual self.
-* **Setting boundaries for self-care:** Prioritizing activities that are purely for relaxation rather than educational or "productive" purposes.
+I even started marking little dots on the calendar, treating it like a task to tick off. Blergh. Unsurprisingly, when you treat sex like a requirement and you’re not actually in the mood, your partner can tell. 
 
-## Physical Wellbeing and Endorphins
+It’s like that scene in Sex and the City when Samantha says, “Let’s just get it over with.” Thankfully, Tom is a much better communicator than I am. 
 
-Physical health plays a significant role in how one perceives their own desirability and energy levels. Annie focused on holistic health rather than weight:
+He told me we shouldn’t compare ourselves to other couples, and that we shouldn’t be having sex unless I actually want to or feel up for it. That conversation lifted a huge weight off my chest and got me trying to work out what helped my libido.
 
-* **Consistent exercise:** Participating in exercise classes and cycling helped release endorphins, which are natural mood boosters.
-* **Nutrition:** Choosing healthy snacks over "biscuit culture" at work helped maintain more stable energy levels.
-* **Mindset:** The focus remained on feeling physically capable and mentally happy rather than meeting specific aesthetic goals.
+So now, I’m figuring out when my libido actually shows up. The most obvious answer? When I’m on holiday. It makes perfect sense. I’m not working long hours or feeling constantly on edge. 
 
-## Conclusion: Quality Over Quantity
+But going away every time I want to feel more in the mood isn’t exactly affordable. One of the best things I’ve done is get back into old hobbies, especially reading. 
 
-Annie’s experience serves as a reminder that libido is fluid and influenced by a variety of external and internal factors. 
+I’ve always loved fantasy romance, or “romantasy”, but I hadn’t read anything purely for pleasure in years. I used to feel like I had to read something educational, like historical fiction, to justify the time. 
 
-* **Communication is essential:** Being honest with a partner about your needs and stress levels is the foundation of a healthy sexual relationship.
-* **Normalize fluctuations:** Going through periods of low desire is common and does not mean a person is "broken."
-* **Prioritize quality:** Focus on the quality of the connection rather than the frequency of sexual encounters.
+More recently, I’ve discovered the steamier side of the genre, which isn’t for everyone, but has really helped me reconnect with that side of myself! Taking that time for yourself to do an activity that is about nothing more than relaxing, really helps me. Even better if I can do it outside in a bit of greenery (weather permitting).
+
+I noticed that another big factor on my libido is how I feel physically. When I’ve not done any exercise, eaten terribly and haven’t washed my hair, the likelihood of me being in the mood is close to zero. 
+
+So, I started going to more exercise classes and signed up for the London to Brighton bike ride for some motivation (and to raise money for refuge). I made an effort to take in healthy snacks and avoid the biscuit culture at work. 
+
+Now, I feel like I need to make this clear, I did not lose any weight and that is not what I’m advocating. I worked out more to improve my overall fitness which helps release endorphins (your natural mood boosters!).
+
+I’m happy, we’re happy, and this story is just to say I don’t have consistent sex and if you’re sometimes not in the mood for a month then don’t worry about it (we’ll be twins). 
+
+Communication is key and always think quality over quantity. Obviously, if you have both then I’m super excited for you! But everyone is different so hopefully a few will relate to my end of the scale.

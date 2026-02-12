@@ -1,36 +1,29 @@
-# Vaginal Discharge
+# Discharge
 
-Discharge is a sign that the vagina is healthy and working as it should. It keeps the vagina moist, clean, and healthy by removing dead cells and bacteria. It is normal to experience vaginal discharge throughout the month.
+## Summary
+*   **Overview** Vaginal discharge is a normal and healthy occurrence that keeps the vagina clean and moist, changing in consistency and amount depending on the menstrual cycle, arousal, and overall health.
+*   **Disclaimer** The following content is from brook.org.
 
-## The Purpose of Discharge
+## What is discharge
+*   **Purpose and health** Discharge keeps the vagina moist, clean and healthy. It cleans the vagina by getting rid of dead cells and bacteria. So it is nothing to worry about, in fact it’s a sign everything is healthy and working as it should. 
+*   **Menstrual cycle and arousal** It’s normal to get vaginal discharge throughout the month. Discharge has a few purposes, it helps clean the vagina (which is self-cleaning) and changes throughout the month to support fertilisation. The amount that comes out can vary, depending on where you’re at in your menstrual cycle. 
+*   **Sexual excitement** You may also notice more discharge when you’re feeling sexually excited (aroused). This is because when you become aroused the blood flow to the vaginal walls increases and causes lubrication to make the vagina wet. 
+*   **Before periods start** If you haven’t started your periods yet, getting discharge is usually a sign that your periods will start in the near future. 
 
-The vagina is self-cleaning, and discharge plays a vital role in this process. Its consistency and amount change throughout the month to support fertilization and respond to different stages of the menstrual cycle:
-* **Arousal:** You may notice more discharge when feeling sexually excited. Increased blood flow to the vaginal walls causes lubrication to make the vagina wet.
-* **Puberty:** If you have not started your periods yet, getting discharge is usually a sign that they will start in the near future.
-* **Ovulation:** When releasing an egg, discharge often becomes stringy and clear.
+## What discharge looks like
+*   **Consistency and color** Sometimes discharge looks thick and white, and other times (when you’re releasing an egg, around ovulation) it looks stringy and clear. It can also have a yellowish look to it. 
+*   **Period indicators** Sometimes a discharge with a slight brown or pink colour can be a sign that your period is on its way. Or you can get a brownish discharge at the end of your period. 
 
-## Appearance and Scent
+## Vaginal hygiene
+*   **Natural smell** The vagina is an opening of the body, so it’s not supposed to smell like roses. It’s normal for discharge to have a faint smell. 
+*   **Cleaning the vulva** There is no need to wash discharge away. Just make sure that you wash the vulva and surrounding area once a day with unperfumed soap or water. 
+*   **Risks of douching** Washing the vulva with harsh soaps or washing inside the vagina (also called douching) removes helpful bacteria and changes the vagina’s PH which can have the opposite effect–leading to imbalances like Bacterial Vaginosis and thrush. You can identify this by noticing a change in consistency and a different, stronger smell. 
 
-It is normal for discharge to have a faint smell, as the vagina is an opening of the body. Throughout your cycle, you may notice the following variations:
-* **Thick and white:** Common at various points in the cycle.
-* **Clear and stringy:** Usually occurs around ovulation.
-* **Yellowish:** A common variation of normal discharge.
-* **Brown or pink:** Often a sign that a period is about to start or has just ended.
-
-## Hygiene and Care
-
-There is no need to wash discharge away from the inside of the vagina. To maintain health:
-* Wash the vulva (the external area) and surrounding skin once a day with unperfumed soap or water.
-* Avoid washing inside the vagina (douching). Douching removes helpful bacteria and changes the vagina’s pH balance.
-* Disrupting the natural balance can lead to infections such as Bacterial Vaginosis (BV) or thrush.
-
-## When to See a Doctor
-
-If you notice discharge that is not normal for you, it may be a sign of an infection. You should speak to a doctor or nurse if you notice changes in color, smell, texture, or quantity, or if you experience itchiness, soreness, unusual pain, or bleeding.
-
-Specific symptoms may suggest different conditions:
-* **Unpleasant or fishy smell:** Could suggest bacterial vaginosis (BV).
-* **Thick and white (like cottage cheese):** Could suggest thrush.
-* **Green, yellow, or frothy:** Could suggest trichomoniasis.
-* **Pelvic pain or bleeding:** Could suggest chlamydia or gonorrhoea.
-* **Blisters or sores:** Could suggest genital herpes.
+## When to see a doctor
+*   **Changes to watch for** If you notice discharge that is not normal for you, you may have an infection. Changes in colour, smell, texture or quantity, itchiness, soreness or unusual pain or bleeding are all reasons to speak to a doctor. 
+*   **Identifying potential infections**
+    * Unpleasant or fishy smells could suggest bacterial vaginosis
+    * Thick and white like cottage cheese could suggest thrush
+    * Green, yellow or frothy could suggest trichomoniasis
+    * If accompanied by pelvic pain or bleeding, this could suggest chlamydia or gonorrhoea
+    * If accompanied by blisters or sores this could suggest genital herpes

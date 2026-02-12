@@ -1,54 +1,59 @@
 # Remembering to take your pill
 
-The pill is most effective at preventing pregnancy when you take it at the same time every day. Forgetting to take your pill is a common reason for the pill failing. To work effectively at preventing unwanted pregnancy, you must remember to take it as directed.
+## Summary
+*   **Overview** The effectiveness of the contraceptive pill depends on it being taken at the same time every day. Using phone reminders, forming daily habits, and planning for travel or routine changes can help ensure the pill is used perfectly to prevent pregnancy.
+*   **Disclaimer** The following content is from brook.org.
 
-## Perfect use vs. typical use
+The pill is most effective at preventing pregnancy when you take it at the same time every day. Check out our top tips for remembering to take the pill.
 
-When experts discuss the effectiveness of contraception, they distinguish between "perfect use" and "typical use":
+Forgetting to take your pill is a common reason for the pill failing. For the pill to work effectively at preventing unwanted pregnancy, you need to remember to take it as directed.
 
-* **Perfect use:** This occurs when someone follows the instructions that come with a contraceptive method perfectly. In this scenario, the chances of getting pregnant are much lower (99% effective).
-* **Typical use:** This is a more realistic view of how people use contraception, reflecting the fact that people occasionally make mistakes. With typical use, the effectiveness is closer to 91%.
+When experts talk about the effectiveness of contraception, they talk about perfect use and typical use.
 
-A great way to achieve perfect use is to form a habit to help you remember your pill.
+## Perfect use and typical use
+*   **Perfect use** This is when someone follows the instructions that come with a contraceptive method perfectly. By doing this, their chances of getting pregnant are much lower.
+*   **Typical use** This is a more realistic view of how people use contraception, and reflects the fact that people will make mistakes. With typical use, people are more likely to get pregnant.
 
-## Pill types and windows
+With perfect use, the contraceptive pills are 99% effective at preventing pregnancy, however with typical use this is more like 91%.
 
-* **Progestogen-only pill (POP):** This must be taken within a 3 or 12-hour window, depending on the specific pill.
-* **Combined pill:** While it is less critical to stick to a strict time window, you still need to remember to take it daily.
+A great way to help you achieve perfect use is to form a habit to help you remember to take your pill.
 
-## Setting a reminder
+## Progestogen-only/POP pill and Combined pill
+*   **Progestogen-only/POP pill:** this has to be taken within a 3 or 12 hour window, depending on the pill
+*   **Combined pill:** it is less important to stick to a time window, but you do need to remember to take it daily
 
-The simplest way to remember is to set a daily reminder on your phone.
-* **Alarms and Apps:** You can use a standard alarm or apps designed specifically for pill reminders.
-* **Strategic Timing:** Set the reminder for a time when your phone will be near you and you’ll have your pills—for example, half an hour after your morning wake-up alarm.
+The simplest thing that you can do to help you remember to take your pill is to set a daily reminder on your phone. This could just be an alarm but you there are also apps that are designed to give you pill reminders.
 
-## Forming a habit
+Set it for a time that you know your phone will be near you and you’ll have your pills with you – for example, half an hour after your morning wake-up alarm.
 
-To get into the habit of taking your pill every day:
-* **Anchor the habit:** Take your pill when you are normally in the same place doing the same thing (like brushing your teeth or getting into bed).
-* **Visual cues:** Keep your pill in a place where you will see it (such as next to your toothbrush, by your bed, or next to your phone).
+## To get into the habit of taking your pill every day:
+*   Take your pill when you’re normally in the same place, doing the same thing (like getting into bed, or brushing your teeth).
+*   Keep your pill in the place where you will take it (such as next to your toothbrush, by your bed, next to your phone or glasses).
 
-## When your routine changes
+You might still forget to take your pill if your routine changes, for example if you’re away from home, staying with a friend or a partner or on holiday.
 
-Your routine may change if you are away from home, staying with a partner, or on holiday. To stay on track:
-* Keep your pills in your bag so they are always with you.
-* When you unpack, immediately place your pill where you will see it (like next to your toothbrush).
-* If you don't have your pills on you, set a reminder to take one as soon as you get home.
-* Tell the person you are with to remind you; the act of telling someone else often helps you remember yourself.
-* Keep a spare pack of pills in your bag just in case.
+## Tips to help you remember in these cases:
+*   Put your pill in a place where you will have it with you and will see it (for example, in your bag or next to your phone).
+*   When you unpack, put your pill where you plan to take it (such as next to your toothbrush).
+*   If you don’t have your pill on you, set a reminder on your phone to take it as soon as you get home.
+*   Try to stick to the same routine (for example when you brush your teeth).
+*   Tell the person you’re with to remind you – the act of telling someone else often helps you remember yourself
 
-## Traveling and time zones
+It can also help to always have a spare pack of pills with you in your bag. That way, if you’re not at home, you can still take it.
 
-Even in a different time zone, it is important to take your pill at the same time of day as you normally would at home.
+Even when you’re in a different time zone, it’s important to take your pill at the same time of day as you normally would at home.
 
-* **Short distances:** If your destination is only one or two hours different from the UK, you shouldn't need to worry.
-* **Long haul:** You must calculate when to take your pill based on home time. For example, if you normally take your pill at 8 am in the UK and you are in California (8 hours behind), you should take your pill at midnight.
-* **Alternative protection:** If you are worried about your schedule, you can always use another method, such as condoms, to ensure you are protected.
+This means that if you take it in the morning when you’re at home, you might have to take it in the evening when you’re away (when it’s morning in the UK).
 
-## Long-acting reversible contraception (LARC)
+If your holiday destination is only one or two hour’s difference from the UK, you shouldn’t need to worry. However, if you’re travelling long haul, you need to consider when to take your pill.
 
-If remembering to take a pill every day is too much hassle, there are long-acting reversible contraception (LARC) methods that you don't have to think about for weeks, months, or years. These include:
-* The injection
-* The implant
-* The copper coil (IUD)
-* The hormonal coil (IUS)
+Before you go, work out what time it will be when you’re on holiday, when you usually take your pill at home.
+
+For example, if you normally take your pill at about 8am in the UK, and you’re going to be in California, you should take your pill at midnight.
+
+This might be quite difficult, but you might want to consider taking your pill just before you go to bed at night.
+
+And remember, if you’re worried, you can always use another method (such as condoms) to make sure that you are protected.
+
+## LARC methods
+If remembering to take your pill is too much hassle, there are a number of long-acting reversible contraception (LARC) that you don’t have to think about again for weeks, months or even years e.g. the injection, the implant, the copper coil and the hormonal coil.

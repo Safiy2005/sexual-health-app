@@ -1,38 +1,27 @@
 # What if something goes wrong?
 
-Contraception refers to the methods that are used to prevent pregnancy. Some methods of contraception can also be used to prevent sexually transmitted infections (STIs). In the UK, contraception is free on the NHS for all ages and you can get it from a range of places including Brook services, your GP, and sexual health clinics.
+## Summary
+*   **Overview** Information and guidance on the steps to take if you have had unprotected sex, if your contraception has failed, or if you are concerned about STIs and pregnancy.
+*   **Disclaimer** The following content is from brook.org
 
-## Emergency Contraception
-If you have had unprotected sex or your regular method of contraception has failed, you may need emergency contraception.
-* **The Morning After Pill:** An oral medication that can be taken after unprotected sex to prevent pregnancy.
-* **The Non-Hormonal (Copper) Coil:** A small device fitted into the uterus by a professional. This is the most effective form of emergency contraception and can also provide long-term protection.
+## Unprotected sex
+*   **Defining unprotected sex** Unprotected sex is when you have sex without using a condom or another method of contraception.
+*   **Contraception failure** It can also happen if your contraception fails, for example if a condom splits or you miss a pill.
+*   **Potential risks** If you’ve had unprotected sex you may be at risk of pregnancy and sexually transmitted infections (STIs).
 
-## Contraception Failures and Mistakes
-Common issues that may occur with contraceptive methods include:
-* **Missed Pills:** What to do if you forget to take your combined pill or progestogen-only pill.
-* **Condom Accidents:** Advice for when a condom breaks, slips off, or if mistakes were made during use.
-* **LARC Issues:** Information regarding the contraceptive implant, injection, or coils, including fitting and potential side effects.
+## Emergency contraception
+*   **Preventing pregnancy** If you have had unprotected sex and do not want to become pregnant, you may need emergency contraception.
+*   **Effectiveness** Emergency contraception can prevent pregnancy after unprotected sex. It is more effective the sooner it is taken.
 
-## Sexually Transmitted Infections (STIs)
-If you have had unprotected sex, you may be at risk of an STI. Many infections do not show symptoms, so testing is essential.
-* **Common STIs:** Chlamydia, Gonorrhoea, HIV, Syphilis, Genital Herpes, Genital Warts, and Mycoplasma genitalium (MG).
-* **Testing:** Free STI home testing kits are available, or you can visit a Brook service or sexual health clinic.
-* **Prevention:** Guidance on using condoms, dental dams, and accessing PrEP or PEP.
+## STIs
+*   **Exposure to infections** If you have had unprotected sex, you may have been exposed to an STI. 
+*   **The importance of testing** Many STIs don’t have any symptoms, so the only way to know for sure is to get tested.
 
-## Pregnancy and Abortion
-If you think you might be pregnant or your period is late, there are several steps you can take:
-* **Pregnancy Testing:** Information on when and how to take a pregnancy test.
-* **Decision Making:** Support for those making decisions about a pregnancy, including continuing the pregnancy, adoption, or abortion.
-* **Abortion Services:** Guidance on how to access abortion services and what the process involves.
+## Pregnancy testing
+*   **Confirming a pregnancy** If you think you might be pregnant, the only way to know for sure is to take a pregnancy test.
+*   **Timing of the test** You can take a pregnancy test from the first day of your missed period. 
+*   **Testing without a period** If you don’t know when your next period is due, the best time to take a test is at least three weeks (21 days) after you last had unprotected sex.
 
-## Relationship Safety and Consent
-"Something going wrong" can also refer to your safety and wellbeing within a relationship.
-* **Consent:** Understanding that sex without consent is sexual violence.
-* **Abuse:** Recognising red flags, domestic violence, and types of abuse (including digital and emotional).
-* **Support:** Accessing help for sexual harassment, sexual assault, or exploitation.
-
-## Mental Health and Wellbeing
-Sexual health is closely linked to emotional wellbeing. Support is available for:
-* Anxiety related to sex or health.
-* Navigating identity, including gender and sexuality.
-* Managing the emotional impact of STIs or relationship breakdowns.
+## Sexual assault
+*   **Available support** If you have been sexually assaulted or raped, there is support available.
+*   **Health considerations** You may need to think about emergency contraception and testing for STIs. You may also want to talk to someone about what has happened.

@@ -1,44 +1,35 @@
-# My First Break Up: Adam's Story
+# My first break up: Adam’s story
 
-Adam, 21, shares his experience of navigating his first major breakup. He discusses how he recognized the signs of a relationship ending, the importance of preparing for difficult conversations, and the value of a strong support network.
+## Summary
+*   **Overview** Adam, 21, shares how he approached his first break up and the key lessons he learned from that experience, emphasizing the importance of neutral communication and acknowledging both perspectives.
+*   **Disclaimer** The following content is from brook.org.
 
-## Recognizing the Signs
+## My first break up: Adam’s story
 
-Adam and his partner had been together for approximately six months when he noticed a shift in the relationship. The following signs indicated that something was wrong:
+Adam, 21, shares how he approached his first break up and the key lessons he learned from that experience.
 
-* **Changes in communication:** His partner stopped talking to him as frequently and became distant.
-* **Behavioral shifts:** His partner began focusing on getting "ready" for a holiday to New York with other men—something that had not been a feature of their open relationship previously.
-* **Avoidance:** While away, his partner ignored all messages for a week, responding only with "I'm just busy" when prompted.
+We had been together around six months at that point, and I think I could tell that something was off, and he wasn’t really being like he normally was with me. He wasn’t talking to me as much and was about to go away on holiday to New York. 
 
-## Preparing for the Conversation
+We had an open relationship and he was talking about how he was going to begin doing loads of squats and go to the gym to get ready for New York, with other guys. He had never spoken about that in the relationship with me before. There were signs that made me feel like something wasn’t right and it just built up. 
 
-Rather than reacting with anger, Adam decided to approach the breakup intentionally. He took several steps to ensure the final interaction was productive:
+When he went away, he completely ignored all of my messages and didn’t speak to me for a week. I just asked him ‘look, what’s going on, have I done something?’ and he would respond ‘no, I’m just busy’. I knew it wasn’t that and it was something different. I kept texting him and he kept ignoring my messages. 
 
-* **Researching communication:** He looked at online resources to learn how to navigate difficult interactions and acknowledge other people's perspectives.
-* **Managing emotions:** He chose not to approach the situation from a place of negativity or use the meeting as a place to vent.
-* **Setting objectives:** He wanted to leave the situation with a sense of resolution rather than regret.
+It got to the end of the week and I asked him when I was meeting him. We agreed on a day, and I told him to bring all my stuff and that I would bring his and that was it. 
 
-## Navigating the Breakup
+I went into the situation thinking the worst thing for me to be, even though I have a right to, is be angry and approach the situation from a place of anger and negativity. I didn’t want to say things I would regret, and I didn’t want to leave feeling like there wasn’t a resolution. I didn’t want to treat it as a place for me to vent. I can vent to my friends. 
 
-The final conversation was designed to be "cathartic," allowing both parties to speak their minds. Adam focused on:
+I actually looked online, at resources surrounding how to navigate a certain situations and the best ways to approach those difficult sorts of interactions. It told me about acknowledging other peoples’ feelings, so when it comes to that you should know that there is always two sides to one story. 
 
-* **Acknowledging two sides:** Recognizing that while his feelings were valid, he couldn't assume he knew exactly what his partner was thinking.
-* **Constructive dialogue:** Concentrating on how specific situations made each person feel.
-* **The "Release":** By getting everything out in the open, both parties felt a sense of relief before parting ways.
+You should acknowledge that you may feel a certain way, but was that other person aware of it? You can’t assume what the other person has thought. So, it was a super cathartic conversation where we both spoke about situations that had come up in the relationship and how it made us both feel – concentrating on both perspectives. 
 
-## The Role of Support Systems
+We just ended up getting everything out that we needed to, and it was a complete release and a sigh of relief. We then just parted ways. 
 
-Being away from his family home was difficult, but Adam relied on his support network in London to help him through the process:
+It was hard being away from my sister and my friends back home because they would’ve been the first people that I would have spoken to. And being away from home was quite hard, too. But I had a good support network in London and with my university friends. 
 
-* **University friends:** Provided a space to talk through his feelings.
-* **Seeking reassurance:** His friends helped him understand that his concerns weren't just a result of anxiety, giving him the confidence to "put his foot down."
-* **Validating feelings:** Having people to talk to allowed him to process the end of the relationship without feeling isolated.
+I spoke to my close friends about it and almost asked for reassurance that it wasn’t just my anxiety that was making it really hard for me or making me think it was just me. I think talking about it gave me the confidence to put my foot down and be like ‘I won’t take this anymore’. 
 
-## Advice for Others
+Any advice I’d give someone going through a breakup, or if there’s a conversation coming up that might be quite difficult with another person, it to just make sure you acknowledge both sides. Although you have every right to feel how you feel, try and approach it from more of a neutral standing point and then I think you’ll find that you get more out of it than you want. 
 
-Reflecting on his experience, Adam offers the following advice for anyone facing a difficult conversation or breakup:
+You’ll leave the situation feeling a lot more fulfilled and a lot more positive. Try and make the conversation constructive and focus on being constructive yourself. 
 
-* **Acknowledge both perspectives:** Even if you feel wronged, try to understand the other person's standing.
-* **Stay neutral:** Approaching the conversation from a neutral standpoint often leads to a more fulfilling and positive outcome.
-* **Be constructive:** Focus on making the conversation helpful for your own closure and growth.
-* **Utilize resources:** If you are unsure how to handle a situation, look for guidance from reputable online sources.
+Looking back, I am quite proud with how I dealt with it. Considering it was my first proper break up, I think I dealt with it the best way I could have. I wouldn’t have done anything differently. I would recommend the same advice to anyone. If you’re unsure with how to approach a situation, there is loads of great resources online.

@@ -1,46 +1,87 @@
-# Sexuality as a neurodiverse person: Sian’s story
+# Sexuality as a neurodiverse person: Sian's story
 
-Sian shares her personal journey of navigating sexual health, experiencing vaginal pain, and understanding how her neurodiversity—specifically ADHD and dyslexia—impacts her relationships and sexual experiences.
+## Summary
+*   **Overview** Sian talks about having sex for the first time, experiencing vaginal pain, and navigating sex as a neurodiverse person.
+*   **Disclaimer** The following content is from brook.org.
 
-## Advocacy and early education
-Diagnosed with severe ADHD and dyslexia at age 18, Sian noted a significant lack of information regarding learning disabilities and neurodiversity within sexual health education. This gap in knowledge led her to become an advocate for sexual health, aiming to talk openly about how neurodivergent conditions influence personal relationships.
+I was diagnosed with severe ADHD and dyslexia at 18, shortly after finishing my A levels.
 
-Sian’s first sexual experience occurred at age 14. Reflecting on this, she identifies that she was personally too young and, due to insufficient school education, lacked awareness regarding oral sex and protection.
+There had been a significant lack of information on learning disabilities and sexual health during my education journey, so I decided to become an advocate for sexual health and talk openly about my neurodiversity how it impacts my relationships and sexual experience.
 
-## Challenges with penetrative sex and self-esteem
-During a long-term relationship in Year 13, Sian experienced significant physical pain during attempted penetrative sex. While she felt she had "lost her virginity" despite the discomfort, her partner did not view the experience the same way. This discrepancy, combined with societal pressure surrounding virginity, led to:
-* Feelings of rejection and trauma.
-* A belief that she could not "satisfy" her partner.
-* A significant hit to her self-esteem.
+I had my first sexual experience at 14 with a boy I was dating in my year.
 
-The relationship eventually ended due to a combination of exam-related anxiety, depression, and a new diagnosis of Polycystic Ovary Syndrome (PCOS).
+I realise now that this was much too young for me personally and I was unaware of oral sex and protection thanks to the insufficient sexual health education I received at school.
 
-## The impact of PCOS and neurodiversity
-PCOS affected Sian by preventing regular ovulation and requiring the use of a combined pill to manage periods. Dealing with a diagnosis that carries implications for future pregnancy and miscarriage was a heavy burden at a young age.
+When I began dating my boyfriend in year 13 both of us were still ‘virgins’ for different reasons.
 
-Furthermore, Sian struggled with being "highly sensitive," often feeling overwhelmed by emotions. She later connected these experiences to her neurodiversity:
-* **ADHD and Rejection Sensitivity:** A common trait of ADHD is rejection sensitivity or hypersensitivity, which explains intense emotional responses to minor stressors.
-* **The Connection:** Initially, Sian viewed her neurodiversity, anxiety, and sexual issues as separate problems. Through research, she began to understand how her brain functions, leading to greater self-compassion.
+Although he had experienced some difficulties in previous long term relationships, it was me who struggled to enjoy penetrative sex without feeling pain.
 
-## Seeking support and diagnosing vaginismus
-Upon entering university, Sian sought help through:
-* A local sexual health clinic.
-* Relationship counseling via the YMCA.
+We attempted it several times but would have to stop because my boyfriend couldn’t bear to see me in so much pain.
 
-While counseling helped her process past emotional hurt and communication issues, the physical pain during penetration persisted. Eventually, she was diagnosed with **vaginismus**.
+In my mind, I had lost my virginity, despite how displeasing the whole event was, but my partner did not count this as him losing his own virginity.
 
-### Understanding Vaginismus
-Vaginismus is a condition where the muscles from the inner thighs to the vaginal walls contract involuntarily, making penetration difficult or impossible. 
-* **Sensation:** It is often described as a "fiery burn."
-* **Causes:** It is frequently a subconscious physical response to stress, fear, or anxiety.
-* **The Cycle:** For Sian, her perfectionism and ADHD-driven anxious thoughts created a cycle where the fear of pain caused her muscles to tense, which then resulted in actual pain.
+At the time, I had no concept of virginity or sex being a construct of society and ultimately there should be no pressure associated with being ‘a virgin.’
 
-## Recovery and self-acceptance
-Sian found hope and physical progress through the use of dilators. Successfully using dilators allowed her to regain a sense of control over her body. 
+However, the rejection and trauma I felt because I believed I couldn’t ‘satisfy’ my partner was unbearable and my self esteem took a massive hit.
 
-Through this journey, she has reached several conclusions about sex and neurodiversity:
-* **Individual Pace:** Sex is not always straightforward and may require understanding how your body works differently from "mainstream" expectations.
-* **Communication:** Having the confidence to talk openly about physical and mental needs is essential.
-* **Boundaries:** A sexual partner should be empathetic, patient, and considerate of their partner's pleasure and comfort.
+Our relationship shortly came to an end just before our A levels, mainly due to my anxiety and depression over exams and my recent diagnosis of PCOS (poly cystic ovary syndrome).
 
-Sian now celebrates her neurodiversity and has launched a blog, *The Slut Chronicles*, to break barriers, reduce stigma, and encourage honest conversations about sexual health.
+Looking back it was a lot to deal with at a young age.
+
+PCOS affects people differently but for me it meant my eggs were not releasing properly and I struggled to have periods without a combined pill.
+
+No young couple wants to think about how such a diagnosis may affect pregnancy and likelihood of miscarriage etc.
+
+I was very torn up when we broke up.
+
+Although it wasn’t the case, I believed that it was my inability to have sex that led to us ending.
+
+I had always been very sensitive, getting upset or crying over the smallest things, even being told by several people I dated that I had ‘too many feelings.’
+
+A part of neurodiverse conditions, especially ADHD, can be rejection sensitivity or hypersensitivity, something which made sense of all those times I felt over emotional.
+
+At the time I did not make the connection between my neurodiversity, anxiety and issues with sex, believing them to all be separate problems.
+
+Now, after my own research and understanding about my brain and how it functions, I have a lot more compassion towards myself and my sexual experiences.
+
+At the beginning of university I was referred to the local sexual health clinic and I also attended a couple of sessions with a relationship counsellor from the YMCA.
+
+My mentor went through all the hurt and confusion I was holding onto from my previous relationships, from virginity and sex to healthy communication.
+
+This helped me to feel more assured about myself and my relationships but I knew that the physical pain from penetrative sex was still there and I was beginning to feel impatient.
+
+By the end of my first year, I was diagnosed with vaginismus.
+
+Vaginismus is when the muscles from the inner thighs to the vaginal walls contract, making it hard or impossible to penetrate.
+
+The only way I can think to describe the pain it causes is a fiery burn sensation that physically makes you cry out loud.
+
+Much like when your body tensed when you are anxious, vaginismus is the body’s subconscious way of preventing penetration, usually due to stress, fear or anxiety in general.
+
+My vaginismus was the result of my early experiences with sex and the pressure I felt to ‘lose my virginity.’
+
+It was my body’s way of telling me “I’m not comfortable enough to perform these acts with this person.”
+
+My perfectionism and anxiety were causing me to battle against an endless cycle of wanting sex, fear of it hurting, the fear causing the muscles to tense and ending up in pain.
+
+The whole situation felt hopeless and I was overwhelmed by rapid anxious thoughts, spurred on by my ADHD.
+
+It was when I began to use dilators that I started to feel hopeful again.
+
+I will never forget the joy I felt when I managed to smoothly insert the largest sized dilator and ran downstairs to share the news with my housemates!
+
+Sex, I have come to realise, will never feel straightforward.
+
+It had taken years of diagnoses and training to understand what my body is asking but also how it works differently to the mainstream ideology I was taught.
+
+My neurodiversity is something I celebrate now, despite the bad days of severe anxiety, because it is who I am.
+
+This goes also for my vaginismus.
+
+I can comprehend what I deserve in a sexual partner and how to have the best experiences with those who are understanding and considerate.
+
+Anyone who does not want to wait or be empathetic to me having just as good a time as them is not worth my worry.
+
+Having the confidence to talk openly about myself, both physically and mentally, has become one of the best moments of my life so far and inspired me to set up my own blog.
+
+I want to break barriers and reduce stigma by talking openly and honestly about sexual health and to inspire more people to do the same.

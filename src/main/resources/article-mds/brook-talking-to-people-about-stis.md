@@ -1,68 +1,74 @@
 # How to tell someone you’ve got an STI
 
-Talking about STIs can be daunting. It’s important to tell new and existing partners about your sexual health status to help reduce the transmission of STIs and to make sure any previous partners get tested as soon as possible. 
-
-At Brook, we believe that telling your sexual partners that you have an STI is the right thing to do. While it can be nerve-wracking, there are many ways to prepare for the conversation to make it feel easier.
+## Summary
+*   **Overview** Talking about STIs can be daunting. It’s important to tell new and existing partners about your sexual health status to help reduce the transmission of STIs and to make sure any previous partners get tested as soon as possible. Telling your sexual partners that you have an STI is the right thing to do. This can be nerve-wracking, but there are lots of ways you can prepare for the conversation that make it feel easier.
+*   **Disclaimer** The following content is from brook.org.
 
 ## Do I legally have to tell someone?
+For most STIs, there is no legal requirement to tell your sexual partners that you have an STI. However, the rules are slightly different for HIV. If you’re having protected sex there’s no law saying you must tell your partners that you have HIV. It’s your choice whether you tell them or not.
 
-For most STIs, there is no legal requirement to tell your sexual partners that you have an STI. However, the rules are different for HIV. 
+However, in England and Wales there’s a risk of being prosecuted for ‘reckless transmission of HIV’ if all the following are true:
 
-If you’re having protected sex, there is no law stating you must tell your partners that you have HIV; it is your choice. However, in England and Wales, there is a risk of being prosecuted for ‘reckless transmission of HIV’ if all the following are true:
-* You had sex with someone who didn’t know you had HIV.
-* You knew you had HIV at that time.
-* You understood how HIV is transmitted.
-* You had sex without a condom.
-* You transmitted HIV to that person.
+*   You had sex with someone who didn’t know you had HIV.
+*   You knew you had HIV at that time.
+*   You understood how HIV is transmitted.
+*   You had sex without a condom.
+*   You transmitted HIV to that person.
 
-The law in Scotland is largely the same, except a case can also be brought if HIV hasn’t been transmitted but someone has been put at risk of transmission without their consent or knowledge.
+The law in Scotland is largely the same, except that a case can also be brought if HIV hasn’t actually been transmitted but someone has been put at risk of transmission without their consent or knowledge.
 
 ## Telling someone you’ve had sex with in the past
+Telling a previous partner that you have been diagnosed with an STI is the right thing to do. It means they can choose to get tested and treated. The sexual health clinic who you completed your test with will help you contact any previous partners.
 
-Telling a previous partner that you have been diagnosed with an STI allows them to choose to get tested and treated. 
-* **Clinic Assistance:** The sexual health clinic where you completed your test can help you contact previous partners. 
-* **Partner Notification Services:** Clinics often offer a service that sends an anonymous text to previous partners letting them know they need to get tested without mentioning your name.
-* **Online Services:** If a clinic service isn't available, you can use websites like Tell Your Partner.
-* **Personal Contact:** You may decide to send a message or voice note directly depending on your relationship with them.
+Sexual health services will often offer you the opportunity to use a ‘partner notification’ service to let them know. This sends them a text letting them know that they need to get tested and it won’t mention your name. If this service isn’t available, you could use a service. Or you might decide to send a message or voice note depending on your relationship with them.
 
 ## Telling a current partner or someone you’re interested in
+There’s no rules around how you should tell someone. It’s up to you, how well you you know them, what your relationship is like and what you feel comfortable with. 
 
-There are no set rules for how to tell someone; it depends on how well you know them and what you feel comfortable with. 
-* **In Person:** You may want to tell them face-to-face, especially if you are in a relationship or planning to have sex. 
-* **Safety:** If meeting in person, choose a place where you feel safe and comfortable. Ensure there is an exit nearby so you can leave if their reaction makes you feel unsafe.
-* **Timing:** Some people prefer to have the conversation immediately, while others wait until they know the person better. This often depends on how soon you intend to have sex.
+You may want to tell them in person, especially if you’re got a relationship with them or are thinking of having sex. If you decide to meet and talk face to face, choose a place where you feel safe and comfortable to have this discussion. 
 
-## Preparation and support
+If possible, have an exit nearby so you can leave the discussion and get away from the person if their reaction makes you feel unsafe.
 
-* **Ask for help:** Your local sexual health service can provide guidance on informing partners and explain the medical details of your STI.
-* **Talk to trusted friends:** You can work out what you want to say with someone you trust.
-* **Plan ahead:** Arrange the talk for a time and place where you feel confident. You might want to plan to check in with a supportive friend afterward.
+## Ask for help
+You could get in touch with your local sexual health service, who will be able to support you with understanding all the important information about the STI that you have and provide guidance on informing sexual partners about your status. 
 
-## Starting the conversation
+You could also talk to people you trust, and perhaps work out with them what you would like to say.
 
-You could begin by telling them you have an STI and asking if they have any questions. You might talk about what protection you need to use or how you manage the condition. This is also an opportunity to learn about your partner’s sexual history. You could ask:
-* Do you know if you have any STIs?
-* When was the last time you were tested for STIs?
-* Do you use condoms or any other type of protection when you have sex?
-* Have you had any STIs before? Did you get treatment?
-* Are you having unprotected sex with anyone else?
-* Do any of your other current partners have any STIs?
+## Prepare for the talk
+Arrange for it to happen at a time and place where you feel safe and confident, especially if you’re not sure how it will go. You might want to make plans to check in with a supportive friend after.
 
-When asking these questions, be sensitive. It is a chance to build trust and honesty, not a one-sided interview.
+Some people like to have the conversation straight away, while others prefer to go on a few dates and get to know the person first. However you choose to do it, it’s up to you, and depends on how soon you want to have sex.
 
-## Handling their reaction
+## Start the conversation
+You could begin by telling them you have an STI and ask if they have any questions. Maybe you will want to talk about what kinds of protection you will need to use, or more generally how you manage your STI.
 
-Hopefully, the person will react positively and appreciate your honesty. Being vulnerable can build trust and bring you closer together. However, it is possible they may react with fear or judgement. 
-* Remember that their reaction is not your fault. 
-* You can choose to address their reaction or leave and pick up the conversation later.
-* If you are unhappy with their reaction, you do not have to speak to them again.
-* Take time for self-care and seek support if you need it.
+This discussion is also a chance for you to learn more about your partner’s sexual history. You could ask them:
 
-## Other situations
+*   Do you know if you have any STIs?
+*   When was the last time you were tested for STIs?
+*   Do you use condoms or any other type of protection when you have sex?
+*   Have you had any STIs before?
+*   Did you get treatment?
+*   Are you having unprotected sex with anyone else?
+*   Do any of your other current partners have any STIs?
 
-There are various reasons why you may need to discuss your STI status with others:
-* **Support:** Telling friends or family members for emotional support.
-* **Work:** Informing an employer if you need time off for appointments.
-* **Travel and Medical:** Speaking to pharmacists or airport security if travelling with medication.
+When asking these questions, it’s important to be sensitive; it’s a chance to build trust and be honest with each other but shouldn’t be a hostile or one-sided interview.
 
-Regardless of the situation, remember that you have nothing to be ashamed of. Like any medical condition, you are entitled to respect and understanding. If you find these conversations difficult, you can reach out to specialist organisations or support groups for your specific STI.
+## Be prepared for their reaction
+Hopefully the person will be glad that you have brought it up and react positively. Being brave and honest could bring you closer together and build trust, and possibly even make you like each other more.
+
+But it’s also possible they will react with fear or judgement. It’s important to remember that this is not your fault and not something you need to manage. If you feel like it, you could choose to address their reaction, but it would be fine if you chose not to.
+
+You can always leave and pick the conversation up later on once they have had time to think. However, if you’re not happy with their reaction and don’t want to speak to them again, that’s also fine.
+
+Remember that these types of responses are giving you information about them and are not about you. Take some time to look after yourself, seek support if you need it, and do whatever makes you feel good and safe. 
+
+It can be scary to be vulnerable and talk about your sexual history, so regardless of how the person you tell reacts, you should be proud of yourself!
+
+There are various reasons why you may need to talk to people about your STI status. This could be friends or family because you want support. It could be that you need to tell your employer if you need time off work to go to an appointment. 
+
+You may need to speak to pharmacists who aren’t already aware of your health status, or security at the airport if you are travelling with medication, or it may just come up in conversation with people.
+
+There are lots of situations that can arise, some of which you will be prepared for, and others which will be unexpected. With all situations that involve telling people about your STI status, the main thing to remember is that you have nothing to be ashamed of, or apologise for. 
+
+Like with any medical condition, you are entitled to respect, support and understanding. If any conversations are tricky, or you expect them to be, you can always reach out to organisations that specialise in the STI you have. Support groups may be particularly helpful, so you can speak to other people who have a similar experience to you.

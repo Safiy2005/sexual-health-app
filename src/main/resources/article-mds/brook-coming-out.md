@@ -1,54 +1,58 @@
-# Coming Out: LGBT+ Identity
+# Coming Out: Am I Gay / Trans (LGBT+ Identity)
 
-‘Coming out’ is the process of telling someone else about your LGBT+ identity. This can relate to your sexuality, your gender identity, or both. 
+## Summary
+*   **Overview** ‘Coming out’ is a personal process of sharing your LGBT+ identity with others. This guide defines key terms like cisgender and heterosexual, provides advice on how to plan your disclosure, and explains how to navigate different reactions and ensure your safety.
+*   **Disclaimer** The following content is from brook.org.
 
-In relation to **sexuality**, this means telling someone that you are gay, lesbian, bisexual, queer, or any other sexuality that is not heterosexual. In relation to **gender identity**, this means telling someone your gender identity is different from the one you were assigned at birth. 
+## Coming out
+‘Coming out’ is when someone tells someone else about their LGBT+ identity.
 
-This process exists because we live in a society where most people assume everyone is heterosexual and cisgender. 
+Find out about telling someone your gender identity is different to the one you were assigned at birth.
 
-## Key Definitions
+In relation to sexuality, this means telling someone that you are gay, lesbian, bisexual, queer, or any other sexuality which isn’t heterosexual.
 
-* **Cisgender:** For most people, the sex they were assigned at birth is the same as their gender identity. This is called being ‘cisgender’, or ‘cis’.
-* **Heterosexual:** Often referred to as ‘straight’, this describes someone who is only romantically or sexually attracted to people of a different gender to them.
+In relation to gender identity, this means telling someone your gender identity is different to the one you were assigned at birth.
 
-## The Coming Out Process
+This process exists because we live in a society where most people assume everyone is heterosexual and cisgender.
 
-Coming out is personal and different for everyone. For some, it isn't an issue at all; for others, it can be incredibly difficult. It is rarely a once-in-a-lifetime event. Many LGBT+ people may choose to come out to each new person they meet or as they realize different aspects of their identity over time.
+Coming out is personal and different for everyone. For some people, it isn’t an issue at all. For others, it can be incredibly difficult.
 
-There are no rules and no "normal" experience. It is important not to put pressure on yourself. If you decide to come out, allow yourself time to feel comfortable, confident, and trusting toward the person you are telling.
+Some people decide not to ‘come out’ to anyone, ever. Others decide not to ‘come out’ to their family, and only do so with friends.
 
-## What is Being Outed?
+Coming out is rarely a once-in-a-lifetime event, as many LGBT+ people may want or need to come out to each new person they meet, or may realise different aspects of their LGBT+ identity over time which they might then choose to tell people about.
 
-Being ‘outed’ is when someone else shares your LGBT+ identity with others without your consent. This is wrong. It is always up to you whether you share parts of your identity with others.
+Some people don’t face any problems when coming out but others do. It can be really difficult if the person you come out to responds negatively and won’t accept who you are.
 
-## Considerations for Coming Out
+There are no rules and no normal ‘coming out’ experience; people need to do what is right for them.
 
-If you’re thinking about coming out, here are some things to consider to help ensure a more positive experience:
+It’s important that you don’t put pressure on yourself to come out. If you do decide to come out, allow yourself the time to feel comfortable, confident and trusting towards the person you are coming out to.
 
-### Who to tell
-Consider carefully who you want to talk to first. This might be a friend or family member you trust to be supportive, or a trusted adult you don’t have a personal connection to. That first conversation can help you see how it feels to talk about your identity and can provide a support system for telling others later.
+*   **Cisgender** For most people, the sex they were assigned at birth is the same as their gender identity. This is called being ‘cisgender’, or ‘cis’. Cis (pronounced ‘siss’) is a Latin word that means ‘on this side of’.
+*   **Heterosexual** The word ‘heterosexual’ (or ‘straight’) describes someone who is only romantically or sexually attracted to people of a different gender to them, specifically a man who is only attracted to women or a woman who is only attracted to men.
+*   **What is being outed?** Being ‘outed’ by someone is when someone else shares your LGBT+ identity with others, without your consent. This is wrong; it is always up to you whether you share parts of your identity with others. If you’re nervous about coming out to someone, here are some things to think about to try and make sure it’s a positive experience rather than a negative one.
+*   **Who to tell** Consider carefully who you want to talk to about your identity first. This might be a friend or family member who you trust to be supportive, or it might be a trusted adult who you don’t have such a personal connection to. That first conversation can be a great way to experience how it feels to talk about your identity with someone new. Also, that person can then support you as you come out to other people in your life.
+*   **When to say it** Think carefully about what else you have going on in your life. If you are juggling other stresses you might not be feeling in the most stable and robust position to come out to people. Also, if you are feeling vulnerable and someone’s reaction is not as supportive as you’d hoped, it could make the other stresses in your life harder to deal with.
 
-### When to say it
-* **Life stability:** If you are juggling other stresses, you might not feel robust enough to handle a potentially difficult reaction.
-* **Timing:** Choose a moment when you have the time to talk and listen. Avoid difficult conversations when you are in a rush.
-* **Sobriety:** It is unlikely you will say what you mean to say if you are drunk or hungover.
-* **Mood:** Avoid coming out during an argument or when you are angry, as this can make the conversation more stressful than necessary.
-* **Occasions:** Avoid big family events like weddings or holidays where people may be distracted or emotional.
-* **Safety:** Consider delaying coming out to your parents if you think it will put you at risk of violence, homelessness, or neglect. Ensure you have a support system in place first.
+    When planning to have the conversation, it is a good idea to choose a moment when you have the time and opportunity to say what you want to say and to listen to what they have to say. It is rarely helpful to have difficult or emotional conversations when you are in a rush.
 
-### What to say
-Think about how you want to deliver the news. You might try writing it down or practicing aloud. You can also write a text or letter if you don't want to tell someone face-to-face; this gives them time to process the information before you speak in person.
+    Have a clear head. If you’re drunk or hungover it is very unlikely that you won’t say the right thing and you may not be in the best state of mind to deal with their response.
 
-## Dealing with Negative Reactions
+    Avoid coming out in an argument or when you are upset or angry; this could make the conversation more heated and stressful than it needs to be.
 
-When you tell people, they might be shocked, worried, or find it difficult to accept at first. A person's first reaction isn't necessarily how they’ll feel forever. However, you should still prioritize your own comfort and happiness.
+    Avoid coming out at big family occasions like weddings or Christmas Day; these days are often emotional and distracting and you probably won’t get the opportunity to discuss how you feel properly.
 
-If someone continues to use the wrong pronouns or pretends you never told them, it can be invalidating. In these situations, seeking support from like-minded people is vital.
+    Consider delaying coming out to your parents if you think this will put you at risk of violence, not being able to live at home, or not being properly cared for until you’ve got a support system that means you can leave and live somewhere safely if you need to.
+*   **What to say** Think carefully about what it is you want to say and how you want to say it. You might try writing it down and/or practice saying it aloud. This will help you feel as prepared and calm as possible before talking to someone.
 
-## Support and Safety
+    You could also write a text or letter if you don’t want to tell someone in person so they have time to process the information before you speak to them face-to-face.
+*   **What if someone reacts badly?** When you tell people they might be shocked, worried or find it difficult to accept at first. Remember: their first reaction isn’t necessarily how they’ll feel forever, they might just need a bit of time to process what you’ve told them.
 
-Coming out isn't something you have to do alone. 
-* **Support Groups:** Local LGBT+ support groups can help build your confidence and provide a space where people understand your experience.
-* **Professional Help:** Brook has professionals with expertise in gender identity and sexuality who can support you.
-* **Hate Crimes:** If you experience discrimination, harassment, bullying, or name-calling, it is a hate crime and is illegal. The police have a duty to deal with this.
-* **Emergency Contact:** If you are worried about your safety, contact **Childline** at 0800 1111. If you are in immediate danger, call **999**.
+    However, it is important to take care of yourself in these situations; while it is a good idea to give people time to adjust, you should still be prioritising your own comfort and happiness, and seeking support from people who you trust and will be supportive.
+
+    Coming out isn’t something you have to do alone. Accessing local LGBT+ support groups and being in contact with like-minded people can be really beneficial. This can build people’s confidence and help with talking to loved ones about how they feel.
+
+    You could also talk to professionals that can support you including where there are professionals with expertise in gender identity and sexuality.
+
+    If people struggle with you coming out to them, perhaps they continue to use the wrong pronouns or pretend that you never told them, this can be invalidating and might make you upset and frustrated. Support groups are a great help in these situations as you can talk to like-minded people who understand.
+
+    If you experience any form of discrimination, harassment, bullying or name-calling, it is a hate crime and is illegal. The police have a duty to deal with this. If you are worried about your safety, contact Childline on their website or by calling 0800 1111. If you are in immediate danger, call the police on 999.

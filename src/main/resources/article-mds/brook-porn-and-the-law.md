@@ -1,52 +1,56 @@
 # Porn and the Law
 
-In the UK, it is legal for anyone to watch or look at pornography, but you must be over 18 to buy it. This is why websites such as OnlyFans are restricted to those over 18. It is illegal for anyone to show or give porn to someone under 18, even if the person sharing it is also under 18.
+## Summary
+*   **Overview** Information regarding the legal aspects of pornography in the UK, including age restrictions, what constitutes illegal content, the consequences of sharing private sexual images, and how to report illegal material or seek support.
+*   **Disclaimer** The following content is from brook.org.
 
-While watching porn under the age of 18 is not strictly illegal, it is adult content and can be harmful. Many people choose not to watch porn, which is completely normal. The law is designed to protect young people rather than punish them.
+## Porn and the Law
+*   It’s not illegal to watch porn if you’re under 18 but there are certain things that are illegal that you should be aware of.
+*   Remember The Law is there to protect young people, not punish them.
+*   In the UK, it’s legal for anyone to watch or look at porn but you have to be over 18 to buy it. This is why websites such as OnlyFans are only for over 18s.
+*   It is illegal for anyone to show or give porn to someone under 18, even if they are under 18 themselves.
+*   Many people watch porn and it is very accessible but you should never feel that you should or have to use it.
+*   Just because it’s not illegal to watch porn under 18, doesn’t mean that it’s intended for young people – It is adult content and watching porn can be harmful.
+*   Lots of people also don’t enjoy watching porn, which is completely normal. Everyone’s porn use and likes are different!
 
-## Illegal Content
+## More about porn
+*   The law states that it is legal to watch porn as long as it doesn’t involve:
+    *   People who are under 18
+    *   Sexual assault or rape
+    *   Scenes of life-threatening violence or acts that are likely to cause serious injury to a person’s genitals, anus or breasts
+    *   Animals (often called bestiality)
+    *   Dead people (necrophilia)
+*   **Content warning** These are illegal but you may still come across them.
+*   Porn takes up one third of all web traffic so you can imagine how difficult it is to make sure that all pornography content follows the law.
+*   You also might come across illegal porn without knowing it – it can be difficult to know for sure that the people in porn are over 18 if it’s not ethically-produced porn.
 
-Regardless of age, it is illegal to watch pornography that involves:
-* People who are under 18.
-* Sexual assault or rape.
-* Scenes of life-threatening violence or acts likely to cause serious injury to genitals, breasts, or the anus.
-* Animals (bestiality).
-* Dead people (necrophilia).
+## What do I do if I see porn that involves anyone under the age of 18?
+*   If you see porn involving people underage, you should report it.
+*   You can do this by reporting (anonymously if you wish) to the Internet Watch Foundation (IWF) who can remove the content and safeguard the young person.
+*   If you are affected by what you saw, speak to a trusted adult or talk to a support organisation.
+*   It is always illegal to:
+    *   Take naked images/videos of people under 18
+    *   Send naked images/videos of someone under 18 to anyone ; this includes sending images/videos of yourself if you are under 18
+    *   Send naked images/videos to someone under 18 , even if the people in the images/videos are over 18
+    *   Receive naked images/videos from someone under 18 , even if you are in a relationship or have had sex before
+    *   Send nudes or sexual images/videos to anyone without their consent ; this is known as ‘cyberflashing’
+*   **In short** if you are under 18 you shouldn’t be sending, sharing or receiving messages that include images/videos of naked people or porn, even if it’s consensual.
+*   If you are under 18 and someone is asking you to send nudes online you can report it to CEOP.
 
-It can be difficult to ensure that all online pornography follows the law. If you are viewing content that is not ethically produced, it may be hard to verify if the performers are over 18.
+## Could I get in trouble with the police?
+*   Because sending nudes is illegal if you’re under 18, it will be recorded as a crime if it is reported to the police.
+*   If it’s assessed that the person isn’t a risk to others, then Outcome 21 allows crimes to be recorded without any action being taken and without a criminal record.
+*   Remember: the law is there to protect young people not punish them.
 
-## Reporting Illegal Content
+## Revenge porn
+*   Revenge porn is when someone shares private, sexual or explicit videos/photos of another person without their consent with intent to cause embarrassment, shame or distress.
+*   This is a form of sexual abuse and is illegal in England and Wales.
+*   This term only applies if you are over 18, if you are under 18 this type of content is classed as child abuse imagery.
+*   Revenge porn can happen on social media, through texting or email or by showing someone a physical or digital image/video.
+*   It is never okay to share private, sexual material that isn’t yours regardless of whether they shared it with you in the first place, who you’re sharing it with or what they might’ve done, it is always illegal and never okay.
 
-If you see pornography involving anyone under the age of 18, you should report it to the **Internet Watch Foundation (IWF)**. They can remove the content and safeguard the young person involved. Reports can be made anonymously. If you have been affected by content you have seen, you should speak to a trusted adult or a support organisation.
-
-## Images, Videos, and "Sexting"
-
-The law is very strict regarding images of people under the age of 18. It is always illegal to:
-* Take naked images or videos of anyone under 18.
-* Send naked images or videos of someone under 18 to anyone (this includes sending images of yourself if you are under 18).
-* Send naked images or videos to someone under 18, even if the people in the media are over 18.
-* Receive naked images or videos from someone under 18, even if you are in a relationship with them.
-* Send sexual images or videos to anyone without their consent (known as "cyberflashing").
-
-If you are under 18, you should not be sending, sharing, or receiving images or videos of naked people, even if it is consensual. If someone is asking you to send nudes online, you can report it to **CEOP**.
-
-## Police and "Outcome 21"
-
-Because sending nudes while under 18 is illegal, it will be recorded as a crime if reported to the police. However, if the police assess that the individual is not a risk to others, "Outcome 21" allows the crime to be recorded without any further action being taken and without the individual receiving a criminal record.
-
-## Revenge Porn
-
-Revenge porn is the act of sharing private, sexual, or explicit media of another person without their consent to cause embarrassment, shame, or distress.
-* **If you are over 18:** This is classified as revenge porn and is illegal in England and Wales.
-* **If you are under 18:** This is classified as child abuse imagery.
-
-It is never legal to share private sexual material that does not belong to you, regardless of how you obtained it or your motivations for sharing it.
-
-## Where to Get Support
-
-* **If you are 18 or over:** Contact the **Revenge Porn Helpline** at 0845 6000 459 for help with image removal and support.
-* **If you are under 18:** Contact **ChildLine** at 0800 1111 or visit the **Internet Watch Foundation (IWF)** website.
-
-## Possession of Content
-
-It is not illegal to have pornographic images or videos on your phone or in print, provided the content itself is legal. If the content features you or someone else, the people involved must be over 18 and must have given their consent for the image or video to be taken.
+## What to do if this has happened to you
+*   If you are 18 or over and have been affected by this, you can call the Revenge Porn Helpline on 0845 6000 459. They can help you remove the image if it’s online and get support.
+*   If you are under 18 and have been affected by this, you can call ChildLine on 0800 1111 and/or visit the Internet Watch Foundation (IWF) website.
+*   It is not illegal to have pornographic content such as images or videos on your phone or in printed version if the content isn’t illegal.
+*   If it’s content of you or someone else, they must be over 18 and you must have their consent to have taken the video/photo.

@@ -1,114 +1,137 @@
-# How to Complete Your STI Test at Home
+# How to complete your STI test at home
 
-Follow these step-by-step instructions to quickly and easily complete your STI test. This guidance is relevant to tests ordered through Brook. While other home testing kits tend to be similar, always ensure you follow the specific instructions provided with your kit.
+## Summary
+*   **Overview** This guide provides step-by-step instructions for completing a home STI testing kit, including specific procedures for vaginal swabs, urine samples, and blood tests, to ensure accurate results and proper handling.
+*   **Disclaimer** The following content is from brook.org.
 
-## General Guidance
-* **Timing:** Complete your test as soon as possible after receiving it.
-* **Return:** Return your test within 24 hours of taking your sample and before the test's expiry date.
-* **Privacy:** Choose a private, comfortable place where you won't be disturbed, such as a bathroom.
-* **Duration:** The process typically takes less than 10 minutes.
+## Initial preparation steps
+Follow these step-by-step instructions to quickly and easily complete your STI test.
 
-## Universal Preparation (Steps 1-5)
-Regardless of the type of test you are doing, complete these steps before taking any samples.
+You may find this guide useful if you have ordered from somewhere else as home testing kits tend to be very similar, but make sure you follow the instructions that came with your test.
 
-### Step 1: Confirm Your Test Type
-* **Urine Sample:** For those with a penis and testicles (testing for chlamydia and gonorrhoea).
-* **Vaginal Swab:** For those with a vagina and vulva (testing for chlamydia and gonorrhoea).
-* **Capillary Blood Test:** For everyone testing for HIV and syphilis. This usually comes in a kit alongside a urine or swab test.
+You should aim to do your test as soon as possible after receiving it and on a day when you are able to get to a post box to return it. Make sure you return your test within 24 hours of taking your sample and before the test’s expiry date.
 
-### Step 2: Fill Out the Test Request Form
-Locate the "Important Documents" envelope. Inside is the Test Request Form. 
-* Check the information and complete any missing sections, including the date of the sample.
-* **Top Tip:** Place the completed form into the return envelope immediately so it isn't forgotten.
+Completing an STI test isn’t exactly fun, but it takes less than 10 minutes and gives you the peace of mind that you’re looking after you and your sexual partners’ sexual health.
 
-### Step 3: Check Your Kit
-Open the testing kit and verify that all components listed in the kit instructions are present.
+Ready? Pick up your test and go somewhere private. It’s best if you can complete the test without being disturbed and somewhere you feel comfortable, you might find it easier to complete in a bathroom.
 
-### Step 4: Complete the Sample Label
-Find the small white sticky label. Write your details and the sample type ("vaginal", "urine", or "blood"). Set it aside to stick on the tube later.
+We all know paperwork can be boring, that’s why it’s a great idea to get it out of the way first and so you don’t forget later. Whatever type of test you are doing, we recommend that you complete steps 1-5 before you take any samples.
 
-### Step 5: Note the Tracking Number
-Note the tracking number located under the barcode on the return envelope. You can use this to track your package while waiting for results.
+*   **Step 1: Make sure you’ve got the right test for you** I have a penis and testicles – You should have a ‘urine sample’ test I have a vagina and vulva – You should have a ‘vaginal swab’ test I’m testing for HIV and syphilis – You will need a ‘capillary blood’ test which normally comes in a test kit with one of the tests above.
+*   **Step 2: Fill out the Test Request Form** You should have an ‘Important Documents’ envelope within your testing kit. Within here you should find the Test Request Form. It’s really important that this is sent back with your completed test else you may not receive your results. Check the information on this form and complete the missing sections including the date that you took the sample. 
+    
+    Top tip! Take out your return envelope and put your completed Test Request form into this envelope so you don’t forget to include it later (but don’t seal the envelope just yet!).
+*   **Step 3: Check your Test** Open your testing kit and check that your test contains everything it should. The instructions include a list of what your kit should include. This will save you time and help you to familiarise yourself with the different parts.
+*   **Step 4: Complete the sample label** Within your testing kit box, you should have a small white sticky label. Fill out your details and write “vaginal”, “urine” or “blood” depending on what test you have under the sample type. Place to one side ready to stick on your sample tube later.
+*   **Step 5: Make a note of the tracking number** Each test has its own tracking number. If you haven’t already, remove the empty return envelope from the testing kit box and make a note of the tracking number under the barcode. You can use this number track your package when you are waiting for your results.
 
----
+## Vaginal swab test
+This is the test for gonorrhoea and chlamydia if you have a vulva and vagina. Make sure you’ve completed steps 1-5 first.
 
-## Vaginal Swab Test (Gonorrhoea and Chlamydia)
-If you are also testing for HIV/syphilis, complete this swab test before the blood test.
+*   **Contents of your test** Inside your testing kit box you should have:
+    *   Instructions
+    *   Security Seal sticker
+    *   Small white sample label
+    *   Return envelope
+    *   Sample tube in protective packaging
+    *   Swab
+    
+    You should also have an Important Documents envelope with your testing kit. This contains the Test Request Form.
+*   **Take your sample** Step 6: Wash your hands. Before taking the sample, wash your hands with warm water and soap to make sure no bacteria on your hands can affect the sample. 
+    
+    Step 7: Prepare the sample tube. Remove the sample tube from its plastic protective container, unscrew the lid and keep the tube upright, making sure not to spill any of the liquid inside. 
+    
+    Step 8: Prepare the swab. Take the swab out of the packaging. Being careful not to touch the cotton bud end, hold the swab in the middle at the black line. 
+    
+    Step 9: Take your sample. With your legs apart and holding the swab in one hand, use the other hand to separate your labia (outer lips of the vulva) so you can see your vagina. Insert the cotton bud about 5cm into the vagina – you don’t need to go any further than the black line on the swab. Rotate the swab for 5 seconds making sure it touches the walls of your vagina. 
+    
+    Top tip! You may find it easier to put one leg up onto the toilet seat or to use a mirror. Often people assume vaginas are straight up but they actually tend to point towards the lower back.
+*   **After you’ve collected your sample** Step 10: Put the swab into the sample tube. Being careful not to touch the swab, snap the stick at the black line so that the swab fits into the tube and screw the lid back on. Stick the sample label (the small white sticker you completed earlier) onto the tube. 
+    
+    Step 11: Package and seal your testing kit box. Put the sample tube, with the swab in, back into the protective packaging it came in and then into the testing kit box. If you have a test for HIV or syphilis in the same test kit, do this test now before sealing the testing kit box. Stick the security seal sticker over where the box opens which seals the box shut – Make sure you’ve taken out the return envelope first! 
+    
+    Step 12: Get ready to post. Put the box into the envelope with the return address on, making sure you’ve also included your Test Request Form and seal the envelope. 
+    
+    Step 13: Post your test within 24 hours. That’s it! You should send your test as soon as possible, or at most 24 hours after completing it. 
+    
+    Top tip! Pack it in your bag or put it next to your keys so you don’t forget it! 
+    
+    Step 14 (Optional) Remind yourself how awesome you are for choosing to take care of your sexual health today!
 
-### Kit Contents
-* Instructions
-* Security Seal sticker
-* Small white sample label
-* Return envelope
-* Sample tube in protective packaging
-* Swab
-* Test Request Form (in the Important Documents envelope)
+## Urine sample test
+This is the test for gonorrhoea and chlamydia if you have a penis and testicles. Make sure you’ve completed steps 1-5 first.
 
-### Step-by-Step Instructions
-* **Step 6: Wash your hands:** Use warm water and soap to prevent bacteria from affecting the sample.
-* **Step 7: Prepare the sample tube:** Remove the tube from the protective container, unscrew the lid, and keep it upright. Do not spill the liquid inside.
-* **Step 8: Prepare the swab:** Remove the swab from the packaging. Do not touch the cotton bud end. Hold it at the black line.
-* **Step 9: Take your sample:** Separate the labia and insert the cotton bud about 5cm into the vagina (up to the black line). Rotate for 5 seconds against the vaginal walls.
-* **Step 10: Secure the sample:** Place the swab into the tube, snap the stick at the black line, and screw the lid on tight. Apply the sample label.
-* **Step 11: Package the kit:** Place the tube back in the protective packaging and then into the testing kit box. Apply the security seal sticker over the box opening.
-* **Step 12: Prepare to post:** Place the box and the Test Request Form into the return envelope and seal it.
-* **Step 13: Post:** Send the test within 24 hours.
+*   **Contents of your test** Inside your testing kit box you should have:
+    *   Instructions
+    *   Return envelope
+    *   Small white sample label
+    *   Security Seal sticker
+    *   Urine collection container
+    *   Pipette
+    *   Sample tube in protective packaging
+    
+    You should also have an Important Documents envelope with your testing kit. This contains the Test Request Form.
+*   **Take your sample** Make sure you haven’t had a wee in the last hour before starting your test. You’ll need to complete the test near a toilet. 
+    
+    Step 6: Wash your hands. Before taking the sample, wash your hands with warm water and soap to make sure no bacteria on your hands can affect the sample. 
+    
+    Step 7: Prepare the sample tube. Remove the sample tube from its plastic protective container, unscrew the lid and keep the tube upright, making sure not to spill any of the liquid inside. 
+    
+    Step 8: Take your sample. Find the flat cardboard box in your testing kit and open it out. Wee into the box until it’s around half full (don’t worry the box is plastic coated so it shouldn’t leak!), finish the rest of your wee in the toilet. Use the pipette to suck up the wee from the box up to the 2ml mark at the top. Squirt the pipette into the sample tube so that it is between the two black lines Screw the lid back onto the sample tube.
+*   **After you’ve collected your sample** Step 9: Prepare the sample. Stick the sample label you wrote earlier onto the tube, making sure it doesn’t cover the fill lines. Flush any wee left in the box and throw away the cardboard box you took your sample in along with the pipette. 
+    
+    Step 10: Package and seal your testing kit box. Put the sample tube back into the plastic packaging that it came in and then into the testing kit box. If you have a test for HIV or syphilis in the same test kit, do this test now before sealing the testing kit box. Stick the security seal sticker over where the box opens so it is sealed shut, making sure that you’ve taken out the return envelope first! 
+    
+    Step 11: Get ready to post. Put the box along with your Test Request Form into the envelope with the return address on and seal the envelope. 
+    
+    Step 12: Post your test within 24 hours. That’s it! You should send your test as soon as possible, or at most 24 hours after completing it. 
+    
+    Top tip! Pack it in your bag or put it next to your keys so you don’t forget it! 
+    
+    Step 13 (Optional) Remind yourself how awesome you are for choosing to take care of your sexual health today!
 
----
+## Blood sample test
+This is the test for HIV and syphilis (it’s the same for everyone). Often tests for HIV and syphilis will also include a vaginal swab or urine sample for gonorrhoea and chlamydia, so make sure you complete both parts of the test. Make sure you’ve completed steps 1-5 first.
 
-## Urine Sample Test (Gonorrhoea and Chlamydia)
-If you are also testing for HIV/syphilis, complete this urine test before the blood test. Ensure you have not urinated for at least one hour before taking the test.
+*   **Content warning** The instructions for this test include images that show blood or substances that look like blood. Testing for HIV and syphilis requires taking a blood sample from a finger. 
+    
+    Often you’ll also do a vaginal swab or urine sample for gonorrhoea and chlamydia at the same time as the blood sample. If you’re also testing for chlamydia and gonorrhoea using a vaginal swab or urine sample, we recommend doing that before you do your blood sample (along with steps 1-5).
+*   **Contents of your test kit** Alongside any other tests that are included in your kit, you should also have following in order to complete the blood sample test:
+    *   Three blue lancets
+    *   Two white sample stickers (one for the other test and one for this one)
+    *   Two plasters
+    *   Alcohol swab wipes
+    *   Cleansing wipes
+*   **Taking your sample** Step 6: Wash your hands. Before taking the sample, wash your hands with warm water and soap to make sure no bacteria on your hands can affect the sample. It can be tricky to get enough blood to fill the sample tube but it’s a lot easier if your hands are warm. Make sure you completely dry your hands. 
+    
+    Step 6: Prepare the sample tube. Remove the sample tube from its plastic protective container, (small tube with the yellow lid). Unscrew the lid and keep the tube upright, making sure not to spill any of the liquid inside. 
+    
+    Top tip! You can use the packaging to keep the sample upright: place the tube in the spot marked by an ‘X’.
+    
+    Step 7: Take the sample. Make sure you sit down to take your sample. Wipe with one of the alcohol SWAB the finger you’ll prick with the lancet to take your sample – It’s a good idea to aim for the side of your middle finger or ring finger. Remove the cap of one of the blue lancets by twisting it. Making sure the sample tube is nearby, hold the lancet against your finger and push it firmly against your finger to prick your finger. 
+    
+    This should draw a drop of blood. If it didn’t, you can use one of the other lancets to repeat this step (each lancet should only be used once). Wipe away the first drop of blood with a tissue. Hold your hand and arm downwards to allow more blood to flow to your fingertip. 
+    
+    Massage your finger up and down to get more blood to flow to your fingertip and hold it over the sample tube. Once the sample tube is filled between the two lines, clean your finger with another cleansing wipe and stick the plaster over it. 
+    
+    Top tip! You may need to pause for a few seconds for more blood to collect or, if there still isn’t enough blood to fill the tube between the two lines, you will need to use another lancet to repeat the process (it’s best to go for a different finger this time).
+*   **After you’ve completed your sample** Step 8: Preparing your sample. Push the lid back on the sample until you hear a click and then turn the tube upside down and back again 5 times. Stick the sample label that you completed earlier onto the tube. 
+    
+    Step 9: Package and seal your testing kit box. Put the sample tube back into the plastic packaging that it came in and then into the testing kit box. Stick the security seal sticker over where the box opens so it is sealed shut, making sure that you’ve taken out the return envelope first! 
+    
+    Step 10: Get ready to post. Put the box along with your Test Request Form into the envelope with the return address on and seal the envelope. 
+    
+    Step 11: Post your test within 24 hours. That’s it! You should send your test as soon as possible, or at most 24 hours after completing it. 
+    
+    Top tip! Pack it in your bag or put it next to your keys so you don’t forget it! 
+    
+    Step 12 (Optional) Remind yourself how awesome you are for choosing to take care of your sexual health today!
 
-### Kit Contents
-* Instructions
-* Return envelope
-* Small white sample label
-* Security Seal sticker
-* Urine collection container (flat cardboard box)
-* Pipette
-* Sample tube in protective packaging
-* Test Request Form (in the Important Documents envelope)
+## Getting my results
+You will receive your results by text message. This is usually 3-7 days after you have returned the samples, but please allow up to 10 days in case there are any delays with postage.
 
-### Step-by-Step Instructions
-* **Step 6: Wash your hands:** Use warm water and soap.
-* **Step 7: Prepare the sample tube:** Remove the tube from the protective packaging, unscrew the lid, and keep it upright.
-* **Step 8: Take your sample:** Open the cardboard collection box. Urinate into the box until it is half full, then finish urinating in the toilet. Use the pipette to draw urine up to the 2ml mark and squirt it into the sample tube (it should be between the two black lines). Screw the lid on.
-* **Step 9: Label and clean up:** Stick the sample label on the tube (do not cover the fill lines). Flush the remaining urine and discard the cardboard box and pipette.
-* **Step 10: Package the kit:** Place the tube in the protective packaging and then into the kit box. Apply the security seal sticker.
-* **Step 11: Prepare to post:** Place the box and Test Request Form into the return envelope and seal it.
-* **Step 12: Post:** Send the test within 24 hours.
+If your test comes back positive, we will support you to access treatment. Treatment is free and it may be possible to send by post so there’s no need to visit the clinic.
 
----
+We will also help you contact your recent sexual partner(s) so they can get tested and treated. This can be done anonymously.
 
-## Blood Sample Test (HIV and Syphilis)
-This test requires a finger-prick blood sample. If you are also doing a swab or urine test, do those first.
-
-### Kit Contents
-* Three blue lancets
-* Two white sample stickers
-* Two plasters
-* Alcohol swab wipes
-* Cleansing wipes
-* Sample tube (small tube with yellow lid) in protective packaging
-
-### Step-by-Step Instructions
-* **Step 6: Wash and warm hands:** Wash with warm soap and water. Warm hands improve blood flow. Dry hands completely.
-* **Step 7: Prepare the sample tube:** Unscrew the yellow lid and keep the tube upright. You can use the kit packaging (marked with an 'X') to hold the tube.
-* **Step 8: Take the sample:** 
- * Sit down. Wipe your chosen finger (middle or ring finger) with an alcohol swab.
- * Twist the cap off a lancet. Press the lancet firmly against the side of your fingertip to prick it. 
- * Wipe away the first drop of blood. 
- * Massage your finger downward to encourage blood flow. Fill the tube to the line.
- * Clean your finger and apply a plaster.
-* **Step 9: Prepare the sample:** Push the lid on until it clicks. Invert the tube 5 times. Apply the sample label.
-* **Step 10: Package the kit:** Place the tube in the protective packaging and then into the kit box. Apply the security seal sticker.
-* **Step 11: Prepare to post:** Place the box and Test Request Form into the return envelope and seal it.
-* **Step 12: Post:** Send the test within 24 hours.
-
----
-
-## Getting Your Results
-* **Delivery:** Results are sent via text message, usually within 3-7 days (up to 10 days).
-* **Positive Results:** If a test is positive, Brook will support you in accessing free treatment. Some treatments can be sent by post.
-* **Partner Notification:** Brook can help you anonymously notify sexual partners so they can get tested.
-* **Inconclusive Results:** If results are unclear, a team member will contact you to arrange a repeat test.
+Very occasionally results aren’t clear, meaning we can’t confirm if they are positive or negative. If this happens, one of our team will contact you to arrange a new test.

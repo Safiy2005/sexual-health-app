@@ -1,63 +1,79 @@
 # Support with the menopause
 
-If you’re struggling with the symptoms of the menopause, it’s really important to know that you can get help. You should not have to suffer in silence or feel that symptoms are something you simply have to put up with. There are many ways to receive support, regardless of the type of menopause you are experiencing—whether early, chemical, or surgical. If symptoms are affecting your daily life, you deserve support and understanding.
+## Summary
+*   **Overview** If you’re struggling with the symptoms of the menopause, it’s really important to know that you can get help. Don’t suffer in silence or think it’s just something you have to put up with. There are lots of ways other people can support you. This applies regardless of what type of menopause you may be experiencing. Early, chemical, surgical – if you’re experiencing symptoms that are affecting your daily life, you deserve support and understanding.
+*   **Disclaimer** The following content is from brook.org.
+
+If you’re struggling with the symptoms of the menopause, it’s really important to know that you can get help. Don’t suffer in silence or think it’s just something you have to put up with.
+
+There are lots of ways other people can support you. This applies regardless of what type of menopause you may be experiencing. Early, chemical, surgical – if you’re experiencing symptoms that are affecting your daily life, you deserve support and understanding.
 
 ## Support at work
 
-According to UK Parliament (2022), less than one-third of people experiencing perimenopause symptoms told someone at work about their symptoms. While you might feel uncomfortable discussing the menopause at work, it is not something to be embarrassed about. By talking about its impact, you can access necessary support and help others in the process.
+*   **Did you know…?** Less than 1/3 of people experiencing perimenopause symptoms told someone at work about their symptoms ( UK Parliament, 2022 )
 
-Under the Equality Act 2010, employers must make reasonable adjustments for disabled workers, a category that the menopause can fall under. Many workplaces are increasingly introducing programmes to support employees. If you are struggling, consider talking to your manager about adjustments such as:
+You might feel uncomfortable talking about the menopause and your symptoms at work, but it should never be something to be embarrassed about. By talking about it and its impact on your life, you can get the support you need as well as supporting others.
 
-* Flexible working hours
-* Increased home working
-* Changes to uniform (e.g., cooler fabrics)
-* Moving your desk to a cooler part of the office
-* Requesting a fan
-* Taking more regular breaks
+The Equality Act 2010 says that employers must make reasonable adjustments for disabled workers, which the menopause could come under. With this in mind, it’s becoming more and more common for workplaces to introduce programmes and initiatives to support employees with the menopause.
 
-These small changes can significantly improve your work experience and reduce the need for time off.
+So if you’re struggling with your symptoms, it’s a good idea to talk to your manager about any adjustments that might make your life easier. These might include:
+
+*   Flexible working
+*   More home working
+*   Change of uniform to cooler fabrics
+*   Moving your desk to a cooler part of the office
+*   Asking for a fan
+*   More regular breaks
+
+Although these might seem small, they can have a big impact on your experience at work and mean you’re less likely to take time off from work because of your symptoms.
 
 ## Support at home
 
-Hormonal changes can impact your relationships. You may feel more anxious, less confident, or experience a lower sex drive. Family and friends can be a vital source of encouragement. Talking openly about what you are going through allows them to find ways to make things easier for you.
+The change in your hormones can bring changes to your relationships with others. You might feel more anxious and less confident to do some of the things you used to or you might have a lower sex drive which could affect your relationship with your partner(s).
+
+Family and friends can be a great source of support and encouragement when you’re not feeling quite yourself. It’s great if you can talk to them openly about what you’re going through so they can support you to find ways to make this easier.
 
 ## Where else can I go for support?
 
-Several organizations provide specialized resources and communities:
+*   **Queermenopause** Blogs and resources about menopause from an LGBT+ perspective.
+*   **Menopause Cafe** Events at cafes available for anyone to attend and talk about menopause
+*   **Menopause Matters** Menopause information, and guidance and a forum to talk about menopause
 
-* **Queermenopause:** Offers blogs and resources about menopause from an LGBT+ perspective.
-* **Menopause Cafe:** Organizes events where anyone can gather to talk about the menopause.
-* **Menopause Matters:** Provides information, guidance, and a forum for discussion.
-* **Menopause coaching with Brook:** The MyLife Menopause Wellbeing Programme offers coaching to help navigate the menopause with confidence.
+## Find emotional and mental health support
 
-## How to support someone you know
+It’s important to bear in mind that not everyone is comfortable talking about their symptoms. Always let them know you’re there for them if they want to talk, but never push the conversation.
 
-Not everyone feels comfortable talking about their symptoms. It is important to let people know you are there for them without pushing the conversation. Here are ways to provide support:
+Here are some of the things you can do to support someone you know that’s going through the menopause:
 
-* **Educate yourself:** Learn about the menopause and the changes it brings.
-* **Listen:** Be empathetic and offer a non-judgmental ear.
-* **Help explore options:** Assist them in looking into treatments or lifestyle changes if they ask for help.
-* **Offer practical help:** Take stress off them or suggest starting a new form of exercise together.
-* **Be patient:** Understand they may have less headspace for others during this time.
-* **Challenge stigma:** Call out inappropriate jokes about the menopause.
-* **Provide encouragement:** Support them if they are struggling with self-esteem.
+*   Educate yourself – learn more about the menopause and the changes it can bring
+*   Listen and be empathetic
+*   Help them explore their options of any treatment or lifestyle changes if they want you to. Maybe you could start a new form of exercise together, or help take stress off them?
+*   Understand that they need more support during this time and might have less headspace for other people
+*   Call others out for making inappropriate jokes about the menopause
+*   Encourage them if they’re struggling with their self-esteem
+*   Don’t make jokes or laugh about what they’re going through
 
-## Barriers to accessing support
+Many people struggle talking about the menopause and seeking support, but for some people there are additional barriers to overcome.
 
-While many people find it difficult to seek help, certain groups face additional systemic barriers.
+*   **Ethnic minority groups** Ethnic minority groups face additional challenges in accessing menopause-related healthcare . Language barriers, cultural sensitivity and existing systematic barriers to accessing healthcare in general can all make it harder to ask for and get support.
+*   **Trans and non-binary people** While menopause primarily affects cis women, some trans, non-binary and people with VSC (variations in sex characteristics, sometimes referred to as intersex) may experience the menopause. This could be because of age-related hormonal changes or hormone treatments and/or gender affirming surgeries.
 
-### Ethnic minority groups
-People from ethnic minority groups may face challenges including language barriers, a lack of cultural sensitivity in healthcare, and existing systemic inequalities that make it harder to access menopause-related care.
+    ​​Trans people may not know to expect menopausal symptoms. Many people who have gone had hormone treatment or gender reassignment surgeries are not told that they are likely about to experience early/medical menopause.
 
-### Trans and non-binary people
-While menopause primarily affects cisgender women, it is also experienced by some trans men, non-binary people, and individuals with variations in sex characteristics (VSC/intersex). This may be due to age, hormone treatments, or gender-affirming surgeries.
+    When they experience symptoms of menopause unexpectedly, it’s difficult to understand their symptoms meaning they may not ask for help or get treatment for the changes they’re experiencing. Some people may not want to talk about their menopausal symptoms as it may mean disclosing their gender status or ‘outing’ themselves.
 
-* **Unexpected symptoms:** Some trans people may not be informed that medical transitions or surgeries can trigger early or medical menopause.
-* **Disclosure concerns:** Seeking support may require "outing" oneself or disclosing gender status, which can lead to fears regarding employment and safety.
-* **Gender dysphoria:** For trans men, menopausal symptoms may trigger or worsen gender dysphoria, impacting mental health.
-* **Discrimination:** Gender reassignment is a protected characteristic under the Equality Act 2010. Treating someone less favourably because of this status is illegal discrimination.
+    For example, if a trans person at work is experiencing menopausal symptoms (e.g. hot flushes, brain fog, weight changes, mood swings) but they haven’t disclosed their trans status at work, it can be difficult to ask for support, join menopause support groups, or even just talk about their symptoms with others that don’t know their trans status.
 
-### Neurodivergent people
-People with ADHD or autism may find that menopausal hormone changes heighten their symptoms. Hormones significantly affect executive function; during perimenopause, individuals may experience increased emotional distress or a worsening of ADHD/autism traits.
+    They also may worry that if they show any of these menopausal symptoms they may be ‘outed’ which could cause worries around their employment, relationships with colleagues and sense of self. For trans men, the menopause might cause issues with gender dysphoria.
 
-For some, the intensity of these changes during perimenopause may lead them to seek an initial ADHD or autism diagnosis. Stigma and a lack of accessible services remain significant barriers to support for neurodivergent individuals.
+    This gender dysphoria, the distress or discomfort someone might feel when their sex assigned at birth doesn’t match their gender, can have an impact on mental health and wellbeing.
+*   **Discrimination** Gender reassignment is a protected characteristic under the Equality Act 2010. A person has the protected characteristic of gender reassignment if they are planning to go through, are going through or have gone through a process (or part of a process) to reassign their sex.
+
+    This could be by changing physical or other attributes related to someone’s sex. If someone is put at a disadvantage or treated less favourably because they have, or someone thinks they have, the protected characteristic of gender reassignment, this could be discrimination.
+*   **Neurodivergent and neurodiverse people** People with ADHD/autism may experience heightened symptoms due to the menopause. Hormones affect executive function, so during the perimenopause when hormone levels are changing, people with ADHD/autism may experience more symptoms of ADHD/autism.
+
+    They may also experience emotional distress brought on by the changes to body, mind and relationships that this period of life can bring. This means they may need more support whilst experiencing perimenopause than they did before.
+
+    It could also mean that people without a diagnosis start to notice more symptoms of ADHD/autism or an increase in their intensity. This might lead them to seek an ADHD/autism diagnosis.
+
+    Neurodiverse/neurodivergent people often already feel stigmatised. Barriers to support services and a lack of accessibility can make it harder for neurodiverse people to ask for help and support with menopausal symptoms.

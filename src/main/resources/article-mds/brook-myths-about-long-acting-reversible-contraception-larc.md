@@ -1,46 +1,51 @@
-# Myths About Long-Acting Reversible Contraception (LARC)
+# Myths about long-acting reversible contraception (LARC)
 
-Long-acting reversible contraceptives (LARC) are highly effective methods of contraception because they do not require daily action or maintenance each time you have sex. Depending on the type, these methods can last for several years.
+## Summary
+*   **Overview** Long-acting reversible contraceptives (LARC) include the implant, injection, IUD, and IUS. These methods are highly effective as they do not require daily action. This article addresses and clarifies common misconceptions regarding parental consent, fertility, weight gain, and the fitting process for these methods.
+*   **Disclaimer** The following content is from brook.org.
 
-The four primary methods of LARC are:
-* **Implant**
-* **Injection**
-* **IUD** (Intrauterine Device or "the coil")
-* **IUS** (Intrauterine System or "hormonal coil")
+## Long-acting reversible contraception (LARC)
 
-Despite their effectiveness, there are many common myths surrounding LARC. Below are the facts regarding these methods.
+Find out some common myths about long-acting reversible contraceptives, and why they aren’t true.
 
-## Myth: "You need parental permission to access LARC methods"
-**False.** Healthcare professionals are legally allowed to provide contraceptive advice and treatment to young people under the age of 16 without parental consent, provided the young person understands the advice given.
+Long-acting reversible contraceptives (LARC) are the most effective methods of contraception as you don’t have to remember to take them everyday. There are four different methods and each last for a different length of time, depending on the type but they all have one thing in common – you don’t have to use them every day or each time you have sex.
 
-## Myth: "Fertility doesn’t go back to normal after using LARC methods"
-**False.** The IUS, IUD, and implant can be removed at any time by a trained healthcare professional. These methods are suitable for most people of reproductive age, and fertility will typically return to its normal state quickly once the device is removed.
+The four methods of LARC are:
+*   Implant
+*   Injection
+*   IUD
+*   IUS
 
-It is important to note:
-* If you stop using a LARC method and do not want to become pregnant, you must start an alternative method immediately.
-* Leaving LARC methods in longer than their expiry date will not cause infertility, but their effectiveness will be significantly reduced.
-* **The Injection:** Unlike other LARC methods, the return of fertility after the contraceptive injection may be delayed (for some, this can take up to a year) because the medication cannot be "removed" once administered.
+There are many myths surrounding LARC- take a look at the myths and the responses below.
 
-## Myth: "LARC methods make you gain weight"
-**False.** The only contraceptive method with evidence linking it to weight gain is the Depo-Provera injection, and this only affects some users. There is no evidence connecting the IUD, IUS, or implant to weight gain.
+## Common myths and responses
 
-## Myth: "Getting an implant will hurt"
-**False.** The implant is inserted under the skin by a specifically trained healthcare professional using a specialist device. A local anaesthetic is used to numb the area, so the procedure should not be painful. 
+*   **“You need parental permission to access LARC methods”** False. Healthcare professionals are legally allowed to provide contraceptive advice and treatment to young people under the age of 16 without parental consent.
 
-Following the procedure:
-* The area should be kept clean and dry.
-* A small dressing may be left in place for a few days.
-* While there is a very small risk of infection with any procedure, following aftercare advice makes this unlikely.
-* When an implant is removed, paper stitches are sometimes used and can be removed by the user after five days.
+*   **“Fertility doesn’t go back to normal after using LARC methods”** False. The IUS, IUD and implant can be removed at any time by a trained healthcare professional. These methods are suitable for most people of reproductive age, and fertility will return quickly once removed.
+    
+    It is important to remember if you stop using a method of contraception and you don’t want to get pregnant then you must start to use a different method straight away.
+    
+    Leaving LARC methods in longer than their expiry will not cause infertility; on the contrary, their effectiveness will be reduced, so it is important to get them replaced or start an alternative method of contraception when they expire.
+    
+    However, after having the contraceptive injection the return of your fertility may be delayed (for some this may be as long as a year) because it cannot be removed once administered.
 
-## Myth: "You can get the IUS or IUD while you are pregnant"
-**False.** The IUD and IUS are used to prevent pregnancy. They should not be inserted if there is any chance of pregnancy, as this may cause an ectopic pregnancy.
+*   **“LARC methods make you gain weight”** False. The only contraception method with links to weight gain is the Depo-Provera injection, and this is only for some people.
 
-## Myth: "The IUD and IUS cause ectopic pregnancies"
-**False.** An ectopic pregnancy occurs when a fertilised egg implants outside of the uterus, usually in the fallopian tubes. While there is a small risk that any pregnancy occurring while using an IUD or IUS could be ectopic, these methods are over 99% effective at preventing pregnancy in the first place. Therefore, ectopic pregnancies are actually very rare among LARC users.
+*   **“Getting an implant will hurt”** False. The implant is fitted by a healthcare professional that has been trained specifically to perform this procedure. Local anaesthetic is used to numb the area so should not be painful. The implant is inserted under the skin using a specialist device.
+    
+    After the insertion you are advised to keep the area clean and dry. A small dressing can be left in place for a number of days. The healthcare professional will explain to you that with any procedure there is always a very small risk of infection. However, if you follow the advice given this should be unlikely.
+    
+    Very often paper stitches are only used when the implant is removed. These are normally left in place for up to 5 days, and you can remove them yourself.
 
-## Myth: "IUDs cause abortions"
-**False.** This myth often stems from the fact that a copper IUD can be used as emergency contraception. However, emergency contraception does not cause an abortion; it prevents pregnancy from occurring. The copper in the IUD kills sperm before it can reach and fertilise an egg.
+*   **“You can get the IUS or IUD while you are pregnant”** False. The IUD and IUS are used to prevent pregnancy so should not be used if there is any chance of pregnancy as this may cause an ectopic pregnancy.
 
-## Myth: "You have to be on your period to get an IUD or IUS fitted"
-**False.** You can have an IUD or IUS fitted at any time during your menstrual cycle. There is no medical evidence to suggest that fitting the device during your period provides any additional health benefits.
+*   **“The IUD and IUS cause ectopic pregnancies”** False. An ectopic pregnancy is where a fertilised egg implants itself outside of the womb/uterus, often in the fallopian tubes.
+    
+    There is always a chance that any pregnancy could be ectopic. The IUD and IUS do carry a small risk that a pregnancy while using them could be ectopic but as these contraception methods are both over 99% effective at preventing pregnancy, ectopic pregnancies are rare while using these methods.
+
+*   **“IUDs cause abortions”** False. This is a common myth based on the fact that IUDs can be used as emergency contraception even if ovulation has occurred (unlike emergency contraceptive pills also known as the morning after pill).
+    
+    However, emergency contraception does not cause an abortion but prevents a pregnancy from taking place. In the case of the IUD, the copper in the coil kills the sperm before it reaches the egg and is fertilised.
+
+*   **“You have to be on your period to get an IUD or IUS fitted”** False. You can get an IUD or IUS fitted at any time during your cycle. There is no medical evidence to prove that having it fitted during your period has any additional benefits.

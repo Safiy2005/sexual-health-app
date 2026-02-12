@@ -1,66 +1,82 @@
-# I'm 15, Can I Have Sex?
+# I’m 15, can I have sex?
 
-## Sex and the Law: Age of Consent
+## Summary
+*   **Overview** In the UK, the age of consent is 16. The law is designed to protect young people from exploitation and abuse by adults, rather than to criminalise consensual sexual activity between peers of a similar age.
+*   **Disclaimer** The following content is from brook.org.
 
-The key principle regarding sex is that it must always be consensual. In England and Wales, Scotland, and Northern Ireland, the law defines the age of consent for sex or sexual activity as 16. This age limit applies to everyone, regardless of gender or sexuality.
+If you are having, or thinking about having, sex the key thing to remember is that it should always be consensual.
 
-The law is in place to protect young people from abuse, harm, or exploitation by adults. It is not intended to criminalise young people. If two individuals under 16 mutually agree (consent) to sexual activity and are of a similar age, there is generally no intention to prosecute.
+In the eyes of the law, you are only old enough to consent to sex or sexual activity at 16. This is what’s known as the ‘age of consent’.
 
-The age of consent is set at 16 because many individuals do not feel ready for sexual activity before this age. No one should feel pressured by a partner or peers to have sex before they feel ready and safe.
+The law applies to everyone, regardless of gender or sexuality, in England and Wales, Scotland and Northern Ireland.
 
-## What is Consent?
+It is important to remember that the law is designed to protect young people from abuse, harm or being taken advantage of by adults.
 
-Consent means freely agreeing to do something with a full understanding of what it entails. In the context of sex, this means agreeing to have sex or engage in any sexual activity. This includes, but is not limited to, sexual touching and oral, anal, or vaginal penetration.
+It is not meant to criminalise young people and there is no intention to prosecute people under the age of 16 where both mutually agree (consent) and where they are of a similar age.
 
-Consent to sex or sexual activity should be:
+The age of consent is 16 because a lot of people don’t feel ready to have sex before they are around 16.
 
-* Given freely.
-* Something you want and feel excited about.
-* Never something you feel scared, uncomfortable, or pressured into.
+Nobody should ever feel pressured by their partner, or by their peers to have sex before they feel ready and safe.
 
-It is important to remember that consent is not automatically given just because someone is over 16. The law is designed to protect young people, and sexual activity with someone aged 13-15 is against the law, particularly when there is a significant age difference, as it aims to prevent abuse or exploitation. As long as there isn't a large age gap and both individuals consent, it is highly unlikely to lead to legal trouble. The most crucial aspect is that sex should be something you desire and feel comfortable with.
+## What is consent?
+*   **Consent means** agreeing to do something freely and with full understanding of what that thing is.
+*   **When it comes to sex** this means agreeing to have sex or engage in sexual activity. This includes (but is not limited to) sexual touching and oral, anal and vaginal penetration.
 
-## Looking After Your Sexual Health
+Consent to sex or sexual activity should be something you do freely and should be something you want and feel excited about. 
 
-If you are under 16, you can access sexual health services, such as those provided by Brook, without facing repercussions. These services are there to offer support, not to judge or report you. This includes:
+Whatever your age, it should never be something you feel scared, uncomfortable or pressured to do. 
 
-* Getting help and advice from doctors, nurses, or clinic staff.
-* Accessing contraception.
-* Getting tested and treated for STIs.
+And just because someone is over 16 doesn’t mean that consent is automatically given.
 
-Sexual health clinics will only share information if they believe you or someone else is in danger, such as if there is suspected abuse, coercion into sex, or exploitation.
+The law isn’t designed to punish people of the same age who both agree to sex (consensual sex). 
 
-## Sexual Activity with Those Under 13
+Any sexual activity with someone aged 13-15 is against the law, but the law is there to protect young people who might be being abused or taken advantage of by someone older.
 
-Legally, individuals under the age of 13 are not considered old enough to consent to sex. Any sexual activity with someone under 13 is illegal and is classified as rape, sexual abuse, or assault.
+It’s highly unlikely you will get into trouble with the law as long as there is not a large age difference between you and your partner and you both agree (consent) to sex.
 
-## Seeking Support and Advice
+The most important thing to remember is that sex should be something you want and feel comfortable with.
 
-If you are in a relationship and considering taking things further, it is advisable to discuss this with someone you trust to explore whether it is truly what you want.
+## Looking after your sexual health
+*   **If you are under 16** you are able to access sexual health services without getting in trouble.
+*   **The services are there** to support you, not to judge you or report you.
+*   **This includes** getting help and advice from a doctor, nurse or someone else in a clinic, accessing contraception, and getting tested and treated for STIs.
 
-### Talking to Someone You Trust
+Sexual health clinics will only pass on information if they think you or someone else is in danger. 
 
-If you need to talk to someone you don't know, Childline is a valuable resource. They offer anonymous advice and information, and you can speak with their counsellors by phone or online for free.
+This means if they think you or someone else is being abused, being forced into sex or being taken advantage of.
 
-### Speaking to a Trusted Adult
+In the eyes of the law, someone under the age of 13 is not seen as old enough to consent to sex. 
 
-If you need help, regardless of the situation, try to speak to a trusted adult. This could be a family member, teacher, school support staff, social worker, or a friend's parent. Choose someone with whom you have a good relationship and who you believe has your best interests at heart.
+Any sexual activity with someone under 13 is illegal and viewed as rape, sexual abuse or assault.
 
-### Help from Sexual Health Services
+You may be in a relationship and thinking about taking things further. 
 
-Brook services can provide advice and support on all aspects of sex and relationships. Their staff are non-judgmental and will listen to your situation to offer assistance. If a Brook service is not available in your area, you can seek help from any sexual health service.
+Before you do, you might want to talk to someone you trust about this and whether it is really what you want.
 
-### Other Sources of Help and Support
+If you want to talk to someone you don’t know, Childline is a great place to start. 
 
-Numerous organisations offer help and support via phone or online:
+You can access lots of advice and information anonymously and speak with their counsellors on the phone or online for free.
 
-* **Childline:** For general help and support for anyone under 19 in the UK.
-* **Victim Support or Rape Crisis:** For support if you or someone you know has been affected by sexual abuse, assault, or violence.
-* **NHS 111:** For medical advice (dial 111 in England and parts of Wales).
-* **NHS 24:** For medical advice in Scotland (call 08454 242424).
+## Speaking to a trusted adult
+If you need help, whatever is going on, you should try to speak to an adult that you trust. 
 
-### Urgent Help
+This could be someone in your family, but it could also be a teacher, midday meal supervisor, social worker or one of your friend’s parents.
 
-If you or someone you know is experiencing or at risk of sexual abuse, assault, or violence, call **999** for an ambulance, the police, or other emergency services. This number is free to call from any phone and covers the entire UK.
+It should be someone that you have a good relationship with and someone who you think has your best interests in mind.
 
----
+## Help from sexual health services
+*   **Sexual health services** are able to offer you advice and support with all aspects of sex and relationships. 
+*   **Friendly staff** will not judge you or report you but will listen to what’s going on and see how they can help.
+
+If you don’t have a service in your area, you should be able to access help and support from any sexual health service.
+
+## Other sources of help and support
+There are lots of places that are able to offer help and support by phone or online:
+*   For general help and support with anything, people under 19 anywhere in the UK can contact Childline
+*   If you or someone you know has been affected by sexual abuse, assault or violence, you can get support from Victim Support or Rape Crisis
+*   For medical advice, you can contact NHS 111 by dialling 111 (England and parts of Wales) or NHS 24 call 08454 242424 (Scotland)
+
+## Urgent help
+If you (or someone you know) are experiencing or at risk of sexual abuse, assault or violence, you can call 999 for an ambulance, the police or any other emergency service any time of day or night if it is safe for you to do so.
+
+The 999 emergency number covers all of the UK and is free to call from any phone.

@@ -1,41 +1,19 @@
 # Sexual Assault: Jade Blue's Story
 
-> **Content Warning:** This post contains discussions of sexual assault and rape, which may be distressing for some readers. If you need support regarding sexual abuse, please visit Brook's page on sexual harassment and abuse for resources and contact information.
+## Summary
+*   **Overview** Jade Blue shares their personal experience of sexual assault, detailing the reporting process to the police, the investigation by the Crown Prosecution Service, and the contrast between the support received from general practitioners versus specialized sexual health services.
+*   **Disclaimer** The following content is from brook.org.
 
-Jade Blue shares their personal experience of navigating public services, the criminal justice system, and healthcare providers following a sexual assault.
-
-## Initial Reporting and Police Contact
-
-Jade was 24 when they were raped by a friend of their boyfriend in London. They reported the incident to the police at 5:00 AM the same morning.
-
-* **Initial Response:** The first point of contact consisted of two middle-aged male officers. Jade found this experience distressing and felt that having male officers as the primary contact for a sexual assault report was inappropriate.
-* **Follow-up Support:** Later, plain-clothed female officers joined Jade at a Sexual Assault Referral Clinic (SARC) to discuss options and provide support.
-* **Consistency of Care:** Jade emphasizes the importance of consistent contact. One of the officers from the initial referral remained a point of contact for over three years, providing much-needed stability.
-
-## The Havens and the Criminal Justice Journey
-
-Jade was taken to **The Havens**, a specialist Sexual Assault Referral Clinic. Following the initial medical and forensic steps, a long investigation process began.
-
-* **Investigation Duration:** The process of waiting for the Crown Prosecution Service (CPS) to decide on charging the perpetrator took over two years.
-* **Communication:** Jade reported that the police were communicative, providing updates within 24 hours of any case developments.
-* **Mental Toll:** The ongoing nature of the criminal justice journey meant Jade felt the need to be available for updates at all times—during work, holidays, and personal time—which significantly impacted their life.
-
-## Healthcare Experiences
-
-Jade’s experience with medical services varied significantly between general practice and specialized sexual health clinics.
-
-### GP Services
-The experience with General Practitioner (GP) services was largely negative:
-* **Mental Health:** Jade felt their mental wellbeing was not prioritized and that they were not properly listened to.
-* **Medication vs. Therapy:** Jade was prescribed Diazepam for 18 months to manage anxiety, flashbacks, and insomnia, but received no referrals or advice regarding talking therapies.
-* **Administrative Barriers:** The GP charged a £30 fee for a letter to Jade’s university confirming the assault and the upcoming trial.
-
-### Sexual Health Clinics
-In contrast, the experience with sexual health services was highly positive:
-* **Specialized Care:** Staff were trained to discuss sensitive issues including rape, consent, and STIs in a non-judgmental environment.
-* **Medical Treatment:** Clinics provided necessary post-rape care, including STI testing and Hepatitis B vaccinations.
-* **Emotional Support:** The ability to speak openly with experts who are comfortable discussing trauma made the sexual health team a primary "port of call" for Jade's recovery.
-
-## The Importance of Specialized Services
-
-Specialized sexual health services provide a vital lifeline for those who have experienced trauma. Jade highlights that because staff in these clinics choose to work in this sector, they are uniquely equipped to handle the discomfort often associated with these topics. Access to these specialized, non-judgmental services is essential for survivors navigating the aftermath of sexual violence.
+## Jade Blue's Story
+*   **Content warning** This post is about sexual assault and rape, and may be distressing for some readers. If you need support with sexual abuse, you can find lots of information and organisations. Jade Blue talks about their experience of sexual assault, and the various public services they sought support from.
+*   **Initial report** I was 24 when I was raped by a friend of my boyfriend. The incident happened in London; during that time, I was back and forth from London to Cornwall. I reported to the police the same morning and they came to my friend’s house to take my initial report and advise the next steps. 
+*   **Police contact** It was very early in the morning about 5am and the officers that were the first point of call were two middle aged men – it was an incredibly distressing morning and I found it bizarre that my first point of contact for any professional in that sector was two men. It just didn’t feel appropriate.
+*   **The Havens** I was taken to The Havens, a Sexual Assault Referral Clinic. A few plain clothed female police officers joined me at The Havens to support me through that process and to discuss my options. They have been a constant form of contact throughout the whole process; I think it is so important to have that consistency from day one and even after 3 years I still have one of the officers who was with me at The Havens. I feel very fortunate for that.
+*   **Criminal justice journey** After an incredibly long, mentally and physically draining day – I was taken back to my friend’s house and advised that they would be in touch over the coming days. Throughout the whole process of the investigation and waiting to hear if the Crown Prosecution Service had come to a decision to charge or not over the next 2+ years, the police were great. 
+*   **Investigation updates** With any update relating to the case they would be in touch within 24 hours – so I felt very much in the loop with what was going on. It was tough and still is tough, I haven’t finished this criminal justice journey quite yet and I feel that I have had to have my phone with me every moment of the day – at work, on holidays, days off etc. just in case I were to receive a call with any update. It takes over your life.
+*   **GP services** Unfortunately, I haven’t had a great experience with GP services. I rarely felt listened to or understood, my mental wellbeing just didn’t seem to be a priority. I was put on Diazepam for over 18 months to deal with my sleepless nights, anxiety and flashbacks. I was given no other referrals or advice for talking therapies. 
+*   **University support fees** In addition, I was charged £30 for a letter to my university that stated that I had been raped and the trial was coming up so it would be best to recommence my studies after the trial had finished.
+*   **Sexual health clinics** As part of treatment post-rape, you are advised to be STI tested and to also to have Hepatitis B vaccinations so I was in and out of sexual health clinics for a fair few months. After speaking to the sexual health team, I felt in safe hands. These people are specialised individuals that can talk all things sex; from rape, consent to STIs etc. 
+*   **Safe environment** It made such a huge difference to be able to speak to someone so openly about it all – in a non-judgemental environment. They had the ability to make me feel fine about discussing everything with them and gave some great advice and referrals. I honestly can’t even imagine where I would be emotionally and mentally without having the sexual health team as a main port of call. 
+*   **Specialised support** People that work for sexual health clinics have chosen that sector to work in and are so comfortable with talking about what a lot of people would find uncomfortable. They provide a safe and non-judgemental environment that can be a real lifeline to people going through traumatic experiences like my own. 
+*   **Service accessibility** That’s why it’s so essential that specialised sexual health services remain accessible for all. Speaking to experts who were specially trained to discuss these sensitive issues made my experience a lot easier and I’m so grateful for the support they provided.

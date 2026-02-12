@@ -1,80 +1,77 @@
 # Consent and sex in long-term relationships
 
-Treating consent as an ongoing conversation in long-term relationships can boost trust, confidence, and pleasure. Consent is essential for every relationship and marriage, regardless of how long you have been together or how frequently you have sex. It is a key component of maintaining a happy, healthy, and respectful partnership.
+## Summary
+*   **Overview** Consent is an essential, ongoing conversation in long-term relationships and marriages that helps maintain trust, respect, and mutual pleasure as partners' needs and preferences evolve over time.
+*   **Disclaimer** The following content is from brook.org.
 
-## What we mean by ‘sex’
+## Understanding Sex and Consent
+*   **What we mean by ‘sex’** Often when people talk about having sex for the first time, they mean having penetrative vaginal sex or anal sex. When talking about sex, we are usually talking about all forms of sexual contact between two or more people. This could include penetrative sex, oral sex and fingering amongst other things.
+*   **Consent isn’t a given just because you’re in a relationship** Being in a long-term relationship doesn’t mean your partner has to have sex with you or you have to have sex with your partner. Sex with your partner should always be something that you’re both entering into when you genuinely want to, without feeling pressured or unintentionally agreeing to. That is why consent is always important.
+*   **Checking in** If you’ve fallen into a rhythm with sex and intimacy, it might be time to check-in with each other and tune into each other’s signals, body language and feelings to ensure enthusiastic agreement to intimacy. Maybe you know that they’re feeling stressed at the moment, or you know where they are in their menstrual cycle and how that makes them feel, and you can tell from their facial expressions and body language how they’re feeling. You can use all these as cues to make sure your partner is enthusiastically agreeing to sex.
 
-At Brook, when we talk about sex, we refer to all forms of sexual contact between two or more people. This includes:
-* Penetrative vaginal or anal sex
-* Oral sex
-* Fingering and other forms of manual stimulation
-* Any other shared sexual activity
+## Evolution of Desire and Boundaries
+*   **What we like changes over time** As people, we change over time as do our libidos, sexuality, likes and dislikes. Our mood, hormones and what else is going on in our lives can also all have an impact. So it’s natural that there might be changes to your relationship, intimacy and sex.
+*   **Adapting together** It might be that you don’t enjoy the types of sex that you once did, and that’s okay. Communicating this to your partner can help both of you adapt and evolve to each other’s likes and dislikes over time. There are no rules when it comes to how often and what type of sex you have – it all depends on what you and your partner prefer and what works well for both of you.
+*   **It’s okay to not want sex at the same time as your partner** It’s always okay to change your mind during sex, whether you’re simply not feeling it or you’re not enjoying what you’re doing. If you are worried about hurting your partner’s feelings, it is important to remember that you not wanting to have sex with them in the moment is not a reflection of how much you love them.
+*   **Respecting boundaries** In a relationship, it is important to understand and respect each other’s boundaries as that ensures you both are intimate in the ways you want to be.
 
-## Consent isn’t a given just because you’re in a relationship
+## Improving Your Sex Life
+*   **Communication leads to better sex** Consent doesn’t have to be a ticking the box exercise – it can be fun, create more conversations about sex and intimacy and lead to a better understanding of each other. Talking about what you do and don’t like can boost trust and confidence in each other and ultimately lead to more pleasure.
+*   **Guidance during intimacy** Asking your partner during sex if they’re enjoying something or what they’d like to do next can all help to make sure you’re both getting what you want out of your sex life.
+*   **Entitlement and rights** You are never entitled to sex with another person and no one ever owes you sex. Just because you’re in a long-term relationship doesn’t mean your partner has to have sex with you or you have to have sex with your partner. Consent applies exactly the same in long-term relationships as outside of them.
 
-Being in a long-term relationship does not mean your partner is entitled to sex, nor that you are obligated to provide it. Sex should always be entered into willingly, without pressure or unintentional agreement. 
+## Consent Reminders
+*   You can withdraw consent at any time and if you do, your partner(s) should respect your wishes immediately and without question.
+*   Just because you have consented to one thing doesn’t mean you have consented to something else.
+*   It’s completely okay to say ‘no’ or stop at any point if you don’t want to continue.
+*   If your partner ever doesn’t respect you or doesn’t get consent – that’s not okay.
 
-If you have fallen into a routine, it is important to:
-* Check-in with each other regularly.
-* Tune into each other’s signals, body language, and facial expressions.
-* Observe external factors, such as stress levels or menstrual cycles, which may affect how a partner is feeling.
-* Ensure there is enthusiastic agreement before proceeding with intimacy.
+## Having Conversations About Intimacy
+It can be difficult to have conversations about sex and intimacy but it’s a really important part of your relationship. It’s a good way to check-in with each other, revisit your boundaries and any changes in what you do and don’t like. For example, maybe you don’t want sex as much as you used to, or you want to try something different.
 
-## Changing preferences over time
+*   **Make time to talk** It can be hard to talk in-depth about sex during sex itself, so make sure you make time to talk about it in other areas of your life. For example, maybe you bring it up on date night, before sex or after sex as a debrief.
+*   **Checking in** Checking in with each other about the sex you have and each other’s preferences will help you understand each other and have better sex.
 
-As individuals grow, libidos, sexuality, and personal likes or dislikes often change. Mood, hormones, and external life stressors all impact sexual desire and interest.
-* It is natural for your relationship and sexual preferences to evolve.
-* You may find you no longer enjoy activities you once did; this is normal.
-* Communicating these changes helps both partners adapt and evolve together.
-* There are no set rules for how often or what type of sex you should have; it depends entirely on what works for you and your partner.
+## Questions to ask
+*   What do you enjoy most about the sex we have?
+*   What could be better?
+*   Is there anything you’re not so keen on?
+*   Do you like it when I _?
+*   Is there anything you’d like to do differently or try that we haven’t?
+*   How do you feel about_? Would you like to try it?
 
-## Turning down sex
+## Communication Strategies
+*   **Be honest about what you do and don’t like** If your partner does something that you don’t like, be honest about it. If it’s something that they’ve done for a while, you know they enjoy, or something you used to like but don’t any more, it can be difficult to let them know that you don’t enjoy it. But it will benefit both of you and your relationship if you’re honest.
+*   **Ease into the conversation** To make it easier, you could try talking about it on a walk where there’s less eye contact, or even talking about it on the phone or over message. Keep in mind how it might make them feel and make sure you talk about things that you do enjoy that they do as well so it doesn’t feel like you’re criticising them.
+*   **Use films and TV as a talking point** One way to bring up the conversation is by talking about TV, films, books and what you thought about the sex scene/storylines in them. Maybe you use it as a way to comment on something you’d like to try or maybe you laugh at how unrealistic the scene is or comment on something you wouldn’t like.
 
-It is always okay to change your mind during sex or to decline it altogether. If you are worried about hurting your partner's feelings, remember that not wanting sex in a specific moment is not a reflection of your love for them. Respecting each other’s boundaries ensures that intimacy remains a positive experience for both people.
+## Turning Down Your Partner
+It can be difficult to turn down your partner who you care about and you might be worried that they’ll feel rejected, but it’s really important that you find a way to express how you’re feeling rather than feeling pressured into sex.
 
-## Communication leads to better sex
+Tips for turning down your partner:
+*   Use ‘I’ statements – avoid making them feel bad about themselves by emphasising how you feel. For example, instead of saying “you always want sex”, explain how you’re feeling and what might be factoring into your decision.
+*   If you’re feeling overwhelmed, anxious or stressed, explain this to your partner so they can support you.
+*   Be honest – try to avoid using excuses or trying to hide how you’re feeling.
+*   Be empathetic – think about how you would want them to tell you the same thing and how it might make you feel.
+*   Remind them that you care about them – it might make them feel rejected so make sure you’re making it clear that it’s not a reflection on how you feel about them.
+*   Be intimate in other ways – if you want to, you can be intimate outside of sex, for example, cuddling on the sofa, giving each other massages, dancing together.
 
-Consent should be more than a "box-ticking" exercise. Openly discussing what you do and do not like can boost confidence and lead to greater pleasure. Asking questions during sex, such as "Do you like this?" or "What would you like to do next?", ensures both partners are satisfied.
+## Safety and Rejection
+*   **Important** If you feel that you cannot reject your partner because you’re worried about your safety, it’s really important you get help.
+*   **Managing rejection** If your partner turns you down, it can feel like rejection. Rejection looks different for everyone, but you might feel sad, angry or frustrated but it’s really important you don’t let those feelings affect your relationship and your response to your partner turning you down.
 
-### Key reminders about consent:
-* **You can withdraw consent at any time.** If you do, your partner must respect your wishes immediately.
-* **Consenting to one thing does not mean you have consented to everything.**
-* **You are never entitled to sex.** No one ever owes you sex, regardless of the length of the relationship.
-* **If a partner does not respect your boundaries, that is not okay.**
+Feeling rejected is a valid feeling, but it’s important you understand how to manage those emotions:
 
-## How to have conversations about intimacy
+**Things to remind yourself**
+*   Your partner saying ‘no’ is not a reflection of how much they love you or your self-worth.
+*   Your partner never owes you sex or intimacy – you are not entitled to it.
+*   It’s normal for there to be times that you’re not both in the mood at the same time or for there to be things you don’t both like.
+*   Appreciate that your partner has been honest and open with how they’re feeling.
+*   Respect your partner’s feelings – listen to them and try to understand why they feel the way they do.
+*   Try not to make it about you – it’s always important that you both understand how the other one is feeling and if you feel rejected it’s okay to let them know this.
 
-Talking about sex can be difficult, but it is a vital part of a healthy relationship. It allows you to revisit boundaries and discuss changing preferences.
-
-### Tips for communication:
-* **Make time to talk:** It can be hard to have deep conversations during sex. Try discussing it on a date night, or during a "debrief" after sex.
-* **Be honest:** If you don't enjoy something, say so—even if it's something you used to like.
-* **Choose the right setting:** If eye contact feels too intense, try talking while on a walk, over the phone, or via message.
-* **Use media as a talking point:** Discussing sex scenes in films or books can be an easy way to bring up your own likes and dislikes.
-* **Balance feedback:** When discussing things you don't like, also mention the things you do enjoy to ensure your partner doesn't feel unfairly criticized.
-
-### Questions to ask your partner:
-* What do you enjoy most about the sex we have?
-* What could be better?
-* Is there anything you’re not so keen on?
-* Do you like it when I [action]?
-* Is there anything you’d like to try that we haven’t done before?
-
-## Tips for turning down your partner
-
-If you are not in the mood, use these strategies to communicate empathetically:
-* **Use ‘I’ statements:** Focus on your feelings (e.g., "I'm feeling very stressed") rather than blaming them (e.g., "You always want sex").
-* **Be honest:** Avoid making excuses; explain how you are actually feeling.
-* **Be empathetic:** Consider how you would want to be told if the roles were reversed.
-* **Offer reassurance:** Remind them that you care about them and that your lack of desire in that moment isn't a rejection of them as a person.
-* **Suggest alternative intimacy:** If you want to be close without having sex, suggest cuddling, massages, or simply spending time together.
-
-**Important:** If you feel you cannot reject your partner because you are worried about your safety, this is a sign of abuse. Please seek help from professional services.
-
-## Managing feelings of rejection
-
-If your partner turns you down, it is normal to feel sad, frustrated, or rejected. However, it is important to manage these emotions constructively:
-* **Remember it isn't personal:** A partner saying 'no' is not a reflection of your self-worth or their love for you.
-* **Respect their honesty:** Appreciate that your partner felt safe enough to be honest with you.
-* **Avoid pressure:** Do not put pressure on your partner to change their mind just to soothe your feelings of rejection.
-* **Process your emotions:** Try journaling, speaking with friends about their experiences, or consulting a therapist if you feel a strong, persistent sense of upset.
+**Next steps for processing**
+*   By allowing time to process your feelings you can avoid putting pressure on your partner to stop you from feeling rejected and reflect on the best way to address your emotions and move on.
+*   Try journaling or writing down how you feel - this can help you reflect and process your feelings.
+*   Speak with your friends – talk to them about how it makes them feel, and how have they managed their emotions?
+*   Speak to a therapist – if you do feel a strong sense of rejection and are very upset, it may be worth speaking to a therapist or counsellor to talk through those feelings.

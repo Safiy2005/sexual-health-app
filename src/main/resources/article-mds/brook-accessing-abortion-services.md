@@ -1,79 +1,70 @@
-# Accessing Abortion Services
+# Abortion Clinics And Services: How do I get an abortion?
 
-Abortion, sometimes referred to as a "termination," is the process of ending a pregnancy. If you are in England, Scotland, Wales, or Northern Ireland, you are entitled to an abortion paid for by the NHS. UK citizens traveling from Northern Ireland to England for an abortion can also have the procedure covered by the NHS.
+## Summary
+*   **Overview** This article provides information on how to access abortion services in the UK and surrounding islands, detailing the steps for assessment, legal requirements across different regions including England, Wales, Scotland, and Northern Ireland, and the rights of those under 16.
+*   **Disclaimer** The following content is from brook.org.
 
-## How to Get an Abortion
+## Find out about how to access abortion services in the UK.
+Abortion is when someone sometimes chooses to end a pregnancy because they don’t want to have a baby. It is sometimes called ‘termination’.
 
-There are several ways to access abortion services:
+## What is abortion?
+Read about abortion
 
-* **Your GP:** You can speak with your regular GP or another doctor at your practice.
-* **Sexual Health Services:** You can visit a Brook service or another sexual health clinic. While these services do not perform abortions, they can refer you to a specialist provider.
-* **Self-Referral:** In many parts of the UK, you can refer yourself directly to an abortion provider without seeing a GP first. You can contact the **British Pregnancy Advisory Service (BPAS)** or **MSI Reproductive Choices UK** for further details.
+## Accessing abortion
+If you’re in England, Scotland, Wales or Northern Ireland, you are entitled to an abortion paid for by the NHS and there are a number of ways you can get one.
 
-## The Process
+UK citizens travelling from Northern Ireland to England for abortion can also have the procedure paid for by the NHS.
 
-Once you have initiated the process, the next steps typically include:
+To get an abortion, you can start with your GP if you are comfortable to do so (or another GP if you don’t want to see your normal doctor), a sexual health service, and telling them that you need an abortion.
 
-1. **Assessment:** You will have an assessment with a doctor or nurse, either in person at a clinic or over the telephone. This is an opportunity to ask questions and address concerns.
-2. **Appointment:** Following the assessment, an appointment will be made for the procedure at a clinic, or arrangements will be made to send you abortion medication to take at home (if applicable).
+These services will not perform the abortion themselves but can refer you to a specialist service that can.
 
-## Important Rights and Considerations
+Alternatively, in many parts of the country you can refer yourself straight into abortion services without going to see your GP. Visit either British Pregnancy Advisory Service (BPAS) or MSI Reproductive Choices UK for further details.
 
-* **Judgment-Free Care:** Healthcare professionals should not judge you or make you feel bad about your decision.
-* **Conscientious Objection:** If a doctor disagrees with abortion for personal or religious reasons, they do not have to be involved in the referral, but they must arrange for you to see another doctor who will.
-* **Consent:** You do not need the consent of a partner to have an abortion.
-* **Right to Change Your Mind:** You have the right to delay, cancel appointments, or change your mind about having the abortion at any time during the process.
-* **Support and Counseling:** You should be offered extra support, such as counseling, to help you make your choice or to support you after the procedure.
+The next step after this will involve an assessment with a doctor or nurse. This may be in a clinic or over the telephone. They can answer any questions or address any concerns you might have.
 
-## Abortion for People Under 16
+After this assessment they will make an appointment for you to come to the clinic to have the abortion or to be sent abortion medication to take at home.
 
-If you are under 16 and are considered able to fully understand the medical treatment (known as being "Gillick competent"), you can consent to an abortion without telling a parent or carer. A doctor will typically encourage you to involve a supportive adult, but your confidentiality will be respected unless there are significant safety concerns.
+## The Abortion Process
+Read about what an abortion involves
 
-## Legal Differences Across the British Isles
+## A few important points to remember:
+*   Whoever you go to see, they should not judge you or make you feel bad about your decision.
+*   If a doctor disagrees with abortion, then they does not have to be involved in referring you. However, they should make arrangements for you to see another doctor who will be happy to arrange the appointment.
+*   You do not have to have the consent of your partner although you may wish to discuss it with them.
+*   You have the right to delay or cancel appointments if you wish. It’s always good to let the organisation know if you are going to cancel or delay your appointment so the time can be offered to someone else.
+*   You have the right to change your mind about having the abortion at any time during the process.
+*   You should be offered extra support, such as counselling if you want it, to help you make your choice.
 
-The law regarding abortion varies depending on where you live:
+## What if I’m under 16?
+If someone is under 16 but is considered able to consent to their own medical treatment, they can consent to an abortion without having to tell a parent or carer.
 
-### England, Wales, and Scotland
-* Two doctors must agree that continuing the pregnancy would put your physical or mental health at risk.
-* Abortions are generally available up to 24 weeks.
-* After 24 weeks, abortions are only carried out in exceptional circumstances, such as a risk to the pregnant person’s life or a serious fetal anomaly.
+However, a doctor will explore the benefits of involving a parent or another adult to provide support.
 
-### Northern Ireland
-* Abortion is legal and available locally up to 20 weeks.
-* To access services, contact the British Pregnancy Advisory Service (BPAS).
-* For abortions past 20 weeks, you may need to travel to England (paid for by the NHS).
+Young people under 16 are also allowed to access contraception without having to get permission from a parent or carer, as long as the doctor thinks they can understand and consent to this.
 
-### Jersey
-* Available up to 12 weeks if two doctors agree the pregnancy is causing distress.
-* Legal up to 24 weeks in cases of severe fetal anomaly or risk to life.
-* Travel to England is required for abortions between 12 and 24 weeks (this must be paid for privately).
+## It’s important to know that the law is different across the British Isles.
+*   **England, Wales or Scotland** Two doctors need to agree that continuing the pregnancy will put your physical or mental health at risk. Once they have agreed, you have until 24 weeks into the pregnancy to have an abortion. However, in exceptional circumstances an abortion can be carried out after 24 weeks if there is a risk of grave permanent injury or a risk to the life of the pregnant person, or if the baby is diagnosed with a serious or fatal foetal anomaly.
+*   **Northern Ireland** Abortion is legally available in Northern Ireland and available locally up to 20 weeks of pregnancy. To get an abortion in Northern Ireland, you need to contact the British Pregnancy Advisory Service (BPAS). Abortions past 20 weeks are less easily accessible in Northern Ireland but you can access abortions in England paid for by the NHS.
+*   **Jersey** You can have an abortion up to 12 weeks into the pregnancy if two doctors agree it is causing you distress. Abortion is legal up to 24 weeks if the foetus has a severe incurable problem, or if your life is in danger. If your pregnancy has gone past 12 weeks but is under 24 weeks, you can travel to England to have an abortion, but you will have to pay for the operation.
+*   **Isle of Man** Abortions are legal in the Isle of Man up to 14 weeks at the request of the pregnant person and up to 24 weeks in certain circumstances. People seeking abortions over 14 weeks of gestation will be supported to access this treatment in the UK.
+*   **Republic of Ireland** It is possible to access abortion up to 12 weeks and later if there is a serious health risk or there is a fatal foetal abnormality. Because of the time limit people are still travelling from Ireland to England for abortions in a range of circumstances.
 
-### Isle of Man
-* Available up to 14 weeks at the request of the pregnant person.
-* Available up to 24 weeks in specific circumstances.
-* Those seeking abortions after 14 weeks are supported to access treatment in the UK.
+## Information
+It’s a good idea to go and see a doctor as soon as possible if you know you are pregnant and have made up your mind to have an abortion.
 
-### Republic of Ireland
-* Available up to 12 weeks.
-* Available later only if there is a serious health risk or fatal fetal abnormality.
-* Many people still travel to England for abortions due to these time limits.
+Abortion is one of the safest healthcare procedures there is, and complications are very rare.
 
-## Safety and Timing
+Earlier abortions are even safer than later ones, and can be done using medication at home before 10 weeks.
 
-Abortion is one of the safest healthcare procedures. Complications are very rare, and the procedure is safer the earlier it is performed. Before 10 weeks, abortions can often be completed using medication at home.
+## More about different types of abortion
+If you would like more help or advice about abortion you can:
+*   Visit the British Pregnancy Advisory Service (BPAS) website , or call them on 03457 30 40 30
+*   Visit the National Unplanned Pregnancy Advsory Service (NUPAS) website , or call them on 0333 004 6666
+*   Visit the MSI Reproductive Choices UK website . Alternatively, call them on 0345 300 8090
+*   Visit the Abortion Talk website . Abortion Talk is a free, confidential abortion and non-judgmental talkline where you can discuss your decision to have an abortion or your experience of having an abortion.
 
-## Where to Go for Help and Advice
-
-If you need support, information, or a referral, you can contact:
-
-* **Brook:** For advice, support, pregnancy tests, and referrals.
-* **British Pregnancy Advisory Service (BPAS):** 03457 30 40 30
-* **MSI Reproductive Choices UK:** 0345 300 8090
-* **National Unplanned Pregnancy Advisory Service (NUPAS):** 0333 004 6666
-* **Abortion Talk:** A confidential talkline for non-judgmental discussion.
-* **Abortion Support Network:** For help with travel and costs if you are traveling from Ireland, Jersey, or elsewhere.
-
-### Urgent Support
-* **Medical Advice:** Call NHS 111.
-* **Under 18s:** Contact Childline at 0800 1111.
-* **Emotional Support:** Contact the Samaritans at 116 123 (or 08457 90 90 90).
+## If you need help quickly you can contact these organisations:
+*   For medical advice contact NHS by dialling 111 24 hours a day, 365 days a year
+*   For help if you’re under 18 contact Childline on 0800 1111
+*   For urgent emotional support contact the Samaritans on 08457 90 90 90

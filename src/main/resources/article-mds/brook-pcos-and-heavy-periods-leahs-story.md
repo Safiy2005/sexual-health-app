@@ -1,39 +1,33 @@
-# PCOS and Heavy Periods: Leah’s Story
+# PCOS and Heavy Periods: Leah’s story
 
-Leah, 20, shares her personal experience of managing heavy periods throughout school and college, and her journey toward receiving a diagnosis for Polycystic Ovary Syndrome (PCOS).
+## Summary
+*   **Overview** Leah, 20, shares her experience of managing heavy periods at school and college and her journey to getting a PCOS diagnosis.
+*   **Disclaimer** The following content is from brook.org
 
-## The Difficulty of Defining "Normal"
+A fever is usually considered when you have a body temperature higher than 38 degrees Celsius. This is measurable, widely accepted, and easy to understand. Unfortunately for me growing up, the same could not be said about the problems that came with menstruating.
 
-A fever is easily identified by a temperature reading, but menstrual health issues are often harder to quantify and communicate. For Leah, starting her period later than her peers—at age 16—meant she missed out on the shared learning curve of her teenage years. While her friends understood their cycles and products, Leah felt "in the dark" and worried that she had missed the window for what was considered normal.
+I have polycystic ovary syndrome (PCOS), which meant I didn’t start my period until I was 16. By then, most girls my age knew their cycle length, what products worked best, and how to cope. I was still in the dark, feeling like I’d missed the boat on what was “normal.”
 
-## Living with Heavy and Irregular Periods
+When my periods did arrive, they were irregular, unpredictable, and unbelievably heavy. I remember bleeding so much I’d sit in boiling baths for hours, hoping the heat would reduce the pain and somehow speed things up. 
 
-When Leah’s periods did begin, they were marked by extreme irregularity and debilitating symptoms:
-* **Heavy Bleeding:** Leah often used a pad and a tampon simultaneously, yet would still bleed through both in less than an hour.
-* **Severe Pain:** The intensity of the pain was often unbearable, making the use of certain menstrual products painful.
-* **Physical Symptoms:** Chronic exhaustion, constant bloating, and relentless bleeding were regular occurrences.
-* **Emotional Anxiety:** A constant fear of leaking led to "freezing" in seats and avoiding movement.
+The pain was unbearable, and super-plus tampons hurt so badly I dreaded using them. I worried about my fertility – and to be honest I still do. There were days when I’d go through a pad and a tampon together in less than an hour. Frozen in my seat for fear of leaking.
 
-## The Struggle for a Diagnosis
+At first, I thought this was just how periods were. People said they were messy and painful, so I assumed I was experiencing the same as everyone else. But exhaustion, constant bloating, and relentless bleeding told me otherwise.
 
-Despite knowing that her experience was not typical, Leah faced years of medical dismissal. Common responses from healthcare providers included:
-* Claims that periods are "supposed to be heavy."
-* Suggestions that symptoms were merely "teenage hormones" that would eventually balance out.
+So I went to a doctor – the thing we’re told to do when something feels wrong. Instead of answers, I got years of dismissal. “Periods are supposed to be heavy.” “It’s just teenage hormones; it will balance out.” I left feeling small and unheard, wondering if maybe I was overreacting.
 
-After years of self-research pointed toward PCOS, Leah finally received a diagnosis. The news was delivered via a text message stating she met the criteria, without a phone call or follow-up explanation.
+Still, I knew something wasn’t right. I spent hours searching online, and everything pointed to PCOS. It took years to get a proper diagnosis – delivered, of all ways, in a text message: “Your blood test results are back, and you meet the PCOS criteria.” No phone call. No explanation. 
 
-## The Impact on Education and Daily Life
+Meanwhile, I had to manage the bleeding and the shame alone. At college, I carried a secret kit of pads, tampons, and spare underwear. I timed toilet breaks strategically, avoided long lessons, and dreaded social events. 
 
-Managing heavy periods while attending college created significant barriers:
-* **Strategic Planning:** Leah carried a "secret kit" of spare clothes and products, strategically timed her toilet breaks, and avoided long lessons.
-* **Social Isolation:** Anxiety over leaking prevented her from attending sleepovers, swimming trips, or social gatherings.
-* **Educational Disruption:** The severity of the bleeding sometimes forced her to miss college entirely.
+Sleepovers, swimming trips, or even just sitting on someone else’s couch filled me with anxiety. It wasn’t just physical exhaustion – it was the isolation. How do you tell someone you’re bleeding so heavily you’ve had to miss college? And when doctors insist what you’re going through is normal, you start to doubt yourself.
 
-## Finding Support and Advocating for Change
+Things only began to change in my late teens, when I found a doctor who listened. They asked questions, ordered tests, and explained what was happening. When PCOS was officially confirmed, it was almost a relief – finally, a name for the irregular cycles, fatigue, and heavy bleeding.
 
-Leah's experience shifted in her late teens when she found a doctor who listened, asked the right questions, and ordered appropriate tests. While a diagnosis does not make symptoms disappear, it provides a name for the struggle and a framework for management.
+But having a diagnosis doesn’t make the symptoms disappear. Living with PCOS is still a daily balancing act. Over time, I’ve learned ways to manage it – but more importantly, I’ve learned to talk about it. 
 
-Leah now emphasizes the importance of breaking the silence surrounding menstrual health:
-* **Self-Advocacy:** It is essential to keep pushing for answers when you feel unheard.
-* **Breaking Taboos:** Heavy bleeding is more than an inconvenience; it affects confidence, education, work, and relationships.
-* **Seeking Help:** If periods are so heavy that they disrupt daily life, it is vital to speak to a healthcare professional and explore available treatments.
+For too long, I stayed silent out of shame or fear of being dismissed. Now, I know that speaking up is a way of advocating for myself and helping others who might be struggling in silence.
+
+Menstrual health shouldn’t be a taboo subject. Heavy bleeding isn’t just an inconvenience – it can affect confidence, education, work, relationships, and everyday routines. For those with PCOS, it’s often just the start of a long list of symptoms.
+
+Looking back, I wish someone had told me it’s okay to keep pushing for answers, even when you feel unheard. Periods might not have a neat, measurable definition like a fever, but that doesn’t mean they shouldn’t be taken seriously. If your period is so heavy it’s disrupting your daily life, it’s worth talking about.

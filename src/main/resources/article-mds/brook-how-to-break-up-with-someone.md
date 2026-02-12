@@ -1,39 +1,47 @@
-# How to Break Up With Someone
+# How to break up with someone
 
-Breaking up with someone is rarely easy. Even if it is your decision, you will likely feel some sadness and miss aspects of your former partner. 
+## Summary
+*   **Overview** Breaking up is a difficult process that involves weighing up your feelings, considering safety, and communicating your decision as kindly as possible.
+*   **Disclaimer** The following content is from brook.org.
 
-Sometimes deciding to split up is straightforward—you just know it is the right thing to do. Often, however, it is not that clear-cut. You might feel that things are not as good as they used to be, or external factors like moving away for study or developing feelings for someone else may be causing confusion.
+Breaking up with someone is rarely easy. Even if it’s your decision, you’ll probably feel some sadness and miss things about your ex.
 
-## Weighing up the Pros and Cons
+Sometimes deciding to split up is straightforward – you just know it’s the right thing to do and the time has come to do it.
 
-If you are feeling confused, writing down your feelings can help. Try making a list of the following:
+But often it’s not that clear cut. If things are perhaps not as good as they used to be but does that mean you should end it?
 
-* The positive aspects of being in the relationship.
-* The disadvantages of being in the relationship.
-* How you would feel if you split up right now.
-* How you think you would feel if you split up in six months’ time.
+Maybe one you is about to move away to study and you don’t know if you want a long-distance relationship. Or maybe you’ve felt attracted to someone else and you’re not sure what this means for your relationship.
 
-Before making a final decision, you may also want to consider:
+## Weighing up the pros and cons
+If you too are feeling confused, you could try writing down how you feel.
 
-* **Talking to your partner:** Bringing up difficulties can be awkward, but if you are having doubts, they might be too. Talking and listening can help you work things out together.
-* **Talking to friends or family:** Voicing your feelings can help you see things more clearly. Friends can offer perspective, especially if you have been putting up with things that are not working for you.
+*   Make a list of the good things about being in the relationship
+*   Then list the disadvantages of being in the relationship
+*   Write down how you’d feel if you split up now
+*   Write down how you think you’d feel if you split up in six months’ time
 
-## Do You Feel Safe?
+This may help you weigh up the pros and cons of staying together or splitting up.
 
-If you are ever frightened of your partner or feel they try to control you, make you feel bad about yourself, or harm you physically or sexually, it is essential to get help. These behaviors are considered abuse, and abuse usually worsens over time. If you are in this situation, your safety is the priority.
+Before deciding, you could also consider:
 
-## How to End the Relationship
+*   **Talking to your partner about your doubts.** Bringing up difficulties in your relationship can be awkward. But if you’re having doubts, maybe they are too? By talking and listening to each other, you may be able to work things out together.
+*   **Talking to friends or family.** Sometimes, just voicing what you’re feeling can help you see things more clearly. It can be difficult to talk to a friend about the bad parts of your relationship but it’s really helpful to because they will often want more for you than you do yourself. If there’s things that you’re putting up with, your friend can give you the perspective needed to see if the relationship is working or not.
 
-Once you have made the decision to end it, planning what you will say can help you break the news as kindly as possible.
+## Do you feel safe around them ?
+If you’re ever frightened of your partner or can think of any way in which they try to control you, make you feel bad about yourself, or harm you physically or sexually, then it’s really important to get help.
 
-### 1. Be Kind
-Think about how you would want to be treated. While ending a relationship over text might be easier for you, it can be very hurtful. Unless there is a safety concern, consider the most respectful way to communicate based on your history with that person.
+These types of behaviour count as abuse and abuse usually gets worse over time.
 
-### 2. Choose Your Words
-Try to explain your reasons gently and honestly. Avoid saying hurtful things that do not need to be said. If you are certain about your decision, avoid saying things that might give them false hope for a future reconciliation.
+## You’ve made the decision and it’s time to end it, but how do you do it?
+There’s no set way to break up and it’s impossible to completely avoid upsetting the other person.
 
-### 3. Pick a Time and Place
-Choose a time when the other person is likely to be able to access support from friends or family. Avoid humiliating them by breaking up in a public place or in front of friends.
+But unless you really don’t care how they’ll feel, it’s worth planning what you’ll say to break the news as kindly as possible.
 
-### 4. Stay Safe
-If you are worried that your partner might become angry or violent, put your safety first. This might mean ending the relationship over the phone rather than in person, or having someone else nearby when you do it.
+*   **1. Be kind** If they were breaking up with you, would you want them to tell you in person, call you or do it by text? Would you be upset if other people found out about it first?
+
+    But you’re also likely to understand the other person quite well at this point, if you know breaking up over text is going to be really hurtful to them, it’s not the way to go about it.
+*   **2. Choose your words** Try to explain your reasons gently and honestly and avoid saying anything hurtful that you don’t need to say. You don’t need to tell them the reasons if there’s nothing they can do to change those reasons.
+
+    If you’re sure about your decision, avoid saying things that make them think there’s a chance in the future.
+*   **3. Pick a time and place** Choose a time when they’re more likely to be able to lean on friends or family for support. Avoid humiliating them by telling them in front of friends or in a public place.
+*   **4. Stay safe** If you’re in a situation where you’re worried that they might get angry or violent if you end with them, then you need to put your safety first. This might mean not meeting with them in person or having someone else with you.

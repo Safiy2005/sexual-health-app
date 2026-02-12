@@ -1,47 +1,47 @@
 # Loneliness
 
-When we think of loneliness and the people it affects, we often think of older people living alone. However, anyone can experience feelings of loneliness at any stage of life. It is important to remember that being lonely and being alone are very different things. 
+## Summary
+*   **Overview** Loneliness is an experience that can affect anyone at any life stage, and it is distinct from being alone. It is closely linked to mental health and can be exacerbated by various life changes and social pressures.
+*   **Disclaimer** The following content is from brook.org.
 
-Spending significant time alone doesn’t necessarily mean you are lonely. Conversely, even if you live with family, spend your day surrounded by people at school, or live in a busy city, you can still experience loneliness. 
+## Mental Health & Wellbeing
+*   **Loneliness** When we think of loneliness and the people affected by loneliness we often think of older people living alone, but anyone can experience feelings of loneliness at any stage of life. It is important to remember that being lonely and being alone are very different things. 
 
-While feeling lonely isn’t a mental health problem in itself, the two are closely linked. Loneliness can impact your mental health, and existing mental health problems can increase the likelihood of feeling lonely.
+Spending lots of time alone doesn’t necessarily mean you are lonely, and even if you live with your family or spend all day surrounded by other people at school or live in a busy city, you can still suffer from loneliness. 
 
-## Characteristics of Loneliness
-Research suggests there are five main characteristics associated with feeling lonely:
-* Having nobody to talk to
-* Feeling disconnected from the world
-* Feeling left out
-* Feelings of sadness
-* Not feeling understood
+Feeling lonely isn’t a mental health problem, but the two can be closely linked. 
 
-## Loneliness in Young People
-A 2018 survey reported that young people aged 16-24 feel loneliness more often than any other age group. During this period, the body undergoes significant physical and emotional changes, which can lead to feelings of isolation. 
+Feeling lonely can affect your mental health and mental health problems can increase your chances of feeling lonely. 
 
-Several factors can exacerbate loneliness for young people, including:
-* Moving to a new area
-* Starting a new school or university
-* Living with a long-term illness or disability
-* Losing a loved one
-* Going through a relationship breakup
-* Experiencing bullying or abuse
-* Feeling different from those around you
-* Comparing your life to others on social media
+Research suggests that there are five main characteristics of being lonely. These include: 
+* Having nobody to talk to 
+* Feeling disconnected from the world 
+* Feeling left out 
+* Sadness 
+* Not feeling understood 
 
-## Tips for Managing Loneliness
-There is no shame in feeling lonely. There are several proactive steps you can take to improve how you feel:
+In a 2018 Survey, young people aged 16-24 were reported to feel loneliness more often than any other age group. 
 
-* **Talk to someone:** Reach out to a trusted adult or friend about your feelings.
-* **Join a group:** Look for a club or activity that aligns with your interests.
-* **Volunteer:** Helping others is a meaningful way to meet people and can improve your overall mental wellbeing.
-* **Reconnect:** Reach out to friends or family members you haven’t spoken to in a while.
-* **Take small steps:** If being around people causes anxiety, start by visiting public spaces like a café or cinema where there is no immediate pressure to interact.
-* **Limit social media comparisons:** Remember that people often only share their "highlight reels" online. You don't know how they truly feel behind the screen.
-* **Seek professional support:** Many organisations provide free, confidential help via phone, text, or email.
+During this time the body is going through lots of changes both physically and emotionally, which can lead to feelings of isolation. 
 
-## Further Support and Resources
-If you need additional help, the following organisations offer specialized information and support:
+Here are some things that can make loneliness worse for young people: 
+* Moving to a new area 
+* Starting a new school or university 
+* Having a long-term illness or disability 
+* Losing someone you love 
+* Breaking up with someone 
+* Being bullied or abused 
+* Feeling different from the people around you 
+* Feeling like everyone on social media is having more fun than you 
 
-* **Mind:** Provides in-depth information about loneliness and strategies to overcome it.
-* **Action for Children:** Offers resources on how to combat loneliness.
-* **Young Minds:** Provides guidance on mental health and the importance of living in the present.
-* **Brook:** Offers further reading on how loneliness can impact your relationships.
+There is nothing embarrassing or shameful about feeling lonely, and there are some simple things you can do to help improve the way you feel.
+
+## Top tips :
+* Talk to an adult or a friend you trust about how you’re feeling 
+* Join a club or an activity you might be interested in 
+* Volunteer – this is a good way to meet people and helping others can really help improve your mental health 
+* Re-connect with friends or family that you haven’t spoken to in a while 
+* If being around people makes you feel anxious, start by going somewhere like the café or cinema where you are not expected to talk to anyone 
+* Be careful when comparing yourself to others, people on social media often only share what they want you to see. Remind yourself you don’t know how people feel when not on social media. 
+* Remember you are not alone, there are times when everyone feels lonely and there is always a way to reach out 
+* Get some help – there are lots of organisations that provide a free call, text or email helpline that can help you

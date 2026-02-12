@@ -1,41 +1,45 @@
-# Abortion: Helen’s Story
+# Abortion: Helen's Story
 
-Helen was 16 years old and about to take her GCSEs when she discovered she was pregnant. Below, she shares her experience of choosing abortion and why, 15 years later, she remains confident it was the right decision for her.
+## Summary
+*   **Overview** Helen shares her personal experience of finding out she was pregnant at age 16 and her decision to have an abortion, reflecting on the process and the impact of that choice 15 years later.
+*   **Disclaimer** The following content is from brook.org.
 
-## Discovering the Pregnancy
+## Abortion: Helen’s Story
 
-After taking a pregnancy test in a supermarket toilet and a second one to confirm, Helen found herself facing an unplanned pregnancy at a pivotal time in her education.
+At age 16, just before taking her GCSEs, Helen found out she was pregnant and decided she wanted to have an abortion. Read her experience of what happened, and why that choice remains the right one 15 years later.
 
-> "I can’t have a baby. I’m not ready to have a baby. I have exams coming up."
+I was sat in a cubicle of a supermarket toilet with two friends waiting for me on the other side. “What does it say?” “It’s positive.” “Are you sure?” “Yes.” 
 
-## Seeking Support
+I’d just taken a pregnancy test. The first one I’d ever taken. I raced to the pharmacy to buy another one. The pharmacist looked concerned, she recognised me from before, but she didn’t say anything. I went home and did it again. Positive. I’m pregnant.
 
-Helen first visited her GP to discuss her options. While she was not ready to tell her parents, she sought support from a trusted relative, her Aunt Kay, who helped her navigate the situation without judgment. 
+The next day I visited my GP, who asked me what had happened, how I felt, what I wanted to do. “I don’t know! It went in, it came out. He didn’t finish. How can this have happened? You can’t tell my parents. What can I do? I can’t have a baby. I’m not ready to have a baby. I have exams coming up.”
 
-She also spoke with her partner, Greg. Although they had only been together for three months and believed their sexual activity was low-risk, they reached a mutual agreement that abortion was the best path forward for both of them.
+I left the surgery and went straight to my Aunt Kay. I knew she wouldn’t judge me, I knew she wouldn’t turn me away and, most importantly, I knew she wouldn’t tell anyone else. We talked. She helped me think through my options and what would happen next. 
 
-## The Abortion Process
+“I can’t and won’t make you tell anyone. I know your parents and I know that, right now, them knowing isn’t helpful. But you should talk to Greg.”
 
-At the time of Helen's procedure (approximately 15 years ago), the process involved two distinct visits to a clinic located 30 miles away:
+I was so nervous. We’d only been together 3 months. Neither of us would have even said we’d had sex – that little slip in and out didn’t count. 
 
-* **The First Visit:** Included a scan and initial tests. Seeing the scan made the situation feel real, leading to a moment of questioning, but Helen ultimately reaffirmed her decision based on her lack of readiness for parenthood.
-* **The Second Visit:** The surgical procedure. Helen chose a surgical abortion under general anesthesia rather than medical abortion (pills) because it required fewer visits to the distant clinic.
-* **Recovery:** After waking from anesthesia and staying for observation, Helen felt an immediate sense of relief.
+“I need to tell you something and it’s important, but I don’t want you to freak out… I’m pregnant.” “What? How? We didn’t even… how?” He was shocked and confused but didn’t run away. We spoke about the situation. He asked if I would have an abortion. I told him that’s what I wanted, and asked if he was ok with it. He was. He wasn’t ready to have a baby any more than I was.
 
-While most healthcare professionals she encountered were non-judgmental, she noted one instance where a nurse made her feel judged when providing contraception. Helen emphasizes that her pregnancy was not deliberate and that access to non-judgmental care is essential.
+With the help of Aunt Kay, via my GP, everything was arranged. I would need to make two visits to the centre. One to go for a scan and tests, then another for the surgical procedure. I did have the option of the pills, but that would have meant three visits and the centre was over 30 miles away.
 
-## Reflections 15 Years Later
+At the first visit, seeing the scan image made it all feel very real very suddenly. I questioned the choice I was making, and ran through all the scenarios in my head. Would it be so bad? I don’t have any clear future plans, maybe this is what’s meant to happen? Other girls my age have had kids and they seem to be doing fine. Why would I be any different? 
 
-Helen has never regretted her choice. Choosing abortion allowed her to:
-* Complete her A Levels.
-* Attend university.
-* Establish a career in sexual health and relationships education.
-* Advocate for high-quality, safe, and non-judgmental healthcare for young people.
+No. I’m not ready. He’s not ready. Maybe I will be in the future, but not right now.
 
-## Important Considerations
+The morning of the second visit, the day it would happen, I was stood outside the station in my school uniform waiting for Aunt Kay to pick me up. As far as my parents knew, I’d gone to school. As far as school knew, I was ill. We drove the 30 miles to the clinic. I felt scared, nervous, guilty and, to be honest, a bit sick. 
 
-* **Accessing Services:** You do not have to visit your GP first. You can go to a Brook clinic for a referral or contact providers like BPAS or MSI Choices directly.
-* **Pregnancy Risks:** It is possible to get pregnant from vaginal sex even if the encounter is brief and even if ejaculation does not occur inside the vagina.
-* **Modern Procedures:** Medical abortion (using pills) has changed since Helen’s experience. In many cases, the second pill can now be taken at home, and scans and tests can often be completed on the same day.
+I got ready for the procedure. The nurse asked me if I wanted to insert the tablets to soften my cervix myself. I didn’t even know what my cervix was, so I asked if she could do it for me. Then I went through to anaesthesia. I can still remember so clearly the corner of the room, where the white ceiling met the pale blue wall, disappearing. 
 
-***
+When I woke up, I had a sense that something had happened but was a bit confused and disorientated, which is normal after anaesthesia. I wanted to get up and get out, but had to stay for a couple of hours to make sure I was ok. 
+
+Before I was discharged, I was seen by another nurse who forcefully handed me a packet of pills so it “won’t happen again”. Until then, all the professionals I’d seen had been very calm and non-judgemental, but this person made me feel like I’d done something wrong and deliberately got myself into this situation. I hadn’t.
+
+We left, parked up near the sea and got chips. I was so hungry by that point having fasted all day for the anaesthesia. It was then I realised that it was all over. No regret, just relief. I could carry on with my life.
+
+That was 15 years ago. Sometimes I wonder what it would be like if I had decided to go ahead with the pregnancy – would I be a cool, Lorelai Gilmore-type mum now? Would Greg and I have stayed together? I wonder, but I never regret the choice I made and I feel so fortunate that I had that choice. 
+
+Choosing to have an abortion allowed me to do my A Levels, go to university and start my career. It means I can do what I do now – working to ensure that all young people receive high quality relationships and sex education and access to safe, non-judgemental healthcare, including abortions. 
+
+It wasn’t an easy decision and it wasn’t taken lightly. But it was, for me, the right decision.

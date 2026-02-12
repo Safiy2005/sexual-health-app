@@ -1,37 +1,50 @@
 # Living with an STI
 
-There are many ways you can manage your symptoms, relationships, and circumstances to help make living with an STI easier. While some common STIs like chlamydia and gonorrhoea can be cured with treatment within a few weeks, others are caused by viruses. These viral STIs can be managed with medication but cannot be cured.
+## Summary
+*   **Overview** Managing an STI involves understanding treatment options for both curable and viral infections, addressing emotional well-being, and navigating relationships. While some infections are treated with a short course of medication, others are managed long-term, and support is available to help reduce stigma and maintain a healthy sex life.
+*   **Disclaimer** The following content is from brook.org.
 
-## Viral STI Treatments
+## Living with an STI
+There are many ways you can manage your symptoms, relationships and circumstances to help make living with an STI easier.
 
-Viral STIs include HIV, herpes, HPV, and hepatitis B. Management typically involves the following:
+Some STIs including the most common types, chlamydia and gonorrhoea can be treated and cured within a few weeks. However, STIs caused by viruses can be treated and managed with medication, but they can’t be cured. 
 
-* **HIV:** Treated with anti-viral medication to manage the virus and medication that prevents sexual partners from contracting HIV.
-* **Herpes:** Managed with antiviral medication to stop the virus from multiplying and to lessen the severity of symptoms.
-* **HPV:** There is no treatment for the virus itself, and most infections are cleared by the body within two years. If HPV causes genital warts, these can be treated with topical creams or by freezing them.
-* **Hepatitis B:** Managed using antiviral medication to help reduce symptoms.
+These viruses include HIV, herpes, HPV (which causes genital warts), and hepatitis B. Here are the treatments for each type:
 
-## Managing the Emotional Impact
+*   HIV is treated with anti-viral medication, as well as medication which prevents your sexual partners from getting HIV
+*   Herpes is treated with antiviral medication which stops the virus from multiplying, which can also lessen symptoms
+*   HPV has no treatment. Most HPV infections do not cause any problems and are cleared by your body within 2 years. However, if HPV causes genital warts , these can be treated with creams or by freezing them.
+*   Hepatitis B is managed using antiviral medication, which can help reduce the symptoms.
 
-It is common to experience complicated feelings after an STI diagnosis, including sadness, anger, fear, or uncertainty. However, having an STI does not mean the end of your sex life and is nothing to be ashamed of.
+There can be lots of complicated feelings around living with an STI. Some people feel sad, angry, fearful or uncertain about what this will mean for them. 
 
-### Overcoming Stigma
-Many people worry about the stigma associated with STIs and how it might change others' perceptions of them. Stigmatising people with STIs is unfair; contracting an STI is a very normal part of being sexually active. Plenty of people live happy, healthy lives while managing an STI.
+However, there are many ways you can manage your symptoms, relationships and circumstances that can mean living with an STI for any period of time doesn’t feel too difficult. 
 
-## Key Tips for Living with an STI
+If you are having concerns or complicated feelings about living with an STI, it can help to get more information and find emotional support. 
 
-* **Get support:** You don’t have to cope alone. Talk to trusted friends or contact local sexual health services and support groups.
-* **Tell your partners:** Disclosing your status to sexual partners can feel scary, but it becomes easier with practice. Sharing this information helps you move past shame and ensures both partners can make informed decisions.
-* **Learn to read your body:** With ongoing infections like genital herpes, you will become better at anticipating outbreaks, identifying triggers, and managing symptoms as they occur. 
-* **Do your research:** Seek out information from reputable organisations such as the Terrence Higgins Trust (HIV), the Herpes Viruses Association, Jo’s Cervical Cancer Trust (HPV), or the British Liver Trust (Hepatitis B).
+Although it might feel like it at first, it’s important to remember that having an STI won’t mean the end of your sex life and is nothing to be ashamed of.
 
-## If Your Partner Has an STI
+## Stigma
+A concern for many people living with an STI, particularly when they are first diagnosed, is the stigma associated with them. 
 
-If a partner tells you they have an STI, you may have questions about what it means for your own health and relationship.
+People often feel anxious that it will change how others think about them or that it will affect their sex life in the future. 
 
-* **Research the STI:** Use trustworthy websites to learn how the infection is passed and prevented. Explore ways to practice safer sex.
-* **Get tested:** If your partner is diagnosed, you should get tested as soon as possible, even if you do not have symptoms.
-* **Be kind:** Respond with empathy rather than shame or anger. If you feel negatively, research the stigma surrounding STIs to better understand where those feelings are coming from.
-* **Take your time:** It can take time to process a diagnosis, especially if the infection is viral. Look after each other and maintain confidentiality unless your partner gives you permission to tell someone else.
+Stigmatising people with STIs is unfair, as it can make them feel like there is something wrong with them, when actually it is very normal. 
 
-Remember, an STI diagnosis is not a disaster. It does not mean the end of your relationship, your sex life, or your overall health.
+Plenty of people live happy lives with an STI. 
+
+## Key tips to living with an STI
+*   **Get support** You don’t have to cope on your own – talking to people you trust about your feelings can make the experience of having an STI less daunting or scary. It’s okay to ask for support. There are also lots of organisations and support groups that can help with any STI you might have, particularly those which you live with long term. If you aren’t sure where to start, you can contact your local sexual health service to ask for advice.
+*   **Tell people about your sexual health status** It’s important to tell your sexual partners that you have an STI, and this can feel scary, but it doesn’t have to be. Having conversations about your sexual health status will become easier with practice, particularly as you reach a point where you don’t feel you need to apologise or have any shame around having an STI.
+*   **Learn how to read your body** With any ongoing infection, such as genital herpes, you will get better at anticipating when an outbreak might happen, what your triggers are, and how to manage your symptoms when they happen. With time and practice, you can get to a point where managing your STI will take up much less space in your mind than at the start.
+*   **Do your research** Living with an STI will have different implications depending on what STI it is.
+
+## If your partner has told you that they have an STI, you may have a lot of questions about what this means for you
+Some things you can do for yourself and your partner are:
+
+*   **Do some research** You could do this by looking at trustworthy websites or talking to a sexual health service about the STI, how it is passed and prevented. You can explore ways to practice safer sex while lowering the chances of getting the STI.
+*   **Get tested** If your partner has been diagnosed with an STI, there is a change you will also have it (even if you don’t have symptoms), so you need to get tested as soon as possible. If you are diagnosed with an STI, you can get treated.
+*   **Be kind** While you may have some complicated feelings about your partner’s diagnosis, it’s really important not to respond with shame or anger. If you are feeling those things, it might be useful to do some research into the stigma around STIs and work through where those feelings are coming from before discussing them with your partner.
+*   **Take your time** It can be a lot to take in if you partner is diagnosed with an STI, particularly if it is viral and therefore not curable. Take the time that you need to process and look after each other. You can also ask other trusted people in your life for support, although remember that if they haven’t given you permission to tell someone else about their diagnosis you must keep the information confidential.
+
+Remember, an STI diagnosis isn’t a disaster, whether it’s your partner or you that has been diagnosed! It won’t mean the end of your relationship, your sex life, or your own health.

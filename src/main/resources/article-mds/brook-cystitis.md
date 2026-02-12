@@ -1,51 +1,49 @@
-# Cystitis: Symptoms, Causes, and Treatment
+# Cystitis: What are The Symptoms, Tests & Treatments
 
-Cystitis is the soreness and swelling (inflammation) of the bladder. It is usually caused by a bladder infection and is a type of urinary tract infection (UTI). Although it is associated with sexual activity, it is not a sexually transmitted infection (STI).
+## Summary
+*   **Overview** Cystitis means soreness and swelling (inflammation) of the bladder. It is usually caused by a bladder infection and is not a sexually transmitted infection (STI). It is type of urinary tract infection (UTI).
+*   **Disclaimer** The following content is from brook.org.
 
-Cystitis can occur in anyone at any age, but it is more common in people with a vagina who are pregnant or sexually active. Almost all women will experience cystitis at least once, and approximately one in five will experience recurrent cystitis.
+## Cystitis
+*   Cystitis means soreness and swelling (inflammation) of the bladder. It is usually caused by a bladder infection and is not a sexually transmitted infection (STI). It is type of urinary tract infection (UTI).
+*   Cystitis can occur at any age, in anyone, but is more common in people with a vagina who are sexually active or pregnant. 
+*   Almost all women will experience cystitis at least once in their lifetime and around one in five women will get it again (known as recurrent cystitis).
 
-## Symptoms of Cystitis
+## Symptoms of cystitis include:
+*   A desperate and frequent need to wee but only passing small amounts
+*   Pain, burning or stinging when you wee
+*   Pain in directly above your pubic area, lower back or abdomen
+*   Wee that is dark, cloudy or smelly
+*   Traces of blood when you wee
+*   Feeling unwell, weak or feverish (hot and cold)
+*   **The symptoms of cystitis in people with a penis** can be caused by other conditions so should see their GP if they notice symptoms.
 
-Common symptoms include:
-* A desperate and frequent need to urinate, even if you only pass small amounts.
-* Pain, burning, or stinging sensations when urinating.
-* Pain directly above the pubic area, in the lower back, or the abdomen.
-* Urine that is dark, cloudy, or strong-smelling.
-* Traces of blood in the urine.
-* Feeling generally unwell, weak, or feverish (alternating between hot and cold).
+## Cystitis is usually caused by
+*   **Bacteria reaching the bladder** Cystitis is usually caused by bacteria reaching the bladder, irritating the bladder lining and causing an infection. 
+*   This is more common in people with a vagina because they have a shorter urethra, which makes it easier for bacteria to reach the bladder.
+*   **This bacterial infection is usually as a result of:**
+    *   Not emptying your bladder properly (this often happens during pregnancy).
+    *   Bacteria being transferred from the anus to the urethra which can happen during sex, inserting tampons, using a diaphragm or not wiping front to back when using the toilet.
+    *   Damage or irritation of the urethra which can be caused by sex, perfumed soap or talcum powder and kidney infections.
+    *   Thrush and STIs such as gonorrhoea or chlamydia .
 
-In people with a penis, these symptoms can be caused by other underlying conditions; therefore, they should consult a GP if symptoms appear.
+## Testing and diagnosis
+*   **Where to get tested** You can be tested and treated for cystitis at your nearest GP surgery or at GUM or sexual health clinics . 
+*   **How it is diagnosed** Cystitis can generally be diagnosed by describing your symptoms to but in some cases, your GP may also test your wee to look for bacteria. 
+*   **Recurring cystitis** If you have recurring cystitis (two infections within six month) that won’t respond to antibiotics, you may need to be referred to a specialist for more tests.
 
-## Causes of Cystitis
+## Treatment
+*   **Mild and serious cases** If it is mild, cystitis can be easily treated at home and should pass within a few days. 
+*   If it is a more serious case, a short course of antibiotics may be prescribed but if you keep on getting it (recurring cystitis) then you may be given a longer course of antibiotics.
 
-Cystitis is typically caused by bacteria reaching the bladder and irritating the lining. This is more common in people with a vagina because they have a shorter urethra, making it easier for bacteria to reach the bladder.
+## Things you can do to help
+*   Take paracetamol
+*   Place a hot water bottle on your tummy, back or between your thighs
+*   Rest and drink plenty of fluids – this helps your body to flush out the bacteria
+*   Make sure to wee when you feel the need to
+*   Avoid going anywhere without access to a toilet
 
-Common causes and triggers include:
-* **Incomplete bladder emptying:** This often occurs during pregnancy.
-* **Bacterial transfer:** Bacteria can be moved from the anus to the urethra during sex, when inserting tampons, using a diaphragm, or by wiping from back to front after using the toilet.
-* **Irritation or damage:** The urethra can be irritated by sex, perfumed soaps, talcum powder, or kidney infections.
-* **Other infections:** Conditions such as thrush or STIs (like gonorrhoea or chlamydia) can lead to cystitis.
-
-## Testing and Diagnosis
-
-Cystitis is generally diagnosed by a healthcare professional based on your description of symptoms. In some cases, a GP may test a urine sample to identify specific bacteria.
-
-* **Where to go:** You can be tested and treated at a GP surgery, GUM clinic, or sexual health clinic. 
-* **Brook services:** Brook does not offer testing or treatment for cystitis, but staff can advise you on where to seek help.
-* **Recurrent cases:** If you have recurring cystitis (two infections within six months) that does not respond to antibiotics, you may be referred to a specialist for further testing.
-
-## Treatment and Self-Care
-
-Mild cystitis often clears up on its own within a few days. More serious cases may require a short course of antibiotics. If the condition is recurrent, a longer course of antibiotics may be prescribed.
-
-### At-home care:
-* Take paracetamol to manage pain.
-* Place a hot water bottle on your abdomen, back, or between your thighs.
-* Rest and drink plenty of fluids to help flush bacteria out of your system.
-* Urinate as soon as you feel the need.
-* Ensure you have easy access to a toilet.
-
-### Important considerations:
-* **Sexual activity:** While you cannot pass a UTI to a partner, it is advisable to avoid sex until the infection has cleared, as it may be uncomfortable and aggravate symptoms.
-* **Medication:** Speak to a doctor before stopping any prescribed medication.
-* **Pain relief:** Avoid anti-inflammatory drugs like ibuprofen or aspirin until a GP has confirmed you do not have a kidney infection, as these can increase the risk of kidney complications.
+## Further advice
+*   **Sex and relationships** Although you cannot pass a UTI on to your partner, it’s wise to stop having sex until it’s cleared up because sex may be uncomfortable and aggravate your symptoms.
+*   **Medication and safety** Speak to your doctor before you stop taking any prescribed medication. 
+*   Avoid taking anti-inflammatory drugs like ibuprofen or aspirin until a GP has confirmed you don’t have a kidney infection, as this may increase the risk of kidney problems.

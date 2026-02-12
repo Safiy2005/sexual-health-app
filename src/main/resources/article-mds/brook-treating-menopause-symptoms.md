@@ -1,54 +1,57 @@
 # Treating menopause symptoms
 
-Perimenopause can be a challenging time characterized by changes to your body, emotions, and relationships. It is a common experience, with roughly 80% of women experiencing symptoms related to the menopause. For 25% of those individuals, symptoms are severe enough to detrimentally affect their family, home, and work life.
+## Summary
+*   **Overview** Perimenopause can be a challenging time with changes to your body, emotions and relationships. There are many ways to treat symptoms and get support, ranging from Hormone Replacement Therapy (HRT) and the hormonal coil to lifestyle changes and self-care.
+*   **Disclaimer** The following content is from brook.org.
 
-Everyone’s experience of menopause is unique; some may experience only a few symptoms, while others may experience almost all of them.
+## Menopause symptoms
+Roughly 80% of women experience symptoms related to the menopause. 25% of those with symptoms experience severe symptoms that detrimentally affect their family, home and work life.
 
-## Common symptoms
-Symptoms can start as early as the forties or even thirties during perimenopause and can last up to 10 years. Common symptoms include:
-* Hot flushes
-* Anxiety and depression
-* Tiredness and fatigue
-* Brain fog
-* Overactive bladder
-* Vaginal dryness
-* Difficulty sleeping
+Everyone’s experience of menopause is different – some experience a couple of symptoms while others will experience almost all of them. Symptoms can include (but aren’t limited to):
+*   hot flushes
+*   anxiety
+*   depression
+*   tiredness/fatigue
+*   brain fog
+*   overactive bladder
+*   vaginal dryness
+*   difficulty sleeping
 
-Generally, these symptoms subside after the menopause (defined as one full year without periods, or two full years if you are under 50) as hormone levels stabilize.
+For some people these symptoms can start as early as their forties or even thirties, as they begin to enter perimenopause, and can last as long as 10 years.
 
-## Hormone Replacement Therapy (HRT)
-HRT is a treatment used to manage menopause symptoms by replacing hormones that have fallen to low levels. It is highly effective, with 74% of users in one survey reporting that it helped them continue working.
+Generally, a lot of these symptoms subside after the menopause (one full year of having no periods or two full years if you’re under 50) as hormone levels become more stable.
 
-### Forms and types
-HRT comes in many forms, including:
-* Creams and gels for vaginal insertion
-* Lozenges
-* Skin patches
-* Pessaries or rings
+You may think menopause is something you have to put up with and go through alone but with symptoms so wide-ranging, long-lasting and impacting on every aspect of life, it’s important you don’t suffer in silence. There are lots of things you can do to help.
 
-Most HRT treatments contain oestrogen. If you have not had a hysterectomy, you will typically need combined HRT, which includes progestogen to protect the uterus. Some treatments also include testosterone. Because there are so many variations, you may need to trial different types to find the one that works best for you. 
+## HRT (hormone replacement therapy)
+HRT (hormone replacement therapy) is treatment for menopause symptoms that contains hormones that are very similar to those produced by the body that have fallen during the menopause.
 
-*Note: HRT is not suitable for everyone, depending on family history or certain underlying health conditions.*
+It comes in many different forms including:
+*   creams and gels you insert into the vagina
+*   lozenges
+*   skin patches
+*   pessaries or rings
 
-### How to access HRT
-* **GP Consultation:** Your doctor is the best place to start for advice on which treatment suits your symptoms.
-* **Over the Counter:** Gina (a vaginal tablet) can be purchased from pharmacies without a prescription.
-* **Cost Savings:** If you pay for HRT prescriptions three or more times in 12 months, you can save money using the NHS Hormone Replacement Therapy Prescription Prepayment Certificate (HRT PPC). This certificate covers unlimited HRT medications for 12 months for a set fee.
+There are also lots of different types of HRT. All of them contain oestrogen but there are also many that contain progestogen and testosterone in different levels.
 
-## Contraception and the Hormonal Coil
-Some people choose to have a hormonal coil (Mirena coil/IUS) inserted during perimenopause. This device serves a dual purpose: it prevents pregnancy and releases small amounts of progestogen, which can act as the progestogen component of HRT.
+If you haven’t had a hysterectomy (surgical removal of the uterus or ovaries), you will need to take combined HRT which contains progestogen as well as oestrogen. In one survey 74% of those who had started HRT reported that it helped them carry on working.
 
-## Self-care and lifestyle changes
-Prioritizing mental and physical health is key to managing perimenopause, menopause, and postmenopause. Small lifestyle adjustments can significantly improve wellbeing:
+*   **HRT isn’t for everyone** HRT is unfortunately not suitable for everyone depending on their family history or if they have certain health conditions. It’s also important to remember that as there are so many different types of HRT it might be that you need to trial a few different ones before finding the one that works best for you.
+*   **Where can I get HRT?** The best place to start is with your GP. They’ll be able to advise you what would work best depending on your symptoms. You can buy Gina, a vaginal tablet from pharmacies without a prescription. If you pay HRT through the NHS 3 or more times in 12 months then you can save money through the PPC (Prescription Prepayment Certificate). The PPC costs £19.30 and entitles you to an unlimited number of HRT medications for 12 months.
+*   **Hormonal coil** Some people choose to have the hormonal coil (Mirena coil/IUS) inserted during the perimenopause. This not only prevents pregnancy but also releases small amounts of progestogen which acts as HRT.
 
-* **Dietary adjustments:** Limit spicy foods, sugary foods, and wine, as these can trigger or worsen hot flushes and irritate the bladder.
-* **Exercise:** Regular physical activity helps manage weight, reduces hot flushes, and improves mood and anxiety.
-* **Smoking cessation:** Evidence suggests that smokers may enter menopause earlier and experience more severe hot flushes.
-* **Stress reduction:** Finding ways to lower stress can improve both mental and physical health.
-* **Calcium intake:** Lower oestrogen levels can reduce bone density. Ensuring you meet the daily recommended amount of calcium helps maintain bone strength and prevents fractures.
+## Selfcare
+Selfcare is key to managing the perimenopause, menopause and postmenopause. This is a time to prioritise your mental and physical health. It’s useful to tune into how you’re feeling and figure out ways to work your life around this. One key area is through lifestyle changes.
 
-## Hysterectomy
-A hysterectomy (the surgical removal of the uterus and sometimes the ovaries) may be an option for those who have explored all other treatments without success. This procedure should always be a personal choice made in consultation with healthcare professionals, family, and friends.
+*   **Limit spicy foods, sugary foods and wine** Spicy foods, sugary foods and wine can all make hot flushes worse. If you suffer overactive bladder symptoms these can also be bladder irritants that can cause your overactive bladder symptoms to worsen.
+*   **Exercise** Exercise helps prevent other health problems as well as helping with mood and anxiety, reducing hot flushes and managing weight.
+*   **Don’t smoke** There is evidence to suggest that people that smoke have an earlier menopause and experience worse hot flushes.
+*   **Reduce stress** Finding ways to reduce stress can dramatically improve your mental and physical health. Exercise can also be really helpful with this.
+*   **Calcium** Due to lower oestrogen levels, bone density can lower which can lead to bones that are more likely to break. Making sure you get your daily recommended amount of calcium can help improve bone density.
 
-## Support and Coaching
-You do not have to navigate the menopause alone. Support services, such as Brook’s MyLife Menopause Coaching Programme, are available to help individuals feel empowered and manage their symptoms with confidence.
+## Hysterectomies
+Hysterectomies (removal of the uterus and sometimes ovaries) can be useful for those people for which all other options have been explored but are still experiencing issues.
+
+A hysterectomy should always be your choice. It should never feel like it is forced upon you.
+
+It’s always useful to talk it through with a healthcare professional and/or family and friends before going through the procedure.

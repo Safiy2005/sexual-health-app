@@ -1,85 +1,92 @@
-# Genital Herpes: Symptoms, Tests, and Treatments
+# Genital Herpes: What are The Symptoms, Tests & Treatments
 
-Genital herpes is an infection caused by the Herpes Simplex Virus (HSV). There are two types: HSV-1 and HSV-2. Both can infect the genital and anal areas, as well as the mouth and nose (where they are commonly known as cold sores).
+## Summary
+*   **Overview** Genital herpes is caused by the virus Herpes Simplex (HSV). There are two types, HSV 1 and HSV 2 and both can infect the genital and anal area and also the mouth and nose (cold sores).
+*   **Disclaimer** The following content is from brook.org.
 
-## Symptoms of Genital Herpes
+## Symptoms
+Many people with HSV don’t have any visible signs or symptoms. If you do get symptoms they may include the following:
+*   Flu like symptoms such as fever, headache, aches and pains.
+*   Stinging, tingling or itching in the genital or anal area.
+*   Small fluid-filled blisters appear anywhere in the genital or anal area, as well as the buttocks or tops of the thighs – these burst leaving small, red sores which can be very painful.
+*   Pain when passing urine – due to the urine passing over the sores.
+*   May have vaginal or urethral discharge.
 
-Many people with HSV do not experience visible signs or symptoms. If symptoms do occur, they may include:
+The first outbreak can last up to two to four weeks with the sores generally healing within 5 to 10 days. The sores will eventually scab and heal without scarring.
 
-* Flu-like symptoms such as fever, headache, and general aches and pains.
-* Stinging, tingling, or itching in the genital or anal area.
-* Small fluid-filled blisters appearing on the genitals, anus, buttocks, or tops of the thighs. These burst to leave small, painful red sores.
-* Pain when passing urine (caused by urine passing over the sores).
-* Vaginal or urethral discharge.
+There is no cure for genital herpes so you may get further outbreaks. However, they are usually less severe and heal more quickly because your body will have had an opportunity to produce antibodies that fight infection.
 
-The first outbreak can last between two to four weeks, with sores generally healing within 5 to 10 days. Sores eventually scab and heal without scarring. While there is no cure, subsequent outbreaks are usually less severe and heal more quickly as the body produces antibodies.
+Some people find that certain things can trigger an outbreak, such as:
+*   Being unwell or run down
+*   Stress
+*   Certain times in your menstrual cycle
+*   Friction from sex or masturbation
+*   Sunbeds or sunbathing
+*   Tight non-cotton underwear
+*   Drinking and smoking too much
 
-## Common Triggers for Outbreaks
+## How it is passed on
+The virus is highly contagious and enters the body through small cracks in the skin or through the soft, moist lining of the mouth, vagina, rectum, urethra (where urine comes out) and under the foreskin.
 
-Certain factors can trigger a recurrent outbreak, including:
+*   **Warning** Herpes is passed on during sexual contact and is most likely to be passed on before, during or immediately after an outbreak. It is easiest to pass on when someone has blisters or sores. In some people the virus can be present without any symptoms of genital herpes and can be passed on (known as asymptomatic shedding).
 
-* Being unwell or run down.
-* Stress.
-* Certain times in the menstrual cycle.
-* Friction from sex or masturbation.
-* Sunbeds or sunbathing.
-* Tight, non-cotton underwear.
-* Excessive drinking or smoking.
+It is passed from one person to another through:
+*   Unprotected vaginal sex
+*   Unprotected anal sex
+*   Unprotected oral sex
+*   If you receive oral sex from someone who has a cold sore or is about to get one
+*   Your genitals coming into contact with your partner’s genitals
+*   Skin-to-skin contact during sex if the virus is active on the skin outside the area protected by a condom
+*   Sharing sex toys without washing them or covering them with a condom with each use
+*   If a person with whitlows (herpes on the hand) touches a partner’s vagina, genitals or anal area
 
-## How Genital Herpes is Passed On
+You cannot get herpes from hugging, sharing baths or towels, swimming pools, toilet seats or from sharing cups, plates or cutlery.
 
-The virus is highly contagious and enters the body through small cracks in the skin or the soft lining of the mouth, vagina, rectum, urethra, or under the foreskin. It is most likely to be passed on before, during, or immediately after an outbreak when blisters or sores are present. 
+## Testing
+You can only have a check-up for herpes when you have, or start to develop signs or symptoms. The doctor or nurse may be able to diagnose genital herpes by looking at the affected area but they will need to confirm this by taking a swab of fluid from the blisters in the affected area.
 
-However, it can also be passed on when no symptoms are present through a process known as asymptomatic shedding. Transmission occurs through:
+This involves:
+*   Brushing a swab (similar to a cotton bud) over the blisters
+*   It may sting a little but shouldn’t be painful
+*   The swab will be sent to a lab for testing
 
-* Unprotected vaginal, anal, or oral sex.
-* Receiving oral sex from someone with a cold sore.
-* Genital-to-genital contact.
-* Skin-to-skin contact if the virus is active outside the area protected by a condom.
-* Sharing sex toys without washing them or covering them with a new condom.
-* Touching a partner’s genitals if you have herpes on your hand (whitlows).
+You will normally get your result within one to two weeks. Genital herpes testing is free and you can get one at GUM or sexual health clinics or at some GP surgeries. Cervical smear tests and routine blood tests will not detect herpes.
 
-**Note:** You cannot get herpes from hugging, sharing baths, towels, swimming pools, toilet seats, or sharing cups and cutlery.
+When people get diagnosed with herpes, they can sometimes feel upset and embarrassed. However, there is nothing to be ashamed of – STIs are just like any other infection, and although it can’t be cured, herpes is treatable.
 
-## Testing and Diagnosis
-
-Testing is only possible when you have active signs or symptoms. A doctor or nurse will typically:
-
-1. Examine the affected area.
-2. Take a swab of fluid from the blisters (this involves brushing a small cotton-like bud over the sore, which may sting briefly).
-3. Send the swab to a lab for confirmation.
-
-Results are usually available within one to two weeks. Testing is free at sexual health clinics (GUM), Brook services, and some GP surgeries. 
-
-**Important:** Routine blood tests and cervical smear tests do not detect herpes.
+Having herpes won’t stop you from having an enjoyable and fulfilling sex life, and this is especially the case if you get tested and treated as soon as you show symptoms.
 
 ## Treatment
+Genital herpes will clear by itself however, seeking treatment early can significantly reduce the time the outbreak lasts and can help the healing process. It also reduces the risk of you passing it on to someone else.
 
-While herpes cannot be cured, it is treatable. Treatment is most effective when started within five days of the start of the first outbreak.
+You will be given antivirals which work by preventing the virus from multiplying but it does not clear the virus from your body completely.
 
-* **Antivirals:** You may be prescribed antiviral tablets (such as aciclovir, famciclovir, or valaciclovir) to be taken daily for five days. These prevent the virus from multiplying.
-* **Suppressive Treatment:** People who experience frequent outbreaks (usually more than six a year) may be prescribed a longer course of daily medication.
-* **Antibiotics:** These will not work because herpes is a virus, not a bacteria. Oral cold sore creams sold over the counter are also not effective for genital herpes.
+Treatment is usually started within five days of the start of the first outbreak. Treatment involves taking antiviral tablets daily for five days. There are various types of antivirals that may be prescribed, common ones include aciclovir, famciclovir and valaciclovir.
 
-## Managing Discomfort at Home
+*   **Important** Antibiotics will not work because genital herpes is a virus not a bacteria. The treatment you buy for oral cold sores will not work either.
 
-Antivirals stop the virus from multiplying but do not provide immediate pain relief. To ease discomfort and speed up healing:
+Some people find that another course of antivirals helps with further outbreaks. For people who have multiple outbreaks (usually more than six a year), they may be given longer courses of medication. This is known as suppressive treatment. This means taking antiviral medication for a longer time period.
 
-* Apply an ice pack wrapped in a plastic bag (avoid direct skin contact with ice).
-* Take a cool shower to soothe blisters.
-* Apply a local over-the-counter anaesthetic cream, such as lidocaine.
-* Bathing the area with warm salt water (one teaspoon of salt to one pint of water).
-* Urinate in a warm bath or shower if weeing is painful.
-* Drink plenty of fluids to keep hydrated.
-* Wear loose, cotton clothing.
-* Use over-the-counter painkillers.
-* Wash your hands before and after touching the area to prevent bacterial infection.
+## Things you can do to help
+Antivirals are only designed to stop the virus multiplying and will not help your discomfort in the short term. For this, there are a few simple things you can do to ease the discomfort and speed up the healing process:
+*   Apply an ice pack or ice cubes in a plastic bag (do not apply ice directly to skin)
+*   Take a cool shower to soothe the blisters
+*   Apply a local, over-the-counter anaesthetic cream such as lidocaine
+*   Gently bathe the area with warm salt water (dilute one teaspoon to one pint of water)
+*   Carefully pat the area dry
+*   If weeing is painful, go to the toilet in a warm bath or shower
+*   Wash your hands before and after touching the infected area to avoid introducing bacteria
+*   Keep hydrated and drink extra fluids
+*   Wear loose, cotton clothing
+*   Use an over-the-counter painkiller to help with pain and discomfort
 
-## Contraception and Pregnancy
+Avoid washing your genitals too often when you have an outbreak, as this won’t help to alleviate the symptoms.
 
-* **Contraception:** Antivirals are safe to use with hormonal contraception (the pill, patch, injection, or implant). 
-* **Pregnancy:** Genital herpes can be safely treated during pregnancy. It is essential to inform your midwife if you have a history of herpes so they can provide appropriate advice and management to protect the baby.
+The antivirals are safe to use with hormonal contraception (like the pill, patch, injection or implant) but talk to the person prescribing the treatment to make sure.
 
-## Preventing Transmission
+## Pregnancy
+Genital herpes can be safely treated during pregnancy. It is important to discuss with your midwife if you have, or have had, herpes infections.
 
-It is strongly advised that you avoid all sexual contact (vaginal, anal, or oral) from the moment you feel early symptoms (tingling/itching) until one week after the symptoms have completely disappeared.
+The treatment you receive may depend on whether it is your first herpes infection and also where in the pregnancy you are but your midwife will advise you.
+
+*   **Warning** It is strongly advised that you do not have any sexual contact before or during an outbreak and for a week after your symptoms have completely gone.

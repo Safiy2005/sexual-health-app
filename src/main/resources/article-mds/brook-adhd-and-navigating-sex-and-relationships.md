@@ -1,36 +1,45 @@
 # ADHD and Navigating Sex and Relationships
 
-ADHD (Attention Deficit Hyperactivity Disorder) is often stereotyped as simply being energetic or easily distracted. However, for many people living with ADHD, the condition significantly impacts emotional regulation, interpersonal relationships, and sexual experiences. Understanding these impacts—such as Rejection Sensitivity Dysphoria (RSD) and hyperfocus—is essential for navigating dating and intimacy.
+## Summary
+*   **Overview** Lois shares her personal experience of being diagnosed with ADHD and how it impacts her romantic relationships and sex life, covering topics like emotional dysregulation, rejection sensitivity, and hyperfocus.
+*   **Disclaimer** The following content is from brook.org.
 
-## Emotional Dysregulation and Rejection Sensitivity Dysphoria (RSD)
+Lois, 20, talks about her recent ADHD diagnosis, how this has impacted their sex and relationships and some tips for ADHD dating life. 
 
-Commonly overlooked symptoms of ADHD include emotional dysregulation and Rejection Sensitivity Dysphoria (RSD). These can make relationships feel emotionally taxing.
+My name is Lois (she/they), I’m 20 years old and I have ADHD. I was diagnosed pretty recently, in August 2022, and I want to share my experiences, specifically of navigating relationships and sex whilst having ADHD. 
 
-* **Emotional Dysregulation:** The brain may struggle to regulate the intensity of emotions, leading to feelings of being "oversensitive" or "emotionally fragile."
-* **RSD:** This involves an extreme sensitivity to criticism or the perception of rejection from loved ones. It can lead to a constant state of anxiety regarding the stability of a relationship.
+People perceive ADHD as a person being energetic, bouncing off the walls or distracted. This can be true for many ADHDers, but this stereotype doesn’t describe the majority of what we deal with on an everyday basis. 
 
-## Hyperfocus in Relationships
+Largely overlooked by-products of ADHD are emotional dysregulation and Rejection Sensitivity Dysphoria (RSD). Relationships to me, romantic or not, have always felt so emotionally taxing and I believed this was normal. 
 
-ADHDers often experience hyperfocus, which can manifest in romantic contexts as an intense fixation on a partner. This can lead to two common but contrasting behaviors:
+I always assumed I was an extremely oversensitive person and labelled myself as ‘hormonal’ and ‘emotionally fragile’. What I did not know, however, was that my brain was dealing with the cocktail of being unable to regulate the emotions I was feeling, whilst also being terrified of criticism and rejection from those close to me (RSD). 
 
-* **Intensity and People-Pleasing:** Early in a relationship, an ADHDer may love very intensely and seek constant reassurance due to low self-esteem, potentially creating an imbalance.
-* **Withdrawal and Emotional Shutting Off:** To protect themselves from a fear of rejection, some may become withdrawn or adopt a "blasé" attitude toward casual relationships as a defense mechanism.
+## Hyperfocus and Relationships
 
-Despite these challenges, ADHDers are often passionate, creative, and can become excellent communicators through self-awareness and learning.
+A tendency that ADHDers have is to hyperfocus – this can present itself in relationships when the ADHDer hyper focuses on their partner. I have always felt I was too intense with my partners, but at the same time needed reassurance from them due to the overarching problem of low self-esteem. 
 
-## ADHD and Sexual Health
+I dealt with this in two ways; either people pleasing, or completely shutting off emotionally. In my first relationship I was hyper focused and loving intensely which created an imbalance eventually leading to splitting up. 
 
-ADHD can directly impact a person’s relationship with sex, primarily due to how the brain processes dopamine.
+Last summer was my first proper relationship since my first partner and I completely swung my approach – I was withdrawn with my feelings and was extremely blasé about being casual with them. We both made big errors and misjudgements largely because of my huge fear of rejection and unhealthy coping mechanism at the time. 
 
-* **Dopamine-Seeking:** Because the ADHD brain often lacks sufficient dopamine, individuals may be more inclined toward thrill-seeking activities. This can result in a high libido or a more explorative, open-minded approach to sex.
-* **Concentration and Distraction:** Sex can be a point of hyperfocus where the individual is completely present. Conversely, it is also common for ADHDers to become easily distracted or "zone out" during intimacy.
-* **Fluctuating Libido:** Libido can fluctuate significantly. It is important to recognize that there is no "normal" sex drive, and individuals should not feel shamed for their level of desire.
+These two very different approaches sum up ADHD dating life – but there is a bright side! ADHDers make passionate and creative lovers. We work through problems with our passion for others; through learning, we can be excellent communicators. 
 
-## Tips for Navigating Relationships with ADHD
+## ADHD and Sex
 
-Managing ADHD within a relationship requires patience and specific strategies to maintain healthy boundaries and connection.
+Having ADHD can also impact your relationship with sex. Because of our lack of dopamine, ADHDers are more inclined to thrill-seeking i.e dopamine-seeking activities. This means we might be more explorative during sex and our sex drive can be pretty high. 
 
-* **Prioritize Communication:** Being open about an ADHD diagnosis can be vulnerable, but it helps partners understand specific behaviors. Clear communication builds a safe environment for authenticity.
-* **Self-Education:** Researching ADHD and connecting with others in the neurodivergent community can reduce feelings of isolation and help individuals understand their own emotional patterns.
-* **Practice Patience and Self-Care:** It is easy to lose oneself in hyperfocus on a partner. It is vital to take breaks, recognize when you need space, and enjoy your own company.
-* **Seek Counseling:** Professional support or therapy can be invaluable for managing the heavy emotional weight often associated with ADHD. Speaking with an impartial professional provides a healthy outlet for processing thoughts and feelings.
+I always thought I was strange for being open minded and having a high libido, at points I was even worried I was addicted. Society is a powerful thing in convincing people their sex drives and kinks are not normal – there is no such thing as a normal sex drive or sex life! 
+
+Sex is yet another thing we can hyperfocus on – sometimes, sex is one of the only times I can really be focused but sometimes I get easily distracted or feel myself zoning out. This is all very normal. 
+
+If you experience these things – you are not weird! And there are ways to work around it with your partner. As with many things in life, libido can fluctuate for everyone, and you should never be shamed for wanting a lot of sex or no sex at all. 
+
+With all these things whirling around in our heads constantly, it can be exhausting navigating sex and relationships when you have ADHD! However, there are things that can help. 
+
+## Tips for ADHD dating life
+*   **Communication!** An obvious one for everyone, ADHD or not. Telling someone you have ADHD can feel vulnerable but being open with your partner about how you feel is so beneficial in helping them understand you. When I first opened up to my current partner about how my ADHD affects the various aspects of our relationship, I was terrified. But if they are a decent person, they will be glad you told them! I have never felt so safe to be my authentic ADHD self, and that is how it should be!
+*   **Learn about yourself!** Take time to research ADHD – it can all feel very lonely at times and so speaking to others like you and sharing stories is so reassuring. It has been so beneficial to learn about why I may feel certain things and thus I am more stable in my relationships. I feel more confident and understand myself better than ever.
+*   **Be patient and take time for yourself!** It is often hard to put ourselves first and recognise when we need a break. Relationships always require some level of work and so make sure that even if you feel yourself hyper focusing on your partner, you can enjoy your own company too.
+*   **Counselling!** I have had a few cycles of counselling since I was 17 and I could not recommend it enough. ADHD is like having a heavy weight of emotion and thought in your head and heart constantly, and so relieving yourself of this from time to time with someone who is impartial is amazing.
+
+I hope what have said has been helpful, reassuring or just educational. I want people to understand themselves better, and for others to get a glimpse of what it is like living with ADHD. Although ADHD does not make us who we are, I believe it is not something to be ashamed of. The more we speak about it the less lonely we are and more awareness we can have!

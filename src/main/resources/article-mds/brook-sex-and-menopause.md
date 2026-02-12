@@ -1,63 +1,66 @@
-# Sex and the Menopause
+# Sex and the menopause
 
-First things first: menopause does not have to mean the end of your sex life. It is important to understand how some menopausal symptoms can get in the way of comfortable, pleasurable sex, and look at the changes you can make to help you have a fulfilling sex life.
+## Summary
+*   **Overview** Menopause does not have to mean the end of your sex life. By understanding how symptoms like hormone changes, physical discomfort, and mental health affect your libido, you can make adjustments to maintain a pleasurable and comfortable sexual experience.
+*   **Disclaimer** The following content is from brook.org.
 
-## Symptoms that might affect your sex life
+First things first: menopause does not have to mean the end of your sex life. Here, we look at some of the changes you can make to help you have great sex.
 
-### Affecting your desire for sex (libido)
-* **Mental health:** Anxiety and depression
-* **Low self-esteem**
-* **Mood swings**
-* **Changing relationships**
-* **Hormone changes:** Specifically lower oestrogen
+It’s important to understand how some menopausal symptoms can get in the way of comfortable, pleasurable sex.
 
-### Affecting your experience of sex
-* **Vaginal dryness**
-* **Pain during sex**
-* **Overactive bladder**
+Symptoms that might affect your desire for sex/sex drive:
+*   Mental health – anxiety and depression
+*   Low self-esteem
+*   Mood swings
+*   Changing relationships
+*   Hormone changes – lower oestrogen
 
-Experiencing pain or discomfort during sex can also negatively impact your sex drive and libido.
+Symptoms that might affect your experience of sex:
+*   Vaginal dryness
+*   Pain during sex
+*   Overactive bladder
+
+Experiencing pain or discomfort during sex can also impact you sex drive and libido.
 
 ## 1. Get support with your mental health
-If you’re not in the right headspace, it can be hard to become aroused (turned on). Mood swings, stress, anxiety, or depression can all affect your desire for sex. 
+If you’re not in the right headspace, it can be hard to become aroused (or turned on). As with any time in your life, mood swings, stress, anxiety or depression can all affect your desire for sex. Getting support can help.
 
-* **Communication:** Talking with your partner about how you feel can help them understand and support you. Explaining the physical or emotional effects of perimenopause and menopause can clarify why you might not be in the mood or why you need adjustments for comfort.
-* **Self-care:** Prioritising yourself through sleep, exercise, and socialising can improve your mental wellbeing.
-* **Inclusive support:** It can be difficult to ask for support, and some people face additional barriers, such as transgender people who may worry about "outing" themselves when discussing symptoms. Support is available regardless of your situation.
+Talking with your partner about how you feel and what’s going on for you can help them understand and support you.
+
+Explaining any physical or emotional effects of the menopause and perimenopause can help your partner understand why you’re not in the mood for sex, or if you need adjustments to help make sex more comfortable.
+
+You might also find prioritising yourself by getting enough sleep, doing exercise, meeting friends can also help with your mental health.
+
+It can be difficult to talk about the menopause and ask for support, and some people face additional barriers (including transgender people who may worry about ‘outing’ themselves by talking about or showing menopause symptoms). But whatever your situation, you’re not alone and there are places you can get support.
 
 ## 2. Let go of the script
-There are no rules regarding the type or frequency of sex you "should" be having. Everyone is unique, and preferences change over time, even in long-term relationships.
+There are no rules when it comes to what sex and how much sex you should be having. Everyone is unique and what we like changes over time. And that applies in long term relationships, too!
 
-Instead of viewing changes as a critique of past experiences, see them as an opportunity to broaden your horizons. Communicating and exploring with your partner can help you learn what feels pleasurable at this stage of your life.
+You might find that the type or frequency of sex you enjoyed in the past just doesn’t do it for you anymore, or you might be curious about trying new things.
+
+Feeling this way isn’t a critique of previous sexual encounters; rather, it’s an opportunity to broaden your experiences. By communicating and exploring together with your partner, you can learn about what feels pleasurable for you at this time of your life.
 
 ## 3. Be intimate in other ways
-You should never feel pressured to have sex. Simply being affectionate can be a valuable way to stay connected with your body and your partner without the need for sexual penetration.
+You shouldn’t feel any pressure to have sex, or a certain type of sex, if that’s not what you want.
+
+You might find simply being affectionate is a good way of helping you feel connected with your body and close to your partner.
 
 ## 4. Try new things
-It can be frustrating if what worked in the past no longer feels good. You may find it takes longer to become aroused or that different stimuli turn you on now.
+Finding out that the sex you’ve had in the past no longer works for you can be frustrating, especially if you don’t know what does work!
 
-* **Self-exploration:** Exploring what you like by yourself can help you get back in touch with your body.
-* **Redefining pleasure:** Sex doesn't have to end in an orgasm. Pleasure looks different for everyone at different times of life.
+It might take you longer to become aroused or turned on or you might find that different things turn you on now that didn’t before.
+
+Exploring what you like by yourself might be a good way to get in touch with your body and explore what feels good.
+
+There are lots of different types of sex and sex doesn’t have to end in an orgasm. Pleasure looks different for everyone and at different times of life.
 
 ## 5. Manage your physical symptoms
-Vaginal dryness and an overactive bladder can cause discomfort during vaginal sex (with partners or toys).
+If you want to have vaginal sex, either with sex toys or penises, both vaginal dryness and an overactive bladder can cause discomfort. Here are just a few things that might help:
 
-### Managing vaginal dryness
-* **Use lubricant:** Use lube during sexual activity.
-* **Vaginal moisturisers:** These can help if dryness affects your daily comfort.
-* **Medical support:** See your GP. They can prescribe Hormone Replacement Therapy (HRT) in the form of vaginal rings, creams, patches, or gels containing oestrogen to increase natural lubrication.
+*   **Vaginal dryness** Use lube during sex. Try vaginal moisturisers if vaginal dryness is effecting your daily life. See your GP – they might be able to prescribe HRT (hormone replacement therapy) in the form of vaginal ring, creams, patches and gels that contain oestrogen that can increase your arousal and natural lubrication.
+*   **Overactive bladder** Try different types of sex, e.g. oral. Put down a towel in case you leak during sex to give yourself peace of mind (this can be a good idea anyway – sex gets messy!). Try different sex positions – some positions put more pressure on the bladder than others. Go for a wee before sex so you’re less worried about leaking. Try reducing how much you drink in the build up to sex so there’s less pressure on the bladder. Practice pelvic floor exercises daily – these can help strengthen the muscles around the bladder and give you more control (as well as giving you stronger orgasms and increasing your sensitivity during sex!). Take breaks if needed – make sure you’re comfortable during sex, this includes going for a wee break if you need to.
 
-### Managing an overactive bladder
-* **Experiment with types of sex:** Try oral sex or other activities that don't pressure the bladder.
-* **Preparation:** Place a towel down to alleviate worries about leaking.
-* **Positions:** Some positions put less pressure on the bladder than others.
-* **Empty your bladder:** Go for a wee right before sex.
-* **Fluid intake:** Reduce drinks immediately before sex to decrease bladder pressure.
-* **Pelvic floor exercises:** Practicing these daily can strengthen bladder control and may lead to stronger orgasms and increased sensitivity.
-* **Take breaks:** Don't be afraid to pause for a bathroom break if needed.
+## See your GP
+If you experience menopause symptoms that are affecting your sex or day-to-day life for a few weeks or more, it’s worth seeing your GP.
 
-## When to see your GP
-If menopause symptoms affect your sex life or daily routine for more than a few weeks, consult your GP. They can discuss medication for an overactive bladder or recommend Hormone Replacement Therapy (HRT) to help manage your symptoms effectively.
-
-## Brook Menopause Coaching
-Brook’s MyLife Menopause Coaching Programme is available to help you feel empowered and navigate the menopause with confidence.
+They’ll be able to look into different options for you for example there are medications that can help with overactive bladder and your doctor may recommend Hormone Replacement Therapy (HRT) as a way of managing your symptoms.

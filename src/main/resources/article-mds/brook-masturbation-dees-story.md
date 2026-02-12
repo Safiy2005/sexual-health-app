@@ -1,37 +1,23 @@
-# Masturbation: Dee’s Story
+# Masturbation: Dee's Story
 
-Dee, 21, explains how buying their first sex toy allowed them to work through internalised misogyny and reclaim their own sexual pleasure.
+## Summary
+*   **Overview** Dee, 21, explains how buying their first sex toy allowed them to work through their own internalised misogyny in relation to pleasuring themselves!
+*   **Disclaimer** The following content is from brook.org.
 
-## Internalised Misogyny and Shame
-
-At age 21, I unboxed my first sex toy in front of my partner and asked him to use it on me. It wasn’t until after several experiences using a toy—both with and without my partner—that I realised a part of me felt shame for pleasuring myself.
-
-When I looked into the roots of this shame, it boiled down to internalised misogyny. While I had never had an issue with masturbating or shied away from it during sex, the physical presence of a silicone machine made me feel embarrassed. I felt uncomfortable even owning it, let alone using it.
-
-## The Impact of Social Conditioning
-
-Looking back, the disparity in how we learn about pleasure is stark:
-* **Education:** Female masturbation was never taught in my secondary school Relationship and Sex Education (RSE).
-* **Social Circles:** It was rarely discussed or was actively denied among girls I knew.
-* **Male Perspectives:** Conversely, boys discussed masturbation stories openly, drew penises on schoolwork, and shared pornographic videos.
-
-Growing up knowing more about male pleasure than my own speaks volumes about how women are conditioned to disregard their own sexual needs.
-
-## Introducing Toys into a Relationship
-
-One of the primary barriers I faced was the fear that my partner would feel "replaced" by a machine. After a mature conversation, we established that the toy was an aid for my pleasure and not a replacement for him. This communication was vital.
-
-I found that once these beliefs were dismissed, solo masturbation with a toy became "normal" and extremely pleasurable. The confidence I gained led to:
-* Using toys nightly.
-* Discussing toy use before sexual encounters.
-* Guiding my partner in how to please me.
-
-## Empowerment and Feminism
-
-Taking control of my orgasm felt like a true "feminism" moment. I shifted from being unable to ask for oral sex to feeling powerful and in control of my own body. 
-
-I realised that the lack of discussion around female masturbation in mass media and society means many girls know more about the penis than what is between their own legs. Dismantling these childhood-instilled behaviors has been a transformative experience.
-
-## Reclaiming Pleasure
-
-Masturbating with a toy is not something to be ashamed of or hidden away in a drawer. Taking control of your orgasm can be a form of rebellion against patriarchal standards. By exploring our own bodies, we can dismantle internalised beliefs that do not benefit us and find the confidence to be dominant and vocal about our needs in the bedroom.
+## Masturbation: Dee’s Story
+*   Age 21, I unboxed my first sex toy in front of my partner and asked him to use it on me. It wasn’t until after my first several experiences of using a sex toy, both with and without my partner, that I realised that a part of me felt shame for pleasuring myself.
+*   When I looked into why I felt this shame, it boiled down to my internalised misogyny. I had never had an issue with masturbating, I had never been one of those girls who denied masturbating (which is a form of internalised misogyny) and I had never shied away from pleasuring myself whilst having sex with a partner.
+*   However, the moment this silicone machine was in my hand, I felt embarrassed about owning it, let alone using it! Female masturbation was not taught in my secondary school RSE, and it was also either denied or never discussed between girls I knew.
+*   On the other end of the spectrum, boys would discuss their masturbation stories with one another (and frankly anyone), they would draw penises on every worksheet or pencil case, they would show one another porn videos that they had wanked to the previous night and even talk about us girls in the language of wanting to masturbate over us.
+*   I grew up knowing more about male pleasure than my own and I think that speaks volumes for how women are conditioned to disregard their own sexual pleasure. Let’s go back to not even a month ago; there’s me, this wand and my partner sitting on my bed.
+*   I am visibly uncomfortable holding this member and my partner can see that, once I had asked for him to use it on me, he took control of the situation and in minutes, I had climaxed. I was left in a puddle of mess on my bed, ‘dick drunk’ as I call it, with my partner beside me.
+*   After I had collected myself, we discussed how it made me feel and whether I would use it again, which was a healthy conversation to have with my partner and is one of the reasons I felt so comfortable in trying the toy out in a solo session.
+*   One of the thoughts that was instilled in me by my internalised misogyny was the fear that my partner would feel replaced by this machine. Yes, we did make jokes about me replacing him with a wand, however, we only did this after having a mature conversation about how this toy was aiding the scene, specifically my pleasure and was in no means replacing him.
+*   The fact that this belief had been dismissed made solo masturbation with a toy ‘normal’ and extremely pleasurable. I no longer felt guilty for using a toy on myself and began using my toys nightly.
+*   I found the confidence and comfortability to discuss using my toys with my partner before a sexual encounter, I was the one to bring up the use of a toy and I began guiding him in how to please me. I felt, for the first time, powerful and in-control of my own orgasm.
+*   Before this, I didn’t even have the confidence to ask my partner to give me oral sex and now, here I am, guiding him. This felt like a true ‘this is my feminism’ moment. Since that first orgasm, which I will say BLEW my mind, I have become way more comfortable with sex toys and have in fact collected up to 9 now… in less than a month!
+*   I began reading more into misogyny and how as a woman, I have internalised beliefs about my own sex life which do not benefit me. I realised that I could be a dominant in the bedroom and that in doing so, it did not mean I was any less of a woman.
+*   I realised that the discussion around female masturbation is so lacking in mass media, literature and society that many girls, like myself, know more about male masturbation than how to pleasure themselves. I realised that girls know more about the penis than what’s between their own legs.
+*   My world felt as if it was crumbling around me, but in the best way possible, all because I had taken control over my own orgasm and had begun to dismantle behaviours instilled in me from childhood.
+*   Did I fear posting my first selfie with a sex toy? Yes. However, I know now that masturbating with a toy is not something to be ashamed of, it is not something to hide away in your sock drawer and I think every woman should take a selfie with her toy.
+*   As a form of rebellion to the patriarchy, buy yourself a sex toy and take control of your orgasm.

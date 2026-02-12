@@ -1,53 +1,57 @@
-# Contraception, Hormones, and Mental Health: Georgia’s Story
+# Contraception, hormones and mental health: Georgia’s story
 
-Georgia shares her personal experience regarding the process of obtaining contraception for the first time, the significant impact hormones can have on mental health, and the importance of finding a contraceptive method that works for the individual.
+## Summary
+*   **Overview** Georgia shares her story about getting contraception for the first time, how hormones can affect mental health and how there’s no one-size-fits all when it comes to contraception.
+*   **Disclaimer** The following content is from brook.org.
 
-> **Content Warning:** This page contains discussions of depression and anxiety.
+**Content warning: This page has discussion of depression and anxiety.**
 
-## First Experiences with Contraception
+The first time I went to get contraception wasn’t actually for me, it was for a friend. We lied to our parents and said we were going shopping before we went to our drama class in the afternoon. We got a bus secretly from the town centre to this really obscure little clinic.
 
-Georgia’s first encounter with a sexual health clinic was at age 14 while supporting a friend. Her friend’s experience was characterized by a clinical, risk-reduction approach where she felt the staff were focused on "doing their job" rather than offering personal support. 
+We were fourteen I think, my friend couldn’t tell her mum because she knew that she would not let her do it. It would cause a massive argument because her mum was very against it. So we went by ourselves. It was literally in the middle of a housing estate, so being two young fourteen-year-old girls trying to do this by ourselves, it was quite daunting.
 
-In contrast, Georgia’s own experience at age 15 was facilitated by open communication with her mother. Her appointment with a nurse was supportive and educational, covering various options including:
-* The contraceptive pill
-* The contraceptive coil (IUD/IUS)
-* Various side effects and health considerations
+I was quite lucky, when I was turning fifteen, my mum approached me about sex whilst I was in my first relationship. She said ‘I want you to be able to talk to me, I want you to tell me everything’ and she said ‘it’s a natural part of being with someone, it’s a natural part of life and being a woman, so if you want to put yourself on any form of contraception tell me and we will get it sorted’.
 
-The nurse conducted a thorough assessment to ensure Georgia had the mental capacity to consent and was not being pressured into any decisions, making the experience feel personal and comfortable.
+I told my mum, maybe seven months into my relationship, that I was looking to start using some contraception. She said she’s here to support me if that’s what I wanted to do. She booked me an appointment with a nurse, I went in my myself.
 
-## The Impact of Hormones on Mental Wellbeing
+The nurse was really helpful, explained a bunch of different forms of contraception like pills, different side effects, the coil and all my different options. It was a friendly and welcoming experience. I felt like it was a very different experience to the experience my friend had when she went to the clinic. 
 
-Georgia was initially prescribed the combined pill. While it was effective for contraception, she experienced several physical and psychological side effects over time:
-* **Physical side effects:** Severe migraines during the first three months.
-* **Psychological side effects:** A gradual shift in personality leading to clinical depression, regular sobbing fits, heightened anxiety, and panic attacks.
+The clinic was a lot more sort of ‘you’re here’, ‘you’re young’, ‘we’re going to eliminate any risks’, so she had to be tested for STIs and she had to do them herself. It seemed a little bit more clinical. Very kind of ‘we’re here to do our job’ rather than ‘we’re here to support you’, that’s what my friend transferred to me. 
 
-Because these changes happened gradually, Georgia did not immediately link them to her medication. However, those close to her noticed the shift, leading her to seek further medical advice.
+Whereas, my nurse seemed very happy and open to talk to me about everything. She asked me a series of questions about my stability within the relationship to assess whether or not I was ready, because obviously I wasn’t sixteen yet. 
 
-## Finding the Right Method
+She gave me an array of questions to see if I had the mental capacity to consent to it. They weren’t just checking to see whether or not I had contracted anything, or whether it was a danger in that sense. She wanted to see whether I myself actually felt ready to do this and I wasn’t being pressured. 
 
-Upon returning to the doctor, Georgia’s concerns were taken seriously. The medical team discussed several alternatives:
-* Contraceptive injection
-* Contraceptive implant
-* Contraceptive coil
-* Progesterone-only pill (POP)
+It felt a bit more personal, I guess. So for me it was a really easy and comfortable experience. I felt like I walked away knowing everything I was getting myself into and had all the available options ready for me. 
 
-Due to the ability to stop the medication quickly if side effects returned, Georgia chose the progesterone-only pill. She has remained on this method for four years, noting that it balances her natural hormones and has improved her overall mood and stability.
+The nurse put me on the combined pill. I started on that for originally three months and I then went in for a further check-up after those three months. While I was starting that level of contraception in the first three months, I ended up suffering from really bad migraines. So I stopped for a short amount of time. After that I was given my check up and everything was fine, so I continued with a further six-month prescription.
 
-## Advice for Others
+I was around sixteen/seventeen and I had been on this pill for a really long time. I personally didn’t notice it, but I started to experience a lot of changes in myself. I don’t want to just call them mood swings because it was a lot more extreme than that. 
 
-Georgia emphasizes the importance of self-advocacy and research when it comes to sexual health:
-* **Seek Advice:** Consult medical professionals and talk to others about their experiences.
-* **Research:** Utilize available resources to understand the different options.
-* **Utilize the NHS:** Contraception is free on the NHS for all ages in the UK.
-* **Monitor Your Health:** Pay attention to how different methods affect both your physical and mental health.
+I didn’t notice it because it had happened so gradually to me, but my parents noticed and my friends and my boyfriend noticed. They kind of established that the pill was messing with my hormones so much that it made me virtually clinically depressed. I was constantly incredibly upset, having sobbing fits in the middle of the day and night. 
 
-## Support and Resources
+My anxiety was incredibly heightened, and I was having panic attacks very regularly. I was feeling incredibly unbalanced because of the pill. I went into the doctors and we spoke again, and again, they were very helpful. They didn’t discredit anything I was saying. They listened to everything I had to say, and they gave me all of my options over again. 
 
-### Finding Contraception
-There is no "one-size-fits-all" method. Many people try multiple types of contraception before finding the right one. You can discuss options with:
-* General Practitioners (GPs)
-* Local sexual health services
-* School or college nurses
+We talked through the injection, we talked through the implant and we also talked through the coil, but we established that probably wasn’t best for me and my body. The injection and the implant last for a number of months, whereas the pill you can stop it and it will exit your system. 
 
-### Mental Health Support
-Approximately 1 in 4 people in the UK experience a mental health problem each year. If you are struggling with your mental health due to hormonal changes or other factors, support is available. You do not need a formal diagnosis to seek help from your GP or mental health charities.
+We went with the pill again and this time they put me on progesterone only, which is a different type of hormone. I’m on that now and I have been on that since I was seventeen, so that’s coming up to four years now. I really reacted well to it. 
+
+I had very unhealthy periods before. My natural hormones are horrific, and I noticed a massive difference from being on the pill and being off the pill. I egg donated for a short period of time in 2018/2019. I had to be off the pill for that time and in that time frame I noticed my natural hormones were giving me grief. 
+
+I was displaying minor manic episodes during PMS time and things like that. I revisited the nurse and went back on to progesterone only contraceptive pill because I feel like it completely balances me out. It makes me feel a lot more contained in myself and a lot happier in myself.
+
+I guess what I would recommend to anyone in a similar situation is to honestly go and seek as much advice physically possible. I’ve had a multitude of people come up to me and ask me about my experiences and what I do and what I don’t do because I’m very vocal about the experiences that I have had and the medication that I do take. 
+
+I think it’s really important to talk about it. I know lots of girls don’t feel like they can discuss it and I think that is where issues start to arise because there is the uncertainty of the different options. 
+
+I gained all of my knowledge from just talking to people and doing my own research. I really think that having this option on the NHS is such a great opportunity. It’s free, and it’s something that other people in other countries definitely don’t get. 
+
+I feel like anyone who is feeling anxious about it, go and do your research and seek out the advice that you need. I felt that everyone I encountered in my experience, were so supportive and so helpful that it really put my mind at ease.
+
+## Finding contraception that’s right for you
+*   **Finding contraception that’s right for you** There’s no one-size-fits-all when it comes to contraception and many people will, with support from a medical professional, try more than one method in their lifetime. 
+*   **Finding contraception that’s right for you** If you have questions about contraception, whether you’re looking to start it for the first time, think that you might want to try a different method or are looking to stop using it, you can speak with your GP or local sexual health service to discuss your options. Remember: contraception is free on the NHS for all ages, so you won’t have to pay anything.
+
+## It’s OK not to be OK
+*   **It’s OK not to be OK** Approximately 1 in 4 people in the UK will experience a mental health problem each year (NHS England, 2020). 
+*   **It’s OK not to be OK** If you are worried about your mental health, or about someone else’s, there are lots of places that can offer you help and support. You don’t have to be diagnosed, you don’t even have to know exactly what’s wrong. Whenever you are ready to talk to someone, you can.
