@@ -521,6 +521,23 @@
     -fx-text-fill: #9AABAB;
 }
 
+/* Tag chips on article cards */
+.article-card-tag {
+    -fx-background-color: #EDE5DD;
+    -fx-text-fill: #6B8080;
+    -fx-font-size: 10px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 1px 7px;
+    -fx-background-radius: 8px;
+}
+
+/* Highlighted tag (matches current search query) */
+.article-card-tag-highlighted {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+}
+
 /* Empty / loading state */
 .search-empty-label {
     -fx-font-size: 14px;

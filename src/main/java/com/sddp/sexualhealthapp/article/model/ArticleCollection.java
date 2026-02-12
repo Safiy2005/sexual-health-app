@@ -7,6 +7,7 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 import com.sddp.sexualhealthapp.util.AppConstants;
@@ -18,6 +19,7 @@ public class ArticleCollection {
     private ArticleCollection() {
         articles = new ArrayList<>();
         loadArticles();
+        attachMetadata();
     }
 
     public static ArticleCollection getInstance() {
@@ -45,9 +47,22 @@ public class ArticleCollection {
         try {
             String content = Files.readString(path);
             Article article = new Article(content);
+            article.setFileName(path.getFileName().toString());
             articles.add(article);
         } catch (IOException e) {
             System.err.println("Error reading article file: " + path + " - " + e.getMessage());
+        }
+    }
+
+    private void attachMetadata() {
+        Map<String, ArticleMetadataLoader.ArticleMetadata> metadata =
+                ArticleMetadataLoader.loadMetadata();
+
+        for (Article article : articles) {
+            ArticleMetadataLoader.ArticleMetadata meta = metadata.get(article.getFileName());
+            if (meta != null) {
+                article.setTags(meta.getTags());
+            }
         }
     }
 
