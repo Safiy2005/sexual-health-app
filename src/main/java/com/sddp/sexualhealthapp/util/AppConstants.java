@@ -51,7 +51,8 @@ public final class AppConstants {
     public static final int MAX_DISPLAY_DIGITS = 15;
 
     /**
-     * Delay in milliseconds before transitioning to main app after successful authentication.
+     * Delay in milliseconds before transitioning to main app after successful
+     * authentication.
      * This prevents the transition from looking too obvious.
      */
     public static final int TRANSITION_DELAY_MS = 500;
@@ -103,7 +104,7 @@ public final class AppConstants {
     /**
      * Default crossfade duration for setup↔calculator transitions (ms).
      */
-    public static final int SCENE_CROSSFADE_MS = 300;
+    public static final int SCENE_CROSSFADE_MS = 150;
 
     /**
      * Fast crossfade duration for the lock button transition (ms).
