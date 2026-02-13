@@ -1,61 +1,52 @@
-# Mycoplasma Genitalium (MG)
+# Mycoplasma Genitalium (MG): What are The Symptoms, Tests & Treatments
 
-Mycoplasma genitalium, also known as MG or Mgen, is the smallest bacterial sexually transmitted infection (STI). Most people with the infection do not experience symptoms, and it is not routinely tested for in individuals without symptoms.
+## Summary
+*   **Overview** Mycoplasma genitalium, also known as MG or Mgen is the smallest bacterial sexually transmitted infection (STI). Most people with the infection don’t experience symptoms and it is not routinely tested without symptoms. There are often no signs or symptoms for MG.
+*   **Disclaimer** The following content is from brook.org.
 
-## Symptoms of MG
+## Mycoplasma genitalium (MG)
+Mycoplasma genitalium, also known as MG or Mgen is the smallest bacterial sexually transmitted infection (STI). Most people with the infection don’t experience symptoms and it is not routinely tested without symptoms. There are often no signs or symptoms for MG. If you do have symptoms, they can often take a while to appear and you might notice:
 
-Often, there are no signs or symptoms of MG. If you do experience symptoms, they can take a while to appear and may include:
+## Signs and symptoms in people with a vagina:
+*   Pain when peeing
+*   Bleeding after sex
+*   Painful bleeding between your periods
+*   Pelvic and lower abdominal pain
+*   Vaginal discharge
 
-**Signs and symptoms in people with a vagina:**
-* Pain when peeing
-* Bleeding after sex
-* Painful bleeding between periods
-* Pelvic and lower abdominal pain
-* Vaginal discharge
-
-**Signs and symptoms in people with a penis:**
-* Discharge from the penis
-* Pain when peeing
-* Redness and irritation of the penis
-* Urethritis
+## Signs and symptoms in people with a penis:
+*   Discharge from the penis
+*   Pain when peeing
+*   Redness and irritation of the penis
+*   Urethritis
 
 ## Complications
+If left untreated MG may cause further complications such as pelvic inflammatory disease (PID), premature birth and swelling of the testicles. 
 
-If left untreated, MG may cause further complications such as:
-* Pelvic inflammatory disease (PID)
-* Premature birth
-* Swelling of the testicles
+WARNING MG is linked with infertility but there are no studies to verify this.
 
-**Note:** MG is linked with infertility, though there are currently no studies to verify this definitively.
+## Transmission: Part 1
+MG is found in the semen (sperm) and vaginal fluids of people who have the infection. It can passed from one person to another through:
+*   Unprotected vaginal sex
+*   Unprotected anal sex
+*   Unprotected oral sex (no evidence so unlikely)
+*   Your genitals coming into contact with your partners genitals (no data)
+*   Sharing sex toys without washing them or covering them with a condom with each use (no data)
 
-## How MG is Passed On
+## Transmission: Part 2
+You don’t need to have had lots of partners and your partner doesn’t need to have experienced symptoms to pass it on to you. You cannot get MG from kissing, hugging, sharing baths or towels, swimming pools, toilet seats or from sharing cups, plates or cutlery. MG is often present at the same time as other infections such as chlamydia which can make it harder to diagnose.
 
-MG is found in the semen and vaginal fluids of people who have the infection. It can be passed from one person to another through:
-* Unprotected vaginal sex
-* Unprotected anal sex
-* Sharing sex toys without washing them or covering them with a new condom for each use
+## Testing: Part 1
+The nurse or doctor will not routinely test people without symptoms, even if they have another STI such as chlamydia or gonorrhoea . This is because over-testing could lead to unnecessary treatment, which could lead to antibiotic resistance. Testing for MG is really simple and usually involves a simple urine test or genital swab. 
 
-There is no evidence that MG is passed through unprotected oral sex, and no data to suggest it is passed via genital-to-genital contact without penetration. You cannot get MG from kissing, hugging, sharing baths or towels, swimming pools, toilet seats, or sharing cutlery and plates.
+## Testing: Part 2
+For people with a penis, a urine sample is collected when the bladder has not been emptied for some time, when it’s likely the urine is most concentrated with bacteria. For people with a vagina, a swab ist taken of the vagina and cervix. If left untreated MG can develop a resistance to antibiotics and become difficult to treat.
 
-## Testing for MG
+## Treatment: Part 1
+MG is treated with the antibiotics. If diagnosed with MG you are advised to avoid sex until you and your partner have been treated. This is because you might pass the infection back to each other. Use condoms until you have a test 5 weeks after starting treatment to make sure you are clear of MG. This is because some antibiotics may not kill off the infection.
 
-MG is often present at the same time as other infections, such as chlamydia, which can make it harder to diagnose. Doctors and nurses do not routinely test people without symptoms—even if they have chlamydia or gonorrhoea—because over-testing can lead to antibiotic resistance.
+## Treatment: Part 2
+Tell the nurse or doctor if you are pregnant or think you may be, or if you are breastfeeding as you might need a different antibiotic to the routine ones used.
 
-Testing is simple and usually involves:
-* **For people with a penis:** A urine sample, ideally collected when the bladder has not been emptied for some time so the urine is concentrated with bacteria.
-* **For people with a vagina:** A swab taken from the vagina and cervix.
-
-## Treatment
-
-MG is treated with antibiotics. It is important to treat it correctly, as untreated MG can develop resistance to antibiotics and become difficult to manage.
-
-If you are diagnosed with MG:
-* **Avoid sex:** Do not have sex until both you and your partner have completed treatment to avoid passing the infection back and forth.
-* **Use condoms:** Use condoms until you have a follow-up test (usually 5 weeks after starting treatment) to ensure the infection is clear. Some antibiotics may not successfully kill the infection.
-* **Pregnancy and breastfeeding:** Tell your healthcare provider if you are pregnant, think you might be, or are breastfeeding, as you may require a different type of antibiotic.
-
-## Telling Your Partners
-
-It is important to inform your current and any recent sexual partners (from the last six months) that you are being treated for MG so they can also access treatment. 
-
-Most clinics offer "partner notification" services. They can contact your partners anonymously via digital services like SXT or by sending messages, inviting them to get checked without mentioning your name or personal details.
+## TELL YOUR PREVIOUS PARTNERS
+It is important that you tell your current and any recent sexual partners (last six months) that you are being treated for MG, so that they can access treatment too. All clinics offer to contact your partners either using a digital service called SXT, or send messages to them anonymously, inviting them to get checked for STIs. This is called partner notification and it doesn’t mention your name or information about your care.

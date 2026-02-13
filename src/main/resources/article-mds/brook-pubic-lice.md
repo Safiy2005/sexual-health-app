@@ -1,57 +1,46 @@
-# Pubic Lice (Crabs): Symptoms, Diagnosis, and Treatment
+# Pubic Lice (crabs): What are The Symptoms, Tests & Treatments
 
-Pubic lice, often referred to as ‘crabs,’ are very small, crab-like parasitic insects that live on pubic hair. While they are often associated with sexual activity, they are passed on through any form of close body contact.
+## Summary
+*   **Overview** Pubic lice (crabs) are tiny parasitic insects that live on coarse body hair and are spread through close body contact. They cause itching and skin irritation and can be treated with specialized insecticide lotions.
+*   **Disclaimer** The following content is from brook.org.
 
-## What are pubic lice?
+## Pubic lice (‘crabs’): Part 1
+Find out about the symptoms, causes and treatment of pubic lice. Pubic lice are very small, crab-like parasitic insects which live on the pubic hair. Pubic lice are not necessarily sexually transmitted, but are passed on through close body contact. Pubic lice can take a few weeks to appear so you may not notice them immediately or have any symptoms.
 
-Pubic lice are tiny insects, approximately 2mm in size, making them difficult to see. They have six legs, including two larger claw-like legs which give them their nickname. They are typically yellow-grey or red in color. 
+## Pubic lice (‘crabs’): Part 2
+When they do appear, they are tiny (approximately 2mm) and difficult to see. If you can see them, they are six-legged, with two larger legs like claws (which is why they are sometimes called ‘crabs’). They are often yellow-grey or red in colour and they attach their eggs to the base of the hairs. The eggs are pale brown in colour and the empty egg sacs are white.
 
-Lice attach their eggs to the base of hairs. These eggs are pale brown, while the empty egg sacs appear white. Unlike head lice, pubic lice prefer coarser hair and do not live on the head. They survive on human blood and can live for approximately 24–48 hours away from a human body.
+## Other signs and symptoms include:
+*   **Common symptoms** Itching in the affected areas (caused by a reaction to the louse saliva), Black powder in your underwear (this is the droppings from the lice), Brown eggs on pubic or other body hair, Irritation and inflammation in the affected area (sometimes caused by scratching), Sky-blue spots or very tiny specks of blood on the skin (caused by lice bites).
+*   **Affected areas** As well as pubic hair, they may also be found on underarm, leg, back or facial hair. Eyelashes and eyebrows can also be affected but this is less common.
 
-## Symptoms
+## Having pubic lice is in no way a sign of poor hygiene: Part 1
+Having pubic lice is in no way a sign of poor hygiene. They can be passed on through any close body contact including vaginal, anal or oral sex and they may be passed on by sharing towels and bed linen (though this is much less common as lice can only survive for around 24-48 hours if not in contact with the human body). 
 
-It may take a few weeks for symptoms to appear after the initial infestation. Common signs include:
+## Having pubic lice is in no way a sign of poor hygiene: Part 2
+They cannot jump like fleas or fly and they survive on human blood. Pubic lice cannot transmit HIV or other STIs. Pubic lice are different to head lice and do not live in the hair on your head. They prefer coarser but more widely spaced hair. Condoms will not protect you from pubic lice.
 
-* **Itching:** Often caused by a reaction to the louse saliva.
-* **Black powder:** Droppings from the lice found in your underwear.
-* **Visible eggs:** Brown eggs attached to pubic or other body hair.
-* **Skin irritation:** Inflammation or redness, often caused by scratching.
-* **Spots:** Sky-blue spots or tiny specks of blood on the skin caused by lice bites.
+## If you suspect you have pubic lice
+If you suspect you have pubic lice, you need to visit a GUM or sexual health clinic or your local GP surgery. There is no test for pubic lice but it is easy for a doctor or nurse to diagnose by examining the areas with a magnifying glass. They will be looking for the lice and their eggs.
 
-While most commonly found in pubic hair, lice can also affect hair on the underarms, legs, back, chest, or face. In less common cases, they may be found in eyelashes and eyebrows.
+## Pubic lice will not go away without treatment: Part 1
+Pubic lice will not go away without treatment and are likely to be passed to someone else. Treatment can be done at home using special types of insecticide lotions, creams or shampoo which you can get these on prescription or over the counter at a pharmacy.
 
-## Transmission and Prevention
+## Pubic lice will not go away without treatment: Part 2
+If they are left untreated, the lice may spread to other parts of the body. The side effects can also cause other issues such as skin irritation and infections. You may find there are empty eggshells stuck to the hairs after treatment but this doesn’t necessarily mean you still have pubic lice.
 
-Having pubic lice is not a sign of poor hygiene. They are transmitted through:
-* Close body contact, including vaginal, anal, or oral sex.
-* Sharing towels or bed linen (less common).
+## Make sure to…
+*   Apply the solutions to the affected area or your whole body
+*   Repeat the process again after three to seven days to ensure the eggs are killed off as well
+*   Return to your doctor if the treatment doesn’t work – sometimes pubic lice can develop a resistance to the treatment
+*   Check for lice a week after treatment or return to your local GUM or sexual health clinic or GP to get them to check for you
+*   Ensure that anyone you have had close body contact with is treated too – as well as anyone you live with
+*   Wash your sheets and towels at 50 degrees or higher to kill off the lice and their eggs
 
-**Important notes on prevention:**
-* **Condoms:** Condoms do not protect against pubic lice as they do not cover all hair-bearing areas.
-* **Shaving:** Shaving is not an effective preventative measure, as lice only need a tiny amount of hair to lay eggs.
-* **Transmission:** Pubic lice cannot jump or fly, and they do not transmit HIV or other STIs.
+## Avoid…
+*   Having further close body contact until you and your partner have finished treatment.
+*   Having any sexual intercourse, including vaginal, anal or oral sex until you and your partner have finished treatment and any follow up treatment.
+*   Shaving; it won’t do any harm but it won’t necessarily protect you from further infestations because pubic lice only need a tiny amount of hair to lay eggs on.
 
-## Diagnosis
-
-If you suspect you have pubic lice, you should visit a Brook service, a GUM (genitourinary medicine) clinic, a sexual health clinic, or your GP. 
-
-There is no laboratory test for pubic lice. A doctor or nurse will diagnose the infestation by examining the affected areas with a magnifying glass to look for the lice and their eggs.
-
-## Treatment
-
-Pubic lice will not go away without treatment. If left untreated, they may spread to other parts of the body or be passed to others. Treatment usually involves insecticide lotions, creams, or shampoos available via prescription or over the counter at a pharmacy.
-
-**How to treat pubic lice:**
-* Apply the treatment solution to the affected area or the whole body as directed.
-* Repeat the process after three to seven days to ensure any newly hatched lice are killed.
-* Wash all bed sheets and towels at 50°C or higher to kill any remaining lice or eggs.
-* Ensure any sexual partners or people you live with are treated at the same time to prevent re-infestation.
-
-**Pregnancy and Breastfeeding:**
-You can treat pubic lice while pregnant or breastfeeding, but you must consult a doctor, nurse, or pharmacist to ensure the specific treatment is safe for use.
-
-## After Treatment
-
-* **Follow-up:** Check for lice one week after treatment. If you still see lice, return to your healthcare provider, as some lice may be resistant to certain treatments.
-* **Sexual Contact:** Avoid all close body contact and sexual intercourse until both you and your partner(s) have fully completed the treatment and any necessary follow-up.
-* **Egg Shells:** You may still see empty white eggshells stuck to hairs after successful treatment; this does not necessarily mean you are still infested.
+## You can treat pubic lice while you are pregnant or breastfeeding
+You can treat pubic lice while you are pregnant or breastfeeding but do let your doctor, nurse or pharmacist know – they will advise which treatments are safe to use.

@@ -1,43 +1,35 @@
-# Anxiety: Kanika's Story
+# Anxiety: Kanika’s story
 
-Kanika, 23, shares her journey with anxiety over the years, including her experience using medication to help manage her symptoms.
+## Summary
+*   **Overview** Kanika, aged 23, recounts her long-term journey with anxiety, from her initial diagnosis at age 14 through her challenging university years and her eventual positive experience using Sertraline to manage her mental health.
+*   **Disclaimer** The following content is from brook.org.
 
-## Early Experiences and First Diagnosis
+## Kanika’s story: Part 1
+Kanika, 23, talks about her experience with anxiety over the years and her experience using medication to help manage it. The first time I saw a therapist was when I was 14, shortly after my grandfather’s death. This was the first time that someone close to me had died. My brain could not process it. I began having recurring dreams about my own demise and started to overthink everything. Especially as I started to go through puberty and became concerned about fitting in at school and how others would perceive me. After a referral from my doctor, I started counselling with the NHS Child and Adolescent Mental Health Services.
 
-My first encounter with therapy was at age 14, following the death of my grandfather. This was my first experience with the death of a close family member, and my brain struggled to process it. I began having recurring dreams about my own demise and developed a tendency to overthink everything. These feelings intensified as I went through puberty, bringing concerns about fitting in at school and how others perceived me.
+## Kanika’s story: Part 2
+I was diagnosed with social anxiety and mild depression. A few months later, I left with a folder full of healthy coping mechanisms, breathing exercises and journaling prompts. I finished my GCSEs and A-Levels with minimal problems. Then, I embarked on a gap-year filled with solo travelling before studying Archaeology at UCL. The problems began again during my second year of university. I stopped attending my classes and handing in assignments. I did not attend social gatherings without consuming alcohol beforehand. Even falling asleep became an issue. I slowly became paralysed with fear and indecision, consumed by stress and anxiety. 
 
-After a referral from my doctor, I began counselling with the NHS Child and Adolescent Mental Health Services. I received diagnoses of social anxiety and mild depression. A few months later, I concluded my sessions equipped with a folder full of healthy coping mechanisms, breathing exercises, and journaling prompts. I successfully completed my GCSEs and A-Levels with minimal problems. Subsequently, I embarked on a gap year filled with solo travel before commencing my Archaeology degree at UCL.
+## Kanika’s story: Part 3
+Every action felt like the wrong one. I didn’t feel like I could trust my judgement. I watched a show about phrogging (when someone secretly lives in another person’s home without their knowledge) and was convinced this could be happening to me. Even though it would have been impossible for a stranger to be living in my tiny one bedroom flat. During that year I missed so many assignments that I almost had to drop out or repeat the year again. Thankfully, my department and a lovely university counsellor worked with me to get back on track. 
 
-## University Challenges
+## Kanika’s story: Part 4
+A few months later, Covid hit. I began to work with an online therapist to curtail my developing health anxiety. I am a massive advocate for therapy. However, it felt like I was discussing the same issues without making any progress. Yes, I know that I should exercise again. But, how can I go for a run when my brain is telling me how embarrassed and scared I should be? That everyone will be laughing about how unfit I am or at my clothes or at my technique. If I go outside, I might contract an illness. 
 
-The problems resurfaced during my second year of university. I stopped attending classes and submitting assignments. Social gatherings became unmanageable unless I consumed alcohol beforehand. Even falling asleep became a significant issue. I slowly became paralysed by fear and indecision, consumed by stress and anxiety. Every action felt incorrect, and I lost trust in my own judgment. I even developed a delusion after watching a show about phrogging (someone secretly living in another person’s home), convincing myself this could be happening to me, despite the impossibility in my tiny one-bedroom flat.
+## Kanika’s story: Part 5
+That my flatmates will hate me if I exercise at home because I’m making noise or doing it wrong or taking up space. It took over a year for me to consider using medication to manage my anxiety symptoms. I had just had enough of feeling terrible. I remember crying for hours on end in my bedroom and thinking to myself “this does not seem like a positive reaction”. A few days later, I called my doctor and explained how I was feeling. I said that I have struggled with anxiety and depression in the past, usually with minimal issues. 
 
-During that year, I missed so many assignments that I nearly had to drop out or repeat the year. Fortunately, my department and a supportive university counsellor worked with me to get back on track.
+## Kanika’s story: Part 6
+However, the last two years have been particularly hard. I had been to therapy twice in the last two years and found it informative but not useful. I told them that I had completely stopped drinking, but would still wake up with feelings of dread and anxiety about what I said the previous day. The doctor explained that they would issue a prescription of 50 mg of Sertraline (an antidepressant also used by those with anxiety) alongside therapy. They arranged regular check-ins to discuss my progress and adjust my dose, as necessary. 
 
-## Impact of COVID-19 and Therapy Challenges
+## Kanika’s story: Part 7
+Over the weeks, the main side effect I experienced was nausea; therefore, they also offered to prescribe me an anti-nausea tablet. Also, my dose increased to 100 mg, which is now what I take every day. I don’t remember exactly when I realised that the medication was working. Usually around my birthday, my anxiety flares up. I begin to worry that I haven’t done enough with my life and need to create a rigorous 5-year plan. However, on my 22nd birthday I felt fine. I had just graduated, didn’t have a job lined up and didn’t know where I would be living after the summer. 
 
-A few months later, the COVID-19 pandemic began. I started working with an online therapist to address developing health anxiety. While I am a strong advocate for therapy, I felt as though I was discussing the same issues without making tangible progress. I understood the advice, such as exercising, but my brain would sabotage any attempt with overwhelming thoughts:
+## Kanika’s story: Part 8
+But, that was okay. The world wasn’t going to end. My main piece of advice for someone experiencing anxiety is to have an ongoing dialogue with your doctor. Take the time to find a doctor that you trust and that has your best interests at heart. Personally, my experience has been positive. They’ve always reassured me that I can schedule an appointment to discuss how I’m feeling about taking medication. Regardless of whether that means that I need to change medication, dosage, need help with side effects or decide to come off it all together. 
 
-* "Everyone will laugh at how unfit I am, my clothes, or my technique if I go for a run."
-* "I might contract an illness if I go outside."
-* "My flatmates will hate me if I exercise at home because I’m making noise, doing it wrong, or taking up space."
+## Kanika’s story: Part 9
+Two years later, I can say that taking Sertraline was one of the best decisions I’ve ever made. I have no idea how long I will be on Sertraline for and if I will need to take it for the rest of my life. At the moment, I’m happy to take things one day at a time. It’s okay not to be okay. Approximately 1 in 4 people in the UK will experience a mental health problem each year (NHS England, 2020). If you are worried about your mental health, or about someone else’s, there are lots of places that can offer you help and support. 
 
-## Considering Medication
-
-It took over a year for me to seriously consider using medication to manage my anxiety symptoms. I had simply had enough of feeling terrible. I vividly recall crying for hours in my bedroom, thinking, "this does not seem like a positive reaction." A few days later, I called my doctor and explained my feelings. I told them I had struggled with anxiety and depression in the past, usually with manageable issues, but the last two years had been particularly difficult. I mentioned attending therapy twice in two years, finding it informative but ultimately not useful. I also shared that I had completely stopped drinking but would still wake up with feelings of dread and anxiety about what I had said the previous day.
-
-The doctor explained they would issue a prescription for 50 mg of Sertraline (an antidepressant also used for anxiety) alongside continued therapy. They arranged regular check-ins to discuss my progress and adjust the dose as necessary. Over the following weeks, the main side effect I experienced was nausea, so they also offered to prescribe an anti-nausea tablet. My dose was eventually increased to 100 mg, which I now take daily.
-
-## The Impact of Medication
-
-I don't remember the exact moment I realised the medication was working. Typically, around my birthday, my anxiety would flare up. I would worry about not having achieved enough in my life and feel compelled to create a rigorous five-year plan. However, on my 22nd birthday, I felt fine. I had just graduated, didn't have a job lined up, and was unsure where I would be living after the summer. But that was okay. The world wasn't going to end.
-
-## Kanika's Advice
-
-My main piece of advice for anyone experiencing anxiety is to maintain an ongoing dialogue with your doctor. Take the time to find a doctor you trust and who genuinely has your best interests at heart. Personally, my experience has been positive. They have always reassured me that I can schedule an appointment to discuss how I’m feeling about taking medication, whether that means changing medication, adjusting dosage, managing side effects, or deciding to come off it altogether.
-
-Two years later, I can confidently say that taking Sertraline was one of the best decisions I've ever made. I have no idea how long I will be on Sertraline or if I will need to take it for the rest of my life. For now, I'm content to take things one day at a time. It’s okay not to be okay.
-
-## Seeking Support
-
-Approximately 1 in 4 people in the UK will experience a mental health problem each year (NHS England, 2020). If you are worried about your mental health, or about someone else’s, there are many places that can offer you help and support. You don’t have to be diagnosed, and you don’t even have to know exactly what’s wrong. Whenever you are ready to talk to someone, you can.
+## Kanika’s story: Part 10
+You don’t have to be diagnosed, you don’t even have to know exactly what’s wrong. Whenever you are ready to talk to someone, you can.

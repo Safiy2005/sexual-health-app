@@ -1,45 +1,23 @@
 # Online Dating: Emmie’s Story
 
-Emmie, 22, shares her personal journey with dating apps, exploring how her relationship with technology fluctuated between being toxic and becoming a tool for self-discovery and connection. Her story highlights the importance of mental health, self-worth, and boundary-setting in the digital dating world.
+## Summary
+*   **Overview** Emmie, 22, shares her experience of dating apps and how her relationship with them has, at times, been toxic but how they have also given her the opportunity to explore her sexuality and find partners.
+*   **Disclaimer** The following content is from brook.org.
 
-## Addressing Loneliness and Mental Health
+## Online Dating: Emmie’s Story: Part 1
+When I deferred from university to prioritise my mental health, I moved back in with my parents. I was ready to recover, but didn’t take into account how far away all my friends were going to be. Everyone was dotted around the country and the distance between me and all my friends caused me to feel incredibly lonely. I had no clue how to deal with the loneliness I was experiencing, so I turned to dating apps. I wasn’t sure what I was expecting to get out of dating apps when I downloaded Tinder for the first time.
 
-When Emmie deferred from university to prioritize her mental health, she moved back in with her parents. This transition led to a significant sense of isolation, as her peer group was scattered across the country. To combat this loneliness, she turned to dating apps.
+## Online Dating: Emmie’s Story: Part 2
+My mind-set was focused on using dating apps for fun. Hook-ups, friendships or even something long term were all possibilities for me, and this filled me with excitement. However, my first experience of dating apps went from fun, to a form of validation I couldn’t live without. Something as simple as knowing another person had liked my profile massively boosted my self-esteem. But if I had swiped right on someone and didn’t get a match, I felt deflated and began to question my worth. Over time, I realised I had formed a toxic relationship with dating apps and was using them for all the wrong reasons.
 
-Initially, her mindset was focused on fun—whether that meant hook-ups, friendships, or long-term relationships. However, the experience quickly shifted from a casual hobby to a necessary form of external validation.
+## Online Dating: Emmie’s Story: Part 3
+I deleted them all off my phone and told myself I would only reinstall them when I was confident enough in myself to not seek validation through likes. Returning to dating apps once I knew I wouldn’t base my worth off ‘likes’ from strangers was one of the best choices I ever made. I discovered how fun dating apps could be. There are always going to be people on dating apps who send you messages that make your toes curl and cross your boundaries, but whenever this happened I would un-match, or delete the message and made sure to block people who crossed the line.
 
-## The Relationship Between Apps and Self-Esteem
+## Online Dating: Emmie’s Story: Part 4
+Decluttering my messages on dating apps and filtering out people who overstepped boundaries lead to some amazing conversations and super fun dates. I felt comfortable meeting up with people I had been messaging on a more regular basis had enjoyable conversations with. I think we all know the golden rule of dating is to always meet the person in public first, which I always did. I became more confident with setting boundaries with people I went on physical dates with and if the atmosphere of the date I was on felt off, I’d be upfront about it.
 
-Emmie found that her self-worth became tied to the mechanics of the apps:
-* **Validation:** Receiving a "like" or a match provided a massive, temporary boost to her self-esteem.
-* **Deflation:** Failing to match with someone led her to question her value and worth.
+## Online Dating: Emmie’s Story: Part 5
+It’s great meeting new people, but if the vibe isn’t there, don’t force yourself to sit through awkwardness. Dating apps also gave me the chance to explore my sexuality. I had always been open about being queer and my bisexuality, but as a teenager I found it difficult to connect with others within the LGBTQ+ community, especially in a more dating sense. If I had had dating apps growing up, I would probably be a lot more confident in my own queerness. I found it fun exploring the layouts of various dating apps too and going from Tinder, to Hinge and eventually trying out OkCupid lead to me meeting my current partner, Lewis.
 
-Recognizing this toxic cycle, Emmie chose to delete the apps. She set a personal goal to only reinstall them once she felt confident enough in herself to stop seeking validation from strangers.
-
-## Re-entering the Dating Scene Healthily
-
-Returning to dating apps with a stronger sense of self-worth transformed the experience. By prioritizing her own wellbeing, Emmie was able to enjoy the process of meeting new people while maintaining strict digital boundaries.
-
-### Managing Interactions
-To maintain a positive environment, she implemented the following practices:
-* **Filtering:** Actively "decluttering" messages to focus on meaningful conversations.
-* **Blocking and Unmatching:** If a user sent inappropriate messages or crossed boundaries, she would immediately unmatch or block them.
-* **Prioritizing Comfort:** Only meeting up with individuals with whom she felt a genuine connection and comfort level through messaging.
-
-## Safety and Setting Boundaries
-
-Emmie emphasizes that safety and personal agency are paramount when transitioning from online chat to physical dates.
-* **The Golden Rule:** Always meet in a public place for the first time.
-* **Being Upfront:** If the "vibe" or atmosphere of a date feels off, it is important to be honest rather than forcing oneself to endure an awkward or uncomfortable situation.
-* **Confidence in Boundaries:** Developing the confidence to say "no" or leave a situation is a vital skill in modern dating.
-
-## Exploring Identity and Sexuality
-
-For Emmie, dating apps provided a vital space to explore her bisexuality and connect with the LGBTQ+ community. As a teenager, she found it difficult to find these connections in person, but apps allowed her to:
-* Navigate her queerness with greater confidence.
-* Explore different app layouts (such as Tinder, Hinge, and OkCupid) to find the right community.
-* Meet her current partner, Lewis, via OkCupid.
-
-## Conclusion
-
-While online dating can have negative aspects, Emmie’s experience shows that with the right mindset and safety precautions, it can be a path to memorable experiences, new friendships, and healthy long-term relationships.
+## Online Dating: Emmie’s Story: Part 6
+We’ve been together for around 4 months now and we both have dating apps to thank for that. There is a lot of negativity surrounding dating apps and I can understand why they’re not for everyone and how they can be harmful. But for me, dating apps and online dating have given me a lot of memorable nights, new friends, a chance to discover my sexuality and a relationship I am immensely happy in.

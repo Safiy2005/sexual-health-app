@@ -1,43 +1,29 @@
 # Online Relationships: Isha’s Story
 
-Isha shares her personal experience of how an online relationship developed, how it consumed her daily life, and the ways in which it eventually became harmful.
+## Summary
+*   **Overview** Isha shares her experience of how an online relationship became all-consuming and obsessive, leading to social withdrawal and the creation of a curated, artificial identity to please a partner she barely knew in person.
+*   **Disclaimer** The following content is from brook.org.
 
-## The Cycle of Obsession
+## Isha’s Story: Part 1
+Isha talks about her experience of developing an online relationship with someone, and how it became harmful over time. In our generation, most relationships are formed online. Technology is the first point of call for us, but a lot of young people get obsessive and almost neurotic about these online relationships. I have had friends who have had explosive relationships with people online where they just become really nasty and start sending horrible comments and putting up mean posts. I was in a cycle recently where I really liked this boy and I used to spend all my time thinking about him and talking to him. I would never leave my phone because I was scared I would miss a text.
 
-In a digital-first generation, many relationships begin online. However, these connections can quickly become obsessive. Isha describes a cycle where her phone became the center of her world:
+## Isha’s Story: Part 2
+I met him at an event and we got each other’s messengers and just started talking. It started off friendly and then got obsessive. I couldn’t think of anything else apart from messaging him or calling him. I starting not wanting to hang out with my friends as much or go out as much. I even found myself when I was buying clothes looking for the colours he liked. It was compulsive; I couldn’t break out of it. At the time, my friends got fed up with me and said I should delete all my social media just for a day. They said just give yourself a day to know that you are your own person.
 
-* **Constant Monitoring:** Feeling unable to leave the phone for fear of missing a text.
-* **Social Withdrawal:** Choosing to stay home and message rather than hanging out with friends or engaging in real-world activities.
-* **Neglect of Responsibilities:** Forgetting about schoolwork and losing focus during work hours due to the constant anticipation of communication.
-* **Compulsive Behavior:** Feeling a loss of control over the time and energy dedicated to the relationship.
+## Isha’s Story: Part 3
+An online relationship can really consume you. You aren’t seeing them and they’re not tangible. You just end up creating scenarios in your mind of what your relationship would be like and it becomes a cycle where you just start making them up. You forget about the real world. I forgot about my schoolwork. When I was working I was just looking at my phone waiting for a text to come through. We lived quite far away and we would always make future plans about what we would do together. You start making so many plans and when they don’t happen it makes you depressed and really sad.
 
-## Fantasy vs. Reality
+## Isha’s Story: Part 4
+You are talking to this person and you feel it has the potential to develop into something really incredible but there is nothing progressing other than sending messages. You start projecting your own insecurities and anxieties onto someone you don’t know. You are making them up as someone you would want and designing yourself as someone you want to be seen as. A lot of online relationships fail when you actually meet the person because you have created someone that doesn’t exist. One of my friends is really careless with her number online. She will post it everywhere and then get random texts from people.
 
-One of the primary dangers of online-only relationships is the tendency to create a version of a person that does not exist in reality. Because the interaction is not tangible, it is easy to fall into specific psychological traps:
+## Isha’s Story: Part 5
+There is something about online relationships that make you progress so much faster. Within three days she will get all these guys asking her for pictures or to meet for drinks then go back to their place. No one would do that within three days of meeting someone for the first time in real life. It is terrifying to know that online anything is acceptable and there seems to be no boundaries. Getting to know the boundaries is also a really big task because you can put yourself in a lot of danger. I didn’t feel too much fear meeting my guy because I had actually met him so I knew he was a real person.
 
-* **Creating Scenarios:** Imagining future plans and relationship milestones that may never happen, leading to feelings of depression and sadness when they fail to materialize.
-* **Stagnation:** Feeling a deep connection that has "potential" but fails to progress beyond text messaging.
-* **Projection:** Projecting personal insecurities and anxieties onto the other person, essentially "designing" them to fit a specific desire.
-* **Identity Loss:** Designing oneself to be who the other person wants, rather than being authentic.
+## Isha’s Story: Part 6
+I knew he was not someone pretending to be someone else. It is a real fear when you’re young that you could be talking to someone that isn’t who they say they are. Some of my friends do meet people that they have only met online. Almost every time they do turn out to be the person they thought they were but sometimes they get stood up and end up on their own in places they don’t know. It’s scary that you could meet someone that you have only been talking to for two days through something like social media. When I was in this online cycle with this guy it really affected what I posted on social media.
 
-## Boundaries and Digital Safety
+## Isha’s Story: Part 7
+I wanted my Instagram to be the best pictures I could find, the best poses. If other people ever tagged me in something I would always have to check up on it. Eventually I put the security thing on my Facebook so I could approve other people’s tags in case I didn’t like a picture. It was so weird. I wasn’t being me, I was being someone I thought he would like. You don’t even know if the person will like the person you are projecting you kind of just make it up based on what they have said. It made me feel really cautious.
 
-Online platforms often lack the natural boundaries found in face-to-face interactions. This environment can lead to risky behaviors and accelerated timelines:
-
-* **Rapid Progression:** Relationships often move much faster online, with people asking for personal details, photos, or private meetings within days of meeting.
-* **Safety Risks:** Sharing phone numbers or locations publicly can lead to harassment or dangerous situations with strangers.
-* **Meeting in Person:** While some online connections are genuine, there is a constant risk of "catfishing" or being stood up in unfamiliar, potentially unsafe locations.
-* **Pressure for Nudes:** The intensity of online investment can make individuals feel pressured to send explicit images (nudes) even if they feel uncomfortable doing so.
-
-## The Impact on Self-Image
-
-The pressure to maintain an online relationship often bleeds into how an individual presents themselves to the wider world on social media. Isha noted several changes in her behavior:
-
-* **Curated Content:** Only posting "perfect" photos and poses to impress a specific person.
-* **Security and Control:** Using privacy settings specifically to approve tags and photos to ensure no "unattractive" images were visible.
-* **Changing Identity:** Altering personal style, clothing choices, and personality traits to match what they believe their partner prefers.
-* **Caution and Fear:** Living in a state of anxiety regarding how they are being perceived by their online partner.
-
-## Conclusion
-
-While online relationships offer a sense of mystery and excitement, they can easily become all-consuming. It is vital for young people to maintain their own identity, set clear boundaries, and stay grounded in the real world to prevent these connections from becoming harmful.
+## Isha’s Story: Part 8
+I was always scared someone would put up a photo of me I didn’t like or I would worry that when I met him I wouldn’t have clothes he would find attractive. I found myself changing my style to be more girly. I was quite lucky because he never asked for nudes from me. I would have felt really uncomfortable but I also think that because I had become so invested in it that I might have actually sent them. I think there is something really exiting about online relationships; there is so much mystery. It is almost like an adventure. It is the idea of having someone who has a genuine interest in you online.

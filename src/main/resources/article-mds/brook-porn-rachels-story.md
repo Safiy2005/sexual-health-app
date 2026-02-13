@@ -1,38 +1,32 @@
-# Porn: Rachel’s Story
+# Porn: Rachel’s story
 
-Pornography can be a tool to help individuals understand their preferences—identifying both what turns them on and what they do not enjoy. Rachel, 20, shares her personal journey of discovering porn, navigating the mainstream industry, and eventually finding ethical alternatives that align with her values.
+## Summary
+*   **Overview** Porn can help you work out what turns you on, but also what you don’t enjoy. Rachel, 20, shares her experience of discovering porn and how she has found what works for her.
+*   **Disclaimer** The following content is from brook.org
 
-## Initial Discovery and Exploration
+## Porn: Rachel’s story: Part 1
+When I was first introduced to the world of porn, I was recommended to go to Redtube. Redtube had a terrible layout and all sorts of ads and thumbnails advertising painful-looking sex with giant penises, so I didn’t stay on there long. After trying out xHamster, YouPorn, and xTube, I settled on Pornhub – the ads on there were marginally more bearable and if I stayed to the ‘for women’ and ‘lesbian’ categories, the sex wasn’t so hideous. I stumbled upon porn (mostly) by accident. Really, I was just figuring out my sexuality and searching “girls kissing” on Google images to stare at the photos for ages to figure out 1) why I liked it so much and 2) if I was lesbian, why did I like boys too?
 
-Rachel’s introduction to porn happened largely by accident while she was exploring her sexuality. While searching for images of women kissing to better understand her own attractions, she encountered mainstream adult websites.
+## Porn: Rachel’s story: Part 2
+That story’s a whole other can of worms to open, so we’ll focus on the porn bit for now. All I was searching for were some innocent images of fully clothed women kissing each other, and all of a sudden, BAM! I’d clicked on a link to one of the image’s sites and I was looking at a full-blown porn page. Previously, I’d dabbled with soft porn (ah, the good old days when Nuts had images of topless women available for free online and safe from the embarrassment of having to buy one from a newsagent), but never looked at actual videos of people having sex.
 
-Initially, her experiences were mixed:
-* **Mainstream Layouts:** Many sites featured aggressive advertising and thumbnails depicting painful or extreme acts.
-* **Navigating Categories:** She found that "for women" or "lesbian" categories often felt more accessible than "straight" categories, though they still felt performative.
-* **A Tool for Identity:** Despite the jarring nature of some content, it provided a space for her to process her feelings about her sexuality and attraction to different genders.
+## Porn: Rachel’s story: Part 3
+Like I said before, the ‘for women’ and ‘lesbian’ stuff wasn’t so bad – it was the straight stuff that left me feeling super weird after watching it. The women would pull all these unnatural expressions and gasp and moan and shout out weird phrases whilst the man stood behind her, completely silent, merely a solid chest and penis to pull out and finish off on a pair of boobs at the end. The blowjob scenes were always really long, drawn-out, and frankly, rather dull. At least with the lesbian stuff you didn’t have to sit through that, but even that felt very performative and difficult to get invested in.
 
-## Critiquing Mainstream Content
+## Porn: Rachel’s story: Part 4
+It’s not really surprising that porn leaves a lot of women feeling a bit icky after watching it. It’s not made for us. MindGeek is a Canadian company that owns 90% of porn on the internet, including sites such as PornHub, Redtube, and YouPorn. They also own production companies like Brazzers, Digital Playground, Twistys… you name it, they probably own it. They almost have a monopoly on the entire porn industry. An issue I have with the content made by these companies and uploaded later onto the free tube sites they’re linked to is that it’s all very… misogynistic. There! I said it! Wow, that felt good.
 
-As Rachel explored more, she began to notice recurring themes in mainstream pornography that felt alienating or uncomfortable. 
+## Porn: Rachel’s story: Part 5
+Anyway, when watching this stuff you can’t help but notice that the women are often degraded – and I’m not kink-shaming here, if that’s your thing, go for it – but even in the more ‘vanilla’ videos, the women are there to serve the men sexually and are rarely sexual subjects. They’re objects. And this is why their porn leaves a lot of women, including me, feeling very… bleugh . Not only this, but when I started watching documentaries like Hot Girls Wanted and YouTube videos by former adult performer Paige Jennings, I began to realise just how exploitative the porn industry can be, whether mainstream or amateur.
 
-* **Performative Nature:** Much of the content appeared to be made for a specific male gaze, featuring unnatural expressions and repetitive scenes that lacked authentic connection.
-* **Objectification vs. Subjectivity:** In many "vanilla" videos, women are often portrayed as sexual objects intended to serve men rather than as active sexual subjects with their own desires.
-* **Industry Monopoly:** A significant portion of the internet’s pornographic content is owned by a single large corporation (MindGeek), leading to a lack of diversity in how sex is portrayed.
+## Porn: Rachel’s story: Part 6
+When I was younger, I genuinely considered what a career in the porn industry would be like. After doing some research through watching these videos, I realised it wasn’t for me, because it had the potential to seriously compromise my safety. Pornographic talent ‘agents’ have a reputation for going to parties in areas like Miami or LA and searching for high school girls to encourage to enter the porn industry as soon as they turn eighteen. At this age, they’re seen as more impressionable and easier to coerce into more extreme, painful acts that will receive more views, and earn porn companies more money.
 
-## Industry Ethics and Safety
+## Porn: Rachel’s story: Part 7
+If they speak out against this kind of behaviour, they’re branded as a ‘diva’ – such as Jennings was when she asked to use a condom with a male performer who she discovered to have syphilis (she was refused this, and after she rejected shooting with the performer, she had to pay hundreds of dollars in damages to the cast and crew that came on set that day). You can hear about this story on her YouTube channel. Many sex workers experience harassment, and struggle to be taken seriously by authorities when they want to report this, or even a targeted assault, because stigma attached to their job convinces people that they’re ‘asking for it’.
 
-Through further research and documentaries, Rachel became aware of the systemic issues regarding exploitation within the adult film industry.
+## Porn: Rachel’s story: Part 8
+Despite all of this, I don’t think porn is inherently bad . Through a little bit of ‘research’, I found stuff that worked for me, and it helped me realise what my turn-ons and turn-offs were – reading erotic novels is one option, or, like I settled upon, reading fan fiction (my OTP is Johnlock for anyone who cares!!! Thanks for asking.) A bit later, I found directors like Erika Lust creating feminist, inclusive, sex-positive porn that looks beautiful, and tells beautiful stories. She created xConfessions, a site where she makes erotic films out of fantasises people have sent to her – and she gets in a diverse range of feminist directors in to direct these videos too.
 
-* **Coercion and Age:** Talent agents may target young, impressionable individuals, encouraging them to enter the industry as soon as they turn 18 and pushing them toward more extreme acts for profit.
-* **Lack of Safety Protocols:** Performers often face difficulties advocating for their health, such as requesting condom use or refusing to work with partners who have untreated infections.
-* **Stigma and Harassment:** Sex workers often face significant harassment and may find it difficult to report assaults or safety concerns due to the social stigma attached to their profession.
-
-## Finding Positive and Ethical Alternatives
-
-Rachel concludes that while mainstream porn has many flaws, pornography itself is not inherently bad. She discovered several alternatives that prioritize consent, diversity, and genuine pleasure:
-
-* **Erotic Literature and Fan Fiction:** Written stories allowed for more imagination and personal connection to the characters and scenarios.
-* **Feminist and Inclusive Porn:** Directors like Erika Lust focus on creating sex-positive, beautiful stories that prioritize a safe working environment.
-* **Prioritizing Consent:** Ethical productions often include communication and explicit consent as part of the narrative, demonstrating what healthy, enthusiastic sexual encounters look like.
-
-By exploring different options, Rachel was able to find content that felt respectful and empowered her to understand her own sexuality better.
+## Porn: Rachel’s story: Part 9
+She actively works to make a safe and comfortable working environment for the cast and crew, organising rehearsals, and discussing with performers what acts they feel comfortable doing and allowing them to take breaks whenever they need during a shoot. Reading fan fiction and watching Erika Lust productions made watching less vanilla activities in porn more accessible and less intimidating. Within those stories communication is written in to show enthusiastic, explicit consent, and how this allows for genuinely good sex to be carried out. So, next time you’re looking for a lil’ somethin’ somethin’ – why not explore your options and see what else is out there besides boring old Pornhub?

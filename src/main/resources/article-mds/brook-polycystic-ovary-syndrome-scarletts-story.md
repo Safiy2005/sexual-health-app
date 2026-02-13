@@ -1,75 +1,43 @@
-# Polycystic Ovary Syndrome: Scarlett's Story
+# Polycystic Ovary Syndrome: Scarlett’s story
 
-## Introduction
+## Summary
+*   **Overview** Scarlett describes her long journey living with Polycystic Ovary Syndrome (PCOS). She details her struggles with getting an initial diagnosis, the side effects of hormonal medication, her success with holistic and alternative management strategies, and her eventual journey to motherhood and advocacy for better reproductive healthcare.
+*   **Disclaimer** The following content is from brook.org.
 
-Scarlett shares her experiences with Polycystic Ovary Syndrome (PCOS), detailing the physical and emotional challenges, the journey to seeking help, and how she now manages her condition.
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 1
+I was diagnosed with PCOS when I was about 16 years old. It all started when I began menstruating around the age of 14. From the beginning, I experienced irregular and painful periods. Unfortunately, my GP initially dismissed my concerns, attributing them to the normal adjustment period for girls before their cycles settle down. 
 
-## Early Symptoms and Diagnosis
+But my struggles went beyond just irregular periods. I also dealt with weight gain, excessive facial hair, intense mood swings, and even depression. Back in the mid-90s, there were limited resources for me to research or connect with others facing similar issues.
 
-* Scarlett was diagnosed with PCOS at approximately 16 years old.
-* Her menstrual cycle began around age 14 and was immediately irregular and painful.
-* Her General Practitioner (GP) initially dismissed her concerns, attributing them to a normal adjustment period for young menstruating individuals.
-* Beyond menstrual irregularities, Scarlett experienced:
- * Weight gain
- * Excessive facial hair growth
- * Intense mood swings
- * Depression
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 2
+Fortunately, my school arranged for local sexual health advisors to speak with us. I decided to seek their guidance and shared my problems with them. As a result, I was able to get a referral for an ultrasound to investigate the underlying causes of my symptoms. 
 
-## Seeking Help and Initial Treatment
+During the ultrasound, they discovered not only the presence of PCOS but also a dermoid cyst. It was all quite bewildering, and by that point, I was experiencing pain even when I wasn’t on my period. My GP provided me with a lot of misinformation, including the belief that I would never be able to conceive.
 
-* In the mid-1990s, resources for researching PCOS or connecting with others were limited.
-* A school initiative involving local sexual health advisors provided Scarlett with a pathway to seek guidance.
-* She shared her symptoms with the advisors, leading to a referral for an ultrasound.
-* The ultrasound revealed the presence of PCOS and a dermoid cyst.
-* Scarlett experienced pain even when not menstruating.
-* Her GP provided misinformation, including the incorrect belief that she would be unable to conceive.
-* She was advised to start taking birth control pills.
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 3
+They also advised me to start taking birth control pills. Between the ages of 16 and 18, I began taking the microgynon pill to regulate my periods and alleviate the pain. Unfortunately, the pill only seemed to exacerbate my problems. 
 
-## Experiencing Adverse Effects from Medication
+I experienced fainting spells, headaches, and continued weight gain. It felt like everything was spiralling out of control. During this period, I was living in a Stonewall hostel for young people, and they offered the residents the opportunity to try acupuncture for free.
 
-* Between the ages of 16 and 18, Scarlett took the Microgynon pill to regulate her periods and manage pain.
-* However, the pill seemed to worsen her symptoms, leading to:
- * Fainting spells
- * Headaches
- * Continued weight gain
-* These side effects contributed to a feeling of losing control.
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 4
+Having grown up with alternative medicine like herbs and homeopathy, I decided to give it a chance. My acupuncturist had also faced gynaecological issues and introduced me to the idea that PCOS could be managed through alternative treatments and dietary adjustments. 
 
-## Exploring Alternative and Complementary Therapies
+Over the course of six months, the acupuncture sessions seemed to regulate my hormones and improve my emotional and mental wellbeing. However, some physical symptoms persisted, so my acupuncturist suggested I also try incorporating Chinese herbs. Personally, the herbs seemed to help me manage my symptoms.
 
-* While living in a hostel for young people, Scarlett had the opportunity to try acupuncture for free.
-* Having grown up with alternative medicine practices (herbs and homeopathy), she decided to pursue acupuncture.
-* Her acupuncturist, who had personal experience with gynecological issues, introduced the concept of managing PCOS through alternative treatments and dietary adjustments.
-* Over six months, acupuncture appeared to regulate Scarlett's hormones and improve her emotional and mental well-being.
-* To address persistent physical symptoms, her acupuncturist recommended incorporating Chinese herbs.
-* Scarlett found that the herbs helped manage her symptoms.
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 5
+I was also able to get pregnant and gave birth to my son in my late 20s. Throughout this journey, I attempted surgical methods for the removal of my dermoid cyst. However, I felt that these approaches failed to consider my holistic experience—the intersection of culture, stress levels, sleep quality, diet, and more. 
 
-## Conception and Holistic Approach to Health
+For me, the complementary therapies took into account my entire being, providing a sense of being heard that I had never experienced with my GPs or gynaecological hospital teams.
 
-* Scarlett was able to conceive and gave birth to her son in her late twenties.
-* She attempted surgical removal of the dermoid cyst but felt these approaches did not consider her holistic experience (culture, stress, sleep quality, diet, etc.).
-* Scarlett found that complementary therapies took her entire being into account, making her feel heard in a way her GPs and gynecological hospital teams had not.
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 6
+I no longer suffer from the symptoms of PCOS. I have regular periods, minimal excess hair growth and I feel my hormones are more stable – although I am now beginning perimenopause so I am expecting the unexpected. 
 
-## Current Management and Future Outlook
+I’m aware that I am fortunate to have found a way to manage my PCOS symptoms but everyone’s journey is different. It is disheartening to know that countless people with PCOS continue to be dismissed and told that their struggles are merely commonplace. Fortunately, the advent of the internet has proven to be an invaluable resource for those grappling with PCOS, like me.
 
-* Scarlett no longer experiences the symptoms of PCOS.
-* She has regular periods, minimal excess hair growth, and her hormones feel more stable.
-* She acknowledges that she is entering perimenopause, anticipating potential changes.
-* Scarlett recognizes that her journey to managing PCOS is unique and that many others face dismissal of their symptoms.
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 7
+Online forums and shared testimonials have fostered a sense of belonging and solidarity, assuring me that I’m not alone in their struggles. From the forums I was able to get recommendations for books, recipes for food that supports some of the symptoms of PCOS and also hear about different outcomes from experimental treatments. 
 
-## The Role of Online Resources
+If you can’t find any forums then Instagram and Tiktok can be a good source of information, but always check the reliability of the source and consult with your doctor before trying anything new out!
 
-* The internet has become an invaluable resource for individuals with PCOS.
-* Online forums and shared testimonials foster a sense of community and solidarity.
-* These platforms provide recommendations for:
- * Books
- * Recipes supporting PCOS symptoms
- * Information on experimental treatments.
-* Instagram and TikTok can also be sources of information, but it is crucial to verify the reliability of the source and consult with a doctor before trying new approaches.
-
-## Advocacy and Conclusion
-
-* Scarlett's personal experience has fueled her passion for improving sexual and reproductive health.
-* She is an active member of Brook's Participation Forum.
-* She advocates for challenging the existing medical framework and promoting better understanding, research, and support for women's health.
-
----
+## Polycystic Ovary Syndrome: Scarlett’s story: Part 8
+My experience has made me passionate about improving sexual and reproductive health. I believe that we need to continue challenging the existing medical framework and I am a proud advocate for better understanding, research and support for women’s health.

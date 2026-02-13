@@ -83,8 +83,8 @@ public class ArticleTest {
                     """);
         var sections = article.getSections();
 
-        assertEquals(new Article.Section("section 1", "section text\nmore section text\n"), sections.get(0));
-        assertEquals(new Article.Section("section 2", "text2\ntext1\n"), sections.get(1));
+        assertEquals(new Article.Section("section 1", "section text\n\nmore section text\n\n"), sections.get(0));
+        assertEquals(new Article.Section("section 2", "text2\n\ntext1\n\n"), sections.get(1));
     }
 
     @Test

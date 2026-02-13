@@ -4,7 +4,7 @@
 - Used GitHub Copilot with Claude Sonnet 4.5
 
 # Taran
-- Used Github Copilot with Claude Opus 4.5 & Claude Sonnet 4.5
+- Used Github Copilot with Claude Opus 4.5, Claude Sonnet 4.5, Claude Opus 4.6
 
 # Oli
 
@@ -21,3 +21,5 @@
 - Implementing semantic search
 
 - Scraping article content from the Brook website 
+
+- Building the UI for displaying article content

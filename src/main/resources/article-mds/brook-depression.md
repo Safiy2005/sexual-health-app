@@ -1,94 +1,99 @@
 # Depression
 
-Everyone’s experience of depression is different. Depression is a mental health disorder where you may feel sad, hopeless, struggle to feel joy or pleasure, and lose interest in your life or usual activities.
+## Summary
+*   **Overview** Depression is a common mental health disorder characterized by persistent sadness, hopelessness, and a loss of interest in usual activities. This guide explains the symptoms of depression, compares it to low mood, outlines various types of the condition, and explores its connection to sexual health. It also provides practical steps for seeking help through self-care, talking to others, and professional services.
+*   **Disclaimer** The following content is from brook.org.
 
-Depression is one of the most common mental health concerns, affecting around 5% of adults. It is frequently experienced alongside anxiety. Many people find that depression comes and goes throughout their life. It is important to remember that depression is not a sign of weakness and you should never feel ashamed of needing support.
+## Depression
+Everyone’s experience of depression is different. Learn about what depression can look like and where you can get help. Depression is a mental health disorder. With depression you may feel sad, hopeless, struggle to feel joy or pleasure and you have no interest in your life or usual activities. Depression is one of the most common mental health concerns. In fact, around 5% of adults have depression. It is also commonly experienced alongside anxiety.
 
-## The difference between depression and feeling low
+It’s possible to have different types of depression or ‘generalised depression’. Many people who experience depression find it comes and goes throughout their life. Whatever type of depression you experience, it’s important to remember that’s not a sign of weakness. You should never feel ashamed of needing help and support.
 
-While everyone experiences low mood at some point, the main difference with depression is that the low mood lasts for several weeks or months and impacts your day-to-day life. 
+## What’s the difference between depression and feeling low?
+Everyone will experience symptoms of depression at some point. But the main difference between depression and low mood is that, with depression, your low mood lasts for a few weeks or months and impacts your day-to-day life. You can often improve or solve your low mood through things like getting better sleep or solving a problem. Whereas, to manage depression, people often need extra support. If you find that your life is often affected by low mood, it’s always worth getting help, whether you think it might be depression or not. You do not need a diagnosis of depression to get help.
 
-Low mood can often be improved through lifestyle changes like better sleep or solving a specific problem. To manage depression, people often need extra support. You do not need a formal diagnosis of depression to seek help; if your life is being affected by your mood, it is worth reaching out.
+## Depression doesn’t just mean low mood
+Depression doesn’t just mean low mood. It can have social, physical and psychological symptoms that impact every part of your life. Depression looks different for everyone: People with severe depression may find daily life almost impossible People with mild to moderate depression might find daily life harder but are still able to carry on. Depression has lots of symptoms which are different for everyone. You don’t have to experience all of them to have depression.
 
-## Symptoms of depression
+## How you feel
+*   Feeling sad all the time (sometimes this might come out as anger)
+*   No interest in activities or hobbies
+*   Low self-esteem and confidence
+*   Difficulty concentrating
+*   No motivation
+*   Feeling anxious and negative about the future
+*   Change in appetite – eating more or less
+*   Feeling worthless
+*   Suicidal thoughts (Not everyone that experiences depression will have suicidal thoughts but if you do, make sure you talk to someone- whether that’s someone you know or a support organisation like The Samaritans who you can call anytime for free on 116 123.)
 
-Depression affects everyone differently. It can have social, physical, and psychological symptoms. People with severe depression may find daily life almost impossible, while those with mild to moderate depression may find life harder but are still able to carry on.
+## Changes to your body
+*   Headaches and aches and pains
+*   Constipation
+*   Not wanting sex (low libido)
+*   Changes to your menstrual cycle
+*   Difficulty sleeping
+*   Tiredness
 
-### How you feel (Psychological symptoms)
-* Feeling sad all the time (this may sometimes manifest as anger)
-* Loss of interest in activities or hobbies
-* Low self-esteem and confidence
-* Difficulty concentrating
-* Lack of motivation
-* Feeling anxious and negative about the future
-* Changes in appetite (eating more or less)
-* Feeling worthless
-* Suicidal thoughts (If you experience these, contact a support organisation like Samaritans at 116 123)
-
-### Changes to your body (Physical symptoms)
-* Headaches and general aches and pains
-* Constipation
-* Low libido (not wanting sex)
-* Changes to your menstrual cycle
-* Difficulty sleeping
-* Persistent tiredness
-
-### Impact on your social life
-* Not wanting to go out or spend time with friends or family
-* Finding small tasks like cleaning or showering exhausting
-* Losing interest in work, school, or hobbies
-* Using drugs and alcohol as a coping mechanism
+## Impact on your social life and relationships
+*   Not wanting to go out or spend time with friends or family
+*   Finding small tasks like cleaning or having a shower tiring
+*   Losing interest in work, school, hobbies or interests
+*   Using drugs and alcohol to get through the day
 
 ## Different types of depression
+*   **Persistent depressive disorder (PDD):** When you feel sad for most the day on most days for over two years. It’s also often called chronic depression.
+*   **Seasonal affective disorder (SAD):** This type of depression comes and goes throughout the year. Often depression is experienced during the winter and not the summer, but it can be the other way around.
+*   **Antenatal depression:** Depression that some pregnant people experience.
+*   **Postnatal depression:** Depression that some new parents experience after the birth of a baby.
+*   **Menopausal depression:** In the lead up to the menopause (known as the perimenopause) the hormone changes taking place in the body can cause depression for some people.
+*   **Premenstrual dysphoric disorder (PMDD):** An extreme form of premenstrual syndrome (PMS). PMDD is when people experience symptoms like depression in the week before their menstrual period.
 
-* **Persistent depressive disorder (PDD):** Also called chronic depression, this is when you feel sad for most of the day on most days for over two years.
-* **Seasonal affective disorder (SAD):** Depression that comes and goes throughout the year, often linked to changes in seasons (most commonly winter).
-* **Antenatal depression:** Depression experienced during pregnancy.
-* **Postnatal depression:** Depression experienced by new parents after the birth of a baby.
-* **Menopausal depression:** Depression caused by hormone changes during perimenopause or menopause.
-* **Premenstrual dysphoric disorder (PMDD):** An extreme form of PMS where symptoms like depression occur in the week before a menstrual period.
+## Mental health and sexual health are linked: Part 1
+Mental health and sexual health are linked. You might find your sexual health impacts your mental health in the same way your mental health affects your sexual health. The important thing is being aware of this link and being able to get the support you need.
+*   **Hard to be present:** Depression can make you feel empty, disinterested and unable to experience pleasure, including sexual pleasure. You might lack connection to your partner or your own body. Or you might have too many negative thoughts crowding your mind. All of this can make it hard to be present (feeling engaging and focused in the moment) during sex which can make it harder to feel pleasure or orgasm.
 
-## Mental health and sexual health
+## Mental health and sexual health are linked: Part 2
+*   **Not wanting sex:** If it’s hard to enjoy sex or feel pleasure you might find you don’t want sex. Depression can also make you feel self-conscious, tired or negative. With these feelings, you may not want sex and that’s okay. Some types of medication for depression can make some people uninterested in sex. If you think your medication might be affecting your desire for sex, it’s worth talking to your GP or healthcare professional as they may be able to suggest a different type of anti-depressant.
 
-Mental health and sexual health are closely linked. Depression can impact your sex life in several ways:
+## Mental health and sexual health are linked: Part 3
+*   **Difficult to become ‘turned on’:** You might find it difficult to get aroused (‘turned on’) physically. This might mean you can’t get or maintain an erection if you have a penis, or you may experience painful sex if you have a vagina. If this is how you feel then make sure you talk about it with your sexual partner(s). Communication about how you’re feeling will help you both manage each other’s expectations and understand how to support one another.
 
-* **Difficulty being present:** Depression can make you feel empty or disinterested, making it hard to focus during sex, which can inhibit pleasure or orgasm.
-* **Low desire:** Feeling self-conscious, tired, or negative may result in not wanting sex. Some anti-depressant medications can also affect libido.
-* **Physical arousal:** You may find it difficult to get physically aroused, which can lead to difficulty maintaining an erection or experiencing painful sex.
+## Mental health and sexual health are linked: Part 4
+You should never feel that you owe someone sex or have to have sex. If you don’t want sex, talk about this with your sexual partner and explore ways they could support you to get help. Sex should always be pleasurable, enjoyable and something you want. Depression is not a sign of weakness. You should never feel ashamed of needing help and support.
 
-Communication with partners is essential. You should never feel that you owe someone sex. Sex should always be pleasurable and consensual.
+## Get help and support
+*   **Keep a mood diary** It’s really helpful to have an idea of your symptoms. You could track how you’re feeling each day in a mood diary for a few weeks and see if there’s anything that triggers your mood or if there are any patterns. This might be useful to bring with you if you have an appointment with your GP.
+*   **Talk to someone** It can be difficult to speak to someone for the first time about how you’re feeling but this is a really important step to getting support.
 
-## How to help yourself
+## Who can I talk to?: Part 1
+*   **Friends and/or family:** They can listen to how you’re feeling and support you to get help. If they know how you’re feeling they can try and make things easier for you. For example, if you’re supposed to meet a friend but aren’t feeling up to it, your friend will be far more understanding if you cancel if they know why.
+*   **Someone who knows what you’re going through:** Talking to someone that knows what you’re going through can help you feel less alone. It also means you can support each other. If you don’t know anyone personally, there are lots of organisations that offer support groups or simply someone to talk to.
 
-### Keep a mood diary
-Tracking how you feel each day for a few weeks can help identify triggers or patterns. This is a useful tool to bring to an appointment with a GP.
+## Who can I talk to?: Part 2
+*   **Support organizations:** Mind have an online community where you can talk to others as well as support groups. Depression UK have a penfriend scheme. CALM have a helpline 5pm-midnight.
+*   **A trusted adult:** If your depression is caused by school or exams, talk to a trusted adult, maybe your favourite teacher or form tutor. They should be able to tell you who in school can help you and might be able to request some adjustments to make things easier.
+*   **Your manager and/or colleagues:** If your depression or low mood is impacting on your work, talking to your manager and colleagues can help them understand what you’re experiencing and there may be ways they can support you.
 
-### Talk to someone
-Speaking about your feelings is a vital step toward getting support. Consider talking to:
-* **Friends and family:** They can offer a listening ear and practical support.
-* **Peer support:** Organisations like Mind, Depression UK, and CALM offer communities or helplines for people with similar experiences.
-* **A trusted adult or manager:** If your mood is impacting school or work, they may be able to offer adjustments.
-* **Journalling:** Writing thoughts down can help you process and understand them better.
+## Who can I talk to?: Part 3
+*   **Journalling:** Writing down how you feel on paper can have a similar effect to talking to someone. Often seeing your thoughts written down can help feel that you’ve got it off your chest or help you understand your thoughts better.
 
-### Self-care
-For mild depression, small acts of self-care can help:
-* **Prioritise yourself:** Spend time on small things that bring joy (e.g., a bath or a favourite show).
-* **Build self-esteem:** Use resources like the NHS self-help guides.
-* **Plan your time:** Create a schedule to avoid feeling overwhelmed, ensuring you include time for relaxation.
-* **Distraction:** Exercise or creative activities can help take your mind off negative thoughts.
+## Self-care: Part 1
+For mild depression, small acts of self-care can have a big impact on how you’re feeling. Here are some things that might help you manage your depression or low mood.
+*   **Put yourself first** – Take some time for yourself to do the things that bring you joy. They don’t need to be big things, it could be as simple as watching your favourite TV show, eating your favourite foods or taking a bath.
+*   **Build up your self esteem** – the NHS has a self-esteem self-help guide that helps you work through how to improve your self-esteem.
 
-## Professional help and treatment
+## Self-care: Part 2
+*   **Plan your time** – if you find it hard to do tasks or feel overwhelmed, it might help to plan your day in advance. Try to stick to your plan and don’t forget to allow time for hobbies, exercise or relaxing.
+*   **Distract yourself** – Distracting yourself with other activities can help improve your mood. For example, activities like exercise or getting creative can help you take your mind off things.
 
-### Visit your GP
-A doctor can help find the best treatment, which may include a referral to specialist services, therapy, or medication.
+## Help from organisations and professionals: Part 1
+*   **Visit your GP** Your GP can help you find the best treatment for you. This might be referring you to specialist services such as counselling or therapy or prescribing you anti-depressants that may help.
+*   **Cognitive Behavioural Therapy** Your GP can refer you to talking therapies (a form of counselling) on the NHS but you can also refer yourself for talking therapy – you do not need a diagnosis of depression. There are long waiting lists for mental health support, including talking therapies, which may mean you may have to wait a few months. In the meantime, there are support organisations that you can speak to including support groups. To avoid the long waiting lists, you can pay for counselling privately if you are able to.
 
-### Talking therapies
-Cognitive Behavioural Therapy (CBT) and other forms of counselling are available via the NHS (you can often self-refer) or privately. These services help you work through the psychological aspects of depression.
+## Help from organisations and professionals: Part 2
+*   **Counselling directories** You can search counselling directories to find a counsellor for you based on what they specialise in. There are other types of therapy that may be better suited to you if you find that cognitive behavioural therapy doesn’t work for you. However, these are unlikely to be available on the NHS.
+*   **Employee support** Some employers also offer free employee assistance programmes. Often these include counselling support. Contact the Human Resources team of your organisation to find out more.
+*   **Support organisations** CALM: Helpline (0800 58 58 58), webchat and information about mental health. Samaritans: 24/7 helpline (116 123). Depression UK: Guides and support with depression.
 
-### Support organisations
-* **CALM:** Helpline (0800 58 58 58) and webchat.
-* **Samaritans:** 24/7 helpline (116 123).
-* **Depression UK:** Guides and support.
-
-### Medication
-Anti-depressants can help manage symptoms. They are typically recommended alongside lifestyle changes and therapy. It usually takes 1–2 weeks to begin feeling a difference, and 4 weeks to notice a significant change. If you wish to stop taking medication, you must consult your GP to reduce the dose safely.
+## Medication
+Anti-depressants are a type of medication that can help with depression. Usually, they aren’t recommended for mild depression unless all other methods have been tried. Medication doesn’t address the root cause of depression, so normally people will try lifestyle changes and therapy at the same time. Within 1-2 weeks of taking antidepressants you should begin to feel a difference. If you don’t notice a change in your mood after four weeks, go back to your GP as they may suggest a different treatment or increase your dose. If you decide to stop anti-depressants, it’s important you talk to your GP as it’s best to slowly reduce your dose over time instead of stopping suddenly.

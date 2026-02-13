@@ -150,4 +150,3 @@ coverage/
 *.temp
 *~
 .~lock.*
-*.cache

@@ -1,84 +1,75 @@
 # Having great sex (safely!)
 
-Sex can be a fun and exciting part of an intimate relationship and should be an enjoyable activity in its own right. To have great sex, it is essential to have a good understanding of what you want and to prioritize safety and communication.
+## Summary
+*   **Overview** This article provides guidance on achieving a fulfilling and safe sexual experience by exploring personal sexuality, establishing boundaries, and prioritizing consent. It covers practical safety measures like contraception and STI prevention, while also highlighting the importance of physical intimacy and communication.
+*   **Disclaimer** The following content is from brook.org.
 
-## Understanding Your Sexuality
+## Having great sex (safely!): Part 1
+Sex can be a really fun and exciting part of having an intimate relationship with someone, and should be an enjoyable activity in its own right. In order to have great sex, you need to have a good understanding of what you actually want. Every person has a unique sexuality, which is made up of their sexual orientation, their sexual drive, and their wants and desires. It is important to understand your sexuality so you can set boundaries, recognise what makes you comfortable or uncomfortable, and know what kind of sex you want to be having, with who and how often.
 
-Every person has a unique sexuality, comprised of their sexual orientation, sexual drive, and specific wants and desires. Understanding your own sexuality helps you set boundaries, recognize what makes you comfortable, and determine who you want to have sex with and how often.
+## Having great sex (safely!): Part 2
+Pause for a moment to think about your own sex life. Are you happy about the amount of sex you have? If you’re in a relationship, is the happiness of your relationship linked to the amount of sex or types of sex you have? If you aren’t having sex at the moment, how does that make you feel? How often do you think about sex? What gets you in the mood? What turns you off? There’s absolutely nothing unhealthy about not wanting sex, and there’s nothing wrong with wanting lots of it. Sexual desire is unique to each person, and often fluctuates a lot throughout life for various reasons.
 
-Consider the following questions regarding your own sex life:
-* Are you happy with the amount of sex you are having?
-* Is your relationship happiness linked to the type or frequency of sex?
-* How often do you think about sex?
-* What gets you in the mood, and what turns you off?
+## Masturbation
+One way to explore your sexuality is by masturbating; it can help you understand what kinds of touch feel good for you and help you explore fantasies and find out what turns you on.
 
-Sexual desire is unique and often fluctuates throughout life. There is no "unhealthy" amount of desire; whether you want a lot of sex or none at all, both are normal.
+## Personal safety and judgment: Part 1
+Some factors might affect your judgement and safety. These could be general things or something unique to you. For example, if you have been drinking alcohol or taking drugs, this might affect the decisions you make or put you in a vulnerable position. Another example could be going out with someone who encourages you to take part in certain activities.
 
-## Exploring Through Masturbation
+## Personal safety and judgment: Part 2
+Setting boundaries can feel challenging, especially if you aren’t used to having those types of conversations. It can really help to practise those conversations, so you feel comfortable knowing and following your boundaries in the moment. This can either be actually practising saying things out loud on your own or with a friend, or just running through situations in your head, working out what might happen and what you might then say or do.
 
-Masturbation is one way to explore your sexuality. it can help you understand what kinds of touch feel good, explore fantasies, and identify what turns you on. Learning about your own body makes it easier to communicate your needs to a partner.
+## Activity
+Once you know your risky situations, try thinking through some plans that will help you avoid them. These might be things like avoiding alcohol and drugs, knowing your limits, and/or not going out with people who push you to take part in activities that make you uncomfortable or vulnerable.
 
-## Managing Safety and Boundaries
+## Consent: Part 1
+It’s important that everyone involved in any type of sex is consenting at all times – no one should ever feel they have to do something they are not comfortable with or don’t want to do. Just because you have consented to one thing doesn’t mean you have consented to something else, and it’s completely okay to say ‘no’ or stop at any point if you don’t want to continue.
 
-Certain factors can affect your judgment and safety, such as alcohol or drugs. These substances can put you in a vulnerable position or influence your decision-making. 
+## Consent: Part 2
+If your partner changes their mind, it’s okay for you to feel disappointed, but if you’re so unhappy that your partner feels they have to have sex in order to cheer you up, this isn’t consensual.
 
-To stay safe:
-* Identify "risky" situations and create a plan to avoid them.
-* Know your limits regarding alcohol and drugs.
-* Avoid going out with people who pressure you into uncomfortable activities.
-* **Set boundaries:** Practice these conversations out loud or in your head so you feel more comfortable asserting your limits in the moment.
+## Privacy and family: Part 1
+Whatever form sex and intimacy takes in relationships, privacy is often very important to people. It can sometimes be difficult to create privacy, especially if you don’t live alone. If you live with housemates then it can be harder to find time alone with someone without being disturbed, and if one or both of you lives at home with your family, this can reduce your opportunities to be intimate together. It really depends on your family and their attitudes to your relationship.
 
-## The Importance of Consent
+## Privacy and family: Part 2
+They might be relaxed about you spending time together alone, in which case, it may be less of a big deal. But if they’re not so comfortable with it, then this can make things more complicated. The first thing to say is that it’s probably wise to respect your family’s rules. Getting caught breaking them will probably result in a combination of extreme embarrassment and, potentially, more rules. Try to talk them about it if you can, to see if you can negotiate a middle ground. This is a better way to demonstrate your maturity and to earn their respect.
 
-Consent is vital. Everyone involved in any type of sex must be consenting at all times.
-* No one should ever feel pressured or forced into an activity.
-* Consenting to one activity does not mean you have consented to others.
-* It is completely okay to say "no" or stop at any point.
-* If a partner changes their mind, you must respect that decision immediately.
+## Communication
+Have a conversation (or lots of them!) with the person you are going to have sex with. Talk about what you want to do, what your boundaries are, what you are worried about, how you are going to make sure you have safe sex and anything else you want to discuss! Communication is key to consensual and enjoyable sex.
 
-## Navigating Privacy
+## STI and pregnancy prevention
+It is important to keep in mind that you can still get a sexually transmitted infection (STI) even if it is your first time. If one of you has a penis and the other a vagina then pregnancy is also possible, so it is really important to have contraception sorted first. It’s also harder to get excited about sex if you’re worried about pregnancy or STIs. A lot of people like to visit a clinic before they have sex so that they can get tested, get free condoms and get comfortable with a type of contraception before they think about actually having sex.
 
-Privacy is often a priority for intimacy, but it can be difficult to achieve if you live with housemates or family.
-* **Living with family:** If your family has specific rules about partners and privacy, it is usually wise to respect them to avoid conflict or embarrassment.
-* **Negotiation:** If possible, talk to your family to see if you can negotiate a middle ground. This demonstrates maturity and helps earn their respect.
+## condoms
+Condoms are the only method of contraception that also protects against STIs. We recommend getting familiar with condoms before you have sex so you feel confident with them. Remember: you shouldn’t ever feel pressured to have sex without a condom in the same way you shouldn’t ever feel pressured to have sex. You have the right to choose to use condoms every time.
 
-## Communication and Safe Sex
+## Physical intimacy: Part 1
+Lots of people find that physical intimacy is very important in relationships, however this doesn’t necessarily have to be sexual. Other types of physical intimacy can be really rewarding and valuable, and are important to have in combination with sex as well as on their own. You might like to think about what kinds of physical affection are important to you. Do you like touching or being touched – and if so, in what ways?
 
-Communication is the key to consensual and enjoyable sex. Before having sex, talk to your partner about:
-* What you want to do and what your boundaries are.
-* Any worries or concerns you have.
-* How you will ensure the sex is safe.
+## Physical intimacy: Part 2
+Which acts of physical affection could you live without and which feel important to you? The kinds of physical affection people prefer are unique to them. For example, having your arm stroked could be unbearably tickly for one person. Another person may find it soothing while another person may find it erotic. Here are some examples of physical intimacy to think about:
+*   Cuddling
+*   Kissing
+*   Holding hands
+*   Hair stroking
+*   Massage
+*   Back stroking
+*   Back scratching
+*   Showering/bathing together
+*   Napping together
 
-It is possible to contract a sexually transmitted infection (STI) the very first time you have sex. If the encounter involves a penis and a vagina, pregnancy is also a risk. It is much easier to enjoy sex when you aren't worried about these outcomes. Visit a clinic to get tested, obtain free condoms, and discuss contraception methods before becoming sexually active.
+## Taking your time
+There’s no rush when it comes to sex; in fact, going slowly can help you get more turned on, be more present, feel more pleasure and have bigger orgasms! Take your time kissing and touching each other, for example, exploring each other’s erogenous zones. Or, step back from sex and try something else like giving each other massage, or taking a bath or shower together.
 
-### Condoms
-Condoms are the only method of contraception that also protects against STIs. It is helpful to get familiar with how to use them before you have sex so you feel confident. You have the right to choose to use a condom every single time.
+## what are erogenous zones?
+An erogenous zone is an area of your body which is very sensitive, and can produce a sexual response when it is touched. An important part of discovering your sexuality is learning which parts of your body feel good to be touched. Common examples of erogenous zones for people with penises include the penis, scrotum, anus, prostate and nipples. Common examples of erogenous zones for people with vulvas include the vulva, vagina, anus and nipples. They can also include, but are not limited to, other areas of your body such as your neck, ears, back, hips and thighs.
 
-## Non-Sexual Physical Intimacy
+## Expectations and scripts: Part 1
+Expectations of sex often centre around a certain order of activities, and often around penetrative sex. However, there are so many different ways to have sex, and you will only find out what things you enjoy by trying them! Trying new things and being adventurous can be really exciting, and can take you by surprise! It’s important to remember when trying something new to talk about it, get consent and take your time to make sure you and your partner have the time and space to see how you feel about it.
 
-Physical intimacy is important in relationships, but it does not always have to be sexual. Other forms of affection can be deeply rewarding, including:
-* Cuddling and kissing
-* Holding hands
-* Hair stroking or massage
-* Showering or bathing together
-* Napping together
+## Expectations and scripts: Part 2
+Another part of the ‘script’ of sex can be the expectation to have an orgasm. Orgasms are fun, but if that is your only aim it can take the fun out of sex. Also, putting pressure on yourself or your partner to have an orgasm can actually make it harder to do, and can encourage performance anxiety rather than enjoyment. Our advice is to let go of any ‘scripts’ about how sex should be and go with the flow! Taking the pressure off certain activities and being flexible with your expectations can help you relax and enjoy being intimate with someone.
 
-## Erogenous Zones and Pleasure
-
-There is no rush when it comes to sex. Going slowly can increase arousal and pleasure. Taking the time to explore erogenous zones—areas of the body that are particularly sensitive to sexual touch—can enhance the experience.
-
-Common erogenous zones include:
-* **For those with penises:** The penis, scrotum, anus, prostate, and nipples.
-* **For those with vulvas:** The vulva, vagina, anus, and nipples.
-* **General areas:** The neck, ears, back, hips, and thighs.
-
-## Managing Expectations and "Scripts"
-
-Many people feel pressured by a "script" of how sex should go, often focusing on penetrative sex or the requirement to have an orgasm.
-* **Explore:** There are many ways to have sex; you don't have to stick to one specific routine.
-* **Orgasms:** While fun, making an orgasm the only goal can cause performance anxiety and take the fun out of the experience.
-* **Relax:** Letting go of expectations and "going with the flow" helps you stay present and enjoy the intimacy.
-
-## Listening to Your Body
-
-Sometimes, even if you want to have sex, your body might not respond immediately. Erections, vaginal lubrication, and relaxed muscles don't always happen on cue. Attempting sex when the body isn't ready can lead to pain or discomfort. If your body isn't ready, it is okay to stop or try something else. There is no rush.
+## listen to your body
+*   **Physical readiness** Sometimes, even if we really REALLY want to have sex, our genitals don’t get the message! Sometimes erections, vaginal wetness and relaxed muscles just don’t happen. Trying to have sex when your body isn’t ready could result in pain or discomfort which, ultimately, will mean it’s not enjoyable.
+*   **Patience and comfort** Try and be comfortable with the possibility that even if you’ve been looking forward to this for ages, you might not be able to make it happen and that’s OK. There is no rush.

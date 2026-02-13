@@ -1,47 +1,21 @@
-# Relationship Myths
+# Relationship myths
 
-Everyone’s relationship and expectations are unique, but common societal expectations often create misconceptions about what a "perfect" relationship should look like. Here we debunk some common myths to help you understand the realities of healthy, happy partnerships.
+## Summary
+*   **Overview** Everyone’s relationship and expectations are different but there are common things that people expect from relationships which aren’t necessarily the case. Here we debunk some common myths about what relationships should look like.
+*   **Disclaimer** The following content is from brook.org.
 
-## The Importance of Small Gestures
-It is a common belief that big declarations of love are the hallmark of a strong relationship. However, people in long-term relationships often find that small acts of kindness and appreciation are more significant. 
+## Common Relationship Myths: Part 1
+*   **Saying ‘I love you’ is the most important thing** People in long-term relationships tend to say that small acts of kindness and appreciation are much more important than big declarations of love. Laughing together, being friends and showing love by bringing a cup of tea or sending a thoughtful text, is often more important than saying it.
+*   **Sex is the most important thing** Communication is essential to a healthy relationship. When we asked people what was the most important thing in their relationship people said laughing together, sharing values and interests, being best friends, feeling supported, safe and secure, being happy, talking and listening. Sex didn’t even make the top ten!
 
-* Showing love through simple actions, such as bringing a partner a cup of tea or sending a thoughtful text, can be more impactful than words alone.
-* Laughing together and maintaining a foundation of friendship are key components of a lasting bond.
+## Common Relationship Myths: Part 2
+*   **Arguments mean a relationship is failing** Lots of people value arguments, especially small disagreements, because they help to vent tensions rather than let them build up. They also let you learn what’s important to the other person and so can bring you closer. The key is to just be aware that you may have different communication styles, and to respect this.
+*   **You should spend all your time together** A good relationship sometimes involves getting closer together and, at other times, moving further apart. For example, people can find it helps to have separate interests or space and time to do their own thing alone or with friends. More and more people in long-term relationships are opting to ‘live apart together’.
 
-## Communication and Connection
-While many assume sex is the most vital part of a relationship, it often does not rank as the top priority for most couples. When asked what matters most, people frequently cite:
-* Laughing together.
-* Sharing values and interests.
-* Being best friends.
-* Feeling supported, safe, and secure.
-* Talking and listening (communication).
+## Common Relationship Myths: Part 3
+*   **You’re not complete until you find your ‘other half’** While partners are definitely important in each other’s lives, your life was not incomplete before you met them. Just as it won’t be incomplete if you were to break-up. It’s always good to have boundaries and have hobbies and time that you spend apart.
+*   **Monogamy is the only way to have a happy relationship** For some people, being monogamous (being committed to just one person) is not necessary for a healthy and happy relationship and they opt for non-monogamous relationships . Casual relationships, where there is less commitment, are more popular and can be great for some people.
 
-## The Role of Arguments
-There is a myth that "good" couples do not argue. In reality, many people value small disagreements as they help to vent tensions rather than letting them build up.
-* Arguments allow you to learn what is important to your partner, which can bring you closer together.
-* The key is to recognize that individuals have different communication styles and to respect those differences.
-
-## Independence and Personal Space
-A healthy relationship involves a balance of getting closer and moving further apart. It is often beneficial for partners to have:
-* Separate interests.
-* Time and space to do their own things alone or with friends.
-* The option to "live apart together," a trend where long-term partners maintain separate residences.
-
-## Completeness and Boundaries
-The idea that you need a partner to be "complete" is a common misconception. Your life is not incomplete without a partner, and it remains whole even after a breakup. 
-* Maintaining healthy boundaries is essential.
-* Continuing to pursue your own hobbies and spending time apart is vital for personal well-being and the health of the relationship.
-
-## Relationship Structures
-While monogamy (being committed to one person) is the standard for many, it is not the only way to have a healthy relationship.
-* **Non-monogamy:** Some people opt for non-monogamous arrangements.
-* **Casual relationships:** Relationships with less commitment can be a positive choice for some individuals.
-
-## Effort and Commitment
-We often see "effortless" relationships portrayed in TV and books, but real-world relationships require time, effort, and hard work. This is particularly true for long-term partnerships, which will inevitably encounter challenges along the way.
-
-## Prioritizing Your Needs
-Even within a committed relationship, it is necessary to prioritize your own needs. 
-* A healthy relationship involves a balance of giving and receiving.
-* While looking out for your partner is important, they should also be looking out for you.
-* There may be phases where one person gives more than the other, but the goal is to meet in the middle over time.
+## Common Relationship Myths: Part 4
+*   **A good relationship should be effortless** Relationships require time, effort and commitment for them to be healthy and happy. We often expect relationships to be effortless like we see on TV and in books but relationships require hard work, particularly if it’s going to be a long-term relationship, and you will always encounter challenges along the way.
+*   **You should always put your partner’s needs first** Even in a relationship you still need to prioritise your needs. If you’re always trying to look out for someone and put their needs before yours, that’s great – if they’re doing the same for you. If they are, logic says you’ll probably meet somewhere in the middle. There might be times where you’re giving a lot more, but there’ll also be times where they’re giving a lot more, instead.

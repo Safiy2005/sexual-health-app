@@ -1,40 +1,36 @@
-# HPV: Symptoms, Tests and Treatment
+# HPV: What are The Symptoms, Tests & Treatments
 
-Human papillomavirus (HPV) is the name of a very common group of viruses. While they do not cause problems for most people, some types can lead to genital warts or cancer. There are over 100 different types of HPV; about 30 types affect the genital area, but 90% of genital warts are caused by just two types (6 and 11).
+## Summary
+*   **Overview** HPV (Human papillomavirus) is a very common group of viruses that usually do not cause problems, though certain types can lead to genital warts or cancer. It is spread through skin-to-skin contact and can be protected against via vaccination and identified through screening.
+*   **Disclaimer** The following content is from brook.org.
 
-## Symptoms
-HPV does not usually cause symptoms, and most people who have it do not realise it. However, the virus can sometimes cause:
-* **Genital warts:** Small growths or bumps that appear on or around the genital or anal area.
+## HPV
+Human papillomavirus (HPV) is the name of a very common group of viruses. They do not cause any problems in most people, but some types can cause genital warts or cancer. There are over 100 different types of HPV which can affect different parts of the body. 
 
-## Conditions Linked to HPV
-Most of the time, HPV does not cause any health issues. However, specific types can cause:
-* Genital warts
-* Abnormal changes in cells that can eventually turn into cancer
+About 30 different types of HPV can affect the genital skin but 90% of genital warts are caused by two types of the virus (types 6 and 11). HPV does not usually cause symptoms. Most people who have it do not realise and do not have any problems. However, sometimes the virus can cause genital warts, which are small growths or bumps that appear on or around the genital or anal area.
 
-## How You Get HPV
-HPV is very common, and most people will contract some type of HPV during their life. Because it often has no symptoms, most people won’t know they have it. It is passed through:
-* Any skin-to-skin contact of the genital area
-* Vaginal, anal, or oral sex
-* Sharing sex toys
+## Conditions linked to HPV
+Most of the time HPV does not cause any problems. However, some types of HPV can cause:
+*   Genital warts
+*   Abnormal changes in the cells that can sometimes turn into cancer
 
-## How to Protect Yourself
-While you cannot fully protect yourself against HPV, the following measures can help:
-* **Condoms:** These offer some protection, but the virus can still be passed through contact with surrounding genital skin not covered by the condom.
-* **The HPV Vaccine:** This protects against the types of HPV that cause most cases of genital warts and cervical cancer, as well as some other cancers. It does not protect against all types of HPV.
+HPV is very common; most people will get some type of HPV in their life. Because it has no symptoms, most people won’t know that they have it. You can get HPV from:
+*   Any skin-to-skin contact of the genital area
+*   Vaginal, anal or oral sex
+*   Sharing sex toys
 
-## The HPV Vaccine
-A vaccination programme is offered to all young people aged 12 to 13 to protect against various strains of the virus.
-* **Vaccine Type:** Gardasil 9 is the current vaccine offered under the NHS.
-* **Dosage:** This involves two doses, at least 6 months apart. You must have both doses to be fully protected.
-* **Protection:** The vaccine protects against 9 types of HPV (6, 11, 16, 18, 31, 33, 45, 52 and 58). This includes the strains most likely to cause cervical cancer (16 and 18) and those that most commonly cause genital warts (6 and 11).
+## The HPV vaccine: Part 1
+You cannot fully protect yourself against HPV, but there are things that can help. Condoms can help protect you from HPV but the virus may still be passed on by the surrounding genital areas coming into contact. The HPV vaccine protects against the types of HPV that cause most cases of genital warts and cervical cancer, as well as some other cancers. It does not protect against all types of HPV. 
 
-## Testing for HPV
-HPV is primarily tested for through cervical screening.
-* **Cervical Screening (Smear Test):** A doctor or nurse uses a soft brush to take a sample of cells from the cervix (the opening to the womb). These cells are tested for "high risk" types of HPV.
-* **Eligibility:** Screening is offered to women and people with a cervix aged 25 to 64 to help protect against cervical cancer.
-* **Anal Screening:** Some sexual health clinics may offer anal screening to men with a higher risk of developing anal cancer, such as men who have sex with men.
+There is a vaccination programme that is offered to all young people aged 12 to 13 to protect against some of the different strains of HPV. This involves two doses, at least 6 months apart, of the HPV vaccine Gardasil. You need to have both vaccine doses to be fully protected.
 
-## Treatment
-There is no direct treatment for the HPV virus itself. In most cases, infections do not cause problems and are cleared by the body naturally within two years. Treatment is only required if HPV causes physical issues, such as:
-* Genital warts
-* Changes to cells in the cervix
+## The HPV vaccine: Part 2
+Gardasil 9, the current HPV vaccine offered under the NHS, protects against 9 types of HPV (6, 11, 16, 18, 31, 33, 45, 52 and 58). This means the vaccine protects against strains that are the most common cause of cervical cancer (16 and 18) and those that are the most common cause of genital warts (6 and 11). The HPV vaccine programme has resulted in a fall in genital warts and cervical cancer. 
+
+## HPV is tested for by cervical screening
+HPV is tested for by cervical screening. Cervical screening (also known as a smear test) is when a doctor or nurse uses a soft brush to take a sample of cells from your cervix. The cervix is the opening to your womb from your vagina. These cells are then tested for certain types of HPV that are ‘high risk’. 
+
+Screening is offered to women and people with a cervix aged 25 to 64. It helps protect them against cervical cancer. Some sexual health clinics may offer anal screening to men with a higher risk of developing anal cancer, such as men who have sex with men. This is different from testing for genital warts. 
+
+## There’s no treatment for HPV
+There’s no treatment for HPV. Most HPV infections do not cause any problems and are cleared by your body within two years. Treatment is needed if HPV causes problems like genital warts or changes to cells in the cervix.

@@ -1,42 +1,29 @@
 # Learning to love my skin: Milly's story
 
-Milly, 22, shares her journey of managing multiple skin conditions from a very young age. From eczema to acne, she explores how she has dealt with the physical and emotional challenges of her conditions and how she has ultimately come to terms with her body.
+## Summary
+*   **Overview** Milly, 22, shares her long-term journey of managing multiple skin conditions, including eczema and acne, the impact of medical treatments like the contraceptive pill, and how she eventually achieved self-acceptance and a healthy skincare routine.
+*   **Disclaimer** The following content is from brook.org
 
-## Early experiences with skin conditions
+## Learning to love my skin: Milly’s story: Part 1
+Milly, 22, talks about her skin and how she’s managed and come to terms with it over the years. Milly, 22, has battled with multiple skin conditions from a very young age, from eczema to acne, she has felt at war with her body. Over this time she has learnt why she has such difficulty with her skin, and what makes her feel more confident in her body. I have had what has felt like literally every skin condition imaginable. From the age of two I had eczema and one of my strongest memories from primary school is scratching the scabs under my knees until they bled.
 
-Milly’s struggle with her skin began in early childhood. By age two, she was already dealing with severe eczema. By the age of 12, she began experiencing severe acne. Given her family history—both her father and older sister had struggled with acne—she recognized a strong genetic component to her condition.
+## Learning to love my skin: Milly’s story: Part 2
+At the age of twelve my acne suddenly appeared. My dad used to have really bad acne as a teenager and my older sister struggled with her own, so genetically I knew it was likely to happen to me also. Mine was so bad I went to the doctors, but their lack of understanding and knowledge about treating my skin didn’t fill me with much hope. I was prescribed every medication under the sun, all the way up to the strongest form of Accutane, an isotretinoin acid that is used to treat severe cases of acne and also prevent certain skin cancers.
 
-## Navigating medical treatments
+## Learning to love my skin: Milly’s story: Part 3
+In the end I couldn’t take Accutane due to the possible detrimental effects on my mental health that can be a side effect of its use. It was at this point that I got fed up because nothing was working. We even tried dropping down to the lowest doses of medication and steroid creams because the doctors hoped my body might respond differently. Eventually at the age of fifteen, I was put on the contraceptive pill to counter some of my acne’s side effects. 
 
-Milly sought medical help for her acne, but found the experience frustrating due to a perceived lack of understanding from healthcare providers regarding effective treatments. Her medical journey included:
+## Learning to love my skin: Milly’s story: Part 4
+The problem was that I’d only started my period at 13 or 14 and had no idea whether the changes happening to my body were side effects from the pill or just my body going through those stages of puberty and adolescence. I couldn’t differentiate between what was the pill and what was natural. Looking back, I’m not sure I would have made the same choices about hormonal contraception, both for my acne and my own wellbeing. It wasn’t until last year (2021) that my eczema returned quite badly up my neck, alongside full blown cases of skin infections that added to the damage inflicted on my skin. 
 
-* **Isotretinoin (Accutane):** A strong medication used for severe acne. Milly ultimately had to stop taking it due to its potential detrimental effects on her mental health.
-* **Steroid and antibiotic creams:** Used to treat eczema and skin infections, though these occasionally led to thinning of the skin and a damaged skin barrier.
-* **Hormonal contraception:** At age 15, Milly was prescribed the contraceptive pill to manage acne side effects. However, starting the pill during puberty made it difficult to distinguish between natural developmental changes and side effects from the medication.
+## Learning to love my skin: Milly’s story: Part 5
+My skin felt very thin and the antibiotic and steroid creams I was using caused this to get worse, because the strengths of these creams tore further through my skin barrier. I used to feel embarrassed going to work because people would ask me if I had been choked, as the scars on my neck looked like hand marks, accompanied by swollen eyes. Although these scars began to clear up, my hands are still really bad and have caused most of my problems. I have always liked my hands but with the eczema and irritation they ballooned in size, meaning I could not wear rings or even get my nails done. 
 
-## The physical and emotional impact
+## Learning to love my skin: Milly’s story: Part 6
+I believe my eczema was becoming more inflamed from my stress levels because when I got home after university the flare ups ceased. With my acne, my skin just likes to flare up randomly, so I always have to be prepared. It still makes me feel rubbish when I can’t cover it up properly. Despite the toll it has taken on my self confidence over the years I have become a lot more accepting and kind to myself about it and how I treat my skin. The whole of my teenage years I was jealous of anyone with clear skin and if I could have changed one thing about me it would have been my skin. 
 
-Skin conditions often carry a heavy emotional burden. Milly describes several challenges she faced throughout her teens and early twenties:
+## Learning to love my skin: Milly’s story: Part 7
+I now know that clear skin is not the be all and end all. Just because someone has good skin doesn’t mean they are healthy and just because someone has bad skin does not mean they are unhealthy, so be kind to your skin and don’t comment on other people’s. Don’t let it dictate how you feel about yourself. It is easier said than done and natural to feel less confident but it is important to remember you are doing the most you can. The cause of my acne was mainly dehydration. 
 
-* **Social anxiety:** Scars on her neck from eczema flare-ups and infections led to embarrassment at work.
-* **Physical limitations:** Severe eczema on her hands caused swelling that prevented her from wearing jewelry or performing self-care like getting her nails done.
-* **Stress triggers:** Milly noted a strong correlation between her stress levels—particularly during university—and the severity of her eczema flare-ups.
-* **Self-confidence:** For many years, she felt "at war" with her body and felt jealous of those with clear skin.
-
-## Learning self-acceptance and care
-
-Over time, Milly’s perspective on her skin has shifted from frustration to kindness and acceptance. She has developed a more sustainable approach to managing her health:
-
-* **Understanding the skin barrier:** Milly realized that much of her pain was caused by a destroyed skin barrier and dehydration.
-* **Simplified routine:** She now focuses on protecting and healing her skin through simple, highly moisturizing products.
-* **Changing the narrative:** She emphasizes that "clear skin" is not the sole indicator of health. 
-* **Autonomy in treatment:** She stresses that there is no pressure to use medications that may negatively affect other aspects of your wellbeing.
-
-## Advice for others
-
-Milly offers the following advice for anyone struggling with their skin:
-
-* Be kind to your skin and avoid letting it dictate your self-worth.
-* Understand that skin conditions are often genetic and not a reflection of your hygiene or health.
-* Avoid commenting on other people's skin.
-* Remember that you are doing the best you can with the tools you have.
+## Learning to love my skin: Milly’s story: Part 8
+The pain I experienced from my acne was due to the fact my skin barrier was destroyed and the best thing I did was to start using some really moisturising products that protected and healed my skin barrier. The way I cope with my skin now is by making my routine simple. Overall, there is no pressure to go on any sort of medication or anything that will affect other aspects of your body. Half the time it genuinely comes down to genetics but the silver lining is you learn to take better care of your skin from an earlier age.

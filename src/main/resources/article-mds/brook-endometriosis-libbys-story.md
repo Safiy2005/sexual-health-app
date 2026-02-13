@@ -1,54 +1,32 @@
 # Endometriosis: Libby's Story
 
-## Introduction
+## Summary
+*   **Overview** Libby, 25, describes her experience of endometriosis, which is the second most common gynaecological condition in the UK. She shares her journey from childhood symptoms to diagnosis and management.
+*   **Disclaimer** The following content is from brook.org
 
-Libby, 25, shares her experience with endometriosis, the second most common gynaecological condition in the UK.
+## Libby's Story: Part 1
+When I was around thirteen I started having terrible “tummy aches”. I often went to the school nurse as this pain would come on suddenly and be all I could think about. I didn’t know how to phrase what was hurting because what was hurting was embarrassing, something was hurting inside me. I went to the doctor too, but we never knew what it was, so I just learnt to deal with the pain. When it happened I’d rush to the bathroom and sometimes, if I was at home, I’d sit in the bathroom for hours waiting for it to go. If I called it a stomach ache, it was easier for people to understand.
 
-## Early Symptoms and Misdiagnosis
+## Libby's Story: Part 2
+As I moved into my late teens, I went on to the mini-pill to stop the migraine headaches I was having. I now know that the mini-pill is often used to suppress the symptoms of endometriosis but at that time I had never considered my “tummy aches” and other pains like migraines as even remotely connected. So I didn’t make the link between being on the pill and the pains in my stomach having stopped. Six years later I wanted to stop taking the mini-pill as I didn’t like how it affected my emotions and I had started getting intense pain with my now very irregular cycle.
 
-Around the age of thirteen, Libby began experiencing severe "tummy aches." The pain would come on suddenly, becoming all-consuming. She struggled to articulate what was hurting due to the personal nature of the pain, often resorting to describing it as a "stomach ache" for better understanding. Despite visiting doctors, the cause remained unknown, and Libby learned to cope with the pain, often spending hours in the bathroom waiting for it to subside.
+## Libby's Story: Part 3
+I wanted control of my body and decided to stop putting additional hormones in my body through contraception, so I got the copper coil. Unfortunately, the coil aggravated my symptoms and I was in pain throughout the month – it wasn’t confined to just my period. I had nausea, fatigue, stabbing pains, burning pains, heavy bleeding, needing to urinate, pain when urinating… the list goes on and on! By October, the pain was getting in the way of my daily life. I remember getting off a train in tears, at a stop I didn’t know, and ringing my dad to come and collect me because I was in so much pain. I was 23.
 
-## Contraception and Symptom Suppression
+## Libby's Story: Part 4
+I went to the GP the next day, convinced it was all linked together. I knew it wasn’t just from having the copper coil inserted, it was the same pain I’d had in my stomach years before. That week I had so many pelvic exams that I lost count! I was given medication for an STI that I never had. I also had scans, ultrasounds, antibiotics and multiple physical examinations. Everyone thought something was wrong, but no one was sure what. Having heavily researched all my symptoms, I read about endometriosis (endo) and became certain that was what I was experiencing.
 
-In her late teens, Libby started the mini-pill to manage migraine headaches. Unbeknownst to her at the time, the mini-pill is often used to suppress endometriosis symptoms. She did not connect the cessation of her "tummy aches" to being on the pill.
+## Libby's Story: Part 5
+But you are told online that endo is so difficult to diagnose, that it takes years, so you doubt yourself and I was scared to tell my doctor exactly what I thought. It’s also not spoken about very often or very openly, so you think it’s not that common. In reality, endometriosis affects 1.5 million women, making it comparatively very similar to the amount of women with diabetes. I went back to my GP and meekly suggested the idea of endo to her. Luckily, she believed me and sent me to see an endometriosis specialist.
 
-## Escalating Pain and Seeking Answers
+## Libby's Story: Part 6
+After re-examining me and considering all my scans, the specialist gave me an MRI. Nothing had shown on my scans – endometriosis doesn’t always show itself – but because of her expertise she could see evidence of endo in my MRI. My uterus was retroverted and she believed this was due to endometriosis causing lesions that scar. However, the only way to firmly diagnose endo is to have surgery. I was faced with a decision. I could have a diagnostic laparoscopy to diagnose and excise endo, or I could go on HRT therapy, a sort of medical menopause, without a firm diagnosis.
 
-Six years later, Libby decided to stop the mini-pill due to its emotional side effects. She then opted for a copper coil to regain control of her body. Unfortunately, the coil aggravated her symptoms, leading to constant pain throughout the month, not just during her period. She experienced:
+## Libby's Story: Part 7
+After lots of research I concluded that, for me, HRT was a scarier option than surgery and I chose to have a diagnostic laparoscopy. When I woke up from the surgery I was told that I did have endometriosis. It sounds strange but I just remember a huge sense of relief. I could finally name this thing and that meant I could finally deal with it. All of the pain from the surgery was worth it. My “tummy aches” were real. Post-surgery was hard. I was in a lot of pain.
 
-* Nausea
-* Fatigue
-* Stabbing pains
-* Burning pains
-* Heavy bleeding
-* Urgent need to urinate
-* Pain during urination
+## Libby's Story: Part 8
+My first period was more painful than anything I have ever experienced. It was also incredibly taxing on my emotions as it’s such an intimate part of you. Endometriosis isn’t always spoken about openly and therefore you feel isolated, as if you are the only person experiencing this. There is also a lot of fear surrounding fertility linked to endometriosis so I was worried about that, too. Now I know that a lot of women with endometriosis do go on to have families. I used to wonder as a kid how women had been doing this for years, how can women have periods when they’re this painful?
 
-By the age of 23, the pain significantly impacted her daily life. A particularly distressing incident involved her needing to be collected by her father after getting off a train in tears due to severe pain.
-
-## Medical Investigations and Self-Diagnosis
-
-The following day, Libby visited her GP, convinced her symptoms were connected and not solely due to the copper coil, recognizing the pain as similar to what she experienced years prior. She underwent numerous pelvic exams, received medication for a non-existent STI, and had scans, ultrasounds, antibiotics, and physical examinations. Despite extensive medical investigation, no clear diagnosis was made.
-
-Libby extensively researched her symptoms online and became certain she had endometriosis. However, she was aware of the difficulties and long timelines associated with diagnosing the condition, which led to self-doubt and hesitation in sharing her suspicions with her doctor. The lack of open discussion around endometriosis also contributed to the perception that it was uncommon, despite affecting 1.5 million women in the UK, a number comparable to those with diabetes.
-
-## Diagnosis and Treatment
-
-Libby approached her GP with her suspicion of endometriosis. Her GP, fortunately, believed her and referred her to an endometriosis specialist. After re-examination and reviewing her scans, the specialist identified evidence of endometriosis in an MRI, noting a retroverted uterus likely caused by scarring from endometriosis lesions. The definitive diagnosis, however, requires surgery.
-
-Libby was presented with two options:
-
-* **Diagnostic laparoscopy:** To diagnose and surgically remove (excise) endometriosis.
-* **HRT therapy:** A medical menopause treatment without a confirmed diagnosis.
-
-After thorough research, Libby found HRT to be a more daunting prospect than surgery and chose the diagnostic laparoscopy. Upon waking from the procedure, she was confirmed to have endometriosis. This diagnosis brought a profound sense of relief, allowing her to finally name and address her condition.
-
-## Post-Surgery and Managing Symptoms
-
-While the surgery was painful, Libby found the relief of diagnosis worth the discomfort. Her first post-surgery period was exceptionally painful. She also experienced emotional challenges due to the intimate nature of the condition and the isolation it can cause. Concerns about fertility linked to endometriosis were also a worry, though she learned that many women with the condition go on to have families.
-
-Libby reflects that pain during periods is often normalized, with many women growing up believing painful periods are unavoidable. She highlights that this is not the case and that her pain was not standard period pain.
-
-Following her surgery, Libby had an IUS fitted a few weeks later, which helped reduce the heaviness of her periods. At 25, she now manages her symptoms effectively and reflects on the significant period of her life spent living in pain.
-
----
+## Libby's Story: Part 9
+Often endometriosis runs in families and so girls grow up thinking that this sort of pain is normal. Or if they don’t have a family history of it, like me, they still hear that periods are painful and think you just have to put up with it, but that just isn’t the case. Now I know that it was not just standard period pains that I was experiencing. In hindsight, excision surgery was absolutely the right choice for me. A few weeks after my surgery, I got an IUS fitted and it reduced the heaviness of my periods. I am 25 now and I manage my symptoms better than I ever thought possible. Looking back, I can’t believe how long I lived in pain.

@@ -1,56 +1,53 @@
 # Looking after your breasts or chest
 
-It’s really important to learn what is normal for your breasts or chest so you can spot any changes to your breast or chest health. We teamed up with CoppaFeel! to provide you with the information you need to look after your health.
-
-Everyone is different, and nobody knows your body better than you. Getting to know what is normal for you allows you to identify if something becomes unusual.
-
-## How to Check Your Chest
-
-CoppaFeel! advocates for looking after your breast and chest health by:
-
-* **Looking at and feeling your chest:** This includes up to your armpit and under your collarbone, as this is all breast tissue.
-* **Being aware of all signs and symptoms:** While lumps are the most commonly known symptom of breast cancer, there are other less well-known signs.
-* **Checking regularly:** We recommend checking once a month in a place where you feel comfortable to build your confidence.
-* **Seeking medical advice:** Get any persistent, unusual changes checked out by your GP without delay.
-
-**Important:** It’s not only people with breasts who are susceptible to breast cancer. It can affect people with chests (including men) as well, as there is still breast tissue present. Whatever your age or gender, knowing your body is vital.
-
-## Common Myths About Bras
-
-Bras are a type of underwear used to support or cover breasts. Wearing one is a personal choice. There are many myths surrounding bras that are not supported by evidence:
-
-* **Myth: Sleeping in a bra stops sagging.** There is no evidence that wearing a bra to bed affects breasts in any way. If you choose to wear one for comfort, select a soft, non-wired, and non-constricting version.
-* **Myth: Wearing a bra increases cancer risk.** There is no evidence showing a connection between wearing a bra and an increased risk of breast cancer.
-* **Myth: Wearing a bra makes your breasts sag.** Sagging is caused by the breakdown of collagen and elastin as people age. This is influenced by factors like smoking and sun exposure (lack of sunscreen), rather than bra use, exercise, or breastfeeding.
-* **Myth: Bras should feel uncomfortable.** A well-fitted bra should never be uncomfortable. If it is, you are likely wearing the wrong size.
-
-## Finding the Right Fit
-
-Underwear shops often provide free, professional bra-fitting services. These sessions are designed to be calm and non-judgmental. It is important to get fitted regularly because:
-
-* Sizing varies between different shops and brands.
-* Bodies fluctuate in size and shape due to time and the menstrual cycle.
-* A professional can help find a bra that provides both support and comfort.
-
-## Safe Chest Binding
-
-Some transgender and non-binary people choose to bind to reduce the appearance of their breasts or chest. This can help relieve gender dysphoria and increase comfort. However, binding must be done correctly to avoid physical risks.
-
-### Tips for Safe Binding
-The LGBT Foundation recommends the following:
-* Acquire a binder from a reputable source (such as Spectrum Outfitters).
-* Measure your chest area carefully according to the supplier’s instructions.
-* Listen to your body and take breaks, especially in hot weather.
-* Talk to a professional if you experience any pain.
-* Ask someone you trust to help you learn how to put it on and take it off safely at first.
-
-### What to Avoid
-* **Do not use Ace bandages or duct tape:** These are not meant for binding and can cause physical harm by restricting breathing and not moving with your body.
-* **Do not double bind:** If you want a flatter appearance, try healthier alternatives like wearing two t-shirts.
-* **Avoid binding for too long:** Do not bind for more than 8 to 10 hours at a time. Take days off when you are at home.
-* **Do not sleep or exercise in a binder:** Use a sports bra or a specific swimming binder for physical activities.
-* **Size up if needed:** If you are between sizes, always opt for the larger size.
-
 ## Summary
+*   **Overview** It’s really important to learn what is normal for your breasts or chest so you can spot any changes to your breast or chest health, as awareness is vital for everyone regardless of age or gender.
+*   **Disclaimer** The following content is from brook.org
 
-Breasts and chests are a natural part of the body. Being aware of your health and noticing changes is essential. Additionally, breasts and chests can be a source of pleasure; having a positive relationship with them can be a valuable part of exploring your sexuality.
+## Looking after your breasts or chest: Part 1
+It’s really important to learn what is normal for your breasts or chest so you can spot any changes to your breast or chest health. We teamed up with CoppaFeel! to provide you with the information you need to look after your breast or chest health. It is important to get to know what is normal for your breasts or chest so you can tell if something is unusual. We are all different, and nobody knows your body better than you. CoppaFeel! advocate for looking after your breast and chest health by:
+
+*   Looking at and feeling your chest , including up to your armpit and under your collarbone, as this is all breast tissue.
+*   Being aware of all the signs and symptoms of breast cancer . The most commonly known symptom is unusual lumps in breast tissue, but there are less well known signs as well.
+
+## Looking after your breasts or chest: Part 2
+Important! It’s not only people with breasts who are susceptible to breast cancer. It can affect people with chests (including men), too, as there is still breast tissue. Checking regularly so you start to build your confidence. We recommend checking once a month, in a place where you feel comfortable. Getting any persistent, unusual changes checked out by your GP without delay . Whatever your age or gender, knowing your body and being aware of the symptoms of breast cancer is really important. If in doubt, always get any worrying changes checked out by a GP.
+
+## Looking after your breasts or chest: Part 3
+This page has been developed with support from CoppaFeel !, the first breast cancer charity in the UK to solely create awareness amongst young people. You can find out more about their work and get lots more useful information and support at www.coppafeel.org. Bras are a type of underwear which support and/or cover breasts. Wearing a bra is a choice: no one has to wear a bra if they don’t want to. There are many myths about bras.
+
+## Bras: Part 1
+*   **Sleeping wearing a bra stops breasts from sagging.** There is no evidence to show that wearing a bra to bed will affect your breasts in any way, either by making them more or less ‘perky’. If you do choose to wear a bra to bed for comfort, choose one that is very soft and doesn’t have a wire, and isn’t too constricting.
+*   **Wearing a bra increases the risk of cancer.** There is no evidence that shows a connection between wearing a bra and an increased risk of breast cancer.
+
+## Bras: Part 2
+*   **Wearing a bra makes your breasts ‘sag’.** The connective tissue in breasts is made up of collagen and elastin, and as people age this starts to break down, causing breasts to be less ‘perky’. Wearing a bra will not prevent this from happening, and in fact, neither will doing exercise or avoiding breastfeeding.
+*   **Breakdown of collagen.** The two main things which have been shown to speed up the breakdown of collagen are not wearing sunscreen when in the sun, and smoking. Ultimately, your breasts will change as you age, and there is nothing wrong with this – they will be wonderful at every stage!
+
+## Bras: Part 3
+*   **Bras should feel uncomfortable.** A well-fitted bra should never be uncomfortable to wear. If it is, you are wearing the wrong size. Lots of shops which specialise in selling underwear will have free bra-fitting services, where a professional will measure you and work with you to find a bra that gives you good support and is comfortable to wear. These sessions should be calm and friendly, and the person fitting you will not judge the way your breasts look – they are there to help!
+*   **Bra-fitting advice.** If you haven’t been to a bra-fitting before, you might feel more comfortable arranging to go at the same time as a friend or family member (they won’t be in the actual fitting with you).
+
+## Bras: Part 4
+It’s easy to know your size and once you know it you’ll be able to buy a bra that fits anywhere. Although we have standardised sizing, most shops will vary in how their clothes fit within these sizes, so the same ‘size’ can fit completely differently depending on where you are shopping. Also, bodies can fluctuate in size and shape, and this is particularly true of chests, which can change not only over long periods of time but also with your menstrual cycle. The best thing to do is get fitted whenever you are buying a new bra.
+
+## Binding: Part 1
+Some transgender and non binary people may choose to bind to reduce the appearance of their breasts or chest. It can make people feel more comfortable in their bodies and relieve gender dysphoria. Binding is a choice and no one should feel like they have to bind if they don’t want to . Binding is not without physical risks if not used correctly. The LGBT Foundation recommends the following:
+
+*   Acquire a binder from a reputable source such as Spectrum Outfitters and expect that it may take a while to find a binder that fits you well.
+*   Measure your chest area as instructed by the supplier’s website.
+*   Listen to your body and take a break if you need to — especially in the summer when it’s hot.
+
+## Binding: Part 2
+*   Talk to a professional if you experience any pain while binding.
+*   If possible, ask someone to help put on and take off your binder at first so you can learn to safely put on correctly.
+*   **What to avoid.** The LGBT Foundation also suggests what to avoid: Do not use Ace bandages or Duct tape to bind with . They are not meant for binding and can cause physical harm because they don’t move with your body and can restrict your breathing.
+*   **Sizing.** If you are between sizes, opt for the larger size . You can always return it if it turns out to be too big.
+
+## Binding: Part 3
+*   Do not regularly bind for more than eight to 10 hours at a time . Take breaks and days off if you’re just going to be at home.
+*   Do not double bind . Alternatives such as wearing two t-shirts are a healthier way to give the impression of a flatter chest.
+*   Do not sleep in your binder or wear it for exercise . You can wear a swimming binder or a sports bra.
+
+## Conclusion
+Ultimately, breasts and chests are just another body part, and it is important to be aware of your health and what to do if you notice any changes. Equally, breasts and chests can be a wonderful part of your body for experiencing pleasure, so having a positive relationship with your breasts or chest can be a valuable part of exploring and enjoying your sexuality.

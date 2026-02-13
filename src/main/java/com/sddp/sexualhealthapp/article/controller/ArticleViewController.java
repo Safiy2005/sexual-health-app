@@ -34,6 +34,7 @@ public class ArticleViewController {
     private int currentPageIndex;
     private double swipeStartX;
 
+
     private boolean hasSetUpSwipeEvents = false;
 
     private static final double SWIPE_THRESHOLD = 50.0;
@@ -157,27 +158,53 @@ public class ArticleViewController {
     }
 
     /**
-     * Builds the dot indicators at the bottom of the article view.
+     * Initial setup for indicators.
      */
     private void buildPageIndicators() {
-        pageIndicatorContainer.getChildren().clear();
-        for (int i = 0; i < articlePages.size(); i++) {
-            Circle dot = new Circle(4);
-            dot.getStyleClass().add(i == 0 ? "page-dot-active" : "page-dot");
-            final int pageIndex = i;
-            dot.setOnMouseClicked(e -> navigateToPage(pageIndex));
-            pageIndicatorContainer.getChildren().add(dot);
-        }
+        // Just call update to render the initial window of dots
+        updatePageIndicators();
     }
-
     /**
-     * Updates the dot indicators to reflect the current page.
+     * Rebuilds the dots to show a sliding window (e.g., 5 dots)
+     * centered on the current page to prevent overflow.
      */
     private void updatePageIndicators() {
-        for (int i = 0; i < pageIndicatorContainer.getChildren().size(); i++) {
-            Circle dot = (Circle) pageIndicatorContainer.getChildren().get(i);
-            dot.getStyleClass().clear();
-            dot.getStyleClass().add(i == currentPageIndex ? "page-dot-active" : "page-dot");
+        pageIndicatorContainer.getChildren().clear();
+
+        int totalPages = articlePages.size();
+        int maxVisible = 5; // How many dots you want to see at once
+
+        // 1. Calculate the window range (Start -> End)
+        // Try to center the current page
+        int start = Math.max(0, currentPageIndex - (maxVisible / 2));
+        int end = Math.min(totalPages, start + maxVisible);
+
+        // Adjust start if we hit the end (so we always show 5 dots if possible)
+        if (end - start < maxVisible) {
+            start = Math.max(0, end - maxVisible);
+        }
+
+        // 2. Create the dots for this window
+        for (int i = start; i < end; i++) {
+            Circle dot = new Circle(4);
+
+            // Add style classes (make sure these are in your CSS)
+            if (i == currentPageIndex) {
+                dot.getStyleClass().add("page-dot-active");
+            } else {
+                dot.getStyleClass().add("page-dot");
+
+                // Optional: Make the edge dots smaller for a smoother "Instagram" look
+                if (totalPages > maxVisible && (i == start || i == end - 1)) {
+                    dot.setRadius(2.5);
+                }
+            }
+
+            // Add click listener to jump to that specific page
+            final int targetIndex = i;
+            dot.setOnMouseClicked(e -> navigateToPage(targetIndex));
+
+            pageIndicatorContainer.getChildren().add(dot);
         }
     }
 

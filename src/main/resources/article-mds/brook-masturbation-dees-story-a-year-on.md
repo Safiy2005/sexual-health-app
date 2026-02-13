@@ -1,42 +1,26 @@
 # Masturbation: Dee's Story (a year on)
 
-Dee, a 22-year-old gender-diverse vulva owner, reflects on their evolving relationship with masturbation and how their perspective has shifted since first sharing their story a year ago.
+## Summary
+*   **Overview** Dee, a 22-year-old gender diverse individual, reflects on their evolving journey with masturbation, exploring how their relationship with their body and sex toys has changed over the past year through self-acceptance and inclusive exploration.
+*   **Disclaimer** The following content is from brook.org
 
-## Gender Identity and Pleasure
+## Dee's Story: Part 1
+Dee, 22, talks about their relationship to masturbation as a gender diverse vulva owner, and how masturbation has changed for them in the last year. What a difference a year makes! In 2020, I discussed my masturbation journey, exploring the impact that my first sex toy had on tackling my internalised misogyny and the empowerment I felt after finally reclaiming my orgasm.
 
-Pleasure is not restricted by gender; everyone, regardless of identity, deserves agency over their own orgasm. In the past year, Dee’s journey has transitioned from identifying as a cisgender AFAB (assigned female at birth) individual to identifying as gender diverse. This shift required a process of rekindling their relationship with their body, orgasms, and the use of sex toys.
+## Dee's Story: Part 2
+Now, as a gender diverse individual who has experimented with several different toys, from suction vibrators to dildos, I wanted to revisit my masturbation journey – not only to give an update, but most importantly to discuss masturbation as a gender diverse individual and the importance of inclusive masturbation representation. Pleasure has no gender – anyone can masturbate and everyone deserves power over their orgasm. When I wrote my original blog, I was a cisgender AFAB who was very new to the world of sex positivity and sex toys. Now, I am a gender diverse individual and with that I have had to rekindled my relationship with my body, my orgasm and sex toys.
 
-## Navigating Gender Dysphoria
+## Dee's Story: Part 3
+For those who experience gender dysphoria, masturbation can be tricky to navigate and also scary. I personally struggled with masturbation for a short period when I began having these questions about my gender identity and I had to relearn about my anatomy. Learning about my anatomy from a biological stand-point, separating it from gender identity, allowed me to create a bond with myself again. I educated myself on the differences between sex and gender and this allowed me to form a new relationship with masturbation. 
 
-For individuals who experience gender dysphoria, masturbation can be a complex and sometimes intimidating experience. Navigating these feelings often requires relearning one's anatomy from a biological perspective while separating it from gender identity. By educating themselves on the distinctions between sex and gender, Dee was able to form a new, healthier relationship with masturbation.
+## Dee's Story: Part 4
+My vulva doesn’t equal my gender and my orgasm certainly doesn’t determine how I identify! When I last spoke about my journey with masturbation, I said that it was a form of rebellion and I still stand by that. Now, however, it is a rebellion against the misconception that biology equals gender identity. As a gender diverse vulva owner, finding sex toys that are not highly feminised or gendered can be tricky. However, it’s also about how you perceive sex toys. Sex toys have no gender – they are for everyone who wishes to use them. 
 
-Key takeaways for navigating dysphoria include:
-* Understanding that physical anatomy does not define gender identity.
-* Separating biological function from social or internal identity.
-* Building a personal bond with the body through education and self-acceptance.
+## Dee's Story: Part 5
+There are be specific toys made for penis owners, vulva owners and transgender individuals, however there are also many toys that are universal such as vibrators and dildos. I personally shop at queer and trans-friendly small businesses who focus on gender-inclusive pleasure. Even though many of my toys were gifted to me before I came out as gender diverse I have been able to reconnect with them by acknowledging that they are universally used by various different individuals, all for the same goal – pleasure!
 
-## Masturbation as Rebellion
+## Dee's Story: Part 6
+Another thing that I had to teach myself is that there’s no right way to masturbate – it’s unique to you and your genitals. Masturbating in any way that feels good to you, regardless of the type of genitals you have is so important, especially for gender diverse and LGBTQ+ individuals. Whether that’s the material you use to help create a mood, the sex toy you use, how you use the sex toy or the position you get into to masturbate – there is no right way to masturbate and whatever helps you to get off, embrace it! 
 
-While masturbation was initially a way for Dee to reclaim their body from internalised misogyny, it has now become a form of rebellion against the misconception that biology equals gender identity. Reclaiming the orgasm is a powerful act of self-assertion for gender-diverse individuals.
-
-## Choosing Gender-Inclusive Sex Toys
-
-Finding sex toys that are not heavily gendered or feminised can be challenging for gender-diverse vulva owners. However, it is helpful to remember that sex toys themselves have no inherent gender and can be used by anyone seeking pleasure.
-
-* **Universal Toys:** Many devices, such as dildos and vibrators, are universal and can be enjoyed by individuals with any anatomy.
-* **Inclusive Shopping:** Support queer and trans-friendly small businesses that focus on gender-inclusive pleasure products.
-* **Reframing Use:** Even toys purchased before a change in identity can be reclaimed by acknowledging their universal purpose: pleasure.
-
-## There is No "Right Way" to Masturbate
-
-Masturbation is a unique experience that should be tailored to the individual’s comfort and genitals. There is no singular "correct" method to achieve pleasure. 
-
-Important factors to consider include:
-* The environment or materials used to create a mood.
-* The specific type of toy or tool used.
-* The physical positions that feel most comfortable and affirming.
-* The specific techniques applied to your anatomy.
-
-## Self-Love and Acceptance
-
-Masturbation serves as a method of self-love and acceptance. Personal identities and preferences can change over time, and it is important to acknowledge that how someone identifies or masturbates today may be different in the future. Embracing the journey and the various "pit-stops" along the way is a crucial part of personal growth.
+## Dee's Story: Part 7
+It took me years to claim my orgasm and it has taken me this past year to truly love masturbating; to see it as what it is, a method of self-love and acceptance. I also want to end this blog by reminding you all that we change, every day, as individuals. How you masturbate and identify today may be completely different in a year’s time and that’s ok! Acknowledging your journey, all the pit-stops, is a crucial part of growing – enjoy the ride and masturbate along the way!

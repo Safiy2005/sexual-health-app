@@ -1,37 +1,32 @@
-# How Brook Helped Me: Cassie’s Story
+# How she was helped: Cassie's story
 
-Cassie, a 24-year-old Sex Educator and Student Nurse, shares her experience of how Brook provided a safe, supportive, and non-judgemental environment for her and her friends during their teenage years.
+## Summary
+*   **Overview** Cassie, 24, shares her personal journey from being a nervous teenager seeking sexual health support to becoming a sex educator, highlighting the importance of accessible, non-judgemental care for young people.
+*   **Disclaimer** The following content is from brook.org.
 
-## Content Warning
-This page contains discussion of sexual assault.
+## How she was helped: Part 1
+Cassie, 24, talks about how she and her friends have been helped over the years by being a safe, supportive and non-judgemental source of care and education. Content warning: This page has discussion of sexual assault. My name is Cassie, I’m a 24-year-old Sex Educator and Student Nurse from Liverpool and my pronouns are she/they. I’m a big football fan (the reds!) and I spend most of my time drawing feminist and sex positive illustrations and reading anything I can get my hands on. I first found out through school. 
 
-## About Cassie
-Cassie is a 24-year-old Sex Educator and Student Nurse from Liverpool. As a dedicated advocate for sex-positive education, she uses her platform to share feminist and inclusive illustrations and information. Her journey into this field was deeply influenced by the support she received from Brook as a young person.
+## How she was helped: Part 2
+They used to come once or twice a year and we’d usually sit in our big assembly hall and do some workshops. The most memorable time was when they hosted a circuit event – each table had something different to do/learn and I remember feeling a lot better than I did walking out of my sex ed lessons. Our team also won the circuit and I still have the certificate to this day! I think I was about 14/15 when I first went in Birkenhead. Lots of my friends had recently become sexually active and I had visited with them.
 
-## First Encounters: Brook in Schools
-Cassie first encountered Brook through workshops held at her school. These sessions provided a much more engaging and comfortable environment than traditional sex education lessons.
-* **Workshops:** Brook visited the school annually to host interactive sessions.
-* **Circuit Events:** Cassie recalls a memorable "circuit event" where students moved between tables to learn about different aspects of sexual health, making the information accessible and less intimidating.
+## How she was helped: Part 3
+I had visited with them when they had an unwanted pregnancy or got an STI. One of my friends was unfortunately assaulted at a party and had to take a pregnancy test and an STI test. I went with her and the nurse was so incredibly kind to her that even I got emotional during our time there. We were both very nervous on our way and assumed we would be judged for even walking into the building but that wasn’t the case. This experience encouraged me to go back and talk about contraception with one of the nurses. 
 
-## Supporting Friends and Navigating Crisis
-At age 14 or 15, Cassie began visiting the Brook center in Birkenhead to support friends. One specific instance involved supporting a friend who had been sexually assaulted at a party and needed STI and pregnancy testing.
-* **Compassionate Care:** The kindness shown by the nurses helped alleviate the intense anxiety and fear of judgement the teenagers felt.
-* **Identifying Assault:** The clinical staff played a vital role in helping the young people understand and identify the situation as sexual assault, ensuring the survivor received proper medical and emotional care.
+## How she was helped: Part 4
+We ended up deciding that the injection would be best for me as I wanted to stop my periods. I still remember the nurse to this day; funny, soothing and kind! To be honest the visit was nothing like I expected. At school, both in the playground and from teachers, there was this idea that if you went on contraception, took a pregnancy test or even an STI test that you were less than. I felt like I would be judged and that they would be hesitant to help me and my friends but they weren’t! 
 
-## Accessing Contraception Without Judgement
-Encouraged by the positive atmosphere, Cassie visited Brook to discuss her own contraceptive needs.
-* **The Injection:** After consulting with a nurse, she chose the contraceptive injection (Depo) to help manage her periods.
-* **Breaking Stigma:** Despite the playground and school-level stigma suggesting that seeking contraception was something to be ashamed of, Brook provided a "shame-free" environment.
-* **Ease of Access:** The registration process was designed to be simple and non-overwhelming, using easy-to-understand forms.
+## How she was helped: Part 5
+We walked in and they gave us a very easy form to fill out about why we were there. A simple tick box form, nothing overwhelming, really easy to understand. We left the building feeling relieved and quite frankly, grateful. I went back a few times, mainly just to get my depo injection because this is where I felt safest to get it done. There was a ‘Family Planning Clinic’ closer to home but it felt safer and less overwhelming than an actual hospital! There was no shame and that was the main thing for me. 
 
-## The Importance of Safe, Discreet Spaces
-For Cassie and her peers, Brook offered essential services that felt more accessible than traditional medical settings.
-* **Discretion:** Brook allowed young people to access care without needing a parent or carer, providing a level of confidentiality that many did not feel they could get from their local GP.
-* **Environment:** The center felt safer and less overwhelming than a hospital or a general "Family Planning Clinic."
-* **Non-Judgemental Support:** The lack of shame associated with the service was the primary reason Cassie chose Brook over other providers.
+## How she was helped: Part 6
+I didn’t want to feel embarrassed or shameful. I think that we probably could have got the service elsewhere but we were never told that. We could have gone through our GP but at that age you’re scared, you don’t want your parents to know and you kind of associate going to your GP with your mum or carer! It offered a discreet way of getting help without an adult and without letting your GP know. There was no other place like it at my age. I can safely say my life would be entirely different without it.
 
-## A Lasting Impact: From Service User to Sex Educator
-Cassie credits Brook with planting the "sex-positive seed" that defined her career path. Her experience has come full circle:
-* **Professional Growth:** She transitioned from a nervous teenager to a confident Sex Educator and Student Nurse.
-* **Recognition:** Cassie was awarded "Micro Influencer of the Year" by Brook for her podcast discussing sex and relationships.
-* **Continuing the Legacy:** She now strives to provide the same sense of safety and education for the next generation of young people that Brook provided for her.
+## How she was helped: Part 7
+Seeing how sex-positive and shame free they were and how much the service helped me and my friends, it planted the sex-positive seed that has now grew into me doing similar work. I want young people to feel as safe with me as I did when I was a teen. As for what I’d do if we didn’t have it growing up… Not even sure that bears thinking about to be honest. It is where almost all of our Sex and Relationships knowledge came from. My friend that got help after her assault may never have found out she had caught an STI.
+
+## How she was helped: Part 8
+She may never have received the proper care! To tell you the truth we wouldn’t have even properly understood that it was assault without the nurse that helped her. Me and my group of friends were always very grateful. It’s been nice to see that it has remained a safe and inclusive place for young people and not only still does what it did for me but more! My experience has kind of come full circle now which is quite emotional for me. I started as a small girl who panicked at the thought of talking about my body.
+
+## How she was helped: Part 9
+I went from panicking at the thought of talking about my body with someone else, to talking about it on the internet and even winning an award as ‘Micro influencer of the year’ with my podcast talking about Sex and Relationships. I wouldn’t be the woman I am today without them attending my school when I was a girl.

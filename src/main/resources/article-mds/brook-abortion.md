@@ -1,54 +1,47 @@
-# Abortion: What is Abortion and How Safe Is It?
+# Abortion: What is Abortion And How Safe Is It?
 
-Abortion is when someone chooses to end a pregnancy. It is sometimes referred to as a ‘termination’. People choose to end a pregnancy for many reasons, including personal circumstances, financial reasons, or medical safety. Whatever the reason, having an abortion is a personal choice and a legal right.
+## Summary
+*   **Overview** Abortion is when someone chooses to end a pregnancy, also known as a termination. It is a safe procedure with two main methods—medical and surgical—depending on the length of the pregnancy and medical needs.
+*   **Disclaimer** The following content is from brook.org.
 
-## Safety and Risks
-Abortion is a very safe medical procedure. Statistically, it is much safer than continuing a pregnancy and giving birth. The earlier an abortion is performed, the safer it is. 
+## What is abortion?: Part 1
+Abortion is when someone sometimes chooses to end a pregnancy. It is sometimes called a ‘termination’. People choose to end a pregnancy for lots of reasons. It might be because they don’t want children, or aren’t financially able to support a child. It might also be because it would be medically unsafe for them to have a baby. Whatever someone’s reasons are for having an abortion, it is their choice and their right to do so. Abortion is a very safe procedure, and on average it is much safer than continuing with the pregnancy and giving birth.
 
-Like any medical procedure, there are some risks involved, such as a small risk of infection. Your doctor or nurse will provide detailed information about potential risks before you proceed. Symptoms of infection can include heavy bleeding or pelvic pain similar to severe period pains.
+## What is abortion?: Part 2
+The earlier an abortion is carried out, the safer it is, too. But like any other medical procedure, it has a risk attached to it. The doctor or nurse who is advising you should always provide information about the potential risks before you go ahead. There are two ways of ending an unwanted pregnancy; a medical abortion (which involves taking medicines) or a surgical abortion (which requires a surgical procedure).
 
-## Methods of Abortion
-There are two main ways to end a pregnancy. The method you choose depends on your medical needs, how many weeks pregnant you are, and your personal preference (such as whether you prefer to be awake or asleep).
+## What is abortion?: Part 3
+The type of abortion you can have depends on several factors but you should always be able to choose the method you would prefer as long as it suits your medical needs. The doctor or nurse advising you will tell you which methods are suitable based on your medical history, how many weeks the pregnancy is and whether you prefer to be awake or asleep for the procedure.
 
-* **Medical Abortion:** Involves taking medications to end the pregnancy.
-* **Surgical Abortion:** Requires a minor surgical procedure.
+## Abortions up to 10 weeks: Part 1
+Early medical abortion is provided in the first ten weeks of pregnancy. It is sometimes known as the ‘abortion pill’. This method involves taking two medicines which end a pregnancy. It’s not the same as emergency contraception, which can be taken to try to prevent pregnancy from happening in the first few days after unprotected sex. The first medication you will be given is mifepristone, which ends the pregnancy. The second medication is misoprostol and is taken 24 to 48 hours later.
 
-## Abortions up to 10 Weeks
-Known as an "early medical abortion" or the "abortion pill," this method involves two different medications:
-* **Mifepristone:** The first pill, which ends the pregnancy.
-* **Misoprostol:** Taken 24 to 48 hours later, this causes the womb to expel the pregnancy through cramping and bleeding (usually taking 4–6 hours).
+## Abortions up to 10 weeks: Part 2
+The second medication causes your womb to expel the pregnancy through cramping and bleeding and this usually takes between 4 and 6 hours but sometimes longer. You will be offered pain relief. Most early medical abortions take place at home. It is now possible to have a telephone or video consultation and if it is agreed that medical abortion is the right treatment for you you can have all the medication sent to you at home, without needing to visit a clinic. You will have cramps and bleeding and are likely to spot blood for up to fours weeks following the abortion.
 
-Most early medical abortions take place at home. Following a telephone or video consultation, medication can often be sent directly to your home.
+## Abortions up to 15 weeks
+Abortions given between 10 and 15 weeks are called vacuum aspiration, also known as the ‘suction method’. For this procedure either a general (asleep) or local (awake) anaesthetic is given. The procedure only takes about 5-10 minutes and there is no wound or stitches. The cervix (the entrance to the womb at the top of the vagina) is gently stretched to allow a thin tube to pass through it into the womb. Once the tube is inserted the pregnancy is removed by suction. Most people only take an hour or so to recover and go home the same day.
 
-## Abortions up to 15 Weeks
-Between 10 and 15 weeks, the most common method is **vacuum aspiration** (the suction method).
-* The procedure takes 5–10 minutes.
-* It can be done under local or general anaesthetic.
-* A thin tube is passed through the cervix to remove the pregnancy using suction.
-* Most people recover within an hour and go home the same day.
+## Abortions after 15 weeks: Part 1
+Abortion after 15 weeks is less common as most abortions happen in the first 13 weeks of pregnancy. However, sometimes people need to have an abortion later on in pregnancy. They might find that they need to travel out of their local area to do so, as abortion after 15 weeks is not always as easy to access. Again, it’s important to talk to a doctor as soon as possible. The exact procedure offered to you will be explained by a doctor or nurse before the abortion goes ahead.
 
-## Abortions after 15 Weeks
-Abortions after 15 weeks are less common and may require traveling to a specific clinic.
-* **Medical Abortion (up to 24 weeks):** Similar to the early medical abortion but performed in a clinic under medical supervision. You will experience contractions until the pregnancy has passed.
-* **Surgical Dilation and Evacuation (D&E):** Usually performed under general anaesthetic. The cervix is stretched and the pregnancy is removed using a suction tube and medical instruments. This takes about 10–20 minutes.
+## Abortions after 15 weeks: Part 2
+Medical abortion can be carried out up to 24 weeks of pregnancy. You will be admitted to the clinic and be given two medications. The first medication is mifepristone, which ends the pregnancy and the second medication is misoprostol which expels the pregnancy. You will have contractions but should be given pain relief and looked after by a doctor or nurse until the pregnancy has passed. You will stay in the clinic until the abortion is complete. In some cases you might have to stay overnight until the pregnancy has passed.
 
-## How to Access Abortion Services
-In the UK, abortions are available for free on the NHS. You do not need your partner's permission.
+## Abortions after 15 weeks: Part 3
+Surgical dilation and evacuation (from 15 weeks of pregnancy) is a minor operation, and is usually done under general anaesthetic (meaning you will be asleep). It usually takes around 10-20 minutes. The opening to the womb, called the cervix, will be gently stretched, and the foetus will be removed using a suction tube. You might be able to go home the same day if it all goes well, or you might need a stay overnight in hospital. Afterwards, you may bleed a bit for up to three weeks.
 
-* **Self-Referral:** In many areas, you can contact abortion providers directly without seeing a GP.
-* **GP Referral:** You can visit your doctor, who can refer you to a service.
-* **Brook Services:** While Brook does not perform abortions, they provide pregnancy tests, emergency contraception, and referrals to abortion providers.
+## Risks and symptoms
+There are risks with any medical or surgical procedure and your doctor or nurse should explain them clearly to you before you go ahead with an abortion. Each procedure has a different set of risks and you should be given written information about those risks. After an abortion, there is a small risk of infection. You may be given antibiotics afterwards to stop infections. The symptoms of infection include pain in your pelvic area (like bad period pains), and heavy bleeding from your vagina.
 
-### Recommended Providers
-* **British Pregnancy Advisory Service (BPAS)**
-* **MSI Reproductive Choices UK**
-* **National Unplanned Pregnancy Advisory Service (NUPAS)**
-* **Abortion Talk:** A confidential talkline for discussing your decision or experience.
+## Accessing Abortion Services
+*   **Does it cost money to get an abortion?** No. Abortion is available for free on the NHS in England, Wales, Scotland and Northern Ireland.
+*   **Can you get an abortion if you’re under 16?** Yes. If someone is under 16 but is considered able to consent to their own medical treatment, they can consent to an abortion without needing to tell a parent or carer.
+*   **How do I get an abortion?** You can contact your GP who can refer you to an abortion service. Alternatively, in many parts of the country you can refer yourself straight into abortion services without going to see your GP.
+*   **Do I have to tell my partner if I’m getting an abortion?** No. You do not need your partner’s agreement to have an abortion, although some people want to discuss the pregnancy with their partner and come to a joint decision.
 
-## Frequently Asked Questions
+## Accessing Abortion Services: Part 2
+If you are looking for support around making a decision, be careful – some places pretend to offer ‘impartial’ and ‘unbiased’ advice, but actually they use counselling to persuade people not to have abortions, these places are called crisis pregnancy centres.
 
-* **Does it cost money?** No, abortion is free on the NHS in England, Wales, Scotland, and Northern Ireland.
-* **Can I get an abortion if I am under 16?** Yes. If you are considered able to consent to your own treatment, you do not need to tell a parent or carer.
-* **Will it affect my fertility?** There is no evidence to suggest that a safe, legal abortion impacts future fertility or mental health.
-* **Do I have to tell my partner?** No. The decision is yours alone.
-* **What about 'Crisis Pregnancy Centres'?** Be cautious of centers that claim to offer impartial advice but actually use "counselling" to persuade people not to have abortions. Stick to regulated providers like the NHS, BPAS, or MSI.
+## Are abortions safe?
+Yes. Abortion is a very safe procedure, and on average it is much safer than continuing with the pregnancy and giving birth. The earlier an abortion is carried out, the safer it is, too. There is no evidence to suggest that it has an impact on physical or mental health. It is very unlikely that it would impact your future fertility. But like any other medical procedure, it has a risk attached to it. The doctor or nurse who is advising you should always provide information about the potential risks before you go ahead.
