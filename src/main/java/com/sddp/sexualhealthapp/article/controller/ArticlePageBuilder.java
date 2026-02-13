@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 
 import java.util.List;
 
@@ -147,10 +149,10 @@ public final class ArticlePageBuilder {
                     }
 
                     String itemText = "\u2022   " + extractBulletText(bp);
-                    Label bulletLabel = new Label(itemText);
-                    bulletLabel.getStyleClass().add("article-bullet-item");
-                    bulletLabel.setWrapText(true);
-                    bulletBox.getChildren().add(bulletLabel);
+                    TextFlow bulletFlow = createRichTextFlow(
+                            itemText, "article-bullet-text", "article-bullet-text-bold");
+                    bulletFlow.getStyleClass().add("article-bullet-item");
+                    bulletBox.getChildren().add(bulletFlow);
                     i++;
                 }
 
@@ -177,10 +179,10 @@ public final class ArticlePageBuilder {
                 }
 
                 if (textBlock.length() > 0) {
-                    Label textLabel = new Label(textBlock.toString());
-                    textLabel.getStyleClass().add("article-section-content");
-                    textLabel.setWrapText(true);
-                    page.getChildren().add(textLabel);
+                    TextFlow textFlow = createRichTextFlow(
+                            textBlock.toString(), "article-text", "article-text-bold");
+                    textFlow.getStyleClass().add("article-section-content");
+                    page.getChildren().add(textFlow);
                 }
             }
         }
@@ -200,6 +202,48 @@ public final class ArticlePageBuilder {
      */
     private static String extractBulletText(String line) {
         return line.substring(BULLET_MARKER.length()).stripLeading();
+    }
+
+    /**
+     * Parses text for {@link Article#BOLD_START}/{@link Article#BOLD_END}
+     * markers and builds a {@link TextFlow} with individually styled
+     * {@link Text} nodes for normal and bold segments.
+     */
+    private static TextFlow createRichTextFlow(String content, String normalClass, String boldClass) {
+        TextFlow flow = new TextFlow();
+        StringBuilder current = new StringBuilder();
+        boolean inBold = false;
+
+        for (int i = 0; i < content.length(); i++) {
+            char c = content.charAt(i);
+            if (c == Article.BOLD_START) {
+                if (current.length() > 0) {
+                    Text text = new Text(current.toString());
+                    text.getStyleClass().add(normalClass);
+                    flow.getChildren().add(text);
+                    current.setLength(0);
+                }
+                inBold = true;
+            } else if (c == Article.BOLD_END) {
+                if (current.length() > 0) {
+                    Text text = new Text(current.toString());
+                    text.getStyleClass().add(boldClass);
+                    flow.getChildren().add(text);
+                    current.setLength(0);
+                }
+                inBold = false;
+            } else {
+                current.append(c);
+            }
+        }
+
+        if (current.length() > 0) {
+            Text text = new Text(current.toString());
+            text.getStyleClass().add(inBold ? boldClass : normalClass);
+            flow.getChildren().add(text);
+        }
+
+        return flow;
     }
 
     /**

@@ -3,14 +3,21 @@ package com.sddp.sexualhealthapp.article.model;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import org.commonmark.node.*;
 import org.commonmark.parser.Parser;
+import org.commonmark.renderer.NodeRenderer;
 import org.commonmark.renderer.text.*;
 
 public class Article {
     public record Section(String heading, String content) {
     }
+
+    /** Unicode PUA marker inserted before bold text in section content. */
+    public static final char BOLD_START = '\uE000';
+    /** Unicode PUA marker inserted after bold text in section content. */
+    public static final char BOLD_END = '\uE001';
 
     private String title;
     private String source;
@@ -22,6 +29,33 @@ public class Article {
         String rendered = TextContentRenderer.builder().build().render(node);
 
         return rendered.isEmpty() ? Optional.empty() : Optional.ofNullable(rendered);
+    }
+
+    /**
+     * Extracts text from a commonmark AST node, preserving bold formatting
+     * by wrapping strong-emphasis content in {@link #BOLD_START}/{@link #BOLD_END}
+     * markers. All other node types are handled by the default
+     * {@link TextContentRenderer}.
+     */
+    private String extractRichText(Node node) {
+        TextContentRenderer renderer = TextContentRenderer.builder()
+                .nodeRendererFactory(context -> new NodeRenderer() {
+                    @Override
+                    public Set<Class<? extends Node>> getNodeTypes() {
+                        return Set.of(StrongEmphasis.class);
+                    }
+
+                    @Override
+                    public void render(Node node) {
+                        context.getWriter().write(String.valueOf(BOLD_START));
+                        for (Node child = node.getFirstChild(); child != null; child = child.getNext()) {
+                            context.render(child);
+                        }
+                        context.getWriter().write(String.valueOf(BOLD_END));
+                    }
+                })
+                .build();
+        return renderer.render(node);
     }
 
     // I miss Haskell Maybe :(
@@ -81,7 +115,7 @@ public class Article {
                 var content = new StringBuilder();
 
                 for (var node : childSections) {
-                    content.append(extractText(node).orElse(""));
+                    content.append(extractRichText(node));
                     content.append("\n");
                 }
 

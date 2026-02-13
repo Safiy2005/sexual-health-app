@@ -607,10 +607,22 @@
 }
 
 .article-section-content {
+    -fx-line-spacing: 3px;
+}
+
+/* Normal (non-bold) text within article section content */
+.article-text {
+    -fx-fill: #5C6B6B;
     -fx-font-size: 14px;
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #5C6B6B;
-    -fx-line-spacing: 3px;
+}
+
+/* Bold text within article section content */
+.article-text-bold {
+    -fx-fill: #3D5A5B;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-weight: bold;
 }
 
 /* Bullet-list container – visually distinct from surrounding text */
@@ -623,11 +635,23 @@
 
 /* Individual bullet item inside the list box */
 .article-bullet-item {
-    -fx-font-size: 14px;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #4A6060;
     -fx-line-spacing: 2px;
     -fx-padding: 4px 0 4px 2px;
+}
+
+/* Normal (non-bold) text within a bullet item */
+.article-bullet-text {
+    -fx-fill: #4A6060;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Bold text within a bullet item */
+.article-bullet-text-bold {
+    -fx-fill: #3A5555;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-weight: bold;
 }
 
 /* ============================================
