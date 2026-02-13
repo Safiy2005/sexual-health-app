@@ -613,6 +613,23 @@
     -fx-line-spacing: 3px;
 }
 
+/* Bullet-list container – visually distinct from surrounding text */
+.article-bullet-list-box {
+    -fx-background-color: #E8F4F2;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 18px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.10), 8, 0, 0, 2);
+}
+
+/* Individual bullet item inside the list box */
+.article-bullet-item {
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #4A6060;
+    -fx-line-spacing: 2px;
+    -fx-padding: 4px 0 4px 2px;
+}
+
 /* ============================================
    SWIPABLE ARTICLE PAGES
    ============================================ */
