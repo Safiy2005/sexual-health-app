@@ -150,7 +150,8 @@ public final class ArticlePageBuilder {
 
                     String itemText = "\u2022   " + extractBulletText(bp);
                     TextFlow bulletFlow = createRichTextFlow(
-                            itemText, "article-bullet-text", "article-bullet-text-bold");
+                            itemText, "article-bullet-text", "article-bullet-text-bold",
+                            true);
                     bulletFlow.getStyleClass().add("article-bullet-item");
                     bulletBox.getChildren().add(bulletFlow);
                     i++;
@@ -180,7 +181,8 @@ public final class ArticlePageBuilder {
 
                 if (textBlock.length() > 0) {
                     TextFlow textFlow = createRichTextFlow(
-                            textBlock.toString(), "article-text", "article-text-bold");
+                            textBlock.toString(), "article-text", "article-text-bold",
+                            false);
                     textFlow.getStyleClass().add("article-section-content");
                     page.getChildren().add(textFlow);
                 }
@@ -208,11 +210,23 @@ public final class ArticlePageBuilder {
      * Parses text for {@link Article#BOLD_START}/{@link Article#BOLD_END}
      * markers and builds a {@link TextFlow} with individually styled
      * {@link Text} nodes for normal and bold segments.
+     *
+     * @param breakAfterLeadingBold if {@code true} and the content starts
+     *                              with bold text, a newline is inserted
+     *                              after the first bold segment so the
+     *                              remaining text appears on a new line.
      */
-    private static TextFlow createRichTextFlow(String content, String normalClass, String boldClass) {
+    private static TextFlow createRichTextFlow(String content, String normalClass, String boldClass,
+            boolean breakAfterLeadingBold) {
         TextFlow flow = new TextFlow();
         StringBuilder current = new StringBuilder();
         boolean inBold = false;
+        boolean isFirstBold = true;
+        // Content "starts with bold" if the first BOLD_START occurs before any
+        // alphabetic character (i.e. only bullet symbols/whitespace precede it).
+        int boldIdx = content.indexOf(Article.BOLD_START);
+        boolean startsWithBold = boldIdx >= 0
+                && content.substring(0, boldIdx).chars().noneMatch(Character::isLetterOrDigit);
 
         for (int i = 0; i < content.length(); i++) {
             char c = content.charAt(i);
@@ -231,6 +245,11 @@ public final class ArticlePageBuilder {
                     flow.getChildren().add(text);
                     current.setLength(0);
                 }
+                // Insert newline after the first bold segment if it leads the bullet
+                if (breakAfterLeadingBold && isFirstBold && startsWithBold) {
+                    flow.getChildren().add(new Text("\n"));
+                }
+                isFirstBold = false;
                 inBold = false;
             } else {
                 current.append(c);
