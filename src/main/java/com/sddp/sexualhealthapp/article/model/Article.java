@@ -58,6 +58,15 @@ public class Article {
         return nodes;
     }
 
+    private String doubleNewlines(String content) {
+        return content.replace("\n", "\n\n");
+    }
+
+    private String reformatBullets(String content) {
+        // Replace lines starting with * with an arrow symbol, and add indentation
+        return content.replaceAll("(?m)^\\* ", " → ");
+    }
+
     private ArrayList<Section> extractSections(Node markdownAst) {
         ArrayList<Section> sections = new ArrayList<Section>();
 
@@ -76,7 +85,7 @@ public class Article {
                     content.append("\n");
                 }
 
-                sections.add(new Section(title, content.toString()));
+                sections.add(new Section(title, reformatBullets(doubleNewlines(content.toString()))));
             }
 
             current = current.getNext();
