@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.article.model.Article;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -107,6 +108,7 @@ public class ArticleViewController {
 
     /**
      * Animates transition to the target page index.
+     * Resets the page's scroll position to the top before animating.
      */
     private void navigateToPage(int targetIndex) {
         if (targetIndex < 0 || targetIndex >= articlePages.size() || targetIndex == currentPageIndex) {
@@ -117,6 +119,9 @@ public class ArticleViewController {
         VBox outgoingPage = articlePages.get(currentPageIndex);
         VBox incomingPage = articlePages.get(targetIndex);
         double width = articlePageContainer.getWidth();
+
+        // Reset scroll position to top for the incoming page
+        resetScrollPosition(incomingPage);
 
         // Position incoming page off-screen in the swipe direction
         incomingPage.setTranslateX(goingForward ? width : -width);
@@ -141,6 +146,14 @@ public class ArticleViewController {
         currentPageIndex = targetIndex;
         updatePageIndicators();
         updatePageCounter();
+    }
+
+    // This may break if the layout of article section pages changes...
+    private void resetScrollPosition(VBox pageWrapper) {
+        if (!pageWrapper.getChildren().isEmpty()
+                && pageWrapper.getChildren().get(0) instanceof ScrollPane scrollPane) {
+            scrollPane.setVvalue(0);
+        }
     }
 
     /**
