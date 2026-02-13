@@ -1,41 +1,26 @@
-# Gender, Queerness and Autism: Max's Story
+# Gender, queerness and autism: Max's story
 
-## Introduction to Max’s Journey
+## Summary
+*   **Overview** Max, 20, shares how their gender, queerness and autism intersect and have influence in often unspoken and overlooked ways, discussing their journey through education, relationships, and self-understanding.
+*   **Disclaimer** The following content is from brook.org.
 
-Max, a 20-year-old university student, identifies as autistic, non-binary, and queer. This intersection of identities has shaped a unique path toward self-understanding. Max was diagnosed with autism at age 10, a period marked by significant overwhelm and difficulty coping with the demands of school and daily life. Through access to supportive educational environments, Max has transitioned from these early struggles to successfully navigating their final year of university.
+## Gender, queerness and autism: Max’s story: Part 1
+I’m Max, I’m 20, and I am Autistic, non-binary, and queer. From just looking at the first line, you can tell a lot comes into my identity. Getting to this point in my life, and in my self-understanding, has definitely been rocky. I was diagnosed with autism when I was about 10. At that point, I was in my ‘kick-y punch-y bite-y’ stage, where school and life overwhelmed me and I resorted to violence towards myself and others as a defensive coping mechanism. But over time, and after being put into the right schools, I am in my final year of university. Life is going pretty well, given the millions of unprecedented events happening worldwide.
 
-## Understanding Relationships and Autism
+## Gender, queerness and autism: Max’s story: Part 2
+I have always found relationships challenging to understand. From the more traditional black and white definitions that people often first think about, to the more nuanced and fluid workings of most relationships. This has been the case for me all my life, making it difficult to understand relationships, including platonic relationships. It’s hard for me to know what level of friend am I to you – am I just someone you sit next to in classes and friend by proxy? Or am I an actual friend?
 
-For many individuals on the autistic spectrum, understanding the nuances of social relationships can be a significant challenge. Max describes finding traditional, "black and white" definitions of relationships easier to grasp than the fluid and nuanced realities of human connection.
+## Gender, queerness and autism: Max’s story: Part 3
+I could only be where I am today because of my partner Dylan, another queer, non-binary person who has supported me through a lot. They were one of the first queer people I had a deep connection and relationship with, and were always one of the few people I could turn to with anything. We were close friends before being together and they made me feel safe and happy to discuss my mental health and sexuality. Being friends with them helped me feel more secure and internally proud of who I am.
 
-* **Platonic Boundaries:** Distinguishing between different levels of friendship can be difficult. Questions regarding whether a peer is a close friend or a "friend by proxy" (someone known through shared circumstances) are common.
-* **Navigating Nuance:** The transition from structured social rules to the more complex dynamics of adult relationships requires significant effort and self-reflection.
+## Gender, queerness and autism: Max’s story: Part 4
+The change from friend to partner happened over a long space of time. At the time, I had the feeling of ‘I love them, but just in a friend way’, then it quickly changed to being a more romantic kind. Upon reflection, the shifts of feelings were obvious. Still, with this being my first proper relationship and with it transiting in a non ‘traditional’ way of ‘we’re this today and we’re that tomorrow’ way, it was difficult. They had to explain that they wanted to be my partner three ways before I understood what they meant. It was kind of difficult; the autism was showing that night for sure!
 
-## Navigating Romance and Support
+## Gender, queerness and autism: Max’s story: Part 5
+Like many queer folks, soon after I thought I figured it all out, I started to question my gender and again I turned to Dylan for advice and support. With their support, I understood myself to be nonbinary. I began the journey of self-understanding beyond just a label. This is a journey that I am still on. This journey has changed how I view and understand myself and others, and influenced my relationships as new respect dynamics were added to the other elements of relationships.
 
-Max credits much of their personal growth and security to their partner, Dylan, who is also queer and non-binary. Their relationship highlights the importance of peer support and clear communication.
+## Gender, queerness and autism: Max’s story: Part 6
+When Dylan and I started to be more intimate with each other, the thought of having sex was scary and intimidating. I felt like I was not ready, and was overwhelmed at the thought of having to do it. Dylan was incredibly understanding and comforting and was always open and constantly communicating with me, making me feel not pressured to do anything that I was not comfortable with. Because of this I slowly grew happier with being sexual with them.
 
-* **Building a Foundation:** The relationship began as a close friendship, providing a safe space for Max to discuss mental health and sexuality.
-* **Communicating Intent:** Because Max processes information literally, the transition from friendship to a romantic partnership required explicit communication. Dylan had to explain their romantic interest multiple times and in different ways before the shift in dynamic was fully understood.
-* **Internal Pride:** Having a partner who shares similar identities helped Max feel more secure and proud of their own queer identity.
-
-## Exploring Gender Identity
-
-Following their realization regarding their sexuality, Max began to question their gender identity. With Dylan’s support, Max identified as non-binary.
-
-* **Self-Discovery:** This journey of self-understanding is viewed as an ongoing process rather than a destination.
-* **Impact on Dynamics:** Redefining gender identity has influenced how Max views themselves and others, adding new layers of respect and understanding to their interpersonal relationships.
-
-## Intimacy and Communication
-
-The intersection of neurodiversity and sexual intimacy can often involve sensory or emotional overwhelm. Max initially found the prospect of sex intimidating and scary.
-
-* **Pacing and Consent:** Through constant communication and a lack of pressure from their partner, Max was able to become comfortable with sexual intimacy at their own pace.
-* **Normalizing the Experience:** Max emphasizes the importance of a relaxed atmosphere. Finding humor in the natural aspects of sex—such as bodily noises or random thoughts—has helped create a comfortable and emotionally connected experience.
-
-## Challenging Stereotypes
-
-The autistic element of Max’s identity is central to their narrative. By sharing their story, Max aims to:
-
-* **Combat Infantilisation:** People with autism are often unfairly infantilised or subjected to narrow stereotypes regarding their capacity for romance and sexual agency.
-* **Promote Representation:** Providing a first-hand account of queer, autistic life offers comfort and validation to others who may feel overlooked by mainstream narratives.
+## Gender, queerness and autism: Max’s story: Part 7
+One thing that both of us enjoy is that we can (and frequently do) laugh during sex, from the bodily noises and our joints clicking at the most random times to the highly random thoughts that pop into our head during sex, it makes for an amazingly laid back, comfortable and emotionally charged experience. The autistic element of my identity is very important to me. Being able to speak about my experiences of sex and relationships, while uniquely my own, might (and hopefully will), be comforting for someone to see and feel understood among the rampant infantilisation and stereotypes of autistic people.

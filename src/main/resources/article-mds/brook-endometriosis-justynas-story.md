@@ -1,57 +1,34 @@
-# Endometriosis: Justyna's Story
+# Endometriosis: Justyna’s Story
 
-Justyna, 22, shares her experience navigating an endometriosis diagnosis and the importance of education around the chronic condition.
+## Summary
+*   **Overview** Justyna, 22, shares her journey with endometriosis, from experiencing severe period pain at age 10 to receiving a diagnosis at 16. She discusses the physical and emotional impact of the condition, her experiences with various hormonal contraceptives and surgery, and the importance of awareness for invisible chronic illnesses.
+*   **Disclaimer** The following content is from brook.org.
 
-## Understanding Endometriosis
+## Endometriosis: Justyna’s Story: Part 1
+Justyna, 22, explains how she navigated the news of her endometriosis diagnosis. The self-employed creator shares with us why educational exposure to the chronic condition is so important for this year’s Endometriosis Awareness Month. 
 
-I was diagnosed with endometriosis at 16. Endometriosis is the extensive growth of endometrial tissue outside of the uterus, which can occur anywhere in the body but is most commonly found around the uterus and reproductive organs. In the UK, approximately 1 in 10 women and people with a womb are affected by endometriosis.
+When I was 16, I was diagnosed with endometriosis. Endometriosis is extensive growth of the endometrial tissue outside of the uterus. It can grow anywhere in the body, but is usually around the uterus and reproductive organs. In the UK, around 1 in 10 women and people with a womb have endometriosis.
 
-I had experienced heavy, painful periods since the age of 10, to the point where I regularly had to take days off school due to the pain. Initially, I believed this level of pain was normal for periods and didn't raise it with my doctors. However, by my late teens, over-the-counter painkillers and hot water bottles were no longer providing sufficient relief.
+## Endometriosis: Justyna’s Story: Part 2
+I had been experiencing heavy, painful periods since the age of 10 and they were so unbearable that I would always have to take a day off school because of the pain. I hadn’t raised these issues with my doctors previously because I thought this type of pain was normal with periods. It was only once I was in my late teens that it became almost impossible to get relief from just paracetamol and hot water bottles. I felt lucky to be diagnosed whilst still in my teens, as it takes roughly 7 years to receive a diagnosis.
 
-I consider myself fortunate to have received a diagnosis in my teens. While the average diagnosis time is around 7 years, I was diagnosed on my first visit with a new GP who specialized in gynaecology. Upon hearing about my period issues, she explained endometriosis and arranged for tests to confirm the diagnosis.
+## Endometriosis: Justyna’s Story: Part 3
+Whilst that was around the same timeframe for me, I was diagnosed on my first visit with my new GP, thanks to her specialising in gynaecology. Once she heard about my period problems she explained what endometriosis was and sent me to get tests to confirm the diagnosis. As well as my heavy periods, other symptoms caused by my endometriosis include: PMDD (Premenstrual Dysphoric Disorder), back pain, so-called “endo belly” (heavy bloat that makes you look super pregnant), ovarian cysts and cramps that feel even deeper than period cramps even if I’m not menstruating.
 
-## Symptoms
+## Endometriosis: Justyna’s Story: Part 4
+Painful sex was also a huge issue for me at the beginning. When I was still dating men, that was always in the back of my mind- would I be able to have sex with them comfortably? It made me insecure. This combined with the lack of education given to boys and men about foreplay being essential to easier penetration, led to my disaster of a sex life. Sometimes I’d have tears in my eyes from the pain. I couldn’t enjoy myself with another person. It was horrible.
 
-Beyond heavy periods, my endometriosis has caused other symptoms, including:
+## Endometriosis: Justyna’s Story: Part 5
+Some of the more inconvenient outcomes of these symptoms today is the fact I cannot work hospitality or retail jobs anymore. When I worked as a waitress it made it worse. Stress definitely takes a bigger toll on my body, usually causing a flare up and the cramps can make me immobile. The first medical solutions to try and end my pain were all birth control related. I’ve tried the pill, the pill and the implant together, the implant alone, the implant plus the coil, and the coil alone.
 
-* Premenstrual Dysphoric Disorder (PMDD)
-* Back pain
-* "Endo belly" (severe bloating that can create a pregnant-like appearance)
-* Ovarian cysts
-* Cramps that feel deeper than typical period cramps, even when I'm not menstruating.
+## Endometriosis: Justyna’s Story: Part 6
+It made me not only feel horrible, but I gained so much weight*, my mental health declined and it was always on my mind. I didn’t feel good or healthy and I felt like I was sacrificing that for a little less period pain. My other symptoms didn’t go away, just the bleeding. In 2020, I had a laparoscopy (also known as keyhole surgery) to remove the endometriosis tissue from my abdomen. Since the surgery, my pain has subsided, however this is not a permanent solution due to the tissue eventually growing back.
 
-Painful sex was also a significant issue for me, impacting my confidence in relationships. This, combined with a lack of education for men regarding the importance of foreplay for comfortable penetration, contributed to a difficult sex life. At times, the pain during intercourse was so severe it brought tears to my eyes, making it impossible to enjoy intimacy.
+## Endometriosis: Justyna’s Story: Part 7
+I am now off all birth control because I don’t need to worry about preventing pregnancy any more (shoutout to my LGBT people). This is working well for me and I’m able to exercise and lift heavy and enjoy myself so much more. If I could tell everyone just one thing about endometriosis it would be that just because it’s invisible does not make the pain any less valid. You likely walked past someone who was having the worst pain they’ve had in weeks. Maybe you looked at a woman and thought she was pregnant, but she was just bloated for no good reason.
 
-These symptoms have also affected my ability to work in certain roles. Previously working in hospitality as a waitress exacerbated my condition, as stress often triggers flare-ups and immobilizing cramps.
+## Endometriosis: Justyna’s Story: Part 8
+It’s invisible on the outside, but it’s a silent killer. From your self esteem, to your day to day, your body controls your life when you’re suffering from a chronic pain condition. I’m only stage 3 and I can’t imagine what it’s like being stage 4. Understanding and educating ourselves on endometriosis could help strengthen relationships, friendships and experiences in professional settings. If you experience pain during your period that painkillers don’t help with and affects your daily life, you should visit your GP. There might be nothing wrong but it’s a good idea to check with a doctor and there may be things that could help.
 
-## Medical Treatments and Personal Experience
-
-My initial medical interventions focused on hormonal contraception. I have tried various combinations, including:
-
-* The pill
-* The pill and the implant together
-* The implant alone
-* The implant plus the coil
-* The coil alone
-
-These treatments made me feel unwell, led to significant weight gain, and negatively impacted my mental health. I felt I was sacrificing my overall well-being for only a partial reduction in period pain, while other symptoms persisted.
-
-In 2020, I underwent a laparoscopy (keyhole surgery) to remove the endometriosis tissue from my abdomen. While this surgery has provided pain relief, it is not a permanent solution as the tissue can regrow.
-
-Currently, I am not using any hormonal contraception as I no longer need to worry about pregnancy. This approach is working well for me, allowing me to exercise, lift weights, and enjoy life more fully.
-
-## A Message of Awareness
-
-If I could impart one message about endometriosis, it is that the invisibility of the condition does not diminish the validity of the pain experienced. Many individuals with endometriosis may appear fine externally, yet be experiencing significant pain. You might unknowingly pass someone who is having one of their worst pain days, or misinterpret severe bloating as pregnancy.
-
-Endometriosis is a silent struggle that can profoundly impact self-esteem, daily life, and overall bodily control. I am currently at stage 3 and cannot imagine the challenges faced by those at stage 4.
-
-Increased understanding and education about endometriosis can foster stronger relationships, friendships, and more supportive professional environments.
-
-If you experience period pain that is not alleviated by painkillers and significantly impacts your daily life, it is advisable to consult your GP. While there may be no serious issues, it is always best to seek medical advice, as there are often effective management strategies available.
-
-### Hormonal Contraception
-
-Hormonal contraception can be beneficial for various conditions beyond pregnancy prevention, including endometriosis, painful periods, and acne. It's important to remember that individual responses vary, and what works for one person may not work for another. Hormonal contraceptives can have side effects, but these often subside within three months of use.
-
----
+## Hormonal contraception
+Hormonal contraception can help with many things beyond preventing pregnancy including endometriosis, painful periods and acne. Everyone is different so what works for someone else may not work for you. Hormonal contraception can have side effects but these generally settle after three months of using the method.

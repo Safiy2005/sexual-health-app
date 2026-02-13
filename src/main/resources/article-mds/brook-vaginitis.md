@@ -1,52 +1,41 @@
-# Vaginitis: Symptoms, Causes, and Treatments
+# Vaginitis: What are The Symptoms, Tests & Treatments
 
-Vaginitis refers to the soreness and swelling (inflammation) of the vagina. It is not a sexually transmitted infection (STI), but it can be triggered by sexual activity, foreplay, or certain STIs. Only people with a vagina can experience vaginitis.
+## Summary
+*   **Overview** Find out about the symptoms, causes and treatment of vaginitis. Vaginitis means soreness and swelling (inflammation) of the vagina, which means only people with a vagina can get it. It is not a sexually transmitted infection but sex or foreplay can trigger it and so can some sexually transmitted infections (STIs).
+*   **Disclaimer** The following content is from brook.org.
 
-## Symptoms of Vaginitis
-Not everyone with vaginitis will experience the same symptoms, and some may have no symptoms at all. Common signs include:
-* Vaginal discharge that is not normal for you
-* Irritation or itching in the genital area
-* Light bleeding or spotting
-* Pain when urinating
-* Pain during sexual intercourse
-* A strong, unpleasant smell, particularly after sex
+## Symptoms
+*   **Signs** Not everyone with vaginitis will experience all or any of these symptoms but symptoms of vaginitis can include:
+*   A discharge that is not normal for you
+*   Irritation or itching
+*   Light bleeding or spotting
+*   Pain when you wee
+*   Pain during sex
+*   A strong, unpleasant smell after sex may also be a sign
 
-## Causes of Vaginitis
-Vaginitis can be caused by various factors, including several STIs and other common conditions or irritants.
+## Causes
+*   **STIs** Vaginitis may be caused by STIs such as:
+*   Trichomoniasis
+*   Chlamydia
+*   Genital herpes
+*   **Other factors** It may also be caused by:
+*   Thrush
+*   Bacterial vaginosis
+*   Chemicals in shower gels, soap, fabric softener or from spermicide
+*   Washing inside your vagina (douching)
 
-**STIs that may cause vaginitis include:**
-* Trichomoniasis
-* Chlamydia
-* Genital herpes
+## Diagnosis and treatment
+*   **Diagnosis** Vaginitis can be diagnosed by describing your symptoms to your GP or a health professional. You should get advice if you haven’t had a vaginal infection before or if your symptoms are different to previous times. You should also get advice if you have a new sexual partner. Please be aware that you can be tested and treated for vaginitis at your nearest GP surgery or at GUM or sexual health clinics.
+*   **Treatment** Because vaginitis is often a side-effect of other conditions, treatment depends on what is causing it. For example, bacterial infections are usually treated with antibiotics and fungal infections such as thrush are usually treated with antifungal medicines.
 
-**Other common causes include:**
-* Thrush (yeast infection)
-* Bacterial vaginosis (BV)
-* Chemicals found in shower gels, soaps, fabric softeners, or spermicides
-* Washing inside the vagina (douching)
+## Things you can do to help
+*   Keep your genital area clean and dry.
+*   Use pads rather than tampons if you’re on your period during the infection.
+*   Wear loose-fitting cotton underwear.
+*   If you tend to experience vaginitis after sex, trying using a lubricant.
 
-## Diagnosis and Seeking Help
-Vaginitis is typically diagnosed by a GP or health professional based on a description of your symptoms. You should seek medical advice if:
-* You have never had a vaginal infection before.
-* Your symptoms are different from previous infections.
-* You have a new sexual partner.
-
-Testing and treatment are available at GP surgeries, GUM clinics, or sexual health clinics. While Brook services do not offer direct testing or treatment for vaginitis, they can provide advice on where to go for help.
-
-## Treatment
-Because vaginitis is often a side-effect of another condition, treatment depends entirely on the underlying cause:
-* **Bacterial infections:** Usually treated with antibiotics.
-* **Fungal infections (like thrush):** Usually treated with antifungal medications.
-
-## Self-Care and Prevention
-To help manage the condition and prevent further irritation, you can take the following steps:
-* Keep your genital area clean and dry.
-* Wear loose-fitting cotton underwear.
-* Use menstrual pads rather than tampons during an active infection.
-* Use a lubricant if you tend to experience vaginitis after sex.
-
-**To prevent irritation, you should avoid:**
-* Having hot baths.
-* Using perfumed soaps.
-* Washing inside your vagina (douching), as this removes the healthy bacteria needed to stay free from infection.
-* Using feminine hygiene products such as sprays, deodorants, or powders.
+## Avoid…
+*   Having hot baths.
+*   Using perfumed soaps.
+*   Washing inside your vagina (sometimes called douching) as this can remove the healthy bacteria your vagina needs to stay free from infection.
+*   Using any feminine hygiene products (sprays, deodorants and powders).

@@ -1,38 +1,29 @@
 # Starting a new relationship
 
-Starting a new relationship can be exciting but also daunting. There is a lot to figure out together regarding what the relationship will look like. Relationships in real life are rarely like the ones seen on TV or in books; they often require significant effort to make them work.
-
-Here are some things to keep in mind when starting a new relationship.
+## Summary
+*   **Overview** Starting a new relationship can be exciting but also daunting. Real-life relationships require communication, balancing personal time with your partner, maintaining friendships, and setting healthy boundaries.
+*   **Disclaimer** The following content is from brook.org.
 
 ## Communication is essential
-Communication is vital for all relationships, including non-monogamous and casual ones. You both need to know where you stand and talk about what the relationship means to each of you. If one person wants an open relationship and the other wants to be exclusive, the situation is unlikely to work without clear communication and agreement.
+*   **Starting a new relationship** can be exciting but also daunting- there’s lots you’ll need to figure out together about what the relationship will look like. Relationships in real life are rarely like the ones you see on TV or in books – they often require a lot more effort to make them work. Here are some things you should be aware of when you start a relationship.
+*   **Communication is essential** for all relationships including non-monogamous and casual relationships. You both need to know where you stand and you need to talk about what a relationship means to both of you. If one person wants a relationship where they can see other people and the other person doesn’t then this isn’t likely to work.
 
-## There is no "ideal" relationship blueprint
-You might find yourself looking for answers to specific questions, such as:
-* Are we going too fast?
-* When should I introduce them to my family or friends?
-* Is it too soon to become official?
-* How much time is normal to spend together?
-* Should we keep our friends separate or merge our friendship groups?
+## There is no blueprint or ‘ideal’ relationship: Part 1
+*   **Finding answers** There is no blueprint or ‘ideal’ relationship. If you’re looking for answers to questions such as Are we going too fast? When should I introduce them to my family or friends? Is it too soon to become official? How much time is normal to spend together? Should we keep our friends separate or become a part of each other’s friendship group? You’re not likely to find the answer anywhere but by talking to the other person.
+*   **The right time** to become official or meet each other’s friends will all depend on how you both feel, and this might not be at the same time as each other. Talk to them about your expectations in a partner and how you see things progressing, before you get into a relationship with them but also check back in to make sure you’re both happy with where you are.
 
-You are unlikely to find a "correct" answer to these questions anywhere other than by talking to your partner. The right time to reach milestones depends entirely on how you both feel, and you may not always feel the same way at the same time.
+## You may find you have less free time: Part 1
+*   **Managing expectations** Your expectations might change over time or might be different to previous relationships or to your friends’ and that’s okay – relationships mean different things to everyone. You may find you have less free time now you’re in a relationship and want to spend time with them. But it’s really important that you don’t forget the other parts of your life before you had a relationship.
+*   **Independence** Your hobbies and interests are part of what makes you ‘you’. One person cannot be responsible for all your happiness, so you need to make sure you have other things going on in your life that you get joy from. If you’re feeling anxious when they’re not around, you’re constantly checking your phone to see if they’ve messaged or message them constantly when you’re not with them, then it might be a good idea to take some time for yourself.
 
-## Managing expectations
-Talk about your expectations and how you see things progressing before you commit, but also remember to check back in regularly. Your expectations might change over time or differ from your previous relationships or those of your friends. This is perfectly normal, as relationships mean different things to everyone.
+## Friends are often the ones who are there for you: Part 1
+*   **Social connections** Find a new hobby or discover old ones, contact old friends or spend time with your family and explain why this is important to you so they know where they stand. Friends are often the ones who are there for you through thick and thin, especially when you’re at school or college and you get to see them every day.
+*   **Maintaining friendships** You might have less free time now that you’re in a relationship and this might make your friends worried they won’t get to see you as often or that you’ll forget about them. Reassure your friends that you’ll still want to spend time with them and they’re still an important part of your life. If they ask to meet up but you’re busy always suggest a new time and make an effort to keep them in your life.
 
-## Maintaining your independence
-It is natural to have less free time when you start a relationship because you want to spend time with your partner. However, it is essential not to forget the other parts of your life. Your hobbies and interests are part of what makes you who you are. 
+## Contrary to what we’re told in films and books: Part 1
+*   **Support and Needs** It’s always helpful to have people you can talk to about your relationship- they can support you if things are tough or they can help you spot signs of where things aren’t working in your relationship. Contrary to what we’re told in films and books, love isn’t all about putting someone else’s needs above your own.
+*   **Mutual Kindness** It’s always nice to do things for other people like watching the films they want to watch, eating at their favourite places or helping them with their problems and, it’s also a great way to get to know them better. But if you’re doing these things for them, they should be doing the same for you.
 
-One person cannot be responsible for all of your happiness. You need to ensure you have other sources of joy in your life. If you feel anxious when your partner isn't around, or if you are constantly checking your phone, it might be a good idea to take some time for yourself. Rekindle old hobbies or spend time with family to maintain your own identity.
-
-## The importance of friends
-Friends are often the ones who support you through thick and thin. They may worry that a new relationship means they will see less of you. It is important to:
-* Reassure your friends that they are still an important part of your life.
-* Make an effort to suggest alternative times to meet if you are busy.
-* Maintain these connections so you have people to talk to if things in your relationship get tough.
-* Listen to friends if they help you spot signs that a relationship might not be working.
-
-## Balancing needs and boundaries
-Contrary to romanticized depictions in media, love is not about putting someone else's needs above your own at all times. While it is nice to do things for your partner—like watching their favorite film or helping with a problem—this effort should be mutual.
-
-You should not prioritize someone else's needs to the point where your own are not being met. If someone asks too much of you, it is fair to say no. Every relationship has boundaries; you simply need to figure out together where those lines are.
+## Contrary to what we’re told in films and books: Part 2
+*   **Meeting your needs** You shouldn’t put someone else’s needs before your own to the point where your needs aren’t being met. If someone asks too much of you, even in a relationship, it’s fair to say no and explain why.
+*   **Establishing boundaries** Every relationship has their boundaries of what you do and don’t want to do for each other, you just need to figure out where the line is.

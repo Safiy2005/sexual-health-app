@@ -1,85 +1,72 @@
-# Female Sterilisation: Tubal Occlusion
+# Female Sterilisation: How Does Tubal Occlusion Work?
 
-Tubal occlusion is a permanent method of contraception that stops the fallopian tubes from receiving an egg through an operation. It is only suitable for those who are certain they never want children or do not want any more children.
+## Summary
+*   **Overview** Tubal occlusion is a permanent form of contraception that involves an operation to block the fallopian tubes. It is over 99% effective, does not affect hormones or menstrual cycles, but is very difficult to reverse.
+*   **Disclaimer** The following content is from brook.org.
 
-## Quick Facts
+## Tubal Occlusion (Female Sterilisation)
+*   **Description** Tubal occlusion is a permanent method of contraception that stops the fallopian tubes receiving an egg through an operation. It is only suitable for those who never want children or who don’t want more children.
+*   **Hormones** No hormones
+*   **Mood/Emotions** No effect on mood
+*   **STIs** No protection against STIs
+*   **Visibility** Invisible apart from temporary stitches
+*   **Periods** Periods will stay the same
+*   **Lasts for** Permanent – very difficult to reverse
+*   **Acne/Skin** Skin will stay the same
+*   **Preventing pregnancy** More than 99% effective
+*   **Starting on this method** Requires more than one consultation with a healthcare professional before you may be able to have the procedure. You will need to use other contraception until your next period.
 
-* **Effectiveness:** More than 99% effective at preventing pregnancy.
-* **Hormones:** Contains no hormones.
-* **Mood:** No effect on mood or emotions.
-* **STIs:** Provides no protection against sexually transmitted infections.
-* **Periods:** Your periods will generally stay the same.
-* **Skin:** No effect on acne or skin.
-* **Permanence:** It is permanent and very difficult to reverse.
-* **Visibility:** Invisible apart from temporary stitches.
+## Important
+*   **Age** Doctors tend to advise against tubal occlusion if you are under 30.
+*   **Decision** Tubal occlusions are difficult to reverse so you need to be sure you don’t want children or any more children.
 
-## What is Tubal Occlusion?
+## How it works
+*   **The Procedure** Tubal occlusion is a permanent form of contraception which involves an operation to cut, seal or block the fallopian tubes which carry an egg from the ovary to the uterus (womb). 
+*   **The Egg** The body still releases an egg but this will be absorbed naturally.
 
-Tubal occlusion is a permanent form of contraception involving an operation to cut, seal, or block the fallopian tubes. These tubes carry an egg from the ovary to the uterus (womb). Following the procedure, the body still releases an egg, but it is absorbed naturally.
+## Pros
+*   Over 99% effective at preventing pregnancy
+*   Once working you won’t have to think about contraception again
 
-Doctors generally advise against tubal occlusion if you are under the age of 30. Because the procedure is difficult to reverse, you must be certain of your decision.
+## Cons
+*   The tubes can rejoin meaning that you will be fertile again but this is rare
+*   Not easily reversed and reversals are rarely funded on the NHS
+*   No protection against sexually transmitted infections (STIs)
+*   Contraception is needed need until the sterilisation has been confirmed as working
+*   Small risk of complications during the procedure
+*   Feeling unwell is common following an operation and may need to take a few days off to recover
 
-## Pros and Cons
+## Hormones and periods
+The ovaries, uterus and cervix are left in place and so your hormones are not affected by sterilisation. You will still ovulate and an egg is released but it is absorbed naturally by your body. Your periods will continue to be as regular as they were before. Sometimes some women find their periods become heavier. This is normally because they have stopped using hormonal contraception which may have made their periods lighter.
 
-### Pros
-* Over 99% effective at preventing pregnancy.
-* Once the procedure is successful, you no longer need to think about contraception.
-* It does not affect your hormone levels.
+## Long-acting reversible contraception (LARC)
+If this is something you are considering, you may want to find out about types of long-acting reversible contraception (LARC) which are very effective methods and are reversible. They are the contraceptive implant, contraceptive injection, intrauterine device (IUD) and the intrauterine system (IUS).
 
-### Cons
-* It is not easily reversed, and reversals are rarely funded on the NHS.
-* There is no protection against STIs.
-* You must use other contraception until the sterilisation is confirmed as working (usually until your next period).
-* There is a small risk of complications during the procedure.
-* The tubes can rarely rejoin, making you fertile again.
-* Requires a recovery period of a few days following the operation.
+## Accessing sterilisation
+You can get information and advice on sterilisation from your GP surgery or contraception and sexual health clinics. You may have to receive additional counselling to make sure that you are 100% certain you want to be sterilised. Depending on your circumstances and age, you may not be able to be sterilised on the NHS. Similarly, in some areas, NHS waiting lists for sterilisation can be quite long. You can pay to have a sterilisation done privately although this is expensive.
 
-## How it Affects Your Body
+## Confidentiality
+Contraception and sexual health services are free and confidential, including for people under the age of 16. Health professionals work to strict guidelines and won’t tell anyone else about your visit unless they believe you’re at serious risk of immediate harm.
 
-The ovaries, uterus, and cervix are left in place, meaning your hormones are not affected. You will still ovulate, and your periods will continue as regular as they were before. 
+## During the procedure
+The surgeon will make a small cut either near your belly button or just above your pubic hairline. They will then insert a small camera and assess how best to block your fallopian tubes. This may be by:
+*   Applying clips – plastic or titanium clamps are closed over the fallopian tubes
+*   Applying rings – a small loop of the fallopian tube is pulled through a silicone ring, then clamped shut
+*   Tying, cutting and removing a small piece of the fallopian tubes
 
-Some people find their periods become heavier after the procedure; this is usually because they have stopped using hormonal contraception (like the pill or hormonal coil) which previously made their periods lighter.
+This is a relatively minor operation and many people can return home the same day.
 
-## Accessing Sterilisation
+## Salpingectomy and reversal
+If blocking the fallopian tubes (tubal occlusion) has not worked, the tubes may be completely removed. Tubal occlusion is meant to be permanent. It cannot easily be reversed and reversal operations are not always successful. Reversals are rarely funded on the NHS and they can be difficult (and expensive) to get privately. Hysteroscopic sterilisation (also known as Essure) which is a type of female sterilisation, cannot be reversed. You should use additional contraception until your first period.
 
-You can get information and advice on sterilisation from your GP surgery or contraception and sexual health clinics. You may be required to attend multiple consultations or receive additional counselling to ensure you are 100% certain.
+## After pregnancy
+You can become pregnant from as little as three weeks after giving birth and from two weeks after an abortion or miscarriage. You may be able to have the procedure straight away after pregnancy, miscarriage and abortion - speak to a medical professional for advice.
 
-* **NHS:** Depending on your age and circumstances, you may not be able to get sterilised on the NHS, and waiting lists can be long.
-* **Private:** You can pay for the procedure privately, though it is expensive.
-* **Confidentiality:** Services like Brook are free and confidential. Professionals will not tell anyone about your visit unless they believe you are at serious risk of immediate harm.
+## Will it affect my sex drive (libido)?
+Sterilisation does not affect your hormones. You will continue to go through the same menstrual cycle as before. This means your sex drive will be the same as before the procedure.
 
-## The Procedure
+## Can I get it reversed?
+Reversing sterilisation is difficult and is often not free on the NHS so you need to make sure you don’t want children in the future before you get the procedure.
 
-The surgeon will typically make a small cut near the belly button or just above the pubic hairline. They use a small camera to assess the tubes and then block them using one of the following methods:
-* **Applying clips:** Plastic or titanium clamps are closed over the tubes.
-* **Applying rings:** A small loop of the tube is pulled through a silicone ring and clamped.
-* **Tying and cutting:** A small piece of the fallopian tube is removed.
-
-This is a relatively minor operation, and many people return home the same day.
-
-### Salpingectomy
-If tubal occlusion (blocking the tubes) is not possible or has not worked, the tubes may be completely removed. This is called a salpingectomy.
-
-### Hysteroscopic Sterilisation (Essure)
-This is a type of female sterilisation that cannot be reversed. Note that you should use additional contraception until your first period following any sterilisation procedure.
-
-## After Pregnancy
-You can become pregnant as early as three weeks after giving birth and two weeks after an abortion or miscarriage. You may be able to have the procedure immediately following a pregnancy—speak to a medical professional for advice.
-
-## Frequently Asked Questions
-
-### Will it affect my sex drive (libido)?
-No. Because sterilisation does not affect your hormones or your menstrual cycle, your sex drive will remain the same as it was before the procedure.
-
-### Can I get it reversed?
-Reversal is difficult, often unsuccessful, and usually not free on the NHS. It is intended to be a permanent decision.
-
-### Tubal Occlusion vs. Vasectomy
-Vasectomies (male sterilisation) are generally simpler and safer than tubal occlusions. While both are highly effective, vasectomies are less intrusive and can be performed under local anaesthetic, whereas tubal occlusions usually require general anaesthetic.
-
-### Alternatives
-If you are looking for highly effective but reversible options, consider Long-Acting Reversible Contraception (LARC):
-* Contraceptive implant
-* Contraceptive injection
-* Intrauterine device (IUD)
-* Intrauterine system (IUS)
+## Vasectomies or tubal occlusions
+Vasectomies are simpler and safer compared to tubal occlusions. While both are just as effective at preventing pregnancy and are very safe procedures, vasectomies are less intrusive and can be done under local anaesthetic unlike tubal occlusions which require general anaesthetic.

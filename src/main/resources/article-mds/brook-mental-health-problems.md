@@ -1,62 +1,49 @@
 # Mental Health Problems
 
-Mental health problems—sometimes referred to as mental illness or mental disorders—cover a broad range of issues with various symptoms. They are generally characterised by a combination of abnormal thoughts, emotions, behaviours, and relationships with others. 
+## Summary
+*   **Overview** Mental health problems, sometimes called mental illness or mental disorders, covers to a broad range of problems with different symptoms. Learn about spotting the signs of mental health problems and how to get help.
+*   **Disclaimer** The following content is from brook.org.
 
-According to NHS England (2020), approximately 1 in 4 people in the UK will experience a mental health problem each year. While these problems are often formally diagnosed when they are long-lasting and significantly affect daily life, it is important to remember that a formal diagnosis is not a requirement to receive help and support.
+## Mental health problems
+*   **Mental health problems** Mental health problems, sometimes called mental illness or mental disorders, covers to a broad range of problems with different symptoms. Find out about spotting the signs of mental health problems and how to get help. Approximately 1 in 4 people in the UK will experience a mental health problem each year (NHS England, 2020). Mental health problems, sometimes called mental illness or mental disorders, covers a broad range of problems with different symptoms. However, they are generally characterised by some combination of abnormal thoughts, emotions, behaviours and relationships with others. 
+*   **Mental health problems: Part 2** Often, mental health problems are formally diagnosed when they are long-lasting and have a significant effect on a person’s day-to-day life. However, it’s important to remember that not all mental health problems get diagnosed and that diagnosis is not a requirement for someone to receive help and support with their mental health.
 
-## Examples of Mental Health Problems
+## Examples and factors
+*   **Examples of mental health problems include**
+    *   Depression
+    *   Anxiety and panic attacks
+    *   Schizophrenia
+    *   Bipolar disorder
+    *   Eating problems
+    *   Trauma
+    *   Psychosis
+    *   Personality disorders
+    *   Body dysmorphic disorder
+*   **Common factors in mental health problems include**
+    *   Biological factors, such as genes, hormones or brain chemistry
+    *   Life experiences, such as trauma or abuse
+    *   Family history of mental health problems
+    *   Medication, including contraception, and substances
 
-Commonly diagnosed mental health problems include:
+## Warning signs
+*   **Experiencing one or more of the following feelings or behaviours can be an early warning sign of a mental health problem**
+    *   Eating or sleeping too much or too little
+    *   Pulling away from people and usual activities
+    *   Having low or no energy
+    *   Feeling numb or like nothing matters
+    *   Having unexplained aches and pains
+    *   Feeling helpless or hopeless
+    *   Smoking, drinking, or using drugs more than usual
+*   **Experiencing one or more of the following: Part 2**
+    *   Feeling unusually confused, forgetful, on edge, angry, upset, worried, or scared
+    *   Yelling or fighting with family and friends
+    *   Experiencing severe mood swings that cause problems in relationships
+    *   Having persistent thoughts and memories you can’t get out of your head
+    *   Hearing voices or believing things that are not true
+    *   Thinking of harming yourself or others
+    *   Thinking about ending your life
+    *   Inability to perform daily tasks like taking care of your kids or getting to work or school
 
-* Depression
-* Anxiety and panic attacks
-* Schizophrenia
-* Bipolar disorder
-* Eating problems
-* Trauma
-* Psychosis
-* Personality disorders
-* Body dysmorphic disorder
-
-## Contributing Factors
-
-Everyone is different, and various factors can contribute to the development of mental health problems. Common factors include:
-
-* **Biological factors:** Such as genes, hormones, or brain chemistry.
-* **Life experiences:** Including trauma or abuse.
-* **Family history:** A history of mental health problems within the family.
-* **Medication and substances:** Including the side effects of contraception or the use of other substances.
-
-## Early Warning Signs
-
-Experiencing one or more of the following feelings or behaviours can be an early warning sign of a mental health problem:
-
-* Eating or sleeping too much or too little.
-* Pulling away from people and usual activities.
-* Having low or no energy.
-* Feeling numb or like nothing matters.
-* Having unexplained aches and pains.
-* Feeling helpless or hopeless.
-* Smoking, drinking, or using drugs more than usual.
-* Feeling unusually confused, forgetful, on edge, angry, upset, worried, or scared.
-* Yelling or fighting with family and friends.
-* Experiencing severe mood swings that cause problems in relationships.
-* Having persistent thoughts and memories you cannot get out of your head.
-* Hearing voices or believing things that are not true.
-* Thinking of harming yourself or others.
-* Thinking about ending your life.
-* Inability to perform daily tasks like taking care of children or getting to work or school.
-
-## Getting Help and Support
-
-Mental health problems are common, and you do not need to deal with them alone. You do not need to have a formal diagnosis or even know exactly what is wrong to seek help. 
-
-If you are worried about your own mental health or that of someone else, there are many places to turn for support:
-
-* Friends and family.
-* A trusted adult.
-* Your GP (General Practitioner).
-* A Brook service.
-* Other healthcare professionals.
-
-Whenever you are ready to talk, support is available.
+## Getting help and support
+*   **Mental health problems are common but you don’t need to deal with them alone** If you are worried about your mental health, or about someone else’s, there are lots of places that can offer you help and support. We all need help sometimes. You don’t have to be diagnosed with a mental illness, you don’t even have to know exactly what’s wrong. Whenever you are ready to talk to someone, you can.
+*   **Getting help and support: Part 2** If you are worried about your mental health, or about someone else’s, there are lots of places that can offer you help and support. You can also speak to your friends, family, a trusted adult, GP, or another healthcare professional.

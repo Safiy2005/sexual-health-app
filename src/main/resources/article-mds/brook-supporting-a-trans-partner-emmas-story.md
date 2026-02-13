@@ -1,34 +1,23 @@
-# Supporting a Trans Partner: Emma's Story
+# Supporting a trans partner: Emma's story
 
-Emma, 22, shares her personal experience and advice on navigating a relationship when a partner comes out as transgender. After her own partner came out three years ago, Emma realized she was bisexual, and the couple has remained together throughout her partner's transition. While their relationship is now stronger than ever, Emma acknowledges the initial feelings of worry, isolation, and confusion.
+## Summary
+*   **Overview** Emma shares her personal experience of her partner coming out as trans, documenting her initial feelings of confusion, the evolution of her relationship, and practical advice for others in a similar situation regarding communication and support.
+*   **Disclaimer** The following content is from brook.org.
 
-## Reacting to the News
+## Supporting a trans partner: Emma's story: Part 1
+Emma, 22, shares her experience and tips about what to do if your partner comes out as trans. So about 3 years ago I didn’t think I knew any trans people, I didn’t know anything about trans issues and I had never really considered that I might identify as anything other than straight – then my partner came out to me as trans. Since then so much has changed: I realised I was bisexual and my partner came out to everyone, changed her name and is now living happily as a woman.
 
-Having a partner come out to you as trans can be initially confusing or surprising. It is natural to feel threatened, betrayed, or even angry. However, it is important to remember that your partner has chosen to confide in you regarding something they have likely struggled with in private for a long time.
+## Supporting a trans partner: Emma's story: Part 2
+We’re still together and I can honestly say this is the happiest and most close our relationship has ever been, but that doesn’t mean I’ve forgotten how worried, isolated and confused I felt in those early days. With the benefit of hindsight, I’ve put together some of my top tips for navigating a similar situation. Having someone come out to you as trans might be initially confusing or surprising. You might even feel threatened, betrayed or angry but please remember: this person has chosen to confide in you something which they have probably been thinking and worrying about in private for a very long time.
 
-* **Be respectful:** Treat your partner as you would any friend going through a difficult time.
-* **Listen:** Provide a safe space for them to share their feelings.
-* **Be supportive:** Offer understanding and kindness as they navigate this transition.
+## Supporting a trans partner: Emma's story: Part 3
+The first thing you have got to do is treat your partner like any other friend who is going through something difficult – listen to them and be respectful, understanding and supportive. Learning that your partner is trans is likely to have an effect on the way you (and your partner) perceive your relationship. You might feel unsure or uncomfortable about the idea of being in a relationship with your partner if they are a different gender to the one you thought – and that’s okay!
 
-## Navigating Relationship Changes
+## Supporting a trans partner: Emma's story: Part 4
+If you can, it’s always good to take some time to think about what you feel comfortable with, and to try to understand what your partner is going through by doing some research or following some trans personalities on social media. Communicate with your partner and decide with them how you are going to move forwards: you might choose to stay in a sexual/romantic relationship, choose to just be friends, or you might just decide to see how it goes and check with each other again in the future – there’s no need to make a decision straight away!
 
-Learning that a partner is trans often changes how both individuals perceive the relationship. If your partner’s gender is different than what you previously thought, you may feel unsure about the future of the romantic connection.
+## Supporting a trans partner: Emma's story: Part 5
+Whatever you do, do not try to change your partner’s mind or make them decide between maintaining a relationship with you and being out as trans. This will only hurt them in the long term or force them to hide from you, neither of which are good foundations for a healthy relationship. Being the partner of someone who has just come out as trans can have some unique challenges – you’ve got to remember to spend some time and energy looking after yourself as well as your partner!
 
-* **Take your time:** You do not need to make a definitive decision about the relationship immediately.
-* **Self-education:** Try to understand what your partner is experiencing by doing research or following trans creators and personalities on social media.
-* **Reflect on your comfort:** Spend time thinking about what you feel comfortable with moving forward.
-
-## Communication and Moving Forward
-
-Open communication is essential for determining how the relationship will evolve. You may decide to remain in a romantic relationship, transition to a friendship, or simply wait and see how things progress.
-
-* **Collaborate:** Decide together how to move forward.
-* **Avoid ultimatums:** Never try to change your partner’s mind or force them to choose between their identity and your relationship. This can lead to long-term hurt or force them to hide their true self, which prevents a healthy relationship.
-
-## Looking After Yourself
-
-Being the partner of someone who has recently come out as trans presents unique challenges. It is vital to dedicate time and energy to your own well-being.
-
-* **Seek support:** Talk to an understanding friend or a trusted adult about your feelings.
-* **Maintain confidentiality:** If your partner is not yet "out" to others or feels unsafe, you can still find support through confidential channels.
-* **Professional resources:** Consider speaking with your GP, a counselor, or calling an LGBT+ helpline for guidance and support.
+## Supporting a trans partner: Emma's story: Part 6
+If you can, try and talk to an understanding friend or a trusted adult about what you’re going through. If your partner is still not ‘out’ to their friends or family, or they feel unsafe being out, you can always confide in someone who does not know your partner such as your GP, a counsellor or an LGBT+ helpline.

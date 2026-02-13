@@ -1,45 +1,39 @@
 # Talking about condoms with your partner
 
-It is important to talk to sexual partners about using condoms so you can look after your sexual health and the health of others. While these conversations can feel tricky, the earlier you bring the subject up, the better. Sorting it out early allows you to relax and ensures you are more likely to use them when the time comes.
+## Summary
+*   **Overview** This article provides guidance on how to navigate conversations about condom use with sexual partners, including practical conversation starters, advice for overcoming embarrassment, and important information regarding consent and sexual health.
+*   **Disclaimer** The following content is from brook.org.
 
-How you bring the subject up will depend on the situation and whether you prefer to use external (penile) condoms or internal (female) condoms.
+## Talking about condoms with your partner
+It’s important to talk to sexual partners about using condoms so you can look after your sexual health, and the health of other people. However, these conversations can feel a bit tricky. Here are some ideas that may make it easier. There’s no ideal time to talk about condoms. But generally, the earlier the better. The sooner you bring the subject up, the sooner you’ll be able to sort it out. This will make it easier for you to relax and will mean you’re more likely to use them when the time comes.
 
-## Starting the conversation
+## Talking about condoms with your partner: Part 2
+Each situation and person is different so you’ll have to work out the best way to bring the subject up. It also depends on whether you and your partner(s) would like to use external condoms (also known as ‘penile’ or ‘male’ condoms) or internal condoms (also known as ‘female’condoms.) Some ways of starting the conversation about condoms are to:
+*   Talk about it generally : “Do you use condoms when you have sex?”
+*   Say it directly: “If we are going to have sex, we’re going to use condoms.”
+*   Work it into a conversation: “My friend was telling me how they were with this guy and he wouldn’t use a condom…”
+*   Ask about the other person’s preferences: “Is there a particular type of condom that you like to use during sex? I’ve heard [insert condom type here] feel really good.”
 
-It is best to talk about condoms before you start having sexual contact rather than waiting until the moment arrives. Here are some ways to start the conversation:
+## Talking about condoms with your partner: Part 3
+It might be tricky bringing it up at first, but it’s a lot more likely that you will use condoms if you talk about them before you start to have sexual contact rather than leaving it until the moment arrives.
 
-* **Talk about it generally:** “Do you use condoms when you have sex?”
-* **Say it directly:** “If we are going to have sex, we’re going to use condoms.”
-* **Work it into a conversation:** “My friend was telling me how they were with this person and they wouldn’t use a condom…”
-* **Ask about preferences:** “Is there a particular type of condom that you like to use during sex? I’ve heard [insert condom type] feel really good.”
+## What if pregnancy isn’t a concern?
+If neither you or your partner have a penis OR if you both do OR if you are using another method of contraception then you should still be discussing safer sex and using condoms . Condoms are not only used to prevent pregnancy – they also help prevent STIs. If you are using sex toys then a condom should be used to reduce the chances of STIs being transmitted. If condoms are not an option for you, then you should discuss STIs with your partner. Do you both know your STI status? Remember: not all STIs have symptoms. 
 
-## When pregnancy isn’t a concern
+## Be confident and responsible for your own health
+Be confident and responsible for your own health. You shouldn’t leave the decision to use condoms up to someone else – if you want to use them then take the lead. It’s your body and you’re right to want to look after your health. If someone makes a big deal about you wanting to use condoms, consider if this is the sort of person you want to be having sex with.
 
-Even if pregnancy is not a concern—for example, if you are both the same sex, or if you are already using another method of contraception—you should still discuss safer sex.
-
-* **STI prevention:** Condoms are not only for preventing pregnancy; they are essential for preventing the transmission of STIs.
-* **Sex toys:** If you are using sex toys, a condom should be used on the toy to reduce the risk of STI transmission.
-* **STI status:** If condoms are not being used, you should discuss STI status with your partner. Remember that many STIs do not have visible symptoms.
-
-## Taking the lead
-
-Be confident and take responsibility for your own health. You should not leave the decision to use condoms up to someone else. If you want to use them, take the lead. It is your body and you have the right to look after it. If a partner makes a "big deal" out of you wanting to use protection, consider whether that is someone you want to be intimate with.
-
-## Tips for overcoming embarrassment
-
-If you feel shy or awkward, there are ways to become more comfortable with the topic:
-
-* **Talk to yourself:** Practice saying your points out loud. This helps clarify your thoughts and makes the words feel more natural.
-* **Talk with a friend:** Running through what you want to say with a trusted friend can help. Some people find it useful to role-play the conversation.
-* **Rehearse:** Think through the conversation in your head and imagine how the other person might respond so you feel prepared.
+## If you still feel shy or embarrassed talking about condoms
+If you still feel shy or embarrassed talking about condoms, there are some things you can do to feel more comfortable.
+*   **Talk to yourself** It might feel strange or awkward saying these things out loud but it is a very good way to get more comfortable with talking about condoms. Saying out loud what you might say to someone can help clarify what you think and how you want to express yourself.
+*   **Talk with a friend** It can help if you run through what you want to say with a friend first. It might sound a bit strange, but some people who feel really nervous find it helps to role play. This is where you get a friend or someone you trust to pretend to be the other person.
+*   **Rehearse the conversation** Running through things beforehand often makes it a lot easier to do them when the time comes. Think through the conversation in your head and imagine what the other person might say. This can help you feel more prepared for the conversation when it happens.
 
 ## Condoms and consent
+You shouldn’t ever feel pressured to have sex without a condom in the same way you shouldn’t ever feel pressured to have sex. It doesn’t matter if you are using another method of contraception or if you have had sex with the same person before without a condom – you have the right to choose to use condoms every time .
 
-You should never feel pressured to have sex without a condom. You have the right to choose to use condoms every time, regardless of whether you use other contraception or if you have had sex without one before.
+## Condoms and consent: Part 2
+If you have agreed to use condoms, but during sex your partner removes the condom without telling you, this is considered non-consensual condom removal – otherwise known as “stealthing”. Stealthing is a form of sexual assault and is illegal . If this happens to you, then you can contact a sexual health service for support and help with next steps. 
 
-### Stealthing
-If you have agreed to use a condom, but your partner removes it during sex without telling you, this is known as "stealthing." **Stealthing is a form of sexual assault and is illegal.** If this happens to you, you can contact Brook or another sexual health service for support and advice on next steps.
-
-## Accessing free condoms
-
-The **C-Card scheme** allows young people to pick up free condoms and lubricant from local outlets such as pharmacies, youth services, and shops. Check for a local C-Card provider in your area to access these services.
+## Get free condoms
+The C-Card scheme allows you to pick up free condoms from local outlets like pharmacies, youth services and shops. See if you can join C-Card in your area to access free condoms and lube.

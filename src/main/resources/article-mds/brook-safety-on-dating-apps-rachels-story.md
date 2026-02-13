@@ -1,32 +1,29 @@
 # Safety on Dating Apps: Rachel’s Story
 
-When first downloading dating apps, the experience can feel both exciting and nerve-racking. Setting up a profile involves choosing photos and prompts that best capture your personality and appearance, which can sometimes feel like "advertising" yourself. However, moving past this pressure and focusing on authenticity is key to a positive experience.
+## Summary
+*   **Overview** Rachel shares her personal journey of navigating dating apps, from the initial nerves of setting up a profile to finding a meaningful relationship, while detailing her practical approach to safety, authenticity, and sexual health.
+*   **Disclaimer** The following content is from brook.org.
 
-## Navigating Conversations and Connections
+## Rachel’s Story: Part 1
+When I first downloaded dating apps it felt exciting and nerve-racking. Setting up my profile with carefully chosen photos that I thought showed my personality and appearance best was surprisingly hard. How can anyone pick five photos and a few prompts to capture who they are? As validating as it was to create my profile, it almost felt as if I was advertising myself: here is how fun I am, here is a photo of me looking good, here is an anecdote from my life that is interesting. Messaging and liking people on Hinge felt just as awkward at first. 
 
-Everyone on dating apps is seeking connection, whether it is for fun dates or a long-term relationship. It is important to move at your own pace and message people in a way that feels natural to you.
+## Rachel’s Story: Part 2
+Over time I made a conscious decision to stop putting so much pressure on myself. Everyone on dating apps is doing the same thing: looking for new connections, fun dates and perhaps the right person. I realised I needed to be authentic—messaging people the way I wanted to, not the way I thought I should. It is completely fine to take time to work out what you are looking for. I tested out messaging and liking and became less nervous about making the first move. I would send compliments or comment on something from a profile to build common ground. 
 
-* **Making the first move:** Sending compliments or commenting on specific profile prompts can help build common ground.
-* **Handling rejection:** Not every "like" results in a match. Adopting a mindset that "what’s for me won’t go by me" can help manage expectations.
-* **Building trust:** Take conversations slowly. It is often safer to keep chats within the app initially and only move to other platforms like Instagram or share your phone number when you feel completely comfortable.
+## Rachel’s Story: Part 3
+The app shows the other person you are interested and, if they feel the same, they can match and start a conversation. Sometimes I got matches, other times I did not. I lived by the motto “what’s for me won’t go by me”, so if someone did not match that was fine. The people who did were as interested in me as I was in them. In those early days I took conversations slowly, learning more about the other person and finding commonalities naturally. I kept chats on the app at first and moved to Instagram or gave out my number only when I felt ready. 
 
-## Safety Precautions for First Dates
+## Rachel’s Story: Part 4
+Taking things at my own pace kept me safe and helped me decide whether to meet for a first date. Before a first date I always made sure someone knew where I was going and a few details about who I was meeting. For me that was my flatmate Hannah. If a date was going well I updated her; if I felt uneasy I could message and she would help me leave safely. She also had access to my location on Find My Friends, so if I lost signal she could still see where I was. If you have someone you trust, share locations so they can check on you if needed. 
 
-Meeting someone in person for the first time requires careful planning to ensure your physical safety and peace of mind.
+## Rachel’s Story: Part 5
+When planning a date I messaged the other person to agree what sort of outing we wanted—drinks, dinner or an activity. I chose places that were central for both of us and easy to reach. If I suggested the venue I picked somewhere I knew well. If they suggested it, I made sure I knew the area so I felt comfortable and at ease. On first dates, just as with online messaging, I took things slow and did not pressure myself to act a certain way. I went with the flow, talking about our days, interests and preferences. I had no set expectations. 
 
-* **Inform a trusted contact:** Always make sure someone knows where you are going and who you are meeting. 
-* **Share your location:** Use features like "Find My Friends" or WhatsApp live location sharing so a trusted person can monitor your whereabouts.
-* **Choose the venue wisely:** Meet in central, public places that are easy to reach. If you are suggesting the venue, pick somewhere you know well. If they suggest it, research the area beforehand so you feel at ease.
-* **Have an exit strategy:** Agree with a friend that you will check in during the date. If you feel uneasy, they can help you leave the situation safely.
+## Rachel’s Story: Part 6
+If a date was going well it was obvious to both of us, and we could decide whether to meet again or see where things led. Before starting a sexual relationship I always made sure I had been recently tested for STIs. It reassured me that I was reducing the chance of passing on an infection. After sex with new partners, and routinely every three months, I tested again. It is kind to yourself and to others to know your STI status. The most exciting part of online dating for me was exploring my sexuality in a fun and safe way. 
 
-## Prioritising Sexual Health
+## Rachel’s Story: Part 7
+I loved meeting new people and having experiences I had not tried before. Most connections stayed as fun dates, but one from Hinge became a lovely relationship with my girlfriend. Following all the advice I have shared, we matched on Hinge, got to know each other and went on dates to pubs, the cinema, coffee shops, on walks and even to a Chappell Roan gig. We let our connection grow gradually before starting a relationship, and I would not change a thing. Online dating can be enjoyable whether or not you find a lasting partner. 
 
-Before starting a sexual relationship with a new partner, it is vital to take responsibility for your sexual health.
-
-* **Get tested:** Getting tested for STIs (Sexually Transmitted Infections) before a new partner provides reassurance and reduces the risk of passing on infections.
-* **Routine testing:** It is recommended to test after sex with new partners and routinely every three months. 
-* **Open communication:** Knowing your STI status is a sign of kindness to yourself and your partners.
-
-## The Goal of Dating
-
-Dating is not always about finding "the one." It is an opportunity to explore your sexuality, meet new people, and enjoy new experiences in a safe way. Whether a connection leads to a long-term relationship or remains a series of fun memories, the process should be about giving yourself the chance to enjoy natural experiences with others.
+## Rachel’s Story: Part 8
+If things had not worked out between us, we would still have the memories of our dates. Dating is not always about finding “the one”. It is also about giving yourself the chance to enjoy new, natural experiences with new people, whatever the outcome.

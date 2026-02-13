@@ -1,43 +1,20 @@
-# Dating Apps: Nicole’s Story
+# Dating Apps: Nicole's Story
 
-Nicole, 21, shares her personal experience of using dating apps. While she enjoys the opportunities they provide, she reflects on the challenges of digital communication and the ways people can sometimes be more disrespectful online than in person.
+## Summary
+*   **Overview** Nicole, 21, reflects on her experiences with dating apps, highlighting the importance of setting clear intentions and boundaries. She discusses the challenges of navigating crude messages, time-disrespect, and assumptions about sexual preferences while also acknowledging the benefits of meeting new people and exploring her sexuality.
+*   **Disclaimer** The following content is from brook.org.
 
-## Defining Your Goals and Boundaries
+## Dating Apps: Nicole's Story: Part 1
+Nicole, 21, shares her experience of using dating apps and explains why she feels sometimes they allow people to be more disrespectful than IRL. I signed up for a dating app a few months ago. I didn’t want to get into a relationship but other than that I wasn’t specific with what I wanted. This proved to be a problem. I would advise always only diving into a dating app when you know exactly what you want, whether that be a relationship, casual sex or a one night stand but it makes it much easier when you know what you want. You can set the boundaries with yourself and the other person.
 
-Setting clear intentions before using a dating app can help manage expectations and establish personal boundaries. Nicole suggests that knowing what you are looking for—whether it is a committed relationship, casual sex, or a one-night stand—makes the process easier.
+## Dating Apps: Nicole's Story: Part 2
+In my experience, one problem that I immediately faced was the crude responses that I was receiving. If you met somebody in ‘real life’ they almost certainly would not approach you with the sexual approaches that I was receiving. Luckily, I often find the funny side to these explicit comments, screenshot them and send them to my two best friends for a giggle. However, I am aware that others may not find them amusing and instead be put off of dating apps all together. When I have met up with people from a dating app, they have often disrespected my time.
 
-* Identify your goals before signing up.
-* Communicate your intentions clearly to potential matches.
-* Set boundaries for yourself and others to ensure a more positive experience.
+## Dating Apps: Nicole's Story: Part 3
+I have encountered a very laid-back attitude with time keeping, perhaps it is because they do not see a future with someone they have just met. Therefore, they are often running late, hours late, cancelling last minute or calling at silly hours in the morning. I wouldn’t tolerate this if a friend did these things, so why should I allow someone I have just met to disrespect my time in this way? They also often assume that I am ‘kinky’. Perhaps, they assume that dating apps and being sexually adventurous are linked. However, we all know that that is not true, as people use them for a variety of reasons.
 
-## Navigating Online Communication
+## Dating Apps: Nicole's Story: Part 4
+I’ve found that dating apps allow conversation to turn sexual sooner, with the question, ‘are you kinky?’ or ‘what kinks are you into?’ being thrown around either before meeting or on a first encounter. There seems to be a fog shrouding the word ‘kinky’ and its definition. Instead, if it gets to the stage of wanting to be sexual with somebody, why not try, ‘what turns you on?’. Language is important. Finally, they are predominantly not kind. Kindness is something I miss deeply from being in a monogamous relationship. I’m not saying they are particularly unkind, although there have been a couple, but rather they forget to treat others as they would like to be treated.
 
-One significant challenge Nicole encountered was receiving crude or overly explicit responses. She notes that people often use sexual approaches on apps that they would likely never use in a "real life" encounter. While some may find these comments easy to dismiss, they can be off-putting or upsetting for many users.
-
-## Respect and Time Management
-
-Nicole observed a trend of people disrespecting her time when meeting through apps. This includes:
-* Running significantly late for dates.
-* Cancelling at the last minute.
-* Contacting her at inappropriate hours of the morning.
-
-She emphasizes that the "laid-back" nature of dating apps should not be an excuse for poor manners. Users should expect the same level of respect from a date as they would from a friend.
-
-## Language and Assumptions
-
-There is often a misconception that using dating apps is inherently linked to being "kinky" or sexually adventurous. This can lead to:
-* Inappropriate questions about kinks before meeting or during a first encounter.
-* Assumptions about a person’s sexual preferences.
-
-Nicole suggests using better language to discuss desires. Instead of using the broad and often misunderstood term "kinky," she recommends asking, "What turns you on?" This fosters more meaningful and respectful communication about sexual interests.
-
-## The Importance of Kindness
-
-A common issue in digital dating is the lack of basic kindness. Because interactions happen behind a screen, users may forget to treat others with the empathy they would show in person. Nicole advocates for maintaining kindness regardless of whether a connection is seen as "serious" or casual.
-
-## The Positive Side of Dating Apps
-
-Despite the challenges, Nicole continues to use dating apps for several reasons:
-* **Meeting New People:** They provide opportunities to connect with individuals outside of one's usual social circles.
-* **Exploring Interests:** They offer a chance to discover new places, such as bars, coffee shops, and activities like crazy golf.
-* **Sexual Exploration:** Apps can be a tool for exploring one's sexuality and sexual preferences in a fun, controlled way.
+## Dating Apps: Nicole's Story: Part 5
+It may be because they find it easier to be unkind being behind a phone screen. Or I think when somebody with a laid-back approach to dating apps doesn’t see the other person as someone ‘serious’, their kindness is also often left behind. It’s hard for me to understand this one when I think one should treat others how they want to be treated. That was a lot of negativity about dating apps but I don’t dislike them! On the contrary, they have allowed me to meet new people that I wouldn’t have met otherwise. I also love discovering new date places, bars, coffee shops, crazy golf spots. On top of that, I’ve been able to explore my sexuality and sexual preferences. And most importantly it’s fun and I’ll continue using them until it’s not anymore.

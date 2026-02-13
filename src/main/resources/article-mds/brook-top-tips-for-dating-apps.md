@@ -1,73 +1,61 @@
-# Dating Apps: Top Tips for Your Wellbeing
+# Dating apps: Top tips for your wellbeing
 
-Dating apps can be an enjoyable way to meet new people, but for many, the experience can become tiring or disheartening. These tips are designed to help you navigate dating apps effectively, find what you are looking for, and protect your mental health.
+## Summary
+*   **Overview** Advice and guidance on navigating dating apps, selecting the right platform for your needs, protecting your mental health, and understanding online dating etiquette such as ghosting.
+*   **Disclaimer** The following content is from brook.org.
 
-**Please note: Dating apps are strictly for individuals aged 18 and over.**
+## Before you start
+Some people enjoy using dating apps but for others it can be tiring and disheartening. We’ve pulled together our top tips for using dating apps, how to help yourself find what you’re looking for and protect your mental health. Dating apps are only for over 18s. Before you do anything, make sure you know what you want from dating apps. Is it a relationship? Something casual? What kind of person are you looking for? All these are really important questions you need to know before getting a dating app. It can be hard to find what you’re looking for if you’re not sure what that is, meaning you could just end up wasting your time and energy on people and that aren’t going to fulfil your requirements. Most apps also let you choose your location of how far you’d be willing to travel to meet someone, or the age of the person you want to meet.
 
-## Know what you want
+## Are you coming to dating apps for the right reasons?
+If you’re lacking confidence, feeling unhappy, lonely or not happy being by yourself dating apps is probably not the place to go to help you. Dating can be hard and does demand time and energy for it to work – Afterall, it doesn’t work until it does! If you don’t have the time or energy to date or talk to people on the apps, it might not be the time. There are dozens of dating apps that all have a slightly different twist on dating and are aimed at different people but that doesn’t mean you should be on all of them!
 
-Before downloading an app, it is important to reflect on your goals. Ask yourself:
-* Are you looking for a long-term relationship or something casual?
-* What kind of person are you looking for?
-* What are your boundaries regarding travel distance and age ranges?
+## Choosing the right app: Part 1
+Dating apps can take up a lot of your time so try and limit yourself to one or two. It’s worth reflecting on what you want from dating apps and choose the app that is most likely match this. Here’s are some of the most popular dating apps and a general guide to who might be interested in them (of course this is different for everyone).
 
-Being clear about your intentions helps prevent you from wasting time and energy on connections that do not fulfill your requirements.
+*   **Tinder** Tends to be more aimed at hook-ups and casual dating. You choose people based almost entirely off appearance.
+*   **Hinge** For all types of dating but with more information about people’s hobbies, career, what they’re looking for etc.
+*   **Bumble** Unique in that women message first, this makes it a good option for men and women with less time to spend on dating apps. You can also use Bumble to meet friends and make business connections!
 
-## Check your mindset
+## Choosing the right app: Part 2
+*   **Thursday** Mostly London-based. Hosts dating events in person where everyone there is single. The app is also aimed at meeting people in person.
+*   **Her** For queer women. You can also use it to make friends.
+*   **Grindr** For gay and bisexual men. Tends to be a hook up app.
+*   **Feeld** For people looking to explore their sexuality and non-monogamous relationships.
 
-Dating requires significant time and emotional energy. It is important to evaluate if you are approaching dating for the right reasons. If you are currently feeling unhappy, lonely, or lacking in confidence, dating apps may not be the best environment to improve your wellbeing. It is often more productive to wait until you have the motivation and energy to engage with others meaningfully.
+## Shared values and honesty: Part 1
+There’s nothing worse than talking to someone online for a couple of weeks and then meeting up in person to then find out that your views on life, important issues, how you treat other people are completely different. If you have certain non-negotiables or hard nos, it’s worth noting these down and working out if the other person shares these early on. You could also include on your profile more information about what you’re passionate about, for example, if you are a strong supporter of a political party, climate activist, vegan/vegetarian or follow a particular religion or worldview.
 
-## Choosing the right platform
+## Shared values and honesty: Part 2
+Be honest but also recognise that people may not always be honest with you and are likely showing you only their best selves.
 
-There are dozens of dating apps available, each with a slightly different focus. Instead of joining every platform, try to limit yourself to one or two that align with your goals.
+*   Have you seen [insert news article/book that you’ve read recently]? What did you think?
+*   What books/films/music do you enjoy?
+*   What are you passionate about?
+*   What are you using [insert dating app] for?
 
-* **Tinder:** Generally focused on hook-ups and casual dating, primarily based on appearance.
-* **Hinge:** Designed for all types of dating with a focus on detailed profiles including hobbies, careers, and intentions.
-* **Bumble:** Requires women to message first in heterosexual matches. It also includes modes for finding friends (BFF) and business networking (Bizz).
-* **Thursday:** Primarily London-based, focusing on in-person dating events and meeting people offline.
-* **Her:** Designed specifically for queer women and non-binary people; can also be used for making friends.
-* **Grindr:** Designed for gay, bisexual, and queer men; often used for hook-ups.
-* **Feeld:** For individuals interested in exploring their sexuality and non-monogamous relationships.
+## Taking a break: Part 1
+Online dating can be exhausting, particularly starting new conversations with people only for them to ghost you, sometimes even after dates. But dating shouldn’t feel like a chore, you shouldn’t feel pressured to be available on them all the time. If you feel it’s taking over your life, occupying too much of your time, you’re getting more disheartened or it’s becoming a chore, it’s probably time to take a break.
 
-## Identifying non-negotiables
+## Taking a break: Part 2
+Here are some options to limit your dating app use:
 
-To avoid potential conflict later, identify your "hard nos" or non-negotiables early on. Consider including information on your profile regarding things you are passionate about, such as:
-* Political views
-* Climate activism
-* Dietary choices (e.g., veganism/vegetarianism)
-* Religion or worldviews
+*   Log out of the app
+*   Uninstall the app – most dating apps you can reinstall the app later when you have more motivation and energy, and your profile will still be there
+*   Pause your profile – some apps also allow you to pause your profile so that no one new will see it
+*   Turn off notifications
+*   Limit the number of people you speak to at any one time
+*   Set aside a certain amount of time in the day for them
 
-While you should be honest, remember that others may only be showing their "best selves" online and may not always be completely transparent.
+## Mental wellbeing and validation
+It’s also a good idea to take breaks as dating apps can be addictive, especially as you get a little dopamine boost every time someone likes or matches with you. Be wary of placing too much importance on what people on apps think of you and your profile and make sure you’re getting validation from other parts of your life, from friends, work, hobbies so that dating isn’t tied to your sense of self-worth. It’s not just you – everyone on dating apps finds it challenging and tiring!
 
-## Conversation starters
+## Meeting in person
+With thousands of new people at the touch of a button, you might think it’ll be quick and easy to find what you’re looking for. And it might be, but it also might take more time and energy than expected. People can come across very differently online than how they do in person, even if it seems like you have lots in common. If you arrange to go on a date with someone, try not to put too much pressure on it – reframe it as meeting someone new and if nothing else you’ll have learnt something from them.
 
-If you are unsure how to begin a conversation, try asking open-ended questions:
-* "Have you seen [recent news article/book]? What did you think?"
-* "What books, films, or music do you enjoy?"
-* "What are you passionate about?"
-* "What are you looking for on this app?"
+## Ghosting
+*   It can be frustrating when you’ve started a conversation with someone only for them to just stop replying. This is called ghosting and it’s very common but acceptable at the talking stage of online dating. There are 101 reasons why someone will ghost you and none of them are ever a reflection on you.
+*   **When is ghosting acceptable?** If you’re not feeling it but you haven’t met up yet and haven’t made plans to, don’t worry too much about not replying. If you have made plans or have met up with them, you should let them know. You don’t owe them commitment but you do owe them respect and communication.
 
-## Protecting your mental health
-
-Online dating can be exhausting and addictive. The "dopamine boost" from matches can sometimes lead to an unhealthy reliance on the apps for external validation. To maintain your wellbeing, consider these strategies:
-
-* **Take breaks:** If dating feels like a chore, log out or uninstall the app for a while. Most apps allow you to "pause" your profile so you don't lose your progress.
-* **Turn off notifications:** This prevents the app from constantly demanding your attention.
-* **Set time limits:** Dedicate a specific amount of time each day to the apps rather than checking them constantly.
-* **Seek validation elsewhere:** Ensure your self-worth is tied to your friends, work, and hobbies, rather than your success on dating apps.
-
-## Managing expectations and ghosting
-
-People often come across differently online than they do in person. If you arrange a date, try to view it simply as an opportunity to meet someone new rather than putting pressure on the outcome.
-
-**Ghosting** (when someone suddenly stops replying) is very common in online dating. While frustrating, it is usually not a reflection of you. 
-* **When it's acceptable:** If you are only in the initial talking stage and haven't met or made firm plans, stopping the conversation is generally common practice.
-* **When to communicate:** If you have already met up or made specific plans, it is respectful to send a short message explaining that you aren't interested in pursuing things further rather than simply disappearing.
-
-## Alternative ways to meet
-
-While dating apps are popular, they are not the only way to meet people. Many people still find partners and connections "old-school" through:
-* Workplace environments
-* Sports clubs and hobby groups
-* Mutual friends
-* In-person social events
+## Old-school dating
+Although lots of people meet through dating apps, it doesn’t mean that it is the only way to date. Dating apps are a great way of meeting and finding people that are looking for the same thing as you, but don’t be afraid to go old-school! Lots of people still meet in person; at work at sports clubs, or through mutual friends.
