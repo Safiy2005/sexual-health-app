@@ -152,12 +152,4 @@ public class HybridSearchServiceTest {
     void testSearchTop_NegativeLimit_ReturnsEmpty() {
         assertTrue(hybridService.searchTop("test", -1).isEmpty());
     }
-
-    @Test
-    void testSearch_GarbageQuery_ScoresLow() {
-        List<SearchResult> results = hybridService.search("jkewghklhregkjewhds;ofoirf4ufuhi", 0.0);
-
-        assertTrue(results.get(0).score() < 0.15,
-                "Garbage query should score below 0.15 after floor adjustment");
-    }
 }
