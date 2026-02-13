@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SemanticSearchCacheTest {
 
     private static final String CACHE_FILE_NAME = "semantic_embeddings.cache";
-    private static final int CACHE_VERSION = 1;
+    private static final int CACHE_VERSION = 2;
     private Path cachePath;
     private ArticleCollection realArticleCollection;
 
@@ -75,7 +75,7 @@ class SemanticSearchCacheTest {
     }
 
     @Test
-    void testCacheInvalidationOnArticleCountChange() throws IOException {
+    void testCacheInvalidationOnContentChange() throws IOException {
         // 1. Generate valid cache first
         SemanticSearchService service = new SemanticSearchService(realArticleCollection);
         service.search("test");
@@ -83,26 +83,23 @@ class SemanticSearchCacheTest {
 
         long originalSize = Files.size(cachePath);
 
-        // 2. Overwrite cache with fake invalid data (wrong article count)
-        // We write a valid header but incorrect count
+        // 2. Overwrite cache with fake invalid data (wrong content hash)
         try (DataOutputStream dos = new DataOutputStream(new GZIPOutputStream(Files.newOutputStream(cachePath)))) {
             dos.writeInt(CACHE_VERSION);
-            dos.writeInt(realArticleCollection.getArticles().size() + 999); // Fake count
+            dos.writeUTF("fake_hash_that_does_not_match"); // Fake content hash
             dos.writeInt(0); // 0 embeddings
         }
 
         // Verify we changed the file
         assertNotEquals(originalSize, Files.size(cachePath));
 
-        // 3. Initialize new service. It should detect count mismatch and REGENERATE the
+        // 3. Initialize new service. It should detect hash mismatch and REGENERATE the
         // cache.
         SemanticSearchService.reset();
         SemanticSearchService service2 = new SemanticSearchService(realArticleCollection);
         service2.search("test");
 
-        // 4. Verify cache is back to a reasonable size (similar to original)
-        // It won't be exactly the same byte-for-byte due to GZIP timestamp/randomness,
-        // but close enough or just "large"
+        // 4. Verify cache is back to a reasonable size (regenerated)
         assertTrue(Files.size(cachePath) > 100, "Cache should have been regenerated and be non-trivial size");
 
         // Check functionality

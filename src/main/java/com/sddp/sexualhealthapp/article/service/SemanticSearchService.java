@@ -13,9 +13,12 @@ import dev.langchain4j.store.embedding.EmbeddingSearchResult;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
@@ -38,7 +41,7 @@ public class SemanticSearchService {
     private static final String ARTICLE_INDEX_KEY = "articleIndex";
     private static final int DEFAULT_MAX_RESULTS = 10;
     private static final String CACHE_FILE_NAME = "semantic_embeddings.cache";
-    private static final int CACHE_VERSION = 1;
+    private static final int CACHE_VERSION = 2;
 
     private final ArticleCollection articleCollection;
 
@@ -170,7 +173,7 @@ public class SemanticSearchService {
         Path cachePath = Paths.get(CACHE_FILE_NAME);
         try (DataOutputStream dos = new DataOutputStream(new GZIPOutputStream(Files.newOutputStream(cachePath)))) {
             dos.writeInt(CACHE_VERSION);
-            dos.writeInt(articleCollection.getArticles().size()); // Save article count for validation
+            dos.writeUTF(computeContentHash()); // Content hash for invalidation
             dos.writeInt(embeddings.size());
 
             for (int i = 0; i < embeddings.size(); i++) {
@@ -197,7 +200,7 @@ public class SemanticSearchService {
 
     /**
      * Tries to load embeddings from disk. Returns true if successful.
-     * Invalidates cache if article count differs.
+     * Invalidates cache if article content hash differs.
      */
     private boolean loadFromDisk(InMemoryEmbeddingStore<TextSegment> store) {
         Path cachePath = Paths.get(CACHE_FILE_NAME);
@@ -213,10 +216,10 @@ public class SemanticSearchService {
             if (version != CACHE_VERSION)
                 return false;
 
-            int cachedArticleCount = dis.readInt();
-            if (cachedArticleCount != articleCollection.getArticles().size()) {
-                System.out.println("Article count changed (" + cachedArticleCount + " vs "
-                        + articleCollection.getArticles().size() + "). Invalidating cache.");
+            String cachedHash = dis.readUTF();
+            String currentHash = computeContentHash();
+            if (!cachedHash.equals(currentHash)) {
+                System.out.println("Article content changed. Invalidating cache.");
                 return false;
             }
 
@@ -242,6 +245,32 @@ public class SemanticSearchService {
         } catch (IOException | RuntimeException e) {
             System.err.println("Failed to load embeddings cache: " + e.getMessage());
             return false;
+        }
+    }
+
+    /**
+     * Computes a SHA-256 hash of all article content (titles + sections).
+     * Used to detect when article text has changed so stale embeddings are
+     * invalidated.
+     */
+    private String computeContentHash() {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            for (Article article : articleCollection.getArticles()) {
+                digest.update(article.getTitle().getBytes(StandardCharsets.UTF_8));
+                for (Article.Section section : article.getSections()) {
+                    digest.update(section.heading().getBytes(StandardCharsets.UTF_8));
+                    digest.update(section.content().getBytes(StandardCharsets.UTF_8));
+                }
+            }
+            byte[] hashBytes = digest.digest();
+            StringBuilder hex = new StringBuilder();
+            for (byte b : hashBytes) {
+                hex.append(String.format("%02x", b));
+            }
+            return hex.toString();
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException("SHA-256 not available", e);
         }
     }
 
