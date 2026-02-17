@@ -150,3 +150,6 @@ coverage/
 *.temp
 *~
 .~lock.*
+
+# Semantic Embeddings Cache
+semantic_embeddings.cach
