@@ -110,7 +110,7 @@ public class SemanticSearchServiceTest {
         SemanticSearchService freshService = new SemanticSearchService(articleCollection);
         freshService.preload();
 
-        assertTrue(freshService.isInitialized(),
+        assertTrue(freshService.isReady(),
                 "Service should be initialized after preload()");
     }
 
