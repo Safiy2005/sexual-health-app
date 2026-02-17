@@ -152,4 +152,4 @@ coverage/
 .~lock.*
 
 # Semantic Embeddings Cache
-semantic_embeddings.cach
+semantic_embeddings.cache
