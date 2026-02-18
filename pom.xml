@@ -36,6 +36,13 @@
             <version>${javafx.version}</version>
         </dependency>
 
+        <!-- JavaFX Media (for looping MP4 videos in onboarding) -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
         <!-- BCrypt for password hashing -->
         <dependency>
             <groupId>org.mindrot</groupId>
