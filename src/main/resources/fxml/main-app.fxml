@@ -4,60 +4,100 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane xmlns="http://javafx.com/javafx"
+
+<BorderPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="com.sddp.sexualhealthapp.mainapp.controller.MainAppController"
            styleClass="main-app-root"
            prefWidth="360"
            prefHeight="640">
 
-    <!-- Layer 1: Search View (articles list + search) -->
-    <VBox fx:id="searchView" spacing="0">
 
-        <!-- Header bar with title and lock button -->
-        <HBox styleClass="search-header" alignment="CENTER_LEFT" spacing="10">
-            <padding>
-                <Insets top="16" right="16" bottom="12" left="16"/>
-            </padding>
-            <Label text="Articles" styleClass="search-header-title" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
-            <!-- TODO: Remove when story 51 (bottom nav) replaces this toggle -->
-            <Button text="Calendar" styleClass="lock-button" onAction="#handleToggleCalendar"/>
-            <Button text="Lock" styleClass="lock-button" onAction="#handleBackToCalculator"/>
-        </HBox>
+    <!-- Center: Tab content-->
+    <center>
+        <StackPane fx:id="contentStack">
 
-        <!-- Search bar -->
-        <HBox styleClass="search-bar-container" alignment="CENTER">
-            <padding>
-                <Insets top="0" right="16" bottom="12" left="16"/>
-            </padding>
-            <TextField fx:id="searchField"
-                       promptText="Search symptoms, conditions..."
-                       styleClass="search-field"
-                       HBox.hgrow="ALWAYS"/>
-        </HBox>
+            <!-- Tab 1 : Articles-->
+            <StackPane fx:id="articlesRoot">
+                <!-- Layer 1: Search View (articles list + search) -->
+                <VBox fx:id="searchView" spacing="0" styleClass="main-content">
 
-        <!-- Results / articles list -->
-        <ScrollPane fx:id="listScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
-                    styleClass="search-scroll-pane" hbarPolicy="NEVER">
-            <VBox fx:id="articleListContainer" spacing="8" styleClass="article-list-container">
-                <padding>
-                    <Insets top="4" right="16" bottom="16" left="16"/>
-                </padding>
-                <!-- Article cards are added programmatically -->
+                    <!-- Header bar with title and lock button -->
+                    <HBox styleClass="search-header" alignment="CENTER_LEFT" spacing="10">
+                        <padding>
+                            <Insets top="16" right="16" bottom="12" left="16"/>
+                        </padding>
+                        <Label text="Articles" styleClass="search-header-title" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                        <Button text="Lock" styleClass="lock-button" onAction="#handleBackToCalculator"/>
+                    </HBox>
+
+                    <!-- Search bar -->
+                    <HBox styleClass="search-bar-container" alignment="CENTER">
+                        <padding>
+                            <Insets top="0" right="16" bottom="12" left="16"/>
+                        </padding>
+                        <TextField fx:id="searchField"
+                                promptText="Search symptoms, conditions..."
+                                styleClass="search-field"
+                                HBox.hgrow="ALWAYS"/>
+                    </HBox>
+
+                    <!-- Results / articles list -->
+                    <ScrollPane fx:id="listScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
+                                styleClass="search-scroll-pane" hbarPolicy="NEVER">
+                        <VBox fx:id="articleListContainer" spacing="8" styleClass="article-list-container">
+                            <padding>
+                                <Insets top="4" right="16" bottom="16" left="16"/>
+                            </padding>
+                            <!-- Article cards are added programmatically -->
+                        </VBox>
+                    </ScrollPane>
+                </VBox>
+
+                <!-- Layer 2: Article Detail View (loaded from separate FXML) -->
+                <fx:include fx:id="articleView" source="/fxml/article-view.fxml"/>
+
+            </StackPane>
+
+            <!-- Tab 2 : Calendar placeholder-->
+            <VBox fx:id="calendarRoot" visible="false" managed="false" alignment="CENTER" spacing="10">
+                <Label text="Calendar (coming soon)"/>
             </VBox>
-        </ScrollPane>
-    </VBox>
 
-    <!-- Layer 2: Article Detail View (loaded from separate FXML) -->
-    <fx:include fx:id="articleView" source="/fxml/article-view.fxml"/>
+            <!-- Tab 3: Settings placeholder-->
+            <VBox fx:id="settingsRoot" visible="false" managed="false" alignment="CENTER" spacing="10">
+                <Label text="Settings (coming soon)"/>
+            </VBox>
+        </StackPane>
+    </center>
 
-    <!-- Layer 3: Calendar View — TODO: Remove when story 51 (bottom nav) is integrated -->
-    <fx:include fx:id="calendarView" source="/fxml/calendar-view.fxml" visible="false"/>
+    <!-- Bottom: Navigation-->
+    <bottom>
+        
+        <HBox styleClass="bottom-nav" alignment="CENTER">
 
-    <!-- Layer 4: Event Feed View (stub for story 48) -->
-    <fx:include fx:id="eventFeedView" source="/fxml/event-feed-view.fxml" visible="false"/>
+            <fx:define>
+                <ToggleGroup fx:id="navGroup"/>
+            </fx:define>
 
-    <!-- Layer 5: Create Event View (stub for story 22) -->
-    <fx:include fx:id="createEventView" source="/fxml/create-event-view.fxml" visible="false"/>
+            <ToggleButton fx:id="articlesTab" 
+                        toggleGroup="$navGroup"
+                        styleClass="nav-item"
+                        maxWidth="1.7976931348623157E308"
+                        HBox.hgrow="ALWAYS"/>
 
-</StackPane>
+            <ToggleButton fx:id="calendarTab" 
+                        toggleGroup="$navGroup"
+                        styleClass="nav-item"
+                        maxWidth="1.7976931348623157E308"
+                        HBox.hgrow="ALWAYS"/>
+            
+            <ToggleButton fx:id="settingsTab" 
+                        toggleGroup="$navGroup"
+                        styleClass="nav-item"
+                        maxWidth="1.7976931348623157E308"
+                        HBox.hgrow="ALWAYS"/>
+        </HBox>
+    
+    </bottom>
+</BorderPane>

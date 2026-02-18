@@ -1,5 +1,7 @@
 package com.sddp.sexualhealthapp.mainapp.controller;
 
+import java.util.List;
+
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
 import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
 import com.sddp.sexualhealthapp.article.model.Article;
@@ -11,6 +13,8 @@ import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
 import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
+import com.sddp.sexualhealthapp.util.SvgIcon;
+
 import javafx.animation.Interpolator;
 import javafx.animation.PauseTransition;
 import javafx.animation.TranslateTransition;
@@ -18,13 +22,15 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
-
-import java.util.List;
 
 /**
  * Controller for the main app view with article search.
@@ -32,6 +38,22 @@ import java.util.List;
  */
 public class MainAppController {
 
+    @FXML
+    private StackPane contentStack;
+    @FXML
+    private StackPane articlesRoot;
+    @FXML
+    private VBox calendarRoot;
+    @FXML
+    private VBox settingsRoot;
+    @FXML
+    private ToggleGroup navGroup;
+    @FXML
+    private ToggleButton articlesTab;
+    @FXML
+    private ToggleButton calendarTab;
+    @FXML
+    private ToggleButton settingsTab;
     @FXML
     private VBox searchView;
     @FXML
@@ -80,14 +102,11 @@ public class MainAppController {
         articleViewController.setOnBackToSearch(this::handleBackToSearch);
 
         // Wire calendar navigation callbacks
-        calendarViewController.setOnGoToEventFeed(() ->
-                showView(eventFeedView, calendarView));
-        calendarViewController.setOnGoToNewEvent(() ->
-                showView(createEventView, calendarView));
+        calendarViewController.setOnGoToEventFeed(() -> showView(eventFeedView, calendarView));
+        calendarViewController.setOnGoToNewEvent(() -> showView(createEventView, calendarView));
 
         // Wire stub view back-navigation callbacks
-        eventFeedViewController.setOnBackToCalendar(() ->
-                showView(calendarView, eventFeedView));
+        eventFeedViewController.setOnBackToCalendar(() -> showView(calendarView, eventFeedView));
         createEventViewController.setOnBackToCalendar(() -> {
             calendarViewController.refresh();
             showView(calendarView, createEventView);
@@ -95,6 +114,73 @@ public class MainAppController {
 
         // Show all articles on initial load
         showAllArticles();
+
+        // icon tabs
+
+        articlesTab.setGraphic(SvgIcon.load("/icons/newspaper.svg", "nav-icon"));
+        calendarTab.setGraphic(SvgIcon.load("/icons/calendar.svg", "nav-icon"));
+        settingsTab.setGraphic(SvgIcon.load("/icons/settings.svg", "nav-icon"));
+
+        // icons only
+        articlesTab.setText(null);
+        calendarTab.setText(null);
+        settingsTab.setText(null);
+
+        articlesTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+        calendarTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+        settingsTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+
+        navGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
+            if (newToggle == null)
+                return;
+
+            if (newToggle == articlesTab)
+                switchToTab("ARTICLES");
+            else if (newToggle == calendarTab)
+                switchToTab("CALENDAR");
+            else if (newToggle == settingsTab)
+                switchToTab("SETTINGS");
+        });
+
+        // Default tab
+        navGroup.selectToggle(articlesTab);
+        switchToTab("ARTICLES");
+    }
+
+    private void switchToTab(String tab) {
+        // Hides all
+        setVisible_Managed(articlesRoot, false);
+        setVisible_Managed(calendarRoot, false);
+        setVisible_Managed(settingsRoot, false);
+
+        // When tab selected
+        switch (tab) {
+            case "ARTICLES" -> setVisible_Managed(articlesRoot, true);
+            case "CALENDAR" -> {
+                setVisible_Managed(calendarRoot, true);
+                closeArticleOverlayIfOpen();
+            }
+            case "SETTINGS" -> {
+                setVisible_Managed(settingsRoot, true);
+                closeArticleOverlayIfOpen();
+            }
+        }
+    }
+
+    private void setVisible_Managed(Node node, boolean on) {
+        node.setVisible(on);
+        node.setManaged(on);
+    }
+
+    private void closeArticleOverlayIfOpen() {
+        // Resets the overlay state so it doesnt stick when switches tabs
+        articleView.setVisible(false);
+        articleView.setTranslateX(0);
+
+        searchView.setVisible(true);
+        searchView.setManaged(true);
+
+        isViewTransitioning = false;
     }
 
     private void showAllArticles() {
@@ -151,7 +237,8 @@ public class MainAppController {
     }
 
     private void openArticle(Article article) {
-        if (isViewTransitioning) return;
+        if (isViewTransitioning)
+            return;
         isViewTransitioning = true;
 
         articleViewController.openArticle(article);
@@ -161,7 +248,7 @@ public class MainAppController {
         articleView.setVisible(true);
 
         TranslateTransition slide = new TranslateTransition(
-            Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
+                Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
         slide.setFromX(AppConstants.APP_WIDTH);
         slide.setToX(0);
         slide.setInterpolator(Interpolator.EASE_OUT);
@@ -173,14 +260,15 @@ public class MainAppController {
     }
 
     private void handleBackToSearch() {
-        if (isViewTransitioning) return;
+        if (isViewTransitioning)
+            return;
         isViewTransitioning = true;
 
         // Make search view visible underneath before sliding article away
         searchView.setVisible(true);
 
         TranslateTransition slide = new TranslateTransition(
-            Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
+                Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
         slide.setFromX(0);
         slide.setToX(AppConstants.APP_WIDTH);
         slide.setInterpolator(Interpolator.EASE_IN);
@@ -214,7 +302,8 @@ public class MainAppController {
 
     @FXML
     private void handleBackToCalculator(ActionEvent event) {
-        if (SceneManager.getInstance().isTransitioning()) return;
+        if (SceneManager.getInstance().isTransitioning())
+            return;
         SceneManager.getInstance().transitionToCalculator(AppConstants.LOCK_CROSSFADE_MS);
     }
 
@@ -224,4 +313,5 @@ public class MainAppController {
         empty.setWrapText(true);
         articleListContainer.getChildren().add(empty);
     }
+
 }

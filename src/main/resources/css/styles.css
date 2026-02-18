@@ -252,7 +252,7 @@
     -fx-background-color: rgba(30, 30, 30, 0.98);
     -fx-background-radius: 16px 16px 0 0;
     -fx-padding: 24px 20px 32px 20px;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 20, 0, 0, -5);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, -5);
 }
 
 .equation-preview {
@@ -312,7 +312,7 @@
 
 .main-app-root {
     -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
-    -fx-padding: 40px 20px;
+    -fx-padding: 0;
     -fx-alignment: center;
     -fx-pref-width: 360px;
     -fx-pref-height: 640px;
@@ -429,19 +429,19 @@
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .viewport {
+.search-scroll-pane>.viewport {
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .scroll-bar:vertical {
+.search-scroll-pane>.scroll-bar:vertical {
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .scroll-bar:vertical .track {
+.search-scroll-pane>.scroll-bar:vertical .track {
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .scroll-bar:vertical .thumb {
+.search-scroll-pane>.scroll-bar:vertical .thumb {
     -fx-background-color: #C8BFB6;
     -fx-background-radius: 4px;
 }
@@ -661,7 +661,8 @@
 /* Container that holds all swipable pages */
 .article-page-container {
     -fx-background-color: transparent;
-    -fx-clip-content: true;      /* clip children so off-screen pages are hidden */
+    -fx-clip-content: true;
+    /* clip children so off-screen pages are hidden */
 }
 
 /* Wrapper around each page (fills the StackPane) */
@@ -786,7 +787,7 @@
     -fx-background-color: #2C2C2E;
     -fx-background-radius: 12px;
     -fx-padding: 16px 24px;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 4);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 0, 4);
 }
 
 /* Teal equation text inside the example box */
