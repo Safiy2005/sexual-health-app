@@ -312,7 +312,7 @@
 
 .main-app-root {
     -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
-    -fx-padding: 40px 20px;
+    -fx-padding: 0;
     -fx-alignment: center;
     -fx-pref-width: 360px;
     -fx-pref-height: 640px;
@@ -849,4 +849,62 @@
 .onboarding-button-primary:pressed {
     -fx-background-color: #5A9D97;
     -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.2), 4, 0, 0, 2);
+}
+
+.bottom-nav {
+   -fx-background-color: #ECE6DF;
+   -fx-border-color: rgba(0,0,0,0.08);
+   -fx-border-width: 1 0 0 0;
+
+   -fx-padding: 0;
+   -fx-spacing: 0;
+   
+   -fx-pref-height: 56;
+   -fx-min-height: 56;
+   -fx-max-height: 56;
+
+   
+
+}
+/* Buttons for nav */
+.nav-item {
+    -fx-background-color: transparent;
+    
+
+    -fx-padding: 0;
+    -fx-alignment: center;
+    
+
+    -fx-pref-height: 56;
+    -fx-min-height: 56;
+    -fx-max-height: 56;
+
+}
+
+
+.nav-item:selected {
+    -fx-background-color:rgba(0,0,0,0.06);
+    -fx-background-radius: 12;
+    -fx-background-insets: 10 26 10 26;
+
+}
+
+.nav-icon {
+    -fx-stroke: rgba(0,0,0,0.45);
+    -fx-stroke-width: 1.8;
+    -fx-stroke-line-cap: round;
+    -fx-stroke-line-join:round;
+    -fx-fill: transparent;
+}
+
+.nav-item:selected .nav-icon {
+    -fx-fill: #3F6E73
+}
+
+.nav-icon-wrap {
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+}
+.main-content {
+    -fx-padding: 40 20 0 20;
 }
