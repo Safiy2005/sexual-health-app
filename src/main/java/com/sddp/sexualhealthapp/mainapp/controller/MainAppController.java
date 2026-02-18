@@ -6,6 +6,9 @@ import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
+import com.sddp.sexualhealthapp.calendar.controller.CalendarController;
+import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
+import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import javafx.animation.Interpolator;
@@ -14,6 +17,7 @@ import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -41,6 +45,21 @@ public class MainAppController {
     @FXML
     private ScrollPane listScrollPane;
 
+    // TODO: Remove when story 51 (bottom nav) is integrated
+    @FXML
+    private VBox calendarView;
+    @FXML
+    private CalendarController calendarViewController;
+
+    @FXML
+    private VBox eventFeedView;
+    @FXML
+    private EventFeedController eventFeedViewController;
+    @FXML
+    private VBox createEventView;
+    @FXML
+    private CreateEventController createEventViewController;
+
     private HybridSearchService searchService;
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
@@ -59,6 +78,20 @@ public class MainAppController {
 
         // Wire the article view's back button to return to search
         articleViewController.setOnBackToSearch(this::handleBackToSearch);
+
+        // Wire calendar navigation callbacks
+        calendarViewController.setOnGoToEventFeed(() ->
+                showView(eventFeedView, calendarView));
+        calendarViewController.setOnGoToNewEvent(() ->
+                showView(createEventView, calendarView));
+
+        // Wire stub view back-navigation callbacks
+        eventFeedViewController.setOnBackToCalendar(() ->
+                showView(calendarView, eventFeedView));
+        createEventViewController.setOnBackToCalendar(() -> {
+            calendarViewController.refresh();
+            showView(calendarView, createEventView);
+        });
 
         // Show all articles on initial load
         showAllArticles();
@@ -157,6 +190,26 @@ public class MainAppController {
             isViewTransitioning = false;
         });
         slide.play();
+    }
+
+    // TODO: Remove when story 51 (bottom nav) replaces this toggle
+    @FXML
+    private void handleToggleCalendar(ActionEvent event) {
+        boolean showCalendar = !calendarView.isVisible();
+        calendarView.setVisible(showCalendar);
+        searchView.setVisible(!showCalendar);
+        articleView.setVisible(false);
+        if (showCalendar && calendarViewController != null) {
+            calendarViewController.refresh();
+        }
+    }
+
+    /**
+     * Switches between views in the StackPane by showing one and hiding another.
+     */
+    private void showView(Node show, Node hide) {
+        hide.setVisible(false);
+        show.setVisible(true);
     }
 
     @FXML

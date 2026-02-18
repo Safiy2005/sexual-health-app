@@ -20,6 +20,8 @@
                 <Insets top="16" right="16" bottom="12" left="16"/>
             </padding>
             <Label text="Articles" styleClass="search-header-title" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+            <!-- TODO: Remove when story 51 (bottom nav) replaces this toggle -->
+            <Button text="Calendar" styleClass="lock-button" onAction="#handleToggleCalendar"/>
             <Button text="Lock" styleClass="lock-button" onAction="#handleBackToCalculator"/>
         </HBox>
 
@@ -48,5 +50,14 @@
 
     <!-- Layer 2: Article Detail View (loaded from separate FXML) -->
     <fx:include fx:id="articleView" source="/fxml/article-view.fxml"/>
+
+    <!-- Layer 3: Calendar View — TODO: Remove when story 51 (bottom nav) is integrated -->
+    <fx:include fx:id="calendarView" source="/fxml/calendar-view.fxml" visible="false"/>
+
+    <!-- Layer 4: Event Feed View (stub for story 48) -->
+    <fx:include fx:id="eventFeedView" source="/fxml/event-feed-view.fxml" visible="false"/>
+
+    <!-- Layer 5: Create Event View (stub for story 22) -->
+    <fx:include fx:id="createEventView" source="/fxml/create-event-view.fxml" visible="false"/>
 
 </StackPane>

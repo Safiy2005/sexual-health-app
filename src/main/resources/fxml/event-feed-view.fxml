@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.calendar.controller.EventFeedController"
+      styleClass="calendar-root" spacing="0"
+      prefWidth="360" prefHeight="640">
+
+    <!-- Back navigation bar -->
+    <HBox styleClass="calendar-header" alignment="CENTER_LEFT" spacing="10">
+        <padding>
+            <Insets top="16" right="16" bottom="12" left="16"/>
+        </padding>
+        <Button text="Back" styleClass="calendar-action-button"
+                onAction="#handleBackToCalendar"/>
+        <Label text="Event Feed" styleClass="search-header-title"
+               HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+    </HBox>
+
+    <!-- Placeholder content — TODO (Taran): stories 48.1-48.3 -->
+    <VBox alignment="CENTER" spacing="12" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets top="40" right="24" bottom="40" left="24"/>
+        </padding>
+        <Label text="Event Feed" styleClass="calendar-selected-date-header"/>
+        <Label text="This view will show upcoming and past events."
+               styleClass="calendar-no-events-label" wrapText="true" alignment="CENTER"/>
+    </VBox>
+
+</VBox>
