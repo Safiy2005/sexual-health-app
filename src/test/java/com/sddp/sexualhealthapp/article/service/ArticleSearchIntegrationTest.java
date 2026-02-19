@@ -25,8 +25,9 @@ public class ArticleSearchIntegrationTest {
     static void setUp() {
         articleCollection = ArticleCollection.getInstance();
         searchService = new ArticleSearchService(articleCollection);
-        hybridService = new HybridSearchService(
-                searchService, new SemanticSearchService(articleCollection));
+        SemanticSearchService semanticService = new SemanticSearchService(articleCollection);
+        semanticService.preload(); // Ensure semantic search is ready before hybrid tests
+        hybridService = new HybridSearchService(searchService, semanticService);
     }
 
     @Test
