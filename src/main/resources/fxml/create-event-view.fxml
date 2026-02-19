@@ -20,8 +20,6 @@
         <Label text="New Event" styleClass="search-header-title"
                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
     </HBox>
-
-    <!-- Placeholder content — TODO (Oli): stories 22.1-22.3 -->
     <VBox alignment="TOP_CENTER" spacing="16" VBox.vgrow="ALWAYS">
         <padding>
             <Insets top="30" right="24" bottom="30" left="24"/>
@@ -44,8 +42,39 @@
             <ComboBox fx:id="typeComboBox" promptText="Select category" prefWidth="300"/>
         </VBox>
 
+        <VBox spacing="4" alignment="CENTER_LEFT">
+            <Label text="Time (Optional)"/>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <ComboBox fx:id="hourComboBox" promptText="HH" prefWidth="80"/>
+                <Label text=":"/>
+                <ComboBox fx:id="minuteComboBox" promptText="MM" prefWidth="80"/>
+            </HBox>
+        </VBox>
+
+        <VBox fx:id="dosageContainer" spacing="4" alignment="CENTER_LEFT" visible="false" managed="false">
+            <Label text="Dosage Amount"/>
+            <TextField fx:id="dosageField" promptText="E.g., 2 pills, 50mg" prefWidth="300"/>
+        </VBox>
+
+        <VBox spacing="4" alignment="CENTER_LEFT">
+            <Label text="Repeat"/>
+            <ComboBox fx:id="recurrenceComboBox" prefWidth="300"/>
+
+            <HBox fx:id="intervalContainer" spacing="10" alignment="CENTER_LEFT" visible="false" managed="false">
+                <padding><Insets top="4"/></padding>
+                <Label text="Repeat every"/>
+                <TextField fx:id="intervalField" text="1" prefWidth="50"/>
+                <Label fx:id="intervalLabel" text="days"/>
+            </HBox>
+        </VBox>
+
+        <VBox spacing="4" alignment="CENTER_LEFT">
+            <Label text="Description / Notes"/>
+            <TextArea fx:id="descriptionArea" promptText="Add any extra details here..."
+                      prefRowCount="3" prefWidth="300" wrapText="true"/>
+        </VBox>
+
         <Region VBox.vgrow="ALWAYS" /> <Button text="Save Event" onAction="#handleSaveEvent" styleClass="calendar-action-button" prefWidth="300"/>
 
     </VBox>
-
 </VBox>
