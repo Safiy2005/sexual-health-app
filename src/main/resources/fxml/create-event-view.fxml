@@ -22,13 +22,30 @@
     </HBox>
 
     <!-- Placeholder content — TODO (Oli): stories 22.1-22.3 -->
-    <VBox alignment="CENTER" spacing="12" VBox.vgrow="ALWAYS">
+    <VBox alignment="TOP_CENTER" spacing="16" VBox.vgrow="ALWAYS">
         <padding>
-            <Insets top="40" right="24" bottom="40" left="24"/>
+            <Insets top="30" right="24" bottom="30" left="24"/>
         </padding>
-        <Label text="New Event" styleClass="calendar-selected-date-header"/>
-        <Label text="This view will contain the event creation form."
-               styleClass="calendar-no-events-label" wrapText="true" alignment="CENTER"/>
+
+        <Label text="Create New Event" styleClass="calendar-selected-date-header"/>
+
+        <VBox spacing="4" alignment="CENTER_LEFT">
+            <Label text="Event Title"/>
+            <TextField fx:id="titleField" promptText="E.g., Doctor Appointment"/>
+        </VBox>
+
+        <VBox spacing="4" alignment="CENTER_LEFT">
+            <Label text="Date"/>
+            <DatePicker fx:id="datePicker" promptText="Select a date" prefWidth="300"/>
+        </VBox>
+
+        <VBox spacing="4" alignment="CENTER_LEFT">
+            <Label text="Event Type"/>
+            <ComboBox fx:id="typeComboBox" promptText="Select category" prefWidth="300"/>
+        </VBox>
+
+        <Region VBox.vgrow="ALWAYS" /> <Button text="Save Event" onAction="#handleSaveEvent" styleClass="calendar-action-button" prefWidth="300"/>
+
     </VBox>
 
 </VBox>
