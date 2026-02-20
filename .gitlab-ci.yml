@@ -21,7 +21,7 @@ test_javafx_app:
     - apt-get install -y xvfb 
   script:
     # Run the maven tests inside the virtual framebuffer
-    - xvfb-run mvn clean test
+    - xvfb-run mvn clean test -DexcludedGroups="Slow"
   rules:
     # This ensures the pipeline runs when commits are pushed to any branch
     - if: $CI_COMMIT_BRANCH

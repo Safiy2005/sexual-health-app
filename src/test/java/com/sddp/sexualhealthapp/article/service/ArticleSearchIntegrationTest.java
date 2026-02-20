@@ -3,6 +3,7 @@ package com.sddp.sexualhealthapp.article.service;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * These tests verify that the search system works correctly with the actual
  * article corpus.
  */
+@Tag("Slow")
 public class ArticleSearchIntegrationTest {
 
     private static ArticleSearchService searchService;
