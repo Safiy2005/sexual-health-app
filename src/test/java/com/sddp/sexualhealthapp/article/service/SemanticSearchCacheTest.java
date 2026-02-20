@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.io.DataOutputStream;
@@ -20,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Tests for the persistent caching logic in SemanticSearchService.
  * Uses real ArticleCollection to avoid Mockito Java 23 incompatibility.
  */
+@Tag("Slow")
 class SemanticSearchCacheTest {
 
     private static final String CACHE_FILE_NAME = "semantic_embeddings.cache";

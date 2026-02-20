@@ -3,6 +3,7 @@ package com.sddp.sexualhealthapp.article.service;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;
@@ -10,8 +11,10 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit tests for SemanticSearchService using real articles and the ONNX embedding model.
+ * Unit tests for SemanticSearchService using real articles and the ONNX
+ * embedding model.
  */
+@Tag("Slow")
 public class SemanticSearchServiceTest {
 
     private static SemanticSearchService searchService;
@@ -76,8 +79,7 @@ public class SemanticSearchServiceTest {
 
         assertFalse(results.isEmpty(), "Should find articles about symptoms");
 
-        results.values().forEach(score ->
-                assertTrue(score > 0.0, "All scores should be positive"));
+        results.values().forEach(score -> assertTrue(score > 0.0, "All scores should be positive"));
     }
 
     @Test
@@ -110,7 +112,7 @@ public class SemanticSearchServiceTest {
         SemanticSearchService freshService = new SemanticSearchService(articleCollection);
         freshService.preload();
 
-        assertTrue(freshService.isInitialized(),
+        assertTrue(freshService.isReady(),
                 "Service should be initialized after preload()");
     }
 

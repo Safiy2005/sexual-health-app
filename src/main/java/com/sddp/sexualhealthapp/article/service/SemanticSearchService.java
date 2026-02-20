@@ -59,9 +59,21 @@ public class SemanticSearchService {
         this.articleCollection = articleCollection;
     }
 
-    /** Search with default max results (10). */
+    /** Search with default max results (10). Blocks until initialized. */
     public Map<Article, Double> search(String query) {
         return search(query, DEFAULT_MAX_RESULTS);
+    }
+
+    /**
+     * Non-blocking search: returns results if the model is ready, or an empty
+     * map if still loading. Used by {@link HybridSearchService} so TF-IDF
+     * results can be returned immediately while embeddings load in the background.
+     */
+    public Map<Article, Double> searchIfReady(String query, int maxResults) {
+        if (!isReady()) {
+            return Collections.emptyMap();
+        }
+        return search(query, maxResults);
     }
 
     /**
@@ -120,18 +132,25 @@ public class SemanticSearchService {
         if (embeddingModel == null) {
             synchronized (initLock) {
                 if (embeddingModel == null) {
+                    long totalStart = System.currentTimeMillis();
+
+                    System.out.println("[Semantic] Loading ONNX model (all-MiniLM-L6-v2)...");
+                    long modelStart = System.currentTimeMillis();
                     EmbeddingModel model = new AllMiniLmL6V2QuantizedEmbeddingModel();
+                    System.out.printf("[Semantic] Model loaded in %.1fs%n",
+                            (System.currentTimeMillis() - modelStart) / 1000.0);
+
                     InMemoryEmbeddingStore<TextSegment> store = new InMemoryEmbeddingStore<>();
 
                     // Try loading from cache first
                     boolean loaded = loadFromDisk(store);
 
                     if (!loaded) {
-                        System.out.println("Generating new embeddings...");
                         embedArticlesAndSave(model, store);
-                    } else {
-                        System.out.println("Loaded embeddings from cache.");
                     }
+
+                    System.out.printf("[Semantic] Ready in %.1fs%n",
+                            (System.currentTimeMillis() - totalStart) / 1000.0);
 
                     // Set static fields last so other threads see fully initialized state
                     embeddingStore = store;
@@ -142,30 +161,82 @@ public class SemanticSearchService {
     }
 
     /**
-     * Chunks articles, generates embeddings, adds them to the store, and saves to
-     * disk.
+     * Chunks articles, generates embeddings in batches, adds them to the store,
+     * and saves to disk. Uses {@code embedAll()} to batch all sections of each
+     * article into a single ONNX call for faster inference.
      */
     private void embedArticlesAndSave(EmbeddingModel model, InMemoryEmbeddingStore<TextSegment> store) {
         List<Article> articles = articleCollection.getArticles();
-        List<TextSegment> segments = new ArrayList<>();
-        List<Embedding> embeddings = new ArrayList<>();
+        int totalSections = articles.stream().mapToInt(a -> a.getSections().size()).sum();
+
+        System.out.printf("[Semantic] Generating embeddings for %d articles (%d sections)...%n",
+                articles.size(), totalSections);
+
+        List<TextSegment> allSegments = new ArrayList<>();
+        List<Embedding> allEmbeddings = new ArrayList<>();
+
+        long genStart = System.currentTimeMillis();
+        int sectionsProcessed = 0;
 
         for (int i = 0; i < articles.size(); i++) {
             Article article = articles.get(i);
 
+            // Build all segments for this article
+            List<TextSegment> articleSegments = new ArrayList<>();
             for (Article.Section section : article.getSections()) {
                 String chunkText = article.getTitle() + " - " + section.heading() + "\n" + section.content();
                 Metadata metadata = new Metadata().put(ARTICLE_INDEX_KEY, i);
-                TextSegment segment = TextSegment.from(chunkText, metadata);
-                Embedding embedding = model.embed(segment).content();
-
-                segments.add(segment);
-                embeddings.add(embedding);
+                articleSegments.add(TextSegment.from(chunkText, metadata));
             }
+
+            // Batch-embed all sections of this article in one ONNX call
+            List<Embedding> articleEmbeddings = model.embedAll(articleSegments).content();
+
+            allSegments.addAll(articleSegments);
+            allEmbeddings.addAll(articleEmbeddings);
+            sectionsProcessed += articleSegments.size();
+
+            printProgress(sectionsProcessed, totalSections, genStart);
         }
 
-        store.addAll(embeddings, segments);
-        saveToDisk(embeddings, segments);
+        long genElapsed = System.currentTimeMillis() - genStart;
+        System.out.printf("\r[Semantic] Embedded %d sections in %.1fs (%.0f sections/sec)%n",
+                totalSections, genElapsed / 1000.0,
+                totalSections / (genElapsed / 1000.0));
+
+        store.addAll(allEmbeddings, allSegments);
+
+        long saveStart = System.currentTimeMillis();
+        saveToDisk(allEmbeddings, allSegments);
+        System.out.printf("[Semantic] Cache saved in %.1fs%n",
+                (System.currentTimeMillis() - saveStart) / 1000.0);
+    }
+
+    /** Prints a progress bar with ETA (overwrites current line via \\r). */
+    private static void printProgress(int done, int total, long startMs) {
+        double fraction = (double) done / total;
+        int percent = (int) (fraction * 100);
+        long elapsed = System.currentTimeMillis() - startMs;
+        String eta;
+        if (done > 0) {
+            long remaining = (long) (elapsed / fraction) - elapsed;
+            eta = String.format("%ds left", Math.max(0, remaining / 1000));
+        } else {
+            eta = "calculating...";
+        }
+
+        int barWidth = 30;
+        int filled = (int) (barWidth * fraction);
+        StringBuilder bar = new StringBuilder();
+        bar.append("\u2588".repeat(filled));
+        bar.append("\u2591".repeat(barWidth - filled));
+
+        System.out.printf("\r[Semantic] %s %3d%% (%d/%d) %s",
+                bar, percent, done, total, eta);
+
+        if (done == total) {
+            System.out.println();
+        }
     }
 
     /** Saves embeddings and segments to a compressed binary file. */
@@ -205,24 +276,39 @@ public class SemanticSearchService {
     private boolean loadFromDisk(InMemoryEmbeddingStore<TextSegment> store) {
         Path cachePath = Paths.get(CACHE_FILE_NAME);
         if (!Files.exists(cachePath)) {
+            System.out.println("[Semantic] No cache file found — first run");
             return false;
         }
+
+        long fileSize;
+        try {
+            fileSize = Files.size(cachePath);
+        } catch (IOException e) {
+            fileSize = -1;
+        }
+        System.out.printf("[Semantic] Found cache (%s), validating...%n", formatBytes(fileSize));
 
         List<Embedding> embeddings = new ArrayList<>();
         List<TextSegment> segments = new ArrayList<>();
 
         try (DataInputStream dis = new DataInputStream(new GZIPInputStream(Files.newInputStream(cachePath)))) {
             int version = dis.readInt();
-            if (version != CACHE_VERSION)
+            if (version != CACHE_VERSION) {
+                System.out.printf("[Semantic] Cache version mismatch (found v%d, expected v%d) — regenerating%n",
+                        version, CACHE_VERSION);
                 return false;
+            }
 
             String cachedHash = dis.readUTF();
             String currentHash = computeContentHash();
             if (!cachedHash.equals(currentHash)) {
-                System.out.println("Article content changed. Invalidating cache.");
+                System.out.println("[Semantic] Article content hash mismatch — regenerating");
+                System.out.println("[Semantic]   cached:  " + cachedHash.substring(0, 16) + "...");
+                System.out.println("[Semantic]   current: " + currentHash.substring(0, 16) + "...");
                 return false;
             }
 
+            long loadStart = System.currentTimeMillis();
             int count = dis.readInt();
             for (int i = 0; i < count; i++) {
                 // Read Embedding
@@ -241,11 +327,21 @@ public class SemanticSearchService {
             }
 
             store.addAll(embeddings, segments);
+            System.out.printf("[Semantic] Loaded %d embeddings from cache in %.1fs%n",
+                    count, (System.currentTimeMillis() - loadStart) / 1000.0);
             return true;
         } catch (IOException | RuntimeException e) {
-            System.err.println("Failed to load embeddings cache: " + e.getMessage());
+            System.err.println("[Semantic] Cache read failed: " + e.getMessage() + " — regenerating");
             return false;
         }
+    }
+
+    /** Formats a byte count as a human-readable string. */
+    private static String formatBytes(long bytes) {
+        if (bytes < 0) return "unknown size";
+        if (bytes < 1024) return bytes + " B";
+        if (bytes < 1024 * 1024) return String.format("%.1f KB", bytes / 1024.0);
+        return String.format("%.1f MB", bytes / (1024.0 * 1024.0));
     }
 
     /**
@@ -274,8 +370,8 @@ public class SemanticSearchService {
         }
     }
 
-    /** Visible for testing: checks if the service has been initialized. */
-    boolean isInitialized() {
+    /** Checks if the ONNX model and embedding store are ready for queries. */
+    public boolean isReady() {
         return embeddingModel != null;
     }
 

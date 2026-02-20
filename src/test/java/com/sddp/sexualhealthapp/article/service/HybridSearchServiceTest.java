@@ -3,6 +3,7 @@ package com.sddp.sexualhealthapp.article.service;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Tests normalization utilities directly and hybrid behavior with real
  * services.
  */
+@Tag("Slow")
 public class HybridSearchServiceTest {
 
     private static HybridSearchService hybridService;
