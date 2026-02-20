@@ -131,8 +131,10 @@ public class MainAppController {
         settingsTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 
         navGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
-            if (newToggle == null)
+            if (newToggle == null) {
+                navGroup.selectToggle(oldToggle);
                 return;
+            }
 
             if (newToggle == articlesTab)
                 switchToTab("ARTICLES");
