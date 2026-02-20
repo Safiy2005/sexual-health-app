@@ -5,8 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<!-- Combined onboarding + setup carousel. Pages 0-3 are the tutorial,
-     page 4 is the calculator setup. All slide within one StackPane. -->
+<!-- Combined onboarding + setup carousel. Pages 0-2 are the tutorial,
+     page 3 is the calculator setup. All slide within one StackPane. -->
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="com.sddp.sexualhealthapp.calculator.controller.SetupController"
@@ -14,134 +14,97 @@
            prefWidth="360" prefHeight="640">
 
     <!-- Onboarding Page 1: Protect your Privacy -->
-    <VBox fx:id="onboardingPage1" styleClass="onboarding-page" alignment="CENTER" spacing="16">
-        <VBox.margin>
-            <Insets top="120"/>
-        </VBox.margin>
+    <VBox fx:id="onboardingPage1" styleClass="onboarding-page" alignment="TOP_CENTER" spacing="12">
+        <padding>
+            <Insets top="48" left="24" right="24" bottom="24"/>
+        </padding>
 
-        <Label text="Protect your Privacy" styleClass="onboarding-title"/>
-        <Label text="This feature allows the app to be initially disguised as a calculator. Anyone snooping on your device doesn't need to know what's inside."
+        <Label text="Protect your Privacy" styleClass="onboarding-title" textAlignment="CENTER"/>
+        <Label text="Your app hides behind a working calculator."
                styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
 
-        <VBox spacing="0">
+        <!-- Looping MP4 video / placeholder: shows calculator disguise concept -->
+        <StackPane fx:id="videoContainer1" styleClass="onboarding-video-container" VBox.vgrow="ALWAYS">
             <VBox.margin>
-                <Insets top="40"/>
+                <Insets top="12"/>
             </VBox.margin>
-            <HBox alignment="CENTER" spacing="8">
-                <Circle radius="4" styleClass="onboarding-dot-active"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-            </HBox>
-            <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
-                <VBox.margin>
-                    <Insets top="16"/>
-                </VBox.margin>
-            </Button>
-        </VBox>
+            <!-- MediaView added programmatically by controller -->
+            <VBox fx:id="videoPlaceholder1" styleClass="onboarding-video-placeholder" alignment="CENTER" spacing="4">
+                <Label text="&#x1F4F1;" styleClass="onboarding-placeholder-icon"/>
+                <Label text="calculator-disguise.mp4" styleClass="onboarding-placeholder-label"/>
+            </VBox>
+        </StackPane>
+
+        <HBox alignment="CENTER" spacing="8">
+            <Circle radius="4" styleClass="onboarding-dot-active"/>
+            <Circle radius="4" styleClass="onboarding-dot"/>
+            <Circle radius="4" styleClass="onboarding-dot"/>
+        </HBox>
+        <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
+        </Button>
     </VBox>
 
-    <!-- Onboarding Page 2: How It Works -->
-    <VBox fx:id="onboardingPage2" styleClass="onboarding-page" alignment="CENTER" spacing="16">
-        <VBox.margin>
-            <Insets top="100"/>
-        </VBox.margin>
+    <!-- Onboarding Page 2: Secret Equation -->
+    <VBox fx:id="onboardingPage2" styleClass="onboarding-page" alignment="TOP_CENTER" spacing="12">
+        <padding>
+            <Insets top="48" left="24" right="24" bottom="24"/>
+        </padding>
 
-        <Label text="How It Works" styleClass="onboarding-title"/>
-        <Label text="Choose an equation as your personal 'password' of sorts. Only when you enter that exact equation will the main app open."
+        <Label text="Secret Equation" styleClass="onboarding-title" textAlignment="CENTER"/>
+        <Label text="Create your own secret equation, which you can use to unlock the app."
                styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
 
-        <VBox styleClass="onboarding-example-box" alignment="CENTER" spacing="4">
+        <!-- Looping MP4 video / placeholder: shows equation entry flow -->
+        <StackPane fx:id="videoContainer2" styleClass="onboarding-video-container" VBox.vgrow="ALWAYS">
             <VBox.margin>
-                <Insets top="8"/>
+                <Insets top="12"/>
             </VBox.margin>
-            <Label text="7 + 6 = 13" styleClass="onboarding-example-equation"/>
-            <Label text="Equation that you remember to open the app" styleClass="onboarding-example-caption"/>
-        </VBox>
+            <VBox fx:id="videoPlaceholder2" styleClass="onboarding-video-placeholder" alignment="CENTER" spacing="4">
+                <Label text="&#x1F513;" styleClass="onboarding-placeholder-icon"/>
+                <Label text="equation-unlock.mp4" styleClass="onboarding-placeholder-label"/>
+            </VBox>
+        </StackPane>
 
-        <VBox spacing="0">
-            <VBox.margin>
-                <Insets top="24"/>
-            </VBox.margin>
-            <HBox alignment="CENTER" spacing="8">
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot-active"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-            </HBox>
-            <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
-                <VBox.margin>
-                    <Insets top="16"/>
-                </VBox.margin>
-            </Button>
-        </VBox>
+        <HBox alignment="CENTER" spacing="8">
+            <Circle radius="4" styleClass="onboarding-dot"/>
+            <Circle radius="4" styleClass="onboarding-dot-active"/>
+            <Circle radius="4" styleClass="onboarding-dot"/>
+        </HBox>
+        <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
+        </Button>
     </VBox>
 
-    <!-- Onboarding Page 3: Resetting Your Key -->
-    <VBox fx:id="onboardingPage3" styleClass="onboarding-page" alignment="CENTER" spacing="16">
-        <VBox.margin>
-            <Insets top="100"/>
-        </VBox.margin>
+    <!-- Onboarding Page 3: Forgot Your Equation -->
+    <VBox fx:id="onboardingPage3" styleClass="onboarding-page" alignment="TOP_CENTER" spacing="12">
+        <padding>
+            <Insets top="48" left="24" right="24" bottom="24"/>
+        </padding>
 
-        <Label text="Resetting Your Key" styleClass="onboarding-title"/>
-        <Label text="If you ever forget your equation, there is a way to reset it from the calculator. This reset code was chosen because no one would ever type it by accident."
+        <Label text="Forgot Your Equation?" styleClass="onboarding-title" textAlignment="CENTER"/>
+        <Label text="Use 999 &#xF7; 0 to reset your equation if you forget it."
                styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
 
-        <VBox styleClass="onboarding-example-box" alignment="CENTER" spacing="4">
+        <!-- Looping MP4 video / placeholder: shows reset code entry -->
+        <StackPane fx:id="videoContainer3" styleClass="onboarding-video-container" VBox.vgrow="ALWAYS">
             <VBox.margin>
-                <Insets top="8"/>
+                <Insets top="12"/>
             </VBox.margin>
-            <Label text="999 &#xF7; 0" styleClass="onboarding-example-equation"/>
-            <Label text="Enter this into the calculator to reset your equation" styleClass="onboarding-example-caption"/>
-        </VBox>
+            <VBox fx:id="videoPlaceholder3" styleClass="onboarding-video-placeholder" alignment="CENTER" spacing="4">
+                <Label text="&#x1F504;" styleClass="onboarding-placeholder-icon"/>
+                <Label text="reset-code.mp4" styleClass="onboarding-placeholder-label"/>
+            </VBox>
+        </StackPane>
 
-        <VBox spacing="0">
-            <VBox.margin>
-                <Insets top="24"/>
-            </VBox.margin>
-            <HBox alignment="CENTER" spacing="8">
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot-active"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-            </HBox>
-            <Button text="Next" styleClass="onboarding-button" onAction="#handleOnboardingNext" alignment="CENTER">
-                <VBox.margin>
-                    <Insets top="16"/>
-                </VBox.margin>
-            </Button>
-        </VBox>
+        <HBox alignment="CENTER" spacing="8">
+            <Circle radius="4" styleClass="onboarding-dot"/>
+            <Circle radius="4" styleClass="onboarding-dot"/>
+            <Circle radius="4" styleClass="onboarding-dot-active"/>
+        </HBox>
+        <Button text="Continue" styleClass="onboarding-button, onboarding-button-primary" onAction="#handleOnboardingContinue" alignment="CENTER">
+        </Button>
     </VBox>
 
-    <!-- Onboarding Page 4: Let's Get Started -->
-    <VBox fx:id="onboardingPage4" styleClass="onboarding-page" alignment="CENTER" spacing="16">
-        <VBox.margin>
-            <Insets top="120"/>
-        </VBox.margin>
-
-        <Label text="Let's Get Started" styleClass="onboarding-title"/>
-        <Label text="Take a moment to pick an equation you'll remember. We'll walk you through setting it up."
-               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
-
-        <VBox spacing="0">
-            <VBox.margin>
-                <Insets top="40"/>
-            </VBox.margin>
-            <HBox alignment="CENTER" spacing="8">
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot"/>
-                <Circle radius="4" styleClass="onboarding-dot-active"/>
-            </HBox>
-            <Button text="Continue" styleClass="onboarding-button, onboarding-button-primary" onAction="#handleOnboardingContinue" alignment="CENTER">
-                <VBox.margin>
-                    <Insets top="16"/>
-                </VBox.margin>
-            </Button>
-        </VBox>
-    </VBox>
-
-    <!-- Page 5: Calculator Setup -->
+    <!-- Page 4: Calculator Setup -->
     <VBox fx:id="setupPage" styleClass="setup-root">
 
         <!-- Instruction Header (fixed at top) -->

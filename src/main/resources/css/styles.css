@@ -762,7 +762,6 @@
     -fx-min-height: 640px;
     -fx-max-width: 360px;
     -fx-max-height: 640px;
-    -fx-padding: 0 24px;
 }
 
 /* Page title */
@@ -849,6 +848,37 @@
 .onboarding-button-primary:pressed {
     -fx-background-color: #5A9D97;
     -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.2), 4, 0, 0, 2);
+}
+
+/* Container for onboarding video — fills available vertical space */
+.onboarding-video-container {
+    -fx-max-width: 312px;
+    -fx-alignment: center;
+}
+
+/* Placeholder shown when video asset is not yet provided */
+.onboarding-video-placeholder {
+    -fx-background-color: #2C2C2E;
+    -fx-background-radius: 16px;
+    -fx-alignment: center;
+    -fx-border-color: #3A3A3C;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-border-radius: 16px;
+    -fx-pref-height: 380px;
+    -fx-max-width: 312px;
+}
+
+/* Large emoji icon in placeholder */
+.onboarding-placeholder-icon {
+    -fx-font-size: 40px;
+}
+
+/* Filename label in placeholder */
+.onboarding-placeholder-label {
+    -fx-text-fill: #636366;
+    -fx-font-size: 11px;
+    -fx-font-family: "SF Mono", "Menlo", "Courier New", monospace;
 }
 
 .bottom-nav {

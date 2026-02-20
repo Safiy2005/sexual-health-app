@@ -122,7 +122,15 @@ public class Calculator {
     }
 
     public void backspace() {
-        if (!isNewNumber && currentDisplay.length() > 0) {
+        if (isNewNumber && currentOperation != Operation.NONE) {
+            // Operator is the rightmost thing — remove it and resume editing left operand
+            currentDisplay = leftOperand;
+            currentOperation = Operation.NONE;
+            previousValue = 0.0;
+            leftOperand = "";
+            operator = "";
+            isNewNumber = false;
+        } else if (!isNewNumber && currentDisplay.length() > 0) {
             if (currentDisplay.length() == 1 ||
                 (currentDisplay.length() == 2 && currentDisplay.startsWith("-"))) {
                 currentDisplay = AppConstants.CALC_INITIAL_DISPLAY;

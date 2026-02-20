@@ -219,6 +219,51 @@ class CalculatorTest {
     }
 
     @Test
+    void testBackspace_RemovesOperator() {
+        calculator.appendDigit("5");
+        calculator.setOperation(Calculator.Operation.ADD);
+
+        // Display should be "5+" right now
+        assertEquals("5+", calculator.getFullDisplay());
+
+        calculator.backspace();
+
+        // Should remove the operator and go back to editing "5"
+        assertEquals("5", calculator.getCurrentDisplay());
+        assertEquals("5", calculator.getFullDisplay());
+        assertEquals(Calculator.Operation.NONE, calculator.getCurrentOperation());
+        assertFalse(calculator.isNewNumber());
+    }
+
+    @Test
+    void testBackspace_RemovesOperator_ThenContinuesEditing() {
+        calculator.appendDigit("4");
+        calculator.appendDigit("2");
+        calculator.setOperation(Calculator.Operation.MULTIPLY);
+
+        calculator.backspace(); // Remove operator
+
+        assertEquals("42", calculator.getCurrentDisplay());
+        assertEquals(Calculator.Operation.NONE, calculator.getCurrentOperation());
+
+        // Should be able to continue editing the number
+        calculator.appendDigit("0");
+        assertEquals("420", calculator.getCurrentDisplay());
+    }
+
+    @Test
+    void testBackspace_RemovesOperator_ThenDigitsNormally() {
+        calculator.appendDigit("7");
+        calculator.setOperation(Calculator.Operation.SUBTRACT);
+
+        calculator.backspace(); // Remove operator
+        calculator.backspace(); // Remove the "7", back to "0"
+
+        assertEquals(AppConstants.CALC_INITIAL_DISPLAY, calculator.getCurrentDisplay());
+        assertTrue(calculator.isNewNumber());
+    }
+
+    @Test
     void testGetCurrentEquation_NoOperation() {
         calculator.appendDigit("5");
 

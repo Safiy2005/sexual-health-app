@@ -12,14 +12,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import javafx.util.Duration;
 
 /**
  * Controller for the combined onboarding tutorial and setup wizard.
  *
- * <p>The setup scene is a single carousel: pages 0–3 are the onboarding
- * tutorial slides, and page 4 is the calculator interface where the user
+ * <p>The setup scene is a single carousel: pages 0–2 are the onboarding
+ * tutorial slides, and page 3 is the calculator interface where the user
  * creates their secret equation. All pages slide within one StackPane,
  * so the transition from tutorial to calculator feels seamless.</p>
  *
@@ -37,9 +41,6 @@ public class SetupController {
 
     @FXML
     private VBox onboardingPage3;
-
-    @FXML
-    private VBox onboardingPage4;
 
     // --- Calculator setup page ---
     @FXML
@@ -84,6 +85,26 @@ public class SetupController {
     @FXML
     private Button retryButton;
 
+    // --- Onboarding video containers and fallback placeholders ---
+    @FXML
+    private StackPane videoContainer1;
+    @FXML
+    private VBox videoPlaceholder1;
+    @FXML
+    private StackPane videoContainer2;
+    @FXML
+    private VBox videoPlaceholder2;
+    @FXML
+    private StackPane videoContainer3;
+    @FXML
+    private VBox videoPlaceholder3;
+
+    /**
+     * Per-page media players, indexed by page number (0-2 for onboarding pages).
+     * A slot is null if that page has no video file available.
+     */
+    private final MediaPlayer[] pageMediaPlayers = new MediaPlayer[3];
+
     // --- Carousel state ---
     private VBox[] pages;
     private int currentPage;
@@ -113,15 +134,81 @@ public class SetupController {
      */
     @FXML
     private void initialize() {
-        pages = new VBox[]{onboardingPage1, onboardingPage2, onboardingPage3, onboardingPage4, setupPage};
+        pages = new VBox[]{onboardingPage1, onboardingPage2, onboardingPage3, setupPage};
         currentPage = 0;
 
         for (int i = 0; i < pages.length; i++) {
             pages[i].setTranslateX(i * AppConstants.APP_WIDTH);
         }
 
+        loadOnboardingVideos();
         updateDisplay();
         showEnteringState();
+    }
+
+    /**
+     * Attempts to load looping MP4 videos for each onboarding page.
+     * If a video file exists at the expected resource path, a {@link MediaView}
+     * is created and inserted into the container, and the placeholder is hidden.
+     * Videos are paused by default; only the current page's video is started.
+     * When the user navigates between pages, {@link #slideTo(int)} handles
+     * stopping the outgoing video and restarting the incoming one from the beginning.
+     */
+    private void loadOnboardingVideos() {
+        String[] videoFiles = {
+            "/images/onboarding/calculator-disguise.mp4",
+            "/images/onboarding/equation-unlock.mp4",
+            "/images/onboarding/reset-code.mp4"
+        };
+        StackPane[] containers = {videoContainer1, videoContainer2, videoContainer3};
+        VBox[] placeholders = {videoPlaceholder1, videoPlaceholder2, videoPlaceholder3};
+
+        for (int i = 0; i < videoFiles.length; i++) {
+            try {
+                var resource = getClass().getResource(videoFiles[i]);
+                if (resource != null) {
+                    Media media = new Media(resource.toExternalForm());
+                    MediaPlayer player = new MediaPlayer(media);
+                    player.setCycleCount(MediaPlayer.INDEFINITE);
+                    player.setMute(true);
+                    player.setAutoPlay(false);
+
+                    MediaView mediaView = new MediaView(player);
+                    mediaView.setFitWidth(312);
+                    mediaView.setFitHeight(420);
+                    mediaView.setPreserveRatio(true);
+
+                    // Insert video behind the placeholder, then hide placeholder
+                    containers[i].getChildren().add(0, mediaView);
+                    placeholders[i].setVisible(false);
+                    placeholders[i].setManaged(false);
+
+                    pageMediaPlayers[i] = player;
+                }
+            } catch (Exception e) {
+                // Video not available yet — placeholder stays visible
+            }
+        }
+
+        // Start only the first page's video
+        if (pageMediaPlayers[0] != null) {
+            pageMediaPlayers[0].seek(Duration.ZERO);
+            pageMediaPlayers[0].play();
+        }
+    }
+
+    /**
+     * Stops and disposes all active media players.
+     * Should be called when the setup scene is torn down.
+     */
+    public void dispose() {
+        for (int i = 0; i < pageMediaPlayers.length; i++) {
+            if (pageMediaPlayers[i] != null) {
+                pageMediaPlayers[i].stop();
+                pageMediaPlayers[i].dispose();
+                pageMediaPlayers[i] = null;
+            }
+        }
     }
 
     // =========================================================
@@ -143,6 +230,11 @@ public class SetupController {
             return;
         }
 
+        // Stop the outgoing page's video (if it has one)
+        if (currentPage < pageMediaPlayers.length && pageMediaPlayers[currentPage] != null) {
+            pageMediaPlayers[currentPage].stop();
+        }
+
         VBox outgoing = pages[currentPage];
         VBox incoming = pages[targetPage];
         Duration duration = Duration.millis(AppConstants.ONBOARDING_SLIDE_DURATION_MS);
@@ -158,6 +250,12 @@ public class SetupController {
 
         slideOut.play();
         slideIn.play();
+
+        // Start the incoming page's video from the beginning (if it has one)
+        if (targetPage < pageMediaPlayers.length && pageMediaPlayers[targetPage] != null) {
+            pageMediaPlayers[targetPage].seek(Duration.ZERO);
+            pageMediaPlayers[targetPage].play();
+        }
 
         currentPage = targetPage;
     }
