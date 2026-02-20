@@ -312,7 +312,7 @@
 
 .main-app-root {
     -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
-    -fx-padding: 40px 20px;
+    -fx-padding: 0;
     -fx-alignment: center;
     -fx-pref-width: 360px;
     -fx-pref-height: 640px;
@@ -879,4 +879,63 @@
     -fx-text-fill: #636366;
     -fx-font-size: 11px;
     -fx-font-family: "SF Mono", "Menlo", "Courier New", monospace;
+}
+
+.bottom-nav {
+   -fx-background-color: #ECE6DF;
+   -fx-border-color: rgba(0,0,0,0.08);
+   -fx-border-width: 1 0 0 0;
+
+   -fx-padding: 0;
+   -fx-spacing: 0;
+   
+   -fx-pref-height: 56;
+   -fx-min-height: 56;
+   -fx-max-height: 56;
+
+   
+
+}
+/* Buttons for nav */
+.nav-item {
+    -fx-background-color: transparent;
+    
+
+    -fx-padding: 0;
+    -fx-alignment: center;
+    
+
+    -fx-pref-height: 56;
+    -fx-min-height: 56;
+    -fx-max-height: 56;
+
+    -fx-background-radius: 0;
+}
+
+
+.nav-item:selected {
+    -fx-background-color:#D4E8E5;
+
+}
+.nav-item:pressed {
+    -fx-background-color: rgba(0,0,0,0.06);
+}
+
+.nav-icon {
+    -fx-fill: transparent;
+    -fx-stroke: rgba(61,90,91,0.55);
+    -fx-stroke-width: 2;
+    
+}
+
+.nav-item:selected .nav-icon {
+    -fx-stroke: #3D5A5B;
+}
+
+.nav-icon-wrap {
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+}
+.main-content {
+    -fx-padding: 40 20 0 20;
 }
