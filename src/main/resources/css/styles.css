@@ -879,26 +879,27 @@
     -fx-min-height: 56;
     -fx-max-height: 56;
 
+    -fx-background-radius: 0;
 }
 
 
 .nav-item:selected {
-    -fx-background-color:rgba(0,0,0,0.06);
-    -fx-background-radius: 12;
-    -fx-background-insets: 10 26 10 26;
+    -fx-background-color:#D4E8E5;
 
+}
+.nav-item:pressed {
+    -fx-background-color: rgba(0,0,0,0.06);
 }
 
 .nav-icon {
-    -fx-stroke: rgba(0,0,0,0.45);
-    -fx-stroke-width: 1.8;
-    -fx-stroke-line-cap: round;
-    -fx-stroke-line-join:round;
     -fx-fill: transparent;
+    -fx-stroke: rgba(61,90,91,0.55);
+    -fx-stroke-width: 2;
+    
 }
 
 .nav-item:selected .nav-icon {
-    -fx-fill: #3F6E73
+    -fx-stroke: #3D5A5B;
 }
 
 .nav-icon-wrap {

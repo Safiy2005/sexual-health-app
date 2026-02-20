@@ -102,7 +102,11 @@ public class MainAppController {
         settingsTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 
         navGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
-            if (newToggle == null) return;
+            // Prevents deselect: if user clicks the same tab, force it back on
+            if (newToggle == null) {
+                navGroup.selectToggle(oldToggle);
+                return;
+            }
             
             if (newToggle == articlesTab) switchToTab("ARTICLES");
             else if (newToggle == calendarTab) switchToTab("CALENDAR");

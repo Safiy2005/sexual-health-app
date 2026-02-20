@@ -150,3 +150,10 @@ coverage/
 *.temp
 *~
 .~lock.*
+
+##########################
+# Temporary files
+##########################
+
+semantic_embeddings.cache
+*.cache
