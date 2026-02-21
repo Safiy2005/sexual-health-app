@@ -14,6 +14,7 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
@@ -124,9 +125,10 @@ public class CalendarController {
         for (int row = 0; row < GRID_ROWS; row++) {
             RowConstraints rc = new RowConstraints();
             rc.setPrefHeight(ROW_HEIGHT);
-            rc.setVgrow(Priority.SOMETIMES);
+            rc.setVgrow(Priority.NEVER);
             calendarGrid.getRowConstraints().add(rc);
         }
+        calendarGrid.setMinHeight(Region.USE_PREF_SIZE);
     }
 
     /**
