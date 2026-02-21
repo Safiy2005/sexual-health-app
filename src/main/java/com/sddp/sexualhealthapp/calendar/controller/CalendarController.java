@@ -157,6 +157,10 @@ public class CalendarController {
 
         LocalDate today = LocalDate.now();
 
+        // Calculate how many rows this month actually needs
+        int totalCells = startDayOfWeek + daysInMonth;
+        int neededRows = (totalCells + GRID_COLUMNS - 1) / GRID_COLUMNS;
+
         int dayNumber = 1;
         for (int row = 0; row < GRID_ROWS; row++) {
             for (int col = 0; col < GRID_COLUMNS; col++) {
@@ -174,6 +178,18 @@ public class CalendarController {
                     calendarGrid.add(dayCell, col, row);
                     dayNumber++;
                 }
+            }
+        }
+
+        // Collapse unused rows so they don't waste vertical space
+        for (int row = 0; row < GRID_ROWS; row++) {
+            RowConstraints rc = calendarGrid.getRowConstraints().get(row);
+            if (row < neededRows) {
+                rc.setPrefHeight(ROW_HEIGHT);
+                rc.setMaxHeight(ROW_HEIGHT);
+            } else {
+                rc.setPrefHeight(0);
+                rc.setMaxHeight(0);
             }
         }
 
