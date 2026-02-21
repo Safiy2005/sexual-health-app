@@ -59,9 +59,13 @@
 
             </StackPane>
 
-            <!-- Tab 2 : Calendar placeholder-->
-            <VBox fx:id="calendarRoot" visible="false" managed="false" alignment="CENTER" spacing="10">
-                <Label text="Calendar (coming soon)"/>
+            <!-- Tab 2 : Calendar -->
+            <VBox fx:id="calendarRoot" visible="false" managed="false">
+                <StackPane VBox.vgrow="ALWAYS">
+                    <fx:include fx:id="calendarView" source="/fxml/calendar-view.fxml"/>
+                    <fx:include fx:id="eventFeedView" source="/fxml/event-feed-view.fxml" visible="false"/>
+                    <fx:include fx:id="createEventView" source="/fxml/create-event-view.fxml" visible="false"/>
+                </StackPane>
             </VBox>
 
             <!-- Tab 3: Settings placeholder-->
