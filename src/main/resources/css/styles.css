@@ -384,25 +384,6 @@
     -fx-text-fill: #3D5A5B;
 }
 
-/* Lock button (small, top-right) */
-.lock-button {
-    -fx-background-color: #D4E8E5;
-    -fx-text-fill: #3D5A5B;
-    -fx-font-size: 12px;
-    -fx-font-weight: 600;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-padding: 6px 14px;
-    -fx-background-radius: 14px;
-    -fx-cursor: hand;
-}
-
-.lock-button:hover {
-    -fx-background-color: #B8D9D4;
-}
-
-.lock-button:pressed {
-    -fx-background-color: #9DCBC5;
-}
 
 /* Search text field */
 .search-field {
@@ -919,6 +900,18 @@
 
 .nav-item:pressed {
     -fx-background-color: rgba(0,0,0,0.06);
+}
+
+/* Lock nav button - action button styled to match nav items but never selected */
+.nav-lock-item {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.nav-lock-item:hover {
+    -fx-background-color: rgba(0,0,0,0.04);
+}
+.nav-lock-item:pressed {
+    -fx-background-color: rgba(0,0,0,0.08);
 }
 
 .nav-icon {
