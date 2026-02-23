@@ -303,33 +303,10 @@ public class CalendarController {
 
     /**
      * Creates a simple event card for the day events list.
-     * Shows the event name, type badge, and time.
+     * Delegates to the shared {@link EventCardFactory}.
      */
     private VBox createEventCard(CalendarEvent event) {
-        VBox card = new VBox(4);
-        card.getStyleClass().add("calendar-event-card");
-
-        Label nameLabel = new Label(event.getName());
-        nameLabel.getStyleClass().add("calendar-event-card-title");
-        nameLabel.setWrapText(true);
-
-        HBox metaRow = new HBox(8);
-        metaRow.setAlignment(Pos.CENTER_LEFT);
-
-        Label typeLabel = new Label(event.getType().getDisplayName());
-        typeLabel.getStyleClass().add("calendar-event-card-type");
-        typeLabel.setStyle("-fx-background-color: " + event.getType().getDotColor() + "22;"
-                + " -fx-text-fill: " + event.getType().getDotColor());
-        metaRow.getChildren().add(typeLabel);
-
-        if (event.getTime() != null) {
-            Label timeLabel = new Label(event.getTime().toString());
-            timeLabel.getStyleClass().add("calendar-event-card-time");
-            metaRow.getChildren().add(timeLabel);
-        }
-
-        card.getChildren().addAll(nameLabel, metaRow);
-        return card;
+        return EventCardFactory.createEventCard(event);
     }
 
     // --- Navigation handlers ---
