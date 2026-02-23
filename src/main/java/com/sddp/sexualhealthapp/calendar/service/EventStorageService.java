@@ -7,6 +7,7 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 
 import java.io.IOException;
@@ -163,20 +164,38 @@ public class EventStorageService {
     }
 
     /**
-     * Returns all events from today onwards, sorted chronologically
-     * (by date then time, nulls-last). Used by the event feed (story 48)
-     * to display upcoming events at a glance.
+     * Expands all events (including recurring) into concrete
+     * {@link EventOccurrence}s within the date window
+     * [{@code from}, {@code until}] (both inclusive), sorted
+     * chronologically by occurrence date then time.
      *
-     * @param from the inclusive start date (typically today)
-     * @return a chronologically sorted, unmodifiable list of upcoming events
+     * <p>
+     * Because recurring events can repeat indefinitely, callers
+     * should request bounded windows and paginate as needed (the event
+     * feed loads successive windows on scroll).
+     * </p>
+     *
+     * @param from  the inclusive start date of the window
+     * @param until the inclusive end date of the window
+     * @return a chronologically sorted list of occurrences in the window
      */
-    public List<CalendarEvent> getUpcomingEvents(LocalDate from) {
-        return events.stream()
-                .filter(e -> !e.getDate().isBefore(from))
-                .sorted(Comparator.comparing(CalendarEvent::getDate)
-                        .thenComparing(CalendarEvent::getTime,
-                                Comparator.nullsLast(Comparator.naturalOrder())))
-                .collect(Collectors.toUnmodifiableList());
+    public List<EventOccurrence> getUpcomingOccurrences(LocalDate from, LocalDate until) {
+        List<EventOccurrence> occurrences = new ArrayList<>();
+
+        for (LocalDate date = from; !date.isAfter(until); date = date.plusDays(1)) {
+            for (CalendarEvent event : events) {
+                if (event.occursOn(date)) {
+                    occurrences.add(new EventOccurrence(event, date));
+                }
+            }
+        }
+
+        occurrences.sort(Comparator
+                .comparing(EventOccurrence::occurrenceDate)
+                .thenComparing(o -> o.event().getTime(),
+                        Comparator.nullsLast(Comparator.naturalOrder())));
+
+        return occurrences;
     }
 
     /**

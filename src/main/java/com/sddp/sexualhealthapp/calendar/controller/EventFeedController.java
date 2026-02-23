@@ -1,6 +1,6 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
-import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,11 +13,23 @@ import java.util.List;
 
 /**
  * Controller for the upcoming events feed view (story 48).
- * Displays all events from today onwards in chronological order,
- * including both appointments and medication reminders, so the user
- * can plan around upcoming events at a glance.
+ * Displays all events — including recurring medication reminders —
+ * from today onwards in chronological order.
+ *
+ * <p>
+ * Because recurring events can produce an infinite number of
+ * occurrences, the feed loads lazily: an initial batch of days is
+ * loaded on open, and additional batches are fetched automatically
+ * as the user scrolls near the bottom.
+ * </p>
  */
 public class EventFeedController {
+
+    /** Number of days to load per batch. */
+    private static final int BATCH_DAYS = 7;
+
+    /** Scroll position threshold (0.0–1.0) that triggers loading the next batch. */
+    private static final double LOAD_MORE_THRESHOLD = 0.85;
 
     @FXML
     private ScrollPane feedScrollPane;
@@ -27,10 +39,25 @@ public class EventFeedController {
     private EventStorageService eventStorageService;
     private Runnable onBackToCalendar;
 
+    /** The start date for the next batch to load. */
+    private LocalDate nextBatchStart;
+
+    /** Guard flag to prevent concurrent batch loads. */
+    private boolean loading = false;
+
     @FXML
     private void initialize() {
         eventStorageService = new EventStorageService();
-        populateFeed();
+        nextBatchStart = LocalDate.now();
+
+        loadNextBatch();
+
+        // Lazy-load more events when the user scrolls near the bottom
+        feedScrollPane.vvalueProperty().addListener((obs, oldVal, newVal) -> {
+            if (!loading && newVal.doubleValue() >= LOAD_MORE_THRESHOLD) {
+                loadNextBatch();
+            }
+        });
     }
 
     /**
@@ -50,33 +77,39 @@ public class EventFeedController {
     }
 
     /**
-     * Populates the feed with upcoming events sorted chronologically.
-     * Each card shows the event name, date, type badge, and time.
+     * Loads the next batch of upcoming event occurrences (covering
+     * {@link #BATCH_DAYS} days) and appends them to the feed.
      */
-    private void populateFeed() {
-        feedContainer.getChildren().clear();
+    private void loadNextBatch() {
+        loading = true;
 
-        List<CalendarEvent> upcoming = eventStorageService.getUpcomingEvents(LocalDate.now());
+        LocalDate batchEnd = nextBatchStart.plusDays(BATCH_DAYS - 1);
+        List<EventOccurrence> batch = eventStorageService.getUpcomingOccurrences(nextBatchStart, batchEnd);
 
-        if (upcoming.isEmpty()) {
+        // Show empty-state only when the very first batch has nothing
+        if (batch.isEmpty() && feedContainer.getChildren().isEmpty()) {
             Label empty = new Label("No upcoming events");
             empty.getStyleClass().add("calendar-no-events-label");
             feedContainer.getChildren().add(empty);
-            return;
         }
 
-        for (CalendarEvent event : upcoming) {
-            VBox card = EventCardFactory.createEventCard(event, true);
+        for (EventOccurrence occurrence : batch) {
+            VBox card = EventCardFactory.createEventCard(occurrence);
             feedContainer.getChildren().add(card);
         }
+
+        nextBatchStart = batchEnd.plusDays(1);
+        loading = false;
     }
 
     /**
-     * Refreshes the event feed. Called externally when events are
-     * added or modified by other views.
+     * Refreshes the event feed from scratch. Called externally when
+     * events are added or modified by other views.
      */
     public void refresh() {
         eventStorageService = new EventStorageService();
-        populateFeed();
+        feedContainer.getChildren().clear();
+        nextBatchStart = LocalDate.now();
+        loadNextBatch();
     }
 }

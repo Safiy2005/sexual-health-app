@@ -1,11 +1,13 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
 import java.util.Locale;
@@ -42,6 +44,29 @@ public final class EventCardFactory {
      * @return a styled VBox card node
      */
     public static VBox createEventCard(CalendarEvent event, boolean showDate) {
+        return createEventCard(event, showDate ? event.getDate() : null);
+    }
+
+    /**
+     * Creates an event card for a concrete {@link EventOccurrence},
+     * displaying the occurrence date (which may differ from the event's
+     * stored start date for recurring events).
+     *
+     * @param occurrence the event occurrence to render
+     * @return a styled VBox card node
+     */
+    public static VBox createEventCard(EventOccurrence occurrence) {
+        return createEventCard(occurrence.event(), occurrence.occurrenceDate());
+    }
+
+    /**
+     * Creates an event card with an explicit display date.
+     *
+     * @param event       the calendar event to render
+     * @param displayDate the date to show on the card (null to hide the date line)
+     * @return a styled VBox card node
+     */
+    public static VBox createEventCard(CalendarEvent event, LocalDate displayDate) {
         VBox card = new VBox(4);
         card.getStyleClass().add("calendar-event-card");
 
@@ -52,11 +77,11 @@ public final class EventCardFactory {
         card.getChildren().add(nameLabel);
 
         // Optional date line (used in the event feed)
-        if (showDate && event.getDate() != null) {
-            String dateText = event.getDate().getDayOfMonth() + " "
-                    + event.getDate().getMonth()
+        if (displayDate != null) {
+            String dateText = displayDate.getDayOfMonth() + " "
+                    + displayDate.getMonth()
                             .getDisplayName(TextStyle.FULL, Locale.getDefault())
-                    + " " + event.getDate().getYear();
+                    + " " + displayDate.getYear();
             Label dateLabel = new Label(dateText);
             dateLabel.getStyleClass().add("calendar-event-card-date");
             card.getChildren().add(dateLabel);
