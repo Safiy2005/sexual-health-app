@@ -140,4 +140,15 @@ public final class AppConstants {
 
     // ARTICLE CONSTANTS
     public static final String ARTICLE_MARKDOWN_PATH = "article-mds";
+
+    // Calendar FXML path
+    /**
+     * Path to the calendar view FXML layout file.
+     */
+    public static final String CALENDAR_FXML = "/fxml/calendar-view.fxml";
+
+    /**
+     * Scene identifier for the calendar view.
+     */
+    public static final String SCENE_CALENDAR = "CALENDAR";
 }

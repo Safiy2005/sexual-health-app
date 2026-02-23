@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.calendar.controller.CalendarController"
+      styleClass="calendar-root" spacing="0"
+      prefWidth="360" prefHeight="640">
+
+    <!-- Month navigation header -->
+    <HBox styleClass="calendar-header" alignment="CENTER" spacing="8">
+        <padding>
+            <Insets top="16" right="16" bottom="4" left="16"/>
+        </padding>
+        <Button fx:id="prevMonthButton" text="&#x276E;" styleClass="calendar-nav-button"
+                onAction="#handlePreviousMonth"/>
+        <!-- Clickable month/year label — opens month/year picker -->
+        <Label fx:id="monthYearLabel" styleClass="calendar-month-label"
+               HBox.hgrow="ALWAYS" maxWidth="Infinity" alignment="CENTER"/>
+        <Button fx:id="nextMonthButton" text="&#x276F;" styleClass="calendar-nav-button"
+                onAction="#handleNextMonth"/>
+        <Button fx:id="todayButton" text="Today" styleClass="calendar-today-button"
+                onAction="#handleGoToToday"/>
+    </HBox>
+
+    <!-- Month/year picker row (hidden by default, shown when month label is clicked) -->
+    <HBox fx:id="monthYearPicker" styleClass="calendar-picker-row" alignment="CENTER"
+          spacing="8" visible="false" managed="false">
+        <padding>
+            <Insets top="4" right="16" bottom="8" left="16"/>
+        </padding>
+        <ComboBox fx:id="monthComboBox" styleClass="calendar-picker-combo"
+                  onAction="#handleMonthYearChanged"/>
+        <ComboBox fx:id="yearComboBox" styleClass="calendar-picker-combo"
+                  onAction="#handleMonthYearChanged"/>
+    </HBox>
+
+    <!-- Day-of-week headers -->
+    <GridPane fx:id="dayOfWeekHeader" styleClass="calendar-dow-header">
+        <padding>
+            <Insets top="0" right="8" bottom="4" left="8"/>
+        </padding>
+    </GridPane>
+
+    <!-- Calendar day grid (7 columns x 6 rows, populated programmatically) -->
+    <GridPane fx:id="calendarGrid" styleClass="calendar-grid">
+        <padding>
+            <Insets top="0" right="8" bottom="8" left="8"/>
+        </padding>
+    </GridPane>
+
+    <!-- Action buttons: navigate to event feed (story 48) or create event (story 22) -->
+    <HBox styleClass="calendar-action-bar" alignment="CENTER" spacing="10">
+        <padding><Insets top="6" right="16" bottom="6" left="16"/></padding>
+        <Button fx:id="eventFeedButton" text="Event Feed"
+                styleClass="calendar-action-button"
+                onAction="#handleGoToEventFeed"
+                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button fx:id="newEventButton" text="+ New Event"
+                styleClass="calendar-action-button-primary"
+                onAction="#handleGoToNewEvent"
+                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+    </HBox>
+
+    <!-- Selected day's events list -->
+    <ScrollPane fx:id="dayEventsScrollPane" fitToWidth="true"
+                VBox.vgrow="ALWAYS" styleClass="search-scroll-pane"
+                hbarPolicy="NEVER">
+        <VBox fx:id="dayEventsContainer" spacing="6"
+              styleClass="calendar-day-events-container">
+            <padding>
+                <Insets top="8" right="16" bottom="16" left="16"/>
+            </padding>
+        </VBox>
+    </ScrollPane>
+
+</VBox>

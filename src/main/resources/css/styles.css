@@ -252,7 +252,7 @@
     -fx-background-color: rgba(30, 30, 30, 0.98);
     -fx-background-radius: 16px 16px 0 0;
     -fx-padding: 24px 20px 32px 20px;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 20, 0, 0, -5);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, -5);
 }
 
 .equation-preview {
@@ -429,19 +429,19 @@
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .viewport {
+.search-scroll-pane>.viewport {
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .scroll-bar:vertical {
+.search-scroll-pane>.scroll-bar:vertical {
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .scroll-bar:vertical .track {
+.search-scroll-pane>.scroll-bar:vertical .track {
     -fx-background-color: transparent;
 }
 
-.search-scroll-pane > .scroll-bar:vertical .thumb {
+.search-scroll-pane>.scroll-bar:vertical .thumb {
     -fx-background-color: #C8BFB6;
     -fx-background-radius: 4px;
 }
@@ -661,7 +661,8 @@
 /* Container that holds all swipable pages */
 .article-page-container {
     -fx-background-color: transparent;
-    -fx-clip-content: true;      /* clip children so off-screen pages are hidden */
+    -fx-clip-content: true;
+    /* clip children so off-screen pages are hidden */
 }
 
 /* Wrapper around each page (fills the StackPane) */
@@ -786,7 +787,7 @@
     -fx-background-color: #2C2C2E;
     -fx-background-radius: 12px;
     -fx-padding: 16px 24px;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 4);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 0, 4);
 }
 
 /* Teal equation text inside the example box */
@@ -881,6 +882,10 @@
     -fx-font-family: "SF Mono", "Menlo", "Courier New", monospace;
 }
 
+/* ============================================
+   BOTTOM NAVIGATION BAR
+   ============================================ */
+
 .bottom-nav {
    -fx-background-color: #ECE6DF;
    -fx-border-color: rgba(0,0,0,0.08);
@@ -888,22 +893,18 @@
 
    -fx-padding: 0;
    -fx-spacing: 0;
-   
+
    -fx-pref-height: 56;
    -fx-min-height: 56;
    -fx-max-height: 56;
-
-   
-
 }
+
 /* Buttons for nav */
 .nav-item {
     -fx-background-color: transparent;
-    
 
     -fx-padding: 0;
     -fx-alignment: center;
-    
 
     -fx-pref-height: 56;
     -fx-min-height: 56;
@@ -912,11 +913,10 @@
     -fx-background-radius: 0;
 }
 
-
 .nav-item:selected {
-    -fx-background-color:#D4E8E5;
-
+    -fx-background-color: #D4E8E5;
 }
+
 .nav-item:pressed {
     -fx-background-color: rgba(0,0,0,0.06);
 }
@@ -925,7 +925,6 @@
     -fx-fill: transparent;
     -fx-stroke: rgba(61,90,91,0.55);
     -fx-stroke-width: 2;
-    
 }
 
 .nav-item:selected .nav-icon {
@@ -936,6 +935,267 @@
     -fx-scale-x: 1.15;
     -fx-scale-y: 1.15;
 }
+
 .main-content {
     -fx-padding: 40 20 0 20;
+}
+
+/* ============================================
+   CALENDAR VIEW STYLES (Story 47)
+   ============================================ */
+
+/* Calendar root container */
+.calendar-root {
+    -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
+}
+
+/* Month navigation header */
+.calendar-header {
+    -fx-background-color: transparent;
+}
+
+.calendar-month-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-underline: false;
+}
+
+.calendar-month-label:hover {
+    -fx-text-fill: #7DBBB5;
+}
+
+.calendar-nav-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+}
+
+.calendar-nav-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.calendar-nav-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+/* "Today" quick-jump button */
+.calendar-today-button {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+
+.calendar-today-button:hover {
+    -fx-background-color: #6AADA6;
+}
+
+.calendar-today-button:pressed {
+    -fx-background-color: #5A9D97;
+}
+
+/* Month/year picker row */
+.calendar-picker-row {
+    -fx-background-color: #EDE5DD;
+    -fx-background-radius: 10px;
+    -fx-padding: 6px 12px;
+}
+
+/* ComboBox styling for month/year picker */
+.calendar-picker-combo {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-pref-height: 30px;
+    -fx-cursor: hand;
+}
+
+.calendar-picker-combo .list-cell {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Day-of-week header row */
+.calendar-dow-header {
+    -fx-background-color: transparent;
+}
+
+.calendar-dow-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-alignment: center;
+}
+
+/* Calendar grid */
+.calendar-grid {
+    -fx-background-color: transparent;
+    -fx-hgap: 2;
+    -fx-vgap: 2;
+}
+
+/* Individual day cell */
+.calendar-day-cell {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-padding: 4px 2px 2px 2px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+.calendar-day-cell:hover {
+    -fx-background-color: #EDE5DD;
+}
+
+/* Selected day cell */
+.calendar-day-selected {
+    -fx-background-color: #D4E8E5;
+    -fx-background-radius: 8px;
+}
+
+/* Empty day cell (outside current month) */
+.calendar-day-empty {
+    -fx-background-color: transparent;
+}
+
+/* Day number */
+.calendar-day-number {
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+    -fx-alignment: center;
+}
+
+/* Today's day number — teal pill highlight */
+.calendar-day-today {
+    -fx-text-fill: white;
+    -fx-background-color: #7DBBB5;
+    -fx-background-radius: 12px;
+    -fx-padding: 2px 6px;
+    -fx-min-width: 24px;
+    -fx-alignment: center;
+}
+
+/* Event indicator dot on days with events (Story 47.3) */
+.calendar-event-indicator {
+    -fx-fill: #7DBBB5;
+}
+
+/* Selected date header in day events section */
+.calendar-selected-date-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+    -fx-padding: 4px 0 4px 0;
+}
+
+/* No events label */
+.calendar-no-events-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-padding: 12px 0 0 0;
+}
+
+/* Day events container */
+.calendar-day-events-container {
+    -fx-background-color: transparent;
+}
+
+/* Event card in day events list */
+.calendar-event-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 14px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.calendar-event-card:hover {
+    -fx-background-color: #F7F3EF;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.14), 8, 0, 0, 3);
+}
+
+.calendar-event-card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.calendar-event-card-type {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+    -fx-font-size: 10px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 1px 8px;
+    -fx-background-radius: 8px;
+}
+
+.calendar-event-card-time {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+}
+
+/* Action bar between calendar grid and day events */
+.calendar-action-bar {
+    -fx-background-color: transparent;
+}
+
+/* Secondary action button (Event Feed) — matches nav button palette */
+.calendar-action-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+}
+
+.calendar-action-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.calendar-action-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+/* Primary action button (+ New Event) — matches Today button palette */
+.calendar-action-button-primary {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+}
+
+.calendar-action-button-primary:hover {
+    -fx-background-color: #6AADA6;
+}
+
+.calendar-action-button-primary:pressed {
+    -fx-background-color: #5A9D97;
 }
