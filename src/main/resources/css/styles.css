@@ -1155,6 +1155,13 @@
     -fx-text-fill: #9AABAB;
 }
 
+.calendar-event-card-date {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7A9191;
+    -fx-padding: 0 0 2px 0;
+}
+
 /* Action bar between calendar grid and day events */
 .calendar-action-bar {
     -fx-background-color: transparent;

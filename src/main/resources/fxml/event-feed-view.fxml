@@ -21,14 +21,16 @@
                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
     </HBox>
 
-    <!-- Placeholder content — TODO (Taran): stories 48.1-48.3 -->
-    <VBox alignment="CENTER" spacing="12" VBox.vgrow="ALWAYS">
-        <padding>
-            <Insets top="40" right="24" bottom="40" left="24"/>
-        </padding>
-        <Label text="Event Feed" styleClass="calendar-selected-date-header"/>
-        <Label text="This view will show upcoming and past events."
-               styleClass="calendar-no-events-label" wrapText="true" alignment="CENTER"/>
-    </VBox>
+    <!-- Upcoming events list (scrollable) -->
+    <ScrollPane fx:id="feedScrollPane" fitToWidth="true"
+                VBox.vgrow="ALWAYS" styleClass="search-scroll-pane"
+                hbarPolicy="NEVER">
+        <VBox fx:id="feedContainer" spacing="8"
+              styleClass="calendar-day-events-container">
+            <padding>
+                <Insets top="8" right="16" bottom="16" left="16"/>
+            </padding>
+        </VBox>
+    </ScrollPane>
 
 </VBox>

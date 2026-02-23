@@ -163,6 +163,23 @@ public class EventStorageService {
     }
 
     /**
+     * Returns all events from today onwards, sorted chronologically
+     * (by date then time, nulls-last). Used by the event feed (story 48)
+     * to display upcoming events at a glance.
+     *
+     * @param from the inclusive start date (typically today)
+     * @return a chronologically sorted, unmodifiable list of upcoming events
+     */
+    public List<CalendarEvent> getUpcomingEvents(LocalDate from) {
+        return events.stream()
+                .filter(e -> !e.getDate().isBefore(from))
+                .sorted(Comparator.comparing(CalendarEvent::getDate)
+                        .thenComparing(CalendarEvent::getTime,
+                                Comparator.nullsLast(Comparator.naturalOrder())))
+                .collect(Collectors.toUnmodifiableList());
+    }
+
+    /**
      * Finds an event by its ID.
      */
     public Optional<CalendarEvent> getEventById(String id) {
