@@ -41,18 +41,26 @@ public class CalendarController {
     private static final int GRID_COLUMNS = 7;
     private static final int GRID_ROWS = 6;
     private static final double ROW_HEIGHT = 48;
-    private static final String[] DAY_ABBREVIATIONS = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+    private static final String[] DAY_ABBREVIATIONS = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
     private static final int YEAR_RANGE_BEFORE = 2;
     private static final int YEAR_RANGE_AFTER = 5;
 
-    @FXML private Label monthYearLabel;
-    @FXML private GridPane dayOfWeekHeader;
-    @FXML private GridPane calendarGrid;
-    @FXML private ScrollPane dayEventsScrollPane;
-    @FXML private VBox dayEventsContainer;
-    @FXML private HBox monthYearPicker;
-    @FXML private ComboBox<String> monthComboBox;
-    @FXML private ComboBox<Integer> yearComboBox;
+    @FXML
+    private Label monthYearLabel;
+    @FXML
+    private GridPane dayOfWeekHeader;
+    @FXML
+    private GridPane calendarGrid;
+    @FXML
+    private ScrollPane dayEventsScrollPane;
+    @FXML
+    private VBox dayEventsContainer;
+    @FXML
+    private HBox monthYearPicker;
+    @FXML
+    private ComboBox<String> monthComboBox;
+    @FXML
+    private ComboBox<Integer> yearComboBox;
 
     private EventStorageService eventStorageService;
     private YearMonth currentYearMonth;
@@ -147,8 +155,7 @@ public class CalendarController {
         syncPickerToCurrentMonth();
 
         // Get event type indicators for this month
-        Map<Integer, Set<EventType>> eventTypesPerDay =
-                eventStorageService.getEventTypesPerDay(currentYearMonth);
+        Map<Integer, Set<EventType>> eventTypesPerDay = eventStorageService.getEventTypesPerDay(currentYearMonth);
 
         // Calculate the column offset for the 1st of the month (Monday=0 ... Sunday=6)
         LocalDate firstOfMonth = currentYearMonth.atDay(1);
@@ -263,18 +270,20 @@ public class CalendarController {
 
     /**
      * Updates the bottom section to show events for the selected date.
-     * Provides a basic event list; story 48 will enhance this into a full event feed.
+     * Provides a basic event list; story 48 will enhance this into a full event
+     * feed.
      */
     private void updateDayEvents() {
         dayEventsContainer.getChildren().clear();
 
-        if (selectedDate == null) return;
+        if (selectedDate == null)
+            return;
 
         // Selected date header
         Label dateHeader = new Label(
                 selectedDate.getDayOfMonth() + " "
-                + selectedDate.getMonth().getDisplayName(TextStyle.FULL, Locale.getDefault())
-                + " " + selectedDate.getYear());
+                        + selectedDate.getMonth().getDisplayName(TextStyle.FULL, Locale.getDefault())
+                        + " " + selectedDate.getYear());
         dateHeader.getStyleClass().add("calendar-selected-date-header");
         dayEventsContainer.getChildren().add(dateHeader);
 
@@ -369,12 +378,14 @@ public class CalendarController {
      */
     @FXML
     private void handleMonthYearChanged(ActionEvent event) {
-        if (suppressPickerEvent) return;
+        if (suppressPickerEvent)
+            return;
 
         int monthIndex = monthComboBox.getSelectionModel().getSelectedIndex();
         Integer year = yearComboBox.getSelectionModel().getSelectedItem();
 
-        if (monthIndex < 0 || year == null) return;
+        if (monthIndex < 0 || year == null)
+            return;
 
         currentYearMonth = YearMonth.of(year, monthIndex + 1);
 
