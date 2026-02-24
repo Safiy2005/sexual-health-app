@@ -1140,3 +1140,252 @@
 .calendar-action-button-primary:pressed {
     -fx-background-color: #5A9D97;
 }
+
+/* ============================================
+   FORM INPUTS & CONTROLS
+   (DatePickers, ComboBoxes, Spinners, CheckBoxes)
+   ============================================ */
+
+/* --- 1. MOBILE-FRIENDLY DATEPICKER --- */
+.date-picker.calendar-picker-combo {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-border-color: transparent;
+    -fx-padding: 4px; /* Gives that pill-like breathing room */
+}
+
+.date-picker.calendar-picker-combo .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 10px 12px; /* Taller touch target */
+}
+
+.date-picker.calendar-picker-combo .arrow-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 0 14px 0 0; /* Spaced off the right edge */
+}
+
+.date-picker.calendar-picker-combo .arrow-button:hover {
+    -fx-background-color: transparent; /* Keep it flat on hover */
+}
+
+.date-picker.calendar-picker-combo .arrow-button .arrow {
+    -fx-background-color: #7DBBB5; /* Teal calendar icon */
+}
+
+/* --- 2. COMBOBOX REFINEMENTS --- */
+.calendar-picker-combo .arrow-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.calendar-picker-combo .arrow {
+    -fx-background-color: #7DBBB5;
+}
+
+.calendar-picker-combo .arrow-button:hover {
+    -fx-background-color: #F7F3EF;
+    -fx-background-radius: 0 8px 8px 0;
+}
+
+/* Dropdown Popup List Styling */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-border-color: #EDE5DD;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.1), 8, 0, 0, 3);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 12px;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #F7F3EF;
+    -fx-text-fill: #7DBBB5;
+    -fx-cursor: hand;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+}
+
+/* --- 3. SPINNER STYLING --- */
+.calendar-picker-combo.spinner {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 8px;
+}
+
+.calendar-picker-combo.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-alignment: center-left;
+}
+
+.calendar-picker-combo.spinner .increment-arrow-button,
+.calendar-picker-combo.spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+}
+
+.calendar-picker-combo.spinner .increment-arrow-button:hover,
+.calendar-picker-combo.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #F7F3EF;
+}
+
+.calendar-picker-combo.spinner .increment-arrow,
+.calendar-picker-combo.spinner .decrement-arrow {
+    -fx-background-color: #7DBBB5; /* Teal arrows */
+}
+
+/* --- 4. CHECKBOX STYLING --- */
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: #C8BFB6;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #7DBBB5;
+    -fx-border-color: #7DBBB5;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white; /* White tick mark */
+}
+
+/* ============================================
+   DATEPICKER HOVER & WIDE BUTTON UPDATES
+   ============================================ */
+
+/* Make the entire white pill show a pointer and slightly darken on hover */
+.date-picker.calendar-picker-combo {
+    -fx-cursor: hand;
+    -fx-transition: -fx-background-color 0.2s ease;
+}
+
+.date-picker.calendar-picker-combo:hover {
+    -fx-background-color: #FDF8F3; /* Soft cream hover effect */
+}
+
+/* Make the calendar button area significantly wider for easy pressing */
+.date-picker.calendar-picker-combo .arrow-button {
+    -fx-padding: 0 20px 0 20px; /* Generous horizontal padding */
+}
+
+/* ============================================
+   CALENDAR POPUP WINDOW STYLING
+   ============================================ */
+
+/* 1. The Main Popup Container */
+.date-picker-popup {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-border-color: #EDE5DD;
+    -fx-border-radius: 12px;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.15), 12, 0, 0, 4);
+
+    /* NEW: Shifts the popup to the left to account for your form's 24px padding! */
+    -fx-translate-x: -16px;
+}
+
+/* 2. The Month/Year Header Bar */
+.date-picker-popup .month-year-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 12px 10px;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* 3. The Left/Right Navigation Arrows */
+.date-picker-popup .left-button,
+.date-picker-popup .right-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 5px 8px;
+}
+
+.date-picker-popup .left-button:hover,
+.date-picker-popup .right-button:hover {
+    -fx-background-color: #D4E8E5;
+    -fx-background-radius: 6px;
+}
+
+.date-picker-popup .left-button .left-arrow,
+.date-picker-popup .right-button .right-arrow {
+    -fx-background-color: #7DBBB5; /* Teal arrows */
+}
+
+/* 4. The Calendar Grid Background */
+.date-picker-popup .calendar-grid {
+    -fx-background-color: white;
+    /* NEW: Reduced from 8px to save horizontal space */
+    -fx-padding: 4px;
+}
+
+/* 5. The Day Names (Mon, Tue, Wed...) */
+.date-picker-popup .day-name-cell {
+    -fx-text-fill: #9AABAB;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 0;
+}
+
+/* 6. The Individual Day Cells */
+.date-picker-popup .day-cell {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    /* NEW: Reduced from 8px to 6px so the 7 columns don't force the window wide */
+    -fx-padding: 6px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+/* Days outside the current month (dimmed) */
+.date-picker-popup .day-cell:inactive {
+    -fx-text-fill: #C8BFB6;
+}
+
+/* Hover state for days */
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: #F7F3EF;
+    -fx-text-fill: #7DBBB5;
+}
+
+/* 7. The Selected Day */
+.date-picker-popup .day-cell:selected {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* 8. Today's Date Outline */
+.date-picker-popup .today {
+    -fx-border-color: #7DBBB5;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1.5px;
+}

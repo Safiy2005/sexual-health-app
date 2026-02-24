@@ -10,7 +10,6 @@
       styleClass="calendar-root" spacing="0"
       prefWidth="360" prefHeight="640">
 
-    <!-- Cancel navigation bar -->
     <HBox styleClass="calendar-header" alignment="CENTER_LEFT" spacing="10">
         <padding>
             <Insets top="16" right="16" bottom="12" left="16"/>
@@ -20,61 +19,93 @@
         <Label text="New Event" styleClass="search-header-title"
                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
     </HBox>
-    <VBox alignment="TOP_CENTER" spacing="16" VBox.vgrow="ALWAYS">
-        <padding>
-            <Insets top="30" right="24" bottom="30" left="24"/>
-        </padding>
 
-        <Label text="Create New Event" styleClass="calendar-selected-date-header"/>
+    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS"
+                styleClass="search-scroll-pane" hbarPolicy="NEVER">
 
-        <VBox spacing="4" alignment="CENTER_LEFT">
-            <Label text="Event Title"/>
-            <TextField fx:id="titleField" promptText="E.g., Doctor Appointment"/>
+        <VBox alignment="TOP_CENTER" spacing="16">
+            <padding>
+                <Insets top="20" right="24" bottom="250" left="24"/>
+            </padding>
+
+            <Label text="Event Details" styleClass="calendar-selected-date-header"/>
+
+            <VBox spacing="4" alignment="CENTER_LEFT">
+                <Label text="Event Title" styleClass="calendar-event-card-title"/>
+                <TextField fx:id="titleField" promptText="E.g. Doctors Appointment"
+                           styleClass="search-field" prefWidth="300"/>
+            </VBox>
+
+            <VBox spacing="4" alignment="CENTER_LEFT">
+                <Label text="Date" styleClass="calendar-event-card-title"/>
+                <DatePicker fx:id="datePicker" promptText="Select a date:"
+                            prefWidth="300" editable="false" styleClass="calendar-picker-combo"/>
+            </VBox>
+            <VBox fx:id="dosageContainer" spacing="4" alignment="CENTER_LEFT" visible="false" managed="false">
+                <Label text="Dosage Amount" styleClass="calendar-event-card-title"/>
+                <TextField fx:id="dosageField" promptText="E.g., 2 pills, 50mg"
+                           prefWidth="300" styleClass="search-field"/>
+            </VBox>
+
+
+            <VBox spacing="4" alignment="CENTER_LEFT">
+                <Label text="Event Type" styleClass="calendar-event-card-title"/>
+                <ComboBox fx:id="typeComboBox" promptText="Select category"
+                          prefWidth="300" styleClass="calendar-picker-combo"/>
+            </VBox>
+
+            <VBox spacing="4" alignment="CENTER_LEFT">
+                <HBox spacing="15" alignment="CENTER_LEFT">
+                    <Label text="Time" styleClass="calendar-event-card-title"/>
+                    <CheckBox fx:id="allDayCheckBox" text="All-day event" styleClass="calendar-event-card-time"/>
+                </HBox>
+
+                <HBox fx:id="timeSpinnerContainer" spacing="10" alignment="CENTER_LEFT">
+                    <Spinner fx:id="hourSpinner" prefWidth="75" editable="true" styleClass="calendar-picker-combo"/>
+                    <Label text=":" styleClass="calendar-event-card-title"/>
+                    <Spinner fx:id="minuteSpinner" prefWidth="75" editable="true" styleClass="calendar-picker-combo"/>
+                </HBox>
+            </VBox>
+
+
+            <VBox spacing="4" alignment="CENTER_LEFT">
+                <Label text="Repeat" styleClass="calendar-event-card-title"/>
+                <ComboBox fx:id="recurrenceComboBox" prefWidth="300" styleClass="calendar-picker-combo"/>
+
+                <HBox fx:id="intervalContainer" spacing="10" alignment="CENTER_LEFT" visible="false" managed="false">
+                    <padding><Insets top="4"/></padding>
+                    <Label text="Repeat every" styleClass="calendar-event-card-time"/>
+                    <Spinner fx:id="intervalSpinner" prefWidth="75" editable="true" styleClass="calendar-picker-combo"/>
+                    <Label fx:id="intervalLabel" text="days" styleClass="calendar-event-card-time"/>
+                </HBox>
+            </VBox>
+
+            <VBox fx:id="endConditionContainer" spacing="4" alignment="CENTER_LEFT" visible="false" managed="false">
+                <Label text="Ends" styleClass="calendar-event-card-title"/>
+
+                <VBox spacing="10" alignment="CENTER_LEFT">
+                    <ComboBox fx:id="endTypeComboBox" prefWidth="300" styleClass="calendar-picker-combo"/>
+
+                    <DatePicker fx:id="endDatePicker" prefWidth="300" visible="false" managed="false"
+                                editable="false" promptText="End date" styleClass="calendar-picker-combo"/>
+
+                    <HBox fx:id="occurrenceContainer" spacing="5" alignment="CENTER_LEFT" visible="false" managed="false">
+                        <Spinner fx:id="occurrenceCountSpinner" prefWidth="75" editable="true" styleClass="calendar-picker-combo"/>
+                        <Label text="times" styleClass="calendar-event-card-time"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+            <VBox spacing="4" alignment="CENTER_LEFT">
+                <Label text="Description / Notes" styleClass="calendar-event-card-title"/>
+                <TextArea fx:id="descriptionArea" promptText="Add any extra details here..."
+                          prefRowCount="3" prefWidth="300" wrapText="true" styleClass="search-field"/>
+            </VBox>
+
+            <Region prefHeight="10"/>
+            <Button text="Save Event" onAction="#handleSaveEvent"
+                    styleClass="calendar-action-button-primary" prefWidth="300" prefHeight="45"/>
+            <Region prefHeight="20"/>
+
         </VBox>
-
-        <VBox spacing="4" alignment="CENTER_LEFT">
-            <Label text="Date"/>
-            <DatePicker fx:id="datePicker" promptText="Select a date" prefWidth="300"/>
-        </VBox>
-
-        <VBox spacing="4" alignment="CENTER_LEFT">
-            <Label text="Event Type"/>
-            <ComboBox fx:id="typeComboBox" promptText="Select category" prefWidth="300"/>
-        </VBox>
-
-        <VBox spacing="4" alignment="CENTER_LEFT">
-            <Label text="Time (Optional)"/>
-            <HBox spacing="10" alignment="CENTER_LEFT">
-                <ComboBox fx:id="hourComboBox" promptText="HH" prefWidth="80"/>
-                <Label text=":"/>
-                <ComboBox fx:id="minuteComboBox" promptText="MM" prefWidth="80"/>
-            </HBox>
-        </VBox>
-
-        <VBox fx:id="dosageContainer" spacing="4" alignment="CENTER_LEFT" visible="false" managed="false">
-            <Label text="Dosage Amount"/>
-            <TextField fx:id="dosageField" promptText="E.g., 2 pills, 50mg" prefWidth="300"/>
-        </VBox>
-
-        <VBox spacing="4" alignment="CENTER_LEFT">
-            <Label text="Repeat"/>
-            <ComboBox fx:id="recurrenceComboBox" prefWidth="300"/>
-
-            <HBox fx:id="intervalContainer" spacing="10" alignment="CENTER_LEFT" visible="false" managed="false">
-                <padding><Insets top="4"/></padding>
-                <Label text="Repeat every"/>
-                <TextField fx:id="intervalField" text="1" prefWidth="50"/>
-                <Label fx:id="intervalLabel" text="days"/>
-            </HBox>
-        </VBox>
-
-        <VBox spacing="4" alignment="CENTER_LEFT">
-            <Label text="Description / Notes"/>
-            <TextArea fx:id="descriptionArea" promptText="Add any extra details here..."
-                      prefRowCount="3" prefWidth="300" wrapText="true"/>
-        </VBox>
-
-        <Region VBox.vgrow="ALWAYS" /> <Button text="Save Event" onAction="#handleSaveEvent" styleClass="calendar-action-button" prefWidth="300"/>
-
-    </VBox>
+    </ScrollPane>
 </VBox>
