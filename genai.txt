@@ -9,6 +9,7 @@
 # Oli
 
 - Used Gemini API with Gemini 3 Flash
+- Used Gemini 3 Pro
 
 ## Uses
 
@@ -20,6 +21,9 @@
 - Writing unit tests for the Article model
 - Implementing semantic search
 
-- Scraping article content from the Brook website 
+- Scraping article content from the Brook website
+- creating stylesheets and formatting fxml pages
+- Helping to build the event creation logic
 
 - Building the UI for displaying article content
+

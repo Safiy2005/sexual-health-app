@@ -16,7 +16,7 @@ import javafx.scene.control.Spinner;
 import java.time.LocalDate;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.CheckBox;
-import java.util.UUID;
+import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 
 /**
  * Stub controller for the create-event view (story 22).
@@ -48,6 +48,7 @@ public class CreateEventController {
     @FXML private HBox occurrenceContainer;
     @FXML private CheckBox allDayCheckBox;
     @FXML private HBox timeSpinnerContainer;
+    @FXML private Label errorLabel;
 
     private EventStorageService storageService;     // for the json
     private Runnable onBackToCalendar;
@@ -60,6 +61,9 @@ public class CreateEventController {
         //makes the whole date bar open the calendar picker, wouldnt before
         datePicker.setOnMouseClicked(e -> datePicker.show());
         datePicker.getEditor().setOnMouseClicked(e -> datePicker.show()); // <-- Tells the text to open it
+
+        centerDatePickerPopup(datePicker);
+        centerDatePickerPopup(endDatePicker);
 
         endDatePicker.setOnMouseClicked(e -> endDatePicker.show());
         endDatePicker.getEditor().setOnMouseClicked(e -> endDatePicker.show()); // <-- Tells the text to open it
@@ -154,16 +158,47 @@ public class CreateEventController {
     }
 
     @FXML private void handleSaveEvent(ActionEvent event){
+        // 1. Reset visual states
+        titleField.getStyleClass().remove("input-error");
+        datePicker.getStyleClass().remove("input-error");
+        typeComboBox.getStyleClass().remove("input-error");
+        errorLabel.setVisible(false);
+        errorLabel.setManaged(false);
+
+        // 2. Comprehensive Validation
+        boolean hasError = false;
+        StringBuilder errorMessage = new StringBuilder("Missing: ");
+
+        if (titleField.getText() == null || titleField.getText().trim().isEmpty()) {
+            titleField.getStyleClass().add("input-error");
+            errorMessage.append("Title, ");
+            hasError = true;
+        }
+
+        if (datePicker.getValue() == null) {
+            datePicker.getStyleClass().add("input-error");
+            errorMessage.append("Date, ");
+            hasError = true;
+        }
+
+        if (typeComboBox.getValue() == null) {
+            typeComboBox.getStyleClass().add("input-error");
+            errorMessage.append("Type, ");
+            hasError = true;
+        }
+
+        if (hasError) {
+            // Clean up trailing comma and show error
+            String finalMsg = errorMessage.substring(0, errorMessage.length() - 2);
+            errorLabel.setText(finalMsg);
+            errorLabel.setVisible(true);
+            errorLabel.setManaged(true);
+            return; // Stop the save
+        }
         // get inputs
         String title = titleField.getText();
         LocalDate date = datePicker.getValue();
         EventType type = typeComboBox.getValue();
-
-        // validation to prevent a half populated event being saved
-        if (title == null || title.trim().isEmpty() || date == null || type == null) {
-            System.out.println("Validation failed: fill required fields");
-            return;
-        }
 
         // gets time if not set to all day
         java.time.LocalTime time = null;
@@ -184,22 +219,13 @@ public class CreateEventController {
 
             // Simply grab the guaranteed valid integer from the spinner!
             int interval = intervalSpinner.getValueFactory().getValue();
-            com.sddp.sexualhealthapp.calendar.model.RecurrenceRule rule = null;
-
-            switch (recurrenceSelection) {
-                case "Daily":
-                    rule = com.sddp.sexualhealthapp.calendar.model.RecurrenceRule.daily(interval);
-                    break;
-                case "Weekly":
-                    rule = com.sddp.sexualhealthapp.calendar.model.RecurrenceRule.weekly(interval);
-                    break;
-                case "Monthly":
-                    rule = com.sddp.sexualhealthapp.calendar.model.RecurrenceRule.monthlyOnDay(interval);
-                    break;
-                case "Yearly":
-                    rule = com.sddp.sexualhealthapp.calendar.model.RecurrenceRule.yearly(interval);
-                    break;
-            }
+            RecurrenceRule rule = switch (recurrenceSelection) {
+                case "Daily" -> RecurrenceRule.daily(interval);
+                case "Weekly" -> RecurrenceRule.weekly(interval);
+                case "Monthly" -> RecurrenceRule.monthlyOnDay(interval);
+                case "Yearly" -> RecurrenceRule.yearly(interval);
+                default -> null;
+            };
 
             String endType = endTypeComboBox.getValue();
 
@@ -242,6 +268,33 @@ public class CreateEventController {
         intervalSpinner.getValueFactory().setValue(1);
         occurrenceCountSpinner.getValueFactory().setValue(10);
         allDayCheckBox.setSelected(false);
+    }
+
+    // has calendar pickers centred popups instead of dynamic drops downs that can fall off the window
+    private void centerDatePickerPopup(DatePicker picker) {
+        picker.setOnShowing(ev -> {
+            // We use Platform.runLater to ensure the popup has been
+            // initialized and its width/height are available
+            javafx.application.Platform.runLater(() -> {
+                // Find the skin and the popup content
+                if (picker.getSkin() instanceof javafx.scene.control.skin.DatePickerSkin) {
+                    javafx.scene.Node popupContent = ((javafx.scene.control.skin.DatePickerSkin) picker.getSkin()).getPopupContent();
+
+                    if (popupContent != null && popupContent.getScene() != null) {
+                        javafx.stage.Window popupWindow = popupContent.getScene().getWindow();
+                        javafx.stage.Window mainWindow = picker.getScene().getWindow();
+
+                        // Calculate center coordinates
+                        double centerX = mainWindow.getX() + (mainWindow.getWidth() / 2) - (popupWindow.getWidth() / 2);
+                        double centerY = mainWindow.getY() + (mainWindow.getHeight() / 2) - (popupWindow.getHeight() / 2);
+
+                        // Position the window
+                        popupWindow.setX(centerX);
+                        popupWindow.setY(centerY);
+                    }
+                }
+            });
+        });
     }
 }
 
