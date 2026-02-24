@@ -22,7 +22,6 @@ import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
  * Stub controller for the create-event view (story 22).
  * Provides navigation back to the calendar; the full event creation
  * form will be implemented by the assigned teammate.
- *
  * TODO (Oli): Implement stories 22.1-22.3 — event creation form,
  * validation, and persistence.
  */
@@ -227,21 +226,23 @@ public class CreateEventController {
                 default -> null;
             };
 
-            String endType = endTypeComboBox.getValue();
 
-            if ("On date".equals(endType)) {
-                LocalDate endDate = endDatePicker.getValue();
-                // We still need to check if the date is valid/empty
-                if (endDate == null || endDate.isBefore(date)) {
-                    System.out.println("Validation failed: Please select a valid end date that is after the start date.");
-                    return;
+            if (rule != null) {     // this if avoids nullpointer exceptions
+                String endType = endTypeComboBox.getValue();
+                if ("On date".equals(endType)) {
+                    LocalDate endDate = endDatePicker.getValue();
+                    // We still need to check if the date is valid/empty
+                    if (endDate == null || endDate.isBefore(date)) {
+                        System.out.println("Validation failed: Please select a valid end date that is after the start date.");
+                        return;
+                    }
+                    rule.until(endDate);
+
+                } else if ("After occurrences".equals(endType)) {
+                    // Simply grab the guaranteed valid integer!
+                    int count = occurrenceCountSpinner.getValueFactory().getValue();
+                    rule.times(count);
                 }
-                rule.until(endDate);
-
-            } else if ("After occurrences".equals(endType)) {
-                // Simply grab the guaranteed valid integer!
-                int count = occurrenceCountSpinner.getValueFactory().getValue();
-                rule.times(count);
             }
 
             // attach the rule to the event

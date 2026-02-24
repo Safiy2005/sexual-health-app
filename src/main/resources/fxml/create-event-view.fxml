@@ -7,7 +7,7 @@
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.sddp.sexualhealthapp.calendar.controller.CreateEventController"
-      styleClass="calendar-root" spacing="0"
+      styleClass="calendar-root"
       prefWidth="360" prefHeight="640">
 
     <HBox styleClass="calendar-header" alignment="CENTER_LEFT" spacing="10">
