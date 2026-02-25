@@ -118,6 +118,7 @@ public class EventFeedController {
         loading = true;
 
         BatchLoadResult result = loadBatchSkippingEmptyWindows(
+                EventStorageService.getInstance(),
                 nextBatchStart,
                 BATCH_DAYS,
                 MAX_EMPTY_WINDOWS_TO_SKIP);
@@ -138,6 +139,7 @@ public class EventFeedController {
     }
 
     static BatchLoadResult loadBatchSkippingEmptyWindows(
+            EventStorageService storage,
             LocalDate startDate,
             int batchDays,
             int maxEmptyWindowsToSkip) {
@@ -147,7 +149,7 @@ public class EventFeedController {
 
         while (emptyWindowsSkipped <= maxEmptyWindowsToSkip) {
             LocalDate batchEnd = cursor.plusDays(batchDays - 1L);
-            List<EventOccurrence> batch = EventStorageService.getInstance().getUpcomingOccurrences(cursor, batchEnd);
+            List<EventOccurrence> batch = storage.getUpcomingOccurrences(cursor, batchEnd);
             cursor = batchEnd.plusDays(1);
 
             if (!batch.isEmpty()) {
