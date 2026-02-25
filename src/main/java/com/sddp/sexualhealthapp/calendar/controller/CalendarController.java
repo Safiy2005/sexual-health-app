@@ -1,8 +1,20 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.YearMonth;
+import java.time.format.TextStyle;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Consumer;
+
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.HPos;
@@ -18,16 +30,6 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
-
-import java.time.LocalDate;
-import java.time.Month;
-import java.time.YearMonth;
-import java.time.format.TextStyle;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Controller for the calendar grid view (story 47).
@@ -329,6 +331,11 @@ public class CalendarController {
         }
 
         card.getChildren().addAll(nameLabel, metaRow);
+
+        // click to open details
+        card.setOnMouseClicked(e -> {
+            if (onEventSelected != null) onEventSelected.accept(event);
+        });
         return card;
     }
 
@@ -437,5 +444,10 @@ public class CalendarController {
     public void refresh() {
         eventStorageService = new EventStorageService();
         populateCalendar();
+    }
+
+    private Consumer<CalendarEvent> onEventSelected;
+    public void setOnEventSelected(Consumer<CalendarEvent> callback) {
+        this.onEventSelected = callback;
     }
 }

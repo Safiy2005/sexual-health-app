@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.calendar.controller.EventDetailController"
+      styleClass="calendar-root" spacing="0"
+      prefWidth="360" prefHeight="640">
+
+
+    <!-- Back bar -->
+    <HBox styleClass="calendar-header" alignment="CENTER_LEFT" spacing="10">
+        <padding>
+            <Insets top="16" right="16" bottom="12" left="16"/>
+        </padding>
+        <Button text="Back" styleClass="calendar-action-button"
+                onAction="#handleBackToCalendar"/>
+        <Label text="Event Details" styleClass="search-header-title"
+               HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+    </HBox>
+
+    <!--> Content -->
+
+    <VBox spacing="12" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets top="16" right="16" bottom="16" left="16"/>
+        </padding>
+
+        <Label fx:id="nameLabel" styleClass="calendar-selected-date-header" wrapText="true"/>
+
+        <HBox spacing="10">
+        <Label fx:id="typeBadge" styleClass="calendar-event-card-type"/>
+        <Label fx:id="dateTimeLabel" styleClass="calendar-no-events-label"/>
+        </HBox>
+
+        <VBox spacing="6" styleClass="calendar-event-card">
+        <Label text="Description" styleClass="calendar-event-card-title"/>
+        <Label fx:id ="descriptionLabel" wrapText="true" styleClass="calendar-no-events-label"/>
+        </VBox>
+
+        <VBox fx:id="dosageBox" spacing="6" styleClass="calendar-event-card" visible="false" managed="false">
+        <Label text="Dosage" styleClass="calendar-event-card-title"/>
+        <Label fx:id="dosageLabel" wrapText="true" styleClass="calendar-no-events-label"/>
+        </VBox>
+    </VBox>
+</VBox>
+
+

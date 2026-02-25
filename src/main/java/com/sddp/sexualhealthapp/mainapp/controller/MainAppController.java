@@ -10,7 +10,10 @@ import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.calendar.controller.CalendarController;
 import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
+import com.sddp.sexualhealthapp.calendar.controller.EventDetailController;
 import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
+import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
@@ -66,6 +69,10 @@ public class MainAppController {
     private VBox articleListContainer;
     @FXML
     private ScrollPane listScrollPane;
+    @FXML
+    private VBox eventDetailView;
+    @FXML
+    private EventDetailController eventDetailViewController;
 
     // TODO: Remove when story 51 (bottom nav) is integrated
     @FXML
@@ -85,6 +92,7 @@ public class MainAppController {
     private HybridSearchService searchService;
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
+    private EventStorageService eventStorageService;
 
     @FXML
     private void initialize() {
@@ -147,6 +155,9 @@ public class MainAppController {
         // Default tab
         navGroup.selectToggle(articlesTab);
         switchToTab("ARTICLES");
+
+        calendarViewController.setOnEventSelected(event -> openEventDetail(event, calendarView));
+        
     }
 
     private void switchToTab(String tab) {
@@ -314,6 +325,26 @@ public class MainAppController {
         empty.getStyleClass().add("search-empty-label");
         empty.setWrapText(true);
         articleListContainer.getChildren().add(empty);
+    }
+
+    private void showOnlyCalendarView(Node toShow) {
+        calendarView.setVisible(false);
+        eventFeedView.setVisible(false);
+        createEventView.setVisible(false);
+        eventDetailView.setVisible(false);
+
+        toShow.setVisible(true);
+
+    }
+
+    private void openEventDetail(CalendarEvent event, Node returnTo) {
+        // set data
+        eventDetailViewController.setEvent(event);
+
+        //go back where u came from
+        eventDetailViewController.setOnBack( () -> showOnlyCalendarView(returnTo));
+        // show detail screen
+        showOnlyCalendarView(eventDetailView);
     }
 
 }
