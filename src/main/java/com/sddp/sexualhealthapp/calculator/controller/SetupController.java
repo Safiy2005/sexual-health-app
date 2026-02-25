@@ -175,7 +175,7 @@ public class SetupController {
 
                     MediaView mediaView = new MediaView(player);
                     mediaView.setFitWidth(312);
-                    mediaView.setFitHeight(420);
+                    mediaView.setFitHeight(360);
                     mediaView.setPreserveRatio(true);
 
                     // Insert video behind the placeholder, then hide placeholder
