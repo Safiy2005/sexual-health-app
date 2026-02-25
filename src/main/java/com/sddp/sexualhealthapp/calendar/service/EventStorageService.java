@@ -49,6 +49,7 @@ public class EventStorageService {
 
     private static final String DATA_DIR = "src/main/resources/calendarevents";
     private static final String EVENTS_FILE = "events.json";
+    private static EventStorageService instance;
 
     private final Path storageFilePath;
     private final Gson gson;
@@ -57,9 +58,21 @@ public class EventStorageService {
     /**
      * Production constructor. Reads/writes events from
      * {@code src/main/resources/calendarevents/events.json}.
+     *
+     * <p>Use {@link #getInstance()} for app runtime.</p>
      */
-    public EventStorageService() {
+    private EventStorageService() {
         this(Paths.get(DATA_DIR, EVENTS_FILE));
+    }
+
+    /**
+     * Returns the shared application instance.
+     */
+    public static EventStorageService getInstance() {
+        if (instance == null) {
+            instance = new EventStorageService();
+        }
+        return instance;
     }
 
     /**
@@ -96,6 +109,13 @@ public class EventStorageService {
      */
     public List<CalendarEvent> getAllEvents() {
         return Collections.unmodifiableList(events);
+    }
+
+    /**
+     * Reloads all events from disk into memory.
+     */
+    public void reloadFromDisk() {
+        this.events = loadFromFile();
     }
 
     /**

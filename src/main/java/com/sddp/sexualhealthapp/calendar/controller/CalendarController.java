@@ -73,7 +73,7 @@ public class CalendarController {
 
     @FXML
     private void initialize() {
-        eventStorageService = new EventStorageService();
+        eventStorageService = EventStorageService.getInstance();
         currentYearMonth = YearMonth.now();
         selectedDate = LocalDate.now();
 
@@ -412,7 +412,7 @@ public class CalendarController {
      * added or modified by other views (e.g. story 22's event creation form).
      */
     public void refresh() {
-        eventStorageService = new EventStorageService();
+        eventStorageService.reloadFromDisk();
         populateCalendar();
     }
 }

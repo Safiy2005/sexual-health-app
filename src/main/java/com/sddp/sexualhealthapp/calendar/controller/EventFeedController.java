@@ -47,7 +47,7 @@ public class EventFeedController {
 
     @FXML
     private void initialize() {
-        eventStorageService = new EventStorageService();
+        eventStorageService = EventStorageService.getInstance();
         nextBatchStart = LocalDate.now();
 
         loadNextBatch();
@@ -107,7 +107,7 @@ public class EventFeedController {
      * events are added or modified by other views.
      */
     public void refresh() {
-        eventStorageService = new EventStorageService();
+        eventStorageService.reloadFromDisk();
         feedContainer.getChildren().clear();
         nextBatchStart = LocalDate.now();
         loadNextBatch();
