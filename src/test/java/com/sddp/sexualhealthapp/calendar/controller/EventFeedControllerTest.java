@@ -71,4 +71,34 @@ class EventFeedControllerTest {
         // With maxEmptyWindowsToSkip=2, windows checked are Mar 1-7, Mar 8-14, Mar 15-21
         assertEquals(LocalDate.of(2026, 3, 22), result.nextBatchStart());
     }
+
+    @Test
+    void loadPreviousBatchSkippingEmptyWindows_FindsEarlierEventWhenLookingBack() {
+        service.addEvent(new CalendarEvent(
+                "Earlier",
+                LocalDate.of(2026, 3, 8),
+                LocalTime.of(10, 0),
+                EventType.APPOINTMENT,
+                null,
+                null));
+        service.addEvent(new CalendarEvent(
+                "Later",
+                LocalDate.of(2026, 3, 20),
+                LocalTime.of(10, 0),
+                EventType.APPOINTMENT,
+                null,
+                null));
+
+        EventFeedController.ReverseBatchLoadResult result = EventFeedController.loadPreviousBatchSkippingEmptyWindows(
+                service,
+                LocalDate.of(2026, 3, 20), // look before March 20
+                LocalDate.of(2026, 3, 1),
+                7,
+                4);
+
+        assertEquals(1, result.occurrences().size());
+        assertEquals(LocalDate.of(2026, 3, 8), result.occurrences().get(0).occurrenceDate());
+        // Cursor moves to the start of the loaded 7-day window (Mar 6-12).
+        assertEquals(LocalDate.of(2026, 3, 6), result.nextEndExclusive());
+    }
 }

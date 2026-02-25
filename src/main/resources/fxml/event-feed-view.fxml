@@ -19,6 +19,8 @@
                 onAction="#handleBackToCalendar"/>
         <Label text="Event Feed" styleClass="search-header-title"
                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Today" styleClass="calendar-today-button"
+                onAction="#handleJumpToToday"/>
     </HBox>
 
     <!-- Upcoming events list (scrollable) -->
