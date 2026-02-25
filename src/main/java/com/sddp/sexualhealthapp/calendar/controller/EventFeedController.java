@@ -52,8 +52,8 @@ public class EventFeedController {
     private static final int BATCH_DAYS = 7;
     /** How many consecutive empty 7-day windows to skip while looking ahead. */
     private static final int MAX_EMPTY_WINDOWS_TO_SKIP = 52;
-    private static final DateTimeFormatter DAY_HEADER_FORMATTER =
-            DateTimeFormatter.ofPattern("EEE d MMM", Locale.getDefault());
+    private static final DateTimeFormatter DAY_HEADER_FORMATTER = DateTimeFormatter.ofPattern("EEE d MMM",
+            Locale.getDefault());
 
     /** Scroll position threshold (0.0–1.0) that triggers loading the next batch. */
     private static final double LOAD_MORE_THRESHOLD = 0.85;
@@ -63,7 +63,6 @@ public class EventFeedController {
     @FXML
     private VBox feedContainer;
 
-    private EventStorageService eventStorageService;
     private Runnable onBackToCalendar;
 
     /** The start date for the next batch to load. */
@@ -83,7 +82,6 @@ public class EventFeedController {
 
     @FXML
     private void initialize() {
-        eventStorageService = EventStorageService.getInstance();
         resetFeedState();
 
         loadNextBatch();
@@ -120,7 +118,6 @@ public class EventFeedController {
         loading = true;
 
         BatchLoadResult result = loadBatchSkippingEmptyWindows(
-                eventStorageService,
                 nextBatchStart,
                 BATCH_DAYS,
                 MAX_EMPTY_WINDOWS_TO_SKIP);
@@ -141,7 +138,6 @@ public class EventFeedController {
     }
 
     static BatchLoadResult loadBatchSkippingEmptyWindows(
-            EventStorageService storageService,
             LocalDate startDate,
             int batchDays,
             int maxEmptyWindowsToSkip) {
@@ -151,7 +147,7 @@ public class EventFeedController {
 
         while (emptyWindowsSkipped <= maxEmptyWindowsToSkip) {
             LocalDate batchEnd = cursor.plusDays(batchDays - 1L);
-            List<EventOccurrence> batch = storageService.getUpcomingOccurrences(cursor, batchEnd);
+            List<EventOccurrence> batch = EventStorageService.getInstance().getUpcomingOccurrences(cursor, batchEnd);
             cursor = batchEnd.plusDays(1);
 
             if (!batch.isEmpty()) {
@@ -169,7 +165,7 @@ public class EventFeedController {
      * events are added or modified by other views.
      */
     public void refresh() {
-        eventStorageService.reloadFromDisk();
+        EventStorageService.getInstance().reloadFromDisk();
         feedContainer.getChildren().clear();
         resetFeedState();
         loadNextBatch();

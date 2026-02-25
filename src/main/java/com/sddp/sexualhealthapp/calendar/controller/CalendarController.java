@@ -62,7 +62,6 @@ public class CalendarController {
     @FXML
     private ComboBox<Integer> yearComboBox;
 
-    private EventStorageService eventStorageService;
     private YearMonth currentYearMonth;
     private LocalDate selectedDate;
     private boolean pickerVisible = false;
@@ -73,7 +72,6 @@ public class CalendarController {
 
     @FXML
     private void initialize() {
-        eventStorageService = EventStorageService.getInstance();
         currentYearMonth = YearMonth.now();
         selectedDate = LocalDate.now();
 
@@ -155,7 +153,8 @@ public class CalendarController {
         syncPickerToCurrentMonth();
 
         // Get event type indicators for this month
-        Map<Integer, Set<EventType>> eventTypesPerDay = eventStorageService.getEventTypesPerDay(currentYearMonth);
+        Map<Integer, Set<EventType>> eventTypesPerDay = EventStorageService.getInstance()
+                .getEventTypesPerDay(currentYearMonth);
 
         // Calculate the column offset for the 1st of the month (Monday=0 ... Sunday=6)
         LocalDate firstOfMonth = currentYearMonth.atDay(1);
@@ -287,7 +286,7 @@ public class CalendarController {
         dateHeader.getStyleClass().add("calendar-selected-date-header");
         dayEventsContainer.getChildren().add(dateHeader);
 
-        List<CalendarEvent> dayEvents = eventStorageService.getEventsForDate(selectedDate);
+        List<CalendarEvent> dayEvents = EventStorageService.getInstance().getEventsForDate(selectedDate);
 
         if (dayEvents.isEmpty()) {
             Label noEvents = new Label("No events");
@@ -412,7 +411,7 @@ public class CalendarController {
      * added or modified by other views (e.g. story 22's event creation form).
      */
     public void refresh() {
-        eventStorageService.reloadFromDisk();
+        EventStorageService.getInstance().reloadFromDisk();
         populateCalendar();
     }
 }
