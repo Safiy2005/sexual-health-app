@@ -16,12 +16,12 @@
     <!-- Onboarding Page 1: Protect your Privacy -->
     <VBox fx:id="onboardingPage1" styleClass="onboarding-page" alignment="TOP_CENTER" spacing="12">
         <padding>
-            <Insets top="48" left="24" right="24" bottom="24"/>
+            <Insets top="40" left="24" right="24" bottom="24"/>
         </padding>
 
         <Label text="Protect your Privacy" styleClass="onboarding-title" textAlignment="CENTER"/>
         <Label text="Your app hides behind a working calculator."
-               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" alignment="CENTER" prefWidth="312" maxWidth="312"/>
 
         <!-- Looping MP4 video / placeholder: shows calculator disguise concept -->
         <StackPane fx:id="videoContainer1" styleClass="onboarding-video-container" VBox.vgrow="ALWAYS">
@@ -47,12 +47,12 @@
     <!-- Onboarding Page 2: Secret Equation -->
     <VBox fx:id="onboardingPage2" styleClass="onboarding-page" alignment="TOP_CENTER" spacing="12">
         <padding>
-            <Insets top="48" left="24" right="24" bottom="24"/>
+            <Insets top="40" left="24" right="24" bottom="24"/>
         </padding>
 
         <Label text="Secret Equation" styleClass="onboarding-title" textAlignment="CENTER"/>
-        <Label text="Create your own secret equation, which you can use to unlock the app."
-               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+        <Label text="Create your own secret equation to unlock the app."
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" alignment="CENTER" prefWidth="312" maxWidth="312"/>
 
         <!-- Looping MP4 video / placeholder: shows equation entry flow -->
         <StackPane fx:id="videoContainer2" styleClass="onboarding-video-container" VBox.vgrow="ALWAYS">
@@ -77,12 +77,12 @@
     <!-- Onboarding Page 3: Forgot Your Equation -->
     <VBox fx:id="onboardingPage3" styleClass="onboarding-page" alignment="TOP_CENTER" spacing="12">
         <padding>
-            <Insets top="48" left="24" right="24" bottom="24"/>
+            <Insets top="40" left="24" right="24" bottom="24"/>
         </padding>
 
         <Label text="Forgot Your Equation?" styleClass="onboarding-title" textAlignment="CENTER"/>
         <Label text="Use 999 &#xF7; 0 to reset your equation if you forget it."
-               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" maxWidth="312"/>
+               styleClass="onboarding-subtitle" wrapText="true" textAlignment="CENTER" alignment="CENTER" prefWidth="312" maxWidth="312"/>
 
         <!-- Looping MP4 video / placeholder: shows reset code entry -->
         <StackPane fx:id="videoContainer3" styleClass="onboarding-video-container" VBox.vgrow="ALWAYS">

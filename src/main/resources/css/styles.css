@@ -761,6 +761,9 @@
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
     -fx-text-alignment: center;
     -fx-line-spacing: 2px;
+    -fx-wrap-text: true;
+    -fx-text-overrun: clip;
+    -fx-alignment: center;
 }
 
 /* Example equation box on page 2 */
@@ -847,7 +850,8 @@
     -fx-border-width: 2px;
     -fx-border-style: dashed;
     -fx-border-radius: 16px;
-    -fx-pref-height: 380px;
+    -fx-pref-height: 340px;
+    -fx-max-height: 340px;
     -fx-max-width: 312px;
 }
 
