@@ -8,7 +8,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
-
+import java.time.format.DateTimeFormatter;
+import javafx.scene.control.ListCell;
 import java.time.LocalDate;
 
 import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
@@ -134,6 +135,34 @@ public class CreateEventController {
 
         // Bind exception list view
         exceptionListView.setItems(exceptionDates);
+
+        // 1. Add click-to-remove listener
+        exceptionListView.setOnMouseClicked(event -> {
+            LocalDate selectedDate = exceptionListView.getSelectionModel().getSelectedItem();
+            if (selectedDate != null) {
+                exceptionDates.remove(selectedDate);
+                exceptionListView.getSelectionModel().clearSelection(); // Clear highlight
+            }
+        });
+
+        // 2. Custom formatter so it looks clean (e.g., "✖ Feb 26, 2026")
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM d, yyyy");
+        exceptionListView.setCellFactory(lv -> new ListCell<LocalDate>() {
+            @Override
+            protected void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                if (empty || date == null) {
+                    setText(null);
+                    setGraphic(null);
+                    getStyleClass().remove("exception-list-cell");
+                } else {
+                    setText("✖  " + date.format(formatter));
+                    if (!getStyleClass().contains("exception-list-cell")) {
+                        getStyleClass().add("exception-list-cell");
+                    }
+                }
+            }
+        });
 
         // UPDATE this listener to dynamically show/hide the advanced options
         recurrenceComboBox.getSelectionModel().selectedItemProperty().addListener((obs, oldV, newVal) -> {

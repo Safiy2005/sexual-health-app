@@ -1522,3 +1522,70 @@
 .custom-radio .radio .dot {
     -fx-background-color: transparent;
 }
+/* --- EXCEPTION DATES LIST --- */
+
+/* Give the list box a soft border matching your inputs */
+#exceptionListView {
+    -fx-background-color: transparent;
+    -fx-border-color: #C8BFB6;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 2px;
+}
+
+/* Hide the horizontal scrollbar completely */
+#exceptionListView .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-padding: -5;
+}
+
+/* --- Sleek Vertical Scrollbar --- */
+
+/* 1. Make the scrollbar container thin and transparent */
+#exceptionListView .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+/* 2. Hide the background track */
+#exceptionListView .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* 3. Style the movable pill (thumb) to match the border */
+#exceptionListView .scroll-bar:vertical .thumb {
+    -fx-background-color: #C8BFB6;
+    -fx-background-radius: 8px;
+}
+
+/* 4. Completely hide the top/bottom arrow buttons */
+#exceptionListView .scroll-bar:vertical .increment-button,
+#exceptionListView .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+}
+#exceptionListView .scroll-bar:vertical .increment-arrow,
+#exceptionListView .scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* --- List Cell Styling --- */
+
+/* Style the individual dates inside the list */
+.exception-list-cell {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-size: 13px;
+    -fx-padding: 6px 10px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+/* Hover effect: Turns the row a soft cream and text reddish to indicate "delete" */
+.exception-list-cell:hover {
+    -fx-background-color: #FDF8F3;
+    -fx-text-fill: #D9534F; /* A soft red for deletion */
+}
