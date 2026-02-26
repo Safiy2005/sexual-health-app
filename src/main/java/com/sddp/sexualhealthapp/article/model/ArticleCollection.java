@@ -104,6 +104,7 @@ public class ArticleCollection {
 
             try (Stream<Path> paths = Files.walk(articlesPath, 1)) {
                 paths.filter(path -> path.toString().endsWith(".md"))
+                        .sorted()
                         .forEach(this::loadArticle);
             }
         } catch (URISyntaxException | IOException e) {

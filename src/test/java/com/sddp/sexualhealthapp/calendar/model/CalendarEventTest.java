@@ -2,6 +2,7 @@ package com.sddp.sexualhealthapp.calendar.model;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -194,5 +195,88 @@ class CalendarEventTest {
         assertTrue(str.contains("2026-03-10"));
         assertTrue(str.contains("APPOINTMENT"));
         assertTrue(str.contains(event.getId()));
+    }
+
+    // --- occursOn (AC: day cell renders / events listed / recurrence dots) ---
+
+    @Test
+    void testOccursOn_NonRecurring_MatchesExactDate() {
+        CalendarEvent event = new CalendarEvent(
+                "Check-up", LocalDate.of(2026, 3, 15),
+                LocalTime.of(10, 0), EventType.APPOINTMENT, null, null);
+
+        assertTrue(event.occursOn(LocalDate.of(2026, 3, 15)));
+    }
+
+    @Test
+    void testOccursOn_NonRecurring_DoesNotMatchDifferentDate() {
+        CalendarEvent event = new CalendarEvent(
+                "Check-up", LocalDate.of(2026, 3, 15),
+                LocalTime.of(10, 0), EventType.APPOINTMENT, null, null);
+
+        assertFalse(event.occursOn(LocalDate.of(2026, 3, 16)));
+    }
+
+    @Test
+    void testOccursOn_DailyRecurrence_MatchesSubsequentDays() {
+        CalendarEvent event = new CalendarEvent(
+                "PrEP Dose", LocalDate.of(2026, 2, 1),
+                LocalTime.of(8, 0), EventType.MEDICATION, null, null);
+        event.setRecurrenceRule(RecurrenceRule.daily());
+
+        assertTrue(event.occursOn(LocalDate.of(2026, 2, 1)));
+        assertTrue(event.occursOn(LocalDate.of(2026, 2, 15)));
+        assertTrue(event.occursOn(LocalDate.of(2026, 3, 10)));
+    }
+
+    @Test
+    void testOccursOn_DailyRecurrence_DoesNotMatchBeforeStart() {
+        CalendarEvent event = new CalendarEvent(
+                "PrEP Dose", LocalDate.of(2026, 2, 10),
+                LocalTime.of(8, 0), EventType.MEDICATION, null, null);
+        event.setRecurrenceRule(RecurrenceRule.daily());
+
+        assertFalse(event.occursOn(LocalDate.of(2026, 2, 9)));
+    }
+
+    @Test
+    void testOccursOn_WeeklyRecurrence_MatchesCorrectDays() {
+        CalendarEvent event = new CalendarEvent(
+                "Counselling", LocalDate.of(2026, 2, 3),
+                LocalTime.of(16, 0), EventType.APPOINTMENT, null, null);
+        event.setRecurrenceRule(RecurrenceRule.weekly(DayOfWeek.TUESDAY, DayOfWeek.THURSDAY));
+
+        // Feb 3 is a Tuesday (start date)
+        assertTrue(event.occursOn(LocalDate.of(2026, 2, 3)));
+        // Feb 5 is a Thursday
+        assertTrue(event.occursOn(LocalDate.of(2026, 2, 5)));
+        // Feb 4 is a Wednesday — should not match
+        assertFalse(event.occursOn(LocalDate.of(2026, 2, 4)));
+    }
+
+    @Test
+    void testOccursOn_RecurrenceWithUntil_StopsAfterEndDate() {
+        CalendarEvent event = new CalendarEvent(
+                "Counselling", LocalDate.of(2026, 2, 1),
+                LocalTime.of(16, 0), EventType.APPOINTMENT, null, null);
+        event.setRecurrenceRule(RecurrenceRule.daily().until(LocalDate.of(2026, 2, 10)));
+
+        // On end date — should still occur
+        assertTrue(event.occursOn(LocalDate.of(2026, 2, 10)));
+        // After end date — should NOT occur
+        assertFalse(event.occursOn(LocalDate.of(2026, 2, 11)));
+    }
+
+    @Test
+    void testOccursOn_RecurrenceWithCount_StopsAfterOccurrences() {
+        CalendarEvent event = new CalendarEvent(
+                "Follow-up", LocalDate.of(2026, 3, 1),
+                LocalTime.of(14, 0), EventType.APPOINTMENT, null, null);
+        event.setRecurrenceRule(RecurrenceRule.daily().times(3));
+
+        assertTrue(event.occursOn(LocalDate.of(2026, 3, 1)));   // occurrence 1
+        assertTrue(event.occursOn(LocalDate.of(2026, 3, 2)));   // occurrence 2
+        assertTrue(event.occursOn(LocalDate.of(2026, 3, 3)));   // occurrence 3
+        assertFalse(event.occursOn(LocalDate.of(2026, 3, 4)));  // beyond count
     }
 }

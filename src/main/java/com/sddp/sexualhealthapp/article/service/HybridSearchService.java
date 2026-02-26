@@ -48,9 +48,17 @@ public class HybridSearchService {
             return Collections.emptyList();
         }
 
-        // Get results from both engines
+        // TF-IDF is always available instantly
         List<SearchResult> tfidfResults = tfidfService.search(query);
-        Map<Article, Double> semanticScores = semanticService.search(query);
+
+        // Non-blocking: returns empty if ONNX model is still loading in the background,
+        // so users get TF-IDF results immediately while embeddings warm up
+        Map<Article, Double> semanticScores = semanticService.searchIfReady(query, 10);
+
+        if (semanticScores.isEmpty() && !tfidfResults.isEmpty()) {
+            // Semantic not ready yet — return TF-IDF results as-is
+            return tfidfResults;
+        }
 
         // Build raw score maps
         Map<Article, Double> tfidfScoreMap = tfidfResults.stream()

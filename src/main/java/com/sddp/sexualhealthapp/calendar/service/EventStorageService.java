@@ -26,7 +26,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.EnumSet;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -34,13 +33,16 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Service for persisting and retrieving calendar events using JSON file storage.
+ * Service for persisting and retrieving calendar events using JSON file
+ * storage.
  * Events are stored in {@code src/main/resources/calendarevents/events.json}
  * relative to the project root, bundled with the application resources.
  *
- * <p>This service is the shared data layer for stories 47 (calendar view),
+ * <p>
+ * This service is the shared data layer for stories 47 (calendar view),
  * 48 (event feed), 22 (event creation), 40 (medication reminders),
- * and 49 (event detail pages).</p>
+ * and 49 (event detail pages).
+ * </p>
  */
 public class EventStorageService {
 
@@ -72,18 +74,18 @@ public class EventStorageService {
 
     private Gson createGson() {
         return new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, (JsonSerializer<LocalDate>)
-                        (src, type, ctx) -> new JsonPrimitive(src.toString()))
-                .registerTypeAdapter(LocalDate.class, (JsonDeserializer<LocalDate>)
-                        (json, type, ctx) -> LocalDate.parse(json.getAsString()))
-                .registerTypeAdapter(LocalTime.class, (JsonSerializer<LocalTime>)
-                        (src, type, ctx) -> new JsonPrimitive(src.toString()))
-                .registerTypeAdapter(LocalTime.class, (JsonDeserializer<LocalTime>)
-                        (json, type, ctx) -> LocalTime.parse(json.getAsString()))
-                .registerTypeAdapter(DayOfWeek.class, (JsonSerializer<DayOfWeek>)
-                        (src, type, ctx) -> new JsonPrimitive(src.name()))
-                .registerTypeAdapter(DayOfWeek.class, (JsonDeserializer<DayOfWeek>)
-                        (json, type, ctx) -> DayOfWeek.valueOf(json.getAsString()))
+                .registerTypeAdapter(LocalDate.class,
+                        (JsonSerializer<LocalDate>) (src, type, ctx) -> new JsonPrimitive(src.toString()))
+                .registerTypeAdapter(LocalDate.class,
+                        (JsonDeserializer<LocalDate>) (json, type, ctx) -> LocalDate.parse(json.getAsString()))
+                .registerTypeAdapter(LocalTime.class,
+                        (JsonSerializer<LocalTime>) (src, type, ctx) -> new JsonPrimitive(src.toString()))
+                .registerTypeAdapter(LocalTime.class,
+                        (JsonDeserializer<LocalTime>) (json, type, ctx) -> LocalTime.parse(json.getAsString()))
+                .registerTypeAdapter(DayOfWeek.class,
+                        (JsonSerializer<DayOfWeek>) (src, type, ctx) -> new JsonPrimitive(src.name()))
+                .registerTypeAdapter(DayOfWeek.class,
+                        (JsonDeserializer<DayOfWeek>) (json, type, ctx) -> DayOfWeek.valueOf(json.getAsString()))
                 .setPrettyPrinting()
                 .create();
     }
@@ -122,7 +124,8 @@ public class EventStorageService {
         return events.stream()
                 .filter(e -> {
                     for (int day : activeDays) {
-                        if (e.occursOn(yearMonth.atDay(day))) return true;
+                        if (e.occursOn(yearMonth.atDay(day)))
+                            return true;
                     }
                     return false;
                 })
@@ -172,7 +175,8 @@ public class EventStorageService {
      * Adds a new event and persists to file.
      */
     public boolean addEvent(CalendarEvent event) {
-        if (event == null) return false;
+        if (event == null)
+            return false;
         events.add(event);
         return saveToFile();
     }
@@ -181,7 +185,8 @@ public class EventStorageService {
      * Updates an existing event (matched by ID) and persists.
      */
     public boolean updateEvent(CalendarEvent updated) {
-        if (updated == null) return false;
+        if (updated == null)
+            return false;
         for (int i = 0; i < events.size(); i++) {
             if (events.get(i).getId().equals(updated.getId())) {
                 events.set(i, updated);
@@ -207,7 +212,8 @@ public class EventStorageService {
             return new ArrayList<>();
         }
         try (Reader reader = Files.newBufferedReader(storageFilePath, StandardCharsets.UTF_8)) {
-            Type listType = new TypeToken<List<CalendarEvent>>() {}.getType();
+            Type listType = new TypeToken<List<CalendarEvent>>() {
+            }.getType();
             List<CalendarEvent> loaded = gson.fromJson(reader, listType);
             return loaded != null ? new ArrayList<>(loaded) : new ArrayList<>();
         } catch (Exception e) {

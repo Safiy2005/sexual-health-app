@@ -11,6 +11,10 @@
 - Used Gemini API with Gemini 3 Flash
 - Used Gemini 3 Pro
 
+# Safiy
+
+- Used Claude Code
+
 ## Uses
 
 - For initial project structuring to ensure maintainability follows standard Software Engineering Procedure
@@ -27,3 +31,4 @@
 
 - Building the UI for displaying article content
 
+-  Used in SvgIcon for SVG to JavaFX Node conversion logic

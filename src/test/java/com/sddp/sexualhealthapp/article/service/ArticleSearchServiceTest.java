@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -49,7 +51,7 @@ public class ArticleSearchServiceTest {
         if (results.size() > 1) {
             for (int i = 0; i < results.size() - 1; i++) {
                 assertTrue(results.get(i).score() >= results.get(i + 1).score(),
-                    "Results should be sorted by score (descending)");
+                        "Results should be sorted by score (descending)");
             }
         }
     }
@@ -61,13 +63,13 @@ public class ArticleSearchServiceTest {
         List<SearchResult> mixedResults = searchService.search("ChLaMyDiA", 0.0);
 
         assertEquals(lowerResults.size(), upperResults.size(),
-            "Case should not affect result count");
+                "Case should not affect result count");
         assertEquals(lowerResults.size(), mixedResults.size(),
-            "Case should not affect result count");
+                "Case should not affect result count");
 
         if (!lowerResults.isEmpty()) {
             assertEquals(lowerResults.get(0).score(), upperResults.get(0).score(), 0.001,
-                "Case should not affect scores");
+                    "Case should not affect scores");
         }
     }
 
@@ -77,11 +79,11 @@ public class ArticleSearchServiceTest {
         List<SearchResult> withoutStopwords = searchService.search("symptoms", 0.0);
 
         assertEquals(withStopwords.size(), withoutStopwords.size(),
-            "Stopwords should not affect result count");
+                "Stopwords should not affect result count");
 
         if (!withStopwords.isEmpty()) {
             assertEquals(withStopwords.get(0).score(), withoutStopwords.get(0).score(), 0.001,
-                "Stopwords should not affect scores");
+                    "Stopwords should not affect scores");
         }
     }
 
@@ -93,13 +95,13 @@ public class ArticleSearchServiceTest {
             List<SearchResult> topTwo = searchService.searchTop("health", 2);
 
             assertTrue(topTwo.size() <= 2,
-                "searchTop should limit results to specified count");
+                    "searchTop should limit results to specified count");
             assertEquals(2, topTwo.size(),
-                "Should return exactly 2 results when enough matches exist");
+                    "Should return exactly 2 results when enough matches exist");
         } else {
             List<SearchResult> topTwo = searchService.searchTop("health", 2);
             assertTrue(topTwo.size() <= allResults.size(),
-                "Should not return more results than available");
+                    "Should not return more results than available");
         }
     }
 
@@ -123,7 +125,7 @@ public class ArticleSearchServiceTest {
         List<SearchResult> lowThreshold = searchService.search("infection", 0.01);
 
         assertTrue(lowThreshold.size() >= highThreshold.size(),
-            "Lower threshold should return same or more results");
+                "Lower threshold should return same or more results");
     }
 
     @Test
@@ -139,7 +141,7 @@ public class ArticleSearchServiceTest {
 
         if (results.size() >= 2) {
             assertTrue(results.get(0).compareTo(results.get(1)) <= 0,
-                "SearchResult should implement Comparable correctly");
+                    "SearchResult should implement Comparable correctly");
         }
     }
 
@@ -147,10 +149,8 @@ public class ArticleSearchServiceTest {
     void testSearch_DefaultMinScore() {
         List<SearchResult> results = searchService.search("health");
 
-        results.forEach(result ->
-            assertTrue(result.score() >= 0.01,
-                "Results with default min score should all be >= 0.01")
-        );
+        results.forEach(result -> assertTrue(result.score() >= 0.01,
+                "Results with default min score should all be >= 0.01"));
     }
 
     @Test
@@ -161,13 +161,13 @@ public class ArticleSearchServiceTest {
             SearchResult firstResult = results.get(0);
 
             assertNotNull(firstResult.fieldScores(),
-                "Field scores should be present");
+                    "Field scores should be present");
             assertTrue(firstResult.fieldScores().containsKey("title"),
-                "Should have title field score");
+                    "Should have title field score");
             assertTrue(firstResult.fieldScores().containsKey("headings"),
-                "Should have headings field score");
+                    "Should have headings field score");
             assertTrue(firstResult.fieldScores().containsKey("content"),
-                "Should have content field score");
+                    "Should have content field score");
         }
     }
 
@@ -180,7 +180,23 @@ public class ArticleSearchServiceTest {
             int percent = result.getRelevancePercent();
 
             assertTrue(percent >= 0,
-                "Relevance percent should be non-negative");
+                    "Relevance percent should be non-negative");
+        }
+    }
+
+    @Test
+    void testSearch_NoDuplicateArticles() {
+        String[] queries = { "health", "chlamydia", "treatment", "symptoms", "infection", "mental health p" };
+
+        for (String query : queries) {
+            List<SearchResult> results = searchService.search(query, 0.0);
+
+            Set<String> uniqueTitles = results.stream()
+                    .map(r -> r.article().getTitle())
+                    .collect(Collectors.toSet());
+
+            assertEquals(uniqueTitles.size(), results.size(),
+                    "Search for '" + query + "' returned duplicate articles");
         }
     }
 }
