@@ -89,6 +89,41 @@
                     <Label fx:id="intervalLabel" text="days" styleClass="calendar-event-card-time"/>
                 </HBox>
             </VBox>
+            <HBox fx:id="weeklyDaysContainer" spacing="6" visible="false" managed="false" alignment="CENTER_LEFT">
+                <ToggleButton fx:id="btnMon" text="M" styleClass="day-toggle"/>
+                <ToggleButton fx:id="btnTue" text="T" styleClass="day-toggle"/>
+                <ToggleButton fx:id="btnWed" text="W" styleClass="day-toggle"/>
+                <ToggleButton fx:id="btnThu" text="T" styleClass="day-toggle"/>
+                <ToggleButton fx:id="btnFri" text="F" styleClass="day-toggle"/>
+                <ToggleButton fx:id="btnSat" text="S" styleClass="day-toggle"/>
+                <ToggleButton fx:id="btnSun" text="S" styleClass="day-toggle"/>
+            </HBox>
+
+            <VBox fx:id="monthlyOptionsContainer" spacing="10" visible="false" managed="false">
+                <RadioButton fx:id="radioSameDay" text="On the same day each month"
+                             selected="true" styleClass="custom-radio"/>
+                <RadioButton fx:id="radioNthWeekday" text="On the same weekday (e.g., 2nd Tue)"
+                             styleClass="custom-radio"/>
+                <RadioButton fx:id="radioLastDay" text="On the last day of the month"
+                             styleClass="custom-radio"/>
+            </VBox>
+
+            <VBox fx:id="exceptionsContainer" spacing="5" visible="false" managed="false">
+                <Label text="Exclude Dates (Optional)" styleClass="calendar-event-card-title"/>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+
+                    <DatePicker fx:id="exceptionDatePicker" promptText="Select date..."
+                                maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                styleClass="calendar-picker-combo"/>
+
+                    <Button text="Exclude" onAction="#handleAddException"
+                            minWidth="85" styleClass="calendar-action-button-primary"/>
+
+                </HBox>
+
+                <ListView fx:id="exceptionListView" prefHeight="70" styleClass="search-field"/>
+            </VBox>
 
             <VBox fx:id="endConditionContainer" spacing="4" alignment="CENTER_LEFT" visible="false" managed="false">
                 <Label text="Ends" styleClass="calendar-event-card-title"/>

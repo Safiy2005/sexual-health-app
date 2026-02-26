@@ -5,17 +5,12 @@ import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.Spinner;
+
 import java.time.LocalDate;
-import javafx.scene.control.SpinnerValueFactory;
-import javafx.scene.control.CheckBox;
+
 import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 
 /**
@@ -48,7 +43,15 @@ public class CreateEventController {
     @FXML private CheckBox allDayCheckBox;
     @FXML private HBox timeSpinnerContainer;
     @FXML private Label errorLabel;
+    @FXML private HBox weeklyDaysContainer;
+    @FXML private ToggleButton btnMon, btnTue, btnWed, btnThu, btnFri, btnSat, btnSun;
+    @FXML private VBox monthlyOptionsContainer;
+    @FXML private RadioButton radioSameDay, radioNthWeekday, radioLastDay;
+    @FXML private VBox exceptionsContainer;
+    @FXML private DatePicker exceptionDatePicker;
+    @FXML private ListView<LocalDate> exceptionListView;
 
+    private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections.observableArrayList();
     private EventStorageService storageService;     // for the json
     private Runnable onBackToCalendar;
 
@@ -63,9 +66,17 @@ public class CreateEventController {
 
         centerDatePickerPopup(datePicker);
         centerDatePickerPopup(endDatePicker);
-
         endDatePicker.setOnMouseClicked(e -> endDatePicker.show());
         endDatePicker.getEditor().setOnMouseClicked(e -> endDatePicker.show()); // <-- Tells the text to open it
+        // Hide week numbers to prevent the cells from squishing and truncating text
+        datePicker.setShowWeekNumbers(false);
+        endDatePicker.setShowWeekNumbers(false);
+
+        exceptionDatePicker.setOnMouseClicked(e -> exceptionDatePicker.show());
+        exceptionDatePicker.getEditor().setOnMouseClicked(e -> exceptionDatePicker.show());
+        centerDatePickerPopup(exceptionDatePicker);
+        exceptionDatePicker.setShowWeekNumbers(false);
+
 
         hourSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 12));     // set up the valules in the time selection spinners
         minuteSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, 0, 5));
@@ -101,25 +112,7 @@ public class CreateEventController {
                 dosageField.clear();
             }
         });
-        //listener for the repeat box
-        recurrenceComboBox.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
-            boolean isRepeating = (newVal != null && !newVal.equals("Does not repeat"));
 
-            intervalContainer.setVisible(isRepeating);
-            intervalContainer.setManaged(isRepeating);
-
-            endConditionContainer.setVisible(isRepeating);
-            endConditionContainer.setManaged(isRepeating);
-
-            if (isRepeating) {
-                switch (newVal) {
-                    case "Daily": intervalLabel.setText("days"); break;
-                    case "Weekly": intervalLabel.setText("weeks"); break;
-                    case "Monthly": intervalLabel.setText("months"); break;
-                    case "Yearly": intervalLabel.setText("years"); break;
-                }
-            }
-        });
         endTypeComboBox.getItems().addAll("Never", "On date", "After occurrences");
         endTypeComboBox.getSelectionModel().selectFirst();
 
@@ -133,7 +126,43 @@ public class CreateEventController {
             occurrenceContainer.setVisible(isAfter);
             occurrenceContainer.setManaged(isAfter);
         });
+        // Group monthly radio buttons
+        ToggleGroup monthlyGroup = new ToggleGroup();
+        radioSameDay.setToggleGroup(monthlyGroup);
+        radioNthWeekday.setToggleGroup(monthlyGroup);
+        radioLastDay.setToggleGroup(monthlyGroup);
 
+        // Bind exception list view
+        exceptionListView.setItems(exceptionDates);
+
+        // UPDATE this listener to dynamically show/hide the advanced options
+        recurrenceComboBox.getSelectionModel().selectedItemProperty().addListener((obs, oldV, newVal) -> {
+            boolean isRepeating = (newVal != null && !newVal.equals("Does not repeat"));
+            boolean isWeekly = "Weekly".equals(newVal);
+            boolean isMonthly = "Monthly".equals(newVal);
+
+            intervalContainer.setVisible(isRepeating);
+            intervalContainer.setManaged(isRepeating);
+            endConditionContainer.setVisible(isRepeating);
+            endConditionContainer.setManaged(isRepeating);
+            exceptionsContainer.setVisible(isRepeating);
+            exceptionsContainer.setManaged(isRepeating);
+
+            weeklyDaysContainer.setVisible(isWeekly);
+            weeklyDaysContainer.setManaged(isWeekly);
+            monthlyOptionsContainer.setVisible(isMonthly);
+            monthlyOptionsContainer.setManaged(isMonthly);
+
+            if (isRepeating) {
+                intervalLabel.setText(switch (newVal) {
+                    case "Daily" -> "days";
+                    case "Weekly" -> "weeks";
+                    case "Monthly" -> "months";
+                    case "Yearly" -> "years";
+                    default -> "";
+                });
+            }
+        });
 
 
     }
@@ -155,7 +184,6 @@ public class CreateEventController {
             onBackToCalendar.run();
         }
     }
-
     @FXML private void handleSaveEvent(ActionEvent event){
         // 1. Reset visual states
         titleField.getStyleClass().remove("input-error");
@@ -187,19 +215,18 @@ public class CreateEventController {
         }
 
         if (hasError) {
-            // Clean up trailing comma and show error
             String finalMsg = errorMessage.substring(0, errorMessage.length() - 2);
             errorLabel.setText(finalMsg);
             errorLabel.setVisible(true);
             errorLabel.setManaged(true);
-            return; // Stop the save
+            return;
         }
-        // get inputs
+
+        // 3. Get inputs
         String title = titleField.getText();
         LocalDate date = datePicker.getValue();
         EventType type = typeComboBox.getValue();
 
-        // gets time if not set to all day
         java.time.LocalTime time = null;
         if (!allDayCheckBox.isSelected()) {
             time = java.time.LocalTime.of(
@@ -213,47 +240,71 @@ public class CreateEventController {
 
         CalendarEvent newEvent = new CalendarEvent(title, date, time, type, description, dosage);
 
-        String recurrenceSelection = recurrenceComboBox.getValue();
-        if (recurrenceSelection != null && !recurrenceSelection.equals("Does not repeat")) {
+        // 4. Delegate to our new advanced recurrence helper
+        applyRecurrence(newEvent);
 
-            // Simply grab the guaranteed valid integer from the spinner!
-            int interval = intervalSpinner.getValueFactory().getValue();
-            RecurrenceRule rule = switch (recurrenceSelection) {
-                case "Daily" -> RecurrenceRule.daily(interval);
-                case "Weekly" -> RecurrenceRule.weekly(interval);
-                case "Monthly" -> RecurrenceRule.monthlyOnDay(interval);
-                case "Yearly" -> RecurrenceRule.yearly(interval);
-                default -> null;
-            };
-
-
-            if (rule != null) {     // this if avoids nullpointer exceptions
-                String endType = endTypeComboBox.getValue();
-                if ("On date".equals(endType)) {
-                    LocalDate endDate = endDatePicker.getValue();
-                    // We still need to check if the date is valid/empty
-                    if (endDate == null || endDate.isBefore(date)) {
-                        System.out.println("Validation failed: Please select a valid end date that is after the start date.");
-                        return;
-                    }
-                    rule.until(endDate);
-
-                } else if ("After occurrences".equals(endType)) {
-                    // Simply grab the guaranteed valid integer!
-                    int count = occurrenceCountSpinner.getValueFactory().getValue();
-                    rule.times(count);
-                }
-            }
-
-            // attach the rule to the event
-            newEvent.setRecurrenceRule(rule);
-        }
-
+        // 5. Save
         storageService.addEvent(newEvent);
         System.out.println("Full event saved successfully!");
 
         handleBackToCalendar(event);
     }
+
+    // --- NEW METHOD: Advanced Recurrence Logic ---
+    private void applyRecurrence(CalendarEvent event) {
+        String selection = recurrenceComboBox.getValue();
+        if (selection == null || "Does not repeat".equals(selection)) return;
+
+        int interval = intervalSpinner.getValueFactory().getValue();
+        RecurrenceRule rule = null;
+
+        switch (selection) {
+            case "Daily" -> rule = RecurrenceRule.daily(interval);
+            case "Weekly" -> {
+                java.util.List<java.time.DayOfWeek> days = new java.util.ArrayList<>();
+                if (btnMon.isSelected()) days.add(java.time.DayOfWeek.MONDAY);
+                if (btnTue.isSelected()) days.add(java.time.DayOfWeek.TUESDAY);
+                if (btnWed.isSelected()) days.add(java.time.DayOfWeek.WEDNESDAY);
+                if (btnThu.isSelected()) days.add(java.time.DayOfWeek.THURSDAY);
+                if (btnFri.isSelected()) days.add(java.time.DayOfWeek.FRIDAY);
+                if (btnSat.isSelected()) days.add(java.time.DayOfWeek.SATURDAY);
+                if (btnSun.isSelected()) days.add(java.time.DayOfWeek.SUNDAY);
+
+                java.time.DayOfWeek[] daysArray = days.toArray(new java.time.DayOfWeek[0]);
+                rule = RecurrenceRule.weekly(interval, daysArray);
+            }
+            case "Monthly" -> {
+                if (radioLastDay.isSelected()) {
+                    rule = RecurrenceRule.monthlyOnLastDay(interval);
+                } else if (radioNthWeekday.isSelected()) {
+                    rule = RecurrenceRule.monthlyOnNthWeekday(interval);
+                } else {
+                    rule = RecurrenceRule.monthlyOnDay(interval);
+                }
+            }
+            case "Yearly" -> rule = RecurrenceRule.yearly(interval);
+        }
+
+        if (rule != null) {
+            String endType = endTypeComboBox.getValue();
+            if ("On date".equals(endType)) {
+                LocalDate endDate = endDatePicker.getValue();
+                if (endDate != null && !endDate.isBefore(event.getDate())) {
+                    rule.until(endDate);
+                }
+            } else if ("After occurrences".equals(endType)) {
+                rule.times(occurrenceCountSpinner.getValueFactory().getValue());
+            }
+
+            // Apply Exceptions using the Set setter from RecurrenceRule.java
+            if (!exceptionDates.isEmpty()) {
+                rule.setExcludedDates(new java.util.HashSet<>(exceptionDates));
+            }
+
+            event.setRecurrenceRule(rule);
+        }
+    }
+
     // clears contents after leaving the create page
     private void clearForm() {
         titleField.clear();
@@ -269,8 +320,21 @@ public class CreateEventController {
         intervalSpinner.getValueFactory().setValue(1);
         occurrenceCountSpinner.getValueFactory().setValue(10);
         allDayCheckBox.setSelected(false);
-    }
 
+        // Clear advanced UI elements
+        btnMon.setSelected(false); btnTue.setSelected(false); btnWed.setSelected(false);
+        btnThu.setSelected(false); btnFri.setSelected(false); btnSat.setSelected(false); btnSun.setSelected(false);
+        radioSameDay.setSelected(true);
+        exceptionDates.clear();
+    }
+    @FXML
+    private void handleAddException() {
+        LocalDate skipDate = exceptionDatePicker.getValue();
+        if (skipDate != null && !exceptionDates.contains(skipDate)) {
+            exceptionDates.add(skipDate);
+            exceptionDatePicker.setValue(null); // Reset picker
+        }
+    }
     // has calendar pickers centred popups instead of dynamic drops downs that can fall off the window
     private void centerDatePickerPopup(DatePicker picker) {
         picker.setOnShowing(ev -> {

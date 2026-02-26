@@ -1338,10 +1338,9 @@
 /* 4. The Calendar Grid Background */
 .date-picker-popup .calendar-grid {
     -fx-background-color: white;
-    /* NEW: Reduced from 8px to save horizontal space */
-    -fx-padding: 4px;
+    /* INCREASED: Pushes the outer edges of the grid wider */
+    -fx-padding: 12px 14px;
 }
-
 /* 5. The Day Names (Mon, Tue, Wed...) */
 .date-picker-popup .day-name-cell {
     -fx-text-fill: #9AABAB;
@@ -1356,8 +1355,15 @@
     -fx-text-fill: #3D5A5B;
     -fx-font-size: 13px;
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    /* NEW: Reduced from 8px to 6px so the 7 columns don't force the window wide */
-    -fx-padding: 6px;
+
+    /* 1. DECREASE horizontal padding so text has maximum room to breathe */
+    -fx-padding: 8px 2px;
+
+    /* 2. EXPLICITLY FORCE the cells to be wider and taller.
+       This is what will actually stretch the whole calendar window outward! */
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+
     -fx-background-color: transparent;
     -fx-background-radius: 8px;
     -fx-cursor: hand;
@@ -1401,4 +1407,55 @@
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-padding: 5 0 0 0;
+}
+.day-toggle {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3D5A5B;
+    -fx-border-color: #C8BFB6;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 32px;
+    -fx-cursor: hand;
+}
+.day-toggle:selected {
+    -fx-background-color: #3D5A5B;
+    -fx-text-fill: white;
+    -fx-border-color: #3D5A5B;
+}
+/* --- CUSTOM RADIO BUTTONS --- */
+
+/* 1. Style the text and cursor */
+.custom-radio {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-cursor: hand;
+}
+
+/* 2. Style the outer unselected circle */
+.custom-radio .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: #C8BFB6;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 3px; /* Controls the size of the outer ring */
+}
+
+/* 3. Change the outer circle's border color when selected */
+.custom-radio:selected .radio {
+    -fx-border-color: #3D5A5B;
+}
+
+/* 4. Style the inner dot when selected */
+.custom-radio:selected .radio .dot {
+    -fx-background-color: #3D5A5B;
+    -fx-background-radius: 12px;
+    -fx-padding: 4px; /* Controls the size of the inner filled dot */
+}
+
+/* 5. Hide the default inner dot when NOT selected */
+.custom-radio .radio .dot {
+    -fx-background-color: transparent;
 }
