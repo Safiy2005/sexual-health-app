@@ -105,7 +105,10 @@ public class MainAppController {
         articleViewController.setOnBackToSearch(this::handleBackToSearch);
 
         // Wire calendar navigation callbacks
-        calendarViewController.setOnGoToEventFeed(() -> showView(eventFeedView, calendarView));
+        calendarViewController.setOnGoToEventFeed(() -> {
+            eventFeedViewController.refresh();
+            showView(eventFeedView, calendarView);
+        });
         calendarViewController.setOnGoToNewEvent(() -> showView(createEventView, calendarView));
 
         // Wire stub view back-navigation callbacks
