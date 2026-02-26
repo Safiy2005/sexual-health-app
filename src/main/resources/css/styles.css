@@ -1159,6 +1159,47 @@
     -fx-text-fill: #9AABAB;
 }
 
+.calendar-event-card-date {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7A9191;
+    -fx-padding: 0 0 2px 0;
+}
+
+/* Grouped event feed section/header styling */
+.event-feed-section-row {
+    -fx-alignment: center-left;
+    -fx-padding: 18px 0 8px 0;
+    -fx-min-height: 30px;
+}
+
+.event-feed-section-header {
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C7777;
+    -fx-padding: 0 6px 0 0;
+}
+
+.event-feed-section-divider {
+    -fx-background-color: #D7E6E4;
+    -fx-pref-height: 1px;
+    -fx-max-height: 1px;
+    -fx-min-height: 1px;
+}
+
+.event-feed-day-header {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7A9191;
+    -fx-padding: 2px 0 2px 2px;
+}
+
+.event-feed-card {
+    -fx-padding: 8px 12px;
+}
+
 /* Action bar between calendar grid and day events */
 .calendar-action-bar {
     -fx-background-color: transparent;
