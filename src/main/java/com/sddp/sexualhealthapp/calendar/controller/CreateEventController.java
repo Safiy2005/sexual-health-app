@@ -9,7 +9,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import java.time.format.DateTimeFormatter;
-import javafx.scene.control.ListCell;
 import java.time.LocalDate;
 
 import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
@@ -18,42 +17,69 @@ import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
  * Stub controller for the create-event view (story 22).
  * Provides navigation back to the calendar; the full event creation
  * form will be implemented by the assigned teammate.
- * TODO (Oli): Implement stories 22.1-22.3 — event creation form,
  * validation, and persistence.
  */
 public class CreateEventController {
 
     // must match feild names in the fxml file
-    @FXML private TextField titleField;
-    @FXML private DatePicker datePicker;
-    @FXML private ComboBox<EventType> typeComboBox;
-    @FXML private Spinner<Integer> hourSpinner;
-    @FXML private Spinner<Integer> minuteSpinner;
-    @FXML private VBox dosageContainer;
-    @FXML private TextField dosageField;
-    @FXML private TextArea descriptionArea;
-    @FXML private ComboBox<String> recurrenceComboBox;
-    @FXML private HBox intervalContainer;
-    @FXML private Spinner<Integer> intervalSpinner;
-    @FXML private Spinner<Integer> occurrenceCountSpinner;
-    @FXML private Label intervalLabel;
-    @FXML private VBox endConditionContainer;
-    @FXML private ComboBox<String> endTypeComboBox;
-    @FXML private DatePicker endDatePicker;
-    @FXML private HBox occurrenceContainer;
-    @FXML private CheckBox allDayCheckBox;
-    @FXML private HBox timeSpinnerContainer;
-    @FXML private Label errorLabel;
-    @FXML private HBox weeklyDaysContainer;
-    @FXML private ToggleButton btnMon, btnTue, btnWed, btnThu, btnFri, btnSat, btnSun;
-    @FXML private VBox monthlyOptionsContainer;
-    @FXML private RadioButton radioSameDay, radioNthWeekday, radioLastDay;
-    @FXML private VBox exceptionsContainer;
-    @FXML private DatePicker exceptionDatePicker;
-    @FXML private ListView<LocalDate> exceptionListView;
+    @FXML
+    private TextField titleField;
+    @FXML
+    private DatePicker datePicker;
+    @FXML
+    private ComboBox<EventType> typeComboBox;
+    @FXML
+    private Spinner<Integer> hourSpinner;
+    @FXML
+    private Spinner<Integer> minuteSpinner;
+    @FXML
+    private VBox dosageContainer;
+    @FXML
+    private TextField dosageField;
+    @FXML
+    private TextArea descriptionArea;
+    @FXML
+    private ComboBox<String> recurrenceComboBox;
+    @FXML
+    private HBox intervalContainer;
+    @FXML
+    private Spinner<Integer> intervalSpinner;
+    @FXML
+    private Spinner<Integer> occurrenceCountSpinner;
+    @FXML
+    private Label intervalLabel;
+    @FXML
+    private VBox endConditionContainer;
+    @FXML
+    private ComboBox<String> endTypeComboBox;
+    @FXML
+    private DatePicker endDatePicker;
+    @FXML
+    private HBox occurrenceContainer;
+    @FXML
+    private CheckBox allDayCheckBox;
+    @FXML
+    private HBox timeSpinnerContainer;
+    @FXML
+    private Label errorLabel;
+    @FXML
+    private HBox weeklyDaysContainer;
+    @FXML
+    private ToggleButton btnMon, btnTue, btnWed, btnThu, btnFri, btnSat, btnSun;
+    @FXML
+    private VBox monthlyOptionsContainer;
+    @FXML
+    private RadioButton radioSameDay, radioNthWeekday, radioLastDay;
+    @FXML
+    private VBox exceptionsContainer;
+    @FXML
+    private DatePicker exceptionDatePicker;
+    @FXML
+    private ListView<LocalDate> exceptionListView;
 
-    private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections.observableArrayList();
-    private EventStorageService storageService;     // for the json
+    private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections
+            .observableArrayList();
+    private EventStorageService storageService; // for the json
     private Runnable onBackToCalendar;
 
     @FXML
@@ -61,7 +87,7 @@ public class CreateEventController {
         typeComboBox.getItems().setAll(EventType.values()); // sets dropdown to have values from the model eventtyp
         storageService = new EventStorageService();
 
-        //makes the whole date bar open the calendar picker, wouldnt before
+        // makes the whole date bar open the calendar picker, wouldnt before
         datePicker.setOnMouseClicked(e -> datePicker.show());
         datePicker.getEditor().setOnMouseClicked(e -> datePicker.show()); // <-- Tells the text to open it
 
@@ -78,8 +104,8 @@ public class CreateEventController {
         centerDatePickerPopup(exceptionDatePicker);
         exceptionDatePicker.setShowWeekNumbers(false);
 
-
-        hourSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 12));     // set up the valules in the time selection spinners
+        // set up the valules in the time selection spinners
+        hourSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 12));
         minuteSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, 0, 5));
 
         intervalSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 999, 1));
@@ -90,8 +116,7 @@ public class CreateEventController {
                 "Daily",
                 "Weekly",
                 "Monthly",
-                "Yearly"
-        );
+                "Yearly");
         // Set the default to "Does not repeat" so it isn't blank
         recurrenceComboBox.getSelectionModel().selectFirst();
 
@@ -193,9 +218,7 @@ public class CreateEventController {
             }
         });
 
-
     }
-
 
     /**
      * Sets the callback to navigate back to the calendar view.
@@ -213,7 +236,9 @@ public class CreateEventController {
             onBackToCalendar.run();
         }
     }
-    @FXML private void handleSaveEvent(ActionEvent event){
+
+    @FXML
+    private void handleSaveEvent(ActionEvent event) {
         // 1. Reset visual states
         titleField.getStyleClass().remove("input-error");
         datePicker.getStyleClass().remove("input-error");
@@ -260,8 +285,7 @@ public class CreateEventController {
         if (!allDayCheckBox.isSelected()) {
             time = java.time.LocalTime.of(
                     hourSpinner.getValueFactory().getValue(),
-                    minuteSpinner.getValueFactory().getValue()
-            );
+                    minuteSpinner.getValueFactory().getValue());
         }
 
         String description = descriptionArea.getText().trim().isEmpty() ? null : descriptionArea.getText();
@@ -282,7 +306,8 @@ public class CreateEventController {
     // --- NEW METHOD: Advanced Recurrence Logic ---
     private void applyRecurrence(CalendarEvent event) {
         String selection = recurrenceComboBox.getValue();
-        if (selection == null || "Does not repeat".equals(selection)) return;
+        if (selection == null || "Does not repeat".equals(selection))
+            return;
 
         int interval = intervalSpinner.getValueFactory().getValue();
         RecurrenceRule rule = null;
@@ -291,13 +316,20 @@ public class CreateEventController {
             case "Daily" -> rule = RecurrenceRule.daily(interval);
             case "Weekly" -> {
                 java.util.List<java.time.DayOfWeek> days = new java.util.ArrayList<>();
-                if (btnMon.isSelected()) days.add(java.time.DayOfWeek.MONDAY);
-                if (btnTue.isSelected()) days.add(java.time.DayOfWeek.TUESDAY);
-                if (btnWed.isSelected()) days.add(java.time.DayOfWeek.WEDNESDAY);
-                if (btnThu.isSelected()) days.add(java.time.DayOfWeek.THURSDAY);
-                if (btnFri.isSelected()) days.add(java.time.DayOfWeek.FRIDAY);
-                if (btnSat.isSelected()) days.add(java.time.DayOfWeek.SATURDAY);
-                if (btnSun.isSelected()) days.add(java.time.DayOfWeek.SUNDAY);
+                if (btnMon.isSelected())
+                    days.add(java.time.DayOfWeek.MONDAY);
+                if (btnTue.isSelected())
+                    days.add(java.time.DayOfWeek.TUESDAY);
+                if (btnWed.isSelected())
+                    days.add(java.time.DayOfWeek.WEDNESDAY);
+                if (btnThu.isSelected())
+                    days.add(java.time.DayOfWeek.THURSDAY);
+                if (btnFri.isSelected())
+                    days.add(java.time.DayOfWeek.FRIDAY);
+                if (btnSat.isSelected())
+                    days.add(java.time.DayOfWeek.SATURDAY);
+                if (btnSun.isSelected())
+                    days.add(java.time.DayOfWeek.SUNDAY);
 
                 java.time.DayOfWeek[] daysArray = days.toArray(new java.time.DayOfWeek[0]);
                 rule = RecurrenceRule.weekly(interval, daysArray);
@@ -351,11 +383,17 @@ public class CreateEventController {
         allDayCheckBox.setSelected(false);
 
         // Clear advanced UI elements
-        btnMon.setSelected(false); btnTue.setSelected(false); btnWed.setSelected(false);
-        btnThu.setSelected(false); btnFri.setSelected(false); btnSat.setSelected(false); btnSun.setSelected(false);
+        btnMon.setSelected(false);
+        btnTue.setSelected(false);
+        btnWed.setSelected(false);
+        btnThu.setSelected(false);
+        btnFri.setSelected(false);
+        btnSat.setSelected(false);
+        btnSun.setSelected(false);
         radioSameDay.setSelected(true);
         exceptionDates.clear();
     }
+
     @FXML
     private void handleAddException() {
         LocalDate skipDate = exceptionDatePicker.getValue();
@@ -364,7 +402,9 @@ public class CreateEventController {
             exceptionDatePicker.setValue(null); // Reset picker
         }
     }
-    // has calendar pickers centred popups instead of dynamic drops downs that can fall off the window
+
+    // has calendar pickers centred popups instead of dynamic drops downs that can
+    // fall off the window
     private void centerDatePickerPopup(DatePicker picker) {
         picker.setOnShowing(ev -> {
             // We use Platform.runLater to ensure the popup has been
@@ -372,7 +412,8 @@ public class CreateEventController {
             javafx.application.Platform.runLater(() -> {
                 // Find the skin and the popup content
                 if (picker.getSkin() instanceof javafx.scene.control.skin.DatePickerSkin) {
-                    javafx.scene.Node popupContent = ((javafx.scene.control.skin.DatePickerSkin) picker.getSkin()).getPopupContent();
+                    javafx.scene.Node popupContent = ((javafx.scene.control.skin.DatePickerSkin) picker.getSkin())
+                            .getPopupContent();
 
                     if (popupContent != null && popupContent.getScene() != null) {
                         javafx.stage.Window popupWindow = popupContent.getScene().getWindow();
@@ -380,7 +421,8 @@ public class CreateEventController {
 
                         // Calculate center coordinates
                         double centerX = mainWindow.getX() + (mainWindow.getWidth() / 2) - (popupWindow.getWidth() / 2);
-                        double centerY = mainWindow.getY() + (mainWindow.getHeight() / 2) - (popupWindow.getHeight() / 2);
+                        double centerY = mainWindow.getY() + (mainWindow.getHeight() / 2)
+                                - (popupWindow.getHeight() / 2);
 
                         // Position the window
                         popupWindow.setX(centerX);
@@ -391,4 +433,3 @@ public class CreateEventController {
         });
     }
 }
-
