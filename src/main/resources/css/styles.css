@@ -911,7 +911,7 @@
     -fx-background-color: transparent;
     -fx-cursor: hand;
 }
-.nav-lock-item:hover {
+.nav-item:hover {
     -fx-background-color: rgba(0,0,0,0.04);
 }
 .nav-lock-item:pressed {
