@@ -303,7 +303,6 @@ public class CreateEventController {
         handleBackToCalendar(event);
     }
 
-    // --- NEW METHOD: Advanced Recurrence Logic ---
     private void applyRecurrence(CalendarEvent event) {
         String selection = recurrenceComboBox.getValue();
         if (selection == null || "Does not repeat".equals(selection))
