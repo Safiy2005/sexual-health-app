@@ -7,6 +7,7 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 
 import java.io.IOException;
@@ -48,6 +49,7 @@ public class EventStorageService {
 
     private static final String DATA_DIR = "src/main/resources/calendarevents";
     private static final String EVENTS_FILE = "events.json";
+    private static EventStorageService instance;
 
     private final Path storageFilePath;
     private final Gson gson;
@@ -56,9 +58,21 @@ public class EventStorageService {
     /**
      * Production constructor. Reads/writes events from
      * {@code src/main/resources/calendarevents/events.json}.
+     *
+     * <p>Use {@link #getInstance()} for app runtime.</p>
      */
-    public EventStorageService() {
+    private EventStorageService() {
         this(Paths.get(DATA_DIR, EVENTS_FILE));
+    }
+
+    /**
+     * Returns the shared application instance.
+     */
+    public static EventStorageService getInstance() {
+        if (instance == null) {
+            instance = new EventStorageService();
+        }
+        return instance;
     }
 
     /**
@@ -95,6 +109,13 @@ public class EventStorageService {
      */
     public List<CalendarEvent> getAllEvents() {
         return Collections.unmodifiableList(events);
+    }
+
+    /**
+     * Reloads all events from disk into memory.
+     */
+    public void reloadFromDisk() {
+        this.events = loadFromFile();
     }
 
     /**
@@ -160,6 +181,41 @@ public class EventStorageService {
         }
 
         return result;
+    }
+
+    /**
+     * Expands all events (including recurring) into concrete
+     * {@link EventOccurrence}s within the date window
+     * [{@code from}, {@code until}] (both inclusive), sorted
+     * chronologically by occurrence date then time.
+     *
+     * <p>
+     * Because recurring events can repeat indefinitely, callers
+     * should request bounded windows and paginate as needed (the event
+     * feed loads successive windows on scroll).
+     * </p>
+     *
+     * @param from  the inclusive start date of the window
+     * @param until the inclusive end date of the window
+     * @return a chronologically sorted list of occurrences in the window
+     */
+    public List<EventOccurrence> getUpcomingOccurrences(LocalDate from, LocalDate until) {
+        List<EventOccurrence> occurrences = new ArrayList<>();
+
+        for (LocalDate date = from; !date.isAfter(until); date = date.plusDays(1)) {
+            for (CalendarEvent event : events) {
+                if (event.occursOn(date)) {
+                    occurrences.add(new EventOccurrence(event, date));
+                }
+            }
+        }
+
+        occurrences.sort(Comparator
+                .comparing(EventOccurrence::occurrenceDate)
+                .thenComparing(o -> o.event().getTime(),
+                        Comparator.nullsLast(Comparator.naturalOrder())));
+
+        return occurrences;
     }
 
     /**

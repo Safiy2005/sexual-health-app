@@ -64,7 +64,6 @@ public class CalendarController {
     @FXML
     private ComboBox<Integer> yearComboBox;
 
-    private EventStorageService eventStorageService;
     private YearMonth currentYearMonth;
     private LocalDate selectedDate;
     private boolean pickerVisible = false;
@@ -75,7 +74,6 @@ public class CalendarController {
 
     @FXML
     private void initialize() {
-        eventStorageService = new EventStorageService();
         currentYearMonth = YearMonth.now();
         selectedDate = LocalDate.now();
 
@@ -157,7 +155,8 @@ public class CalendarController {
         syncPickerToCurrentMonth();
 
         // Get event type indicators for this month
-        Map<Integer, Set<EventType>> eventTypesPerDay = eventStorageService.getEventTypesPerDay(currentYearMonth);
+        Map<Integer, Set<EventType>> eventTypesPerDay = EventStorageService.getInstance()
+                .getEventTypesPerDay(currentYearMonth);
 
         // Calculate the column offset for the 1st of the month (Monday=0 ... Sunday=6)
         LocalDate firstOfMonth = currentYearMonth.atDay(1);
@@ -289,7 +288,7 @@ public class CalendarController {
         dateHeader.getStyleClass().add("calendar-selected-date-header");
         dayEventsContainer.getChildren().add(dateHeader);
 
-        List<CalendarEvent> dayEvents = eventStorageService.getEventsForDate(selectedDate);
+        List<CalendarEvent> dayEvents = EventStorageService.getInstance().getEventsForDate(selectedDate);
 
         if (dayEvents.isEmpty()) {
             Label noEvents = new Label("No events");
@@ -305,38 +304,10 @@ public class CalendarController {
 
     /**
      * Creates a simple event card for the day events list.
-     * Shows the event name, type badge, and time.
+     * Delegates to the shared {@link EventCardFactory}.
      */
     private VBox createEventCard(CalendarEvent event) {
-        VBox card = new VBox(4);
-        card.getStyleClass().add("calendar-event-card");
-
-        Label nameLabel = new Label(event.getName());
-        nameLabel.getStyleClass().add("calendar-event-card-title");
-        nameLabel.setWrapText(true);
-
-        HBox metaRow = new HBox(8);
-        metaRow.setAlignment(Pos.CENTER_LEFT);
-
-        Label typeLabel = new Label(event.getType().getDisplayName());
-        typeLabel.getStyleClass().add("calendar-event-card-type");
-        typeLabel.setStyle("-fx-background-color: " + event.getType().getDotColor() + "22;"
-                + " -fx-text-fill: " + event.getType().getDotColor());
-        metaRow.getChildren().add(typeLabel);
-
-        if (event.getTime() != null) {
-            Label timeLabel = new Label(event.getTime().toString());
-            timeLabel.getStyleClass().add("calendar-event-card-time");
-            metaRow.getChildren().add(timeLabel);
-        }
-
-        card.getChildren().addAll(nameLabel, metaRow);
-
-        // click to open details
-        card.setOnMouseClicked(e -> {
-            if (onEventSelected != null) onEventSelected.accept(event);
-        });
-        return card;
+        return EventCardFactory.createEventCard(event);
     }
 
     // --- Navigation handlers ---
@@ -442,11 +413,12 @@ public class CalendarController {
      * added or modified by other views (e.g. story 22's event creation form).
      */
     public void refresh() {
-        eventStorageService = new EventStorageService();
+        EventStorageService.getInstance().reloadFromDisk();
         populateCalendar();
     }
 
     private Consumer<CalendarEvent> onEventSelected;
+
     public void setOnEventSelected(Consumer<CalendarEvent> callback) {
         this.onEventSelected = callback;
     }

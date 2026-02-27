@@ -28,7 +28,6 @@
                             <Insets top="16" right="16" bottom="12" left="16"/>
                         </padding>
                         <Label text="Articles" styleClass="search-header-title" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
-                        <Button text="Lock" styleClass="lock-button" onAction="#handleBackToCalculator"/>
                     </HBox>
 
                     <!-- Search bar -->
@@ -97,11 +96,17 @@
                         maxWidth="1.7976931348623157E308"
                         HBox.hgrow="ALWAYS"/>
             
-            <ToggleButton fx:id="settingsTab" 
+            <ToggleButton fx:id="settingsTab"
                         toggleGroup="$navGroup"
                         styleClass="nav-item"
                         maxWidth="1.7976931348623157E308"
                         HBox.hgrow="ALWAYS"/>
+
+            <Button fx:id="lockTab"
+                    styleClass="nav-item, nav-lock-item"
+                    maxWidth="1.7976931348623157E308"
+                    HBox.hgrow="ALWAYS"
+                    onAction="#handleBackToCalculator"/>
         </HBox>
     
     </bottom>
