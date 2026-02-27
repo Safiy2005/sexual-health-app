@@ -384,25 +384,6 @@
     -fx-text-fill: #3D5A5B;
 }
 
-/* Lock button (small, top-right) */
-.lock-button {
-    -fx-background-color: #D4E8E5;
-    -fx-text-fill: #3D5A5B;
-    -fx-font-size: 12px;
-    -fx-font-weight: 600;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-padding: 6px 14px;
-    -fx-background-radius: 14px;
-    -fx-cursor: hand;
-}
-
-.lock-button:hover {
-    -fx-background-color: #B8D9D4;
-}
-
-.lock-button:pressed {
-    -fx-background-color: #9DCBC5;
-}
 
 /* Search text field */
 .search-field {
@@ -884,6 +865,76 @@
     -fx-text-fill: #636366;
     -fx-font-size: 11px;
     -fx-font-family: "SF Mono", "Menlo", "Courier New", monospace;
+}
+
+/* ============================================
+   BOTTOM NAVIGATION BAR
+   ============================================ */
+
+.bottom-nav {
+   -fx-background-color: #ECE6DF;
+   -fx-border-color: rgba(0,0,0,0.08);
+   -fx-border-width: 1 0 0 0;
+
+   -fx-padding: 0;
+   -fx-spacing: 0;
+
+   -fx-pref-height: 56;
+   -fx-min-height: 56;
+   -fx-max-height: 56;
+}
+
+/* Buttons for nav */
+.nav-item {
+    -fx-background-color: transparent;
+
+    -fx-padding: 0;
+    -fx-alignment: center;
+
+    -fx-pref-height: 56;
+    -fx-min-height: 56;
+    -fx-max-height: 56;
+
+    -fx-background-radius: 0;
+}
+
+.nav-item:selected {
+    -fx-background-color: #D4E8E5;
+}
+
+.nav-item:pressed {
+    -fx-background-color: rgba(0,0,0,0.06);
+}
+
+/* Lock nav button - action button styled to match nav items but never selected */
+.nav-lock-item {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.nav-item:hover {
+    -fx-background-color: rgba(0,0,0,0.04);
+}
+.nav-lock-item:pressed {
+    -fx-background-color: rgba(0,0,0,0.08);
+}
+
+.nav-icon {
+    -fx-fill: transparent;
+    -fx-stroke: rgba(61,90,91,0.55);
+    -fx-stroke-width: 2;
+}
+
+.nav-item:selected .nav-icon {
+    -fx-stroke: #3D5A5B;
+}
+
+.nav-icon-wrap {
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+}
+
+.main-content {
+    -fx-padding: 40 20 0 20;
 }
 
 /* ============================================

@@ -16,6 +16,7 @@ import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
 
 import javafx.animation.Interpolator;
+import javafx.scene.control.Button;
 import javafx.animation.PauseTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
@@ -54,6 +55,8 @@ public class MainAppController {
     private ToggleButton calendarTab;
     @FXML
     private ToggleButton settingsTab;
+    @FXML
+    private Button lockTab;
     @FXML
     private VBox searchView;
     @FXML
@@ -123,15 +126,18 @@ public class MainAppController {
         articlesTab.setGraphic(SvgIcon.load("/icons/newspaper.svg", "nav-icon"));
         calendarTab.setGraphic(SvgIcon.load("/icons/calendar.svg", "nav-icon"));
         settingsTab.setGraphic(SvgIcon.load("/icons/settings.svg", "nav-icon"));
+        lockTab.setGraphic(SvgIcon.load("/icons/lock.svg", "nav-icon"));
 
         // icons only
         articlesTab.setText(null);
         calendarTab.setText(null);
         settingsTab.setText(null);
+        lockTab.setText(null);
 
         articlesTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
         calendarTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
         settingsTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+        lockTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 
         navGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
             if (newToggle == null) {
