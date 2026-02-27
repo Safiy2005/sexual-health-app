@@ -1,5 +1,6 @@
 package com.sddp.sexualhealthapp.mainapp.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
@@ -13,7 +14,6 @@ import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
 import com.sddp.sexualhealthapp.calendar.controller.EventDetailController;
 import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
-import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
@@ -95,7 +95,6 @@ public class MainAppController {
     private HybridSearchService searchService;
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
-    private EventStorageService eventStorageService;
 
     @FXML
     private void initialize() {
@@ -121,6 +120,8 @@ public class MainAppController {
 
         // Wire stub view back-navigation callbacks
         eventFeedViewController.setOnBackToCalendar(() -> showView(calendarView, eventFeedView));
+        eventFeedViewController.setOnEventSelected(
+                (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, eventFeedView));
         createEventViewController.setOnBackToCalendar(() -> {
             calendarViewController.refresh();
             showView(calendarView, createEventView);
@@ -165,8 +166,9 @@ public class MainAppController {
         navGroup.selectToggle(articlesTab);
         switchToTab("ARTICLES");
 
-        calendarViewController.setOnEventSelected(event -> openEventDetail(event, calendarView));
-        
+        calendarViewController.setOnEventSelected(
+                (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, calendarView));
+
     }
 
     private void switchToTab(String tab) {
@@ -346,12 +348,12 @@ public class MainAppController {
 
     }
 
-    private void openEventDetail(CalendarEvent event, Node returnTo) {
+    private void openEventDetail(CalendarEvent event, LocalDate occurrenceDate, Node returnTo) {
         // set data
-        eventDetailViewController.setEvent(event);
+        eventDetailViewController.setEvent(event, occurrenceDate);
 
-        //go back where u came from
-        eventDetailViewController.setOnBack( () -> showOnlyCalendarView(returnTo));
+        // go back where u came from
+        eventDetailViewController.setOnBack(() -> showOnlyCalendarView(returnTo));
         // show detail screen
         showOnlyCalendarView(eventDetailView);
     }

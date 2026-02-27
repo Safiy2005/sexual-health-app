@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import java.util.function.Consumer;
+import java.util.function.BiConsumer;
 
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
@@ -304,10 +304,18 @@ public class CalendarController {
 
     /**
      * Creates a simple event card for the day events list.
-     * Delegates to the shared {@link EventCardFactory}.
+     * Delegates layout to the shared {@link EventCardFactory}.
      */
     private VBox createEventCard(CalendarEvent event) {
-        return EventCardFactory.createEventCard(event);
+        VBox card = EventCardFactory.createEventCard(event);
+
+        // click to open details
+        card.setOnMouseClicked(e -> {
+            if (onEventSelected != null) {
+                onEventSelected.accept(event, selectedDate);
+            }
+        });
+        return card;
     }
 
     // --- Navigation handlers ---
@@ -417,9 +425,9 @@ public class CalendarController {
         populateCalendar();
     }
 
-    private Consumer<CalendarEvent> onEventSelected;
+    private BiConsumer<CalendarEvent, LocalDate> onEventSelected;
 
-    public void setOnEventSelected(Consumer<CalendarEvent> callback) {
+    public void setOnEventSelected(BiConsumer<CalendarEvent, LocalDate> callback) {
         this.onEventSelected = callback;
     }
 }
