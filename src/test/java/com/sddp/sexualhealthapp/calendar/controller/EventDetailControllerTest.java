@@ -1,14 +1,5 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
-import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
-import com.sddp.sexualhealthapp.calendar.model.EventType;
-import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
-import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
-import org.junit.jupiter.api.*;
-
 import java.lang.reflect.Field;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -18,7 +9,21 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.model.EventType;
+import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
+
+import javafx.application.Platform;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 
 /**
  * Unit tests for EventDetailController.
@@ -33,14 +38,14 @@ class EventDetailControllerTest {
     private EventDetailController controller;
 
     @BeforeAll
-    static void initJfx() throws Exception {
-        try {
-            Platform.startup(() -> {});
-        } catch (IllegalStateException alreadyStarted) {
-        // JavaFX runtime already running
+    static void initJavaFx() throws Exception {
+        CountDownLatch latch = new CountDownLatch(1);
+        Platform.startup(latch::countDown);
+        if (!latch.await(5, TimeUnit.SECONDS)) {
+            throw new IllegalStateException("JavaFx Platfrom failed to start");
         }
     }
-
+    
     @BeforeEach
     void setUp() throws Exception {
         controller = new EventDetailController();
