@@ -364,7 +364,6 @@ public class MainAppController {
             return;
         }
 
-        showOnlyCalendarView(calendarView);
         navGroup.selectToggle(articlesTab);
         switchToTab("ARTICLES");
         closeArticleOverlayIfOpen();
