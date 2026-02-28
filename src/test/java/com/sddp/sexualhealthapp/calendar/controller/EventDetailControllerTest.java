@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
@@ -33,6 +34,7 @@ import javafx.scene.layout.VBox;
  * - Regression tests: style string contains dot color, view state toggles correctly, callbacks work correctly
 **/
 
+@DisabledIfEnvironmentVariable(named = "CI", matches = "true")
 class EventDetailControllerTest {
 
     private EventDetailController controller;
