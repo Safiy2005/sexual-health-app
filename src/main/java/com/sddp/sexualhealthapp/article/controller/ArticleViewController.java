@@ -263,31 +263,44 @@ public class ArticleViewController {
         List<Article.Section> sections = article.getSections();
 
         // Title page entry
-        Label titleItem = new Label("\u2302  " + article.getTitle());
-        titleItem.getStyleClass().add("nav-menu-item");
-        titleItem.setWrapText(true);
-        titleItem.setMaxWidth(Double.MAX_VALUE);
-        titleItem.setOnMouseClicked(e -> {
+        HBox titleRow = createNavMenuItem("\u2302", article.getTitle());
+        titleRow.setOnMouseClicked(e -> {
             navigateToPage(0);
             hideNavMenu();
         });
-        navMenuContent.getChildren().add(titleItem);
+        navMenuContent.getChildren().add(titleRow);
 
         // One entry per section
         for (int i = 0; i < sections.size(); i++) {
             final int pageIndex = i + 1; // page 0 is the title page
             Article.Section section = sections.get(i);
 
-            Label item = new Label((i + 1) + "  " + section.heading());
-            item.getStyleClass().add("nav-menu-item");
-            item.setWrapText(true);
-            item.setMaxWidth(Double.MAX_VALUE);
-            item.setOnMouseClicked(e -> {
+            HBox row = createNavMenuItem(String.valueOf(i + 1), section.heading());
+            row.setOnMouseClicked(e -> {
                 navigateToPage(pageIndex);
                 hideNavMenu();
             });
-            navMenuContent.getChildren().add(item);
+            navMenuContent.getChildren().add(row);
         }
+    }
+
+    /**
+     * Creates a nav menu item row with a bold number badge and a heading label.
+     */
+    private HBox createNavMenuItem(String number, String heading) {
+        Label numberLabel = new Label(number);
+        numberLabel.getStyleClass().add("nav-menu-item-number");
+        numberLabel.setMinWidth(Label.USE_PREF_SIZE);
+
+        Label headingLabel = new Label(heading);
+        headingLabel.getStyleClass().add("nav-menu-item-heading");
+        headingLabel.setWrapText(true);
+
+        HBox row = new HBox(8, numberLabel, headingLabel);
+        row.getStyleClass().add("nav-menu-item");
+        row.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
+        row.setMaxWidth(Double.MAX_VALUE);
+        return row;
     }
 
     private void showNavMenu() {
