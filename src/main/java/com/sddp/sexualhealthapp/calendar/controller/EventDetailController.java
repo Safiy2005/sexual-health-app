@@ -8,9 +8,9 @@ import java.util.function.Consumer;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
 import com.sddp.sexualhealthapp.article.model.Article;
-import com.sddp.sexualhealthapp.article.service.EventArticleRecommendationService;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
+import com.sddp.sexualhealthapp.calendar.service.EventArticleRecommendationService;
 import com.sddp.sexualhealthapp.calendar.util.EventDetailFormatter;
 
 import javafx.application.Platform;

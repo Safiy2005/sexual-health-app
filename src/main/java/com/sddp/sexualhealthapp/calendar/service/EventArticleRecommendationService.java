@@ -1,7 +1,9 @@
-package com.sddp.sexualhealthapp.article.service;
+package com.sddp.sexualhealthapp.calendar.service;
 
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
+import com.sddp.sexualhealthapp.article.service.HybridSearchService;
+import com.sddp.sexualhealthapp.article.service.TextPreprocessor;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 
 import java.util.ArrayList;

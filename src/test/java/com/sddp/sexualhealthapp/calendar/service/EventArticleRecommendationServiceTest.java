@@ -1,4 +1,4 @@
-package com.sddp.sexualhealthapp.article.service;
+package com.sddp.sexualhealthapp.calendar.service;
 
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
