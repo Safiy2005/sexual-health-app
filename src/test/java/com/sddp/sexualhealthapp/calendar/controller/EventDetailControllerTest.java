@@ -39,10 +39,14 @@ class EventDetailControllerTest {
 
     @BeforeAll
     static void initJavaFx() throws Exception {
-        CountDownLatch latch = new CountDownLatch(1);
-        Platform.startup(latch::countDown);
-        if (!latch.await(5, TimeUnit.SECONDS)) {
-            throw new IllegalStateException("JavaFx Platfrom failed to start");
+        try {
+            CountDownLatch latch = new CountDownLatch(1);
+            Platform.startup(latch::countDown);
+            if (!latch.await(5, TimeUnit.SECONDS)) {
+                throw new IllegalStateException("JavaFx Platfrom failed to start");
+            }
+        } catch (IllegalStateException alreadyStarted) {
+            // JavaFx already started
         }
     }
     
