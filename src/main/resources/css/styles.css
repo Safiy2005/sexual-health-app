@@ -1760,3 +1760,11 @@
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
     -fx-text-fill: #6F8384;
 }
+
+.event-detail-suggested-list {
+    -fx-padding: 2px 0 0 0;
+}
+
+.event-detail-suggested-list .article-card {
+    -fx-padding: 10px 12px;
+}

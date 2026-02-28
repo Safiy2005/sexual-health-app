@@ -1,13 +1,19 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
+import java.util.function.Consumer;
 
+import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
+import com.sddp.sexualhealthapp.article.model.Article;
+import com.sddp.sexualhealthapp.article.service.EventArticleRecommendationService;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.util.EventDetailFormatter;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -31,14 +37,24 @@ public class EventDetailController {
 
     @FXML private VBox recurrenceBox;
     @FXML private Label recurrenceLabel;
+    @FXML private VBox suggestedArticlesBox;
+    @FXML private VBox suggestedArticlesContainer;
 
     private Runnable onBack;
+    private Consumer<Article> onArticleSelected;
     private CalendarEvent currentEvent;
     private LocalDate occurrenceDate;
     private String missingEventId;
+    private long recommendationRequestId = 0L;
+
+    private final EventArticleRecommendationService recommendationService = new EventArticleRecommendationService();
 
     public void setOnBack(Runnable onBack){
         this.onBack = onBack;
+    }
+
+    public void setOnArticleSelected(Consumer<Article> onArticleSelected) {
+        this.onArticleSelected = onArticleSelected;
     }
 
     public void setEvent(CalendarEvent event){
@@ -50,12 +66,14 @@ public class EventDetailController {
         this.occurrenceDate = occurrenceDate;
         this.missingEventId = null;
         render();
+        loadSuggestedArticles(event);
     }
 
     public void showMissingEventState(String eventId) {
         this.currentEvent = null;
         this.occurrenceDate = null;
         this.missingEventId = trimToNull(eventId);
+        recommendationRequestId++;
         render();
     }
 
@@ -101,6 +119,71 @@ public class EventDetailController {
         recurrenceBox.setVisible(showRecurrence);
         recurrenceBox.setManaged(showRecurrence);
         recurrenceLabel.setText(recurrenceText.orElse(""));
+
+        setSuggestedArticlesVisible(false);
+    }
+
+    private void loadSuggestedArticles(CalendarEvent event) {
+        if (event == null) {
+            setSuggestedArticlesVisible(false);
+            return;
+        }
+
+        long requestId = ++recommendationRequestId;
+        showSuggestedArticlesLoading();
+
+        Thread recommendationThread = new Thread(() -> {
+            List<EventArticleRecommendationService.Recommendation> recommendations =
+                    recommendationService.recommendForEvent(event, 3);
+
+            Platform.runLater(() -> {
+                if (requestId != recommendationRequestId || currentEvent != event) {
+                    return;
+                }
+                renderSuggestedArticles(recommendations, event);
+            });
+        });
+        recommendationThread.setDaemon(true);
+        recommendationThread.start();
+    }
+
+    private void showSuggestedArticlesLoading() {
+        setSuggestedArticlesVisible(true);
+        suggestedArticlesContainer.getChildren().clear();
+        Label loadingLabel = new Label("Finding related articles...");
+        loadingLabel.getStyleClass().add("event-detail-meta");
+        suggestedArticlesContainer.getChildren().add(loadingLabel);
+    }
+
+    private void renderSuggestedArticles(List<EventArticleRecommendationService.Recommendation> recommendations,
+                                         CalendarEvent event) {
+        suggestedArticlesContainer.getChildren().clear();
+        if (recommendations == null || recommendations.isEmpty()) {
+            setSuggestedArticlesVisible(false);
+            return;
+        }
+
+        String queryHint = (safe(event.getName()) + " " + safe(event.getDescription())).trim();
+        for (EventArticleRecommendationService.Recommendation recommendation : recommendations) {
+            Article article = recommendation.article();
+            suggestedArticlesContainer.getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            article,
+                            -1.0,
+                            queryHint,
+                            selectedArticle -> {
+                                if (onArticleSelected != null) {
+                                    onArticleSelected.accept(selectedArticle);
+                                }
+                            }));
+        }
+
+        setSuggestedArticlesVisible(true);
+    }
+
+    private void setSuggestedArticlesVisible(boolean visible) {
+        suggestedArticlesBox.setVisible(visible);
+        suggestedArticlesBox.setManaged(visible);
     }
 
     private void showContentState() {
@@ -135,6 +218,10 @@ public class EventDetailController {
         }
         String trimmed = s.trim();
         return trimmed.isEmpty() ? null : trimmed;
+    }
+
+    private static String safe(String text) {
+        return text == null ? "" : text;
     }
 
 }

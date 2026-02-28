@@ -126,6 +126,7 @@ public class MainAppController {
             calendarViewController.refresh();
             showView(calendarView, createEventView);
         });
+        eventDetailViewController.setOnArticleSelected(this::openArticleFromEventDetail);
 
         // Show all articles on initial load
         showAllArticles();
@@ -356,6 +357,18 @@ public class MainAppController {
         eventDetailViewController.setOnBack(() -> showOnlyCalendarView(returnTo));
         // show detail screen
         showOnlyCalendarView(eventDetailView);
+    }
+
+    private void openArticleFromEventDetail(Article article) {
+        if (article == null) {
+            return;
+        }
+
+        showOnlyCalendarView(calendarView);
+        navGroup.selectToggle(articlesTab);
+        switchToTab("ARTICLES");
+        closeArticleOverlayIfOpen();
+        openArticle(article);
     }
 
 }
