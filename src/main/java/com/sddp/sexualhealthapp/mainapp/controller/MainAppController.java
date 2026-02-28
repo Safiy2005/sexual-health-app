@@ -1,5 +1,6 @@
 package com.sddp.sexualhealthapp.mainapp.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
@@ -10,7 +11,9 @@ import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.calendar.controller.CalendarController;
 import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
+import com.sddp.sexualhealthapp.calendar.controller.EventDetailController;
 import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
+import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
@@ -22,6 +25,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -55,6 +59,8 @@ public class MainAppController {
     @FXML
     private ToggleButton settingsTab;
     @FXML
+    private Button lockTab;
+    @FXML
     private VBox searchView;
     @FXML
     private VBox articleView;
@@ -66,6 +72,10 @@ public class MainAppController {
     private VBox articleListContainer;
     @FXML
     private ScrollPane listScrollPane;
+    @FXML
+    private VBox eventDetailView;
+    @FXML
+    private EventDetailController eventDetailViewController;
 
     // TODO: Remove when story 51 (bottom nav) is integrated
     @FXML
@@ -85,6 +95,7 @@ public class MainAppController {
     private HybridSearchService searchService;
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
+    private Node returnAfterCreateEvent = null;
 
     @FXML
     private void initialize() {
@@ -102,14 +113,29 @@ public class MainAppController {
         articleViewController.setOnBackToSearch(this::handleBackToSearch);
 
         // Wire calendar navigation callbacks
-        calendarViewController.setOnGoToEventFeed(() -> showView(eventFeedView, calendarView));
-        calendarViewController.setOnGoToNewEvent(() -> showView(createEventView, calendarView));
+        calendarViewController.setOnGoToEventFeed(() -> {
+            eventFeedViewController.refresh();
+            showView(eventFeedView, calendarView);
+        });
+        calendarViewController.setOnGoToNewEvent(() -> {
+            returnAfterCreateEvent = calendarView;
+            createEventViewController.startCreateNew();
+            showView(createEventView,calendarView);
+        });
 
         // Wire stub view back-navigation callbacks
         eventFeedViewController.setOnBackToCalendar(() -> showView(calendarView, eventFeedView));
+        eventFeedViewController.setOnEventSelected(
+                (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, eventFeedView));
         createEventViewController.setOnBackToCalendar(() -> {
             calendarViewController.refresh();
-            showView(calendarView, createEventView);
+            eventFeedViewController.refresh();
+            
+            // go back to where we started editing or creating
+            Node target = (returnAfterCreateEvent != null) ? returnAfterCreateEvent : calendarView;
+            showOnlyCalendarView(target);
+            
+            returnAfterCreateEvent = null;
         });
 
         // Show all articles on initial load
@@ -120,15 +146,18 @@ public class MainAppController {
         articlesTab.setGraphic(SvgIcon.load("/icons/newspaper.svg", "nav-icon"));
         calendarTab.setGraphic(SvgIcon.load("/icons/calendar.svg", "nav-icon"));
         settingsTab.setGraphic(SvgIcon.load("/icons/settings.svg", "nav-icon"));
+        lockTab.setGraphic(SvgIcon.load("/icons/lock.svg", "nav-icon"));
 
         // icons only
         articlesTab.setText(null);
         calendarTab.setText(null);
         settingsTab.setText(null);
+        lockTab.setText(null);
 
         articlesTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
         calendarTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
         settingsTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+        lockTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 
         navGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
             if (newToggle == null) {
@@ -147,6 +176,10 @@ public class MainAppController {
         // Default tab
         navGroup.selectToggle(articlesTab);
         switchToTab("ARTICLES");
+
+        calendarViewController.setOnEventSelected(
+                (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, calendarView));
+
     }
 
     private void switchToTab(String tab) {
@@ -314,6 +347,32 @@ public class MainAppController {
         empty.getStyleClass().add("search-empty-label");
         empty.setWrapText(true);
         articleListContainer.getChildren().add(empty);
+    }
+
+    private void showOnlyCalendarView(Node toShow) {
+        calendarView.setVisible(false);
+        eventFeedView.setVisible(false);
+        createEventView.setVisible(false);
+        eventDetailView.setVisible(false);
+
+        toShow.setVisible(true);
+
+    }
+
+    private void openEventDetail(CalendarEvent event, LocalDate occurrenceDate, Node returnTo) {
+        // set data
+        eventDetailViewController.setEvent(event, occurrenceDate);
+
+        // go back where u came from
+        eventDetailViewController.setOnBack(() -> showOnlyCalendarView(returnTo));
+        // When edit event occurs
+        eventDetailViewController.setOnEdit(evnt -> {
+            returnAfterCreateEvent = returnTo;
+            createEventViewController.startEdit(evnt);
+            showOnlyCalendarView(createEventView);
+        });
+        // show detail screen
+        showOnlyCalendarView(eventDetailView);
     }
 
 }

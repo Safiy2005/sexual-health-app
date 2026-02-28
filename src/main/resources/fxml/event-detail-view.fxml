@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sddp.sexualhealthapp.calendar.controller.EventDetailController"
+      styleClass="event-detail-root" spacing="0"
+      prefWidth="360" prefHeight="640">
+
+
+    <!-- Back bar -->
+    <HBox styleClass="event-detail-header" alignment="CENTER_LEFT" spacing="10">
+        <padding>
+            <Insets top="16" right="16" bottom="12" left="16"/>
+        </padding>
+        <Button text="Back" styleClass="calendar-action-button"
+                onAction="#handleBackToCalendar"/>
+        <Label text="Event Details" styleClass="search-header-title"
+               HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Edit" styleClass="calendar-action-button"
+                onAction="#handleEditEvent"/>
+    </HBox>
+
+    <StackPane VBox.vgrow="ALWAYS">
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="search-scroll-pane">
+            <VBox fx:id="contentRoot" spacing="14">
+                <padding>
+                    <Insets top="16" right="16" bottom="24" left="16"/>
+                </padding>
+
+                <VBox spacing="10" styleClass="event-detail-hero">
+                    <Label fx:id="nameLabel" styleClass="event-detail-name" wrapText="true"/>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label fx:id="typeBadge" styleClass="calendar-event-card-type"/>
+                        <Label fx:id="dateTimeLabel" styleClass="event-detail-meta" wrapText="true"/>
+                    </HBox>
+                </VBox>
+
+                <VBox spacing="8" styleClass="event-detail-card">
+                    <Label text="Description" styleClass="event-detail-section-title"/>
+                    <Label fx:id ="descriptionLabel" wrapText="true" styleClass="event-detail-section-body"/>
+                </VBox>
+
+                <VBox fx:id="dosageBox" spacing="8" styleClass="event-detail-card" visible="false" managed="false">
+                    <Label text="Dosage" styleClass="event-detail-section-title"/>
+                    <Label fx:id="dosageLabel" wrapText="true" styleClass="event-detail-section-body"/>
+                </VBox>
+
+                <VBox fx:id="recurrenceBox" spacing="8" styleClass="event-detail-card" visible="false" managed="false">
+                    <Label text="Recurrence" styleClass="event-detail-section-title"/>
+                    <Label fx:id="recurrenceLabel" wrapText="true" styleClass="event-detail-recurrence-chip"/>
+                </VBox>
+            </VBox>
+        </ScrollPane>
+
+        <VBox fx:id="missingStateRoot" alignment="CENTER" spacing="12"
+              visible="false" managed="false" styleClass="event-detail-missing-root">
+            <padding>
+                <Insets top="24" right="24" bottom="24" left="24"/>
+            </padding>
+            <Label text="Event unavailable" styleClass="event-detail-missing-title"/>
+            <Label fx:id="missingStateBodyLabel"
+                   styleClass="event-detail-missing-body"
+                   wrapText="true"
+                   textAlignment="CENTER"/>
+            <Label fx:id="missingEventIdLabel"
+                   styleClass="event-detail-meta"
+                   wrapText="true"
+                   visible="false"
+                   managed="false"
+                   textAlignment="CENTER"/>
+        </VBox>
+    </StackPane>
+</VBox>
+
