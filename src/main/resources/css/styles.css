@@ -721,6 +721,81 @@
 }
 
 /* ============================================
+   ARTICLE NAVIGATION MENU
+   ============================================ */
+
+/* Hamburger ☰ button in the back bar */
+.nav-menu-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+    -fx-min-width: 36px;
+    -fx-min-height: 36px;
+    -fx-alignment: center;
+}
+
+.nav-menu-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.nav-menu-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+/* Semi-transparent backdrop behind the nav menu */
+.nav-menu-backdrop {
+    -fx-background-color: rgba(61, 90, 91, 0.25);
+}
+
+/* Navigation menu overlay panel */
+.nav-menu-overlay {
+    -fx-background-color: white;
+    -fx-background-radius: 16px;
+    -fx-max-width: 320px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.18), 12, 0, 0, 3);
+}
+
+/* ScrollPane inside the nav overlay */
+.nav-menu-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.nav-menu-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Inner content box of the nav menu */
+.nav-menu-content {
+    -fx-background-color: transparent;
+}
+
+/* Individual section item in the nav menu */
+.nav-menu-item {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-background-color: #E8F4F2;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 14px;
+    -fx-cursor: hand;
+    -fx-max-width: Infinity;
+}
+
+.nav-menu-item:hover {
+    -fx-background-color: #D4E8E5;
+}
+
+.nav-menu-item:pressed {
+    -fx-background-color: #B8D9D4;
+}
+
+/* ============================================
    ONBOARDING TUTORIAL STYLES
    ============================================ */
 

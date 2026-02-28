@@ -1,8 +1,10 @@
 package com.sddp.sexualhealthapp.article.controller;
 
 import com.sddp.sexualhealthapp.article.model.Article;
+import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
@@ -27,13 +29,23 @@ public class ArticleViewController {
     private HBox pageIndicatorContainer;
     @FXML
     private Label pageCounterLabel;
+    @FXML
+    private Button navMenuButton;
+    @FXML
+    private VBox navMenuOverlay;
+    @FXML
+    private VBox navMenuBackdrop;
+    @FXML
+    private ScrollPane navMenuScroll;
+    @FXML
+    private VBox navMenuContent;
 
+    private boolean navMenuOpen = false;
     private Runnable onBackToSearch;
 
     private List<VBox> articlePages;
     private int currentPageIndex;
     private double swipeStartX;
-
 
     private boolean hasSetUpSwipeEvents = false;
 
@@ -83,6 +95,10 @@ public class ArticleViewController {
         // Build page indicator dots
         buildPageIndicators();
         updatePageCounter();
+
+        // Build the navigation menu items
+        buildNavMenu(article);
+        hideNavMenu();
 
         // Repeated registering of these events will cause pages to be skipped over
         if (!hasSetUpSwipeEvents) {
@@ -164,6 +180,7 @@ public class ArticleViewController {
         // Just call update to render the initial window of dots
         updatePageIndicators();
     }
+
     /**
      * Rebuilds the dots to show a sliding window (e.g., 5 dots)
      * centered on the current page to prevent overflow.
@@ -217,8 +234,93 @@ public class ArticleViewController {
 
     @FXML
     private void handleBack() {
+        if (navMenuOpen) {
+            hideNavMenu();
+        }
         if (onBackToSearch != null) {
             onBackToSearch.run();
         }
+    }
+
+    /**
+     * Toggles the mini navigation menu overlay.
+     */
+    @FXML
+    private void handleToggleNavMenu() {
+        if (navMenuOpen) {
+            hideNavMenu();
+        } else {
+            showNavMenu();
+        }
+    }
+
+    /**
+     * Builds the navigation menu items from the article sections.
+     */
+    private void buildNavMenu(Article article) {
+        navMenuContent.getChildren().clear();
+
+        List<Article.Section> sections = article.getSections();
+
+        // Title page entry
+        Label titleItem = new Label("\u2302  " + article.getTitle());
+        titleItem.getStyleClass().add("nav-menu-item");
+        titleItem.setWrapText(true);
+        titleItem.setMaxWidth(Double.MAX_VALUE);
+        titleItem.setOnMouseClicked(e -> {
+            navigateToPage(0);
+            hideNavMenu();
+        });
+        navMenuContent.getChildren().add(titleItem);
+
+        // One entry per section
+        for (int i = 0; i < sections.size(); i++) {
+            final int pageIndex = i + 1; // page 0 is the title page
+            Article.Section section = sections.get(i);
+
+            Label item = new Label((i + 1) + "  " + section.heading());
+            item.getStyleClass().add("nav-menu-item");
+            item.setWrapText(true);
+            item.setMaxWidth(Double.MAX_VALUE);
+            item.setOnMouseClicked(e -> {
+                navigateToPage(pageIndex);
+                hideNavMenu();
+            });
+            navMenuContent.getChildren().add(item);
+        }
+    }
+
+    private void showNavMenu() {
+        navMenuOpen = true;
+
+        navMenuBackdrop.setVisible(true);
+        navMenuBackdrop.setManaged(true);
+        navMenuBackdrop.setOpacity(0);
+
+        navMenuOverlay.setVisible(true);
+        navMenuOverlay.setManaged(true);
+        navMenuOverlay.setOpacity(0);
+
+        // Reset scroll to top
+        navMenuScroll.setVvalue(0);
+
+        // Fade in both backdrop and overlay together
+        FadeTransition backdropFade = new FadeTransition(Duration.millis(150), navMenuBackdrop);
+        backdropFade.setToValue(1);
+        backdropFade.play();
+
+        FadeTransition overlayFade = new FadeTransition(Duration.millis(150), navMenuOverlay);
+        overlayFade.setToValue(1);
+        overlayFade.play();
+    }
+
+    private void hideNavMenu() {
+        navMenuOpen = false;
+
+        navMenuBackdrop.setVisible(false);
+        navMenuBackdrop.setManaged(false);
+
+        navMenuOverlay.setVisible(false);
+        navMenuOverlay.setManaged(false);
     }
 }

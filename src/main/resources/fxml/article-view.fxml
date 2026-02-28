@@ -9,7 +9,7 @@
       fx:controller="com.sddp.sexualhealthapp.article.controller.ArticleViewController"
       visible="false" styleClass="article-detail-root">
 
-    <!-- Back bar with page counter -->
+    <!-- Back bar with page counter and nav menu toggle -->
     <HBox styleClass="article-back-bar" alignment="CENTER_LEFT">
         <padding>
             <Insets top="16" right="16" bottom="12" left="16"/>
@@ -17,12 +17,44 @@
         <Button text="Back" styleClass="article-back-button" onAction="#handleBack"/>
         <Region HBox.hgrow="ALWAYS"/>
         <Label fx:id="pageCounterLabel" styleClass="page-counter-label"/>
+        <Region prefWidth="12"/>
+        <Button fx:id="navMenuButton" text="☰" styleClass="nav-menu-button"
+                onAction="#handleToggleNavMenu"/>
     </HBox>
 
-    <!-- Swipable article content area -->
-    <StackPane fx:id="articlePageContainer" VBox.vgrow="ALWAYS"
-               styleClass="article-page-container">
-        <!-- Pages are added programmatically -->
+    <!-- Main content area wrapped in a StackPane so the nav overlay can sit on top -->
+    <StackPane VBox.vgrow="ALWAYS">
+
+        <!-- Swipable article content area -->
+        <StackPane fx:id="articlePageContainer"
+                   styleClass="article-page-container">
+            <!-- Pages are added programmatically -->
+        </StackPane>
+
+        <!-- Semi-transparent backdrop (click to dismiss) -->
+        <VBox fx:id="navMenuBackdrop" visible="false" managed="false"
+              styleClass="nav-menu-backdrop" onMouseClicked="#handleToggleNavMenu"/>
+
+        <!-- Navigation menu overlay -->
+        <VBox fx:id="navMenuOverlay" visible="false" managed="false"
+              styleClass="nav-menu-overlay" alignment="TOP_CENTER"
+              maxHeight="400">
+            <padding>
+                <Insets top="4" right="4" bottom="4" left="4"/>
+            </padding>
+            <ScrollPane fx:id="navMenuScroll" fitToWidth="true"
+                        hbarPolicy="NEVER" styleClass="nav-menu-scroll"
+                        VBox.vgrow="ALWAYS">
+                <VBox fx:id="navMenuContent" spacing="6"
+                      styleClass="nav-menu-content">
+                    <padding>
+                        <Insets top="8" right="12" bottom="12" left="12"/>
+                    </padding>
+                    <!-- Items are added programmatically -->
+                </VBox>
+            </ScrollPane>
+        </VBox>
+
     </StackPane>
 
     <!-- Page indicator dots -->
