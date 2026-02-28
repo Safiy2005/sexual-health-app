@@ -43,7 +43,7 @@
                 <Insets top="4" right="4" bottom="4" left="4"/>
             </padding>
             <ScrollPane fx:id="navMenuScroll" fitToWidth="true"
-                        hbarPolicy="NEVER" styleClass="nav-menu-scroll"
+                        hbarPolicy="NEVER" styleClass="search-scroll-pane"
                         VBox.vgrow="ALWAYS">
                 <VBox fx:id="navMenuContent" spacing="6"
                       styleClass="nav-menu-content">
