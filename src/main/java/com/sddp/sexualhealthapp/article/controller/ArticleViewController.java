@@ -293,6 +293,15 @@ public class ArticleViewController {
     private void showNavMenu() {
         navMenuOpen = true;
 
+        // Highlight the current page in the nav menu
+        for (int i = 0; i < navMenuContent.getChildren().size(); i++) {
+            javafx.scene.Node item = navMenuContent.getChildren().get(i);
+            item.getStyleClass().remove("nav-menu-item-active");
+            if (i == currentPageIndex) {
+                item.getStyleClass().add("nav-menu-item-active");
+            }
+        }
+
         navMenuBackdrop.setVisible(true);
         navMenuBackdrop.setManaged(true);
         navMenuBackdrop.setOpacity(0);
@@ -301,8 +310,15 @@ public class ArticleViewController {
         navMenuOverlay.setManaged(true);
         navMenuOverlay.setOpacity(0);
 
-        // Reset scroll to top
-        navMenuScroll.setVvalue(0);
+        // Scroll to the current section after layout
+        navMenuOverlay.applyCss();
+        navMenuOverlay.layout();
+        int itemCount = navMenuContent.getChildren().size();
+        if (itemCount > 1) {
+            navMenuScroll.setVvalue((double) currentPageIndex / (itemCount - 1));
+        } else {
+            navMenuScroll.setVvalue(0);
+        }
 
         // Fade in both backdrop and overlay together
         FadeTransition backdropFade = new FadeTransition(Duration.millis(150), navMenuBackdrop);

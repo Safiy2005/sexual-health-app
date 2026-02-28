@@ -786,6 +786,22 @@
     -fx-background-color: #B8D9D4;
 }
 
+/* Currently active section in the nav menu */
+.nav-menu-item-active {
+    -fx-background-color: #D4E8E5;
+    -fx-border-color: #7DBBB5;
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-radius: 10px;
+}
+
+.nav-menu-item-active:hover {
+    -fx-background-color: #C4DDD9;
+}
+
+.nav-menu-item-active:pressed {
+    -fx-background-color: #B8D9D4;
+}
+
 /* ============================================
    ONBOARDING TUTORIAL STYLES
    ============================================ */
