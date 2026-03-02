@@ -98,6 +98,9 @@
                 <ToggleButton fx:id="btnSat" text="S" styleClass="day-toggle"/>
                 <ToggleButton fx:id="btnSun" text="S" styleClass="day-toggle"/>
             </HBox>
+            <Label fx:id="weeklySummaryLabel"
+                   visible="false" managed="false" wrapText="true" maxWidth="300"
+                   styleClass="calendar-event-card-time"/>
 
             <VBox fx:id="monthlyOptionsContainer" spacing="10" visible="false" managed="false">
                 <RadioButton fx:id="radioSameDay" text="On the same day each month"

@@ -10,6 +10,11 @@ import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
+import java.time.DayOfWeek;
+import java.time.format.TextStyle;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 
@@ -64,6 +69,8 @@ public class CreateEventController {
     private Label errorLabel;
     @FXML
     private HBox weeklyDaysContainer;
+    @FXML
+    private Label weeklySummaryLabel;
     @FXML
     private ToggleButton btnMon, btnTue, btnWed, btnThu, btnFri, btnSat, btnSun;
     @FXML
@@ -142,7 +149,19 @@ public class CreateEventController {
         });
 
         titleField.textProperty().addListener((obs, oldVal, newVal) -> clearFieldErrorIfValid());
-        datePicker.valueProperty().addListener((obs, oldVal, newVal) -> clearFieldErrorIfValid());
+        datePicker.valueProperty().addListener((obs, oldVal, newVal) -> {
+            clearFieldErrorIfValid();
+            ensureWeeklyDefaultSelection();
+            updateWeeklySummary();
+        });
+        intervalSpinner.valueProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnMon.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnTue.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnWed.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnThu.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnFri.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnSat.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
+        btnSun.selectedProperty().addListener((obs, oldVal, newVal) -> updateWeeklySummary());
 
         endTypeComboBox.getItems().addAll("Never", "On date", "After occurrences");
         endTypeComboBox.getSelectionModel().selectFirst();
@@ -209,6 +228,8 @@ public class CreateEventController {
 
             weeklyDaysContainer.setVisible(isWeekly);
             weeklyDaysContainer.setManaged(isWeekly);
+            weeklySummaryLabel.setVisible(isWeekly);
+            weeklySummaryLabel.setManaged(isWeekly);
             monthlyOptionsContainer.setVisible(isMonthly);
             monthlyOptionsContainer.setManaged(isMonthly);
 
@@ -221,6 +242,9 @@ public class CreateEventController {
                     default -> "";
                 });
             }
+
+            ensureWeeklyDefaultSelection();
+            updateWeeklySummary();
         });
 
     }
@@ -315,23 +339,8 @@ public class CreateEventController {
         switch (selection) {
             case "Daily" -> rule = RecurrenceRule.daily(interval);
             case "Weekly" -> {
-                java.util.List<java.time.DayOfWeek> days = new java.util.ArrayList<>();
-                if (btnMon.isSelected())
-                    days.add(java.time.DayOfWeek.MONDAY);
-                if (btnTue.isSelected())
-                    days.add(java.time.DayOfWeek.TUESDAY);
-                if (btnWed.isSelected())
-                    days.add(java.time.DayOfWeek.WEDNESDAY);
-                if (btnThu.isSelected())
-                    days.add(java.time.DayOfWeek.THURSDAY);
-                if (btnFri.isSelected())
-                    days.add(java.time.DayOfWeek.FRIDAY);
-                if (btnSat.isSelected())
-                    days.add(java.time.DayOfWeek.SATURDAY);
-                if (btnSun.isSelected())
-                    days.add(java.time.DayOfWeek.SUNDAY);
-
-                java.time.DayOfWeek[] daysArray = days.toArray(new java.time.DayOfWeek[0]);
+                List<DayOfWeek> days = getSelectedWeeklyDays();
+                DayOfWeek[] daysArray = days.toArray(new DayOfWeek[0]);
                 rule = RecurrenceRule.weekly(interval, daysArray);
             }
             case "Monthly" -> {
@@ -446,6 +455,90 @@ public class CreateEventController {
             errorLabel.setText("");
             errorLabel.setVisible(false);
             errorLabel.setManaged(false);
+        }
+    }
+
+    private List<DayOfWeek> getSelectedWeeklyDays() {
+        List<DayOfWeek> days = new ArrayList<>();
+        if (btnMon.isSelected())
+            days.add(DayOfWeek.MONDAY);
+        if (btnTue.isSelected())
+            days.add(DayOfWeek.TUESDAY);
+        if (btnWed.isSelected())
+            days.add(DayOfWeek.WEDNESDAY);
+        if (btnThu.isSelected())
+            days.add(DayOfWeek.THURSDAY);
+        if (btnFri.isSelected())
+            days.add(DayOfWeek.FRIDAY);
+        if (btnSat.isSelected())
+            days.add(DayOfWeek.SATURDAY);
+        if (btnSun.isSelected())
+            days.add(DayOfWeek.SUNDAY);
+        return days;
+    }
+
+    private void updateWeeklySummary() {
+        if (weeklySummaryLabel == null || !"Weekly".equals(recurrenceComboBox.getValue())) {
+            return;
+        }
+
+        int interval = intervalSpinner.getValue() == null ? 1 : intervalSpinner.getValue();
+        LocalDate eventDate = datePicker.getValue();
+        List<DayOfWeek> selectedDays = getSelectedWeeklyDays();
+
+        if (selectedDays.isEmpty()) {
+            if (eventDate == null) {
+                weeklySummaryLabel.setText("No weekday selected: this repeats on the event date's weekday.");
+            } else {
+                String fallbackDay = eventDate.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
+                weeklySummaryLabel.setText(
+                        "No weekday selected: this repeats every " + formatWeekInterval(interval) + " on "
+                                + fallbackDay + " (from the event date).");
+            }
+            return;
+        }
+
+        String selectedDaysText = selectedDays.stream()
+                .map(d -> d.getDisplayName(TextStyle.SHORT, Locale.getDefault()))
+                .reduce((a, b) -> a + ", " + b)
+                .orElse("");
+
+        String summary = "Repeats every " + formatWeekInterval(interval) + " on " + selectedDaysText + ".";
+
+        if (eventDate != null && !selectedDays.contains(eventDate.getDayOfWeek())) {
+            String eventDay = eventDate.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
+            String eventDateText = eventDate.format(DateTimeFormatter.ofPattern("d MMM yyyy"));
+            summary += " Start date (" + eventDateText + ", " + eventDay + ") is not in this weekly pattern.";
+        }
+
+        weeklySummaryLabel.setText(summary);
+    }
+
+    private String formatWeekInterval(int interval) {
+        return interval == 1 ? "week" : interval + " weeks";
+    }
+
+    private void ensureWeeklyDefaultSelection() {
+        if (!"Weekly".equals(recurrenceComboBox.getValue())) {
+            return;
+        }
+        if (!getSelectedWeeklyDays().isEmpty()) {
+            return;
+        }
+
+        LocalDate eventDate = datePicker.getValue();
+        if (eventDate == null) {
+            return;
+        }
+
+        switch (eventDate.getDayOfWeek()) {
+            case MONDAY -> btnMon.setSelected(true);
+            case TUESDAY -> btnTue.setSelected(true);
+            case WEDNESDAY -> btnWed.setSelected(true);
+            case THURSDAY -> btnThu.setSelected(true);
+            case FRIDAY -> btnFri.setSelected(true);
+            case SATURDAY -> btnSat.setSelected(true);
+            case SUNDAY -> btnSun.setSelected(true);
         }
     }
 
