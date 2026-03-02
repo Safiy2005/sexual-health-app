@@ -137,7 +137,12 @@ public class CreateEventController {
             if (!isMedication) {
                 dosageField.clear();
             }
+
+            clearFieldErrorIfValid();
         });
+
+        titleField.textProperty().addListener((obs, oldVal, newVal) -> clearFieldErrorIfValid());
+        datePicker.valueProperty().addListener((obs, oldVal, newVal) -> clearFieldErrorIfValid());
 
         endTypeComboBox.getItems().addAll("Never", "On date", "After occurrences");
         endTypeComboBox.getSelectionModel().selectFirst();
@@ -240,30 +245,26 @@ public class CreateEventController {
     @FXML
     private void handleSaveEvent(ActionEvent event) {
         // 1. Reset visual states
-        titleField.getStyleClass().remove("input-error");
-        datePicker.getStyleClass().remove("input-error");
-        typeComboBox.getStyleClass().remove("input-error");
-        errorLabel.setVisible(false);
-        errorLabel.setManaged(false);
+        clearValidationState();
 
         // 2. Comprehensive Validation
         boolean hasError = false;
         StringBuilder errorMessage = new StringBuilder("Missing: ");
 
         if (titleField.getText() == null || titleField.getText().trim().isEmpty()) {
-            titleField.getStyleClass().add("input-error");
+            addInputErrorStyle(titleField);
             errorMessage.append("Title, ");
             hasError = true;
         }
 
         if (datePicker.getValue() == null) {
-            datePicker.getStyleClass().add("input-error");
+            addInputErrorStyle(datePicker);
             errorMessage.append("Date, ");
             hasError = true;
         }
 
         if (typeComboBox.getValue() == null) {
-            typeComboBox.getStyleClass().add("input-error");
+            addInputErrorStyle(typeComboBox);
             errorMessage.append("Type, ");
             hasError = true;
         }
@@ -367,6 +368,7 @@ public class CreateEventController {
 
     // clears contents after leaving the create page
     private void clearForm() {
+        clearValidationState();
         titleField.clear();
         datePicker.setValue(null);
         typeComboBox.getSelectionModel().clearSelection();
@@ -391,6 +393,60 @@ public class CreateEventController {
         btnSun.setSelected(false);
         radioSameDay.setSelected(true);
         exceptionDates.clear();
+    }
+
+    private void clearValidationState() {
+        titleField.getStyleClass().remove("input-error");
+        datePicker.getStyleClass().remove("input-error");
+        typeComboBox.getStyleClass().remove("input-error");
+        errorLabel.setText("");
+        errorLabel.setVisible(false);
+        errorLabel.setManaged(false);
+    }
+
+    private void addInputErrorStyle(Control control) {
+        if (!control.getStyleClass().contains("input-error")) {
+            control.getStyleClass().add("input-error");
+        }
+    }
+
+    private void clearFieldErrorIfValid() {
+        if (titleField.getText() != null && !titleField.getText().trim().isEmpty()) {
+            titleField.getStyleClass().remove("input-error");
+        }
+        if (datePicker.getValue() != null) {
+            datePicker.getStyleClass().remove("input-error");
+        }
+        if (typeComboBox.getValue() != null) {
+            typeComboBox.getStyleClass().remove("input-error");
+        }
+
+        if (errorLabel.isVisible()) {
+            StringBuilder missing = new StringBuilder("Missing: ");
+            boolean hasMissing = false;
+
+            if (titleField.getText() == null || titleField.getText().trim().isEmpty()) {
+                missing.append("Title, ");
+                hasMissing = true;
+            }
+            if (datePicker.getValue() == null) {
+                missing.append("Date, ");
+                hasMissing = true;
+            }
+            if (typeComboBox.getValue() == null) {
+                missing.append("Type, ");
+                hasMissing = true;
+            }
+
+            if (hasMissing) {
+                errorLabel.setText(missing.substring(0, missing.length() - 2));
+                return;
+            }
+
+            errorLabel.setText("");
+            errorLabel.setVisible(false);
+            errorLabel.setManaged(false);
+        }
     }
 
     @FXML
