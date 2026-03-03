@@ -289,6 +289,7 @@ public class ArticleViewController {
 
         // Group consecutive sections that share a base heading
         int i = 0;
+        int displayNumber = 1; // sequential counter, groups count as one
         while (i < sections.size()) {
             String baseHeading = getBaseHeading(sections.get(i).heading());
 
@@ -301,39 +302,42 @@ public class ArticleViewController {
             int groupSize = i - groupStart;
 
             if (groupSize > 1) {
-                // Group header (non-clickable)
-                Label groupLabel = new Label(baseHeading);
-                groupLabel.getStyleClass().add("nav-menu-group-heading");
-                groupLabel.setWrapText(true);
-                groupLabel.setMaxWidth(Double.MAX_VALUE);
-                groupLabel.setUserData(-1);
-                navMenuContent.getChildren().add(groupLabel);
+                // Wrapper VBox to visually group heading + dots
+                VBox groupWrapper = new VBox(0);
+                groupWrapper.getStyleClass().add("nav-menu-group-wrapper");
+                groupWrapper.setUserData(-1);
 
-                // Sub-items for each part
+                // Group header with number (non-clickable)
+                HBox groupRow = createNavMenuItem(String.valueOf(displayNumber), baseHeading);
+                groupRow.setMouseTransparent(true);
+                groupRow.getStyleClass().add("nav-menu-group-item");
+                groupWrapper.getChildren().add(groupRow);
+
+                // Sub-item dots for each part
+                HBox dotsRow = new HBox(6);
+                dotsRow.getStyleClass().add("nav-menu-dots-row");
+                dotsRow.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
+
                 for (int j = groupStart; j < groupStart + groupSize; j++) {
                     final int pageIndex = j + 1;
-                    Article.Section section = sections.get(j);
 
-                    String suffix = section.heading().substring(baseHeading.length()).trim();
-                    if (suffix.startsWith(":"))
-                        suffix = suffix.substring(1).trim();
-                    if (suffix.isEmpty())
-                        suffix = "Part " + (j - groupStart + 1);
-
-                    HBox subRow = createNavMenuSubItem(String.valueOf(j + 1), suffix);
-                    subRow.setUserData(pageIndex);
-                    subRow.setOnMouseClicked(e -> {
+                    Label dot = new Label(String.valueOf(j - groupStart + 1));
+                    dot.getStyleClass().add("nav-menu-dot-button");
+                    dot.setUserData(pageIndex);
+                    dot.setOnMouseClicked(e -> {
                         navigateToPage(pageIndex);
                         hideNavMenu();
                     });
-                    navMenuContent.getChildren().add(subRow);
+                    dotsRow.getChildren().add(dot);
                 }
+                groupWrapper.getChildren().add(dotsRow);
+                navMenuContent.getChildren().add(groupWrapper);
             } else {
                 // Single section – render normally
                 final int pageIndex = groupStart + 1;
                 Article.Section section = sections.get(groupStart);
 
-                HBox row = createNavMenuItem(String.valueOf(groupStart + 1), section.heading());
+                HBox row = createNavMenuItem(String.valueOf(displayNumber), section.heading());
                 row.setUserData(pageIndex);
                 row.setOnMouseClicked(e -> {
                     navigateToPage(pageIndex);
@@ -341,26 +345,8 @@ public class ArticleViewController {
                 });
                 navMenuContent.getChildren().add(row);
             }
+            displayNumber++;
         }
-    }
-
-    /**
-     * Creates an indented nav menu sub-item for a part within a grouped section.
-     */
-    private HBox createNavMenuSubItem(String number, String heading) {
-        Label numberLabel = new Label(number);
-        numberLabel.getStyleClass().add("nav-menu-item-number");
-        numberLabel.setMinWidth(Label.USE_PREF_SIZE);
-
-        Label headingLabel = new Label(heading);
-        headingLabel.getStyleClass().add("nav-menu-item-heading");
-        headingLabel.setWrapText(true);
-
-        HBox row = new HBox(8, numberLabel, headingLabel);
-        row.getStyleClass().addAll("nav-menu-item", "nav-menu-sub-item");
-        row.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
-        row.setMaxWidth(Double.MAX_VALUE);
-        return row;
     }
 
     /**
@@ -390,10 +376,29 @@ public class ArticleViewController {
         for (int i = 0; i < navMenuContent.getChildren().size(); i++) {
             javafx.scene.Node item = navMenuContent.getChildren().get(i);
             item.getStyleClass().remove("nav-menu-item-active");
+
+            // Check top-level items (HBox rows with a page index)
             if (item.getUserData() instanceof Integer pageIndex
                     && pageIndex == currentPageIndex) {
                 item.getStyleClass().add("nav-menu-item-active");
                 activeChildIndex = i;
+            }
+
+            // Check dot-button children inside group wrappers
+            if (item instanceof VBox wrapper
+                    && wrapper.getStyleClass().contains("nav-menu-group-wrapper")) {
+                for (javafx.scene.Node child : wrapper.getChildren()) {
+                    if (child instanceof HBox hbox) {
+                        for (javafx.scene.Node dot : hbox.getChildren()) {
+                            dot.getStyleClass().remove("nav-menu-dot-active");
+                            if (dot.getUserData() instanceof Integer dotPage
+                                    && dotPage == currentPageIndex) {
+                                dot.getStyleClass().add("nav-menu-dot-active");
+                                activeChildIndex = i;
+                            }
+                        }
+                    }
+                }
             }
         }
 
