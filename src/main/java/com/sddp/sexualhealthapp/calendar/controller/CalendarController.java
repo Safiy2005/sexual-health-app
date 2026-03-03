@@ -1,8 +1,20 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.YearMonth;
+import java.time.format.TextStyle;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.BiConsumer;
+
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.HPos;
@@ -18,16 +30,6 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
-
-import java.time.LocalDate;
-import java.time.Month;
-import java.time.YearMonth;
-import java.time.format.TextStyle;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Controller for the calendar grid view (story 47).
@@ -302,10 +304,18 @@ public class CalendarController {
 
     /**
      * Creates a simple event card for the day events list.
-     * Delegates to the shared {@link EventCardFactory}.
+     * Delegates layout to the shared {@link EventCardFactory}.
      */
     private VBox createEventCard(CalendarEvent event) {
-        return EventCardFactory.createEventCard(event);
+        VBox card = EventCardFactory.createEventCard(event);
+
+        // click to open details
+        card.setOnMouseClicked(e -> {
+            if (onEventSelected != null) {
+                onEventSelected.accept(event, selectedDate);
+            }
+        });
+        return card;
     }
 
     // --- Navigation handlers ---
@@ -413,5 +423,11 @@ public class CalendarController {
     public void refresh() {
         EventStorageService.getInstance().reloadFromDisk();
         populateCalendar();
+    }
+
+    private BiConsumer<CalendarEvent, LocalDate> onEventSelected;
+
+    public void setOnEventSelected(BiConsumer<CalendarEvent, LocalDate> callback) {
+        this.onEventSelected = callback;
     }
 }

@@ -68,7 +68,8 @@ class EventFeedControllerTest {
                 2);
 
         assertTrue(result.occurrences().isEmpty());
-        // With maxEmptyWindowsToSkip=2, windows checked are Mar 1-7, Mar 8-14, Mar 15-21
+        // With maxEmptyWindowsToSkip=2, windows checked are Mar 1-7, Mar 8-14, Mar
+        // 15-21
         assertEquals(LocalDate.of(2026, 3, 22), result.nextBatchStart());
     }
 

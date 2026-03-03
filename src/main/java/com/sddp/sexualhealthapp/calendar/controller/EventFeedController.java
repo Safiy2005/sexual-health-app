@@ -1,5 +1,6 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
+import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import javafx.animation.PauseTransition;
@@ -24,6 +25,7 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.BiConsumer;
 
 /**
  * Controller for the upcoming events feed view (story 48).
@@ -75,6 +77,7 @@ public class EventFeedController {
     private VBox feedContainer;
 
     private Runnable onBackToCalendar;
+    private BiConsumer<CalendarEvent, LocalDate> onEventSelected;
 
     private LocalDate anchorDate;
     private LocalDate endOfAnchorWeek;
@@ -144,6 +147,15 @@ public class EventFeedController {
      */
     public void setOnBackToCalendar(Runnable callback) {
         this.onBackToCalendar = callback;
+    }
+
+    /**
+     * Sets the callback invoked when an event card in the feed is selected.
+     *
+     * @param callback receives the selected event and the concrete occurrence date
+     */
+    public void setOnEventSelected(BiConsumer<CalendarEvent, LocalDate> callback) {
+        this.onEventSelected = callback;
     }
 
     @FXML
@@ -415,6 +427,11 @@ public class EventFeedController {
 
             VBox card = EventCardFactory.createEventCard(occurrence.event(), (LocalDate) null);
             card.getStyleClass().add("event-feed-card");
+            card.setOnMouseClicked(e -> {
+                if (onEventSelected != null) {
+                    onEventSelected.accept(occurrence.event(), occurrence.occurrenceDate());
+                }
+            });
             feedContainer.getChildren().add(card);
         }
     }

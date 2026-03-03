@@ -64,6 +64,7 @@
                     <fx:include fx:id="calendarView" source="/fxml/calendar-view.fxml"/>
                     <fx:include fx:id="eventFeedView" source="/fxml/event-feed-view.fxml" visible="false"/>
                     <fx:include fx:id="createEventView" source="/fxml/create-event-view.fxml" visible="false"/>
+                    <fx:include fx:id="eventDetailView" source="/fxml/event-detail-view.fxml" visible="false"/>
                 </StackPane>
             </VBox>
 
