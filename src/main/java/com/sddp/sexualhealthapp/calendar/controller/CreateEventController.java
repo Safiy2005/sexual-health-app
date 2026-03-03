@@ -86,13 +86,11 @@ public class CreateEventController {
 
     private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections
             .observableArrayList();
-    private EventStorageService storageService; // for the json
     private Runnable onBackToCalendar;
 
     @FXML
     public void initialize() {
         typeComboBox.getItems().setAll(EventType.values()); // sets dropdown to have values from the model eventtyp
-        storageService = new EventStorageService();
 
         // makes the whole date bar open the calendar picker, wouldnt before
         datePicker.setOnMouseClicked(e -> datePicker.show());
@@ -322,7 +320,7 @@ public class CreateEventController {
         applyRecurrence(newEvent);
 
         // 5. Save
-        storageService.addEvent(newEvent);
+        EventStorageService.getInstance().addEvent(newEvent);
         System.out.println("Full event saved successfully!");
 
         handleBackToCalendar(event);
