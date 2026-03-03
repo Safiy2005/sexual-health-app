@@ -77,14 +77,20 @@
                 </HBox>
             </VBox>
             <VBox spacing="5">
-                <Label text="Reminder" styleClass="calendar-event-card-title"/>
-                <ComboBox fx:id="reminderComboBox" prefWidth="300" styleClass="calendar-picker-combo"/>
-            </VBox>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Reminder" styleClass="calendar-event-card-title"/>
+                    <CheckBox fx:id="reminderCheckBox"/>
+                </HBox>
 
+                <HBox fx:id="reminderInputContainer" spacing="10" visible="false" managed="false" alignment="CENTER_LEFT">
+                    <Spinner fx:id="reminderValueSpinner" prefWidth="80" styleClass="calendar-picker-combo"/>
+                    <ComboBox fx:id="reminderUnitComboBox" prefWidth="150" styleClass="calendar-picker-combo"/>
+                </HBox>
+            </VBox>
 
             <VBox spacing="4" alignment="CENTER_LEFT">
                 <Label text="Repeat" styleClass="calendar-event-card-title"/>
-                <ComboBox fx:id="recurrenceComboBox" prefWidth="300" styleClass="calendar-picker-combo"/>
+                <ComboBox fx:id="recurrenceComboBox" prefWidth="300" styleClass="calendar-picker-combo" visibleRowCount="4"/>
 
                 <HBox fx:id="intervalContainer" spacing="10" alignment="CENTER_LEFT" visible="false" managed="false">
                     <padding><Insets top="4"/></padding>
