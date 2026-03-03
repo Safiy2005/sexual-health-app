@@ -54,7 +54,7 @@ public class EventStorageService {
 
     private final Path storageFilePath;
     private final Gson gson;
-    private List<CalendarEvent> events;
+    private final List<CalendarEvent> events;
 
     /**
      * Production constructor. Reads/writes events from
@@ -90,7 +90,7 @@ public class EventStorageService {
         LocalDate today = LocalDate.now();
         for (CalendarEvent event : this.events) {
             if (event != null && event.occursOn(today) && event.getReminderMinutes() != null) {
-                NotificationService.scheduleEventReminder(event, this);
+                NotificationService.scheduleEventReminder(event, today, this);
             }
         }
     }
@@ -138,7 +138,7 @@ public class EventStorageService {
                 .sorted(Comparator.comparing(
                         CalendarEvent::getTime,
                         Comparator.nullsLast(Comparator.naturalOrder())))
-                .collect(Collectors.toUnmodifiableList());
+                .collect(Collectors.toList());
     }
 
     /**
@@ -159,7 +159,7 @@ public class EventStorageService {
                     }
                     return false;
                 })
-                .collect(Collectors.toUnmodifiableList());
+                .collect(Collectors.toList());
     }
 
     /**
@@ -246,7 +246,7 @@ public class EventStorageService {
 
         //schedule notif when adding event
         if (event.occursOn(LocalDate.now()) && event.getReminderMinutes() != null) {
-            NotificationService.scheduleEventReminder(event, this);
+            NotificationService.scheduleEventReminder(event, event.getDate(), this);
         }
 
         return saveToFile();

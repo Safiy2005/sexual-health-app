@@ -5,6 +5,7 @@ import com.sshtools.twoslices.Toast;
 import com.sshtools.twoslices.ToastType;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.Executors;
@@ -21,39 +22,37 @@ public class NotificationService {
         Toast.toast(ToastType.INFO, "App Unlocked", "Welcome to a totally normal calculator");
     }
 
-    // event reminder logic
-    public static void scheduleEventReminder(CalendarEvent event, EventStorageService storageService) {
-        // 1. Guard clause: Stop immediately if no time, no reminder, or it's ALREADY SENT!
-        if (event.getTime() == null || event.getReminderMinutes() == null || event.isReminderSent()) {
+    public static void scheduleEventReminder(CalendarEvent event, LocalDate occurrenceDate, EventStorageService storageService) {
+        // 1. Guard clause: Stop if no time, no reminder, or if WE ALREADY SENT IT FOR THIS SPECIFIC DATE
+        if (event.getTime() == null || event.getReminderMinutes() == null ||
+                occurrenceDate.equals(event.getLastReminderSentDate())) {
             return;
         }
 
         LocalDateTime now = LocalDateTime.now();
-        LocalDateTime eventDateTime = LocalDateTime.of(event.getDate(), event.getTime());
+        // HUGE FIX: Use the occurrenceDate (today), NOT the event's original start date!
+        LocalDateTime eventDateTime = LocalDateTime.of(occurrenceDate, event.getTime());
         LocalDateTime reminderTime = eventDateTime.minusMinutes(event.getReminderMinutes());
 
         if (reminderTime.isAfter(now)) {
-            // SCENARIO A: FUTURE. Schedule it normally.
+            // SCENARIO A: FUTURE
             long delayInMillis = ChronoUnit.MILLIS.between(now, reminderTime);
-            scheduler.schedule(() -> showEventToastAndSave(event, storageService), delayInMillis, TimeUnit.MILLISECONDS);
-            System.out.println("Scheduled reminder for: " + event.getName());
+            scheduler.schedule(() -> showEventToastAndSave(event, occurrenceDate, storageService), delayInMillis, TimeUnit.MILLISECONDS);
 
         } else if (eventDateTime.isAfter(now)) {
-            // SCENARIO B: MISSED IT! (Catch-up logic)
-            // 2-second delay so the app UI loads before the OS popup fires
-            scheduler.schedule(() -> showEventToastAndSave(event, storageService), 2000, TimeUnit.MILLISECONDS);
-            System.out.println("Catch-up reminder triggered for: " + event.getName());
+            // SCENARIO B: MISSED IT
+            scheduler.schedule(() -> showEventToastAndSave(event, occurrenceDate, storageService), 2000, TimeUnit.MILLISECONDS);
         }
     }
 
-    private static void showEventToastAndSave(CalendarEvent event, EventStorageService storageService) {
+    private static void showEventToastAndSave(CalendarEvent event, LocalDate occurrenceDate, EventStorageService storageService) {
         String description = event.getDescription() != null ? event.getDescription() : "You have an upcoming event.";
         Toast.toast(ToastType.INFO, "Reminder: " + event.getName(), event.getTime().toString() + " - " + description);
 
-        // 2. Mark the event as sent!
-        event.setReminderSent(true);
+        // 2. Mark this specific date as sent!
+        event.setLastReminderSentDate(occurrenceDate);
 
-        // 3. Save the updated event back to events.json so it remembers forever
+        // 3. Save to JSON
         if (storageService != null) {
             storageService.updateEvent(event);
         }

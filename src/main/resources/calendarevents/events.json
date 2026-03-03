@@ -28,8 +28,7 @@
       "interval": 1,
       "endType": "NEVER",
       "occurrenceCount": 0
-    },
-    "reminderSent": false
+    }
   },
   {
     "id": "5f2d9ec2-43ca-4c9e-8d2f-8bf1a34f0a04",
@@ -232,8 +231,7 @@
       "monthlyPattern": "DAY_OF_MONTH",
       "endType": "NEVER",
       "occurrenceCount": 0
-    },
-    "reminderSent": false
+    }
   },
   {
     "id": "c4a3e4d9-4335-4af1-87ac-aa37a0b65bd0",
