@@ -814,6 +814,20 @@
     -fx-background-color: #B8D9D4;
 }
 
+/* Group heading label for multi-part sections */
+.nav-menu-group-heading {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 14px 2px 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Indented sub-item within a grouped section */
+.nav-menu-sub-item {
+    -fx-padding: 8px 14px 8px 28px;
+}
+
 /* ============================================
    ONBOARDING TUTORIAL STYLES
    ============================================ */

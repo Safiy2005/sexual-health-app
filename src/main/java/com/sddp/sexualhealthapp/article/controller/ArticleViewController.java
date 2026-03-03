@@ -16,6 +16,8 @@ import javafx.util.Duration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Controller for the article detail view.
@@ -51,6 +53,10 @@ public class ArticleViewController {
 
     private static final double SWIPE_THRESHOLD = 50.0;
     private static final int SLIDE_DURATION_MS = 250;
+
+    /** Matches headings ending with an optional colon + "Part N" suffix. */
+    private static final Pattern PART_PATTERN = Pattern.compile("^(.+?)(?::?\\s*Part\\s+\\d+)$",
+            Pattern.CASE_INSENSITIVE);
 
     /**
      * Sets the callback to invoke when the user presses the Back button.
@@ -255,7 +261,17 @@ public class ArticleViewController {
     }
 
     /**
+     * Returns the base heading for grouping, stripping any ": Part N" suffix.
+     */
+    private String getBaseHeading(String heading) {
+        Matcher m = PART_PATTERN.matcher(heading);
+        return m.matches() ? m.group(1).trim() : heading;
+    }
+
+    /**
      * Builds the navigation menu items from the article sections.
+     * Consecutive sections whose headings share the same base (before ": Part N")
+     * are grouped under a single header with indented sub-items.
      */
     private void buildNavMenu(Article article) {
         navMenuContent.getChildren().clear();
@@ -264,24 +280,87 @@ public class ArticleViewController {
 
         // Title page entry
         HBox titleRow = createNavMenuItem("\u2302", article.getTitle());
+        titleRow.setUserData(0);
         titleRow.setOnMouseClicked(e -> {
             navigateToPage(0);
             hideNavMenu();
         });
         navMenuContent.getChildren().add(titleRow);
 
-        // One entry per section
-        for (int i = 0; i < sections.size(); i++) {
-            final int pageIndex = i + 1; // page 0 is the title page
-            Article.Section section = sections.get(i);
+        // Group consecutive sections that share a base heading
+        int i = 0;
+        while (i < sections.size()) {
+            String baseHeading = getBaseHeading(sections.get(i).heading());
 
-            HBox row = createNavMenuItem(String.valueOf(i + 1), section.heading());
-            row.setOnMouseClicked(e -> {
-                navigateToPage(pageIndex);
-                hideNavMenu();
-            });
-            navMenuContent.getChildren().add(row);
+            // Count how many consecutive sections share this base
+            int groupStart = i;
+            while (i < sections.size()
+                    && getBaseHeading(sections.get(i).heading()).equals(baseHeading)) {
+                i++;
+            }
+            int groupSize = i - groupStart;
+
+            if (groupSize > 1) {
+                // Group header (non-clickable)
+                Label groupLabel = new Label(baseHeading);
+                groupLabel.getStyleClass().add("nav-menu-group-heading");
+                groupLabel.setWrapText(true);
+                groupLabel.setMaxWidth(Double.MAX_VALUE);
+                groupLabel.setUserData(-1);
+                navMenuContent.getChildren().add(groupLabel);
+
+                // Sub-items for each part
+                for (int j = groupStart; j < groupStart + groupSize; j++) {
+                    final int pageIndex = j + 1;
+                    Article.Section section = sections.get(j);
+
+                    String suffix = section.heading().substring(baseHeading.length()).trim();
+                    if (suffix.startsWith(":"))
+                        suffix = suffix.substring(1).trim();
+                    if (suffix.isEmpty())
+                        suffix = "Part " + (j - groupStart + 1);
+
+                    HBox subRow = createNavMenuSubItem(String.valueOf(j + 1), suffix);
+                    subRow.setUserData(pageIndex);
+                    subRow.setOnMouseClicked(e -> {
+                        navigateToPage(pageIndex);
+                        hideNavMenu();
+                    });
+                    navMenuContent.getChildren().add(subRow);
+                }
+            } else {
+                // Single section – render normally
+                final int pageIndex = groupStart + 1;
+                Article.Section section = sections.get(groupStart);
+
+                HBox row = createNavMenuItem(String.valueOf(groupStart + 1), section.heading());
+                row.setUserData(pageIndex);
+                row.setOnMouseClicked(e -> {
+                    navigateToPage(pageIndex);
+                    hideNavMenu();
+                });
+                navMenuContent.getChildren().add(row);
+            }
         }
+    }
+
+    /**
+     * Creates an indented nav menu sub-item for a part within a grouped section.
+     */
+    private HBox createNavMenuSubItem(String number, String heading) {
+        Label numberLabel = new Label(number);
+        numberLabel.getStyleClass().add("nav-menu-item-number");
+        numberLabel.setMinWidth(Label.USE_PREF_SIZE);
+
+        Label headingLabel = new Label(heading);
+        headingLabel.getStyleClass().add("nav-menu-item-heading");
+        headingLabel.setWrapText(true);
+
+        HBox row = new HBox(8, numberLabel, headingLabel);
+        row.getStyleClass().addAll("nav-menu-item", "nav-menu-sub-item");
+        row.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
+        row.setMaxWidth(Double.MAX_VALUE);
+        return row;
     }
 
     /**
@@ -306,12 +385,15 @@ public class ArticleViewController {
     private void showNavMenu() {
         navMenuOpen = true;
 
-        // Highlight the current page in the nav menu
+        // Highlight the current page in the nav menu using stored page indices
+        int activeChildIndex = 0;
         for (int i = 0; i < navMenuContent.getChildren().size(); i++) {
             javafx.scene.Node item = navMenuContent.getChildren().get(i);
             item.getStyleClass().remove("nav-menu-item-active");
-            if (i == currentPageIndex) {
+            if (item.getUserData() instanceof Integer pageIndex
+                    && pageIndex == currentPageIndex) {
                 item.getStyleClass().add("nav-menu-item-active");
+                activeChildIndex = i;
             }
         }
 
@@ -328,7 +410,7 @@ public class ArticleViewController {
         navMenuOverlay.layout();
         int itemCount = navMenuContent.getChildren().size();
         if (itemCount > 1) {
-            navMenuScroll.setVvalue((double) currentPageIndex / (itemCount - 1));
+            navMenuScroll.setVvalue((double) activeChildIndex / (itemCount - 1));
         } else {
             navMenuScroll.setVvalue(0);
         }
