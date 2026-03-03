@@ -11,7 +11,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Circle;
 import javafx.util.Duration;
 
 import java.util.ArrayList;
@@ -41,6 +40,10 @@ public class ArticleViewController {
     private ScrollPane navMenuScroll;
     @FXML
     private VBox navMenuContent;
+    @FXML
+    private Label leftArrowLabel;
+    @FXML
+    private Label rightArrowLabel;
 
     private boolean navMenuOpen = false;
     private Runnable onBackToSearch;
@@ -77,7 +80,6 @@ public class ArticleViewController {
         articlePages = new ArrayList<>();
         currentPageIndex = 0;
         articlePageContainer.getChildren().clear();
-        pageIndicatorContainer.getChildren().clear();
 
         // Page 0: Title page with article overview
         VBox titlePage = ArticlePageBuilder.createTitlePage(article);
@@ -98,8 +100,8 @@ public class ArticleViewController {
             articlePageContainer.getChildren().add(page);
         }
 
-        // Build page indicator dots
-        buildPageIndicators();
+        // Update arrow indicators
+        updateArrowIndicators();
         updatePageCounter();
 
         // Build the navigation menu items
@@ -167,7 +169,7 @@ public class ArticleViewController {
         slideIn.play();
 
         currentPageIndex = targetIndex;
-        updatePageIndicators();
+        updateArrowIndicators();
         updatePageCounter();
     }
 
@@ -180,55 +182,11 @@ public class ArticleViewController {
     }
 
     /**
-     * Initial setup for indicators.
+     * Shows/hides the left and right arrow labels based on the current page.
      */
-    private void buildPageIndicators() {
-        // Just call update to render the initial window of dots
-        updatePageIndicators();
-    }
-
-    /**
-     * Rebuilds the dots to show a sliding window (e.g., 5 dots)
-     * centered on the current page to prevent overflow.
-     */
-    private void updatePageIndicators() {
-        pageIndicatorContainer.getChildren().clear();
-
-        int totalPages = articlePages.size();
-        int maxVisible = 5; // How many dots you want to see at once
-
-        // 1. Calculate the window range (Start -> End)
-        // Try to center the current page
-        int start = Math.max(0, currentPageIndex - (maxVisible / 2));
-        int end = Math.min(totalPages, start + maxVisible);
-
-        // Adjust start if we hit the end (so we always show 5 dots if possible)
-        if (end - start < maxVisible) {
-            start = Math.max(0, end - maxVisible);
-        }
-
-        // 2. Create the dots for this window
-        for (int i = start; i < end; i++) {
-            Circle dot = new Circle(4);
-
-            // Add style classes (make sure these are in your CSS)
-            if (i == currentPageIndex) {
-                dot.getStyleClass().add("page-dot-active");
-            } else {
-                dot.getStyleClass().add("page-dot");
-
-                // Optional: Make the edge dots smaller for a smoother "Instagram" look
-                if (totalPages > maxVisible && (i == start || i == end - 1)) {
-                    dot.setRadius(2.5);
-                }
-            }
-
-            // Add click listener to jump to that specific page
-            final int targetIndex = i;
-            dot.setOnMouseClicked(e -> navigateToPage(targetIndex));
-
-            pageIndicatorContainer.getChildren().add(dot);
-        }
+    private void updateArrowIndicators() {
+        leftArrowLabel.setVisible(currentPageIndex > 0);
+        rightArrowLabel.setVisible(currentPageIndex < articlePages.size() - 1);
     }
 
     /**

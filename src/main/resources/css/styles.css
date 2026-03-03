@@ -701,16 +701,12 @@
     -fx-background-color: transparent;
 }
 
-/* Inactive page dot */
-.page-dot {
-    -fx-fill: #C8BFB6;
-    -fx-cursor: hand;
-}
-
-/* Active page dot */
-.page-dot-active {
-    -fx-fill: #7DBBB5;
-    -fx-cursor: hand;
+/* Swipe arrow hint labels */
+.swipe-arrow-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-font-weight: 600;
 }
 
 /* Page counter label (e.g. "1 / 5") */

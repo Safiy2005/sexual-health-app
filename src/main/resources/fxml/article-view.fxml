@@ -25,11 +25,25 @@
     <!-- Main content area wrapped in a StackPane so the nav overlay can sit on top -->
     <StackPane VBox.vgrow="ALWAYS">
 
-        <!-- Swipable article content area -->
-        <StackPane fx:id="articlePageContainer"
-                   styleClass="article-page-container">
-            <!-- Pages are added programmatically -->
-        </StackPane>
+        <!-- Vertical layout: article content + swipe indicators -->
+        <VBox>
+            <!-- Swipable article content area -->
+            <StackPane fx:id="articlePageContainer"
+                       styleClass="article-page-container" VBox.vgrow="ALWAYS">
+                <!-- Pages are added programmatically -->
+            </StackPane>
+
+            <!-- Arrow navigation indicators -->
+            <HBox fx:id="pageIndicatorContainer" alignment="CENTER" spacing="16"
+                  styleClass="page-indicator-bar">
+                <padding>
+                    <Insets top="10" right="16" bottom="16" left="16"/>
+                </padding>
+                <Label fx:id="leftArrowLabel" text="← Swipe" styleClass="swipe-arrow-label"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="rightArrowLabel" text="Swipe →" styleClass="swipe-arrow-label"/>
+            </HBox>
+        </VBox>
 
         <!-- Semi-transparent backdrop (click to dismiss) -->
         <VBox fx:id="navMenuBackdrop" visible="false" managed="false"
@@ -56,14 +70,5 @@
         </VBox>
 
     </StackPane>
-
-    <!-- Page indicator dots -->
-    <HBox fx:id="pageIndicatorContainer" alignment="CENTER" spacing="8"
-          styleClass="page-indicator-bar">
-        <padding>
-            <Insets top="10" right="16" bottom="16" left="16"/>
-        </padding>
-        <!-- Dots are added programmatically -->
-    </HBox>
 
 </VBox>
