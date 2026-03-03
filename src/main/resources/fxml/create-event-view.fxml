@@ -76,6 +76,10 @@
                     <Spinner fx:id="minuteSpinner" prefWidth="75" editable="true" styleClass="calendar-picker-combo"/>
                 </HBox>
             </VBox>
+            <VBox spacing="5">
+                <Label text="Reminder" styleClass="calendar-event-card-title"/>
+                <ComboBox fx:id="reminderComboBox" prefWidth="300" styleClass="calendar-picker-combo"/>
+            </VBox>
 
 
             <VBox spacing="4" alignment="CENTER_LEFT">

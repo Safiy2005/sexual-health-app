@@ -21,6 +21,7 @@ public class CalendarEvent {
     private String description;
     private String dosage;
     private RecurrenceRule recurrenceRule;
+    private Integer reminderMinutes;
 
     /**
      * No-arg constructor required by Gson deserialization.
@@ -113,6 +114,10 @@ public class CalendarEvent {
     public void setRecurrenceRule(RecurrenceRule recurrenceRule) {
         this.recurrenceRule = recurrenceRule;
     }
+
+    public Integer getReminderMinutes() {return reminderMinutes;}
+
+    public void setReminderMinutes(Integer reminderMinutes) {this.reminderMinutes = reminderMinutes;}
 
     /**
      * Returns true if this event occurs on the given date, taking into

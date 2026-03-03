@@ -83,6 +83,7 @@ public class CreateEventController {
     private DatePicker exceptionDatePicker;
     @FXML
     private ListView<LocalDate> exceptionListView;
+    @FXML private ComboBox<String> reminderComboBox;
 
     private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections
             .observableArrayList();
@@ -115,6 +116,20 @@ public class CreateEventController {
 
         intervalSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 999, 1));
         occurrenceCountSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 999, 10));
+
+        // Set up the Reminder options
+        reminderComboBox.getItems().addAll(
+                "None",
+                "At time of event",
+                "5 minutes before",
+                "15 minutes before",
+                "30 minutes before",
+                "1 hour before",
+                "1 day before"
+        );
+        // Default to reminding them 15 minutes before
+        reminderComboBox.getSelectionModel().select("15 minutes before");
+
 
         recurrenceComboBox.getItems().addAll(
                 "Does not repeat",
@@ -315,6 +330,23 @@ public class CreateEventController {
         String dosage = dosageField.getText().trim().isEmpty() ? null : dosageField.getText();
 
         CalendarEvent newEvent = new CalendarEvent(title, date, time, type, description, dosage);
+
+        // Parse the reminder selection into minutes
+        String reminderSelection = reminderComboBox.getValue();
+        Integer reminderMinutes = null;
+
+        if (reminderSelection != null) {
+            switch (reminderSelection) {
+                case "At time of event" -> reminderMinutes = 0;
+                case "5 minutes before" -> reminderMinutes = 5;
+                case "15 minutes before" -> reminderMinutes = 15;
+                case "30 minutes before" -> reminderMinutes = 30;
+                case "1 hour before" -> reminderMinutes = 60;
+                case "1 day before" -> reminderMinutes = 1440; // 24 * 60
+                // "None" leaves reminderMinutes as null, so no notification triggers
+            }
+        }
+        newEvent.setReminderMinutes(reminderMinutes);
 
         // 4. Delegate to our new advanced recurrence helper
         applyRecurrence(newEvent);

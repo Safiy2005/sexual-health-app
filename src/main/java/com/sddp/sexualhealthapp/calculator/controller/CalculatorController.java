@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.calculator.model.Calculator;
 import com.sddp.sexualhealthapp.calculator.service.EquationMatcher;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
+import com.sddp.sexualhealthapp.util.NotificationService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -119,7 +120,9 @@ public class CalculatorController {
             if (authService.verifyEquation(lastEquation)) {
                 if (SceneManager.getInstance().isTransitioning()) return;
                 // Successful authentication - transition to main app
+
                 System.out.println("Authentication successful!");
+                NotificationService.showWelcomeNotification();
                 SceneManager.getInstance().transitionToMainApp();
             }
         }

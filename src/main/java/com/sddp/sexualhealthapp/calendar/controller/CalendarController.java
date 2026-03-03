@@ -14,6 +14,7 @@ import java.util.function.BiConsumer;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
+import com.sddp.sexualhealthapp.util.NotificationService;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

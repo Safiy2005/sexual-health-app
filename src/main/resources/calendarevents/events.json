@@ -26,7 +26,8 @@
     "recurrenceRule": {
       "frequency": "DAILY",
       "interval": 1,
-      "endType": "NEVER"
+      "endType": "NEVER",
+      "occurrenceCount": 0
     }
   },
   {
@@ -40,7 +41,8 @@
     "recurrenceRule": {
       "frequency": "DAILY",
       "interval": 1,
-      "endType": "NEVER"
+      "endType": "NEVER",
+      "occurrenceCount": 0
     }
   },
   {
@@ -175,9 +177,12 @@
     "recurrenceRule": {
       "frequency": "WEEKLY",
       "interval": 1,
-      "daysOfWeek": ["MONDAY"],
+      "daysOfWeek": [
+        "TUESDAY",
+        "THURSDAY"
+      ],
       "endType": "UNTIL",
-      "endDate": "2026-06-01"
+      "endDate": "2026-04-30"
     }
   },
   {
@@ -223,8 +228,17 @@
       "frequency": "MONTHLY",
       "interval": 3,
       "monthlyPattern": "DAY_OF_MONTH",
-      "endType": "NEVER"
+      "endType": "NEVER",
+      "occurrenceCount": 0
     }
+  },
+  {
+    "id": "d8fead21-5989-4843-8133-4b430a3990e7",
+    "name": "reminderTest",
+    "date": "2026-03-03",
+    "time": "11:40",
+    "type": "APPOINTMENT",
+    "reminderMinutes": 15
   },
   {
     "id": "5f2d9ec2-43ca-4c9e-8d2f-8bf1a34f0a26",
