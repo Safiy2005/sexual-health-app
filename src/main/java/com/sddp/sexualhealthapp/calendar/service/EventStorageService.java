@@ -90,7 +90,7 @@ public class EventStorageService {
         LocalDate today = LocalDate.now();
         for (CalendarEvent event : this.events) {
             if (event != null && event.occursOn(today) && event.getReminderMinutes() != null) {
-                NotificationService.scheduleEventReminder(event, event.getReminderMinutes());
+                NotificationService.scheduleEventReminder(event, this);
             }
         }
     }
@@ -246,7 +246,7 @@ public class EventStorageService {
 
         //schedule notif when adding event
         if (event.occursOn(LocalDate.now()) && event.getReminderMinutes() != null) {
-            NotificationService.scheduleEventReminder(event, event.getReminderMinutes());
+            NotificationService.scheduleEventReminder(event, this);
         }
 
         return saveToFile();

@@ -22,6 +22,7 @@ public class CalendarEvent {
     private String dosage;
     private RecurrenceRule recurrenceRule;
     private Integer reminderMinutes;
+    private boolean reminderSent = false; // memory for if reminder sent, avoid spam
 
     /**
      * No-arg constructor required by Gson deserialization.
@@ -118,6 +119,11 @@ public class CalendarEvent {
     public Integer getReminderMinutes() {return reminderMinutes;}
 
     public void setReminderMinutes(Integer reminderMinutes) {this.reminderMinutes = reminderMinutes;}
+
+    public boolean isReminderSent() {return reminderSent;}
+
+    public void setReminderSent(boolean reminderSent) {this.reminderSent = reminderSent;}
+
 
     /**
      * Returns true if this event occurs on the given date, taking into

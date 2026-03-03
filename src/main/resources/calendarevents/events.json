@@ -28,7 +28,8 @@
       "interval": 1,
       "endType": "NEVER",
       "occurrenceCount": 0
-    }
+    },
+    "reminderSent": false
   },
   {
     "id": "5f2d9ec2-43ca-4c9e-8d2f-8bf1a34f0a04",
@@ -43,7 +44,8 @@
       "interval": 1,
       "endType": "NEVER",
       "occurrenceCount": 0
-    }
+    },
+    "reminderSent": false
   },
   {
     "id": "5f2d9ec2-43ca-4c9e-8d2f-8bf1a34f0a05",
@@ -230,21 +232,14 @@
       "monthlyPattern": "DAY_OF_MONTH",
       "endType": "NEVER",
       "occurrenceCount": 0
-    }
+    },
+    "reminderSent": false
   },
   {
-    "id": "d8fead21-5989-4843-8133-4b430a3990e7",
-    "name": "reminderTest",
+    "id": "c4a3e4d9-4335-4af1-87ac-aa37a0b65bd0",
+    "name": "remindertest",
     "date": "2026-03-03",
-    "time": "11:40",
-    "type": "APPOINTMENT",
-    "reminderMinutes": 15
-  },
-  {
-    "id": "fbeba2c2-3e0c-40a0-802c-bada8be3fe05",
-    "name": "remindertestovershot",
-    "date": "2026-03-03",
-    "time": "11:56",
+    "time": "12:25",
     "type": "APPOINTMENT",
     "reminderMinutes": 10
   },
