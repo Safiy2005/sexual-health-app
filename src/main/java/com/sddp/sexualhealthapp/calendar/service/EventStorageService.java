@@ -54,13 +54,15 @@ public class EventStorageService {
 
     private final Path storageFilePath;
     private final Gson gson;
-    private final List<CalendarEvent> events;
+    private List<CalendarEvent> events;
 
     /**
      * Production constructor. Reads/writes events from
      * {@code src/main/resources/calendarevents/events.json}.
      *
-     * <p>Use {@link #getInstance()} for app runtime.</p>
+     * <p>
+     * Use {@link #getInstance()} for app runtime.
+     * </p>
      */
     private EventStorageService() {
         this(Paths.get(DATA_DIR, EVENTS_FILE));
@@ -244,7 +246,7 @@ public class EventStorageService {
             return false;
         events.add(event);
 
-        //schedule notif when adding event
+        // schedule notif when adding event
         if (event.occursOn(LocalDate.now()) && event.getReminderMinutes() != null) {
             NotificationService.scheduleEventReminder(event, event.getDate(), this);
         }
