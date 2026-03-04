@@ -550,4 +550,52 @@ class EventStorageServiceTest {
         // After the end date — excluded
         assertTrue(service.getEventsForDate(LocalDate.of(2026, 3, 6)).isEmpty());
     }
+    @Test
+    void testCreateEvent_WithReminderAndMemoryPersistsAcrossReload() {
+        // 1. Create a standard medication event using the normal constructor
+        CalendarEvent event = new CalendarEvent(
+                "PrEP Reminder", LocalDate.of(2026, 3, 15),
+                LocalTime.of(9, 0), EventType.MEDICATION,
+                "Take daily", "200mg");
+
+        // ... (the rest of the test remains exactly the same)
+        // 2. Add our new notification features
+        event.setReminderMinutes(15); // 15 minutes before
+        event.setLastReminderSentDate(LocalDate.of(2026, 3, 15)); // Simulate a sent notification
+
+        // 3. Save it to the temporary test file
+        service.addEvent(event);
+
+        // 4. Reload from disk to simulate closing and reopening the app
+        EventStorageService reloaded = new EventStorageService(tempFile);
+        CalendarEvent loaded = reloaded.getAllEvents().get(0);
+
+        // 5. Assert that the memory survived the JSON serialization
+        assertNotNull(loaded.getReminderMinutes(), "Reminder minutes should not be lost");
+        assertEquals(15, loaded.getReminderMinutes(), "Reminder should remain 15 minutes");
+
+        assertNotNull(loaded.getLastReminderSentDate(), "The sent date memory should not be lost");
+        assertEquals(LocalDate.of(2026, 3, 15), loaded.getLastReminderSentDate(),
+                "The app must remember the exact date the notification was sent");
+    }
+
+    @Test
+    void testCreateEvent_NoReminderDefaultsToNull() {
+        // 1. Create an event where the user left the reminder checkbox UNCHECKED
+        CalendarEvent event = new CalendarEvent(
+                "PrEP Reminder", LocalDate.of(2026, 3, 15),
+                LocalTime.of(9, 0), EventType.MEDICATION,
+                "Take daily", "200mg");
+
+        // We purposely do NOT set reminder minutes or the sent date here
+
+        service.addEvent(event);
+
+        EventStorageService reloaded = new EventStorageService(tempFile);
+        CalendarEvent loaded = reloaded.getAllEvents().get(0);
+
+        // 2. Assert that the JSON gracefully handles events with no reminders
+        assertNull(loaded.getReminderMinutes(), "Events without reminders should stay null");
+        assertNull(loaded.getLastReminderSentDate(), "Events without reminders should have a null sent date");
+    }
 }

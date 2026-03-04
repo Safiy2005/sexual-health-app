@@ -32,6 +32,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
+import com.sddp.sexualhealthapp.util.NotificationService;
 
 /**
  * Service for persisting and retrieving calendar events using JSON file
@@ -59,7 +60,9 @@ public class EventStorageService {
      * Production constructor. Reads/writes events from
      * {@code src/main/resources/calendarevents/events.json}.
      *
-     * <p>Use {@link #getInstance()} for app runtime.</p>
+     * <p>
+     * Use {@link #getInstance()} for app runtime.
+     * </p>
      */
     private EventStorageService() {
         this(Paths.get(DATA_DIR, EVENTS_FILE));
@@ -84,6 +87,14 @@ public class EventStorageService {
         this.storageFilePath = storageFilePath;
         this.gson = createGson();
         this.events = loadFromFile();
+
+        // schedules all reminders for the day
+        LocalDate today = LocalDate.now();
+        for (CalendarEvent event : this.events) {
+            if (event != null && event.occursOn(today) && event.getReminderMinutes() != null) {
+                NotificationService.scheduleEventReminder(event, today, this);
+            }
+        }
     }
 
     private Gson createGson() {
@@ -129,7 +140,7 @@ public class EventStorageService {
                 .sorted(Comparator.comparing(
                         CalendarEvent::getTime,
                         Comparator.nullsLast(Comparator.naturalOrder())))
-                .collect(Collectors.toUnmodifiableList());
+                .collect(Collectors.toList());
     }
 
     /**
@@ -150,7 +161,7 @@ public class EventStorageService {
                     }
                     return false;
                 })
-                .collect(Collectors.toUnmodifiableList());
+                .collect(Collectors.toList());
     }
 
     /**
@@ -234,6 +245,12 @@ public class EventStorageService {
         if (event == null)
             return false;
         events.add(event);
+
+        // schedule notif when adding event
+        if (event.occursOn(LocalDate.now()) && event.getReminderMinutes() != null) {
+            NotificationService.scheduleEventReminder(event, event.getDate(), this);
+        }
+
         return saveToFile();
     }
 

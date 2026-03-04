@@ -83,6 +83,10 @@ public class CreateEventController {
     private DatePicker exceptionDatePicker;
     @FXML
     private ListView<LocalDate> exceptionListView;
+    @FXML private CheckBox reminderCheckBox;
+    @FXML private HBox reminderInputContainer;
+    @FXML private Spinner<Integer> reminderValueSpinner;
+    @FXML private ComboBox<String> reminderUnitComboBox;
 
     private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections
             .observableArrayList();
@@ -115,6 +119,17 @@ public class CreateEventController {
 
         intervalSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 999, 1));
         occurrenceCountSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 999, 10));
+
+        // set reminder interval
+        reminderValueSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 999, 15));
+        reminderUnitComboBox.getItems().addAll("Minutes before", "Hours before", "Days before");
+        reminderUnitComboBox.getSelectionModel().selectFirst();
+
+        // spinner box visibility for reminder timing
+        reminderCheckBox.selectedProperty().addListener((obs, oldVal, isChecked) -> {
+            reminderInputContainer.setVisible(isChecked);
+            reminderInputContainer.setManaged(isChecked);
+        });
 
         recurrenceComboBox.getItems().addAll(
                 "Does not repeat",
@@ -316,6 +331,20 @@ public class CreateEventController {
 
         CalendarEvent newEvent = new CalendarEvent(title, date, time, type, description, dosage);
 
+        // calc the remiinder time, in minutes
+        Integer reminderMinutes = null;
+        if (reminderCheckBox.isSelected()) {
+            int value = reminderValueSpinner.getValueFactory().getValue();
+            String unit = reminderUnitComboBox.getValue();
+
+            switch (unit) {
+                case "Minutes before" -> reminderMinutes = value;
+                case "Hours before" -> reminderMinutes = value * 60;
+                case "Days before" -> reminderMinutes = value * 1440; // 24 * 60
+            }
+        }
+        newEvent.setReminderMinutes(reminderMinutes);
+
         // 4. Delegate to our new advanced recurrence helper
         applyRecurrence(newEvent);
 
@@ -400,6 +429,9 @@ public class CreateEventController {
         btnSun.setSelected(false);
         radioSameDay.setSelected(true);
         exceptionDates.clear();
+        reminderCheckBox.setSelected(false);
+        reminderValueSpinner.getValueFactory().setValue(15);
+        reminderUnitComboBox.getSelectionModel().selectFirst();
     }
 
     private void clearValidationState() {
