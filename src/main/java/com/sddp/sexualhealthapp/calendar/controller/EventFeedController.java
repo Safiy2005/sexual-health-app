@@ -82,8 +82,6 @@ public class EventFeedController {
     @FXML
     private HBox filterBar;
     @FXML
-    private Button filterAllButton;
-    @FXML
     private Button filterAppointmentButton;
     @FXML
     private Button filterMedicationButton;
@@ -110,9 +108,9 @@ public class EventFeedController {
     private final PauseTransition scrollIdleDebounce = new PauseTransition(SCROLL_IDLE_DELAY);
 
     /**
-     * Active event-type filters. When containing all types, every event is shown.
+     * Active event-type filters. When empty, every event is shown.
      */
-    private final Set<EventType> activeFilters = EnumSet.allOf(EventType.class);
+    private final Set<EventType> activeFilters = EnumSet.noneOf(EventType.class);
 
     static record BatchLoadResult(
             List<EventOccurrence> occurrences,
@@ -191,15 +189,6 @@ public class EventFeedController {
     }
 
     @FXML
-    private void handleFilterAll(ActionEvent event) {
-        activeFilters.clear();
-        activeFilters.addAll(EnumSet.allOf(EventType.class));
-        updateFilterButtonStyles();
-        renderFeedFromModel();
-        Platform.runLater(() -> feedScrollPane.setVvalue(0.0));
-    }
-
-    @FXML
     private void handleFilterAppointment(ActionEvent event) {
         toggleFilter(EventType.APPOINTMENT);
     }
@@ -215,25 +204,10 @@ public class EventFeedController {
     }
 
     private void toggleFilter(EventType type) {
-        boolean wasAllSelected = activeFilters.size() == EventType.values().length;
-
-        if (wasAllSelected) {
-            // Switching from "All" to a single type
-            activeFilters.clear();
-            activeFilters.add(type);
-        } else if (activeFilters.contains(type)) {
+        if (activeFilters.contains(type)) {
             activeFilters.remove(type);
-            if (activeFilters.isEmpty()) {
-                // Don't allow empty selection – revert to all
-                activeFilters.addAll(EnumSet.allOf(EventType.class));
-            }
         } else {
             activeFilters.add(type);
-            if (activeFilters.size() == EventType.values().length) {
-                // All types selected – treat as "All"
-                activeFilters.clear();
-                activeFilters.addAll(EnumSet.allOf(EventType.class));
-            }
         }
 
         updateFilterButtonStyles();
@@ -241,17 +215,14 @@ public class EventFeedController {
         Platform.runLater(() -> feedScrollPane.setVvalue(0.0));
     }
 
-    private boolean isAllFiltersActive() {
-        return activeFilters.size() == EventType.values().length;
+    private boolean isNoFiltersActive() {
+        return activeFilters.isEmpty();
     }
 
     private void updateFilterButtonStyles() {
-        setFilterChipActive(filterAllButton, isAllFiltersActive());
-        setFilterChipActive(filterAppointmentButton,
-                !isAllFiltersActive() && activeFilters.contains(EventType.APPOINTMENT));
-        setFilterChipActive(filterMedicationButton,
-                !isAllFiltersActive() && activeFilters.contains(EventType.MEDICATION));
-        setFilterChipActive(filterTestButton, !isAllFiltersActive() && activeFilters.contains(EventType.TEST));
+        setFilterChipActive(filterAppointmentButton, activeFilters.contains(EventType.APPOINTMENT));
+        setFilterChipActive(filterMedicationButton, activeFilters.contains(EventType.MEDICATION));
+        setFilterChipActive(filterTestButton, activeFilters.contains(EventType.TEST));
     }
 
     private void setFilterChipActive(Button chip, boolean active) {
@@ -491,11 +462,11 @@ public class EventFeedController {
         feedContainer.getChildren().clear();
 
         List<EventOccurrence> visibleOccurrences = loadedOccurrences.stream()
-                .filter(o -> activeFilters.contains(o.event().getType()))
+                .filter(o -> activeFilters.isEmpty() || activeFilters.contains(o.event().getType()))
                 .toList();
 
         if (visibleOccurrences.isEmpty()) {
-            Label empty = new Label(isAllFiltersActive()
+            Label empty = new Label(isNoFiltersActive()
                     ? "No upcoming events"
                     : "No upcoming events for the selected filter");
             empty.getStyleClass().add("calendar-no-events-label");

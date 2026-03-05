@@ -28,8 +28,6 @@
         <padding>
             <Insets top="8" right="16" bottom="8" left="16"/>
         </padding>
-        <Button fx:id="filterAllButton" text="All" styleClass="event-feed-filter-chip,event-feed-filter-chip-active"
-                onAction="#handleFilterAll"/>
         <Button fx:id="filterAppointmentButton" text="Appointment" styleClass="event-feed-filter-chip"
                 onAction="#handleFilterAppointment"/>
         <Button fx:id="filterMedicationButton" text="Medication" styleClass="event-feed-filter-chip"
