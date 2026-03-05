@@ -2,11 +2,13 @@ package com.sddp.sexualhealthapp.calendar.controller;
 
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
+import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import javafx.animation.PauseTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
@@ -23,8 +25,10 @@ import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 import java.util.function.BiConsumer;
 
 /**
@@ -75,6 +79,16 @@ public class EventFeedController {
     private ScrollPane feedScrollPane;
     @FXML
     private VBox feedContainer;
+    @FXML
+    private HBox filterBar;
+    @FXML
+    private Button filterAllButton;
+    @FXML
+    private Button filterAppointmentButton;
+    @FXML
+    private Button filterMedicationButton;
+    @FXML
+    private Button filterTestButton;
 
     private Runnable onBackToCalendar;
     private BiConsumer<CalendarEvent, LocalDate> onEventSelected;
@@ -94,6 +108,11 @@ public class EventFeedController {
     private boolean edgeCheckPending = false;
     private boolean mouseInteractionActive = false;
     private final PauseTransition scrollIdleDebounce = new PauseTransition(SCROLL_IDLE_DELAY);
+
+    /**
+     * Active event-type filters. When containing all types, every event is shown.
+     */
+    private final Set<EventType> activeFilters = EnumSet.allOf(EventType.class);
 
     static record BatchLoadResult(
             List<EventOccurrence> occurrences,
@@ -169,6 +188,77 @@ public class EventFeedController {
     private void handleJumpToToday(ActionEvent event) {
         refresh();
         Platform.runLater(() -> feedScrollPane.setVvalue(0.0));
+    }
+
+    @FXML
+    private void handleFilterAll(ActionEvent event) {
+        activeFilters.clear();
+        activeFilters.addAll(EnumSet.allOf(EventType.class));
+        updateFilterButtonStyles();
+        renderFeedFromModel();
+        Platform.runLater(() -> feedScrollPane.setVvalue(0.0));
+    }
+
+    @FXML
+    private void handleFilterAppointment(ActionEvent event) {
+        toggleFilter(EventType.APPOINTMENT);
+    }
+
+    @FXML
+    private void handleFilterMedication(ActionEvent event) {
+        toggleFilter(EventType.MEDICATION);
+    }
+
+    @FXML
+    private void handleFilterTest(ActionEvent event) {
+        toggleFilter(EventType.TEST);
+    }
+
+    private void toggleFilter(EventType type) {
+        boolean wasAllSelected = activeFilters.size() == EventType.values().length;
+
+        if (wasAllSelected) {
+            // Switching from "All" to a single type
+            activeFilters.clear();
+            activeFilters.add(type);
+        } else if (activeFilters.contains(type)) {
+            activeFilters.remove(type);
+            if (activeFilters.isEmpty()) {
+                // Don't allow empty selection – revert to all
+                activeFilters.addAll(EnumSet.allOf(EventType.class));
+            }
+        } else {
+            activeFilters.add(type);
+            if (activeFilters.size() == EventType.values().length) {
+                // All types selected – treat as "All"
+                activeFilters.clear();
+                activeFilters.addAll(EnumSet.allOf(EventType.class));
+            }
+        }
+
+        updateFilterButtonStyles();
+        renderFeedFromModel();
+        Platform.runLater(() -> feedScrollPane.setVvalue(0.0));
+    }
+
+    private boolean isAllFiltersActive() {
+        return activeFilters.size() == EventType.values().length;
+    }
+
+    private void updateFilterButtonStyles() {
+        setFilterChipActive(filterAllButton, isAllFiltersActive());
+        setFilterChipActive(filterAppointmentButton,
+                !isAllFiltersActive() && activeFilters.contains(EventType.APPOINTMENT));
+        setFilterChipActive(filterMedicationButton,
+                !isAllFiltersActive() && activeFilters.contains(EventType.MEDICATION));
+        setFilterChipActive(filterTestButton, !isAllFiltersActive() && activeFilters.contains(EventType.TEST));
+    }
+
+    private void setFilterChipActive(Button chip, boolean active) {
+        chip.getStyleClass().remove("event-feed-filter-chip-active");
+        if (active) {
+            chip.getStyleClass().add("event-feed-filter-chip-active");
+        }
     }
 
     /**
@@ -400,8 +490,14 @@ public class EventFeedController {
     private void renderFeedFromModel() {
         feedContainer.getChildren().clear();
 
-        if (loadedOccurrences.isEmpty()) {
-            Label empty = new Label("No upcoming events");
+        List<EventOccurrence> visibleOccurrences = loadedOccurrences.stream()
+                .filter(o -> activeFilters.contains(o.event().getType()))
+                .toList();
+
+        if (visibleOccurrences.isEmpty()) {
+            Label empty = new Label(isAllFiltersActive()
+                    ? "No upcoming events"
+                    : "No upcoming events for the selected filter");
             empty.getStyleClass().add("calendar-no-events-label");
             feedContainer.getChildren().add(empty);
             return;
@@ -410,7 +506,7 @@ public class EventFeedController {
         FeedSection lastRenderedSection = null;
         LocalDate lastRenderedDate = null;
 
-        for (EventOccurrence occurrence : loadedOccurrences) {
+        for (EventOccurrence occurrence : visibleOccurrences) {
             LocalDate occurrenceDate = occurrence.occurrenceDate();
             FeedSection section = classifySection(occurrenceDate);
 

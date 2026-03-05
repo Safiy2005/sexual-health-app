@@ -1251,6 +1251,42 @@
     -fx-padding: 8px 12px;
 }
 
+/* Event feed filter bar */
+.event-feed-filter-bar {
+    -fx-background-color: #F7F3EF;
+    -fx-border-color: transparent transparent #D7E6E4 transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.event-feed-filter-chip {
+    -fx-background-color: white;
+    -fx-text-fill: #5C7777;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 16px;
+    -fx-border-color: #D7E6E4;
+    -fx-border-radius: 16px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.event-feed-filter-chip:hover {
+    -fx-background-color: #EAF2F0;
+}
+
+.event-feed-filter-chip-active {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
+    -fx-border-color: #7DBBB5;
+}
+
+.event-feed-filter-chip-active:hover {
+    -fx-background-color: #6BADA6;
+    -fx-border-color: #6BADA6;
+}
+
 /* Action bar between calendar grid and day events */
 .calendar-action-bar {
     -fx-background-color: transparent;
