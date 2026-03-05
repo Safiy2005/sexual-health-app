@@ -1,0 +1,59 @@
+APPLICATION
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Application] (0 - 50%) The application does not compile or run. No useful functionality is delivered. Outputs are missing or incorrect. User controls are absent or unusable.
+
+I have awarded a mark of 0%
+
+APPLICATION COMMENTS
+
+This component is currently recorded as zero for all groups. Marks and feedback will be updated after the review session with your supervisor. 
+
+DESIGN
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Design] (80 - 100%) Excellent design decisions are well justified. The architecture is robust and facilitates maintainability. Rich and appropriate design artifacts (UML, sketches, scenarios, etc.) are used effectively. Prioritisation ensures maximum value. Feedback from previous deliverables is fully addressed.
+
+I have awarded a mark of 80%
+
+DESIGN COMMENTS
+
+Your design artefacts are consistent with each other, and they align with the functionality you describe elsewhere in the report. Very good responses to the feedback. 
+
+TESTING
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Testing] (80 - 100%) Excellent and comprehensive testing is carried out. Strong evidence of test outputs is presented. Tests are clearly linked to design artifacts and thoroughly verify correctness.
+
+I have awarded a mark of 80%
+
+TESTING COMMENTS
+
+The team has taken appropriate steps to test the application, including the use of unit tests to verify core functionality. 
+
+PLANNING
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Planning] (80 - 100%) An excellent burndown chart is presented in the correct format, with detailed and accurate tracking of progress. Sprint planning for the next increment is clear, detailed, and realistic. Reprioritisation is well justified.
+
+I have awarded a mark of 80%
+
+PLANNING COMMENTS
+
+The overall increment plan is sensible and shows how the system will deliver useful features over time. The burndown chart is in the correct format and gives a clear impression of progress through the sprint. 
+
+TEAMWORK
+
+It looks like you are working well as a team. 
+
+TECHNIQUES AND PROJECT MANAGEMENT
+
+It sounds like you are using group meetings to build a shared understanding and completing work together, keep doing so; productive working meetings are an important part of successful group working. 
+
+ISSUES TO ADDRESS FOR THE NEXT DELIVERABLE
+
+Good job. there is no need to provide that much actual code in your report, as well as for your Part 3 project reports.
