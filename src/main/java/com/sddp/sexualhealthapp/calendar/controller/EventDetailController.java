@@ -10,6 +10,7 @@ import com.sddp.sexualhealthapp.calendar.util.EventDetailFormatter;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
@@ -31,15 +32,31 @@ public class EventDetailController {
 
     @FXML private VBox recurrenceBox;
     @FXML private Label recurrenceLabel;
+    @FXML private VBox confirmDeleteOverlay;
+    @FXML private Label confirmDeleteBody;
+    @FXML private Button deleteSingleBtn;
+    @FXML private Button deleteAllBtn;
+    @FXML private javafx.scene.layout.HBox confirmDefaultRow;
+    @FXML private javafx.scene.layout.VBox confirmRecurringRow;
+    @FXML private VBox confirmEditOverlay;
+    @FXML private Label confirmEditBody;
+    @FXML private javafx.scene.layout.HBox confirmEdDefaultRow;
+    @FXML private javafx.scene.layout.VBox confirmEdRecurringRow;
 
     private Runnable onBack;
     private CalendarEvent currentEvent;
     private LocalDate occurrenceDate;
     private String missingEventId;
-    private java.util.function.Consumer<CalendarEvent> onEdit;
+    private java.util.function.BiConsumer<CalendarEvent, LocalDate> onEdit;
+    private java.util.function.BiConsumer<CalendarEvent, LocalDate> onDelete;
 
-    public void setOnEdit(java.util.function.Consumer<CalendarEvent> onEdit){
+
+    public void setOnEdit(java.util.function.BiConsumer<CalendarEvent, LocalDate> onEdit){
         this.onEdit = onEdit;
+    }
+
+    public void setOnDelete(java.util.function.BiConsumer<CalendarEvent, LocalDate> onDelete){
+        this.onDelete = onDelete;
     }
 
     public void setOnBack(Runnable onBack){
@@ -64,7 +81,21 @@ public class EventDetailController {
         render();
     }
 
+    private void hideDeleteOverlay() {
+        confirmDeleteOverlay.setVisible(false);
+        confirmDeleteOverlay.setManaged(false);
+    }
+
+    private void hideEditOverlay() {
+        if (confirmEditOverlay != null) {
+            confirmEditOverlay.setVisible(false);
+            confirmEditOverlay.setManaged(false);
+        }
+    }
+
     public void render(){
+        hideDeleteOverlay();
+        hideEditOverlay();
         if (currentEvent == null) {
             showMissingState();
             return;
@@ -136,8 +167,125 @@ public class EventDetailController {
 
     @FXML
     private void handleEditEvent(ActionEvent e) {
+        if (currentEvent == null) return;
+
+        // If recurring and we have an occurence date, show a different message
+        boolean recurring = currentEvent.getRecurrenceRule() != null;
+        boolean hasOcc = occurrenceDate != null;
+
+        boolean showRecurringChoice = recurring && hasOcc;
+
+        // message
+
+        confirmEditBody.setText(showRecurringChoice ? "Edit only this occurrence, or the whole series?"
+                                                      : "Edit this event?.");  
+        
+        
+        // toggle rows
+        confirmEdDefaultRow.setVisible(!showRecurringChoice);
+        confirmEdDefaultRow.setManaged(!showRecurringChoice);
+
+        confirmEdRecurringRow.setVisible(showRecurringChoice);
+        confirmEdRecurringRow.setManaged(showRecurringChoice);
+
+        // show overlay
+        confirmEditOverlay.setVisible(true);
+        confirmEditOverlay.setManaged(true);
+    }
+
+    @FXML
+    private void handleCancelEdit(ActionEvent e) {
+        confirmEditOverlay.setVisible(false);
+        confirmEditOverlay.setManaged(false);
+    }
+
+    @FXML
+    private void handleConfirmEdit(ActionEvent e) {
+        // non-recurring -> just edit
+        handleCancelEdit(e);
         if (onEdit != null && currentEvent != null) {
-            onEdit.accept(currentEvent);
+            onEdit.accept(currentEvent, null); // treating it as edit series
+        }
+        
+    }
+
+    @FXML
+    private void handleConfirmEditSingle(ActionEvent e){
+        handleCancelEdit(e);
+        if (onEdit != null && currentEvent != null) {
+            onEdit.accept(currentEvent, occurrenceDate); 
+        }
+    }
+
+    @FXML
+    private void handleConfirmEditAll(ActionEvent e){
+        handleCancelEdit(e);
+        if (onEdit != null && currentEvent != null) {
+            onEdit.accept(currentEvent, null); 
+        }
+    }
+    
+
+    @FXML
+    private void handleDeleteEvent(ActionEvent e) {
+        if (currentEvent == null) return;
+
+        // If recurring and we have an occurence date, show a different message
+        boolean recurring = currentEvent.getRecurrenceRule() != null;
+        boolean hasOcc = occurrenceDate != null;
+
+        boolean showRecurringChoice = recurring && hasOcc;
+
+        // message
+
+        confirmDeleteBody.setText(showRecurringChoice ? "Delete only this occurrence, or the whole series?"
+                                                      : "This cannot be undone.");  
+        
+        
+        // toggle rows
+        confirmDefaultRow.setVisible(!showRecurringChoice);
+        confirmDefaultRow.setManaged(!showRecurringChoice);
+
+        confirmRecurringRow.setVisible(showRecurringChoice);
+        confirmRecurringRow.setManaged(showRecurringChoice);
+
+        // show overlay
+        confirmDeleteOverlay.setVisible(true);
+        confirmDeleteOverlay.setManaged(true);
+    }
+
+    @FXML
+    private void handleCancelDelete(ActionEvent e) {
+        confirmDeleteOverlay.setVisible(false);
+        confirmDeleteOverlay.setManaged(false);
+    }
+
+    @FXML
+    private void handleConfirmDelete(ActionEvent e) {
+        
+        confirmDeleteOverlay.setVisible(false);
+        confirmDeleteOverlay.setManaged(false);
+
+        if (onDelete != null && currentEvent != null) {
+            onDelete.accept(currentEvent, occurrenceDate);
+        }
+    }
+
+    @FXML
+    private void handleConfirmDeleteSingle(ActionEvent e){
+        handleCancelDelete(e);
+
+        if(onDelete != null) {
+            onDelete.accept(currentEvent, occurrenceDate);
+        }
+    }
+
+    @FXML
+    private void handleConfirmDeleteAll(ActionEvent e){
+        handleCancelDelete(e);
+
+        if (onDelete != null) {
+            onDelete.accept(currentEvent, null);
         }
     }
 

@@ -14,6 +14,7 @@ import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
 import com.sddp.sexualhealthapp.calendar.controller.EventDetailController;
 import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
@@ -366,13 +367,37 @@ public class MainAppController {
         // go back where u came from
         eventDetailViewController.setOnBack(() -> showOnlyCalendarView(returnTo));
         // When edit event occurs
-        eventDetailViewController.setOnEdit(evnt -> {
+
+        eventDetailViewController.setOnEdit((evnt, occDate) ->{
             returnAfterCreateEvent = returnTo;
-            createEventViewController.startEdit(evnt);
+            boolean recurring = evnt.getRecurrenceRule() != null;
+
+            if (recurring && occDate != null) {
+                createEventViewController.startEditSingleOccurrence(evnt, occDate);
+            } else {
+                createEventViewController.startEditSeries(evnt);
+            }
+
             showOnlyCalendarView(createEventView);
         });
-        // show detail screen
+            
+        // If event deleted
+        eventDetailViewController.setOnDelete((evnt, occDate) -> {
+            EventStorageService storage = EventStorageService.getInstance();
+
+            boolean recurring = evnt.getRecurrenceRule() != null;
+
+            if (recurring && occDate != null) {
+                storage.excludeOccurrence(evnt.getId(), occDate);
+            } else {
+                storage.deleteEvent(evnt.getId());
+            }
+
+            calendarViewController.refresh();
+            eventFeedViewController.refresh();
+            showOnlyCalendarView(returnTo);    
+
+        });
         showOnlyCalendarView(eventDetailView);
     }
-
 }

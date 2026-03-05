@@ -101,6 +101,9 @@ public class CreateEventController {
     private EventStorageService storageService; // for the json
     private Runnable onBackToCalendar;
     private CalendarEvent editingEvent = null;
+    private enum EditScope { SERIES, SINGLE};
+    private EditScope editScope = EditScope.SERIES;
+    private LocalDate editingOccurrenceDate = null;
 
     @FXML
     public void initialize() {
@@ -318,15 +321,26 @@ public class CreateEventController {
 
         // 5. Save
         if (editingEvent != null) {
-            // Preserves the original ID
-            newEvent.setId(editingEvent.getId());
-            storageService.updateEvent(newEvent);
-        } else {
-            storageService.addEvent(newEvent);
-        }
+            if (editScope == EditScope.SERIES) {
+                newEvent.setId(editingEvent.getId());
+                storageService.updateEvent(newEvent);
+            } else {
+                // single occurrence edit
+                storageService.excludeOccurrence(editingEvent.getId(),editingOccurrenceDate);
+
+                // create a new one off replacement
+                newEvent.setRecurrenceRule(null);
+                storageService.addEvent(newEvent);
+            } 
+        }else {
+                storageService.addEvent(newEvent);
+            }
+
         System.out.println("Full event saved successfully!");
 
         editingEvent = null;
+        editScope = EditScope.SERIES;
+        editingOccurrenceDate = null;
 
         handleBackToCalendar(event);
     }
@@ -395,6 +409,9 @@ public class CreateEventController {
 
     // clears contents after leaving the create page
     private void clearForm() {
+        editingEvent = null;
+        editScope = EditScope.SERIES;
+        editingOccurrenceDate = null;
         titleField.clear();
         datePicker.setValue(null);
         typeComboBox.getSelectionModel().clearSelection();
@@ -566,11 +583,28 @@ public class CreateEventController {
     }
 
 
-    public void startEdit(CalendarEvent event) {
+    public void startEditSeries(CalendarEvent event) {
         headerLabel.setText("Edit Event");
         saveButton.setText("Save Changes");
         this.editingEvent = event;
+        this.editScope = EditScope.SERIES;
+        this.editingOccurrenceDate = null;
         populateFormFromEvent(event);
+    }
+
+    public void startEditSingleOccurrence(CalendarEvent seriesEvent, LocalDate occurrenceDate) {
+        headerLabel.setText("Edit Occurrence");
+        saveButton.setText("Save Changes");
+        this.editingEvent = seriesEvent;
+        this.editScope = EditScope.SINGLE;
+        this.editingOccurrenceDate = occurrenceDate;
+        populateFormFromEvent(seriesEvent);
+
+        // force the date to the clicked occurence
+        datePicker.setValue(occurrenceDate);
+
+        // the edited occurrence becomes a one off event
+        recurrenceComboBox.getSelectionModel().select("Does not repeat");
     }
 
 
