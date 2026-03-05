@@ -1,19 +1,23 @@
 package com.sddp.sexualhealthapp.article.controller;
 
 import com.sddp.sexualhealthapp.article.model.Article;
+import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Circle;
 import javafx.util.Duration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Controller for the article detail view.
@@ -27,18 +31,36 @@ public class ArticleViewController {
     private HBox pageIndicatorContainer;
     @FXML
     private Label pageCounterLabel;
+    @FXML
+    private Button navMenuButton;
+    @FXML
+    private VBox navMenuOverlay;
+    @FXML
+    private VBox navMenuBackdrop;
+    @FXML
+    private ScrollPane navMenuScroll;
+    @FXML
+    private VBox navMenuContent;
+    @FXML
+    private Label leftArrowLabel;
+    @FXML
+    private Label rightArrowLabel;
 
+    private boolean navMenuOpen = false;
     private Runnable onBackToSearch;
 
     private List<VBox> articlePages;
     private int currentPageIndex;
     private double swipeStartX;
 
-
     private boolean hasSetUpSwipeEvents = false;
 
     private static final double SWIPE_THRESHOLD = 50.0;
     private static final int SLIDE_DURATION_MS = 250;
+
+    /** Matches headings ending with an optional colon + "Part N" suffix. */
+    private static final Pattern PART_PATTERN = Pattern.compile("^(.+?)(?::?\\s*Part\\s+\\d+)$",
+            Pattern.CASE_INSENSITIVE);
 
     /**
      * Sets the callback to invoke when the user presses the Back button.
@@ -59,7 +81,6 @@ public class ArticleViewController {
         articlePages = new ArrayList<>();
         currentPageIndex = 0;
         articlePageContainer.getChildren().clear();
-        pageIndicatorContainer.getChildren().clear();
 
         // Page 0: Title page with article overview
         VBox titlePage = ArticlePageBuilder.createTitlePage(article);
@@ -80,9 +101,13 @@ public class ArticleViewController {
             articlePageContainer.getChildren().add(page);
         }
 
-        // Build page indicator dots
-        buildPageIndicators();
+        // Update arrow indicators
+        updateArrowIndicators();
         updatePageCounter();
+
+        // Build the navigation menu items
+        buildNavMenu(article);
+        hideNavMenu();
 
         // Repeated registering of these events will cause pages to be skipped over
         if (!hasSetUpSwipeEvents) {
@@ -145,7 +170,7 @@ public class ArticleViewController {
         slideIn.play();
 
         currentPageIndex = targetIndex;
-        updatePageIndicators();
+        updateArrowIndicators();
         updatePageCounter();
     }
 
@@ -158,54 +183,11 @@ public class ArticleViewController {
     }
 
     /**
-     * Initial setup for indicators.
+     * Shows/hides the left and right arrow labels based on the current page.
      */
-    private void buildPageIndicators() {
-        // Just call update to render the initial window of dots
-        updatePageIndicators();
-    }
-    /**
-     * Rebuilds the dots to show a sliding window (e.g., 5 dots)
-     * centered on the current page to prevent overflow.
-     */
-    private void updatePageIndicators() {
-        pageIndicatorContainer.getChildren().clear();
-
-        int totalPages = articlePages.size();
-        int maxVisible = 5; // How many dots you want to see at once
-
-        // 1. Calculate the window range (Start -> End)
-        // Try to center the current page
-        int start = Math.max(0, currentPageIndex - (maxVisible / 2));
-        int end = Math.min(totalPages, start + maxVisible);
-
-        // Adjust start if we hit the end (so we always show 5 dots if possible)
-        if (end - start < maxVisible) {
-            start = Math.max(0, end - maxVisible);
-        }
-
-        // 2. Create the dots for this window
-        for (int i = start; i < end; i++) {
-            Circle dot = new Circle(4);
-
-            // Add style classes (make sure these are in your CSS)
-            if (i == currentPageIndex) {
-                dot.getStyleClass().add("page-dot-active");
-            } else {
-                dot.getStyleClass().add("page-dot");
-
-                // Optional: Make the edge dots smaller for a smoother "Instagram" look
-                if (totalPages > maxVisible && (i == start || i == end - 1)) {
-                    dot.setRadius(2.5);
-                }
-            }
-
-            // Add click listener to jump to that specific page
-            final int targetIndex = i;
-            dot.setOnMouseClicked(e -> navigateToPage(targetIndex));
-
-            pageIndicatorContainer.getChildren().add(dot);
-        }
+    private void updateArrowIndicators() {
+        leftArrowLabel.setVisible(currentPageIndex > 0);
+        rightArrowLabel.setVisible(currentPageIndex < articlePages.size() - 1);
     }
 
     /**
@@ -217,8 +199,203 @@ public class ArticleViewController {
 
     @FXML
     private void handleBack() {
+        if (navMenuOpen) {
+            hideNavMenu();
+        }
         if (onBackToSearch != null) {
             onBackToSearch.run();
         }
+    }
+
+    /**
+     * Toggles the mini navigation menu overlay.
+     */
+    @FXML
+    private void handleToggleNavMenu() {
+        if (navMenuOpen) {
+            hideNavMenu();
+        } else {
+            showNavMenu();
+        }
+    }
+
+    /**
+     * Returns the base heading for grouping, stripping any ": Part N" suffix.
+     */
+    private String getBaseHeading(String heading) {
+        Matcher m = PART_PATTERN.matcher(heading);
+        return m.matches() ? m.group(1).trim() : heading;
+    }
+
+    /**
+     * Builds the navigation menu items from the article sections.
+     * Consecutive sections whose headings share the same base (before ": Part N")
+     * are grouped under a single header with indented sub-items.
+     */
+    private void buildNavMenu(Article article) {
+        navMenuContent.getChildren().clear();
+
+        List<Article.Section> sections = article.getSections();
+
+        // Title page entry
+        HBox titleRow = createNavMenuItem("\u2302", article.getTitle());
+        titleRow.setUserData(0);
+        titleRow.setOnMouseClicked(e -> {
+            navigateToPage(0);
+            hideNavMenu();
+        });
+        navMenuContent.getChildren().add(titleRow);
+
+        // Group consecutive sections that share a base heading
+        int i = 0;
+        int displayNumber = 1; // sequential counter, groups count as one
+        while (i < sections.size()) {
+            String baseHeading = getBaseHeading(sections.get(i).heading());
+
+            // Count how many consecutive sections share this base
+            int groupStart = i;
+            while (i < sections.size()
+                    && getBaseHeading(sections.get(i).heading()).equals(baseHeading)) {
+                i++;
+            }
+            int groupSize = i - groupStart;
+
+            if (groupSize > 1) {
+                // Wrapper VBox to visually group heading + dots
+                VBox groupWrapper = new VBox(0);
+                groupWrapper.getStyleClass().add("nav-menu-group-wrapper");
+                groupWrapper.setUserData(-1);
+
+                // Group header with number (non-clickable)
+                HBox groupRow = createNavMenuItem(String.valueOf(displayNumber), baseHeading);
+                groupRow.setMouseTransparent(true);
+                groupRow.getStyleClass().add("nav-menu-group-item");
+                groupWrapper.getChildren().add(groupRow);
+
+                // Sub-item dots for each part
+                FlowPane dotsRow = new FlowPane(6, 6);
+                dotsRow.getStyleClass().add("nav-menu-dots-row");
+                dotsRow.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
+
+                for (int j = groupStart; j < groupStart + groupSize; j++) {
+                    final int pageIndex = j + 1;
+
+                    Label dot = new Label(String.valueOf(j - groupStart + 1));
+                    dot.getStyleClass().add("nav-menu-dot-button");
+                    dot.setUserData(pageIndex);
+                    dot.setOnMouseClicked(e -> {
+                        navigateToPage(pageIndex);
+                        hideNavMenu();
+                    });
+                    dotsRow.getChildren().add(dot);
+                }
+                groupWrapper.getChildren().add(dotsRow);
+                navMenuContent.getChildren().add(groupWrapper);
+            } else {
+                // Single section – render normally
+                final int pageIndex = groupStart + 1;
+                Article.Section section = sections.get(groupStart);
+
+                HBox row = createNavMenuItem(String.valueOf(displayNumber), section.heading());
+                row.setUserData(pageIndex);
+                row.setOnMouseClicked(e -> {
+                    navigateToPage(pageIndex);
+                    hideNavMenu();
+                });
+                navMenuContent.getChildren().add(row);
+            }
+            displayNumber++;
+        }
+    }
+
+    /**
+     * Creates a nav menu item row with a bold number badge and a heading label.
+     */
+    private HBox createNavMenuItem(String number, String heading) {
+        Label numberLabel = new Label(number);
+        numberLabel.getStyleClass().add("nav-menu-item-number");
+        numberLabel.setMinWidth(Label.USE_PREF_SIZE);
+
+        Label headingLabel = new Label(heading);
+        headingLabel.getStyleClass().add("nav-menu-item-heading");
+        headingLabel.setWrapText(true);
+
+        HBox row = new HBox(8, numberLabel, headingLabel);
+        row.getStyleClass().add("nav-menu-item");
+        row.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
+        row.setMaxWidth(Double.MAX_VALUE);
+        return row;
+    }
+
+    private void showNavMenu() {
+        navMenuOpen = true;
+
+        // Highlight the current page in the nav menu using stored page indices
+        int activeChildIndex = 0;
+        for (int i = 0; i < navMenuContent.getChildren().size(); i++) {
+            javafx.scene.Node item = navMenuContent.getChildren().get(i);
+            item.getStyleClass().remove("nav-menu-item-active");
+
+            // Check top-level items (HBox rows with a page index)
+            if (item.getUserData() instanceof Integer pageIndex
+                    && pageIndex == currentPageIndex) {
+                item.getStyleClass().add("nav-menu-item-active");
+                activeChildIndex = i;
+            }
+
+            // Check dot-button children inside group wrappers
+            if (item instanceof VBox wrapper
+                    && wrapper.getStyleClass().contains("nav-menu-group-wrapper")) {
+                for (javafx.scene.Node child : wrapper.getChildren()) {
+                    if (child instanceof HBox hbox) {
+                        for (javafx.scene.Node dot : hbox.getChildren()) {
+                            dot.getStyleClass().remove("nav-menu-dot-active");
+                            if (dot.getUserData() instanceof Integer dotPage
+                                    && dotPage == currentPageIndex) {
+                                dot.getStyleClass().add("nav-menu-dot-active");
+                                activeChildIndex = i;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        navMenuBackdrop.setVisible(true);
+        navMenuBackdrop.setManaged(true);
+        navMenuBackdrop.setOpacity(0);
+
+        navMenuOverlay.setVisible(true);
+        navMenuOverlay.setManaged(true);
+        navMenuOverlay.setOpacity(0);
+
+        // Scroll to the current section after layout
+        navMenuOverlay.applyCss();
+        navMenuOverlay.layout();
+        int itemCount = navMenuContent.getChildren().size();
+        if (itemCount > 1) {
+            navMenuScroll.setVvalue((double) activeChildIndex / (itemCount - 1));
+        } else {
+            navMenuScroll.setVvalue(0);
+        }
+
+        // Fade in both backdrop and overlay together
+        FadeTransition backdropFade = new FadeTransition(Duration.millis(150), navMenuBackdrop);
+        backdropFade.setToValue(1);
+        backdropFade.play();
+
+        FadeTransition overlayFade = new FadeTransition(Duration.millis(150), navMenuOverlay);
+        overlayFade.setToValue(1);
+        overlayFade.play();
+    }
+
+    private void hideNavMenu() {
+        navMenuOpen = false;
+
+        navMenuBackdrop.setVisible(false);
+        navMenuBackdrop.setManaged(false);
+
+        navMenuOverlay.setVisible(false);
+        navMenuOverlay.setManaged(false);
     }
 }
