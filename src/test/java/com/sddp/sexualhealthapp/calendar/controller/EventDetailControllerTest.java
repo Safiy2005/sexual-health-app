@@ -23,17 +23,14 @@ import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 
 import javafx.application.Platform;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 /**
  * Unit tests for EventDetailController.
- *
- * - Defect tests: null event => missing state, null type => fallback, trimming missing ID
- * - Boundary/partition tests: dosage visible rules, recurrence visible rules, missing ID blank vs present
- * - Regression tests: style string contains dot color, view state toggles correctly, callbacks work correctly
-**/
-
+ */
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
 class EventDetailControllerTest {
 
@@ -45,18 +42,18 @@ class EventDetailControllerTest {
             CountDownLatch latch = new CountDownLatch(1);
             Platform.startup(latch::countDown);
             if (!latch.await(5, TimeUnit.SECONDS)) {
-                throw new IllegalStateException("JavaFx Platfrom failed to start");
+                throw new IllegalStateException("JavaFx Platform failed to start");
             }
         } catch (IllegalStateException alreadyStarted) {
             // JavaFx already started
         }
     }
-    
+
     @BeforeEach
     void setUp() throws Exception {
         controller = new EventDetailController();
 
-        // Inject @FXML fields 
+        // Basic fields
         inject(controller, "nameLabel", new Label());
         inject(controller, "typeBadge", new Label());
         inject(controller, "dateTimeLabel", new Label());
@@ -73,6 +70,20 @@ class EventDetailControllerTest {
 
         inject(controller, "recurrenceBox", new VBox());
         inject(controller, "recurrenceLabel", new Label());
+
+        // NEW: delete overlay fields
+        inject(controller, "confirmDeleteOverlay", new VBox());
+        inject(controller, "confirmDeleteBody", new Label());
+        inject(controller, "deleteSingleBtn", new Button());
+        inject(controller, "deleteAllBtn", new Button());
+        inject(controller, "confirmDefaultRow", new HBox());
+        inject(controller, "confirmRecurringRow", new VBox()); // <- your controller uses VBox now
+
+        // NEW: edit overlay fields
+        inject(controller, "confirmEditOverlay", new VBox());
+        inject(controller, "confirmEditBody", new Label());
+        inject(controller, "confirmEdDefaultRow", new HBox());
+        inject(controller, "confirmEdRecurringRow", new VBox()); // <- your controller uses VBox now
 
         Locale.setDefault(Locale.UK);
     }
@@ -112,7 +123,7 @@ class EventDetailControllerTest {
     }
 
     // Boundary / partition tests
-    
+
     @Test
     void boundary_missingEventId_blankOrWhitespace_hidesIdLabel() throws Exception {
         runOnFxAndWait(() -> controller.showMissingEventState("   "));
@@ -215,6 +226,7 @@ class EventDetailControllerTest {
     }
 
     // Regression tests
+
     @Test
     void regression_typeStyleUsesDotColorForKnownType() throws Exception {
         CalendarEvent event = new CalendarEvent(
@@ -259,6 +271,7 @@ class EventDetailControllerTest {
     }
 
     // Wiring tests
+
     @Test
     void handleBack_invokesCallback() throws Exception {
         AtomicBoolean called = new AtomicBoolean(false);
@@ -272,16 +285,17 @@ class EventDetailControllerTest {
     }
 
     @Test
-    void handleEdit_invokesCallbackOnlyWhenEventPresent_partitionTest() throws Exception {
+    void handleEdit_showsOverlay_and_confirmInvokesCallback() throws Exception {
         AtomicBoolean editCalled = new AtomicBoolean(false);
-        controller.setOnEdit(ev -> editCalled.set(true));
 
-        // Partition A: missing state => edit should not fire
+        controller.setOnEdit((ev, date) -> editCalled.set(true));
+
+        // Missing state => clicking edit should do nothing
         runOnFxAndWait(() -> controller.showMissingEventState("x"));
         runOnFxAndWait(() -> invokePrivate(controller, "handleEditEvent", javafx.event.ActionEvent.class, null));
         assertFalse(editCalled.get());
 
-        // Partition B: event set => edit should fire
+        // With an event => clicking edit opens overlay, confirm triggers callback
         CalendarEvent event = new CalendarEvent(
                 "Editable",
                 LocalDate.of(2026, 3, 10),
@@ -290,12 +304,22 @@ class EventDetailControllerTest {
                 null,
                 null
         );
+
         runOnFxAndWait(() -> controller.setEvent(event, null));
+
+        VBox editOverlay = get(controller, "confirmEditOverlay", VBox.class);
+        assertFalse(editOverlay.isVisible(), "Overlay should start hidden");
+
         runOnFxAndWait(() -> invokePrivate(controller, "handleEditEvent", javafx.event.ActionEvent.class, null));
-        assertTrue(editCalled.get());
+        assertTrue(editOverlay.isVisible() && editOverlay.isManaged(), "Overlay should appear on edit");
+
+        // Simulate pressing confirm
+        runOnFxAndWait(() -> invokePrivate(controller, "handleConfirmEdit", javafx.event.ActionEvent.class, null));
+        assertTrue(editCalled.get(), "Edit callback should run after confirming");
     }
+
     // Helpers
-    
+
     private static void inject(Object target, String fieldName, Object value) throws Exception {
         Field f = target.getClass().getDeclaredField(fieldName);
         f.setAccessible(true);
