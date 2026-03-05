@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -272,7 +273,7 @@ public class ArticleViewController {
                 groupWrapper.getChildren().add(groupRow);
 
                 // Sub-item dots for each part
-                HBox dotsRow = new HBox(6);
+                FlowPane dotsRow = new FlowPane(6, 6);
                 dotsRow.getStyleClass().add("nav-menu-dots-row");
                 dotsRow.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
 
