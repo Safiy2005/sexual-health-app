@@ -23,6 +23,19 @@
                 onAction="#handleJumpToToday"/>
     </HBox>
 
+    <!-- Event type filter bar -->
+    <HBox fx:id="filterBar" styleClass="event-feed-filter-bar" alignment="CENTER_LEFT" spacing="8">
+        <padding>
+            <Insets top="8" right="16" bottom="8" left="16"/>
+        </padding>
+        <Button fx:id="filterAppointmentButton" text="Appointment" styleClass="event-feed-filter-chip"
+                onAction="#handleFilterAppointment"/>
+        <Button fx:id="filterMedicationButton" text="Medication" styleClass="event-feed-filter-chip"
+                onAction="#handleFilterMedication"/>
+        <Button fx:id="filterTestButton" text="Test" styleClass="event-feed-filter-chip"
+                onAction="#handleFilterTest"/>
+    </HBox>
+
     <!-- Upcoming events list (scrollable) -->
     <ScrollPane fx:id="feedScrollPane" fitToWidth="true"
                 VBox.vgrow="ALWAYS" styleClass="search-scroll-pane"
