@@ -71,28 +71,23 @@ class EventDetailControllerTest {
         inject(controller, "recurrenceBox", new VBox());
         inject(controller, "recurrenceLabel", new Label());
 
-        // Suggested articles fields
         inject(controller, "suggestedArticlesBox", new VBox());
         inject(controller, "suggestedArticlesContainer", new VBox());
 
-        // NEW: delete overlay fields
         inject(controller, "confirmDeleteOverlay", new VBox());
         inject(controller, "confirmDeleteBody", new Label());
         inject(controller, "deleteSingleBtn", new Button());
         inject(controller, "deleteAllBtn", new Button());
         inject(controller, "confirmDefaultRow", new HBox());
-        inject(controller, "confirmRecurringRow", new VBox()); // <- your controller uses VBox now
+        inject(controller, "confirmRecurringRow", new VBox());
 
-        // NEW: edit overlay fields
         inject(controller, "confirmEditOverlay", new VBox());
         inject(controller, "confirmEditBody", new Label());
         inject(controller, "confirmEdDefaultRow", new HBox());
-        inject(controller, "confirmEdRecurringRow", new VBox()); // <- your controller uses VBox now
+        inject(controller, "confirmEdRecurringRow", new VBox());
 
         Locale.setDefault(Locale.UK);
     }
-
-    // Defect tests
 
     @Test
     void defect_nullEvent_showsMissingStateAndHidesContent() throws Exception {
@@ -124,8 +119,6 @@ class EventDetailControllerTest {
         assertNotNull(typeBadge.getStyle());
         assertFalse(typeBadge.getStyle().isBlank(), "Fallback style should still be applied");
     }
-
-    // Boundary / partition tests
 
     @Test
     void boundary_missingEventId_blankOrWhitespace_hidesIdLabel() throws Exception {
@@ -266,8 +259,6 @@ class EventDetailControllerTest {
         assertFalse(contentRoot.isVisible() || contentRoot.isManaged());
         assertTrue(missingRoot.isVisible() && missingRoot.isManaged());
     }
-
-    // Wiring tests
 
     @Test
     void handleBack_invokesCallback() throws Exception {
