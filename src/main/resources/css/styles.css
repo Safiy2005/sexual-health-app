@@ -701,16 +701,12 @@
     -fx-background-color: transparent;
 }
 
-/* Inactive page dot */
-.page-dot {
-    -fx-fill: #C8BFB6;
-    -fx-cursor: hand;
-}
-
-/* Active page dot */
-.page-dot-active {
-    -fx-fill: #7DBBB5;
-    -fx-cursor: hand;
+/* Swipe arrow hint labels */
+.swipe-arrow-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-font-weight: 600;
 }
 
 /* Page counter label (e.g. "1 / 5") */
@@ -718,6 +714,150 @@
     -fx-font-size: 13px;
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
     -fx-text-fill: #9AABAB;
+}
+
+/* ============================================
+   ARTICLE NAVIGATION MENU
+   ============================================ */
+
+/* Hamburger ☰ button in the back bar */
+.nav-menu-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 14px;
+    -fx-cursor: hand;
+    -fx-min-width: 36px;
+    -fx-min-height: 36px;
+    -fx-alignment: center;
+}
+
+.nav-menu-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.nav-menu-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+/* Semi-transparent backdrop behind the nav menu */
+.nav-menu-backdrop {
+    -fx-background-color: rgba(61, 90, 91, 0.25);
+}
+
+/* Navigation menu overlay panel */
+.nav-menu-overlay {
+    -fx-background-color: white;
+    -fx-background-radius: 16px;
+    -fx-max-width: 320px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.18), 12, 0, 0, 3);
+}
+
+
+/* Inner content box of the nav menu */
+.nav-menu-content {
+    -fx-background-color: transparent;
+}
+
+/* Individual section item in the nav menu */
+.nav-menu-item {
+    -fx-background-color: #E8F4F2;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 14px;
+    -fx-cursor: hand;
+    -fx-max-width: Infinity;
+}
+
+/* Bold number badge at the start of each nav item */
+.nav-menu-item-number {
+    -fx-text-fill: #3D7A75;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/* Section heading text in the nav item */
+.nav-menu-item-heading {
+    -fx-text-fill: #3D5A5B;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.nav-menu-item:hover {
+    -fx-background-color: #D4E8E5;
+}
+
+.nav-menu-item:pressed {
+    -fx-background-color: #B8D9D4;
+}
+
+/* Currently active section in the nav menu */
+.nav-menu-item-active {
+    -fx-background-color: #D4E8E5;
+    -fx-border-color: #7DBBB5;
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-radius: 10px;
+}
+
+.nav-menu-item-active:hover {
+    -fx-background-color: #C4DDD9;
+}
+
+.nav-menu-item-active:pressed {
+    -fx-background-color: #B8D9D4;
+}
+
+/* Group heading row for multi-part sections (non-clickable) */
+.nav-menu-group-item {
+    -fx-background-color: transparent;
+    -fx-cursor: default;
+    -fx-padding: 10px 14px 4px 14px;
+}
+
+.nav-menu-group-item:hover {
+    -fx-background-color: transparent;
+}
+
+/* Wrapper around heading + dots for visual grouping */
+.nav-menu-group-wrapper {
+    -fx-background-color: #E8F4F2;
+    -fx-background-radius: 10px;
+    -fx-padding: 0;
+}
+
+/* Row of dot-buttons for multi-part section groups */
+.nav-menu-dots-row {
+    -fx-padding: 4px 14px 6px 18px;
+}
+
+/* Individual numbered dot-button inside a dots row */
+.nav-menu-dot-button {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+    -fx-min-width: 28px;
+    -fx-alignment: center;
+}
+
+.nav-menu-dot-button:hover {
+    -fx-background-color: #B8D9D4;
+}
+
+.nav-menu-dot-button:pressed {
+    -fx-background-color: #9DCBC5;
+}
+
+/* Active dot-button for the currently viewed part */
+.nav-menu-dot-active {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
 }
 
 /* ============================================
@@ -1251,6 +1391,42 @@
     -fx-padding: 8px 12px;
 }
 
+/* Event feed filter bar */
+.event-feed-filter-bar {
+    -fx-background-color: #F7F3EF;
+    -fx-border-color: transparent transparent #D7E6E4 transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.event-feed-filter-chip {
+    -fx-background-color: white;
+    -fx-text-fill: #5C7777;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 16px;
+    -fx-border-color: #D7E6E4;
+    -fx-border-radius: 16px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.event-feed-filter-chip:hover {
+    -fx-background-color: #EAF2F0;
+}
+
+.event-feed-filter-chip-active {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
+    -fx-border-color: #7DBBB5;
+}
+
+.event-feed-filter-chip-active:hover {
+    -fx-background-color: #6BADA6;
+    -fx-border-color: #6BADA6;
+}
+
 /* Action bar between calendar grid and day events */
 .calendar-action-bar {
     -fx-background-color: transparent;
@@ -1297,7 +1473,6 @@
 }
 
 /* ============================================
-<<<<<<< HEAD
    FORM INPUTS & CONTROLS
    (DatePickers, ComboBoxes, Spinners, CheckBoxes)
    ============================================ */
@@ -1682,6 +1857,9 @@
     -fx-background-color: #FDF8F3;
     -fx-text-fill: #D9534F; /* A soft red for deletion */
 }
+/* ============================================
+   EVENT DETAIL VIEW STYLES (Story 49)
+   ============================================ */
 
 .event-detail-root {
     -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
@@ -1757,7 +1935,14 @@
     -fx-font-size: 14px;
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
     -fx-text-fill: #6F8384;
+}
 
+.event-detail-suggested-list {
+    -fx-padding: 2px 0 0 0;
+}
+
+.event-detail-suggested-list .article-card {
+    -fx-padding: 10px 12px;
 }
 
 .confirm-sheet {

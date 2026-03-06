@@ -53,6 +53,12 @@
                     <Label text="Recurrence" styleClass="event-detail-section-title"/>
                     <Label fx:id="recurrenceLabel" wrapText="true" styleClass="event-detail-recurrence-chip"/>
                 </VBox>
+
+                <VBox fx:id="suggestedArticlesBox" spacing="8" styleClass="event-detail-card" visible="false" managed="false">
+                    <Label text="Suggested Articles" styleClass="event-detail-section-title"/>
+                    <Label text="Based on this event topic" styleClass="event-detail-meta"/>
+                    <VBox fx:id="suggestedArticlesContainer" spacing="8" styleClass="event-detail-suggested-list"/>
+                </VBox>
                 <HBox spacing="10" alignment="CENTER" styleClass="event-detail-actions">
                     <Button text="Delete"
                             maxWidth="Infinity"
@@ -182,4 +188,3 @@
     
 
 </VBox>
-

@@ -121,7 +121,7 @@ public class MainAppController {
         calendarViewController.setOnGoToNewEvent(() -> {
             returnAfterCreateEvent = calendarView;
             createEventViewController.startCreateNew();
-            showView(createEventView,calendarView);
+            showView(createEventView, calendarView);
         });
 
         // Wire stub view back-navigation callbacks
@@ -131,13 +131,14 @@ public class MainAppController {
         createEventViewController.setOnBackToCalendar(() -> {
             calendarViewController.refresh();
             eventFeedViewController.refresh();
-            
+
             // go back to where we started editing or creating
             Node target = (returnAfterCreateEvent != null) ? returnAfterCreateEvent : calendarView;
             showOnlyCalendarView(target);
-            
+
             returnAfterCreateEvent = null;
         });
+        eventDetailViewController.setOnArticleSelected(this::openArticleFromEventDetail);
 
         // Show all articles on initial load
         showAllArticles();
@@ -368,7 +369,7 @@ public class MainAppController {
         eventDetailViewController.setOnBack(() -> showOnlyCalendarView(returnTo));
         // When edit event occurs
 
-        eventDetailViewController.setOnEdit((evnt, occDate) ->{
+        eventDetailViewController.setOnEdit((evnt, occDate) -> {
             returnAfterCreateEvent = returnTo;
             boolean recurring = evnt.getRecurrenceRule() != null;
 
@@ -380,7 +381,7 @@ public class MainAppController {
 
             showOnlyCalendarView(createEventView);
         });
-            
+
         // If event deleted
         eventDetailViewController.setOnDelete((evnt, occDate) -> {
             EventStorageService storage = EventStorageService.getInstance();
@@ -395,9 +396,20 @@ public class MainAppController {
 
             calendarViewController.refresh();
             eventFeedViewController.refresh();
-            showOnlyCalendarView(returnTo);    
+            showOnlyCalendarView(returnTo);
 
         });
         showOnlyCalendarView(eventDetailView);
+    }
+
+    private void openArticleFromEventDetail(Article article) {
+        if (article == null) {
+            return;
+        }
+
+        navGroup.selectToggle(articlesTab);
+        switchToTab("ARTICLES");
+        closeArticleOverlayIfOpen();
+        openArticle(article);
     }
 }
