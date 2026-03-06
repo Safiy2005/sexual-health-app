@@ -71,6 +71,10 @@ class EventDetailControllerTest {
         inject(controller, "recurrenceBox", new VBox());
         inject(controller, "recurrenceLabel", new Label());
 
+        // Suggested articles fields
+        inject(controller, "suggestedArticlesBox", new VBox());
+        inject(controller, "suggestedArticlesContainer", new VBox());
+
         // NEW: delete overlay fields
         inject(controller, "confirmDeleteOverlay", new VBox());
         inject(controller, "confirmDeleteBody", new Label());
@@ -111,8 +115,7 @@ class EventDetailControllerTest {
                 LocalTime.of(10, 0),
                 null,
                 null,
-                null
-        );
+                null);
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
@@ -151,8 +154,7 @@ class EventDetailControllerTest {
                 LocalTime.of(8, 0),
                 EventType.MEDICATION,
                 null,
-                "200mg"
-        );
+                "200mg");
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
@@ -172,8 +174,7 @@ class EventDetailControllerTest {
                 LocalTime.of(9, 0),
                 EventType.APPOINTMENT,
                 null,
-                "200mg"
-        );
+                "200mg");
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
@@ -192,8 +193,7 @@ class EventDetailControllerTest {
                 LocalTime.of(16, 0),
                 EventType.APPOINTMENT,
                 null,
-                null
-        );
+                null);
         event.setRecurrenceRule(RecurrenceRule.weekly(1, DayOfWeek.MONDAY));
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
@@ -213,8 +213,7 @@ class EventDetailControllerTest {
                 LocalTime.of(14, 0),
                 EventType.TEST,
                 null,
-                null
-        );
+                null);
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
@@ -235,8 +234,7 @@ class EventDetailControllerTest {
                 LocalTime.of(10, 0),
                 EventType.TEST,
                 null,
-                null
-        );
+                null);
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
@@ -253,8 +251,7 @@ class EventDetailControllerTest {
                 LocalTime.of(10, 0),
                 EventType.APPOINTMENT,
                 null,
-                null
-        );
+                null);
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
@@ -277,9 +274,7 @@ class EventDetailControllerTest {
         AtomicBoolean called = new AtomicBoolean(false);
         controller.setOnBack(() -> called.set(true));
 
-        runOnFxAndWait(() ->
-                invokePrivate(controller, "handleBackToCalendar", javafx.event.ActionEvent.class, null)
-        );
+        runOnFxAndWait(() -> invokePrivate(controller, "handleBackToCalendar", javafx.event.ActionEvent.class, null));
 
         assertTrue(called.get(), "Back callback should run when handler is invoked");
     }
@@ -302,8 +297,7 @@ class EventDetailControllerTest {
                 LocalTime.of(10, 0),
                 EventType.APPOINTMENT,
                 null,
-                null
-        );
+                null);
 
         runOnFxAndWait(() -> controller.setEvent(event, null));
 
