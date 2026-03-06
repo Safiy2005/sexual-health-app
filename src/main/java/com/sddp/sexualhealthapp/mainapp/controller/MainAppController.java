@@ -14,18 +14,19 @@ import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
 import com.sddp.sexualhealthapp.calendar.controller.EventDetailController;
 import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
 
 import javafx.animation.Interpolator;
-import javafx.scene.control.Button;
 import javafx.animation.PauseTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -95,6 +96,7 @@ public class MainAppController {
     private HybridSearchService searchService;
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
+    private Node returnAfterCreateEvent = null;
 
     @FXML
     private void initialize() {
@@ -116,7 +118,11 @@ public class MainAppController {
             eventFeedViewController.refresh();
             showView(eventFeedView, calendarView);
         });
-        calendarViewController.setOnGoToNewEvent(() -> showView(createEventView, calendarView));
+        calendarViewController.setOnGoToNewEvent(() -> {
+            returnAfterCreateEvent = calendarView;
+            createEventViewController.startCreateNew();
+            showView(createEventView, calendarView);
+        });
 
         // Wire stub view back-navigation callbacks
         eventFeedViewController.setOnBackToCalendar(() -> showView(calendarView, eventFeedView));
@@ -124,7 +130,13 @@ public class MainAppController {
                 (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, eventFeedView));
         createEventViewController.setOnBackToCalendar(() -> {
             calendarViewController.refresh();
-            showView(calendarView, createEventView);
+            eventFeedViewController.refresh();
+
+            // go back to where we started editing or creating
+            Node target = (returnAfterCreateEvent != null) ? returnAfterCreateEvent : calendarView;
+            showOnlyCalendarView(target);
+
+            returnAfterCreateEvent = null;
         });
         eventDetailViewController.setOnArticleSelected(this::openArticleFromEventDetail);
 
@@ -355,7 +367,38 @@ public class MainAppController {
 
         // go back where u came from
         eventDetailViewController.setOnBack(() -> showOnlyCalendarView(returnTo));
-        // show detail screen
+        // When edit event occurs
+
+        eventDetailViewController.setOnEdit((evnt, occDate) -> {
+            returnAfterCreateEvent = returnTo;
+            boolean recurring = evnt.getRecurrenceRule() != null;
+
+            if (recurring && occDate != null) {
+                createEventViewController.startEditSingleOccurrence(evnt, occDate);
+            } else {
+                createEventViewController.startEditSeries(evnt);
+            }
+
+            showOnlyCalendarView(createEventView);
+        });
+
+        // If event deleted
+        eventDetailViewController.setOnDelete((evnt, occDate) -> {
+            EventStorageService storage = EventStorageService.getInstance();
+
+            boolean recurring = evnt.getRecurrenceRule() != null;
+
+            if (recurring && occDate != null) {
+                storage.excludeOccurrence(evnt.getId(), occDate);
+            } else {
+                storage.deleteEvent(evnt.getId());
+            }
+
+            calendarViewController.refresh();
+            eventFeedViewController.refresh();
+            showOnlyCalendarView(returnTo);
+
+        });
         showOnlyCalendarView(eventDetailView);
     }
 
@@ -369,5 +412,4 @@ public class MainAppController {
         closeArticleOverlayIfOpen();
         openArticle(article);
     }
-
 }

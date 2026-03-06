@@ -16,7 +16,7 @@
         </padding>
         <Button text="Cancel" styleClass="calendar-action-button"
                 onAction="#handleBackToCalendar"/>
-        <Label text="New Event" styleClass="search-header-title"
+        <Label fx:id="headerLabel" text="New Event" styleClass="search-header-title"
                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
     </HBox>
 
@@ -163,7 +163,7 @@
             <Region prefHeight="10"/>
             <Label fx:id="errorLabel" styleClass="error-label" visible="false" managed="false"/>
 
-            <Button text="Save Event" onAction="#handleSaveEvent"
+            <Button fx:id="saveButton" text="Save Event" onAction="#handleSaveEvent"
                     styleClass="calendar-action-button-primary" prefWidth="300" prefHeight="45"/>
             <Region prefHeight="20"/>
 

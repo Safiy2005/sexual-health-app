@@ -20,6 +20,8 @@
                 onAction="#handleBackToCalendar"/>
         <Label text="Event Details" styleClass="search-header-title"
                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Edit" styleClass="calendar-action-button"
+                onAction="#handleEditEvent"/>
     </HBox>
 
     <StackPane VBox.vgrow="ALWAYS">
@@ -57,6 +59,13 @@
                     <Label text="Based on this event topic" styleClass="event-detail-meta"/>
                     <VBox fx:id="suggestedArticlesContainer" spacing="8" styleClass="event-detail-suggested-list"/>
                 </VBox>
+                <HBox spacing="10" alignment="CENTER" styleClass="event-detail-actions">
+                    <Button text="Delete"
+                            maxWidth="Infinity"
+                            HBox.hgrow="ALWAYS"
+                            styleClass="danger-action-button"
+                            onAction="#handleDeleteEvent"/>
+                </HBox>
             </VBox>
         </ScrollPane>
 
@@ -77,5 +86,105 @@
                    managed="false"
                    textAlignment="CENTER"/>
         </VBox>
+        <VBox fx:id="confirmEditOverlay"
+              visible="false"
+              managed="false"
+              alignment="CENTER"
+              spacing="12"
+              styleClass="overlay-dim"
+              StackPane.alignment="CENTER">
+
+             <VBox spacing="12" styleClass="overlay-card">
+                 <Label text="Edit event?" styleClass="overlay-title"/>
+                 <Label fx:id="confirmEditBody"
+                        text="Edit this event?"
+                        wrapText="true"
+                        styleClass="overlay-body"/>
+
+                <!-- Non recurring-->
+                 <HBox fx:id="confirmEdDefaultRow" spacing="10" alignment="CENTER_RIGHT">
+                     <Button text="Cancel"
+                             onAction="#handleCancelEdit"
+                             styleClass="calendar-action-button"/>
+                    
+                     <Button 
+                             text="Edit"
+                             onAction="#handleConfirmEdit"
+                             styleClass="calendar-action-button-primary"/>
+
+                 </HBox>
+
+                 <!-- Recurring -->
+
+                 <VBox fx:id="confirmEdRecurringRow" spacing="10" alignment="CENTER_RIGHT"
+                       visible="false" managed="false">
+                     <Button text="Cancel"
+                             onAction="#handleCancelEdit"
+                             styleClass="calendar-action-button"/>
+
+                     <Button 
+                             text="This occurrence"
+                             onAction="#handleConfirmEditSingle"
+                             styleClass="calendar-action-button-primary"/>
+                    
+                     <Button 
+                             text="All occurrences"
+                             onAction="#handleConfirmEditAll"
+                             styleClass="calendar-action-button-primary"/>
+                 </VBox>
+            </VBox>
+        </VBox>
+        <VBox fx:id="confirmDeleteOverlay"
+              visible="false"
+              managed="false"
+              alignment="CENTER"
+              spacing="12"
+              styleClass="overlay-dim"
+              StackPane.alignment="CENTER">
+
+             <VBox spacing="12" styleClass="overlay-card">
+                 <Label text="Delete event?" styleClass="overlay-title"/>
+                 <Label fx:id="confirmDeleteBody"
+                        text="This cannot be undone"
+                        wrapText="true"
+                        styleClass="overlay-body"/>
+
+                <!-- Non recurring: just Cancel and Delete-->
+                 <HBox fx:id="confirmDefaultRow" spacing="10" alignment="CENTER_RIGHT">
+                     <Button text="Cancel"
+                             onAction="#handleCancelDelete"
+                             styleClass="calendar-action-button"/>
+                    
+                     <Button 
+                             text="Delete"
+                             onAction="#handleConfirmDelete"
+                             styleClass="danger-action-button"/>
+
+                 </HBox>
+
+                 <!-- Recurring: Cancel + This occurrence + All occurrences-->
+
+                 <VBox fx:id="confirmRecurringRow" spacing="10" alignment="CENTER_RIGHT"
+                       visible="false" managed="false">
+                     <Button text="Cancel"
+                             onAction="#handleCancelDelete"
+                             styleClass="calendar-action-button"/>
+
+                     <Button fx:id="deleteSingleBtn"
+                             text="This occurrence"
+                             onAction="#handleConfirmDeleteSingle"
+                             styleClass="danger-action-button"/>
+                    
+                     <Button fx:id="deleteAllBtn"
+                             text="All occurrences"
+                             onAction="#handleConfirmDeleteAll"
+                             styleClass="danger-action-button"/>
+                 </VBox>
+                 
+             </VBox>
+        </VBox>
+
     </StackPane>
+    
+
 </VBox>

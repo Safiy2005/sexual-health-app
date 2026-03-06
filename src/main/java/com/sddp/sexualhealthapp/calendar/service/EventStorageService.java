@@ -1,15 +1,5 @@
 package com.sddp.sexualhealthapp.calendar.service;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonDeserializer;
-import com.google.gson.JsonPrimitive;
-import com.google.gson.JsonSerializer;
-import com.google.gson.reflect.TypeToken;
-import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
-import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
-import com.sddp.sexualhealthapp.calendar.model.EventType;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
@@ -33,6 +23,17 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import com.sddp.sexualhealthapp.util.NotificationService;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonPrimitive;
+import com.google.gson.JsonSerializer;
+import com.google.gson.reflect.TypeToken;
+import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.calendar.model.EventOccurrence;
+import com.sddp.sexualhealthapp.calendar.model.EventType;
+import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 
 /**
  * Service for persisting and retrieving calendar events using JSON file
@@ -306,5 +307,24 @@ public class EventStorageService {
             System.err.println("Failed to save events: " + e.getMessage());
             return false;
         }
+    }
+
+    public boolean excludeOccurrence(String seriesEventId, LocalDate occurrenceDate) {
+        if (seriesEventId == null || occurrenceDate == null) return false;
+
+        Optional<CalendarEvent> opt = getEventById(seriesEventId);
+        if (opt.isEmpty()) return false;
+        
+        CalendarEvent series = opt.get();
+        RecurrenceRule rule = series.getRecurrenceRule();
+        if (rule == null) return false;
+
+        Set<LocalDate> excluded = rule.getExcludedDates();
+        if (excluded == null) excluded = new java.util.HashSet<>();
+        excluded.add(occurrenceDate);
+        rule.setExcludedDates(excluded);
+
+        series.setRecurrenceRule(rule);
+        return updateEvent(series);
     }
 }

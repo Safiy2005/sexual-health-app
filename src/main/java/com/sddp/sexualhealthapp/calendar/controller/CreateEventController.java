@@ -1,22 +1,38 @@
 package com.sddp.sexualhealthapp.calendar.controller;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Set;
+
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
+import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Control;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
+import javafx.scene.control.ListView;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.HBox;
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDate;
+import javafx.scene.layout.VBox;
 import java.time.DayOfWeek;
 import java.time.format.TextStyle;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
-import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
 
 /**
  * Stub controller for the create-event view (story 22).
@@ -83,14 +99,30 @@ public class CreateEventController {
     private DatePicker exceptionDatePicker;
     @FXML
     private ListView<LocalDate> exceptionListView;
-    @FXML private CheckBox reminderCheckBox;
-    @FXML private HBox reminderInputContainer;
-    @FXML private Spinner<Integer> reminderValueSpinner;
-    @FXML private ComboBox<String> reminderUnitComboBox;
+    @FXML
+    private CheckBox reminderCheckBox;
+    @FXML
+    private HBox reminderInputContainer;
+    @FXML
+    private Spinner<Integer> reminderValueSpinner;
+    @FXML
+    private ComboBox<String> reminderUnitComboBox;
+    @FXML
+    private Label headerLabel;
+    @FXML
+    private Button saveButton;
 
     private final javafx.collections.ObservableList<LocalDate> exceptionDates = javafx.collections.FXCollections
             .observableArrayList();
     private Runnable onBackToCalendar;
+    private CalendarEvent editingEvent = null;
+
+    private enum EditScope {
+        SERIES, SINGLE
+    };
+
+    private EditScope editScope = EditScope.SERIES;
+    private LocalDate editingOccurrenceDate = null;
 
     @FXML
     public void initialize() {
@@ -349,7 +381,22 @@ public class CreateEventController {
         applyRecurrence(newEvent);
 
         // 5. Save
-        EventStorageService.getInstance().addEvent(newEvent);
+        if (editingEvent != null) {
+            if (editScope == EditScope.SERIES) {
+                newEvent.setId(editingEvent.getId());
+                EventStorageService.getInstance().updateEvent(newEvent);
+            } else {
+                // single occurrence edit
+                EventStorageService.getInstance().excludeOccurrence(editingEvent.getId(), editingOccurrenceDate);
+
+                // create a new one off replacement
+                newEvent.setRecurrenceRule(null);
+                EventStorageService.getInstance().addEvent(newEvent);
+            }
+        } else {
+            EventStorageService.getInstance().addEvent(newEvent);
+        }
+
         System.out.println("Full event saved successfully!");
 
         handleBackToCalendar(event);
@@ -405,6 +452,9 @@ public class CreateEventController {
     // clears contents after leaving the create page
     private void clearForm() {
         clearValidationState();
+        editingEvent = null;
+        editScope = EditScope.SERIES;
+        editingOccurrenceDate = null;
         titleField.clear();
         datePicker.setValue(null);
         typeComboBox.getSelectionModel().clearSelection();
@@ -429,6 +479,7 @@ public class CreateEventController {
         btnSun.setSelected(false);
         radioSameDay.setSelected(true);
         exceptionDates.clear();
+        exceptionDatePicker.setValue(null);
         reminderCheckBox.setSelected(false);
         reminderValueSpinner.getValueFactory().setValue(15);
         reminderUnitComboBox.getSelectionModel().selectFirst();
@@ -609,5 +660,139 @@ public class CreateEventController {
                 }
             });
         });
+    }
+
+    private void populateFormFromEvent(CalendarEvent e) {
+        titleField.setText(e.getName());
+        datePicker.setValue(e.getDate());
+        typeComboBox.setValue(e.getType());
+
+        // Description and Dosage
+        descriptionArea.setText(e.getDescription() == null ? "" : e.getDescription());
+        dosageField.setText(e.getDosage() == null ? "" : e.getDosage());
+
+        // Time
+        boolean allDay = (e.getTime() == null);
+        allDayCheckBox.setSelected(allDay);
+
+        // Listener will hide or show timeSpinnerContainer
+        if (!allDay) {
+            hourSpinner.getValueFactory().setValue(e.getTime().getHour());
+            minuteSpinner.getValueFactory().setValue(e.getTime().getMinute());
+        } else {
+            hourSpinner.getValueFactory().setValue(12);
+            minuteSpinner.getValueFactory().setValue(0);
+        }
+
+        // Recurrence
+        RecurrenceRule rule = e.getRecurrenceRule();
+        exceptionDates.clear(); // clears the old UI state
+
+        if (rule == null) {
+            recurrenceComboBox.getSelectionModel().select("Does not repeat");
+            endTypeComboBox.getSelectionModel().select("Never");
+            endDatePicker.setValue(null);
+            occurrenceCountSpinner.getValueFactory().setValue(10);
+            intervalSpinner.getValueFactory().setValue(1);
+
+            // Clears the weekly day toggles and monthly radios
+            btnMon.setSelected(false);
+            btnTue.setSelected(false);
+            btnWed.setSelected(false);
+            btnThu.setSelected(false);
+            btnFri.setSelected(false);
+            btnSat.setSelected(false);
+            btnSun.setSelected(false);
+
+            radioSameDay.setSelected(true);
+            return;
+        }
+
+        // Interval
+        intervalSpinner.getValueFactory().setValue(rule.getInterval());
+
+        // Frequency drop down selection
+        switch (rule.getFrequency()) {
+            case DAILY -> recurrenceComboBox.getSelectionModel().select("Daily");
+            case WEEKLY -> recurrenceComboBox.getSelectionModel().select("Weekly");
+            case MONTHLY -> recurrenceComboBox.getSelectionModel().select("Monthly");
+            case YEARLY -> recurrenceComboBox.getSelectionModel().select("Yearly");
+        }
+
+        // Weekly day toggles
+        if (rule.getFrequency() == RecurrenceRule.Frequency.WEEKLY && rule.getDaysOfWeek() != null) {
+            Set<java.time.DayOfWeek> days = rule.getDaysOfWeek();
+            btnMon.setSelected(days.contains(java.time.DayOfWeek.MONDAY));
+            btnTue.setSelected(days.contains(java.time.DayOfWeek.TUESDAY));
+            btnWed.setSelected(days.contains(java.time.DayOfWeek.WEDNESDAY));
+            btnThu.setSelected(days.contains(java.time.DayOfWeek.THURSDAY));
+            btnFri.setSelected(days.contains(java.time.DayOfWeek.FRIDAY));
+            btnSat.setSelected(days.contains(java.time.DayOfWeek.SATURDAY));
+            btnSun.setSelected(days.contains(java.time.DayOfWeek.SUNDAY));
+
+        }
+
+        // Monthly radio buttons
+        if (rule.getFrequency() == RecurrenceRule.Frequency.MONTHLY) {
+            if (rule.getMonthlyPattern() == RecurrenceRule.MonthlyPattern.LAST_DAY) {
+                radioLastDay.setSelected(true);
+            } else if (rule.getMonthlyPattern() == RecurrenceRule.MonthlyPattern.NTH_WEEKDAY) {
+                radioNthWeekday.setSelected(true);
+            } else {
+                radioSameDay.setSelected(true);
+            }
+        }
+
+        // End conditions
+        switch (rule.getEndType()) {
+            case NEVER -> {
+                endTypeComboBox.getSelectionModel().select("Never");
+                endDatePicker.setValue(null);
+            }
+            case UNTIL -> {
+                endTypeComboBox.getSelectionModel().select("On date");
+                endDatePicker.setValue(rule.getEndDate());
+            }
+            case COUNT -> {
+                endTypeComboBox.getSelectionModel().select("After occurrences");
+                occurrenceCountSpinner.getValueFactory().setValue(rule.getOccurrenceCount());
+            }
+        }
+
+        // Exceptions
+        if (rule.getExcludedDates() != null) {
+            exceptionDates.setAll(rule.getExcludedDates());
+        }
+    }
+
+    public void startEditSeries(CalendarEvent event) {
+        headerLabel.setText("Edit Event");
+        saveButton.setText("Save Changes");
+        this.editingEvent = event;
+        this.editScope = EditScope.SERIES;
+        this.editingOccurrenceDate = null;
+        populateFormFromEvent(event);
+    }
+
+    public void startEditSingleOccurrence(CalendarEvent seriesEvent, LocalDate occurrenceDate) {
+        headerLabel.setText("Edit Occurrence");
+        saveButton.setText("Save Changes");
+        this.editingEvent = seriesEvent;
+        this.editScope = EditScope.SINGLE;
+        this.editingOccurrenceDate = occurrenceDate;
+        populateFormFromEvent(seriesEvent);
+
+        // force the date to the clicked occurence
+        datePicker.setValue(occurrenceDate);
+
+        // the edited occurrence becomes a one off event
+        recurrenceComboBox.getSelectionModel().select("Does not repeat");
+    }
+
+    public void startCreateNew() {
+        headerLabel.setText("New Event");
+        saveButton.setText("Save Event");
+        editingEvent = null;
+        clearForm();
     }
 }

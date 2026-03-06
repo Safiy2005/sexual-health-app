@@ -32,3 +32,4 @@
 - Building the UI for displaying article content
 
 -  Used in SvgIcon for SVG to JavaFX Node conversion logic
+-  Writing tests for EventDetailController

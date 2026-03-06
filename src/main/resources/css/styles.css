@@ -1944,3 +1944,50 @@
 .event-detail-suggested-list .article-card {
     -fx-padding: 10px 12px;
 }
+
+.confirm-sheet {
+    -fx-background-color: white;
+    -fx-background-radius: 16 16 0 0;
+    -fx-border-radius: 16 16 0 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, -2);
+}
+
+.confirm-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.danger-action-button {
+    -fx-background-color: #FCE8E8;
+    -fx-text-fill: #B3261E;
+    -fx-background-radius: 999;
+    -fx-padding: 10 14;
+    -fx-font-weight: 600;
+    -fx-border-color: #F3B7B7;
+    -fx-border-radius: 999;
+}
+
+.danger-action-button:hover {
+    -fx-background-color: #FADADA;
+}
+
+.overlay-dim {
+    -fx-background-color: rgba(0,0,0,0.18);
+    -fx-padding: 16;
+}
+
+.overlay-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 16;
+    -fx-max-width: 320;
+}
+
+.overlay-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.overlay-body {
+    -fx-opacity: 0.85;
+}

@@ -183,7 +183,8 @@
         "THURSDAY"
       ],
       "endType": "UNTIL",
-      "endDate": "2026-04-30"
+      "endDate": "2026-04-30",
+      "occurrenceCount": 0
     }
   },
   {
