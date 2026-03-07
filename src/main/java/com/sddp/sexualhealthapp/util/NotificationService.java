@@ -63,19 +63,22 @@ public class NotificationService {
 
             } else if (OS.contains("win")) {
                 // windows notif uses windows.ui.notifications
-                String script = String.format(
-                        "[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null; " +
-                                "$template = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02); " +
-                                "$nodes = $template.GetElementsByTagName('text'); " +
-                                "$nodes.Item(0).AppendChild($template.CreateTextNode('%s')) | Out-Null; " +
-                                "$nodes.Item(1).AppendChild($template.CreateTextNode('%s')) | Out-Null; " +
-                                "$toast = [Windows.UI.Notifications.ToastNotification]::new($template); " +
-                                "$appId = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe'; " +
-                                "[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($appId).Show($toast);",
-                        title.replace("'", "''"),
-                        message.replace("'", "''")
-                );
-                new ProcessBuilder("powershell", "-NoProfile", "-WindowStyle", "Hidden", "-Command", script).start();
+
+                // Commented out because it blue screens windows machines
+
+                // String script = String.format(
+                //         "[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null; " +
+                //                 "$template = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02); " +
+                //                 "$nodes = $template.GetElementsByTagName('text'); " +
+                //                 "$nodes.Item(0).AppendChild($template.CreateTextNode('%s')) | Out-Null; " +
+                //                 "$nodes.Item(1).AppendChild($template.CreateTextNode('%s')) | Out-Null; " +
+                //                 "$toast = [Windows.UI.Notifications.ToastNotification]::new($template); " +
+                //                 "$appId = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe'; " +
+                //                 "[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($appId).Show($toast);",
+                //         title.replace("'", "''"),
+                //         message.replace("'", "''")
+                // );
+                // new ProcessBuilder("powershell", "-NoProfile", "-WindowStyle", "Hidden", "-Command", script).start();
 
             } else if (OS.contains("mac")) {
                 // applescript notif
