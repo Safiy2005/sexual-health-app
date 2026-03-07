@@ -1,0 +1,164 @@
+/*
+ * Calculator Styles
+ * Styles for the calculator disguise screen: root, display, and buttons.
+ * Also used by the setup screen (which embeds a calculator-inner).
+ *
+ * @author SDDP Group 30
+ * @version 1.0
+ */
+
+/* ============================================
+   ROOT CONTAINER
+   ============================================ */
+
+.calculator-root {
+    -fx-background-color: #1C1C1E;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+    -fx-min-width: 360px;
+    -fx-min-height: 640px;
+    -fx-max-width: 360px;
+    -fx-max-height: 640px;
+}
+
+/* ============================================
+   CALCULATOR DISPLAY
+   ============================================ */
+
+.display-container {
+    -fx-background-color: #1C1C1E;
+    -fx-padding: 40px 20px 20px 20px;
+    -fx-alignment: center-right;
+    -fx-min-height: 120px;
+    -fx-pref-height: 140px;
+}
+
+.display {
+    -fx-text-fill: white;
+    -fx-font-size: 48px;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-weight: 300;
+    -fx-alignment: center-right;
+    -fx-pref-width: 320px;
+    -fx-min-height: 60px;
+    -fx-padding: 5px;
+}
+
+/* ============================================
+   BUTTON GRID
+   ============================================ */
+
+.button-grid {
+    -fx-background-color: #1C1C1E;
+    -fx-padding: 10px;
+    -fx-hgap: 12px;
+    -fx-vgap: 12px;
+    -fx-alignment: center;
+}
+
+/* ============================================
+   CALCULATOR BUTTONS
+   ============================================ */
+
+/* All Buttons Default Style */
+.calculator-button {
+    -fx-background-color: #505050;
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-weight: 400;
+    -fx-pref-width: 75px;
+    -fx-pref-height: 75px;
+    -fx-min-width: 75px;
+    -fx-min-height: 75px;
+    -fx-background-radius: 38px;
+    -fx-cursor: hand;
+}
+
+.calculator-button:hover {
+    -fx-background-color: #6B6B6B;
+}
+
+.calculator-button:pressed {
+    -fx-background-color: #8E8E8E;
+}
+
+/* Number Buttons */
+.number-button {
+    -fx-background-color: #333333;
+}
+
+.number-button:hover {
+    -fx-background-color: #505050;
+}
+
+.number-button:pressed {
+    -fx-background-color: #6B6B6B;
+}
+
+/* Operation Buttons */
+.operation-button {
+    -fx-background-color: #FF9F0A;
+}
+
+.operation-button:hover {
+    -fx-background-color: #FFB340;
+}
+
+.operation-button:pressed {
+    -fx-background-color: #FFD699;
+    -fx-text-fill: #FF9F0A;
+}
+
+/* Clear Button */
+.clear-button {
+    -fx-background-color: #A5A5A5;
+    -fx-text-fill: #1C1C1E;
+}
+
+.clear-button:hover {
+    -fx-background-color: #D4D4D4;
+}
+
+.clear-button:pressed {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Backspace Button */
+.backspace-button {
+    -fx-background-color: #A5A5A5;
+    -fx-text-fill: #1C1C1E;
+}
+
+.backspace-button:hover {
+    -fx-background-color: #D4D4D4;
+}
+
+.backspace-button:pressed {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Equals Button */
+.equals-button {
+    -fx-background-color: #FF9F0A;
+    -fx-pref-height: 162px;
+    -fx-min-height: 162px;
+}
+
+.equals-button:hover {
+    -fx-background-color: #FFB340;
+}
+
+.equals-button:pressed {
+    -fx-background-color: #FFD699;
+    -fx-text-fill: #FF9F0A;
+}
+
+/* Decimal Button */
+.decimal-button {
+    -fx-background-color: #333333;
+}
+
+.decimal-button:hover {
+    -fx-background-color: #505050;
+}

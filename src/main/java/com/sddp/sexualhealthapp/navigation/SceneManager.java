@@ -105,8 +105,10 @@ public class SceneManager {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
             Parent root = loader.load();
-            root.getStylesheets().add(
-                    getClass().getResource(AppConstants.CSS_STYLESHEET).toExternalForm());
+            for (String css : getStylesheetsForScene(sceneName)) {
+                root.getStylesheets().add(
+                        getClass().getResource(css).toExternalForm());
+            }
             rootCache.put(sceneName, root);
             return root;
 
@@ -119,6 +121,21 @@ public class SceneManager {
             e.printStackTrace();
             return null;
         }
+    }
+
+    /**
+     * Returns the CSS stylesheet paths for a given scene.
+     *
+     * @param sceneName the scene identifier
+     * @return array of CSS resource paths to apply
+     */
+    private String[] getStylesheetsForScene(String sceneName) {
+        return switch (sceneName) {
+            case AppConstants.SCENE_CALCULATOR -> AppConstants.CSS_CALCULATOR_SCENE;
+            case AppConstants.SCENE_SETUP -> AppConstants.CSS_SETUP_SCENE;
+            case AppConstants.SCENE_MAIN_APP -> AppConstants.CSS_MAIN_APP_SCENE;
+            default -> AppConstants.CSS_MAIN_APP_SCENE;
+        };
     }
 
     /**

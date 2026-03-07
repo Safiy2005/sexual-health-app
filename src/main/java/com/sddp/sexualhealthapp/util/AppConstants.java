@@ -75,9 +75,66 @@ public final class AppConstants {
 
     // CSS Resource Paths
     /**
-     * Path to the application stylesheet.
+     * Calculator-specific styles (also used by setup screen).
      */
-    public static final String CSS_STYLESHEET = "/css/styles.css";
+    public static final String CSS_CALCULATOR = "/css/calculator.css";
+
+    /**
+     * Setup & onboarding tutorial styles.
+     */
+    public static final String CSS_SETUP = "/css/setup.css";
+
+    /**
+     * Main app shell & bottom navigation styles.
+     */
+    public static final String CSS_MAIN_APP = "/css/main-app.css";
+
+    /**
+     * Article search, cards, detail, and navigation menu styles.
+     */
+    public static final String CSS_ARTICLE = "/css/article.css";
+
+    /**
+     * Calendar grid, day cells, and event card styles.
+     */
+    public static final String CSS_CALENDAR = "/css/calendar.css";
+
+    /**
+     * Create-event form inputs, controls, and date picker styles.
+     */
+    public static final String CSS_CREATE_EVENT = "/css/create-event.css";
+
+    /**
+     * Event feed section headers and filter chip styles.
+     */
+    public static final String CSS_EVENT_FEED = "/css/event-feed.css";
+
+    /**
+     * Event detail view and confirmation overlay styles.
+     */
+    public static final String CSS_EVENT_DETAIL = "/css/event-detail.css";
+
+    /**
+     * Stylesheets applied to the calculator scene.
+     */
+    public static final String[] CSS_CALCULATOR_SCENE = {
+            CSS_CALCULATOR
+    };
+
+    /**
+     * Stylesheets applied to the setup/onboarding scene.
+     */
+    public static final String[] CSS_SETUP_SCENE = {
+            CSS_CALCULATOR, CSS_SETUP
+    };
+
+    /**
+     * Stylesheets applied to the main application scene.
+     */
+    public static final String[] CSS_MAIN_APP_SCENE = {
+            CSS_MAIN_APP, CSS_ARTICLE, CSS_CALENDAR,
+            CSS_CREATE_EVENT, CSS_EVENT_FEED, CSS_EVENT_DETAIL
+    };
 
     // Scene Names (for SceneManager)
     /**
