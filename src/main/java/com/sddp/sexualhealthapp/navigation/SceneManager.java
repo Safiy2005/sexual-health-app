@@ -106,7 +106,7 @@ public class SceneManager {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
             Parent root = loader.load();
             root.getStylesheets().add(
-                getClass().getResource(AppConstants.CSS_STYLESHEET).toExternalForm());
+                    getClass().getResource(AppConstants.CSS_STYLESHEET).toExternalForm());
             rootCache.put(sceneName, root);
             return root;
 
@@ -138,10 +138,9 @@ public class SceneManager {
         clearScene(AppConstants.SCENE_SETUP);
 
         crossfadeToRoot(
-            AppConstants.SCENE_CALCULATOR,
-            AppConstants.CALCULATOR_FXML,
-            durationMs
-        );
+                AppConstants.SCENE_CALCULATOR,
+                AppConstants.CALCULATOR_FXML,
+                durationMs);
     }
 
     /**
@@ -153,10 +152,9 @@ public class SceneManager {
         clearScene(AppConstants.SCENE_SETUP);
 
         crossfadeToRoot(
-            AppConstants.SCENE_SETUP,
-            AppConstants.SETUP_FXML,
-            AppConstants.SCENE_CROSSFADE_MS
-        );
+                AppConstants.SCENE_SETUP,
+                AppConstants.SETUP_FXML,
+                AppConstants.SCENE_CROSSFADE_MS);
     }
 
     /**
@@ -170,22 +168,21 @@ public class SceneManager {
      * FX thread is free to render every frame of the animation.
      */
     public void transitionToMainApp() {
-        if (isTransitioning) return;
+        if (isTransitioning)
+            return;
         isTransitioning = true;
 
         // Pre-load now so the heavy FXML init doesn't block the fade later.
         loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML);
 
         PauseTransition delay = new PauseTransition(
-            Duration.millis(AppConstants.TRANSITION_DELAY_MS)
-        );
+                Duration.millis(AppConstants.TRANSITION_DELAY_MS));
         delay.setOnFinished(e -> {
             isTransitioning = false;
             crossfadeToRoot(
-                AppConstants.SCENE_MAIN_APP,
-                AppConstants.MAIN_APP_FXML,
-                AppConstants.REVEAL_FADE_MS
-            );
+                    AppConstants.SCENE_MAIN_APP,
+                    AppConstants.MAIN_APP_FXML,
+                    AppConstants.REVEAL_FADE_MS);
         });
         delay.play();
     }
@@ -199,10 +196,10 @@ public class SceneManager {
      * at their natural layout size, there are no dimension mismatches or
      * rendering artefacts.
      * <ol>
-     *   <li>Load the target root</li>
-     *   <li>Place both [oldRoot, newRoot] in a StackPane wrapper</li>
-     *   <li>Start newRoot at opacity 0, fade to 1</li>
-     *   <li>On finish, set the target root as the sole scene root</li>
+     * <li>Load the target root</li>
+     * <li>Place both [oldRoot, newRoot] in a StackPane wrapper</li>
+     * <li>Start newRoot at opacity 0, fade to 1</li>
+     * <li>On finish, set the target root as the sole scene root</li>
      * </ol>
      *
      * @param sceneName  the target scene identifier
@@ -210,7 +207,8 @@ public class SceneManager {
      * @param durationMs the fade duration in milliseconds
      */
     private void crossfadeToRoot(String sceneName, String fxmlPath, int durationMs) {
-        if (isTransitioning) return;
+        if (isTransitioning)
+            return;
         if (primaryStage == null) {
             throw new IllegalStateException("SceneManager not initialized. Call initialize() first.");
         }
