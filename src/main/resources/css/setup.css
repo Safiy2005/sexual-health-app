@@ -1,0 +1,273 @@
+/*
+ * Setup & Onboarding Styles
+ * Styles for the setup wizard screen (equation setup + onboarding tutorial).
+ * Includes instruction header, confirmation panel, and onboarding pages.
+ *
+ * @author SDDP Group 30
+ * @version 1.0
+ */
+
+/* ============================================
+   SETUP SCREEN STYLES
+   ============================================ */
+
+.setup-root {
+    -fx-background-color: #1C1C1E;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+    -fx-min-width: 360px;
+    -fx-min-height: 640px;
+    -fx-max-width: 360px;
+    -fx-max-height: 640px;
+}
+
+/* Instruction Header (at top of setup screen) */
+.instruction-header {
+    -fx-background-color: #2C2C2E;
+    -fx-padding: 16px 20px;
+    -fx-alignment: center;
+}
+
+.instruction-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.instruction-message {
+    -fx-text-fill: #A0A0A0;
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-alignment: center;
+    -fx-max-width: 320px;
+}
+
+/* Instruction Header Error State */
+.instruction-error {
+    -fx-background-color: rgba(255, 59, 48, 0.95);
+}
+
+.instruction-error .instruction-title {
+    -fx-text-fill: white;
+}
+
+.instruction-error .instruction-message {
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+}
+
+/* Instruction Header Success State */
+.instruction-success {
+    -fx-background-color: rgba(52, 199, 89, 0.95);
+}
+
+.instruction-success .instruction-title {
+    -fx-text-fill: white;
+}
+
+.instruction-success .instruction-message {
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+}
+
+/* Calculator Inner (within setup screen) */
+.calculator-inner {
+    -fx-background-color: #1C1C1E;
+}
+
+/* Compact Display Container (for setup - less top padding) */
+.display-container-compact {
+    -fx-background-color: #1C1C1E;
+    -fx-padding: 20px 20px 20px 20px;
+    -fx-alignment: center-right;
+    -fx-min-height: 80px;
+    -fx-pref-height: 100px;
+}
+
+/* ============================================
+   CONFIRMATION PANEL
+   ============================================ */
+
+.confirmation-panel {
+    -fx-background-color: rgba(30, 30, 30, 0.98);
+    -fx-background-radius: 16px 16px 0 0;
+    -fx-padding: 24px 20px 32px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, -5);
+}
+
+.equation-preview {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 0 0 12px 0;
+}
+
+.confirm-button {
+    -fx-background-color: #34C759;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 14px 32px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+
+.confirm-button:hover {
+    -fx-background-color: #2DB84D;
+}
+
+.confirm-button:pressed {
+    -fx-background-color: #28A745;
+}
+
+.retry-button {
+    -fx-background-color: #48484A;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 14px 32px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+
+.retry-button:hover {
+    -fx-background-color: #5A5A5C;
+}
+
+.retry-button:pressed {
+    -fx-background-color: #3A3A3C;
+}
+
+/* ============================================
+   ONBOARDING TUTORIAL STYLES
+   ============================================ */
+
+.onboarding-root {
+    -fx-background-color: #1C1C1E;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+    -fx-min-width: 360px;
+    -fx-min-height: 640px;
+    -fx-max-width: 360px;
+    -fx-max-height: 640px;
+    -fx-clip-content: true;
+}
+
+.onboarding-page {
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+    -fx-min-width: 360px;
+    -fx-min-height: 640px;
+    -fx-max-width: 360px;
+    -fx-max-height: 640px;
+}
+
+.onboarding-title {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.onboarding-subtitle {
+    -fx-text-fill: #9AABAB;
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 2px;
+    -fx-wrap-text: true;
+    -fx-text-overrun: clip;
+    -fx-alignment: center;
+}
+
+.onboarding-example-box {
+    -fx-background-color: #2C2C2E;
+    -fx-background-radius: 12px;
+    -fx-padding: 16px 24px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 0, 4);
+}
+
+.onboarding-example-equation {
+    -fx-text-fill: #7DBBB5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.onboarding-example-caption {
+    -fx-text-fill: #8E8E93;
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.onboarding-dot {
+    -fx-fill: #48484A;
+}
+
+.onboarding-dot-active {
+    -fx-fill: #7DBBB5;
+}
+
+.onboarding-button {
+    -fx-background-color: #48484A;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-pref-width: 312px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+}
+
+.onboarding-button:hover {
+    -fx-background-color: #5A5A5C;
+}
+
+.onboarding-button:pressed {
+    -fx-background-color: #3A3A3C;
+}
+
+.onboarding-button-primary {
+    -fx-background-color: #7DBBB5;
+    -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.4), 8, 0, 0, 4);
+}
+
+.onboarding-button-primary:hover {
+    -fx-background-color: #6AADA6;
+}
+
+.onboarding-button-primary:pressed {
+    -fx-background-color: #5A9D97;
+    -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.2), 4, 0, 0, 2);
+}
+
+.onboarding-video-container {
+    -fx-max-width: 312px;
+    -fx-alignment: center;
+}
+
+.onboarding-video-placeholder {
+    -fx-background-color: #2C2C2E;
+    -fx-background-radius: 16px;
+    -fx-alignment: center;
+    -fx-border-color: #3A3A3C;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-border-radius: 16px;
+    -fx-pref-height: 340px;
+    -fx-max-height: 340px;
+    -fx-max-width: 312px;
+}
+
+.onboarding-placeholder-icon {
+    -fx-font-size: 40px;
+}
+
+.onboarding-placeholder-label {
+    -fx-text-fill: #636366;
+    -fx-font-size: 11px;
+    -fx-font-family: "SF Mono", "Menlo", "Courier New", monospace;
+}

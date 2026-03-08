@@ -1,0 +1,139 @@
+/*
+ * Main App Styles
+ * Styles for the main application shell: root container, title, subtitle,
+ * and bottom navigation bar.
+ *
+ * @author SDDP Group 30
+ * @version 1.0
+ */
+
+/* ============================================
+   MAIN APP ROOT
+   ============================================ */
+
+.main-app-root {
+    -fx-background-color: linear-gradient(to bottom, #FDF8F3, #F5EDE6);
+    -fx-padding: 0;
+    -fx-alignment: center;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 640px;
+}
+
+.main-app-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.main-app-message {
+    -fx-font-size: 14px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 2px;
+}
+
+.main-app-root .label {
+    -fx-text-fill: #6B8080;
+}
+
+.back-button {
+    -fx-background-color: #7DBBB5;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 14px 28px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.3), 8, 0, 0, 3);
+}
+
+.back-button:hover {
+    -fx-background-color: #6AADA6;
+}
+
+.back-button:pressed {
+    -fx-background-color: #5A9D97;
+    -fx-effect: dropshadow(gaussian, rgba(125, 187, 181, 0.2), 4, 0, 0, 1);
+}
+
+.main-app-subtitle {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+    -fx-font-style: italic;
+}
+
+.main-content {
+    -fx-padding: 40 20 0 20;
+}
+
+/* ============================================
+   BOTTOM NAVIGATION BAR
+   ============================================ */
+
+.bottom-nav {
+    -fx-background-color: #ECE6DF;
+    -fx-border-color: rgba(0, 0, 0, 0.08);
+    -fx-border-width: 1 0 0 0;
+
+    -fx-padding: 0;
+    -fx-spacing: 0;
+
+    -fx-pref-height: 56;
+    -fx-min-height: 56;
+    -fx-max-height: 56;
+}
+
+.nav-item {
+    -fx-background-color: transparent;
+
+    -fx-padding: 0;
+    -fx-alignment: center;
+
+    -fx-pref-height: 56;
+    -fx-min-height: 56;
+    -fx-max-height: 56;
+
+    -fx-background-radius: 0;
+}
+
+.nav-item:selected {
+    -fx-background-color: #D4E8E5;
+}
+
+.nav-item:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.06);
+}
+
+.nav-item:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Lock nav button */
+.nav-lock-item {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.nav-lock-item:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.08);
+}
+
+.nav-icon {
+    -fx-fill: transparent;
+    -fx-stroke: rgba(61, 90, 91, 0.55);
+    -fx-stroke-width: 2;
+}
+
+.nav-item:selected .nav-icon {
+    -fx-stroke: #3D5A5B;
+}
+
+.nav-icon-wrap {
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+}
