@@ -1,8 +1,10 @@
 package com.sddp.sexualhealthapp.article.controller;
 
 import com.sddp.sexualhealthapp.article.model.Article;
+import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -90,6 +92,47 @@ public final class ArticleCardFactory {
         // Click to open article
         card.setOnMouseClicked(e -> onArticleClick.accept(article));
 
+        return card;
+    }
+
+    /**
+     * Creates a Recently Read card that shows persisted section progress and
+     * resumes from the saved section when opened.
+     */
+    public static VBox createRecentArticleCard(Article article, RecentlyReadEntry entry,
+                                               Consumer<RecentlyReadEntry> onRecentClick) {
+        VBox card = new VBox(8);
+        card.getStyleClass().addAll("article-card", "recent-article-card");
+        card.setPickOnBounds(true);
+
+        Label title = new Label(article.getTitle());
+        title.getStyleClass().add("article-card-title");
+        title.setWrapText(true);
+        title.setMaxWidth(260);
+        title.setMouseTransparent(true);
+        card.getChildren().add(title);
+
+        int totalSections = article.getSections().size();
+        int completedSections = Math.min(totalSections, Math.max(0, entry.lastReadSectionIndex() + 1));
+        double progress = totalSections > 0 ? (double) completedSections / totalSections : 0.0;
+
+        ProgressBar progressBar = new ProgressBar(progress);
+        progressBar.getStyleClass().add("article-card-progress-bar");
+        progressBar.setMaxWidth(Double.MAX_VALUE);
+        progressBar.setMouseTransparent(true);
+        card.getChildren().add(progressBar);
+
+        Label progressLabel = new Label(completedSections + " of " + totalSections + " sections");
+        progressLabel.getStyleClass().add("article-card-progress-label");
+        progressLabel.setMouseTransparent(true);
+        card.getChildren().add(progressLabel);
+
+        Label sectionCount = new Label(totalSections + " section" + (totalSections != 1 ? "s" : ""));
+        sectionCount.getStyleClass().add("article-card-subtitle");
+        sectionCount.setMouseTransparent(true);
+        card.getChildren().add(sectionCount);
+
+        card.setOnMouseClicked(e -> onRecentClick.accept(entry));
         return card;
     }
 

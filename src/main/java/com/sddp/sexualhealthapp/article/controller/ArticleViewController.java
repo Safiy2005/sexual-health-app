@@ -16,6 +16,7 @@ import javafx.util.Duration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiConsumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -48,10 +49,12 @@ public class ArticleViewController {
 
     private boolean navMenuOpen = false;
     private Runnable onBackToSearch;
+    private BiConsumer<Article, Integer> onSectionViewed;
 
     private List<VBox> articlePages;
     private int currentPageIndex;
     private double swipeStartX;
+    private Article currentArticle;
 
     private boolean hasSetUpSwipeEvents = false;
 
@@ -71,6 +74,10 @@ public class ArticleViewController {
         this.onBackToSearch = callback;
     }
 
+    public void setOnSectionViewed(BiConsumer<Article, Integer> callback) {
+        this.onSectionViewed = callback;
+    }
+
     /**
      * Opens an article in the paginated reader.
      * Builds title and section pages, sets up swipe listeners, and displays page 0.
@@ -78,8 +85,33 @@ public class ArticleViewController {
      * @param article the article to display
      */
     public void openArticle(Article article) {
+        openArticleAtSection(article, -1);
+    }
+
+    /**
+     * Opens an article with an optional initial section selection.
+     *
+     * @param article       the article to display
+     * @param sectionIndex  the zero-based section index to open, or a negative
+     *                      value to start on the overview page
+     */
+    public void openArticleAtSection(Article article, int sectionIndex) {
+        openArticleAtSection(article, sectionIndex, true);
+    }
+
+    /**
+     * Opens an article with an optional initial section selection and optional
+     * initial section-view callback.
+     *
+     * @param article          the article to display
+     * @param sectionIndex     the zero-based section index to open, or a negative
+     *                         value to start on the overview page
+     * @param notifyOnOpen     whether to emit an initial section-view callback for
+     *                         the starting section page
+     */
+    public void openArticleAtSection(Article article, int sectionIndex, boolean notifyOnOpen) {
+        currentArticle = article;
         articlePages = new ArrayList<>();
-        currentPageIndex = 0;
         articlePageContainer.getChildren().clear();
 
         // Page 0: Title page with article overview
@@ -93,10 +125,12 @@ public class ArticleViewController {
             articlePages.add(sectionPage);
         }
 
-        // Add all pages to the container (only the first is visible)
+        currentPageIndex = clampPageIndex(sectionIndex + 1);
+
+        // Add all pages to the container (only the selected page is visible)
         for (int i = 0; i < articlePages.size(); i++) {
             VBox page = articlePages.get(i);
-            page.setVisible(i == 0);
+            page.setVisible(i == currentPageIndex);
             page.setTranslateX(0);
             articlePageContainer.getChildren().add(page);
         }
@@ -129,6 +163,10 @@ public class ArticleViewController {
                     }
                 }
             });
+        }
+
+        if (notifyOnOpen) {
+            notifySectionViewed();
         }
     }
 
@@ -172,6 +210,22 @@ public class ArticleViewController {
         currentPageIndex = targetIndex;
         updateArrowIndicators();
         updatePageCounter();
+        notifySectionViewed();
+    }
+
+    private int clampPageIndex(int pageIndex) {
+        if (articlePages == null || articlePages.isEmpty()) {
+            return 0;
+        }
+        return Math.max(0, Math.min(pageIndex, articlePages.size() - 1));
+    }
+
+    private void notifySectionViewed() {
+        if (currentPageIndex <= 0 || onSectionViewed == null || currentArticle == null) {
+            return;
+        }
+
+        onSectionViewed.accept(currentArticle, currentPageIndex - 1);
     }
 
     // This may break if the layout of article section pages changes...

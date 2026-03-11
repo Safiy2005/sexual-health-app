@@ -197,6 +197,8 @@ public final class AppConstants {
 
     // ARTICLE CONSTANTS
     public static final String ARTICLE_MARKDOWN_PATH = "article-mds";
+    public static final String ARTICLE_STATE_DIR = "src/main/resources/article-state";
+    public static final String RECENTLY_READ_FILE = "recently-read.json";
 
     // Calendar FXML path
     /**
