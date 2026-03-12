@@ -55,6 +55,15 @@ public class SexualHealthApp extends Application {
         preloadThread.start();
     }
 
+    @Override
+    public void stop() throws Exception {
+        // Shut down the notification background thread so the app can fully close
+        com.sddp.sexualhealthapp.util.NotificationService.shutdown();
+
+        // Always call the super method
+        super.stop();
+    }
+
     /**
      * Main method to launch the application.
      *
