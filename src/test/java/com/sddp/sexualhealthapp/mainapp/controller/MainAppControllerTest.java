@@ -6,11 +6,12 @@ import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.RecentlyReadService;
-import com.sddp.sexualhealthapp.testsupport.JavaFxTestSupport;
+import javafx.application.Platform;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,6 +23,8 @@ import java.nio.file.Path;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -31,6 +34,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
 class MainAppControllerTest {
 
+    private static boolean javaFxAvailable = false;
     private MainAppController controller;
     private RecentlyReadService recentlyReadService;
     private RecordingArticleViewController articleViewController;
@@ -38,12 +42,25 @@ class MainAppControllerTest {
 
     @BeforeAll
     static void initJavaFx() throws Exception {
-        JavaFxTestSupport.initialize();
+        try {
+            CountDownLatch latch = new CountDownLatch(1);
+            Platform.startup(latch::countDown);
+            if (!latch.await(5, TimeUnit.SECONDS)) {
+                javaFxAvailable = false;
+            } else {
+                javaFxAvailable = true;
+            }
+        } catch (IllegalStateException alreadyStarted) {
+            // JavaFX already started
+            javaFxAvailable = true;
+        } catch (RuntimeException startupFailure) {
+            javaFxAvailable = false;
+        }
     }
 
     @BeforeEach
     void setUp() throws Exception {
-        JavaFxTestSupport.assumeAvailable();
+        assumeJavaFxAvailable();
         controller = new MainAppController();
         articleViewController = new RecordingArticleViewController();
         articles = ArticleCollection.getInstance().getArticles().stream()
@@ -65,7 +82,7 @@ class MainAppControllerTest {
 
     @Test
     void renderBrowseFeed_withoutRecentEntries_hidesRecentlyReadSection() throws Exception {
-        JavaFxTestSupport.runOnFxAndWait(controller::renderBrowseFeed);
+        runOnFxAndWait(controller::renderBrowseFeed);
 
         List<String> labels = labelTexts();
         assertFalse(labels.contains("Recently Read"));
@@ -76,7 +93,7 @@ class MainAppControllerTest {
     void renderBrowseFeed_withRecentEntries_placesSectionAboveAllArticles() throws Exception {
         recentlyReadService.saveProgress(articles.get(0).getFileName(), 0, Instant.parse("2026-03-11T09:00:00Z"));
 
-        JavaFxTestSupport.runOnFxAndWait(controller::renderBrowseFeed);
+        runOnFxAndWait(controller::renderBrowseFeed);
 
         List<String> labels = labelTexts();
         assertTrue(labels.indexOf("Recently Read") >= 0);
@@ -88,7 +105,7 @@ class MainAppControllerTest {
     void renderSearchResults_hidesRecentlyReadSection() throws Exception {
         recentlyReadService.saveProgress(articles.get(0).getFileName(), 0, Instant.parse("2026-03-11T09:00:00Z"));
 
-        JavaFxTestSupport.runOnFxAndWait(() -> controller.renderSearchResults(
+        runOnFxAndWait(() -> controller.renderSearchResults(
                 "test",
                 List.of(new SearchResult(articles.get(0), 0.8, Map.of()))));
 
@@ -99,12 +116,12 @@ class MainAppControllerTest {
     void clickingRecentCard_resumesAtSavedSection() throws Exception {
         recentlyReadService.saveProgress(articles.get(0).getFileName(), 1, Instant.parse("2026-03-11T09:00:00Z"));
 
-        JavaFxTestSupport.runOnFxAndWait(controller::renderBrowseFeed);
+        runOnFxAndWait(controller::renderBrowseFeed);
 
         VBox recentCard = findRecentCard();
         assertNotNull(recentCard);
 
-        JavaFxTestSupport.runOnFxAndWait(() -> recentCard.getOnMouseClicked().handle(null));
+        runOnFxAndWait(() -> recentCard.getOnMouseClicked().handle(null));
 
         assertEquals(articles.get(0), articleViewController.lastArticle);
         assertEquals(1, articleViewController.lastSectionIndex);
@@ -114,7 +131,7 @@ class MainAppControllerTest {
     void sectionViewed_whileArticleOverlayVisible_defersFeedRefreshUntilReturn() throws Exception {
         inject(controller, "articleView", visibleBox(true));
 
-        JavaFxTestSupport.runOnFxAndWait(() -> invokePrivate(
+        runOnFxAndWait(() -> invokePrivate(
                 controller,
                 "handleSectionViewed",
                 new Class<?>[]{Article.class, Integer.class},
@@ -124,7 +141,7 @@ class MainAppControllerTest {
         assertFalse(labelTexts().contains("Recently Read"));
 
         inject(controller, "articleView", visibleBox(false));
-        JavaFxTestSupport.runOnFxAndWait(() -> invokePrivate(
+        runOnFxAndWait(() -> invokePrivate(
                 controller,
                 "refreshBrowseFeedIfNeeded",
                 new Class<?>[0]));
@@ -176,6 +193,35 @@ class MainAppControllerTest {
             method.invoke(target, args);
         } catch (Exception e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private static void runOnFxAndWait(Runnable action) throws Exception {
+        assumeJavaFxAvailable();
+
+        if (Platform.isFxApplicationThread()) {
+            action.run();
+            return;
+        }
+
+        CountDownLatch latch = new CountDownLatch(1);
+        Platform.runLater(() -> {
+            try {
+                action.run();
+            } finally {
+                latch.countDown();
+            }
+        });
+        assertTrue(latch.await(5, TimeUnit.SECONDS), "Timed out waiting for FX thread");
+    }
+
+    private static void assumeJavaFxAvailable() {
+        Assumptions.assumeTrue(javaFxAvailable);
+        try {
+            Platform.isFxApplicationThread();
+        } catch (RuntimeException noToolkit) {
+            javaFxAvailable = false;
+            Assumptions.assumeTrue(false);
         }
     }
 

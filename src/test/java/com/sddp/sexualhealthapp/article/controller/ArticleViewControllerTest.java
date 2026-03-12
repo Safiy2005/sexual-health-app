@@ -1,37 +1,55 @@
 package com.sddp.sexualhealthapp.article.controller;
 
 import com.sddp.sexualhealthapp.article.model.Article;
-import com.sddp.sexualhealthapp.testsupport.JavaFxTestSupport;
+import javafx.application.Platform;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 
 import java.lang.reflect.Field;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
 class ArticleViewControllerTest {
 
+    private static boolean javaFxAvailable = false;
     private ArticleViewController controller;
 
     @BeforeAll
     static void initJavaFx() throws Exception {
-        JavaFxTestSupport.initialize();
+        try {
+            CountDownLatch latch = new CountDownLatch(1);
+            Platform.startup(latch::countDown);
+            if (!latch.await(5, TimeUnit.SECONDS)) {
+                javaFxAvailable = false;
+            } else {
+                javaFxAvailable = true;
+            }
+        } catch (IllegalStateException alreadyStarted) {
+            // JavaFX already started
+            javaFxAvailable = true;
+        } catch (RuntimeException startupFailure) {
+            javaFxAvailable = false;
+        }
     }
 
     @BeforeEach
     void setUp() throws Exception {
-        JavaFxTestSupport.assumeAvailable();
+        assumeJavaFxAvailable();
         controller = new ArticleViewController();
         inject(controller, "articlePageContainer", new StackPane());
         inject(controller, "pageIndicatorContainer", new HBox());
@@ -51,7 +69,7 @@ class ArticleViewControllerTest {
         AtomicInteger callbackCount = new AtomicInteger();
         controller.setOnSectionViewed((ignoredArticle, ignoredIndex) -> callbackCount.incrementAndGet());
 
-        JavaFxTestSupport.runOnFxAndWait(() -> controller.openArticle(article));
+        runOnFxAndWait(() -> controller.openArticle(article));
 
         assertEquals(0, callbackCount.get());
     }
@@ -66,8 +84,8 @@ class ArticleViewControllerTest {
             seenIndex.set(sectionIndex);
         });
 
-        JavaFxTestSupport.runOnFxAndWait(() -> controller.openArticle(article));
-        JavaFxTestSupport.runOnFxAndWait(() -> invokeNavigateToPage(1));
+        runOnFxAndWait(() -> controller.openArticle(article));
+        runOnFxAndWait(() -> invokeNavigateToPage(1));
 
         assertEquals(article, seenArticle.get());
         assertEquals(0, seenIndex.get());
@@ -79,7 +97,7 @@ class ArticleViewControllerTest {
         AtomicReference<Integer> seenIndex = new AtomicReference<>();
         controller.setOnSectionViewed((ignoredArticle, sectionIndex) -> seenIndex.set(sectionIndex));
 
-        JavaFxTestSupport.runOnFxAndWait(() -> controller.openArticleAtSection(article, 1));
+        runOnFxAndWait(() -> controller.openArticleAtSection(article, 1));
 
         Label pageCounterLabel = get(controller, "pageCounterLabel", Label.class);
         assertEquals("3 / 4", pageCounterLabel.getText());
@@ -92,7 +110,7 @@ class ArticleViewControllerTest {
         AtomicInteger callbackCount = new AtomicInteger();
         controller.setOnSectionViewed((ignoredArticle, ignoredIndex) -> callbackCount.incrementAndGet());
 
-        JavaFxTestSupport.runOnFxAndWait(() -> controller.openArticleAtSection(article, 1, false));
+        runOnFxAndWait(() -> controller.openArticleAtSection(article, 1, false));
 
         assertEquals(0, callbackCount.get());
     }
@@ -134,6 +152,35 @@ class ArticleViewControllerTest {
         Field f = target.getClass().getDeclaredField(fieldName);
         f.setAccessible(true);
         return type.cast(f.get(target));
+    }
+
+    private static void runOnFxAndWait(Runnable action) throws Exception {
+        assumeJavaFxAvailable();
+
+        if (Platform.isFxApplicationThread()) {
+            action.run();
+            return;
+        }
+
+        CountDownLatch latch = new CountDownLatch(1);
+        Platform.runLater(() -> {
+            try {
+                action.run();
+            } finally {
+                latch.countDown();
+            }
+        });
+        assertTrue(latch.await(5, TimeUnit.SECONDS), "Timed out waiting for FX thread");
+    }
+
+    private static void assumeJavaFxAvailable() {
+        Assumptions.assumeTrue(javaFxAvailable);
+        try {
+            Platform.isFxApplicationThread();
+        } catch (RuntimeException noToolkit) {
+            javaFxAvailable = false;
+            Assumptions.assumeTrue(false);
+        }
     }
 
 }
