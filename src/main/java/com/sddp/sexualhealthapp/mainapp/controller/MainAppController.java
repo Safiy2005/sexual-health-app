@@ -78,7 +78,6 @@ public class MainAppController {
     @FXML
     private EventDetailController eventDetailViewController;
 
-    // TODO: Remove when story 51 (bottom nav) is integrated
     @FXML
     private VBox calendarView;
     @FXML
@@ -315,18 +314,6 @@ public class MainAppController {
             isViewTransitioning = false;
         });
         slide.play();
-    }
-
-    // TODO: Remove when story 51 (bottom nav) replaces this toggle
-    @FXML
-    private void handleToggleCalendar(ActionEvent event) {
-        boolean showCalendar = !calendarView.isVisible();
-        calendarView.setVisible(showCalendar);
-        searchView.setVisible(!showCalendar);
-        articleView.setVisible(false);
-        if (showCalendar && calendarViewController != null) {
-            calendarViewController.refresh();
-        }
     }
 
     /**
