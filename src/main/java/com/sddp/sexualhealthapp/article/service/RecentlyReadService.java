@@ -208,7 +208,8 @@ public class RecentlyReadService {
         Map<String, RecentlyReadEntry> deduped = new LinkedHashMap<>();
 
         for (RecentlyReadEntry entry : rawEntries) {
-            if (entry == null || entry.articleId() == null || entry.articleId().isBlank() || entry.lastReadAt() == null) {
+            if (entry == null || entry.articleId() == null || entry.articleId().isBlank()
+                    || entry.lastReadAt() == null) {
                 continue;
             }
 
@@ -218,7 +219,8 @@ public class RecentlyReadService {
             }
 
             int clampedSectionIndex = clampSectionIndex(article, entry.lastReadSectionIndex());
-            RecentlyReadEntry sanitized = new RecentlyReadEntry(entry.articleId(), clampedSectionIndex, entry.lastReadAt());
+            RecentlyReadEntry sanitized = new RecentlyReadEntry(entry.articleId(), clampedSectionIndex,
+                    entry.lastReadAt());
 
             RecentlyReadEntry existing = deduped.get(entry.articleId());
             if (existing == null || sanitized.lastReadAt().isAfter(existing.lastReadAt())) {

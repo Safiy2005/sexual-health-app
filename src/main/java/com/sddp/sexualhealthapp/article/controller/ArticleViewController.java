@@ -91,9 +91,9 @@ public class ArticleViewController {
     /**
      * Opens an article with an optional initial section selection.
      *
-     * @param article       the article to display
-     * @param sectionIndex  the zero-based section index to open, or a negative
-     *                      value to start on the overview page
+     * @param article      the article to display
+     * @param sectionIndex the zero-based section index to open, or a negative
+     *                     value to start on the overview page
      */
     public void openArticleAtSection(Article article, int sectionIndex) {
         openArticleAtSection(article, sectionIndex, true);
@@ -103,11 +103,11 @@ public class ArticleViewController {
      * Opens an article with an optional initial section selection and optional
      * initial section-view callback.
      *
-     * @param article          the article to display
-     * @param sectionIndex     the zero-based section index to open, or a negative
-     *                         value to start on the overview page
-     * @param notifyOnOpen     whether to emit an initial section-view callback for
-     *                         the starting section page
+     * @param article      the article to display
+     * @param sectionIndex the zero-based section index to open, or a negative
+     *                     value to start on the overview page
+     * @param notifyOnOpen whether to emit an initial section-view callback for
+     *                     the starting section page
      */
     public void openArticleAtSection(Article article, int sectionIndex, boolean notifyOnOpen) {
         currentArticle = article;

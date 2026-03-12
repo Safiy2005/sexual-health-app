@@ -10,8 +10,7 @@ import java.time.Instant;
  * @param lastReadAt           timestamp of the last read activity
  */
 public record RecentlyReadEntry(
-        String articleId,
-        int lastReadSectionIndex,
-        Instant lastReadAt
-) {
+                String articleId,
+                int lastReadSectionIndex,
+                Instant lastReadAt) {
 }

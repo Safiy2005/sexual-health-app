@@ -3,7 +3,6 @@ package com.sddp.sexualhealthapp.mainapp.controller;
 import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
-import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.RecentlyReadService;
 import javafx.application.Platform;
@@ -134,7 +133,7 @@ class MainAppControllerTest {
         runOnFxAndWait(() -> invokePrivate(
                 controller,
                 "handleSectionViewed",
-                new Class<?>[]{Article.class, Integer.class},
+                new Class<?>[] { Article.class, Integer.class },
                 articles.get(0),
                 0));
 

@@ -41,7 +41,7 @@ public final class ArticleCardFactory {
      * @return a styled VBox representing the article card
      */
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery, Consumer<Article> onArticleClick) {
+            String searchQuery, Consumer<Article> onArticleClick) {
         VBox card = new VBox(4);
         card.getStyleClass().add("article-card");
 
@@ -100,7 +100,7 @@ public final class ArticleCardFactory {
      * resumes from the saved section when opened.
      */
     public static VBox createRecentArticleCard(Article article, RecentlyReadEntry entry,
-                                               Consumer<RecentlyReadEntry> onRecentClick) {
+            Consumer<RecentlyReadEntry> onRecentClick) {
         VBox card = new VBox(8);
         card.getStyleClass().addAll("article-card", "recent-article-card");
         card.setPickOnBounds(true);
