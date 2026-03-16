@@ -2,6 +2,7 @@ package com.sddp.sexualhealthapp.article.service;
 
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
+import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -40,6 +41,11 @@ public class HybridSearchService {
     /** Search with default min score. */
     public List<SearchResult> search(String query) {
         return search(query, DEFAULT_MIN_SCORE);
+    }
+
+    /** Search and then apply blocked-tag filtering and preference boosts. */
+    public List<SearchResult> search(String query, ContentPreferences preferences) {
+        return ArticlePersonalizationService.personalizeResults(search(query, DEFAULT_MIN_SCORE), query, preferences);
     }
 
     /** Search with custom minimum score threshold. */
@@ -111,6 +117,16 @@ public class HybridSearchService {
         }
 
         return search(query).stream()
+                .limit(limit)
+                .toList();
+    }
+
+    public List<SearchResult> searchTop(String query, int limit, ContentPreferences preferences) {
+        if (limit <= 0) {
+            return Collections.emptyList();
+        }
+
+        return search(query, preferences).stream()
                 .limit(limit)
                 .toList();
     }

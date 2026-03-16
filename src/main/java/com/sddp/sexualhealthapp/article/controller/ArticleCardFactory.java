@@ -1,12 +1,12 @@
 package com.sddp.sexualhealthapp.article.controller;
 
 import com.sddp.sexualhealthapp.article.model.Article;
+import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-
 import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,14 +40,47 @@ public final class ArticleCardFactory {
      */
     public static VBox createArticleCard(Article article, double score,
                                          String searchQuery, Consumer<Article> onArticleClick) {
+        return createArticleCard(article, score, searchQuery, List.of(), List.of(), null, false, onArticleClick);
+    }
+
+    public static VBox createArticleCard(Article article, double score,
+                                         String searchQuery,
+                                         List<String> highlightedTags,
+                                         List<String> preferredMatchedTags,
+                                         Consumer<Article> onArticleClick) {
+        return createArticleCard(article, score, searchQuery, highlightedTags, preferredMatchedTags,
+                null, false, onArticleClick);
+    }
+
+    public static VBox createArticleCard(Article article, double score,
+                                         String searchQuery,
+                                         List<String> highlightedTags,
+                                         List<String> preferredMatchedTags,
+                                         String statusText,
+                                         boolean hidden,
+                                         Consumer<Article> onArticleClick) {
         VBox card = new VBox(4);
         card.getStyleClass().add("article-card");
+        if (hidden) {
+            card.getStyleClass().add("article-card-hidden");
+        }
 
         // Colour-code the card based on relevance tier (only during search)
-        if (score >= 0.5) {
+        if (!hidden && score >= 0.5) {
             card.getStyleClass().add("article-card-relevant");
-        } else if (score >= 0.25) {
+        } else if (!hidden && score >= 0.25) {
             card.getStyleClass().add("article-card-possible");
+        }
+
+        String reasonText = buildReasonText(searchQuery, highlightedTags, preferredMatchedTags, statusText);
+        if (reasonText != null) {
+            Label reasonLabel = new Label(reasonText);
+            reasonLabel.getStyleClass().add("article-card-reason");
+            if (hidden) {
+                reasonLabel.getStyleClass().add("article-card-reason-hidden");
+            }
+            reasonLabel.setWrapText(true);
+            card.getChildren().add(reasonLabel);
         }
 
         // Title row
@@ -72,13 +105,15 @@ public final class ArticleCardFactory {
         bottomRow.getChildren().add(subtitle);
 
         // Tag chips (up to 3, fitted to available space, reordered by search relevance)
-        List<String> tagsToShow = pickTags(article.getTags(), searchQuery);
+        List<String> tagsToShow = pickTags(article.getTags(), searchQuery, highlightedTags, preferredMatchedTags);
         for (String tag : tagsToShow) {
             Label tagLabel = new Label(tag);
             tagLabel.getStyleClass().add("article-card-tag");
             tagLabel.setMinWidth(Region.USE_PREF_SIZE);
 
-            if (isTagRelevantToQuery(tag, searchQuery)) {
+            if (preferredMatchedTags.contains(tag)) {
+                tagLabel.getStyleClass().add("article-card-tag-preferred");
+            } else if (highlightedTags.contains(tag) || isTagRelevantToQuery(tag, searchQuery)) {
                 tagLabel.getStyleClass().add("article-card-tag-highlighted");
             }
 
@@ -93,32 +128,50 @@ public final class ArticleCardFactory {
         return card;
     }
 
+    private static String buildReasonText(String searchQuery,
+                                          List<String> highlightedTags,
+                                          List<String> preferredMatchedTags,
+                                          String statusText) {
+        if (statusText != null && !statusText.isBlank()) {
+            return statusText;
+        }
+        if (!preferredMatchedTags.isEmpty()) {
+            return "Prioritised for you: " + String.join(", ", preferredMatchedTags);
+        }
+        if (searchQuery != null && !searchQuery.isBlank() && !highlightedTags.isEmpty()) {
+            return "Matched tags: " + String.join(", ", highlightedTags);
+        }
+        return null;
+    }
+
     /**
      * Picks the top tags to display, promoting tags that match the search query
      * to the front so users see why an article was returned.
      * Respects a character budget so tags are never truncated with ellipses.
      */
-    private static List<String> pickTags(List<String> allTags, String searchQuery) {
+    private static List<String> pickTags(List<String> allTags, String searchQuery,
+                                         List<String> highlightedTags,
+                                         List<String> preferredMatchedTags) {
         if (allTags == null || allTags.isEmpty()) {
             return List.of();
         }
 
-        // Build a priority-ordered candidate list (search-matching tags first)
-        List<String> candidates;
-        if (searchQuery == null || searchQuery.isBlank()) {
-            candidates = allTags;
-        } else {
-            List<String> matching = new ArrayList<>();
-            List<String> rest = new ArrayList<>();
+        List<String> candidates = new ArrayList<>();
+        addPriorityTags(candidates, preferredMatchedTags);
+        addPriorityTags(candidates, highlightedTags);
+
+        if (searchQuery != null && !searchQuery.isBlank()) {
             for (String tag : allTags) {
-                if (isTagRelevantToQuery(tag, searchQuery)) {
-                    matching.add(tag);
-                } else {
-                    rest.add(tag);
+                if (isTagRelevantToQuery(tag, searchQuery) && !candidates.contains(tag)) {
+                    candidates.add(tag);
                 }
             }
-            candidates = new ArrayList<>(matching);
-            candidates.addAll(rest);
+        }
+
+        for (String tag : allTags) {
+            if (!candidates.contains(tag)) {
+                candidates.add(tag);
+            }
         }
 
         // Greedily take tags until we hit the count limit or character budget
@@ -138,27 +191,20 @@ public final class ArticleCardFactory {
         return result;
     }
 
+    private static void addPriorityTags(List<String> candidates, List<String> priorityTags) {
+        for (String tag : priorityTags) {
+            if (!candidates.contains(tag)) {
+                candidates.add(tag);
+            }
+        }
+    }
+
     /**
      * Checks if a tag is relevant to the search query by comparing words.
      * Uses case-insensitive containment in both directions so that
      * searching "STI" matches a tag "STIs" and vice versa.
      */
     private static boolean isTagRelevantToQuery(String tag, String searchQuery) {
-        if (searchQuery == null || searchQuery.isBlank()) {
-            return false;
-        }
-
-        String tagLower = tag.toLowerCase();
-        String queryLower = searchQuery.toLowerCase().trim();
-
-        // Check if any query word appears in the tag or vice versa
-        String[] queryWords = queryLower.split("\\s+");
-        for (String word : queryWords) {
-            if (word.length() >= 2 && (tagLower.contains(word) || word.contains(tagLower))) {
-                return true;
-            }
-        }
-
-        return false;
+        return ArticlePersonalizationService.isTagRelevantToQuery(tag, searchQuery);
     }
 }

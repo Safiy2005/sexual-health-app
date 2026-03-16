@@ -1,6 +1,7 @@
 package com.sddp.sexualhealthapp.mainapp.controller;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
@@ -8,6 +9,7 @@ import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
+import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.calendar.controller.CalendarController;
 import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
@@ -16,6 +18,9 @@ import com.sddp.sexualhealthapp.calendar.controller.EventFeedController;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
+import com.sddp.sexualhealthapp.settings.controller.SettingsController;
+import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
 
@@ -43,6 +48,9 @@ import javafx.util.Duration;
  */
 public class MainAppController {
 
+    private record BrowseCardData(Article article, List<String> preferredMatches) {
+    }
+
     @FXML
     private StackPane contentStack;
     @FXML
@@ -51,6 +59,10 @@ public class MainAppController {
     private VBox calendarRoot;
     @FXML
     private VBox settingsRoot;
+    @FXML
+    private VBox settingsView;
+    @FXML
+    private SettingsController settingsViewController;
     @FXML
     private ToggleGroup navGroup;
     @FXML
@@ -94,13 +106,16 @@ public class MainAppController {
     private CreateEventController createEventViewController;
 
     private HybridSearchService searchService;
+    private ContentPreferencesService contentPreferencesService;
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
+    private boolean blockedArticlesExpanded = false;
     private Node returnAfterCreateEvent = null;
 
     @FXML
     private void initialize() {
         searchService = new HybridSearchService();
+        contentPreferencesService = ContentPreferencesService.getInstance();
 
         // Debounce: wait 300ms after user stops typing before searching
         searchDebounce = new PauseTransition(Duration.millis(300));
@@ -142,6 +157,7 @@ public class MainAppController {
 
         // Show all articles on initial load
         showAllArticles();
+        settingsViewController.setOnPreferencesChanged(this::refreshArticlesView);
 
         // icon tabs
 
@@ -192,7 +208,10 @@ public class MainAppController {
 
         // When tab selected
         switch (tab) {
-            case "ARTICLES" -> setVisible_Managed(articlesRoot, true);
+            case "ARTICLES" -> {
+                setVisible_Managed(articlesRoot, true);
+                refreshArticlesView();
+            }
             case "CALENDAR" -> {
                 setVisible_Managed(calendarRoot, true);
                 closeArticleOverlayIfOpen();
@@ -200,6 +219,7 @@ public class MainAppController {
             case "SETTINGS" -> {
                 setVisible_Managed(settingsRoot, true);
                 closeArticleOverlayIfOpen();
+                settingsViewController.refresh();
             }
         }
     }
@@ -221,19 +241,32 @@ public class MainAppController {
     }
 
     private void showAllArticles() {
-        articleListContainer.getChildren().clear();
+        ContentPreferences preferences = contentPreferencesService.getPreferences();
+        List<Article> allArticles = ArticleCollection.getInstance().getArticles();
+        List<Article> articles = ArticlePersonalizationService.filterBlockedArticles(
+                allArticles,
+                preferences);
+        List<Article> blockedArticles = allArticles.stream()
+                .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
+                .toList();
 
-        List<Article> articles = ArticleCollection.getInstance().getArticles();
-
-        if (articles.isEmpty()) {
+        if (articles.isEmpty() && blockedArticles.isEmpty()) {
             showEmptyState("No articles found");
             return;
         }
 
-        for (Article article : articles) {
-            articleListContainer.getChildren().add(
-                    ArticleCardFactory.createArticleCard(article, -1.0, "", this::openArticle));
-        }
+        List<BrowseCardData> visibleCards = articles.stream()
+                .map(article -> new BrowseCardData(
+                        article,
+                        ArticlePersonalizationService.getPreferredMatchedTags(article, preferences)))
+                .toList();
+        List<BrowseCardData> blockedCards = blockedArticles.stream()
+                .map(article -> new BrowseCardData(
+                        article,
+                        ArticlePersonalizationService.getPreferredMatchedTags(article, preferences)))
+                .toList();
+
+        renderBrowseCards(visibleCards, blockedCards);
     }
 
     private void performSearch() {
@@ -252,25 +285,147 @@ public class MainAppController {
 
         // Run search on background thread (ONNX model can be slow on first call)
         Thread searchThread = new Thread(() -> {
-            List<SearchResult> results = searchService.search(query);
+            ContentPreferences preferences = contentPreferencesService.getPreferences();
+            List<SearchResult> rawResults = searchService.search(query);
+            List<SearchResult> visibleResults = ArticlePersonalizationService.personalizeResults(
+                    rawResults, query, preferences);
+            List<SearchResult> blockedResults = rawResults.stream()
+                    .filter(result -> ArticlePersonalizationService.isBlocked(result.article(), preferences))
+                    .toList();
 
             Platform.runLater(() -> {
-                articleListContainer.getChildren().clear();
-
-                if (results.isEmpty()) {
-                    showEmptyState("No results for \"" + query + "\"");
-                    return;
-                }
-
-                for (SearchResult result : results) {
-                    articleListContainer.getChildren().add(
-                            ArticleCardFactory.createArticleCard(
-                                    result.article(), result.score(), query, this::openArticle));
-                }
+                renderSearchResults(query, visibleResults, blockedResults);
             });
         });
         searchThread.setDaemon(true);
         searchThread.start();
+    }
+
+    private void renderBrowseCards(List<BrowseCardData> visibleCards, List<BrowseCardData> blockedCards) {
+        articleListContainer.getChildren().clear();
+
+        if (visibleCards.isEmpty() && !blockedCards.isEmpty()) {
+            showEmptyState("All matching articles are currently hidden by blocked tags.");
+        }
+
+        for (BrowseCardData cardData : visibleCards) {
+            articleListContainer.getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            cardData.article(), -1.0, "",
+                            List.of(),
+                            cardData.preferredMatches(),
+                            this::openArticle));
+        }
+
+        addBlockedArticlesToggleForBrowse(blockedCards);
+    }
+
+    private void renderSearchResults(String query, List<SearchResult> visibleResults, List<SearchResult> blockedResults) {
+        articleListContainer.getChildren().clear();
+
+        if (visibleResults.isEmpty() && blockedResults.isEmpty()) {
+            showEmptyState("No results for \"" + query + "\"");
+            return;
+        }
+
+        if (visibleResults.isEmpty() && !blockedResults.isEmpty()) {
+            showEmptyState("All results for \"" + query + "\" are currently hidden by blocked tags.");
+        }
+
+        for (SearchResult result : visibleResults) {
+            articleListContainer.getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            result.article(), result.score(), query,
+                            result.highlightedTags(),
+                            result.preferredMatchedTags(),
+                            this::openArticle));
+        }
+
+        addBlockedArticlesToggleForSearch(query, blockedResults);
+    }
+
+    private void addBlockedArticlesToggleForBrowse(List<BrowseCardData> blockedCards) {
+        if (blockedCards.isEmpty()) {
+            blockedArticlesExpanded = false;
+            return;
+        }
+
+        articleListContainer.getChildren().add(buildBlockedArticlesToggleButton(blockedCards.size()));
+        if (!blockedArticlesExpanded) {
+            return;
+        }
+
+        for (BrowseCardData cardData : blockedCards) {
+            articleListContainer.getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            cardData.article(),
+                            -1.0,
+                            "",
+                            List.of(),
+                            cardData.preferredMatches(),
+                            buildBlockedReason(cardData.article()),
+                            true,
+                            this::openArticle));
+        }
+    }
+
+    private void addBlockedArticlesToggleForSearch(String query, List<SearchResult> blockedResults) {
+        if (blockedResults.isEmpty()) {
+            blockedArticlesExpanded = false;
+            return;
+        }
+
+        articleListContainer.getChildren().add(buildBlockedArticlesToggleButton(blockedResults.size()));
+        if (!blockedArticlesExpanded) {
+            return;
+        }
+
+        ContentPreferences preferences = contentPreferencesService.getPreferences();
+        for (SearchResult result : blockedResults) {
+            articleListContainer.getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            result.article(),
+                            result.score(),
+                            query,
+                            ArticlePersonalizationService.getQueryMatchedTags(result.article(), query),
+                            ArticlePersonalizationService.getPreferredMatchedTags(result.article(), preferences),
+                            buildBlockedReason(result.article()),
+                            true,
+                            this::openArticle));
+        }
+    }
+
+    private Button buildBlockedArticlesToggleButton(int hiddenCount) {
+        Button toggleButton = new Button(
+                (blockedArticlesExpanded ? "Hide" : "Show")
+                        + " hidden articles (" + hiddenCount + ") ");
+        toggleButton.getStyleClass().add("article-hidden-toggle-button");
+        toggleButton.setMaxWidth(Double.MAX_VALUE);
+        toggleButton.setOnAction(event -> {
+            blockedArticlesExpanded = !blockedArticlesExpanded;
+            refreshArticlesView();
+        });
+        return toggleButton;
+    }
+
+    private String buildBlockedReason(Article article) {
+        List<String> blockedTags = new ArrayList<>();
+        ContentPreferences preferences = contentPreferencesService.getPreferences();
+
+        for (String tag : article.getTags()) {
+            for (String blockedTag : preferences.blockedTags()) {
+                if (ArticlePersonalizationService.canonicalTagKey(tag)
+                        .equals(ArticlePersonalizationService.canonicalTagKey(blockedTag))) {
+                    blockedTags.add(tag);
+                }
+            }
+        }
+
+        if (blockedTags.isEmpty()) {
+            return "Hidden by blocked tags";
+        }
+        return "Hidden by blocked tag" + (blockedTags.size() > 1 ? "s: " : ": ")
+                + String.join(", ", blockedTags);
     }
 
     private void openArticle(Article article) {
@@ -349,6 +504,18 @@ public class MainAppController {
         empty.getStyleClass().add("search-empty-label");
         empty.setWrapText(true);
         articleListContainer.getChildren().add(empty);
+    }
+
+    private void refreshArticlesView() {
+        if (searchField == null) {
+            return;
+        }
+
+        if (searchField.getText() == null || searchField.getText().trim().isEmpty()) {
+            showAllArticles();
+        } else {
+            performSearch();
+        }
     }
 
     private void showOnlyCalendarView(Node toShow) {

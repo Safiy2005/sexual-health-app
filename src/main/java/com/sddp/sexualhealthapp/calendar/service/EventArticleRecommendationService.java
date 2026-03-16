@@ -2,9 +2,12 @@ package com.sddp.sexualhealthapp.calendar.service;
 
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
+import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.article.service.TextPreprocessor;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
+import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,6 +19,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Supplier;
 
 /**
  * Recommends articles for a calendar event.
@@ -52,15 +56,22 @@ public class EventArticleRecommendationService {
     }
 
     private final QuerySearch querySearch;
+    private final Supplier<ContentPreferences> preferencesSupplier;
 
     /** Production constructor. */
     public EventArticleRecommendationService() {
-        this(new HybridSearchService()::search);
+        this(new HybridSearchService()::search,
+                ContentPreferencesService.getInstance()::getPreferences);
     }
 
     /** Testing constructor. */
     EventArticleRecommendationService(QuerySearch querySearch) {
+        this(querySearch, ContentPreferences::empty);
+    }
+
+    EventArticleRecommendationService(QuerySearch querySearch, Supplier<ContentPreferences> preferencesSupplier) {
         this.querySearch = querySearch;
+        this.preferencesSupplier = preferencesSupplier;
     }
 
     /**
@@ -76,6 +87,7 @@ public class EventArticleRecommendationService {
 
         String rawTitle = safe(event.getName());
         String rawDescription = safe(event.getDescription());
+        ContentPreferences preferences = preferencesSupplier.get();
 
         String titleQuery = expandEventTerms(rawTitle);
         String descriptionQuery = expandEventTerms(rawDescription);
@@ -86,10 +98,16 @@ public class EventArticleRecommendationService {
 
         List<SearchResult> titleResults = titleQuery.isBlank()
                 ? List.of()
-                : querySearch.search(titleQuery, 0.0);
+                : ArticlePersonalizationService.personalizeResults(
+                        querySearch.search(titleQuery, 0.0),
+                        titleQuery,
+                        preferences);
         List<SearchResult> descriptionResults = descriptionQuery.isBlank()
                 ? List.of()
-                : querySearch.search(descriptionQuery, 0.0);
+                : ArticlePersonalizationService.personalizeResults(
+                        querySearch.search(descriptionQuery, 0.0),
+                        descriptionQuery,
+                        preferences);
 
         if (titleResults.isEmpty() && descriptionResults.isEmpty()) {
             return Collections.emptyList();
