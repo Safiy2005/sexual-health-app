@@ -398,8 +398,8 @@ public class ArticleViewController {
             if (item instanceof VBox wrapper
                     && wrapper.getStyleClass().contains("nav-menu-group-wrapper")) {
                 for (javafx.scene.Node child : wrapper.getChildren()) {
-                    if (child instanceof HBox hbox) {
-                        for (javafx.scene.Node dot : hbox.getChildren()) {
+                    if (child instanceof FlowPane flowPane) {
+                        for (javafx.scene.Node dot : flowPane.getChildren()) {
                             dot.getStyleClass().remove("nav-menu-dot-active");
                             if (dot.getUserData() instanceof Integer dotPage
                                     && dotPage == currentPageIndex) {
