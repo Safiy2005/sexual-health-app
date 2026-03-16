@@ -299,6 +299,18 @@
     -fx-text-fill: #9AABAB;
     -fx-font-weight: 600;
     -fx-cursor: hand;
+    -fx-padding: 4px 8px;
+    -fx-background-radius: 10px;
+}
+
+.swipe-arrow-label:hover {
+    -fx-text-fill: #6F9693;
+    -fx-background-color: rgba(125, 187, 181, 0.16);
+}
+
+.swipe-arrow-label:pressed {
+    -fx-text-fill: #3D7A75;
+    -fx-background-color: rgba(125, 187, 181, 0.28);
 }
 
 .page-counter-label {
