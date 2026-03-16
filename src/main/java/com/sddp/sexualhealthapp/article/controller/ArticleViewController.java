@@ -80,7 +80,7 @@ public class ArticleViewController {
 
     /**
      * Opens an article in the paginated reader.
-     * Builds title and section pages, sets up swipe listeners, and displays page 0.
+     * Builds section pages, sets up swipe listeners, and displays the first page.
      *
      * @param article the article to display
      */
@@ -93,7 +93,7 @@ public class ArticleViewController {
      *
      * @param article      the article to display
      * @param sectionIndex the zero-based section index to open, or a negative
-     *                     value to start on the overview page
+     *                     value to start on the first section page
      */
     public void openArticleAtSection(Article article, int sectionIndex) {
         openArticleAtSection(article, sectionIndex, true);
@@ -105,7 +105,7 @@ public class ArticleViewController {
      *
      * @param article      the article to display
      * @param sectionIndex the zero-based section index to open, or a negative
-     *                     value to start on the overview page
+     *                     value to start on the first section page
      * @param notifyOnOpen whether to emit an initial section-view callback for
      *                     the starting section page
      */
@@ -114,10 +114,6 @@ public class ArticleViewController {
         articlePages = new ArrayList<>();
         articlePageContainer.getChildren().clear();
 
-        // Page 0: Title page with article overview
-        VBox titlePage = ArticlePageBuilder.createTitlePage(article);
-        articlePages.add(titlePage);
-
         // One page per section
         List<Article.Section> sections = article.getSections();
         for (int i = 0; i < sections.size(); i++) {
@@ -125,7 +121,7 @@ public class ArticleViewController {
             articlePages.add(sectionPage);
         }
 
-        currentPageIndex = clampPageIndex(sectionIndex + 1);
+        currentPageIndex = clampPageIndex(sectionIndex >= 0 ? sectionIndex : 0);
 
         // Add all pages to the container (only the selected page is visible)
         for (int i = 0; i < articlePages.size(); i++) {
@@ -221,11 +217,11 @@ public class ArticleViewController {
     }
 
     private void notifySectionViewed() {
-        if (currentPageIndex <= 0 || onSectionViewed == null || currentArticle == null) {
+        if (onSectionViewed == null || currentArticle == null) {
             return;
         }
 
-        onSectionViewed.accept(currentArticle, currentPageIndex - 1);
+        onSectionViewed.accept(currentArticle, currentPageIndex);
     }
 
     // This may break if the layout of article section pages changes...
@@ -291,15 +287,6 @@ public class ArticleViewController {
 
         List<Article.Section> sections = article.getSections();
 
-        // Title page entry
-        HBox titleRow = createNavMenuItem("\u2302", article.getTitle());
-        titleRow.setUserData(0);
-        titleRow.setOnMouseClicked(e -> {
-            navigateToPage(0);
-            hideNavMenu();
-        });
-        navMenuContent.getChildren().add(titleRow);
-
         // Group consecutive sections that share a base heading
         int i = 0;
         int displayNumber = 1; // sequential counter, groups count as one
@@ -332,7 +319,7 @@ public class ArticleViewController {
                 dotsRow.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
 
                 for (int j = groupStart; j < groupStart + groupSize; j++) {
-                    final int pageIndex = j + 1;
+                    final int pageIndex = j;
 
                     Label dot = new Label(String.valueOf(j - groupStart + 1));
                     dot.getStyleClass().add("nav-menu-dot-button");
@@ -347,7 +334,7 @@ public class ArticleViewController {
                 navMenuContent.getChildren().add(groupWrapper);
             } else {
                 // Single section – render normally
-                final int pageIndex = groupStart + 1;
+                final int pageIndex = groupStart;
                 Article.Section section = sections.get(groupStart);
 
                 HBox row = createNavMenuItem(String.valueOf(displayNumber), section.heading());
