@@ -403,6 +403,7 @@ public class ArticleViewController {
                             dot.getStyleClass().remove("nav-menu-dot-active");
                             if (dot.getUserData() instanceof Integer dotPage
                                     && dotPage == currentPageIndex) {
+                                wrapper.getStyleClass().add("nav-menu-item-active");
                                 dot.getStyleClass().add("nav-menu-dot-active");
                                 activeChildIndex = i;
                             }

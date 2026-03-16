@@ -418,6 +418,16 @@
     -fx-background-color: #E8F4F2;
     -fx-background-radius: 10px;
     -fx-padding: 0;
+    -fx-cursor: default;
+}
+
+/* Slightly scuffed - basically, just disable the active hover/click styling for grouped sections (ones with pill children) */
+.nav-menu-group-wrapper.nav-menu-item-active:hover {
+    -fx-background-color: #E8F4F2;
+}
+
+.nav-menu-group-wrapper.nav-menu-item-active:pressed {
+    -fx-background-color: #E8F4F2;
 }
 
 .nav-menu-dots-row {
