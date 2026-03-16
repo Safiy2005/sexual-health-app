@@ -269,6 +269,16 @@ public class ArticleViewController {
         }
     }
 
+    @FXML
+    private void handleLeftArrowClick() {
+        navigateToPage(currentPageIndex - 1);
+    }
+
+    @FXML
+    private void handleRightArrowClick() {
+        navigateToPage(currentPageIndex + 1);
+    }
+
     /**
      * Returns the base heading for grouping, stripping any ": Part N" suffix.
      */
