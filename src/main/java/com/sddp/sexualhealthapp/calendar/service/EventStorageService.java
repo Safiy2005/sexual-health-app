@@ -264,6 +264,9 @@ public class EventStorageService {
         for (int i = 0; i < events.size(); i++) {
             if (events.get(i).getId().equals(updated.getId())) {
                 events.set(i, updated);
+                if (updated.occursOn(LocalDate.now())) {    // update notifs, prevent dupes
+                    NotificationService.scheduleEventReminder(updated, LocalDate.now(), this);
+                }
                 return saveToFile();
             }
         }
@@ -274,6 +277,8 @@ public class EventStorageService {
      * Deletes an event by ID and persists.
      */
     public boolean deleteEvent(String id) {
+        NotificationService.cancelScheduledReminder(id); // kill any related notifs
+
         boolean removed = events.removeIf(e -> e.getId().equals(id));
         if (removed) {
             return saveToFile();
@@ -323,6 +328,10 @@ public class EventStorageService {
         if (excluded == null) excluded = new java.util.HashSet<>();
         excluded.add(occurrenceDate);
         rule.setExcludedDates(excluded);
+
+        if (occurrenceDate.equals(LocalDate.now())) {   // get rid of notif for that occurence
+            NotificationService.cancelScheduledReminder(seriesEventId);
+        }
 
         series.setRecurrenceRule(rule);
         return updateEvent(series);
