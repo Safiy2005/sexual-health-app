@@ -1,16 +1,22 @@
 package com.sddp.sexualhealthapp.mainapp.controller;
 
 import java.time.LocalDate;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
 import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
+import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
+import com.sddp.sexualhealthapp.article.service.RecentlyReadService;
 import com.sddp.sexualhealthapp.calendar.controller.CalendarController;
 import com.sddp.sexualhealthapp.calendar.controller.CreateEventController;
 import com.sddp.sexualhealthapp.calendar.controller.EventDetailController;
@@ -90,7 +96,6 @@ public class MainAppController {
     @FXML
     private EventDetailController eventDetailViewController;
 
-    // TODO: Remove when story 51 (bottom nav) is integrated
     @FXML
     private VBox calendarView;
     @FXML
@@ -107,9 +112,16 @@ public class MainAppController {
 
     private HybridSearchService searchService;
     private ContentPreferencesService contentPreferencesService;
+    private RecentlyReadService recentlyReadService = new RecentlyReadService();
+    private final ExecutorService recentlyReadWriter = Executors.newSingleThreadExecutor(r -> {
+        Thread writerThread = new Thread(r, "recently-read-writer");
+        writerThread.setDaemon(true);
+        return writerThread;
+    });
     private PauseTransition searchDebounce;
     private boolean isViewTransitioning = false;
     private boolean blockedArticlesExpanded = false;
+    private boolean recentlyReadFeedDirty = false;
     private Node returnAfterCreateEvent = null;
 
     @FXML
@@ -127,6 +139,7 @@ public class MainAppController {
 
         // Wire the article view's back button to return to search
         articleViewController.setOnBackToSearch(this::handleBackToSearch);
+        articleViewController.setOnSectionViewed(this::handleSectionViewed);
 
         // Wire calendar navigation callbacks
         calendarViewController.setOnGoToEventFeed(() -> {
@@ -156,7 +169,7 @@ public class MainAppController {
         eventDetailViewController.setOnArticleSelected(this::openArticleFromEventDetail);
 
         // Show all articles on initial load
-        showAllArticles();
+        renderBrowseFeed();
         settingsViewController.setOnPreferencesChanged(this::refreshArticlesView);
 
         // icon tabs
@@ -238,9 +251,12 @@ public class MainAppController {
         searchView.setManaged(true);
 
         isViewTransitioning = false;
+        refreshBrowseFeedIfNeeded();
     }
 
-    private void showAllArticles() {
+    void renderBrowseFeed() {
+        articleListContainer.getChildren().clear();
+
         ContentPreferences preferences = contentPreferencesService.getPreferences();
         List<Article> allArticles = ArticleCollection.getInstance().getArticles();
         List<Article> articles = ArticlePersonalizationService.filterBlockedArticles(
@@ -255,6 +271,25 @@ public class MainAppController {
             return;
         }
 
+        List<RecentlyReadEntry> recentEntries = recentlyReadService.getRecentEntries(5);
+        boolean hasVisibleRecent = false;
+        
+        if (!recentEntries.isEmpty()) {
+            for (RecentlyReadEntry entry : recentEntries) {
+                Article article = findArticleById(entry.articleId()).orElse(null);
+                if (article != null && !ArticlePersonalizationService.isBlocked(article, preferences)) {
+                    if (!hasVisibleRecent) {
+                        addFeedSectionHeader("Recently Read");
+                        hasVisibleRecent = true;
+                    }
+                    articleListContainer.getChildren().add(
+                            ArticleCardFactory.createRecentArticleCard(article, entry, this::openRecentArticle));
+                }
+            }
+        }
+
+        addFeedSectionHeader("All Articles");
+
         List<BrowseCardData> visibleCards = articles.stream()
                 .map(article -> new BrowseCardData(
                         article,
@@ -267,13 +302,15 @@ public class MainAppController {
                 .toList();
 
         renderBrowseCards(visibleCards, blockedCards);
+
+        recentlyReadFeedDirty = false;
     }
 
     private void performSearch() {
         String query = searchField.getText().trim();
 
         if (query.isEmpty()) {
-            showAllArticles();
+            renderBrowseFeed();
             return;
         }
 
@@ -302,8 +339,6 @@ public class MainAppController {
     }
 
     private void renderBrowseCards(List<BrowseCardData> visibleCards, List<BrowseCardData> blockedCards) {
-        articleListContainer.getChildren().clear();
-
         if (visibleCards.isEmpty() && !blockedCards.isEmpty()) {
             showEmptyState("All matching articles are currently hidden by blocked tags.");
         }
@@ -429,11 +464,20 @@ public class MainAppController {
     }
 
     private void openArticle(Article article) {
+        openArticle(article, null);
+    }
+
+    private void openArticle(Article article, Integer resumeSectionIndex) {
         if (isViewTransitioning)
             return;
         isViewTransitioning = true;
 
-        articleViewController.openArticle(article);
+        boolean resumeFromSavedSection = resumeSectionIndex != null;
+        if (!resumeFromSavedSection) {
+            articleViewController.openArticle(article);
+        } else {
+            articleViewController.openArticleAtSection(article, resumeSectionIndex, false);
+        }
 
         // Position article view off-screen to the right, then slide in
         articleView.setTranslateX(AppConstants.APP_WIDTH);
@@ -447,8 +491,59 @@ public class MainAppController {
         slide.setOnFinished(e -> {
             searchView.setVisible(false);
             isViewTransitioning = false;
+            if (resumeFromSavedSection && article.getFileName() != null) {
+                recordRecentlyReadProgress(article.getFileName(), resumeSectionIndex, Instant.now());
+            }
         });
         slide.play();
+    }
+
+    void renderSearchResults(String query, List<SearchResult> results) {
+        articleListContainer.getChildren().clear();
+
+        if (results == null || results.isEmpty()) {
+            showEmptyState("No results for \"" + query + "\"");
+            return;
+        }
+
+        for (SearchResult result : results) {
+            articleListContainer.getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            result.article(), result.score(), query, this::openArticle));
+        }
+    }
+
+    void openRecentArticle(RecentlyReadEntry entry) {
+        if (entry == null) {
+            return;
+        }
+
+        Optional<Article> maybeArticle = findArticleById(entry.articleId());
+        if (maybeArticle.isEmpty()) {
+            return;
+        }
+
+        openArticle(maybeArticle.get(), entry.lastReadSectionIndex());
+    }
+
+    private Optional<Article> findArticleById(String articleId) {
+        return ArticleCollection.getInstance().getArticles().stream()
+                .filter(article -> articleId.equals(article.getFileName()))
+                .findFirst();
+    }
+
+    private void addFeedSectionHeader(String title) {
+        Label header = new Label(title);
+        header.getStyleClass().add("article-feed-section-title");
+        articleListContainer.getChildren().add(header);
+    }
+
+    private void handleSectionViewed(Article article, Integer sectionIndex) {
+        if (article == null || article.getFileName() == null || sectionIndex == null) {
+            return;
+        }
+
+        recordRecentlyReadProgress(article.getFileName(), sectionIndex, Instant.now());
     }
 
     private void handleBackToSearch() {
@@ -468,20 +563,34 @@ public class MainAppController {
             articleView.setVisible(false);
             articleView.setTranslateX(0);
             isViewTransitioning = false;
+            refreshBrowseFeedIfNeeded();
         });
         slide.play();
     }
 
-    // TODO: Remove when story 51 (bottom nav) replaces this toggle
-    @FXML
-    private void handleToggleCalendar(ActionEvent event) {
-        boolean showCalendar = !calendarView.isVisible();
-        calendarView.setVisible(showCalendar);
-        searchView.setVisible(!showCalendar);
-        articleView.setVisible(false);
-        if (showCalendar && calendarViewController != null) {
-            calendarViewController.refresh();
+    private void recordRecentlyReadProgress(String articleId, int sectionIndex, Instant timestamp) {
+        recentlyReadService.saveProgressInMemory(articleId, sectionIndex, timestamp);
+        markRecentlyReadFeedDirty();
+        recentlyReadWriter.execute(recentlyReadService::flush);
+    }
+
+    private void markRecentlyReadFeedDirty() {
+        recentlyReadFeedDirty = true;
+        refreshBrowseFeedIfNeeded();
+    }
+
+    private void refreshBrowseFeedIfNeeded() {
+        if (!recentlyReadFeedDirty || !isBrowseFeedVisible()) {
+            return;
         }
+        renderBrowseFeed();
+    }
+
+    private boolean isBrowseFeedVisible() {
+        boolean emptySearch = searchField == null || searchField.getText() == null || searchField.getText().isBlank();
+        boolean articleOverlayHidden = articleView == null || !articleView.isVisible();
+        boolean searchPaneVisible = searchView == null || searchView.isVisible();
+        return emptySearch && articleOverlayHidden && searchPaneVisible && !isViewTransitioning;
     }
 
     /**
@@ -512,7 +621,7 @@ public class MainAppController {
         }
 
         if (searchField.getText() == null || searchField.getText().trim().isEmpty()) {
-            showAllArticles();
+            renderBrowseFeed();
         } else {
             performSearch();
         }
