@@ -153,3 +153,4 @@ coverage/
 
 # Semantic Embeddings Cache
 semantic_embeddings.cache
+src/main/resources/settings/content-preferences.json

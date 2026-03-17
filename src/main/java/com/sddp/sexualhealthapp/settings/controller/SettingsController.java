@@ -43,6 +43,13 @@ public class SettingsController {
         PREFERRED
     }
 
+    private record TagPickerRefs(
+            FlowPane selectedTagsPane,
+            FlowPane availableTagsPane,
+            Label availableLabel,
+            TextField searchField) {
+    }
+
     @FXML
     private VBox settingsHomeView;
     @FXML
@@ -61,6 +68,8 @@ public class SettingsController {
     private final ContentPreferencesService preferencesService;
     private final Supplier<List<String>> curatedTagsSupplier;
     private final List<SettingsPageDefinition> pageDefinitions = new ArrayList<>();
+    private TagPickerRefs blockedTagPickerRefs;
+    private TagPickerRefs preferredTagPickerRefs;
     private String currentPageId;
     private Runnable onPreferencesChanged;
 
@@ -154,6 +163,8 @@ public class SettingsController {
     private void openPage(SettingsPageDefinition page) {
         currentPageId = page.id();
         settingsDetailTitle.setText(page.title());
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
         settingsDetailContent.getChildren().setAll(page.builder().build());
 
         settingsHomeView.setVisible(false);
@@ -165,6 +176,8 @@ public class SettingsController {
 
     private void showHome() {
         currentPageId = null;
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
         renderSettingsCards();
         settingsHomeView.setVisible(true);
         settingsHomeView.setManaged(true);
@@ -228,13 +241,17 @@ public class SettingsController {
         availableLabel.getStyleClass().add("settings-subsection-label");
         FlowPane availableTagsPane = createTagPane();
 
-        renderSelectedTagChips(selectedTagsPane, section);
-        renderAvailableTagChips(availableTagsPane, section, "");
+        TagPickerRefs refs = new TagPickerRefs(selectedTagsPane, availableTagsPane, availableLabel, searchField);
+        if (section == TagSection.BLOCKED) {
+            blockedTagPickerRefs = refs;
+        } else {
+            preferredTagPickerRefs = refs;
+        }
+
+        updateTagPicker(refs, section);
 
         searchField.textProperty().addListener((obs, oldValue, newValue) -> {
-            String label = newValue == null || newValue.isBlank() ? "Suggestions" : "Matches";
-            availableLabel.setText(label);
-            renderAvailableTagChips(availableTagsPane, section, newValue);
+            updateTagPicker(refs, section);
         });
 
         picker.getChildren().addAll(selectedLabel, selectedTagsPane, searchField, availableLabel, availableTagsPane);
@@ -326,7 +343,7 @@ public class SettingsController {
 
         preferencesService.savePreferences(new ContentPreferences(blocked, preferred));
         notifyPreferencesChanged();
-        refresh();
+        updateVisibleTagPickers();
     }
 
     private void notifyPreferencesChanged() {
@@ -374,5 +391,25 @@ public class SettingsController {
                 .filter(page -> page.id().equals(currentPageId))
                 .findFirst()
                 .orElse(null);
+    }
+
+    private void updateVisibleTagPickers() {
+        if (blockedTagPickerRefs != null) {
+            updateTagPicker(blockedTagPickerRefs, TagSection.BLOCKED);
+        }
+        if (preferredTagPickerRefs != null) {
+            updateTagPicker(preferredTagPickerRefs, TagSection.PREFERRED);
+        }
+    }
+
+    private void updateTagPicker(TagPickerRefs refs, TagSection section) {
+        if (refs == null) {
+            return;
+        }
+
+        String query = refs.searchField().getText();
+        refs.availableLabel().setText(query == null || query.isBlank() ? "Suggestions" : "Matches");
+        renderSelectedTagChips(refs.selectedTagsPane(), section);
+        renderAvailableTagChips(refs.availableTagsPane(), section, query);
     }
 }
