@@ -39,9 +39,11 @@
                 <padding>
                     <Insets top="10" right="16" bottom="16" left="16"/>
                 </padding>
-                <Label fx:id="leftArrowLabel" text="← Swipe" styleClass="swipe-arrow-label"/>
+                  <Label fx:id="leftArrowLabel" text="← Swipe" styleClass="swipe-arrow-label"
+                      onMouseClicked="#handleLeftArrowClick"/>
                 <Region HBox.hgrow="ALWAYS"/>
-                <Label fx:id="rightArrowLabel" text="Swipe →" styleClass="swipe-arrow-label"/>
+                  <Label fx:id="rightArrowLabel" text="Swipe →" styleClass="swipe-arrow-label"
+                      onMouseClicked="#handleRightArrowClick"/>
             </HBox>
         </VBox>
 
