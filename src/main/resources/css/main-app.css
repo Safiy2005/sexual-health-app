@@ -72,6 +72,120 @@
 }
 
 /* ============================================
+   SETTINGS
+   ============================================ */
+
+.settings-root {
+    -fx-background-color: transparent;
+}
+
+.settings-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);
+}
+
+.settings-card:hover {
+    -fx-background-color: #F7F3EF;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.14), 8, 0, 0, 3);
+}
+
+.settings-card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.settings-card-subtitle {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7F9191;
+}
+
+.settings-card-chevron {
+    -fx-font-size: 15px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+}
+
+.settings-detail-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.settings-page-intro {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+}
+
+.settings-tag-picker {
+    -fx-background-color: rgba(255, 255, 255, 0.55);
+    -fx-background-radius: 14px;
+    -fx-padding: 12px;
+}
+
+.settings-section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.settings-section-body {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7F9191;
+}
+
+.settings-subsection-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5F7474;
+}
+
+.settings-empty-hint {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #97A7A7;
+}
+
+.settings-tag-search-field {
+    -fx-padding: 8px 12px;
+}
+
+.settings-tag-chip {
+    -fx-background-color: #EDE5DD;
+    -fx-text-fill: #6B8080;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 7px 10px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+
+.settings-tag-chip:hover {
+    -fx-background-color: #E3DBD3;
+}
+
+.settings-tag-chip-blocked {
+    -fx-background-color: #F6E0E0;
+    -fx-text-fill: #9A5151;
+}
+
+.settings-tag-chip-preferred {
+    -fx-background-color: #D4E8E5;
+    -fx-text-fill: #3D7A75;
+}
+
+/* ============================================
    BOTTOM NAVIGATION BAR
    ============================================ */
 

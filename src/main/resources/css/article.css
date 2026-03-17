@@ -89,6 +89,13 @@
     -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.14), 8, 0, 0, 3);
 }
 
+.article-card-hidden {
+    -fx-background-color: rgba(255, 255, 255, 0.72);
+    -fx-border-color: rgba(154, 171, 171, 0.35);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+}
+
 /* Relevance-coloured card variants */
 .article-card-relevant {
     -fx-background-color: #F2FAF8;
@@ -119,6 +126,17 @@
     -fx-text-fill: #3D5A5B;
 }
 
+.article-card-reason {
+    -fx-font-size: 11px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-weight: 700;
+    -fx-text-fill: #7A8E8E;
+}
+
+.article-card-reason-hidden {
+    -fx-text-fill: #9A6B6B;
+}
+
 .article-card-subtitle {
     -fx-font-size: 12px;
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
@@ -139,6 +157,11 @@
 .article-card-tag-highlighted {
     -fx-background-color: #D4E8E5;
     -fx-text-fill: #3D7A75;
+}
+
+.article-card-tag-preferred {
+    -fx-background-color: #F0E3D2;
+    -fx-text-fill: #8A6A3D;
 }
 
 .recent-article-card {
@@ -175,6 +198,21 @@
     -fx-text-fill: #9AABAB;
     -fx-padding: 40px 0 0 0;
     -fx-alignment: center;
+}
+
+.article-hidden-toggle-button {
+    -fx-background-color: #ECE6DF;
+    -fx-text-fill: #5C6B6B;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 10px 14px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+
+.article-hidden-toggle-button:hover {
+    -fx-background-color: #E3DBD3;
 }
 
 /* ============================================

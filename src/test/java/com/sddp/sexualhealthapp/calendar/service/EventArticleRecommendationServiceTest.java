@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
+import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -100,6 +101,56 @@ class EventArticleRecommendationServiceTest {
 
         assertEquals(1, recommendations.size());
         assertEquals("General support", recommendations.get(0).article().getTitle());
+    }
+
+    @Test
+    void recommendForEvent_BlockedTagsAreRespected() {
+        Article blocked = article("STI support", List.of("STIs"));
+        Article allowed = article("General support", List.of("Mental Health & Wellbeing"));
+
+        EventArticleRecommendationService service = new EventArticleRecommendationService(
+                (query, minScore) -> List.of(
+                        new SearchResult(blocked, 0.90, Map.of()),
+                        new SearchResult(allowed, 0.70, Map.of())),
+                () -> new ContentPreferences(List.of("STIs"), List.of()));
+
+        CalendarEvent event = new CalendarEvent(
+                "Screening appointment",
+                LocalDate.of(2026, 3, 12),
+                null,
+                EventType.TEST,
+                "test support",
+                null);
+
+        List<EventArticleRecommendationService.Recommendation> recommendations = service.recommendForEvent(event, 3);
+
+        assertEquals(1, recommendations.size());
+        assertEquals("General support", recommendations.get(0).article().getTitle());
+    }
+
+    @Test
+    void recommendForEvent_PreferredTagsImproveRankingAmongSimilarCandidates() {
+        Article preferred = article("Queer support", List.of("LGBTQ+"));
+        Article baseline = article("General support", List.of("Mental Health & Wellbeing"));
+
+        EventArticleRecommendationService service = new EventArticleRecommendationService(
+                (query, minScore) -> List.of(
+                        new SearchResult(baseline, 0.80, Map.of()),
+                        new SearchResult(preferred, 0.78, Map.of())),
+                () -> new ContentPreferences(List.of(), List.of("LGBTQ+")));
+
+        CalendarEvent event = new CalendarEvent(
+                "Support appointment",
+                LocalDate.of(2026, 3, 15),
+                null,
+                EventType.APPOINTMENT,
+                "support",
+                null);
+
+        List<EventArticleRecommendationService.Recommendation> recommendations = service.recommendForEvent(event, 3);
+
+        assertFalse(recommendations.isEmpty());
+        assertEquals("Queer support", recommendations.get(0).article().getTitle());
     }
 
     private static Article article(String title, List<String> tags) {

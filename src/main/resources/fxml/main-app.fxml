@@ -68,9 +68,9 @@
                 </StackPane>
             </VBox>
 
-            <!-- Tab 3: Settings placeholder-->
-            <VBox fx:id="settingsRoot" visible="false" managed="false" alignment="CENTER" spacing="10">
-                <Label text="Settings (coming soon)"/>
+            <!-- Tab 3: Settings -->
+            <VBox fx:id="settingsRoot" visible="false" managed="false" VBox.vgrow="ALWAYS">
+                <fx:include fx:id="settingsView" source="/fxml/settings-view.fxml"/>
             </VBox>
         </StackPane>
     </center>
