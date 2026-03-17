@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -17,7 +18,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
@@ -93,6 +97,12 @@ public class SettingsController {
                 "Content preferences",
                 "Block topics and prioritise the tags most relevant to you.",
                 this::buildContentPreferencesPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "reminder-preferences",
+                "Reminders & Privacy",
+                "Manage how and when you receive event notifications.",
+                this::buildReminderPreferencesPage));
 
         renderSettingsCards();
         showHome();
@@ -202,6 +212,122 @@ public class SettingsController {
         return page;
     }
 
+    private Node buildReminderPreferencesPage() {
+        VBox page = new VBox(20);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+
+        Label intro = new Label("Control your privacy by choosing how event reminders appear on your screen.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label modeTitle = new Label("Reminder Visibility");
+        modeTitle.getStyleClass().add("settings-section-title");
+
+        // --- 1. Initialize Inputs ---
+        ToggleGroup modeGroup = new ToggleGroup();
+        TextField customTitleField = new TextField();
+        TextField customBodyField = new TextField();
+
+        // --- 2. Build Custom Disguise Box ---
+        VBox customDisguiseBox = new VBox(8,
+                createLabeledInput("Disguise Title:", customTitleField, ReminderPreferences.DEFAULT_TITLE),
+                createLabeledInput("Disguise Body Text (Time will be appended):", customBodyField, ReminderPreferences.DEFAULT_BODY)
+        );
+        customDisguiseBox.setPadding(new Insets(4, 0, 8, 28));
+        customDisguiseBox.setVisible(false);
+        customDisguiseBox.setManaged(false);
+
+        // --- 3. Build Radio Options ---
+        RadioButton offBtn = new RadioButton("Off");
+        RadioButton disguisedBtn = new RadioButton("Disguised (Maximum Privacy)");
+        RadioButton discreetBtn = new RadioButton("Discreet");
+        RadioButton explicitBtn = new RadioButton("Detailed");
+
+        VBox radioBox = new VBox(16);
+        radioBox.getStyleClass().add("settings-tag-picker");
+        radioBox.getChildren().addAll(
+                createRadioOption(offBtn, "No pop-ups. Events will only stay in your feed.", modeGroup, VisibilityMode.OFF),
+                createRadioOption(disguisedBtn, "Mimics system alerts or calculator tasks.", modeGroup, VisibilityMode.DISGUISED, customDisguiseBox),
+                createRadioOption(discreetBtn, "Shows times only (e.g., \"Upcoming Event\").", modeGroup, VisibilityMode.DISCREET),
+                createRadioOption(explicitBtn, "Shows full event names and any notes you've written.", modeGroup, VisibilityMode.EXPLICIT)
+        );
+
+        // --- 4. Load Saved State ---
+        ReminderPreferences currentPrefs = ReminderPreferencesService.getInstance().getPreferences();
+        customTitleField.setText(currentPrefs.customDisguisedTitle());
+        customBodyField.setText(currentPrefs.customDisguisedBody());
+
+        switch (currentPrefs.visibilityMode()) {
+            case OFF -> offBtn.setSelected(true);
+            case DISGUISED -> {
+                disguisedBtn.setSelected(true);
+                customDisguiseBox.setVisible(true);
+                customDisguiseBox.setManaged(true);
+            }
+            case DISCREET -> discreetBtn.setSelected(true);
+            case EXPLICIT -> explicitBtn.setSelected(true);
+        }
+
+        // --- 5. Event Listeners ---
+        modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
+            boolean isDisguised = (newVal == disguisedBtn);
+            customDisguiseBox.setVisible(isDisguised);
+            customDisguiseBox.setManaged(isDisguised);
+            saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+        });
+
+        // listeners save when box unfocused
+        customTitleField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
+            if (!isNowFocused) {
+                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+            }
+        });
+
+        customBodyField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
+            if (!isNowFocused) {
+                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+            }
+        });
+        page.getChildren().addAll(intro, modeTitle, radioBox);
+        return page;
+    }
+
+    private void saveReminderSettings(ToggleGroup modeGroup, String customTitle, String customBody) {
+        VisibilityMode mode = VisibilityMode.OFF;
+
+        if (modeGroup.getSelectedToggle() != null) {
+            // Directly cast the user data back to the Enum. No string matching required!
+            mode = (VisibilityMode) modeGroup.getSelectedToggle().getUserData();
+        }
+
+        ReminderPreferences prefs = new ReminderPreferences(mode, customTitle, customBody);
+        ReminderPreferencesService.getInstance().savePreferences(prefs);
+    }
+
+    private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode, Node... extraContent) {
+        btn.getStyleClass().add("settings-section-body");
+        btn.setToggleGroup(group);
+        btn.setUserData(mode); // Attach the exact Enum to the button invisibly!
+
+        Label descLabel = new Label(description);
+        descLabel.getStyleClass().add("settings-section-body");
+        descLabel.setWrapText(true);
+
+        VBox box = new VBox(4, btn, descLabel);
+        box.getChildren().addAll(extraContent);
+        return box;
+    }
+
+    private VBox createLabeledInput(String labelText, TextField field, String prompt) {
+        Label label = new Label(labelText);
+        label.getStyleClass().add("settings-subsection-label");
+
+        field.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        field.setPromptText("e.g., " + prompt);
+
+        return new VBox(4, label, field);
+    }
     private FlowPane createTagPane() {
         FlowPane pane = new FlowPane();
         pane.setHgap(8);

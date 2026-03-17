@@ -2,6 +2,9 @@ package com.sddp.sexualhealthapp.util;
 
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
+import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.util.Duration;
@@ -29,12 +32,11 @@ public class NotificationService {
                     .text("Welcome to a totally normal calculator")
                     .position(Pos.BOTTOM_RIGHT)
                     .hideAfter(Duration.seconds(5))
-                    .show();
+                    .showInformation();
         });
     }
 
     public static void scheduleEventReminder(CalendarEvent event, LocalDate occurrenceDate, EventStorageService storageService) {
-        // Prevents scheduling if missing data, or if we already sent a reminder for this specific occurrence
         if (event.getTime() == null || event.getReminderMinutes() == null ||
                 occurrenceDate.equals(event.getLastReminderSentDate())) {
             return;
@@ -48,24 +50,59 @@ public class NotificationService {
             long delayInMillis = ChronoUnit.MILLIS.between(now, reminderTime);
             scheduler.schedule(() -> showEventToastAndSave(event, occurrenceDate, storageService), delayInMillis, TimeUnit.MILLISECONDS);
         } else if (eventDateTime.isAfter(now)) {
-            // Catch-up notification for missed reminders (shows after 2 seconds)
             scheduler.schedule(() -> showEventToastAndSave(event, occurrenceDate, storageService), 2000, TimeUnit.MILLISECONDS);
         }
     }
 
     private static void showEventToastAndSave(CalendarEvent event, LocalDate occurrenceDate, EventStorageService storageService) {
-        String description = event.getDescription() != null ? event.getDescription() : "You have an upcoming event.";
+        // Fetch the very latest preferences right before displaying
+        ReminderPreferences prefs = ReminderPreferencesService.getInstance().getPreferences();
+        VisibilityMode mode = prefs.visibilityMode();
 
+        // 1. If OFF, just save the state to prevent future firing and exit early
+        if (mode == VisibilityMode.OFF) {
+            updateEventState(event, occurrenceDate, storageService);
+            return;
+        }
+
+        // 2. Format based on visibility mode
+        String title;
+        String text;
+
+        switch (mode) {
+            case EXPLICIT:
+                String description = event.getDescription() != null ? event.getDescription() : "You have an upcoming event.";
+                title = "Reminder: " + event.getName();
+                text = event.getTime().toString() + " - " + description;
+                break;
+
+            case DISCREET:
+                title = "Upcoming Event";
+                text = "You have an event scheduled for " + event.getTime().toString();
+                break;
+
+            case DISGUISED:
+            default:
+                // Because of the compact constructor, we know these are valid strings
+                title = prefs.customDisguisedTitle();
+                text = prefs.customDisguisedBody() + " " + event.getTime().toString();
+                break;
+        }
+        // 3. Show the notification
         Platform.runLater(() -> {
             Notifications.create()
-                    .title("Reminder: " + event.getName())
-                    .text(event.getTime().toString() + " - " + description)
+                    .title(title)
+                    .text(text)
                     .position(Pos.BOTTOM_RIGHT)
                     .hideAfter(Duration.seconds(10))
-                    .showInformation();
+                    .showWarning();
         });
 
-        // Update the event state so we don't notify them again today, then save to storage
+        // 4. Update state and save
+        updateEventState(event, occurrenceDate, storageService);
+    }
+
+    private static void updateEventState(CalendarEvent event, LocalDate occurrenceDate, EventStorageService storageService) {
         event.setLastReminderSentDate(occurrenceDate);
         if (storageService != null) {
             storageService.updateEvent(event);
