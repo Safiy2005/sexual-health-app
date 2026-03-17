@@ -30,12 +30,15 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 
 /**
  * Controller for the calendar grid view (story 47).
  * Displays a monthly calendar with navigation and event indicators.
- * Days with events show coloured dots beneath the day number, one per
- * event type (Appointment=coral, Medication=teal, Test=lavender).
+ * Days with events show coloured shape indicators beneath the day number,
+ * one per event type (Appointment=circle, Medication=triangle, Test=square).
  * Clicking a day selects it and shows that day's events below the grid.
  */
 public class CalendarController {
@@ -221,7 +224,7 @@ public class CalendarController {
      * @param day        the day-of-month number
      * @param today      today's date for "today" highlighting
      * @param eventTypes the set of event types on this day (empty if none)
-     * @return a VBox containing the day number and coloured indicator dots
+     * @return a VBox containing the day number and coloured indicator shapes
      */
     private VBox createDayCell(int day, LocalDate today, Set<EventType> eventTypes) {
         VBox cell = new VBox(2);
@@ -246,15 +249,13 @@ public class CalendarController {
 
         cell.getChildren().add(dayLabel);
 
-        // Event indicator dots — one per type, coloured by EventType.getDotColor()
+        // Event indicators — one per type, shape + colour from EventType
         if (!eventTypes.isEmpty()) {
             HBox dotRow = new HBox(3);
             dotRow.setAlignment(Pos.CENTER);
             for (EventType type : EventType.values()) {
                 if (eventTypes.contains(type)) {
-                    Circle dot = new Circle(3);
-                    dot.setStyle("-fx-fill: " + type.getDotColor());
-                    dotRow.getChildren().add(dot);
+                    dotRow.getChildren().add(createEventTypeIndicator(type));
                 }
             }
             cell.getChildren().add(dotRow);
@@ -267,6 +268,28 @@ public class CalendarController {
         });
 
         return cell;
+    }
+
+    /**
+     * Creates the calendar marker shape for an event type, preserving its colour.
+     */
+    private Shape createEventTypeIndicator(EventType type) {
+        Shape indicator;
+        switch (type) {
+            case APPOINTMENT:
+                indicator = new Circle(3);
+                break;
+            case MEDICATION:
+                indicator = new Polygon(0.0, 6.0, 3.0, 0.0, 6.0, 6.0);
+                break;
+            case TEST:
+            default:
+                indicator = new Rectangle(6, 6);
+                break;
+        }
+
+        indicator.setStyle("-fx-fill: " + type.getDotColor());
+        return indicator;
     }
 
     /**
