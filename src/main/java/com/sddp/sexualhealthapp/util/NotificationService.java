@@ -25,17 +25,6 @@ public class NotificationService {
 
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
-    public static void showWelcomeNotification() {
-        Platform.runLater(() -> {
-            Notifications.create()
-                    .title("App Unlocked")
-                    .text("Welcome to a totally normal calculator")
-                    .position(Pos.BOTTOM_RIGHT)
-                    .hideAfter(Duration.seconds(5))
-                    .showInformation();
-        });
-    }
-
     public static void scheduleEventReminder(CalendarEvent event, LocalDate occurrenceDate, EventStorageService storageService) {
         if (event.getTime() == null || event.getReminderMinutes() == null ||
                 occurrenceDate.equals(event.getLastReminderSentDate())) {

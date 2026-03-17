@@ -122,7 +122,6 @@ public class CalculatorController {
                 // Successful authentication - transition to main app
 
                 System.out.println("Authentication successful!");
-                NotificationService.showWelcomeNotification();
                 SceneManager.getInstance().transitionToMainApp();
             }
         }
