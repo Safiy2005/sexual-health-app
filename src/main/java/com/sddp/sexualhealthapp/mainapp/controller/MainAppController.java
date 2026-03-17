@@ -20,7 +20,10 @@ import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.controller.SettingsController;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.model.DisplayMode;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisplayModeManager;
+import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
 
@@ -197,6 +200,13 @@ public class MainAppController {
 
         calendarViewController.setOnEventSelected(
                 (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, calendarView));
+
+        settingsViewController.setOnDisplayModeChanged(this::updateDisplayMode);
+        contentStack.sceneProperty().addListener((obs, oldScene, newScene) -> {
+            if (newScene != null) {
+                applySavedDisplayMode();
+            }
+        });
 
     }
 
@@ -579,4 +589,24 @@ public class MainAppController {
         closeArticleOverlayIfOpen();
         openArticle(article);
     }
+
+    private void applySavedDisplayMode() {
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        DisplayMode mode = DisplaySettingsService.getInstance().getDisplayMode();
+        DisplayModeManager.applyDisplayMode(contentStack.getScene().getRoot(), mode);
+    }
+
+    private void updateDisplayMode(DisplayMode mode) {
+        DisplaySettingsService.getInstance().setDisplayMode(mode);
+
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        DisplayModeManager.applyDisplayMode(contentStack.getScene().getRoot(), mode);
+    }
 }
+

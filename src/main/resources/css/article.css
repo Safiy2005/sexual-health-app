@@ -502,3 +502,288 @@
     -fx-background-color: #7DBBB5;
     -fx-text-fill: white;
 }
+
+/* ============================================
+    HIGH CONTRAST THEME
+   ============================================ */
+
+
+
+.theme-high-contrast .article-card,
+.theme-high-contrast .nav-menu-overlay,
+.theme-high-contrast .article-bullet-list-box {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .article-card-title,
+.theme-high-contrast .article-detail-title,
+.theme-high-contrast .article-section-heading,
+.theme-high-contrast .article-text,
+.theme-high-contrast .article-text-bold,
+.theme-high-contrast .article-bullet-text,
+.theme-high-contrast .article-bullet-text-bold,
+.theme-high-contrast .article-toc-item,
+.theme-high-contrast .page-counter-label,
+.theme-high-contrast .swipe-arrow-label,
+.theme-high-contrast .nav-menu-item-heading {
+    -fx-text-fill: black;
+}
+
+.theme-high-contrast .article-detail-root,
+.theme-high-contrast .article-page-container,
+.theme-high-contrast .article-page-wrapper,
+.theme-high-contrast .article-page,
+.theme-high-contrast .search-scroll-pane,
+.theme-high-contrast .search-scroll-pane > .viewport {
+    -fx-background-color: white;
+    -fx-background: white;
+}
+
+.theme-high-contrast .nav-menu-overlay {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+
+.theme-high-contrast .nav-menu-group-wrapper {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .nav-menu-item {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .nav-menu-item-heading,
+.theme-high-contrast .nav-menu-item-number,
+.theme-high-contrast .article-toc-header,
+.theme-high-contrast .article-toc-item,
+.theme-high-contrast .page-counter-label,
+.theme-high-contrast .swipe-arrow-label {
+    -fx-text-fill: black;
+}
+
+.theme-high-contrast .nav-menu-item-active {
+    -fx-background-color: black;
+    -fx-border-color: black;
+}
+
+.theme-high-contrast .nav-menu-item-active .nav-menu-item-heading,
+.theme-high-contrast .nav-menu-item-active .nav-menu-item-number {
+    -fx-text-fill: white;
+}
+
+.theme-high-contrast .nav-menu-dot-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .nav-menu-dot-active {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+.theme-high-contrast .article-detail-title,
+.theme-high-contrast .article-section-heading,
+.theme-high-contrast .article-source-label,
+.theme-high-contrast .article-text,
+.theme-high-contrast .article-text-bold,
+.theme-high-contrast .article-bullet-text,
+.theme-high-contrast .article-bullet-text-bold {
+    -fx-text-fill: black;
+    -fx-fill: black;
+}
+
+/* ============================================
+   DARK MODE SPECIFIC FOR ARTICLE UI
+   ============================================ */
+
+.theme-dark .search-header-title {
+    -fx-text-fill: #F4F1EC;
+}
+
+.theme-dark .article-card-title,
+.theme-dark .article-detail-title,
+.theme-dark .article-section-heading,
+.theme-dark .article-text,
+.theme-dark .article-text-bold,
+.theme-dark .article-bullet-text,
+.theme-dark .article-bullet-text-bold,
+.theme-dark .article-toc-item,
+.theme-dark .page-counter-label,
+.theme-dark .swipe-arrow-label,
+.theme-dark .article-source-label,
+.theme-dark .article-card-subtitle,
+.theme-dark .article-card-reason {
+    -fx-text-fill: #F4F1EC;
+}
+
+/* Search field */
+.theme-dark .search-field {
+    -fx-background-color: #262626;
+    -fx-text-fill: #F4F1EC;
+    -fx-prompt-text-fill: #B8B8B8;
+    -fx-border-color: transparent;
+}
+
+/* Main article cards */
+.theme-dark .article-card {
+    -fx-background-color: #242424;
+}
+
+.theme-dark .article-card:hover {
+    -fx-background-color: #2B2B2B;
+}
+
+/* Mini navigation overlay */
+.theme-dark .nav-menu-backdrop {
+    -fx-background-color: rgba(0, 0, 0, 0.45);
+}
+
+.theme-dark .nav-menu-overlay {
+    -fx-background-color: #222222;
+}
+
+.theme-dark .nav-menu-group-wrapper {
+    -fx-background-color: #2D3A39;
+}
+
+.theme-dark .nav-menu-item {
+    -fx-background-color: #516C69;
+}
+
+.theme-dark .nav-menu-item:hover {
+    -fx-background-color: #62817D;
+}
+
+.theme-dark .nav-menu-item-active {
+    -fx-background-color: #6E9390;
+    -fx-border-color: #BFE7E1;
+}
+
+.theme-dark .nav-menu-item-heading {
+    -fx-text-fill: #FFFFFF;
+}
+
+.theme-dark .nav-menu-item-number {
+    -fx-text-fill: #E6FAF7;
+}
+
+.theme-dark .nav-menu-dot-button {
+    -fx-background-color: #A5C9C4;
+    -fx-text-fill: #17302D;
+}
+
+.theme-dark .nav-menu-dot-button:hover {
+    -fx-background-color: #B8DDD8;
+}
+
+.theme-dark .nav-menu-dot-active {
+    -fx-background-color: #EAF7F4;
+    -fx-text-fill: #102321;
+}
+
+/* Section badges / light blue boxes */
+.theme-dark .article-section-badge {
+    -fx-background-color: #4D6F6B;
+    -fx-text-fill: #F5FBFA;
+}
+
+/* Article chips */
+.theme-dark .article-card-badge {
+    -fx-background-color: #5A7F7A;
+    -fx-text-fill: #F5FBFA;
+}
+
+.theme-dark .article-card-badge-amber {
+    -fx-background-color: #7C6A45;
+    -fx-text-fill: #FFF5DB;
+}
+
+.theme-dark .article-card-tag {
+    -fx-background-color: #4B5B5A;
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .article-card-tag-highlighted {
+    -fx-background-color: #6D9A95;
+    -fx-text-fill: #FFFFFF;
+}
+
+.theme-dark .article-card-tag-preferred {
+    -fx-background-color: #8A7355;
+    -fx-text-fill: #FFF3DD;
+}
+
+.theme-dark .articlesRoot,
+.theme-dark #articlesRoot,
+.theme-dark .searchView,
+.theme-dark #searchView,
+.theme-dark .main-content,
+.theme-dark .article-list-container,
+.theme-dark .article-detail-root,
+.theme-dark .article-content-container,
+.theme-dark .article-page-container,
+.theme-dark .article-page-wrapper,
+.theme-dark .article-page {
+    -fx-background-color: linear-gradient(to bottom, #1B1B1B, #141414);
+}
+
+/* Make scroll panes stay dark too */
+.theme-dark .search-scroll-pane,
+.theme-dark .search-scroll-pane > .viewport {
+    -fx-background-color: #1B1B1B;
+    -fx-background: #1B1B1B;
+}
+
+/* Article reader content */
+.theme-dark .article-detail-root {
+    -fx-background-color: linear-gradient(to bottom, #1B1B1B, #141414);
+}
+
+.theme-dark .article-detail-title {
+    -fx-text-fill: #F4F1EC;
+}
+
+.theme-dark .article-source-label {
+    -fx-text-fill: #A9D7D1;
+}
+
+.theme-dark .article-section-heading {
+    -fx-text-fill: #D7F1ED;
+}
+
+.theme-dark .article-text {
+    -fx-fill: #E6E6E6;
+}
+
+.theme-dark .article-text-bold {
+    -fx-fill: #FFFFFF;
+}
+
+.theme-dark .article-bullet-list-box {
+    -fx-background-color: #273231;
+}
+
+.theme-dark .article-bullet-text {
+    -fx-fill: #ECECEC;
+}
+
+.theme-dark .article-bullet-text-bold {
+    -fx-fill: #FFFFFF;
+}
+
+.theme-dark .article-toc-header,
+.theme-dark .article-toc-item,
+.theme-dark .page-counter-label,
+.theme-dark .swipe-arrow-label {
+    -fx-text-fill: #EAEAEA;
+}

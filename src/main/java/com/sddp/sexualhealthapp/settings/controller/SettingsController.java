@@ -1,26 +1,32 @@
 package com.sddp.sexualhealthapp.settings.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.model.DisplayMode;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Supplier;
 
 /**
  * Controller for the settings hub and detail pages.
@@ -29,6 +35,9 @@ public class SettingsController {
 
     private static final int DEFAULT_SUGGESTED_TAGS = 8;
     private static final int MAX_SEARCH_RESULTS = 12;
+
+    private final DisplaySettingsService displaySettingsService = DisplaySettingsService.getInstance();
+    private Consumer<DisplayMode> onDisplayModeChanged;
 
     private record SettingsPageDefinition(String id, String title, String subtitle, PageBuilder builder) {
     }
@@ -93,6 +102,12 @@ public class SettingsController {
                 "Content preferences",
                 "Block topics and prioritise the tags most relevant to you.",
                 this::buildContentPreferencesPage));
+        
+        pageDefinitions.add(new SettingsPageDefinition(
+                "display",
+                "Display",
+                "Switch between standard, dark, and high-contrast views.",
+                this::buildDisplayPage));
 
         renderSettingsCards();
         showHome();
@@ -374,5 +389,63 @@ public class SettingsController {
                 .filter(page -> page.id().equals(currentPageId))
                 .findFirst()
                 .orElse(null);
+    }
+
+    public void setOnDisplayModeChanged(Consumer<DisplayMode> onDisplayModeChanged) {
+        this.onDisplayModeChanged = onDisplayModeChanged;
+    }
+
+    private Node buildDisplayPage() {
+        VBox page = new VBox(18);
+        page.getStyleClass().add("settings-page-content");
+
+        Label intro = new Label(
+                "Choose the visual style that is most comfortable and readable for you.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label modeTitle = new Label("Display mode");
+        modeTitle.getStyleClass().add("settings-section-title");
+
+        Label modeBody = new Label(
+                "Standard keeps the default appearance, Dark reduces brightness, and High Contrast increases separation between text and controls.");
+        modeBody.getStyleClass().add("settings-section-body");
+        modeBody.setWrapText(true);
+
+        VBox optionsBox = new VBox(10);
+        optionsBox.getStyleClass().add("settings-tag-picker");
+
+        ToggleGroup modeGroup = new ToggleGroup();
+        DisplayMode currentMode = displaySettingsService.getDisplayMode();
+
+        for (DisplayMode mode : DisplayMode.values()) {
+            RadioButton radio = new RadioButton(mode.getDisplayName());
+            radio.setToggleGroup(modeGroup);
+            radio.getStyleClass().add("settings-display-radio");
+            radio.setWrapText(true);
+            radio.setSelected(mode == currentMode);
+
+            radio.setOnAction(event -> {
+                displaySettingsService.setDisplayMode(mode);
+                if (onDisplayModeChanged != null) {
+                    onDisplayModeChanged.accept(mode);
+                }
+            });
+
+            optionsBox.getChildren().add(radio);
+        }
+
+        Button resetButton = new Button("Reset to standard view");
+        resetButton.getStyleClass().add("calendar-action-button");
+        resetButton.setOnAction(event -> {
+            displaySettingsService.resetDisplayMode();
+            if (onDisplayModeChanged != null) {
+                onDisplayModeChanged.accept(DisplayMode.STANDARD);
+            }
+            refresh();
+        });
+
+        page.getChildren().addAll(intro, modeTitle, modeBody, optionsBox, resetButton);
+        return page;
     }
 }

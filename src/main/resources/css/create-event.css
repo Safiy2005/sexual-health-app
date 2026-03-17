@@ -375,3 +375,46 @@
     -fx-background-color: #FDF8F3;
     -fx-text-fill: #D9534F;
 }
+
+
+/* ============================================
+   DARK AND HIGH CONTRAST THEME
+   ============================================ */
+
+.theme-dark .date-picker.calendar-picker-combo,
+.theme-dark .calendar-picker-combo.spinner,
+.theme-dark .combo-box-popup .list-view,
+.theme-dark .check-box .box {
+    -fx-background-color: #2A2A2A;
+}
+
+.theme-dark .date-picker.calendar-picker-combo .text-field,
+.theme-dark .calendar-picker-combo.spinner .text-field,
+.theme-dark .combo-box-popup .list-view .list-cell,
+.theme-dark .custom-radio,
+.theme-dark .day-toggle,
+.theme-dark .exception-list-cell {
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .day-toggle {
+    -fx-border-color: #777777;
+}
+
+.theme-high-contrast .date-picker.calendar-picker-combo,
+.theme-high-contrast .calendar-picker-combo.spinner,
+.theme-high-contrast .combo-box-popup .list-view,
+.theme-high-contrast .check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .date-picker.calendar-picker-combo .text-field,
+.theme-high-contrast .calendar-picker-combo.spinner .text-field,
+.theme-high-contrast .combo-box-popup .list-view .list-cell,
+.theme-high-contrast .custom-radio,
+.theme-high-contrast .day-toggle,
+.theme-high-contrast .exception-list-cell {
+    -fx-text-fill: black;
+}

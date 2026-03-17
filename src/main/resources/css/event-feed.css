@@ -82,3 +82,53 @@
     -fx-background-color: #6BADA6;
     -fx-border-color: #6BADA6;
 }
+
+
+/* ============================================
+   DARK AND HIGH CONTRAST THEME
+   ============================================ */
+
+   .theme-dark .event-feed-section-header,
+.theme-dark .event-feed-day-header {
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .event-feed-filter-bar {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: transparent transparent #444444 transparent;
+}
+
+.theme-dark .event-feed-filter-chip {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: #F2F2F2;
+    -fx-border-color: #555555;
+}
+
+.theme-dark .event-feed-filter-chip-active {
+    -fx-background-color: #4E908B;
+    -fx-text-fill: white;
+    -fx-border-color: #4E908B;
+}
+
+.theme-high-contrast .event-feed-section-header,
+.theme-high-contrast .event-feed-day-header {
+    -fx-text-fill: black;
+}
+
+.theme-high-contrast .event-feed-filter-bar {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent black transparent;
+}
+
+.theme-high-contrast .event-feed-filter-chip {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .event-feed-filter-chip-active {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}

@@ -267,3 +267,93 @@
 .calendar-action-button-primary:pressed {
     -fx-background-color: #5A9D97;
 }
+
+/* ============================================
+   DARK AND HIGH CONTRAST THEME
+   ============================================ */
+
+.theme-dark .calendar-root {
+    -fx-background-color: linear-gradient(to bottom, #1F1F1F, #181818);
+}
+
+.theme-dark .calendar-month-label,
+.theme-dark .calendar-day-number,
+.theme-dark .calendar-selected-date-header,
+.theme-dark .calendar-dow-label,
+.theme-dark .calendar-event-card-title,
+.theme-dark .calendar-event-card-time,
+.theme-dark .calendar-event-card-date,
+.theme-dark .calendar-no-events-label {
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .calendar-event-card,
+.theme-dark .calendar-picker-row {
+    -fx-background-color: #2A2A2A;
+}
+
+.theme-dark .calendar-day-cell:hover {
+    -fx-background-color: #333333;
+}
+
+.theme-dark .calendar-day-selected {
+    -fx-background-color: #355B5A;
+}
+
+.theme-dark .calendar-action-button,
+.theme-dark .calendar-nav-button {
+    -fx-background-color: #355B5A;
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .calendar-action-button-primary,
+.theme-dark .calendar-today-button {
+    -fx-background-color: #4E908B;
+    -fx-text-fill: white;
+}
+
+.theme-high-contrast .calendar-root {
+    -fx-background-color: white;
+}
+
+.theme-high-contrast .calendar-month-label,
+.theme-high-contrast .calendar-day-number,
+.theme-high-contrast .calendar-selected-date-header,
+.theme-high-contrast .calendar-dow-label,
+.theme-high-contrast .calendar-event-card-title,
+.theme-high-contrast .calendar-event-card-time,
+.theme-high-contrast .calendar-event-card-date,
+.theme-high-contrast .calendar-no-events-label {
+    -fx-text-fill: black;
+}
+
+.theme-high-contrast .calendar-event-card,
+.theme-high-contrast .calendar-picker-row {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .calendar-day-selected {
+    -fx-background-color: black;
+}
+
+.theme-high-contrast .calendar-day-selected .calendar-day-number {
+    -fx-text-fill: white;
+}
+
+.theme-high-contrast .calendar-action-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .calendar-action-button-primary,
+.theme-high-contrast .calendar-today-button,
+.theme-high-contrast .calendar-nav-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
