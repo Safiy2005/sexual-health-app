@@ -41,26 +41,26 @@ public final class ArticleCardFactory {
      * @return a styled VBox representing the article card
      */
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery, Consumer<Article> onArticleClick) {
+            String searchQuery, Consumer<Article> onArticleClick) {
         return createArticleCard(article, score, searchQuery, List.of(), List.of(), null, false, onArticleClick);
     }
 
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery,
-                                         List<String> highlightedTags,
-                                         List<String> preferredMatchedTags,
-                                         Consumer<Article> onArticleClick) {
+            String searchQuery,
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags,
+            Consumer<Article> onArticleClick) {
         return createArticleCard(article, score, searchQuery, highlightedTags, preferredMatchedTags,
                 null, false, onArticleClick);
     }
 
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery,
-                                         List<String> highlightedTags,
-                                         List<String> preferredMatchedTags,
-                                         String statusText,
-                                         boolean hidden,
-                                         Consumer<Article> onArticleClick) {
+            String searchQuery,
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags,
+            String statusText,
+            boolean hidden,
+            Consumer<Article> onArticleClick) {
         VBox card = new VBox(4);
         card.getStyleClass().add("article-card");
         if (hidden) {
@@ -131,9 +131,9 @@ public final class ArticleCardFactory {
     }
 
     private static String buildReasonText(String searchQuery,
-                                          List<String> highlightedTags,
-                                          List<String> preferredMatchedTags,
-                                          String statusText) {
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags,
+            String statusText) {
         if (statusText != null && !statusText.isBlank()) {
             return statusText;
         }
@@ -193,8 +193,8 @@ public final class ArticleCardFactory {
      * Respects a character budget so tags are never truncated with ellipses.
      */
     private static List<String> pickTags(List<String> allTags, String searchQuery,
-                                         List<String> highlightedTags,
-                                         List<String> preferredMatchedTags) {
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags) {
         if (allTags == null || allTags.isEmpty()) {
             return List.of();
         }

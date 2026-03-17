@@ -198,13 +198,15 @@ public class SettingsController {
 
         Label blockedTitle = new Label("Blocked tags");
         blockedTitle.getStyleClass().add("settings-section-title");
-        Label blockedBody = new Label("Articles with these tags will stay out of article lists, search results, and recommendations.");
+        Label blockedBody = new Label(
+                "Articles with these tags will stay out of article lists, search results, and recommendations.");
         blockedBody.getStyleClass().add("settings-section-body");
         blockedBody.setWrapText(true);
 
         Label preferredTitle = new Label("Prioritise these tags");
         preferredTitle.getStyleClass().add("settings-section-title");
-        Label preferredBody = new Label("These tags add a small ranking boost in search and receive a stronger result highlight.");
+        Label preferredBody = new Label(
+                "These tags add a small ranking boost in search and receive a stronger result highlight.");
         preferredBody.getStyleClass().add("settings-section-body");
         preferredBody.setWrapText(true);
 

@@ -273,7 +273,7 @@ public class MainAppController {
 
         List<RecentlyReadEntry> recentEntries = recentlyReadService.getRecentEntries(5);
         boolean hasVisibleRecent = false;
-        
+
         if (!recentEntries.isEmpty()) {
             for (RecentlyReadEntry entry : recentEntries) {
                 Article article = findArticleById(entry.articleId()).orElse(null);
@@ -355,7 +355,8 @@ public class MainAppController {
         addBlockedArticlesToggleForBrowse(blockedCards);
     }
 
-    private void renderSearchResults(String query, List<SearchResult> visibleResults, List<SearchResult> blockedResults) {
+    private void renderSearchResults(String query, List<SearchResult> visibleResults,
+            List<SearchResult> blockedResults) {
         articleListContainer.getChildren().clear();
 
         if (visibleResults.isEmpty() && blockedResults.isEmpty()) {
