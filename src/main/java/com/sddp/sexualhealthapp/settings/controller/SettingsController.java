@@ -224,28 +224,33 @@ public class SettingsController {
         Label modeTitle = new Label("Reminder Visibility");
         modeTitle.getStyleClass().add("settings-section-title");
 
-        // --- 1. Initialize Inputs ---
         ToggleGroup modeGroup = new ToggleGroup();
         TextField customTitleField = new TextField();
         TextField customBodyField = new TextField();
 
-        // --- 2. Build Custom Disguise Box ---
-        VBox customDisguiseBox = new VBox(8,
+        // --- Custom Disguise Box ---
+        // Increased gap to 12px between the two input fields
+        VBox customDisguiseBox = new VBox(12,
                 createLabeledInput("Disguise Title:", customTitleField, ReminderPreferences.DEFAULT_TITLE),
                 createLabeledInput("Disguise Body Text (Time will be appended):", customBodyField, ReminderPreferences.DEFAULT_BODY)
         );
-        customDisguiseBox.setPadding(new Insets(4, 0, 8, 28));
+        // Indent it nicely under the "Disguised" description
+        customDisguiseBox.setPadding(new Insets(12, 0, 8, 24));
         customDisguiseBox.setVisible(false);
         customDisguiseBox.setManaged(false);
 
-        // --- 3. Build Radio Options ---
+        // --- Build Radio Options ---
         RadioButton offBtn = new RadioButton("Off");
         RadioButton disguisedBtn = new RadioButton("Disguised (Maximum Privacy)");
         RadioButton discreetBtn = new RadioButton("Discreet");
         RadioButton explicitBtn = new RadioButton("Detailed");
 
-        VBox radioBox = new VBox(16);
+        // Increased gap between the radio groups to 20px
+        VBox radioBox = new VBox(20);
         radioBox.getStyleClass().add("settings-tag-picker");
+        // Force a bit of extra padding inside the white card
+        radioBox.setPadding(new Insets(18));
+
         radioBox.getChildren().addAll(
                 createRadioOption(offBtn, "No pop-ups. Events will only stay in your feed.", modeGroup, VisibilityMode.OFF),
                 createRadioOption(disguisedBtn, "Mimics system alerts or calculator tasks.", modeGroup, VisibilityMode.DISGUISED, customDisguiseBox),
@@ -253,7 +258,7 @@ public class SettingsController {
                 createRadioOption(explicitBtn, "Shows full event names and any notes you've written.", modeGroup, VisibilityMode.EXPLICIT)
         );
 
-        // --- 4. Load Saved State ---
+        // --- Load Saved State ---
         ReminderPreferences currentPrefs = ReminderPreferencesService.getInstance().getPreferences();
         customTitleField.setText(currentPrefs.customDisguisedTitle());
         customBodyField.setText(currentPrefs.customDisguisedBody());
@@ -269,7 +274,7 @@ public class SettingsController {
             case EXPLICIT -> explicitBtn.setSelected(true);
         }
 
-        // --- 5. Event Listeners ---
+        // --- Event Listeners ---
         modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
             boolean isDisguised = (newVal == disguisedBtn);
             customDisguiseBox.setVisible(isDisguised);
@@ -277,18 +282,14 @@ public class SettingsController {
             saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
         });
 
-        // listeners save when box unfocused
         customTitleField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
-            if (!isNowFocused) {
-                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
-            }
+            if (!isNowFocused) saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
         });
 
         customBodyField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
-            if (!isNowFocused) {
-                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
-            }
+            if (!isNowFocused) saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
         });
+
         page.getChildren().addAll(intro, modeTitle, radioBox);
         return page;
     }
@@ -306,16 +307,29 @@ public class SettingsController {
     }
 
     private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode, Node... extraContent) {
-        btn.getStyleClass().add("settings-section-body");
+        btn.getStyleClass().add("settings-subsection-label");
         btn.setToggleGroup(group);
-        btn.setUserData(mode); // Attach the exact Enum to the button invisibly!
+        btn.setUserData(mode);
 
         Label descLabel = new Label(description);
         descLabel.getStyleClass().add("settings-section-body");
         descLabel.setWrapText(true);
+        // Indent the description slightly so it aligns with the radio button text
+        descLabel.setPadding(new Insets(0, 0, 0, 24));
 
         VBox box = new VBox(4, btn, descLabel);
         box.getChildren().addAll(extraContent);
+
+        // --- NEW UX UPGRADES ---
+        // Apply the new CSS class for padding, hover background, and hand cursor
+        box.getStyleClass().add("settings-radio-box");
+
+        // Make the entire VBox (the "red box" from your screenshot) clickable!
+        box.setOnMouseClicked(event -> {
+            btn.setSelected(true);
+            btn.requestFocus(); // Shift focus so the UI visually reacts
+        });
+
         return box;
     }
 
@@ -326,8 +340,10 @@ public class SettingsController {
         field.getStyleClass().addAll("search-field", "settings-tag-search-field");
         field.setPromptText("e.g., " + prompt);
 
-        return new VBox(4, label, field);
+        // 6px spacing between the label and the text box so they don't touch
+        return new VBox(6, label, field);
     }
+
     private FlowPane createTagPane() {
         FlowPane pane = new FlowPane();
         pane.setHgap(8);
