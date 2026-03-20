@@ -88,7 +88,7 @@ class MainAppControllerTest {
 
         List<String> labels = labelTexts();
         assertFalse(labels.contains("Recently Read"));
-        assertTrue(labels.contains("All Articles"));
+        assertTrue(labels.contains("Articles For You"));
     }
 
     @Test
@@ -99,8 +99,8 @@ class MainAppControllerTest {
 
         List<String> labels = labelTexts();
         assertTrue(labels.indexOf("Recently Read") >= 0);
-        assertTrue(labels.indexOf("All Articles") >= 0);
-        assertTrue(labels.indexOf("Recently Read") < labels.indexOf("All Articles"));
+        assertTrue(labels.indexOf("Articles For You") >= 0);
+        assertTrue(labels.indexOf("Recently Read") < labels.indexOf("Articles For You"));
     }
 
     @Test
@@ -181,7 +181,7 @@ class MainAppControllerTest {
         assertTrue(rankingStarted.await(5, TimeUnit.SECONDS), "Ranking did not start");
 
         List<String> labels = labelTexts();
-        assertTrue(labels.contains("All Articles"));
+        assertTrue(labels.contains("Articles For You"));
         assertTrue(labels.contains("Personalising articles..."));
         assertEquals(initialTitle, firstStandardArticleTitle());
 

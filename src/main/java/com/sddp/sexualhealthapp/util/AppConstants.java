@@ -55,7 +55,12 @@ public final class AppConstants {
          * authentication.
          * This prevents the transition from looking too obvious.
          */
-        public static final int TRANSITION_DELAY_MS = 500;
+        public static final int TRANSITION_DELAY_MS = 120;
+
+        /**
+         * Delay before warming the main app root while the calculator is idle.
+         */
+        public static final int MAIN_APP_PRELOAD_DELAY_MS = 250;
 
         // FXML Resource Paths
         /**
@@ -171,7 +176,7 @@ public final class AppConstants {
         /**
          * Slower, elegant crossfade for calculator→main app reveal (ms).
          */
-        public static final int REVEAL_FADE_MS = 400;
+        public static final int REVEAL_FADE_MS = 180;
 
         /**
          * Slide duration for search↔article view transitions within the main app (ms).

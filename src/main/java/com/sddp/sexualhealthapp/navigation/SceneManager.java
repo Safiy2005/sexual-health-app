@@ -3,6 +3,7 @@ package com.sddp.sexualhealthapp.navigation;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -196,6 +197,18 @@ public class SceneManager {
                     AppConstants.REVEAL_FADE_MS);
         });
         delay.play();
+    }
+
+    /**
+     * Preloads the main app root while the calculator is already visible so the
+     * unlock path can reuse a cached tree instead of constructing it on '='.
+     */
+    public void warmMainAppRoot() {
+        if (Platform.isFxApplicationThread()) {
+            loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML);
+            return;
+        }
+        Platform.runLater(() -> loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML));
     }
 
     /**

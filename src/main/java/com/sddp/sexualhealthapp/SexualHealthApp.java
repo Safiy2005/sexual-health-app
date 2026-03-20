@@ -6,8 +6,10 @@ import com.sddp.sexualhealthapp.article.service.SemanticSearchService;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
+import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 /**
  * Main application class for the Sexual Health App.
@@ -38,7 +40,8 @@ public class SexualHealthApp extends Application {
 
         // Check if a secret equation has been set up
         SecretAuthService authService = new SecretAuthService();
-        if (authService.hasSecretEquation()) {
+        boolean hasSecretEquation = authService.hasSecretEquation();
+        if (hasSecretEquation) {
             // Returning user - go straight to calculator
             SceneManager.getInstance().transitionToCalculator();
         } else {
@@ -50,6 +53,13 @@ public class SexualHealthApp extends Application {
         primaryStage.setTitle(AppConstants.APP_TITLE);
         primaryStage.setResizable(false);
         primaryStage.show();
+
+        if (hasSecretEquation) {
+            PauseTransition warmMainAppDelay = new PauseTransition(
+                    Duration.millis(AppConstants.MAIN_APP_PRELOAD_DELAY_MS));
+            warmMainAppDelay.setOnFinished(event -> SceneManager.getInstance().warmMainAppRoot());
+            warmMainAppDelay.play();
+        }
 
         // Pre-load the ONNX embedding model in the background so first search is fast
         Thread preloadThread = new Thread(() -> new SemanticSearchService().preload());

@@ -372,7 +372,7 @@ public class MainAppController {
             }
         }
 
-        addFeedSectionHeader("All Articles");
+        addFeedSectionHeader("Articles For You");
         if (showLoadingHint) {
             addBrowseLoadingHint();
         }
