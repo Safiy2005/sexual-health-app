@@ -138,6 +138,7 @@ public class ArticleCollection {
             ArticleMetadataLoader.ArticleMetadata meta = metadata.get(article.getFileName());
             if (meta != null) {
                 article.setTags(meta.getTags());
+                article.setKeywords(meta.getKeywords());
             }
         }
     }

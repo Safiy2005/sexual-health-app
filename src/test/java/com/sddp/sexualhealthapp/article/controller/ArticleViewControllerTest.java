@@ -15,6 +15,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 
 import java.lang.reflect.Field;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -50,7 +51,7 @@ class ArticleViewControllerTest {
     @BeforeEach
     void setUp() throws Exception {
         assumeJavaFxAvailable();
-        controller = new ArticleViewController();
+        controller = new ArticleViewController((article, sectionIndex, maxResults) -> List.of());
         inject(controller, "articlePageContainer", new StackPane());
         inject(controller, "pageIndicatorContainer", new HBox());
         inject(controller, "pageCounterLabel", new Label());
@@ -64,18 +65,18 @@ class ArticleViewControllerTest {
     }
 
     @Test
-    void openArticle_doesNotMarkOverviewPageAsRead() throws Exception {
+    void openArticle_NotifiesFirstSectionOnOpen() throws Exception {
         Article article = article();
-        AtomicInteger callbackCount = new AtomicInteger();
-        controller.setOnSectionViewed((ignoredArticle, ignoredIndex) -> callbackCount.incrementAndGet());
+        AtomicReference<Integer> seenIndex = new AtomicReference<>();
+        controller.setOnSectionViewed((ignoredArticle, sectionIndex) -> seenIndex.set(sectionIndex));
 
         runOnFxAndWait(() -> controller.openArticle(article));
 
-        assertEquals(0, callbackCount.get());
+        assertEquals(0, seenIndex.get());
     }
 
     @Test
-    void navigateToSection_invokesSectionViewedCallback() throws Exception {
+    void navigateToSection_InvokesSectionViewedCallbackForTargetSection() throws Exception {
         Article article = article();
         AtomicReference<Article> seenArticle = new AtomicReference<>();
         AtomicReference<Integer> seenIndex = new AtomicReference<>();
@@ -88,7 +89,7 @@ class ArticleViewControllerTest {
         runOnFxAndWait(() -> invokeNavigateToPage(1));
 
         assertEquals(article, seenArticle.get());
-        assertEquals(0, seenIndex.get());
+        assertEquals(1, seenIndex.get());
     }
 
     @Test
@@ -100,7 +101,7 @@ class ArticleViewControllerTest {
         runOnFxAndWait(() -> controller.openArticleAtSection(article, 1));
 
         Label pageCounterLabel = get(controller, "pageCounterLabel", Label.class);
-        assertEquals("3 / 4", pageCounterLabel.getText());
+        assertEquals("2 / 3", pageCounterLabel.getText());
         assertEquals(1, seenIndex.get());
     }
 

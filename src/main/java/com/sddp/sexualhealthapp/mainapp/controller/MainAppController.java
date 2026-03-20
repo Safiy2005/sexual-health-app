@@ -140,6 +140,7 @@ public class MainAppController {
         // Wire the article view's back button to return to search
         articleViewController.setOnBackToSearch(this::handleBackToSearch);
         articleViewController.setOnSectionViewed(this::handleSectionViewed);
+        articleViewController.setOnSuggestedArticleSelected(this::openSuggestedArticleInReader);
 
         // Wire calendar navigation callbacks
         calendarViewController.setOnGoToEventFeed(() -> {
@@ -688,5 +689,17 @@ public class MainAppController {
         switchToTab("ARTICLES");
         closeArticleOverlayIfOpen();
         openArticle(article);
+    }
+
+    private void openSuggestedArticleInReader(Article article) {
+        if (article == null) {
+            return;
+        }
+
+        articleViewController.openArticle(article);
+        articleView.setTranslateX(0);
+        articleView.setVisible(true);
+        searchView.setVisible(false);
+        isViewTransitioning = false;
     }
 }
