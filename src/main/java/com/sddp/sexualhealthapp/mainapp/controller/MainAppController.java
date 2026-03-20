@@ -41,6 +41,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
+import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -363,11 +364,15 @@ public class MainAppController {
                 Article article = findArticleById(entry.articleId()).orElse(null);
                 if (article != null && !ArticlePersonalizationService.isBlocked(article, preferences)) {
                     if (!hasVisibleRecent) {
-                        addFeedSectionHeader("Recently Read");
+                        addRecentlyReadHeader();
                         hasVisibleRecent = true;
                     }
                     articleListContainer.getChildren().add(
-                            ArticleCardFactory.createRecentArticleCard(article, entry, this::openRecentArticle));
+                            ArticleCardFactory.createRecentArticleCard(
+                                    article,
+                                    entry,
+                                    this::openRecentArticle,
+                                    this::removeRecentArticle));
                 }
             }
         }
@@ -396,6 +401,23 @@ public class MainAppController {
         loadingHint.getStyleClass().add("article-card-subtitle");
         loadingHint.setWrapText(true);
         articleListContainer.getChildren().add(loadingHint);
+    }
+
+    private void addRecentlyReadHeader() {
+        HBox headerRow = new HBox();
+        headerRow.getStyleClass().add("article-feed-section-header");
+
+        Label header = new Label("Recently Read");
+        header.getStyleClass().add("article-feed-section-title");
+        HBox.setHgrow(header, javafx.scene.layout.Priority.ALWAYS);
+        header.setMaxWidth(Double.MAX_VALUE);
+
+        Button clearButton = new Button("Clear");
+        clearButton.getStyleClass().add("article-section-action-button");
+        clearButton.setOnAction(event -> handleClearRecentlyRead());
+
+        headerRow.getChildren().addAll(header, clearButton);
+        articleListContainer.getChildren().add(headerRow);
     }
 
     private void startBrowseRankingRefresh(List<Article> allArticles,
@@ -620,6 +642,17 @@ public class MainAppController {
         openArticle(maybeArticle.get(), entry.lastReadSectionIndex());
     }
 
+    private void removeRecentArticle(RecentlyReadEntry entry) {
+        if (entry == null || entry.articleId() == null || entry.articleId().isBlank()) {
+            return;
+        }
+
+        recentlyReadService.removeInMemory(entry.articleId());
+        recentlyReadFeedDirty = false;
+        renderBrowseFeed();
+        recentlyReadWriter.execute(recentlyReadService::flush);
+    }
+
     private Optional<Article> findArticleById(String articleId) {
         return ArticleCollection.getInstance().getArticles().stream()
                 .filter(article -> articleId.equals(article.getFileName()))
@@ -630,6 +663,13 @@ public class MainAppController {
         Label header = new Label(title);
         header.getStyleClass().add("article-feed-section-title");
         articleListContainer.getChildren().add(header);
+    }
+
+    private void handleClearRecentlyRead() {
+        recentlyReadService.clearInMemory();
+        recentlyReadFeedDirty = false;
+        renderBrowseFeed();
+        recentlyReadWriter.execute(recentlyReadService::flush);
     }
 
     private void handleSectionViewed(Article article, Integer sectionIndex) {

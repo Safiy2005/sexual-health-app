@@ -8,8 +8,10 @@ import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
 import com.sddp.sexualhealthapp.article.service.RecentlyReadService;
 import javafx.application.Platform;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
@@ -30,6 +32,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisabledIfEnvironmentVariable(named = "CI", matches = "true")
@@ -247,6 +250,39 @@ class MainAppControllerTest {
     }
 
     @Test
+    void clearRecentlyReadButton_removesRecentSectionAndStoredEntries() throws Exception {
+        recentlyReadService.saveProgress(articles.get(0).getFileName(), 1, Instant.parse("2026-03-11T09:00:00Z"));
+
+        runOnFxAndWait(controller::renderBrowseFeed);
+
+        Button clearButton = findButtonWithText("Clear");
+        assertNotNull(clearButton);
+
+        runOnFxAndWait(clearButton::fire);
+        waitForFxSettled();
+
+        assertFalse(labelTexts().contains("Recently Read"));
+        assertTrue(recentlyReadService.getRecentEntries(5).isEmpty());
+    }
+
+    @Test
+    void removeRecentArticleButton_removesSingleEntryWithoutOpeningArticle() throws Exception {
+        recentlyReadService.saveProgress(articles.get(0).getFileName(), 1, Instant.parse("2026-03-11T09:00:00Z"));
+
+        runOnFxAndWait(controller::renderBrowseFeed);
+
+        Button removeButton = findButtonWithText("Remove");
+        assertNotNull(removeButton);
+
+        runOnFxAndWait(removeButton::fire);
+        waitForFxSettled();
+
+        assertFalse(labelTexts().contains("Recently Read"));
+        assertTrue(recentlyReadService.getRecentEntries(5).isEmpty());
+        assertNull(articleViewController.lastArticle);
+    }
+
+    @Test
     void sectionViewed_whileArticleOverlayVisible_defersFeedRefreshUntilReturn() throws Exception {
         inject(controller, "articleView", visibleBox(true));
 
@@ -314,6 +350,23 @@ class MainAppControllerTest {
                 for (Node hChild : hBox.getChildren()) {
                     if (hChild instanceof Label label && label.getStyleClass().contains(styleClass)) {
                         return label;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    private Button findButtonWithText(String text) throws Exception {
+        VBox articleListContainer = get(controller, "articleListContainer", VBox.class);
+        for (Node child : articleListContainer.getChildren()) {
+            if (child instanceof Button button && text.equals(button.getText())) {
+                return button;
+            }
+            if (child instanceof HBox hBox) {
+                for (Node hChild : hBox.getChildren()) {
+                    if (hChild instanceof Button button && text.equals(button.getText())) {
+                        return button;
                     }
                 }
             }

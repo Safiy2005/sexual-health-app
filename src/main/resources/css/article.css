@@ -75,6 +75,25 @@
     -fx-padding: 10px 0 2px 0;
 }
 
+.article-feed-section-header {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.article-section-action-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #7A8E8E;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 0 0 0;
+    -fx-cursor: hand;
+}
+
+.article-section-action-button:hover {
+    -fx-text-fill: #3D7A75;
+}
+
 /* Article card */
 .article-card {
     -fx-background-color: white;
@@ -166,6 +185,22 @@
 
 .recent-article-card {
     -fx-spacing: 6px;
+}
+
+.recent-article-remove-button {
+    -fx-background-color: #ECE6DF;
+    -fx-text-fill: #6B8080;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 999px;
+    -fx-cursor: hand;
+}
+
+.recent-article-remove-button:hover {
+    -fx-background-color: #E3DBD3;
+    -fx-text-fill: #3D5A5B;
 }
 
 .article-card-progress-bar {
