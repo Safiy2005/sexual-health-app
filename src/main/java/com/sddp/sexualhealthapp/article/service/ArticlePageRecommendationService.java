@@ -39,7 +39,6 @@ public class ArticlePageRecommendationService {
     private static final double ARTICLE_QUERY_MIN_SCORE = 0.05;
     private static final double PAGE_QUERY_MIN_SCORE = 0.02;
     private static final int ARTICLE_HEADING_LIMIT = 8;
-    private static final int PAGE_CONTENT_CHAR_LIMIT = 360;
 
     @FunctionalInterface
     interface QuerySearch {
@@ -265,14 +264,14 @@ public class ArticlePageRecommendationService {
     private static String buildPageQuery(Article article, Article.Section currentSection) {
         return joinParts(
                 currentSection.heading(),
-                trimSectionContent(currentSection.content()));
+                cleanQueryText(currentSection.content()));
     }
 
     private static String buildHighlightQuery(Article article, Article.Section currentSection) {
         return joinParts(
                 currentSection.heading(),
                 article.getTitle(),
-                trimSectionContent(currentSection.content()));
+                cleanQueryText(currentSection.content()));
     }
 
     private static String joinTerms(List<String> terms) {
@@ -298,14 +297,6 @@ public class ArticlePageRecommendationService {
             builder.append(cleaned);
         }
         return builder.toString();
-    }
-
-    private static String trimSectionContent(String content) {
-        String cleaned = cleanQueryText(content);
-        if (cleaned.length() <= PAGE_CONTENT_CHAR_LIMIT) {
-            return cleaned;
-        }
-        return cleaned.substring(0, PAGE_CONTENT_CHAR_LIMIT).trim();
     }
 
     private static String cleanQueryText(String text) {
