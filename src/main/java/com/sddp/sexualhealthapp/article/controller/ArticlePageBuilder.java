@@ -227,6 +227,7 @@ public final class ArticlePageBuilder {
         ScrollPane scrollWrapper = new ScrollPane(page);
         scrollWrapper.setFitToWidth(true);
         scrollWrapper.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollWrapper.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
         scrollWrapper.getStyleClass().add("search-scroll-pane");
 
         VBox wrapper = new VBox(scrollWrapper);
