@@ -1,5 +1,7 @@
 package com.sddp.sexualhealthapp;
 
+import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
+import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.article.service.SemanticSearchService;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
@@ -53,6 +55,14 @@ public class SexualHealthApp extends Application {
         Thread preloadThread = new Thread(() -> new SemanticSearchService().preload());
         preloadThread.setDaemon(true);
         preloadThread.start();
+
+        // Warm article scoring and browse-ranking data before unlock so '=' stays responsive.
+        Thread articleWarmupThread = new Thread(() -> {
+            ArticleBrowseRankingService.preload();
+            new HybridSearchService();
+        });
+        articleWarmupThread.setDaemon(true);
+        articleWarmupThread.start();
     }
 
     @Override

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
 import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
@@ -14,6 +15,7 @@ import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
+import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.article.service.RecentlyReadService;
@@ -111,6 +113,7 @@ public class MainAppController {
     private CreateEventController createEventViewController;
 
     private HybridSearchService searchService;
+    private ArticleBrowseRankingService browseRankingService;
     private ContentPreferencesService contentPreferencesService;
     private RecentlyReadService recentlyReadService = new RecentlyReadService();
     private final ExecutorService recentlyReadWriter = Executors.newSingleThreadExecutor(r -> {
@@ -123,10 +126,11 @@ public class MainAppController {
     private boolean blockedArticlesExpanded = false;
     private boolean recentlyReadFeedDirty = false;
     private Node returnAfterCreateEvent = null;
+    private long browseRankingRequestId = 0L;
+    private List<Article> cachedBrowseRankedArticles = List.of();
 
     @FXML
     private void initialize() {
-        searchService = new HybridSearchService();
         contentPreferencesService = ContentPreferencesService.getInstance();
 
         // Debounce: wait 300ms after user stops typing before searching
@@ -256,54 +260,12 @@ public class MainAppController {
     }
 
     void renderBrowseFeed() {
-        articleListContainer.getChildren().clear();
-
-        ContentPreferences preferences = contentPreferencesService.getPreferences();
+        ContentPreferences preferences = getContentPreferencesService().getPreferences();
         List<Article> allArticles = ArticleCollection.getInstance().getArticles();
-        List<Article> articles = ArticlePersonalizationService.filterBlockedArticles(
-                allArticles,
-                preferences);
-        List<Article> blockedArticles = allArticles.stream()
-                .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
-                .toList();
-
-        if (articles.isEmpty() && blockedArticles.isEmpty()) {
-            showEmptyState("No articles found");
-            return;
-        }
-
         List<RecentlyReadEntry> recentEntries = recentlyReadService.getRecentEntries(5);
-        boolean hasVisibleRecent = false;
-
-        if (!recentEntries.isEmpty()) {
-            for (RecentlyReadEntry entry : recentEntries) {
-                Article article = findArticleById(entry.articleId()).orElse(null);
-                if (article != null && !ArticlePersonalizationService.isBlocked(article, preferences)) {
-                    if (!hasVisibleRecent) {
-                        addFeedSectionHeader("Recently Read");
-                        hasVisibleRecent = true;
-                    }
-                    articleListContainer.getChildren().add(
-                            ArticleCardFactory.createRecentArticleCard(article, entry, this::openRecentArticle));
-                }
-            }
-        }
-
-        addFeedSectionHeader("All Articles");
-
-        List<BrowseCardData> visibleCards = articles.stream()
-                .map(article -> new BrowseCardData(
-                        article,
-                        ArticlePersonalizationService.getPreferredMatchedTags(article, preferences)))
-                .toList();
-        List<BrowseCardData> blockedCards = blockedArticles.stream()
-                .map(article -> new BrowseCardData(
-                        article,
-                        ArticlePersonalizationService.getPreferredMatchedTags(article, preferences)))
-                .toList();
-
-        renderBrowseCards(visibleCards, blockedCards);
-
+        List<Article> initialArticles = pickInitialBrowseOrder(allArticles);
+        renderBrowseFeedContent(initialArticles, recentEntries, preferences, !hasUsableCachedBrowseOrder(allArticles));
+        startBrowseRankingRefresh(allArticles, recentEntries, preferences);
         recentlyReadFeedDirty = false;
     }
 
@@ -323,8 +285,8 @@ public class MainAppController {
 
         // Run search on background thread (ONNX model can be slow on first call)
         Thread searchThread = new Thread(() -> {
-            ContentPreferences preferences = contentPreferencesService.getPreferences();
-            List<SearchResult> rawResults = searchService.search(query);
+            ContentPreferences preferences = getContentPreferencesService().getPreferences();
+            List<SearchResult> rawResults = getSearchService().search(query);
             List<SearchResult> visibleResults = ArticlePersonalizationService.personalizeResults(
                     rawResults, query, preferences);
             List<SearchResult> blockedResults = rawResults.stream()
@@ -337,6 +299,136 @@ public class MainAppController {
         });
         searchThread.setDaemon(true);
         searchThread.start();
+    }
+
+    private synchronized HybridSearchService getSearchService() {
+        if (searchService == null) {
+            searchService = new HybridSearchService();
+        }
+        return searchService;
+    }
+
+    private synchronized ArticleBrowseRankingService getBrowseRankingService() {
+        if (browseRankingService == null) {
+            browseRankingService = new ArticleBrowseRankingService();
+        }
+        return browseRankingService;
+    }
+
+    private synchronized ContentPreferencesService getContentPreferencesService() {
+        if (contentPreferencesService == null) {
+            contentPreferencesService = ContentPreferencesService.getInstance();
+        }
+        return contentPreferencesService;
+    }
+
+    private List<Article> pickInitialBrowseOrder(List<Article> allArticles) {
+        if (hasUsableCachedBrowseOrder(allArticles)) {
+            return cachedBrowseRankedArticles;
+        }
+        return allArticles;
+    }
+
+    private boolean hasUsableCachedBrowseOrder(List<Article> allArticles) {
+        if (cachedBrowseRankedArticles == null || cachedBrowseRankedArticles.isEmpty()) {
+            return false;
+        }
+        if (cachedBrowseRankedArticles.size() != allArticles.size()) {
+            return false;
+        }
+        return cachedBrowseRankedArticles.containsAll(allArticles) && allArticles.containsAll(cachedBrowseRankedArticles);
+    }
+
+    private void renderBrowseFeedContent(List<Article> orderedArticles,
+            List<RecentlyReadEntry> recentEntries,
+            ContentPreferences preferences,
+            boolean showLoadingHint) {
+        articleListContainer.getChildren().clear();
+
+        List<Article> articles = ArticlePersonalizationService.filterBlockedArticles(
+                orderedArticles,
+                preferences);
+        List<Article> blockedArticles = orderedArticles.stream()
+                .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
+                .toList();
+
+        if (articles.isEmpty() && blockedArticles.isEmpty()) {
+            showEmptyState("No articles found");
+            return;
+        }
+
+        boolean hasVisibleRecent = false;
+        if (!recentEntries.isEmpty()) {
+            for (RecentlyReadEntry entry : recentEntries) {
+                Article article = findArticleById(entry.articleId()).orElse(null);
+                if (article != null && !ArticlePersonalizationService.isBlocked(article, preferences)) {
+                    if (!hasVisibleRecent) {
+                        addFeedSectionHeader("Recently Read");
+                        hasVisibleRecent = true;
+                    }
+                    articleListContainer.getChildren().add(
+                            ArticleCardFactory.createRecentArticleCard(article, entry, this::openRecentArticle));
+                }
+            }
+        }
+
+        addFeedSectionHeader("All Articles");
+        if (showLoadingHint) {
+            addBrowseLoadingHint();
+        }
+
+        List<BrowseCardData> visibleCards = articles.stream()
+                .map(article -> new BrowseCardData(
+                        article,
+                        ArticlePersonalizationService.getPreferredMatchedTags(article, preferences)))
+                .toList();
+        List<BrowseCardData> blockedCards = blockedArticles.stream()
+                .map(article -> new BrowseCardData(
+                        article,
+                        ArticlePersonalizationService.getPreferredMatchedTags(article, preferences)))
+                .toList();
+
+        renderBrowseCards(visibleCards, blockedCards);
+    }
+
+    private void addBrowseLoadingHint() {
+        Label loadingHint = new Label("Personalising articles...");
+        loadingHint.getStyleClass().add("article-card-subtitle");
+        loadingHint.setWrapText(true);
+        articleListContainer.getChildren().add(loadingHint);
+    }
+
+    private void startBrowseRankingRefresh(List<Article> allArticles,
+            List<RecentlyReadEntry> recentEntries,
+            ContentPreferences preferences) {
+        long requestId = ++browseRankingRequestId;
+        List<Article> articleSnapshot = List.copyOf(allArticles);
+        List<RecentlyReadEntry> recentSnapshot = List.copyOf(recentEntries);
+
+        Thread rankingThread = new Thread(() -> {
+            List<Article> ranked = getBrowseRankingService().rankArticles(
+                    articleSnapshot,
+                    recentSnapshot,
+                    preferences);
+
+            Platform.runLater(() -> {
+                if (requestId != browseRankingRequestId) {
+                    return;
+                }
+
+                cachedBrowseRankedArticles = ranked.stream().collect(Collectors.toUnmodifiableList());
+                if (!isBrowseFeedVisible()) {
+                    return;
+                }
+
+                ContentPreferences latestPreferences = getContentPreferencesService().getPreferences();
+                List<RecentlyReadEntry> latestRecentEntries = recentlyReadService.getRecentEntries(5);
+                renderBrowseFeedContent(cachedBrowseRankedArticles, latestRecentEntries, latestPreferences, false);
+                recentlyReadFeedDirty = false;
+            });
+        }, "browse-ranking-loader");
+        rankingThread.setDaemon(true);
+        rankingThread.start();
     }
 
     private void renderBrowseCards(List<BrowseCardData> visibleCards, List<BrowseCardData> blockedCards) {
@@ -417,7 +509,7 @@ public class MainAppController {
             return;
         }
 
-        ContentPreferences preferences = contentPreferencesService.getPreferences();
+        ContentPreferences preferences = getContentPreferencesService().getPreferences();
         for (SearchResult result : blockedResults) {
             articleListContainer.getChildren().add(
                     ArticleCardFactory.createArticleCard(
@@ -447,7 +539,7 @@ public class MainAppController {
 
     private String buildBlockedReason(Article article) {
         List<String> blockedTags = new ArrayList<>();
-        ContentPreferences preferences = contentPreferencesService.getPreferences();
+        ContentPreferences preferences = getContentPreferencesService().getPreferences();
 
         for (String tag : article.getTags()) {
             for (String blockedTag : preferences.blockedTags()) {

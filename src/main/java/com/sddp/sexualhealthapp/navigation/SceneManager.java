@@ -177,20 +177,14 @@ public class SceneManager {
     /**
      * Transitions to the main application scene.
      * <p>
-     * Pre-loads the main app root synchronously before the discretion delay.
-     * On first call this is heavy (FXML + controller init + article loading),
-     * but it happens while the calculator is still showing — the user just
-     * pressed '=' and expects a brief computation pause. By the time the
-     * delay finishes and the crossfade starts, the root is cached and the
-     * FX thread is free to render every frame of the animation.
+     * Keeps the calculator responsive by avoiding heavy main-app work at the
+     * moment '=' is pressed. The main app root is loaded only when the reveal
+     * starts, after the short discretion delay.
      */
     public void transitionToMainApp() {
         if (isTransitioning)
             return;
         isTransitioning = true;
-
-        // Pre-load now so the heavy FXML init doesn't block the fade later.
-        loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML);
 
         PauseTransition delay = new PauseTransition(
                 Duration.millis(AppConstants.TRANSITION_DELAY_MS));
