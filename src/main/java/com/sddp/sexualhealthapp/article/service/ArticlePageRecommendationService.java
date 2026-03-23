@@ -39,6 +39,7 @@ public class ArticlePageRecommendationService {
     private static final double ARTICLE_QUERY_MIN_SCORE = 0.05;
     private static final double PAGE_QUERY_MIN_SCORE = 0.02;
     private static final int ARTICLE_HEADING_LIMIT = 8;
+    private static final int SUMMARY_HEADING_HINT_LIMIT = 4;
 
     @FunctionalInterface
     interface QuerySearch {
@@ -262,16 +263,53 @@ public class ArticlePageRecommendationService {
     }
 
     private static String buildPageQuery(Article article, Article.Section currentSection) {
+        if (isSummaryLikeSection(currentSection)) {
+            return buildSummaryPageQuery(article);
+        }
         return joinParts(
                 currentSection.heading(),
                 cleanQueryText(currentSection.content()));
     }
 
     private static String buildHighlightQuery(Article article, Article.Section currentSection) {
+        if (isSummaryLikeSection(currentSection)) {
+            return buildSummaryHighlightQuery(article);
+        }
         return joinParts(
                 currentSection.heading(),
                 article.getTitle(),
                 cleanQueryText(currentSection.content()));
+    }
+
+    private static boolean isSummaryLikeSection(Article.Section section) {
+        if (section == null || section.heading() == null) {
+            return false;
+        }
+        String normalizedHeading = TextPreprocessor.normalize(section.heading());
+        return normalizedHeading.equals("summary")
+                || normalizedHeading.equals("overview")
+                || normalizedHeading.equals("introduction");
+    }
+
+    private static String buildSummaryPageQuery(Article article) {
+        String relatedHeadings = article.getSections().stream()
+                .map(Article.Section::heading)
+                .filter(heading -> heading != null && !heading.isBlank())
+                .filter(heading -> !isSummaryHeadingText(heading))
+                .limit(SUMMARY_HEADING_HINT_LIMIT)
+                .reduce("", (left, right) -> left.isBlank() ? right : left + " " + right);
+        return joinParts(article.getTitle(), relatedHeadings);
+    }
+
+    private static String buildSummaryHighlightQuery(Article article) {
+        return joinParts(article.getTitle(), buildSummaryPageQuery(article));
+    }
+
+    private static boolean isSummaryHeadingText(String heading) {
+        String normalizedHeading = TextPreprocessor.normalize(heading);
+        return normalizedHeading.equals("summary")
+                || normalizedHeading.equals("overview")
+                || normalizedHeading.equals("introduction");
     }
 
     private static String joinTerms(List<String> terms) {

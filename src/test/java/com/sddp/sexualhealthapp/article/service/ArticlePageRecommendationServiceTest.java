@@ -276,6 +276,56 @@ class ArticlePageRecommendationServiceTest {
         assertEquals("PrEP Review Guide", secondPageRecommendations.get(0).article().getTitle());
     }
 
+    @Test
+    void recommendForPage_SummaryPageIgnoresGenericOverviewBoilerplate() {
+        Article current = article(
+                "current.md",
+                "Foreskins and Circumcision",
+                List.of("Penis & Testicles"),
+                List.of("foreskin", "circumcision"),
+                "Summary",
+                "Overview medical surgical process information disclaimer from brook.",
+                "Foreskins and Circumcision: Part 1",
+                "The foreskin covers the penis and circumcision removes some or all of it.",
+                "Seek help",
+                "Seek medical advice if your foreskin gets stuck.");
+        Article abortion = article(
+                "abortion.md",
+                "The Abortion Process",
+                List.of("Abortion"),
+                List.of("abortion"),
+                "Overview",
+                "Abortion process content");
+        Article foreskinMatch = article(
+                "foreskin-match.md",
+                "Phimosis and Penis Health",
+                List.of("Penis & Testicles"),
+                List.of("foreskin"),
+                "Overview",
+                "Penis health content");
+
+        ArticlePageRecommendationService service = new ArticlePageRecommendationService(
+                (query, minScore) -> List.of(
+                        new SearchResult(foreskinMatch, 0.88, Map.of()),
+                        new SearchResult(abortion, 0.20, Map.of())),
+                (query, minScore) -> {
+                    String normalized = query.toLowerCase();
+                    if (normalized.contains("overview medical surgical process")) {
+                        return List.of(new SearchResult(abortion, 0.95, Map.of()));
+                    }
+                    if (normalized.contains("foreskins and circumcision part 1")
+                            || normalized.contains("seek help")) {
+                        return List.of(new SearchResult(foreskinMatch, 0.95, Map.of()));
+                    }
+                    return List.of();
+                });
+
+        List<SearchResult> recommendations = service.recommendForPage(current, 0, 3);
+
+        assertFalse(recommendations.isEmpty());
+        assertEquals("Phimosis and Penis Health", recommendations.get(0).article().getTitle());
+    }
+
     private static Article article(String fileName,
             String title,
             List<String> tags,
