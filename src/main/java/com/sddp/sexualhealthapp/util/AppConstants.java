@@ -196,17 +196,17 @@ public final class AppConstants {
         /**
          * Default crossfade duration for setup↔calculator transitions (ms).
          */
-        public static final int SCENE_CROSSFADE_MS = 150;
+        public static final int SCENE_CROSSFADE_MS = 250;
 
         /**
          * Fast crossfade duration for the lock button transition (ms).
          */
-        public static final int LOCK_CROSSFADE_MS = 150;
+        public static final int LOCK_CROSSFADE_MS = 250;
 
         /**
          * Slower, elegant crossfade for calculator→main app reveal (ms).
          */
-        public static final int REVEAL_FADE_MS = 180;
+        public static final int REVEAL_FADE_MS = 250;
 
         /**
          * Slide duration for search↔article view transitions within the main app (ms).
