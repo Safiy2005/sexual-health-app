@@ -2,11 +2,13 @@ package com.sddp.sexualhealthapp.mainapp.controller;
 
 import java.time.LocalDate;
 import java.time.Instant;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
@@ -17,6 +19,7 @@ import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.service.HybridSearchService;
 import com.sddp.sexualhealthapp.article.service.RecentlyReadService;
 import com.sddp.sexualhealthapp.calendar.controller.CalendarController;
@@ -36,6 +39,7 @@ import javafx.animation.Interpolator;
 import javafx.animation.PauseTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -65,13 +69,21 @@ public class MainAppController {
     @FXML
     private StackPane articlesRoot;
     @FXML
+    private StackPane articleViewHost;
+    @FXML
     private VBox calendarRoot;
+    @FXML
+    private StackPane calendarHost;
+    @FXML
+    private StackPane eventFeedHost;
+    @FXML
+    private StackPane createEventHost;
+    @FXML
+    private StackPane eventDetailHost;
     @FXML
     private VBox settingsRoot;
     @FXML
-    private VBox settingsView;
-    @FXML
-    private SettingsController settingsViewController;
+    private StackPane settingsHost;
     @FXML
     private ToggleGroup navGroup;
     @FXML
@@ -85,33 +97,24 @@ public class MainAppController {
     @FXML
     private VBox searchView;
     @FXML
-    private VBox articleView;
-    @FXML
-    private ArticleViewController articleViewController;
-    @FXML
     private TextField searchField;
     @FXML
     private VBox articleListContainer;
     @FXML
     private ScrollPane listScrollPane;
-    @FXML
-    private VBox eventDetailView;
-    @FXML
-    private EventDetailController eventDetailViewController;
 
-    @FXML
-    private VBox calendarView;
-    @FXML
+    private Node articleViewNode;
+    private ArticleViewController articleViewController;
+    private Node calendarViewNode;
     private CalendarController calendarViewController;
-
-    @FXML
-    private VBox eventFeedView;
-    @FXML
+    private Node eventFeedViewNode;
     private EventFeedController eventFeedViewController;
-    @FXML
-    private VBox createEventView;
-    @FXML
+    private Node createEventViewNode;
     private CreateEventController createEventViewController;
+    private Node eventDetailViewNode;
+    private EventDetailController eventDetailViewController;
+    private Node settingsViewNode;
+    private SettingsController settingsViewController;
 
     private HybridSearchService searchService;
     private ArticleBrowseRankingService browseRankingService;
@@ -129,10 +132,12 @@ public class MainAppController {
     private Node returnAfterCreateEvent = null;
     private long browseRankingRequestId = 0L;
     private List<Article> cachedBrowseRankedArticles = List.of();
+    private boolean initialBrowseRenderPending = false;
 
     @FXML
     private void initialize() {
         contentPreferencesService = ContentPreferencesService.getInstance();
+        initialBrowseRenderPending = true;
 
         // Debounce: wait 300ms after user stops typing before searching
         searchDebounce = new PauseTransition(Duration.millis(300));
@@ -141,42 +146,6 @@ public class MainAppController {
         searchField.textProperty().addListener((obs, oldVal, newVal) -> {
             searchDebounce.playFromStart();
         });
-
-        // Wire the article view's back button to return to search
-        articleViewController.setOnBackToSearch(this::handleBackToSearch);
-        articleViewController.setOnSectionViewed(this::handleSectionViewed);
-        articleViewController.setOnSuggestedArticleSelected(this::openSuggestedArticleInReader);
-
-        // Wire calendar navigation callbacks
-        calendarViewController.setOnGoToEventFeed(() -> {
-            eventFeedViewController.refresh();
-            showView(eventFeedView, calendarView);
-        });
-        calendarViewController.setOnGoToNewEvent(() -> {
-            returnAfterCreateEvent = calendarView;
-            createEventViewController.startCreateNew();
-            showView(createEventView, calendarView);
-        });
-
-        // Wire stub view back-navigation callbacks
-        eventFeedViewController.setOnBackToCalendar(() -> showView(calendarView, eventFeedView));
-        eventFeedViewController.setOnEventSelected(
-                (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, eventFeedView));
-        createEventViewController.setOnBackToCalendar(() -> {
-            calendarViewController.refresh();
-            eventFeedViewController.refresh();
-
-            // go back to where we started editing or creating
-            Node target = (returnAfterCreateEvent != null) ? returnAfterCreateEvent : calendarView;
-            showOnlyCalendarView(target);
-
-            returnAfterCreateEvent = null;
-        });
-        eventDetailViewController.setOnArticleSelected(this::openArticleFromEventDetail);
-
-        // Show all articles on initial load
-        renderBrowseFeed();
-        settingsViewController.setOnPreferencesChanged(this::refreshArticlesView);
 
         // icon tabs
 
@@ -212,14 +181,13 @@ public class MainAppController {
 
         // Default tab
         navGroup.selectToggle(articlesTab);
-        switchToTab("ARTICLES");
-
-        calendarViewController.setOnEventSelected(
-                (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, calendarView));
-
     }
 
     private void switchToTab(String tab) {
+        switchToTab(tab, true);
+    }
+
+    private void switchToTab(String tab, boolean refreshArticles) {
         // Hides all
         setVisible_Managed(articlesRoot, false);
         setVisible_Managed(calendarRoot, false);
@@ -229,18 +197,43 @@ public class MainAppController {
         switch (tab) {
             case "ARTICLES" -> {
                 setVisible_Managed(articlesRoot, true);
-                refreshArticlesView();
+                if (refreshArticles && !initialBrowseRenderPending) {
+                    refreshArticlesView();
+                } else if (articleListContainer != null && articleListContainer.getChildren().isEmpty()) {
+                    addBrowseLoadingHint();
+                }
             }
             case "CALENDAR" -> {
                 setVisible_Managed(calendarRoot, true);
+                ensureCalendarViewLoaded();
                 closeArticleOverlayIfOpen();
             }
             case "SETTINGS" -> {
                 setVisible_Managed(settingsRoot, true);
+                ensureSettingsViewLoaded();
                 closeArticleOverlayIfOpen();
                 settingsViewController.refresh();
             }
         }
+    }
+
+    public void showInitialBrowseFeed() {
+        if (searchField == null) {
+            return;
+        }
+
+        if (!initialBrowseRenderPending) {
+            return;
+        }
+
+        initialBrowseRenderPending = false;
+        Platform.runLater(() -> {
+            if (searchField.getText() == null || searchField.getText().trim().isEmpty()) {
+                renderBrowseFeed();
+            } else {
+                performSearch();
+            }
+        });
     }
 
     private void setVisible_Managed(Node node, boolean on) {
@@ -248,10 +241,145 @@ public class MainAppController {
         node.setManaged(on);
     }
 
+    private <T> T loadView(StackPane host, String fxmlPath, Consumer<T> controllerConfigurer) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
+        try {
+            Node root = loader.load();
+            host.getChildren().setAll(root);
+            host.setVisible(true);
+            host.setManaged(true);
+            @SuppressWarnings("unchecked")
+            T controller = (T) loader.getController();
+            if (controllerConfigurer != null) {
+                controllerConfigurer.accept(controller);
+            }
+            return controller;
+        } catch (IOException e) {
+            throw new IllegalStateException("Failed to load FXML: " + fxmlPath, e);
+        }
+    }
+
+    private void ensureArticleViewLoaded() {
+        if (articleViewNode != null) {
+            return;
+        }
+
+        articleViewController = loadView(articleViewHost, AppConstants.ARTICLE_VIEW_FXML, controller -> {
+            controller.setOnBackToSearch(this::handleBackToSearch);
+            controller.setOnSectionViewed(this::handleSectionViewed);
+            controller.setOnSuggestedArticleSelected(this::openSuggestedArticleInReader);
+        });
+        articleViewNode = articleViewHost.getChildren().isEmpty() ? null : articleViewHost.getChildren().get(0);
+        if (articleViewNode != null) {
+            articleViewNode.setVisible(false);
+            articleViewNode.setManaged(false);
+        }
+        articleViewHost.setVisible(false);
+        articleViewHost.setManaged(false);
+    }
+
+    private void ensureCalendarViewLoaded() {
+        if (calendarViewNode != null) {
+            return;
+        }
+
+        calendarViewController = loadView(calendarHost, AppConstants.CALENDAR_VIEW_FXML, controller -> {
+            controller.setOnGoToEventFeed(() -> {
+                ensureEventFeedLoaded();
+                eventFeedViewController.refresh();
+                showView(eventFeedViewNode, calendarViewNode);
+            });
+            controller.setOnGoToNewEvent(() -> {
+                ensureCreateEventLoaded();
+                returnAfterCreateEvent = calendarViewNode;
+                createEventViewController.startCreateNew();
+                showView(createEventViewNode, calendarViewNode);
+            });
+            controller.setOnEventSelected((event, occurrenceDate) -> openEventDetail(event, occurrenceDate,
+                    calendarViewNode));
+        });
+        calendarViewNode = calendarHost.getChildren().isEmpty() ? null : calendarHost.getChildren().get(0);
+    }
+
+    private void ensureEventFeedLoaded() {
+        if (eventFeedViewNode != null) {
+            return;
+        }
+
+        eventFeedViewController = loadView(eventFeedHost, AppConstants.EVENT_FEED_FXML, controller -> {
+            controller.setOnBackToCalendar(() -> showView(calendarViewNode, eventFeedViewNode));
+            controller.setOnEventSelected((event, occurrenceDate) -> openEventDetail(event, occurrenceDate,
+                    eventFeedViewNode));
+        });
+        eventFeedViewNode = eventFeedHost.getChildren().isEmpty() ? null : eventFeedHost.getChildren().get(0);
+        if (eventFeedViewNode != null) {
+            eventFeedViewNode.setVisible(false);
+            eventFeedViewNode.setManaged(false);
+        }
+    }
+
+    private void ensureCreateEventLoaded() {
+        if (createEventViewNode != null) {
+            return;
+        }
+
+        createEventViewController = loadView(createEventHost, AppConstants.CREATE_EVENT_FXML, controller -> {
+            controller.setOnBackToCalendar(() -> {
+                ensureCalendarViewLoaded();
+                calendarViewController.refresh();
+                ensureEventFeedLoaded();
+                eventFeedViewController.refresh();
+
+                Node target = (returnAfterCreateEvent != null) ? returnAfterCreateEvent : calendarViewNode;
+                showOnlyCalendarView(target);
+
+                returnAfterCreateEvent = null;
+            });
+        });
+        createEventViewNode = createEventHost.getChildren().isEmpty() ? null : createEventHost.getChildren().get(0);
+        if (createEventViewNode != null) {
+            createEventViewNode.setVisible(false);
+            createEventViewNode.setManaged(false);
+        }
+    }
+
+    private void ensureEventDetailLoaded() {
+        if (eventDetailViewNode != null) {
+            return;
+        }
+
+        eventDetailViewController = loadView(eventDetailHost, AppConstants.EVENT_DETAIL_FXML, controller -> {
+            controller.setOnArticleSelected(this::openArticleFromEventDetail);
+        });
+        eventDetailViewNode = eventDetailHost.getChildren().isEmpty() ? null : eventDetailHost.getChildren().get(0);
+        if (eventDetailViewNode != null) {
+            eventDetailViewNode.setVisible(false);
+            eventDetailViewNode.setManaged(false);
+        }
+    }
+
+    private void ensureSettingsViewLoaded() {
+        if (settingsViewNode != null) {
+            return;
+        }
+
+        settingsViewController = loadView(settingsHost, AppConstants.SETTINGS_VIEW_FXML, controller -> {
+            controller.setOnPreferencesChanged(this::refreshArticlesView);
+        });
+        settingsViewNode = settingsHost.getChildren().isEmpty() ? null : settingsHost.getChildren().get(0);
+    }
+
     private void closeArticleOverlayIfOpen() {
         // Resets the overlay state so it doesnt stick when switches tabs
-        articleView.setVisible(false);
-        articleView.setTranslateX(0);
+        if (articleViewNode != null) {
+            articleViewNode.setVisible(false);
+            articleViewNode.setManaged(false);
+            articleViewNode.setTranslateX(0);
+        }
+        if (articleViewHost != null) {
+            articleViewHost.setVisible(false);
+            articleViewHost.setManaged(false);
+        }
 
         searchView.setVisible(true);
         searchView.setManaged(true);
@@ -262,7 +390,7 @@ public class MainAppController {
 
     void renderBrowseFeed() {
         ContentPreferences preferences = getContentPreferencesService().getPreferences();
-        List<Article> allArticles = ArticleCollection.getInstance().getArticles();
+        List<Article> allArticles = ArticleServiceRegistry.getArticleCollection().getArticles();
         List<RecentlyReadEntry> recentEntries = recentlyReadService.getRecentEntries(5);
         List<Article> initialArticles = pickInitialBrowseOrder(allArticles);
         renderBrowseFeedContent(initialArticles, recentEntries, preferences, !hasUsableCachedBrowseOrder(allArticles));
@@ -304,7 +432,7 @@ public class MainAppController {
 
     private synchronized HybridSearchService getSearchService() {
         if (searchService == null) {
-            searchService = new HybridSearchService();
+            searchService = ArticleServiceRegistry.getHybridSearchService();
         }
         return searchService;
     }
@@ -588,6 +716,12 @@ public class MainAppController {
             return;
         isViewTransitioning = true;
 
+        ensureArticleViewLoaded();
+        if (articleViewNode == null || articleViewController == null) {
+            isViewTransitioning = false;
+            return;
+        }
+
         boolean resumeFromSavedSection = resumeSectionIndex != null;
         if (!resumeFromSavedSection) {
             articleViewController.openArticle(article);
@@ -596,11 +730,14 @@ public class MainAppController {
         }
 
         // Position article view off-screen to the right, then slide in
-        articleView.setTranslateX(AppConstants.APP_WIDTH);
-        articleView.setVisible(true);
+        articleViewHost.setVisible(true);
+        articleViewHost.setManaged(true);
+        articleViewNode.setManaged(true);
+        articleViewNode.setTranslateX(AppConstants.APP_WIDTH);
+        articleViewNode.setVisible(true);
 
         TranslateTransition slide = new TranslateTransition(
-                Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
+                Duration.millis(AppConstants.VIEW_SLIDE_MS), articleViewNode);
         slide.setFromX(AppConstants.APP_WIDTH);
         slide.setToX(0);
         slide.setInterpolator(Interpolator.EASE_OUT);
@@ -654,7 +791,7 @@ public class MainAppController {
     }
 
     private Optional<Article> findArticleById(String articleId) {
-        return ArticleCollection.getInstance().getArticles().stream()
+        return ArticleServiceRegistry.getArticleCollection().getArticles().stream()
                 .filter(article -> articleId.equals(article.getFileName()))
                 .findFirst();
     }
@@ -688,14 +825,24 @@ public class MainAppController {
         // Make search view visible underneath before sliding article away
         searchView.setVisible(true);
 
+        if (articleViewNode == null) {
+            isViewTransitioning = false;
+            return;
+        }
+
         TranslateTransition slide = new TranslateTransition(
-                Duration.millis(AppConstants.VIEW_SLIDE_MS), articleView);
+                Duration.millis(AppConstants.VIEW_SLIDE_MS), articleViewNode);
         slide.setFromX(0);
         slide.setToX(AppConstants.APP_WIDTH);
         slide.setInterpolator(Interpolator.EASE_IN);
         slide.setOnFinished(e -> {
-            articleView.setVisible(false);
-            articleView.setTranslateX(0);
+            articleViewNode.setVisible(false);
+            articleViewNode.setManaged(false);
+            articleViewNode.setTranslateX(0);
+            if (articleViewHost != null) {
+                articleViewHost.setVisible(false);
+                articleViewHost.setManaged(false);
+            }
             isViewTransitioning = false;
             refreshBrowseFeedIfNeeded();
         });
@@ -722,7 +869,7 @@ public class MainAppController {
 
     private boolean isBrowseFeedVisible() {
         boolean emptySearch = searchField == null || searchField.getText() == null || searchField.getText().isBlank();
-        boolean articleOverlayHidden = articleView == null || !articleView.isVisible();
+        boolean articleOverlayHidden = articleViewNode == null || !articleViewNode.isVisible();
         boolean searchPaneVisible = searchView == null || searchView.isVisible();
         return emptySearch && articleOverlayHidden && searchPaneVisible && !isViewTransitioning;
     }
@@ -731,8 +878,14 @@ public class MainAppController {
      * Switches between views in the StackPane by showing one and hiding another.
      */
     private void showView(Node show, Node hide) {
-        hide.setVisible(false);
-        show.setVisible(true);
+        if (hide != null) {
+            hide.setVisible(false);
+            hide.setManaged(false);
+        }
+        if (show != null) {
+            show.setVisible(true);
+            show.setManaged(true);
+        }
     }
 
     @FXML
@@ -762,17 +915,41 @@ public class MainAppController {
     }
 
     private void showOnlyCalendarView(Node toShow) {
-        calendarView.setVisible(false);
-        eventFeedView.setVisible(false);
-        createEventView.setVisible(false);
-        eventDetailView.setVisible(false);
+        if (calendarViewNode != null) {
+            calendarViewNode.setVisible(false);
+            calendarViewNode.setManaged(false);
+        }
+        if (eventFeedViewNode != null) {
+            eventFeedViewNode.setVisible(false);
+            eventFeedViewNode.setManaged(false);
+        }
+        if (createEventViewNode != null) {
+            createEventViewNode.setVisible(false);
+            createEventViewNode.setManaged(false);
+        }
+        if (eventDetailViewNode != null) {
+            eventDetailViewNode.setVisible(false);
+            eventDetailViewNode.setManaged(false);
+        }
 
-        toShow.setVisible(true);
+        if (toShow != null) {
+            toShow.setVisible(true);
+            toShow.setManaged(true);
+        }
 
     }
 
     private void openEventDetail(CalendarEvent event, LocalDate occurrenceDate, Node returnTo) {
         // set data
+        ensureEventDetailLoaded();
+        ensureCreateEventLoaded();
+        ensureCalendarViewLoaded();
+        ensureEventFeedLoaded();
+        if (eventDetailViewController == null || createEventViewController == null || calendarViewController == null
+                || eventFeedViewController == null || eventDetailViewNode == null) {
+            return;
+        }
+
         eventDetailViewController.setEvent(event, occurrenceDate);
 
         // go back where u came from
@@ -789,7 +966,7 @@ public class MainAppController {
                 createEventViewController.startEditSeries(evnt);
             }
 
-            showOnlyCalendarView(createEventView);
+            showOnlyCalendarView(createEventViewNode);
         });
 
         // If event deleted
@@ -809,7 +986,7 @@ public class MainAppController {
             showOnlyCalendarView(returnTo);
 
         });
-        showOnlyCalendarView(eventDetailView);
+        showOnlyCalendarView(eventDetailViewNode);
     }
 
     private void openArticleFromEventDetail(Article article) {
@@ -828,9 +1005,17 @@ public class MainAppController {
             return;
         }
 
+        ensureArticleViewLoaded();
+        if (articleViewNode == null || articleViewController == null) {
+            return;
+        }
+
         articleViewController.openArticle(article);
-        articleView.setTranslateX(0);
-        articleView.setVisible(true);
+        articleViewHost.setVisible(true);
+        articleViewHost.setManaged(true);
+        articleViewNode.setManaged(true);
+        articleViewNode.setTranslateX(0);
+        articleViewNode.setVisible(true);
         searchView.setVisible(false);
         isViewTransitioning = false;
     }

@@ -51,7 +51,7 @@ public class ArticleBrowseRankingService {
 
     /** Production constructor. */
     public ArticleBrowseRankingService() {
-        this(new ArticleSearchService()::search);
+        this(ArticleServiceRegistry.getArticleSearchService()::search);
     }
 
     /** Testing constructor. */
@@ -73,8 +73,8 @@ public class ArticleBrowseRankingService {
                 return;
             }
 
-            ArticleCollection collection = ArticleCollection.getInstance();
-            new ArticleSearchService(collection);
+            ArticleCollection collection = ArticleServiceRegistry.getArticleCollection();
+            ArticleServiceRegistry.getArticleSearchService();
             cachedGeneralScoresById = computeGeneralScoresById(collection.getArticles());
             preloadComplete = true;
         }

@@ -1,6 +1,7 @@
 package com.sddp.sexualhealthapp.settings.controller;
 
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
@@ -77,14 +78,14 @@ public class SettingsController {
         this(
                 ContentPreferencesService.getInstance(),
                 () -> ArticlePersonalizationService.buildCuratedTagList(
-                        ArticleCollection.getInstance().getArticles()));
+                        ArticleServiceRegistry.getArticleCollection().getArticles()));
     }
 
     SettingsController(ContentPreferencesService preferencesService) {
         this(
                 preferencesService,
                 () -> ArticlePersonalizationService.buildCuratedTagList(
-                        ArticleCollection.getInstance().getArticles()));
+                        ArticleServiceRegistry.getArticleCollection().getArticles()));
     }
 
     SettingsController(ContentPreferencesService preferencesService, Supplier<List<String>> curatedTagsSupplier) {

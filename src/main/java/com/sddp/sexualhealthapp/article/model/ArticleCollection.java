@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 import com.sddp.sexualhealthapp.util.AppConstants;
 
 public class ArticleCollection {
-    private static ArticleCollection instance;
+    private static volatile ArticleCollection instance;
     private List<Article> articles;
 
     /** Filename → source string, loaded from articles-metadata.json */
@@ -30,10 +30,17 @@ public class ArticleCollection {
     }
 
     public static ArticleCollection getInstance() {
-        if (instance == null) {
-            instance = new ArticleCollection();
+        ArticleCollection local = instance;
+        if (local == null) {
+            synchronized (ArticleCollection.class) {
+                local = instance;
+                if (local == null) {
+                    local = new ArticleCollection();
+                    instance = local;
+                }
+            }
         }
-        return instance;
+        return local;
     }
 
     /**

@@ -52,8 +52,8 @@ public class ArticlePageRecommendationService {
 
     /** Production constructor. */
     public ArticlePageRecommendationService() {
-        this(new HybridSearchService()::search,
-                new ArticleSearchService()::search,
+        this(ArticleServiceRegistry.getHybridSearchService()::search,
+                ArticleServiceRegistry.getArticleSearchService()::search,
                 ContentPreferencesService.getInstance()::getPreferences);
     }
 

@@ -1,15 +1,12 @@
 package com.sddp.sexualhealthapp;
 
 import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
-import com.sddp.sexualhealthapp.article.service.HybridSearchService;
-import com.sddp.sexualhealthapp.article.service.SemanticSearchService;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
-import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 /**
  * Main application class for the Sexual Health App.
@@ -41,6 +38,17 @@ public class SexualHealthApp extends Application {
         // Check if a secret equation has been set up
         SecretAuthService authService = new SecretAuthService();
         boolean hasSecretEquation = authService.hasSecretEquation();
+
+        // Start background warm-up as early as possible so the unlock path can
+        // reuse already-prepared article/search state.
+        Thread preloadThread = new Thread(ArticleServiceRegistry::preloadSearchInfrastructure);
+        preloadThread.setDaemon(true);
+        preloadThread.start();
+
+        Thread articleWarmupThread = new Thread(ArticleBrowseRankingService::preload);
+        articleWarmupThread.setDaemon(true);
+        articleWarmupThread.start();
+
         if (hasSecretEquation) {
             // Returning user - go straight to calculator
             SceneManager.getInstance().transitionToCalculator();
@@ -53,26 +61,6 @@ public class SexualHealthApp extends Application {
         primaryStage.setTitle(AppConstants.APP_TITLE);
         primaryStage.setResizable(false);
         primaryStage.show();
-
-        if (hasSecretEquation) {
-            PauseTransition warmMainAppDelay = new PauseTransition(
-                    Duration.millis(AppConstants.MAIN_APP_PRELOAD_DELAY_MS));
-            warmMainAppDelay.setOnFinished(event -> SceneManager.getInstance().warmMainAppRoot());
-            warmMainAppDelay.play();
-        }
-
-        // Pre-load the ONNX embedding model in the background so first search is fast
-        Thread preloadThread = new Thread(() -> new SemanticSearchService().preload());
-        preloadThread.setDaemon(true);
-        preloadThread.start();
-
-        // Warm article scoring and browse-ranking data before unlock so '=' stays responsive.
-        Thread articleWarmupThread = new Thread(() -> {
-            ArticleBrowseRankingService.preload();
-            new HybridSearchService();
-        });
-        articleWarmupThread.setDaemon(true);
-        articleWarmupThread.start();
     }
 
     @Override

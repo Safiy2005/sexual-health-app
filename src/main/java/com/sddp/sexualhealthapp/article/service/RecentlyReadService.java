@@ -8,6 +8,7 @@ import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.util.AppConstants;
 
@@ -44,11 +45,11 @@ public class RecentlyReadService {
 
     public RecentlyReadService() {
         this(Paths.get(AppConstants.ARTICLE_STATE_DIR, AppConstants.RECENTLY_READ_FILE),
-                ArticleCollection.getInstance());
+                ArticleServiceRegistry.getArticleCollection());
     }
 
     public RecentlyReadService(Path storageFilePath) {
-        this(storageFilePath, ArticleCollection.getInstance());
+        this(storageFilePath, ArticleServiceRegistry.getArticleCollection());
     }
 
     public RecentlyReadService(Path storageFilePath, ArticleCollection articleCollection) {

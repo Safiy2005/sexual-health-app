@@ -78,6 +78,36 @@ public final class AppConstants {
          */
         public static final String MAIN_APP_FXML = "/fxml/main-app.fxml";
 
+        /**
+         * Path to the article reader layout file.
+         */
+        public static final String ARTICLE_VIEW_FXML = "/fxml/article-view.fxml";
+
+        /**
+         * Path to the calendar tab layout file.
+         */
+        public static final String CALENDAR_VIEW_FXML = "/fxml/calendar-view.fxml";
+
+        /**
+         * Path to the event feed layout file.
+         */
+        public static final String EVENT_FEED_FXML = "/fxml/event-feed-view.fxml";
+
+        /**
+         * Path to the create-event layout file.
+         */
+        public static final String CREATE_EVENT_FXML = "/fxml/create-event-view.fxml";
+
+        /**
+         * Path to the event detail layout file.
+         */
+        public static final String EVENT_DETAIL_FXML = "/fxml/event-detail-view.fxml";
+
+        /**
+         * Path to the settings layout file.
+         */
+        public static final String SETTINGS_VIEW_FXML = "/fxml/settings-view.fxml";
+
         // CSS Resource Paths
         /**
          * Calculator-specific styles (also used by setup screen).
