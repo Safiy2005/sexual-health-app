@@ -8,6 +8,7 @@ import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.util.AppConstants;
 
@@ -44,11 +45,11 @@ public class RecentlyReadService {
 
     public RecentlyReadService() {
         this(Paths.get(AppConstants.ARTICLE_STATE_DIR, AppConstants.RECENTLY_READ_FILE),
-                ArticleCollection.getInstance());
+                ArticleServiceRegistry.getArticleCollection());
     }
 
     public RecentlyReadService(Path storageFilePath) {
-        this(storageFilePath, ArticleCollection.getInstance());
+        this(storageFilePath, ArticleServiceRegistry.getArticleCollection());
     }
 
     public RecentlyReadService(Path storageFilePath, ArticleCollection articleCollection) {
@@ -118,6 +119,48 @@ public class RecentlyReadService {
     public void touch(String articleId, Instant timestamp) {
         touchInMemory(articleId, timestamp);
         flush();
+    }
+
+    /**
+     * Removes a single article from the recently read list in memory and on disk.
+     */
+    public void remove(String articleId) {
+        removeInMemory(articleId);
+        flush();
+    }
+
+    /**
+     * Clears the recently read list in memory and on disk.
+     */
+    public void clear() {
+        clearInMemory();
+        flush();
+    }
+
+    /**
+     * Clears the in-memory recent list without doing disk I/O.
+     * Call {@link #flush()} to persist the updated state.
+     */
+    public void clearInMemory() {
+        synchronized (lock) {
+            cachedEntries = new ArrayList<>();
+        }
+    }
+
+    /**
+     * Removes a single article from the in-memory recent list without doing disk I/O.
+     * Call {@link #flush()} to persist the updated state.
+     */
+    public void removeInMemory(String articleId) {
+        if (articleId == null || articleId.isBlank()) {
+            return;
+        }
+
+        synchronized (lock) {
+            List<RecentlyReadEntry> updatedEntries = new ArrayList<>(cachedEntries);
+            updatedEntries.removeIf(entry -> articleId.equals(entry.articleId()));
+            cachedEntries = updatedEntries;
+        }
     }
 
     /**

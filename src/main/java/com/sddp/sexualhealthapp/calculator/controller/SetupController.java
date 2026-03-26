@@ -378,7 +378,9 @@ public class SetupController {
         if (success) {
             showSuccessMessage();
             PauseTransition pause = new PauseTransition(Duration.millis(1500));
-            pause.setOnFinished(e -> SceneManager.getInstance().transitionToCalculator());
+            pause.setOnFinished(e -> {
+                SceneManager.getInstance().transitionToCalculator();
+            });
             pause.play();
         } else {
             showErrorMessage("Failed to save. Please try again.");

@@ -55,7 +55,12 @@ public final class AppConstants {
          * authentication.
          * This prevents the transition from looking too obvious.
          */
-        public static final int TRANSITION_DELAY_MS = 500;
+        public static final int TRANSITION_DELAY_MS = 120;
+
+        /**
+         * Delay before warming the main app root while the calculator is idle.
+         */
+        public static final int MAIN_APP_PRELOAD_DELAY_MS = 250;
 
         // FXML Resource Paths
         /**
@@ -72,6 +77,36 @@ public final class AppConstants {
          * Path to the main app FXML layout file.
          */
         public static final String MAIN_APP_FXML = "/fxml/main-app.fxml";
+
+        /**
+         * Path to the article reader layout file.
+         */
+        public static final String ARTICLE_VIEW_FXML = "/fxml/article-view.fxml";
+
+        /**
+         * Path to the calendar tab layout file.
+         */
+        public static final String CALENDAR_VIEW_FXML = "/fxml/calendar-view.fxml";
+
+        /**
+         * Path to the event feed layout file.
+         */
+        public static final String EVENT_FEED_FXML = "/fxml/event-feed-view.fxml";
+
+        /**
+         * Path to the create-event layout file.
+         */
+        public static final String CREATE_EVENT_FXML = "/fxml/create-event-view.fxml";
+
+        /**
+         * Path to the event detail layout file.
+         */
+        public static final String EVENT_DETAIL_FXML = "/fxml/event-detail-view.fxml";
+
+        /**
+         * Path to the settings layout file.
+         */
+        public static final String SETTINGS_VIEW_FXML = "/fxml/settings-view.fxml";
 
         // CSS Resource Paths
         /**
@@ -161,17 +196,17 @@ public final class AppConstants {
         /**
          * Default crossfade duration for setup↔calculator transitions (ms).
          */
-        public static final int SCENE_CROSSFADE_MS = 150;
+        public static final int SCENE_CROSSFADE_MS = 250;
 
         /**
          * Fast crossfade duration for the lock button transition (ms).
          */
-        public static final int LOCK_CROSSFADE_MS = 150;
+        public static final int LOCK_CROSSFADE_MS = 250;
 
         /**
          * Slower, elegant crossfade for calculator→main app reveal (ms).
          */
-        public static final int REVEAL_FADE_MS = 400;
+        public static final int REVEAL_FADE_MS = 250;
 
         /**
          * Slide duration for search↔article view transitions within the main app (ms).

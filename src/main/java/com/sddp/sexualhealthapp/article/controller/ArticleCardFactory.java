@@ -3,10 +3,12 @@ package com.sddp.sexualhealthapp.article.controller;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
+import javafx.scene.control.Button;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
@@ -152,16 +154,39 @@ public final class ArticleCardFactory {
      */
     public static VBox createRecentArticleCard(Article article, RecentlyReadEntry entry,
             Consumer<RecentlyReadEntry> onRecentClick) {
+        return createRecentArticleCard(article, entry, onRecentClick, ignored -> {
+        });
+    }
+
+    public static VBox createRecentArticleCard(Article article, RecentlyReadEntry entry,
+            Consumer<RecentlyReadEntry> onRecentClick,
+            Consumer<RecentlyReadEntry> onRemoveClick) {
         VBox card = new VBox(8);
         card.getStyleClass().addAll("article-card", "recent-article-card");
         card.setPickOnBounds(true);
 
+        HBox titleRow = new HBox(8);
+        titleRow.setAlignment(Pos.CENTER_LEFT);
+
         Label title = new Label(article.getTitle());
         title.getStyleClass().add("article-card-title");
         title.setWrapText(true);
-        title.setMaxWidth(260);
+        HBox.setHgrow(title, Priority.ALWAYS);
+        title.setMaxWidth(Double.MAX_VALUE);
         title.setMouseTransparent(true);
-        card.getChildren().add(title);
+
+        Button removeButton = new Button("Remove");
+        removeButton.getStyleClass().add("recent-article-remove-button");
+        removeButton.setMinWidth(Region.USE_PREF_SIZE);
+        removeButton.setFocusTraversable(false);
+        removeButton.setOnMouseClicked(event -> event.consume());
+        removeButton.setOnAction(event -> {
+            event.consume();
+            onRemoveClick.accept(entry);
+        });
+
+        titleRow.getChildren().addAll(title, removeButton);
+        card.getChildren().add(titleRow);
 
         int totalSections = article.getSections().size();
         int completedSections = Math.min(totalSections, Math.max(0, entry.lastReadSectionIndex() + 1));

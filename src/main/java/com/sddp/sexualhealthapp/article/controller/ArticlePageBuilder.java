@@ -18,6 +18,9 @@ import javafx.scene.text.TextFlow;
  */
 public final class ArticlePageBuilder {
 
+    public record SectionPage(VBox root, VBox relatedArticlesBox, VBox relatedArticlesContainer) {
+    }
+
     /**
      * Marker character that identifies a bullet-list line in formatted
      * section content (inserted by {@link Article}'s reformatBullets logic).
@@ -38,7 +41,7 @@ public final class ArticlePageBuilder {
      * @param totalSections the total number of sections in the article
      * @return a VBox wrapped in a ScrollPane containing the section page
      */
-    public static VBox createSectionPage(Article.Section section, int sectionNumber, int totalSections) {
+    public static SectionPage createSectionPage(Article.Section section, int sectionNumber, int totalSections) {
         VBox page = new VBox(10);
         page.getStyleClass().add("article-page");
         page.setAlignment(Pos.TOP_LEFT);
@@ -58,7 +61,11 @@ public final class ArticlePageBuilder {
         // Section content – split into text blocks and bullet-list groups
         addStyledContent(page, section.content());
 
-        return wrapInScrollPane(page);
+        VBox relatedArticlesBox = createRelatedArticlesBox();
+        VBox relatedArticlesContainer = (VBox) relatedArticlesBox.getChildren().get(2);
+        page.getChildren().add(relatedArticlesBox);
+
+        return new SectionPage(wrapInScrollPane(page), relatedArticlesBox, relatedArticlesContainer);
     }
 
     /**
@@ -220,11 +227,31 @@ public final class ArticlePageBuilder {
         ScrollPane scrollWrapper = new ScrollPane(page);
         scrollWrapper.setFitToWidth(true);
         scrollWrapper.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollWrapper.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
         scrollWrapper.getStyleClass().add("search-scroll-pane");
 
         VBox wrapper = new VBox(scrollWrapper);
         wrapper.getStyleClass().add("article-page-wrapper");
         VBox.setVgrow(scrollWrapper, Priority.ALWAYS);
         return wrapper;
+    }
+
+    private static VBox createRelatedArticlesBox() {
+        VBox relatedArticlesBox = new VBox(8);
+        relatedArticlesBox.getStyleClass().add("article-related-box");
+        relatedArticlesBox.setVisible(false);
+        relatedArticlesBox.setManaged(false);
+
+        Label title = new Label("Suggested Articles");
+        title.getStyleClass().add("article-related-title");
+
+        Label subtitle = new Label("Related to this page");
+        subtitle.getStyleClass().add("article-related-subtitle");
+
+        VBox relatedArticlesContainer = new VBox(8);
+        relatedArticlesContainer.getStyleClass().add("article-related-list");
+
+        relatedArticlesBox.getChildren().addAll(title, subtitle, relatedArticlesContainer);
+        return relatedArticlesBox;
     }
 }

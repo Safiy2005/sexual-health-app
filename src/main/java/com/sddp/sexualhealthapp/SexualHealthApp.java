@@ -1,6 +1,7 @@
 package com.sddp.sexualhealthapp;
 
-import com.sddp.sexualhealthapp.article.service.SemanticSearchService;
+import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.util.AppConstants;
@@ -36,7 +37,19 @@ public class SexualHealthApp extends Application {
 
         // Check if a secret equation has been set up
         SecretAuthService authService = new SecretAuthService();
-        if (authService.hasSecretEquation()) {
+        boolean hasSecretEquation = authService.hasSecretEquation();
+
+        // Start background warm-up as early as possible so the unlock path can
+        // reuse already-prepared article/search state.
+        Thread preloadThread = new Thread(ArticleServiceRegistry::preloadSearchInfrastructure);
+        preloadThread.setDaemon(true);
+        preloadThread.start();
+
+        Thread articleWarmupThread = new Thread(ArticleBrowseRankingService::preload);
+        articleWarmupThread.setDaemon(true);
+        articleWarmupThread.start();
+
+        if (hasSecretEquation) {
             // Returning user - go straight to calculator
             SceneManager.getInstance().transitionToCalculator();
         } else {
@@ -48,11 +61,6 @@ public class SexualHealthApp extends Application {
         primaryStage.setTitle(AppConstants.APP_TITLE);
         primaryStage.setResizable(false);
         primaryStage.show();
-
-        // Pre-load the ONNX embedding model in the background so first search is fast
-        Thread preloadThread = new Thread(() -> new SemanticSearchService().preload());
-        preloadThread.setDaemon(true);
-        preloadThread.start();
     }
 
     @Override
