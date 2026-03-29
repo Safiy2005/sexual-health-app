@@ -9,8 +9,10 @@ import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -38,6 +40,9 @@ public class SettingsController {
 
     private final DisplaySettingsService displaySettingsService = DisplaySettingsService.getInstance();
     private Consumer<DisplayMode> onDisplayModeChanged;
+
+    private final TextSizeSettingsService textSizeSettingsService = TextSizeSettingsService.getInstance();
+    private Consumer<TextSizeLevel> onTextSizeChanged;
 
     private record SettingsPageDefinition(String id, String title, String subtitle, PageBuilder builder) {
     }
@@ -108,6 +113,12 @@ public class SettingsController {
                 "Display",
                 "Switch between standard, dark, and high-contrast views.",
                 this::buildDisplayPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "text-size",
+                "Text size",
+                "Adjust the global text size across the app",
+                this::buildTextSizePage));
 
         renderSettingsCards();
         showHome();
@@ -446,6 +457,64 @@ public class SettingsController {
         });
 
         page.getChildren().addAll(intro, modeTitle, modeBody, optionsBox, resetButton);
+        return page;
+    }
+    
+    public void setOnTextSizeChanged(Consumer<TextSizeLevel> onTextSizeChanged) {
+        this.onTextSizeChanged = onTextSizeChanged;
+    }
+
+    private Node buildTextSizePage() {
+        VBox page = new VBox(18);
+        page.getStyleClass().add("settings-page-content");
+
+        Label intro = new Label(
+                "Choose a bounded text size that makes the app easier to read.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label title = new Label("Global text size");
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label(
+                "The selected size is applied consistently across articles, calendar, event screens, and settings.");
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        VBox optionsBox = new VBox(10);
+        optionsBox.getStyleClass().add("settings-tag-picker");
+
+        ToggleGroup textSizeGroup = new ToggleGroup();
+        TextSizeLevel currentLevel = textSizeSettingsService.getTextSizeLevel();
+
+        for (TextSizeLevel level : TextSizeLevel.values()) {
+            RadioButton radio = new RadioButton(level.getDisplayName());
+            radio.setToggleGroup(textSizeGroup);
+            radio.getStyleClass().add("settings-display-radio");
+            radio.setWrapText(true);
+            radio.setSelected(level == currentLevel);
+
+            radio.setOnAction(event -> {
+                textSizeSettingsService.setTextSizeLevel(level);
+                if (onTextSizeChanged != null) {
+                    onTextSizeChanged.accept(level);
+                }
+            });
+
+            optionsBox.getChildren().add(radio);
+        }
+
+        Button resetButton = new Button("Reset to standard size");
+        resetButton.getStyleClass().add("calendar-action-button");
+        resetButton.setOnAction(event -> {
+            textSizeSettingsService.resetTextSizeLevel();
+            if (onTextSizeChanged != null) {
+                onTextSizeChanged.accept(TextSizeLevel.STANDARD);
+            }
+            refresh();
+        });
+
+        page.getChildren().addAll(intro, title, body, optionsBox, resetButton);
         return page;
     }
 }

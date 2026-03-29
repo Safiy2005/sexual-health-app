@@ -21,9 +21,12 @@ import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.controller.SettingsController;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplayModeManager;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.TextSizeManager;
+import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
 
@@ -202,11 +205,14 @@ public class MainAppController {
                 (event, occurrenceDate) -> openEventDetail(event, occurrenceDate, calendarView));
 
         settingsViewController.setOnDisplayModeChanged(this::updateDisplayMode);
+        settingsViewController.setOnTextSizeChanged(this::updateTextSize);
         contentStack.sceneProperty().addListener((obs, oldScene, newScene) -> {
             if (newScene != null) {
                 applySavedDisplayMode();
+                applySavedTextSize();
             }
         });
+
 
     }
 
@@ -607,6 +613,25 @@ public class MainAppController {
         }
 
         DisplayModeManager.applyDisplayMode(contentStack.getScene().getRoot(), mode);
+    }
+
+    private void applySavedTextSize() {
+    if (contentStack == null || contentStack.getScene() == null) {
+        return;
+    }
+
+    TextSizeLevel level = TextSizeSettingsService.getInstance().getTextSizeLevel();
+    TextSizeManager.applyTextSize(contentStack.getScene().getRoot(), level);
+}
+
+private void updateTextSize(TextSizeLevel level) {
+        TextSizeSettingsService.getInstance().setTextSizeLevel(level);
+
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        TextSizeManager.applyTextSize(contentStack.getScene().getRoot(), level);
     }
 }
 

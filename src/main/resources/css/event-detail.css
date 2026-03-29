@@ -218,3 +218,49 @@
 .theme-high-contrast .overlay-body {
     -fx-text-fill: black;
 }
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+.text-size-small .event-detail-name { -fx-font-size: 20px; }
+.text-size-standard .event-detail-name { -fx-font-size: 24px; }
+.text-size-large .event-detail-name { -fx-font-size: 28px; }
+.text-size-extra-large .event-detail-name { -fx-font-size: 32px; }
+
+.text-size-small .event-detail-section-title { -fx-font-size: 11px; }
+.text-size-standard .event-detail-section-title { -fx-font-size: 13px; }
+.text-size-large .event-detail-section-title { -fx-font-size: 15px; }
+.text-size-extra-large .event-detail-section-title { -fx-font-size: 17px; }
+
+.text-size-small .event-detail-section-body,
+.text-size-small .event-detail-meta,
+.text-size-small .event-detail-recurrence-chip,
+.text-size-small .overlay-title,
+.text-size-small .overlay-body {
+    -fx-font-size: 12px;
+}
+
+.text-size-standard .event-detail-section-body,
+.text-size-standard .event-detail-meta,
+.text-size-standard .event-detail-recurrence-chip,
+.text-size-standard .overlay-title,
+.text-size-standard .overlay-body {
+    -fx-font-size: 14px;
+}
+
+.text-size-large .event-detail-section-body,
+.text-size-large .event-detail-meta,
+.text-size-large .event-detail-recurrence-chip,
+.text-size-large .overlay-title,
+.text-size-large .overlay-body {
+    -fx-font-size: 16px;
+}
+
+.text-size-extra-large .event-detail-section-body,
+.text-size-extra-large .event-detail-meta,
+.text-size-extra-large .event-detail-recurrence-chip,
+.text-size-extra-large .overlay-title,
+.text-size-extra-large .overlay-body {
+    -fx-font-size: 18px;
+}

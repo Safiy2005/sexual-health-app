@@ -384,3 +384,62 @@
 .theme-dark .settings-empty-hint {
     -fx-text-fill: #D3D3D3;
 }
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+
+.text-size-small .search-header-title { -fx-font-size: 20px; }
+.text-size-standard .search-header-title { -fx-font-size: 24px; }
+.text-size-large .search-header-title { -fx-font-size: 28px; }
+.text-size-extra-large .search-header-title { -fx-font-size: 32px; }
+
+.text-size-small .settings-detail-title { -fx-font-size: 15px; }
+.text-size-standard .settings-detail-title { -fx-font-size: 17px; }
+.text-size-large .settings-detail-title { -fx-font-size: 20px; }
+.text-size-extra-large .settings-detail-title { -fx-font-size: 23px; }
+
+.text-size-small .settings-section-title { -fx-font-size: 14px; }
+.text-size-standard .settings-section-title { -fx-font-size: 16px; }
+.text-size-large .settings-section-title { -fx-font-size: 18px; }
+.text-size-extra-large .settings-section-title { -fx-font-size: 21px; }
+
+.text-size-small .settings-page-intro,
+.text-size-small .settings-section-body,
+.text-size-small .settings-display-radio,
+.text-size-small .settings-card-subtitle {
+    -fx-font-size: 11px;
+}
+
+.text-size-standard .settings-page-intro,
+.text-size-standard .settings-section-body,
+.text-size-standard .settings-display-radio,
+.text-size-standard .settings-card-subtitle {
+    -fx-font-size: 13px;
+}
+
+.text-size-large .settings-page-intro,
+.text-size-large .settings-section-body,
+.text-size-large .settings-display-radio,
+.text-size-large .settings-card-subtitle {
+    -fx-font-size: 15px;
+}
+
+.text-size-extra-large .settings-page-intro,
+.text-size-extra-large .settings-section-body,
+.text-size-extra-large .settings-display-radio,
+.text-size-extra-large .settings-card-subtitle {
+    -fx-font-size: 17px;
+}
+
+.settings-card-list {
+    -fx-background-color: transparent;
+}
+
+#settingsHomeView,
+#settingsDetailView,
+#settingsDetailContent,
+#settingsCardContainer {
+    -fx-background-color: transparent;
+}

@@ -1,16 +1,18 @@
 package com.sddp.sexualhealthapp.article.controller;
 
-import com.sddp.sexualhealthapp.article.model.Article;
-import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
-import javafx.geometry.Pos;
-import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.VBox;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
+
+import com.sddp.sexualhealthapp.article.model.Article;
+import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
+
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
 
 /**
  * Factory for creating article card UI components used in the search results
@@ -23,7 +25,7 @@ public final class ArticleCardFactory {
     // Card inner width (~296px) minus section count (~70px) minus gaps (~24px)
     // leaves ~200px. At ~6px per character + ~14px padding per tag, this gives
     // roughly 30 usable characters across all visible tags.
-    private static final int TAG_CHAR_BUDGET = 30;
+    private static final int TAG_CHAR_BUDGET = 45;
 
     private ArticleCardFactory() {
     }
@@ -90,26 +92,32 @@ public final class ArticleCardFactory {
         Label title = new Label(article.getTitle());
         title.getStyleClass().add("article-card-title");
         title.setWrapText(true);
-        title.setMaxWidth(260);
+        title.setMaxWidth(Double.MAX_VALUE);
+        HBox.setHgrow(title, javafx.scene.layout.Priority.ALWAYS);
         titleRow.getChildren().add(title);
 
         card.getChildren().add(titleRow);
 
-        // Bottom row: section count + tag chips side by side
-        HBox bottomRow = new HBox(8);
-        bottomRow.setAlignment(Pos.CENTER_LEFT);
+        // Bottom meta area: section count on one row, tags on a wrapping row below
+        VBox metaBox = new VBox(6);
+        metaBox.setAlignment(Pos.CENTER_LEFT);
 
         int sectionCount = article.getSections().size();
         Label subtitle = new Label(sectionCount + " section" + (sectionCount != 1 ? "s" : ""));
         subtitle.getStyleClass().add("article-card-subtitle");
-        bottomRow.getChildren().add(subtitle);
 
-        // Tag chips (up to 3, fitted to available space, reordered by search relevance)
+        FlowPane tagPane = new FlowPane();
+        tagPane.setHgap(6);
+        tagPane.setVgap(6);
+        tagPane.setAlignment(Pos.CENTER_LEFT);
+        tagPane.setPrefWrapLength(240); // lets tags wrap instead of clipping
+
         List<String> tagsToShow = pickTags(article.getTags(), searchQuery, highlightedTags, preferredMatchedTags);
         for (String tag : tagsToShow) {
             Label tagLabel = new Label(tag);
             tagLabel.getStyleClass().add("article-card-tag");
             tagLabel.setMinWidth(Region.USE_PREF_SIZE);
+            tagLabel.setWrapText(false);
 
             if (preferredMatchedTags.contains(tag)) {
                 tagLabel.getStyleClass().add("article-card-tag-preferred");
@@ -117,10 +125,15 @@ public final class ArticleCardFactory {
                 tagLabel.getStyleClass().add("article-card-tag-highlighted");
             }
 
-            bottomRow.getChildren().add(tagLabel);
+            tagPane.getChildren().add(tagLabel);
         }
 
-        card.getChildren().add(bottomRow);
+        metaBox.getChildren().add(subtitle);
+        if (!tagsToShow.isEmpty()) {
+            metaBox.getChildren().add(tagPane);
+        }
+
+        card.getChildren().add(metaBox);
 
         // Click to open article
         card.setOnMouseClicked(e -> onArticleClick.accept(article));

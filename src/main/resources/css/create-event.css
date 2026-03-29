@@ -418,3 +418,77 @@
 .theme-high-contrast .exception-list-cell {
     -fx-text-fill: black;
 }
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+.text-size-small .date-picker.calendar-picker-combo .text-field,
+.text-size-small .calendar-picker-combo .list-cell,
+.text-size-small .calendar-picker-combo.spinner .text-field,
+.text-size-small .combo-box-popup .list-view .list-cell,
+.text-size-small .custom-radio,
+.text-size-small .exception-list-cell {
+    -fx-font-size: 11px;
+}
+
+.text-size-standard .date-picker.calendar-picker-combo .text-field,
+.text-size-standard .calendar-picker-combo .list-cell,
+.text-size-standard .calendar-picker-combo.spinner .text-field,
+.text-size-standard .combo-box-popup .list-view .list-cell,
+.text-size-standard .custom-radio,
+.text-size-standard .exception-list-cell {
+    -fx-font-size: 13px;
+}
+
+.text-size-large .date-picker.calendar-picker-combo .text-field,
+.text-size-large .calendar-picker-combo .list-cell,
+.text-size-large .calendar-picker-combo.spinner .text-field,
+.text-size-large .combo-box-popup .list-view .list-cell,
+.text-size-large .custom-radio,
+.text-size-large .exception-list-cell {
+    -fx-font-size: 15px;
+}
+
+.text-size-extra-large .date-picker.calendar-picker-combo .text-field,
+.text-size-extra-large .calendar-picker-combo .list-cell,
+.text-size-extra-large .calendar-picker-combo.spinner .text-field,
+.text-size-extra-large .combo-box-popup .list-view .list-cell,
+.text-size-extra-large .custom-radio,
+.text-size-extra-large .exception-list-cell {
+    -fx-font-size: 17px;
+}
+
+.text-size-small .day-toggle,
+.text-size-small .error-label {
+    -fx-font-size: 10px;
+}
+
+.text-size-standard .day-toggle,
+.text-size-standard .error-label {
+    -fx-font-size: 12px;
+}
+
+.text-size-large .day-toggle,
+.text-size-large .error-label {
+    -fx-font-size: 14px;
+}
+
+.text-size-extra-large .day-toggle,
+.text-size-extra-large .error-label {
+    -fx-font-size: 16px;
+}
+
+.text-size-extra-large .day-toggle {
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+}
+
+.text-size-extra-large .calendar-picker-combo.spinner,
+.text-size-extra-large .date-picker.calendar-picker-combo {
+    -fx-padding: 6px;
+}

@@ -787,3 +787,140 @@
 .theme-dark .swipe-arrow-label {
     -fx-text-fill: #EAEAEA;
 }
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+.text-size-small .article-card-title { -fx-font-size: 13px; }
+.text-size-standard .article-card-title { -fx-font-size: 15px; }
+.text-size-large .article-card-title { -fx-font-size: 18px; }
+.text-size-extra-large .article-card-title { -fx-font-size: 21px; }
+
+.text-size-small .article-card-subtitle,
+.text-size-small .article-card-reason,
+.text-size-small .article-card-badge,
+.text-size-small .article-card-badge-amber,
+.text-size-small .article-card-tag {
+    -fx-font-size: 9px;
+}
+
+.text-size-standard .article-card-subtitle,
+.text-size-standard .article-card-reason,
+.text-size-standard .article-card-badge,
+.text-size-standard .article-card-badge-amber,
+.text-size-standard .article-card-tag {
+    -fx-font-size: 11px;
+}
+
+.text-size-large .article-card-subtitle,
+.text-size-large .article-card-reason,
+.text-size-large .article-card-badge,
+.text-size-large .article-card-badge-amber,
+.text-size-large .article-card-tag {
+    -fx-font-size: 13px;
+}
+
+.text-size-extra-large .article-card-subtitle,
+.text-size-extra-large .article-card-reason,
+.text-size-extra-large .article-card-badge,
+.text-size-extra-large .article-card-badge-amber,
+.text-size-extra-large .article-card-tag {
+    -fx-font-size: 15px;
+}
+
+.text-size-small .article-detail-title { -fx-font-size: 20px; }
+.text-size-standard .article-detail-title { -fx-font-size: 22px; }
+.text-size-large .article-detail-title { -fx-font-size: 26px; }
+.text-size-extra-large .article-detail-title { -fx-font-size: 30px; }
+
+.text-size-small .article-section-heading { -fx-font-size: 14px; }
+.text-size-standard .article-section-heading { -fx-font-size: 16px; }
+.text-size-large .article-section-heading { -fx-font-size: 19px; }
+.text-size-extra-large .article-section-heading { -fx-font-size: 22px; }
+
+.text-size-small .article-source-label,
+.text-size-small .article-toc-item,
+.text-size-small .page-counter-label,
+.text-size-small .swipe-arrow-label {
+    -fx-font-size: 11px;
+}
+
+.text-size-standard .article-source-label,
+.text-size-standard .article-toc-item,
+.text-size-standard .page-counter-label,
+.text-size-standard .swipe-arrow-label {
+    -fx-font-size: 13px;
+}
+
+.text-size-large .article-source-label,
+.text-size-large .article-toc-item,
+.text-size-large .page-counter-label,
+.text-size-large .swipe-arrow-label {
+    -fx-font-size: 15px;
+}
+
+.text-size-extra-large .article-source-label,
+.text-size-extra-large .article-toc-item,
+.text-size-extra-large .page-counter-label,
+.text-size-extra-large .swipe-arrow-label {
+    -fx-font-size: 17px;
+}
+
+.text-size-small .article-text,
+.text-size-small .article-text-bold,
+.text-size-small .article-bullet-text,
+.text-size-small .article-bullet-text-bold {
+    -fx-font-size: 12px;
+}
+
+.text-size-standard .article-text,
+.text-size-standard .article-text-bold,
+.text-size-standard .article-bullet-text,
+.text-size-standard .article-bullet-text-bold {
+    -fx-font-size: 14px;
+}
+
+.text-size-large .article-text,
+.text-size-large .article-text-bold,
+.text-size-large .article-bullet-text,
+.text-size-large .article-bullet-text-bold {
+    -fx-font-size: 17px;
+}
+
+.text-size-extra-large .article-text,
+.text-size-extra-large .article-text-bold,
+.text-size-extra-large .article-bullet-text,
+.text-size-extra-large .article-bullet-text-bold {
+    -fx-font-size: 20px;
+}
+
+.article-card-tag,
+.article-card-badge,
+.article-card-badge-amber,
+.calendar-event-card-type,
+.event-detail-recurrence-chip {
+    -fx-wrap-text: true;
+    -fx-content-display: center;
+    -fx-alignment: center;
+    -fx-min-height: 24px;
+}
+
+.text-size-extra-large .article-card-tag,
+.text-size-extra-large .article-card-badge,
+.text-size-extra-large .article-card-badge-amber,
+.text-size-extra-large .calendar-event-card-type,
+.text-size-extra-large .event-detail-recurrence-chip {
+    -fx-font-size: 14px;
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 12px;
+    -fx-min-height: 30px;
+}
+
+.text-size-extra-large .article-card {
+    -fx-padding: 16px 16px;
+}
+
+.text-size-extra-large .article-card-tag {
+    -fx-padding: 3px 9px;
+}

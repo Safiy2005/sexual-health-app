@@ -132,3 +132,47 @@
     -fx-text-fill: white;
     -fx-border-color: black;
 }
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+.text-size-small .event-feed-section-header {
+    -fx-font-size: 13px;
+}
+
+.text-size-standard .event-feed-section-header {
+    -fx-font-size: 15px;
+}
+
+.text-size-large .event-feed-section-header {
+    -fx-font-size: 17px;
+}
+
+.text-size-extra-large .event-feed-section-header {
+    -fx-font-size: 19px;
+}
+
+.text-size-small .event-feed-day-header,
+.text-size-small .event-feed-filter-chip {
+    -fx-font-size: 10px;
+}
+
+.text-size-standard .event-feed-day-header,
+.text-size-standard .event-feed-filter-chip {
+    -fx-font-size: 12px;
+}
+
+.text-size-large .event-feed-day-header,
+.text-size-large .event-feed-filter-chip {
+    -fx-font-size: 14px;
+}
+
+.text-size-extra-large .event-feed-day-header,
+.text-size-extra-large .event-feed-filter-chip {
+    -fx-font-size: 16px;
+}
+
+.text-size-extra-large .event-feed-filter-chip {
+    -fx-padding: 8px 16px;
+}
