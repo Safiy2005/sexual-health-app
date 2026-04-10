@@ -34,6 +34,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 
 /**
  * Controller for the settings hub and detail pages.
@@ -541,28 +543,97 @@ public class SettingsController {
     }
 
     private Node buildDisguiseSettingsPage() {
-        VBox page = new VBox(18);
+        VBox page = new VBox(20);
         page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
 
-        Label title = new Label("Calculator Disguise");
-        title.getStyleClass().add("settings-section-title");
+        Label intro = new Label(
+                "Control your privacy by choosing whether the app hides behind a calculator on startup.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
 
-        Label desc = new Label("When enabled, you must enter your secret equation on startup. "
-                + "When disabled, the app opens directly to your articles.");
-        desc.getStyleClass().add("settings-section-body");
-        desc.setWrapText(true);
+        Label modeTitle = new Label("Startup Behavior");
+        modeTitle.getStyleClass().add("settings-section-title");
 
-        javafx.scene.control.CheckBox toggle = new javafx.scene.control.CheckBox("Enable disguise on startup");
+        ToggleGroup modeGroup = new ToggleGroup();
+
+        RadioButton enabledBtn = new RadioButton("Enabled (Maximum Privacy)");
+        RadioButton disabledBtn = new RadioButton("Disabled (Direct Access)");
+
+        VBox radioBox = new VBox(20);
+        radioBox.getStyleClass().add("settings-tag-picker");
+        radioBox.setPadding(new Insets(18));
+
+        radioBox.getChildren().addAll(
+                createDisguiseRadioOption(enabledBtn,
+                        "Requires your secret equation on startup. Mimics a standard calculator.", modeGroup, true),
+                createDisguiseRadioOption(disabledBtn, "Skips the calculator and opens directly to your articles.",
+                        modeGroup, false));
+
+        // Load Saved State
         DisguisePreferencesService service = DisguisePreferencesService.getInstance();
-        toggle.setSelected(service.getPreferences().calcDisguiseEnabled());
+        if (service.getPreferences().calcDisguiseEnabled()) {
+            enabledBtn.setSelected(true);
+        } else {
+            disabledBtn.setSelected(true);
+        }
 
-        // Save choice immediately when clicked
-        toggle.selectedProperty().addListener((obs, oldVal, newVal) -> {
-            service.save(new DisguisePreferences(newVal));
+        // Event Listener
+        modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
+            if (newVal != null) {
+                boolean isEnabled = (boolean) newVal.getUserData();
+                service.save(new DisguisePreferences(isEnabled));
+            }
         });
 
-        page.getChildren().addAll(title, desc, toggle);
+        // Use the new helper method to build the exact box from your image
+        VBox tipBox = createInfoBox("Tip",
+                "If you ever forget your passcode, type 999/0 into the calculator screen to safely reset it.");
+
+        page.getChildren().addAll(intro, modeTitle, radioBox, tipBox);
         return page;
+    }
+    // --- HELPER METHODS FOR DISGUISE PAGE ---
+
+    private VBox createDisguiseRadioOption(RadioButton btn, String description, ToggleGroup group, boolean isEnabled) {
+        btn.getStyleClass().add("settings-subsection-label");
+        btn.setToggleGroup(group);
+        btn.setUserData(isEnabled);
+
+        Label descLabel = new Label(description);
+        descLabel.getStyleClass().add("settings-section-body");
+        descLabel.setWrapText(true);
+        descLabel.setPadding(new Insets(0, 0, 0, 24)); // Align text under the radio button label
+
+        VBox box = new VBox(4, btn, descLabel);
+        box.getStyleClass().add("settings-radio-box");
+
+        // Make the entire box clickable, exactly like the reminders page
+        box.setOnMouseClicked(event -> {
+            btn.setSelected(true);
+            btn.requestFocus();
+        });
+
+        return box;
+    }
+
+    private VBox createInfoBox(String titleText, String bodyText) {
+        VBox box = new VBox(4);
+        box.getStyleClass().add("settings-info-box");
+
+        // Create the bold bullet point title
+        Label title = new Label("•  " + titleText);
+        title.getStyleClass().add("settings-info-title");
+
+        // Create the regular body text and indent it to align under the word, not the
+        // bullet
+        Label body = new Label(bodyText);
+        body.getStyleClass().add("settings-info-body");
+        body.setWrapText(true);
+        body.setPadding(new Insets(0, 0, 0, 16));
+
+        box.getChildren().addAll(title, body);
+        return box;
     }
 
     private FlowPane createTagPane() {
