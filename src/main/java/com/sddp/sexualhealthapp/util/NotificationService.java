@@ -12,12 +12,10 @@ import org.controlsfx.control.Notifications;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Service for handling application notifications.
@@ -120,4 +118,18 @@ public class NotificationService {
             scheduler.shutdownNow();
         }
     }
+
+    // --- For Testing ---
+
+    public static int getActiveTaskCount() {
+        return scheduledTasks.size();
+    }
+
+    public static void clearAllTasks() {
+        scheduledTasks.values().forEach(task -> task.cancel(false));
+        scheduledTasks.clear();
+    }
+
 }
+
+

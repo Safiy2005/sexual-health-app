@@ -34,6 +34,7 @@ class EventStorageServiceTest {
 
     @BeforeEach
     void setUp() throws IOException {
+        com.sddp.sexualhealthapp.util.NotificationService.clearAllTasks(); // clears global notifs so they dont carry across tests
         tempFile = Files.createTempFile("events-test-", ".json");
         Files.delete(tempFile); // Start with no file (test empty state)
         service = new EventStorageService(tempFile);
@@ -597,5 +598,26 @@ class EventStorageServiceTest {
         // 2. Assert that the JSON gracefully handles events with no reminders
         assertNull(loaded.getReminderMinutes(), "Events without reminders should stay null");
         assertNull(loaded.getLastReminderSentDate(), "Events without reminders should have a null sent date");
+    }
+    @Test
+    void testUpdateEvent_preventsDuplicateNotifications() {
+        // Arrange: Create and add an event
+        CalendarEvent event = new CalendarEvent();
+        event.setId("integ-update-1");
+        event.setName("Original Event");
+        event.setDate(LocalDate.now());
+        event.setTime(LocalTime.now().plusHours(1));
+        event.setReminderMinutes(10);
+
+        service.addEvent(event); // <-- CHANGED to 'service'
+        assertEquals(1, com.sddp.sexualhealthapp.util.NotificationService.getActiveTaskCount());
+
+        // Act: Update the event time and save it
+        event.setTime(LocalTime.now().plusHours(2));
+        service.updateEvent(event); // <-- CHANGED to 'service'
+
+        // Assert: Ensure we didn't duplicate the background task
+        assertEquals(1, com.sddp.sexualhealthapp.util.NotificationService.getActiveTaskCount(),
+                "Updating an event via storage service should replace, not duplicate, the notification task.");
     }
 }
