@@ -10,8 +10,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
-import java.util.List;
-
 /**
  * Builds the individual pages (title page and section pages) for the article
  * reader.
@@ -19,6 +17,9 @@ import java.util.List;
  * scrollable.
  */
 public final class ArticlePageBuilder {
+
+    public record SectionPage(VBox root, VBox relatedArticlesBox, VBox relatedArticlesContainer) {
+    }
 
     /**
      * Marker character that identifies a bullet-list line in formatted
@@ -31,56 +32,6 @@ public final class ArticlePageBuilder {
     }
 
     /**
-     * Creates the title/overview page for an article (page 0).
-     * Displays the article title and a table of contents listing all sections.
-     *
-     * @param article the article to build the title page for
-     * @return a VBox wrapped in a ScrollPane containing the title page
-     */
-    public static VBox createTitlePage(Article article) {
-        VBox page = new VBox(12);
-        page.getStyleClass().add("article-page");
-        page.setAlignment(Pos.TOP_LEFT);
-        page.setPadding(new Insets(4, 20, 24, 20));
-
-        Label title = new Label(article.getTitle());
-        title.getStyleClass().add("article-detail-title");
-        title.setWrapText(true);
-        page.getChildren().add(title);
-
-        // Show the article source if available
-        if (article.getSource() != null) {
-            Label sourceLabel = new Label("Source: " + article.getSource());
-            sourceLabel.getStyleClass().add("article-source-label");
-            sourceLabel.setWrapText(true);
-            page.getChildren().add(sourceLabel);
-        }
-
-        // Show a summary of available sections as a table of contents
-        List<Article.Section> sections = article.getSections();
-        if (!sections.isEmpty()) {
-            Label tocHeader = new Label("In this article (" + sections.size() + " sections)");
-            tocHeader.getStyleClass().add("article-toc-header");
-            tocHeader.setWrapText(true);
-            page.getChildren().add(tocHeader);
-
-            for (int i = 0; i < sections.size(); i++) {
-                Label tocItem = new Label((i + 1) + ".  " + sections.get(i).heading());
-                tocItem.getStyleClass().add("article-toc-item");
-                tocItem.setWrapText(true);
-                page.getChildren().add(tocItem);
-            }
-
-            Label swipeHint = new Label("Swipe left to start reading →");
-            swipeHint.getStyleClass().add("article-swipe-hint");
-            swipeHint.setWrapText(true);
-            page.getChildren().add(swipeHint);
-        }
-
-        return wrapInScrollPane(page);
-    }
-
-    /**
      * Creates a page for a single article section.
      * Text paragraphs are rendered as regular labels, while consecutive
      * bullet-point lines are grouped into a visually distinct styled box.
@@ -90,7 +41,7 @@ public final class ArticlePageBuilder {
      * @param totalSections the total number of sections in the article
      * @return a VBox wrapped in a ScrollPane containing the section page
      */
-    public static VBox createSectionPage(Article.Section section, int sectionNumber, int totalSections) {
+    public static SectionPage createSectionPage(Article.Section section, int sectionNumber, int totalSections) {
         VBox page = new VBox(10);
         page.getStyleClass().add("article-page");
         page.setAlignment(Pos.TOP_LEFT);
@@ -110,7 +61,11 @@ public final class ArticlePageBuilder {
         // Section content – split into text blocks and bullet-list groups
         addStyledContent(page, section.content());
 
-        return wrapInScrollPane(page);
+        VBox relatedArticlesBox = createRelatedArticlesBox();
+        VBox relatedArticlesContainer = (VBox) relatedArticlesBox.getChildren().get(2);
+        page.getChildren().add(relatedArticlesBox);
+
+        return new SectionPage(wrapInScrollPane(page), relatedArticlesBox, relatedArticlesContainer);
     }
 
     /**
@@ -272,11 +227,31 @@ public final class ArticlePageBuilder {
         ScrollPane scrollWrapper = new ScrollPane(page);
         scrollWrapper.setFitToWidth(true);
         scrollWrapper.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollWrapper.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
         scrollWrapper.getStyleClass().add("search-scroll-pane");
 
         VBox wrapper = new VBox(scrollWrapper);
         wrapper.getStyleClass().add("article-page-wrapper");
         VBox.setVgrow(scrollWrapper, Priority.ALWAYS);
         return wrapper;
+    }
+
+    private static VBox createRelatedArticlesBox() {
+        VBox relatedArticlesBox = new VBox(8);
+        relatedArticlesBox.getStyleClass().add("article-related-box");
+        relatedArticlesBox.setVisible(false);
+        relatedArticlesBox.setManaged(false);
+
+        Label title = new Label("Suggested Articles");
+        title.getStyleClass().add("article-related-title");
+
+        Label subtitle = new Label("Related to this page");
+        subtitle.getStyleClass().add("article-related-subtitle");
+
+        VBox relatedArticlesContainer = new VBox(8);
+        relatedArticlesContainer.getStyleClass().add("article-related-list");
+
+        relatedArticlesBox.getChildren().addAll(title, subtitle, relatedArticlesContainer);
+        return relatedArticlesBox;
     }
 }

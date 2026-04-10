@@ -29,7 +29,7 @@ public class HybridSearchService {
 
     /** Production: creates default services. */
     public HybridSearchService() {
-        this(new ArticleSearchService(), new SemanticSearchService());
+        this(ArticleServiceRegistry.getArticleSearchService(), ArticleServiceRegistry.getSemanticSearchService());
     }
 
     /** Testing: accepts injected services. */

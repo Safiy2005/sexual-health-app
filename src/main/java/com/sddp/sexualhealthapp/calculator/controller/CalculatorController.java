@@ -4,13 +4,23 @@ import com.sddp.sexualhealthapp.calculator.model.Calculator;
 import com.sddp.sexualhealthapp.calculator.service.EquationMatcher;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
-import com.sddp.sexualhealthapp.util.NotificationService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.application.Platform;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicLong;
+
 public class CalculatorController {
+
+    private static final ExecutorService authExecutor = Executors.newSingleThreadExecutor(r -> {
+        Thread thread = new Thread(r, "secret-auth-checker");
+        thread.setDaemon(true);
+        return thread;
+    });
 
     @FXML
     private Label displayLabel;
@@ -26,6 +36,7 @@ public class CalculatorController {
 
     private final Calculator calculator;
     private final SecretAuthService authService;
+    private final AtomicLong authRequestCounter = new AtomicLong();
 
     public CalculatorController() {
         this.calculator = new Calculator();
@@ -117,14 +128,28 @@ public class CalculatorController {
         String lastEquation = EquationMatcher.extractLastEquation(calculator);
 
         if (lastEquation != null && !lastEquation.isEmpty()) {
-            if (authService.verifyEquation(lastEquation)) {
-                if (SceneManager.getInstance().isTransitioning()) return;
-                // Successful authentication - transition to main app
+            long requestId = authRequestCounter.incrementAndGet();
+            authExecutor.execute(() -> {
+                boolean verified = authService.verifyEquation(lastEquation);
+                if (!verified) {
+                    return;
+                }
 
-                System.out.println("Authentication successful!");
-                SceneManager.getInstance().transitionToMainApp();
-            }
+                Platform.runLater(() -> handleSuccessfulUnlock(requestId));
+            });
         }
+    }
+
+    private void handleSuccessfulUnlock(long requestId) {
+        if (requestId != authRequestCounter.get()) {
+            return;
+        }
+        if (SceneManager.getInstance().isTransitioning()) {
+            return;
+        }
+
+        System.out.println("Authentication successful!");
+        SceneManager.getInstance().transitionToMainApp();
     }
 
     /**

@@ -1,6 +1,7 @@
 package com.sddp.sexualhealthapp.settings.controller;
 
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
@@ -47,6 +48,13 @@ public class SettingsController {
         PREFERRED
     }
 
+    private record TagPickerRefs(
+            FlowPane selectedTagsPane,
+            FlowPane availableTagsPane,
+            Label availableLabel,
+            TextField searchField) {
+    }
+
     @FXML
     private VBox settingsHomeView;
     @FXML
@@ -65,6 +73,8 @@ public class SettingsController {
     private final ContentPreferencesService preferencesService;
     private final Supplier<List<String>> curatedTagsSupplier;
     private final List<SettingsPageDefinition> pageDefinitions = new ArrayList<>();
+    private TagPickerRefs blockedTagPickerRefs;
+    private TagPickerRefs preferredTagPickerRefs;
     private String currentPageId;
     private Runnable onPreferencesChanged;
 
@@ -72,14 +82,14 @@ public class SettingsController {
         this(
                 ContentPreferencesService.getInstance(),
                 () -> ArticlePersonalizationService.buildCuratedTagList(
-                        ArticleCollection.getInstance().getArticles()));
+                        ArticleServiceRegistry.getArticleCollection().getArticles()));
     }
 
     SettingsController(ContentPreferencesService preferencesService) {
         this(
                 preferencesService,
                 () -> ArticlePersonalizationService.buildCuratedTagList(
-                        ArticleCollection.getInstance().getArticles()));
+                        ArticleServiceRegistry.getArticleCollection().getArticles()));
     }
 
     SettingsController(ContentPreferencesService preferencesService, Supplier<List<String>> curatedTagsSupplier) {
@@ -164,6 +174,8 @@ public class SettingsController {
     private void openPage(SettingsPageDefinition page) {
         currentPageId = page.id();
         settingsDetailTitle.setText(page.title());
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
         settingsDetailContent.getChildren().setAll(page.builder().build());
 
         settingsHomeView.setVisible(false);
@@ -175,6 +187,8 @@ public class SettingsController {
 
     private void showHome() {
         currentPageId = null;
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
         renderSettingsCards();
         settingsHomeView.setVisible(true);
         settingsHomeView.setManaged(true);
@@ -195,13 +209,15 @@ public class SettingsController {
 
         Label blockedTitle = new Label("Blocked tags");
         blockedTitle.getStyleClass().add("settings-section-title");
-        Label blockedBody = new Label("Articles with these tags will stay out of article lists, search results, and recommendations.");
+        Label blockedBody = new Label(
+                "Articles with these tags will stay out of article lists, search results, and recommendations.");
         blockedBody.getStyleClass().add("settings-section-body");
         blockedBody.setWrapText(true);
 
         Label preferredTitle = new Label("Prioritise these tags");
         preferredTitle.getStyleClass().add("settings-section-title");
-        Label preferredBody = new Label("These tags add a small ranking boost in search and receive a stronger result highlight.");
+        Label preferredBody = new Label(
+                "These tags add a small ranking boost in search and receive a stronger result highlight.");
         preferredBody.getStyleClass().add("settings-section-body");
         preferredBody.setWrapText(true);
 
@@ -370,13 +386,17 @@ public class SettingsController {
         availableLabel.getStyleClass().add("settings-subsection-label");
         FlowPane availableTagsPane = createTagPane();
 
-        renderSelectedTagChips(selectedTagsPane, section);
-        renderAvailableTagChips(availableTagsPane, section, "");
+        TagPickerRefs refs = new TagPickerRefs(selectedTagsPane, availableTagsPane, availableLabel, searchField);
+        if (section == TagSection.BLOCKED) {
+            blockedTagPickerRefs = refs;
+        } else {
+            preferredTagPickerRefs = refs;
+        }
+
+        updateTagPicker(refs, section);
 
         searchField.textProperty().addListener((obs, oldValue, newValue) -> {
-            String label = newValue == null || newValue.isBlank() ? "Suggestions" : "Matches";
-            availableLabel.setText(label);
-            renderAvailableTagChips(availableTagsPane, section, newValue);
+            updateTagPicker(refs, section);
         });
 
         picker.getChildren().addAll(selectedLabel, selectedTagsPane, searchField, availableLabel, availableTagsPane);
@@ -468,7 +488,7 @@ public class SettingsController {
 
         preferencesService.savePreferences(new ContentPreferences(blocked, preferred));
         notifyPreferencesChanged();
-        refresh();
+        updateVisibleTagPickers();
     }
 
     private void notifyPreferencesChanged() {
@@ -516,5 +536,25 @@ public class SettingsController {
                 .filter(page -> page.id().equals(currentPageId))
                 .findFirst()
                 .orElse(null);
+    }
+
+    private void updateVisibleTagPickers() {
+        if (blockedTagPickerRefs != null) {
+            updateTagPicker(blockedTagPickerRefs, TagSection.BLOCKED);
+        }
+        if (preferredTagPickerRefs != null) {
+            updateTagPicker(preferredTagPickerRefs, TagSection.PREFERRED);
+        }
+    }
+
+    private void updateTagPicker(TagPickerRefs refs, TagSection section) {
+        if (refs == null) {
+            return;
+        }
+
+        String query = refs.searchField().getText();
+        refs.availableLabel().setText(query == null || query.isBlank() ? "Suggestions" : "Matches");
+        renderSelectedTagChips(refs.selectedTagsPane(), section);
+        renderAvailableTagChips(refs.availableTagsPane(), section, query);
     }
 }

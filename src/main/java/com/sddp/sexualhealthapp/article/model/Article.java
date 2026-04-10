@@ -24,6 +24,7 @@ public class Article {
     private String source;
     private List<Section> sections;
     private List<String> tags = List.of();
+    private List<String> keywords = List.of();
     private String fileName;
 
     private Optional<String> extractText(Node node) {
@@ -143,6 +144,14 @@ public class Article {
 
     public void setTags(List<String> tags) {
         this.tags = tags != null ? List.copyOf(tags) : List.of();
+    }
+
+    public List<String> getKeywords() {
+        return keywords;
+    }
+
+    public void setKeywords(List<String> keywords) {
+        this.keywords = keywords != null ? List.copyOf(keywords) : List.of();
     }
 
     public String getFileName() {

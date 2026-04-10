@@ -1,8 +1,11 @@
 package com.sddp.sexualhealthapp.article.controller;
 
 import com.sddp.sexualhealthapp.article.model.Article;
+import com.sddp.sexualhealthapp.article.model.SearchResult;
+import com.sddp.sexualhealthapp.article.service.ArticlePageRecommendationService;
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -15,7 +18,13 @@ import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,6 +33,11 @@ import java.util.regex.Pattern;
  * Manages paginated article sections with swipe navigation and page indicators.
  */
 public class ArticleViewController {
+
+    @FunctionalInterface
+    interface SectionRecommendationProvider {
+        List<SearchResult> recommend(Article article, int sectionIndex, int maxResults);
+    }
 
     @FXML
     private StackPane articlePageContainer;
@@ -48,19 +62,35 @@ public class ArticleViewController {
 
     private boolean navMenuOpen = false;
     private Runnable onBackToSearch;
+    private BiConsumer<Article, Integer> onSectionViewed;
+    private Consumer<Article> onSuggestedArticleSelected;
 
-    private List<VBox> articlePages;
+    private List<ArticlePageBuilder.SectionPage> articlePages;
     private int currentPageIndex;
     private double swipeStartX;
+    private Article currentArticle;
+    private final SectionRecommendationProvider recommendationProvider;
+    private final Map<Integer, List<SearchResult>> cachedSuggestionsByPage = new HashMap<>();
+    private final Set<Integer> loadingSuggestionPages = new HashSet<>();
+    private long recommendationSessionId = 0L;
 
     private boolean hasSetUpSwipeEvents = false;
 
     private static final double SWIPE_THRESHOLD = 50.0;
     private static final int SLIDE_DURATION_MS = 250;
+    private static final int MAX_SUGGESTED_ARTICLES = 3;
 
     /** Matches headings ending with an optional colon + "Part N" suffix. */
     private static final Pattern PART_PATTERN = Pattern.compile("^(.+?)(?::?\\s*Part\\s+\\d+)$",
             Pattern.CASE_INSENSITIVE);
+
+    public ArticleViewController() {
+        this(new ArticlePageRecommendationService()::recommendForPage);
+    }
+
+    ArticleViewController(SectionRecommendationProvider recommendationProvider) {
+        this.recommendationProvider = recommendationProvider;
+    }
 
     /**
      * Sets the callback to invoke when the user presses the Back button.
@@ -71,34 +101,69 @@ public class ArticleViewController {
         this.onBackToSearch = callback;
     }
 
+    public void setOnSectionViewed(BiConsumer<Article, Integer> callback) {
+        this.onSectionViewed = callback;
+    }
+
+    public void setOnSuggestedArticleSelected(Consumer<Article> callback) {
+        this.onSuggestedArticleSelected = callback;
+    }
+
     /**
      * Opens an article in the paginated reader.
-     * Builds title and section pages, sets up swipe listeners, and displays page 0.
+     * Builds section pages, sets up swipe listeners, and displays the first page.
      *
      * @param article the article to display
      */
     public void openArticle(Article article) {
-        articlePages = new ArrayList<>();
-        currentPageIndex = 0;
-        articlePageContainer.getChildren().clear();
+        openArticleAtSection(article, -1);
+    }
 
-        // Page 0: Title page with article overview
-        VBox titlePage = ArticlePageBuilder.createTitlePage(article);
-        articlePages.add(titlePage);
+    /**
+     * Opens an article with an optional initial section selection.
+     *
+     * @param article      the article to display
+     * @param sectionIndex the zero-based section index to open, or a negative
+     *                     value to start on the first section page
+     */
+    public void openArticleAtSection(Article article, int sectionIndex) {
+        openArticleAtSection(article, sectionIndex, true);
+    }
+
+    /**
+     * Opens an article with an optional initial section selection and optional
+     * initial section-view callback.
+     *
+     * @param article      the article to display
+     * @param sectionIndex the zero-based section index to open, or a negative
+     *                     value to start on the first section page
+     * @param notifyOnOpen whether to emit an initial section-view callback for
+     *                     the starting section page
+     */
+    public void openArticleAtSection(Article article, int sectionIndex, boolean notifyOnOpen) {
+        currentArticle = article;
+        articlePages = new ArrayList<>();
+        cachedSuggestionsByPage.clear();
+        loadingSuggestionPages.clear();
+        recommendationSessionId++;
+        articlePageContainer.getChildren().clear();
 
         // One page per section
         List<Article.Section> sections = article.getSections();
         for (int i = 0; i < sections.size(); i++) {
-            VBox sectionPage = ArticlePageBuilder.createSectionPage(sections.get(i), i + 1, sections.size());
+            ArticlePageBuilder.SectionPage sectionPage = ArticlePageBuilder.createSectionPage(
+                    sections.get(i), i + 1, sections.size());
             articlePages.add(sectionPage);
         }
 
-        // Add all pages to the container (only the first is visible)
+        currentPageIndex = clampPageIndex(sectionIndex >= 0 ? sectionIndex : 0);
+
+        // Add all pages to the container (only the selected page is visible)
         for (int i = 0; i < articlePages.size(); i++) {
-            VBox page = articlePages.get(i);
-            page.setVisible(i == 0);
-            page.setTranslateX(0);
-            articlePageContainer.getChildren().add(page);
+            VBox pageRoot = articlePages.get(i).root();
+            pageRoot.setVisible(i == currentPageIndex);
+            pageRoot.setTranslateX(0);
+            articlePageContainer.getChildren().add(pageRoot);
         }
 
         // Update arrow indicators
@@ -130,6 +195,12 @@ public class ArticleViewController {
                 }
             });
         }
+
+        if (notifyOnOpen) {
+            notifySectionViewed();
+        }
+
+        loadSuggestionsForPage(currentPageIndex);
     }
 
     /**
@@ -142,8 +213,8 @@ public class ArticleViewController {
         }
 
         boolean goingForward = targetIndex > currentPageIndex;
-        VBox outgoingPage = articlePages.get(currentPageIndex);
-        VBox incomingPage = articlePages.get(targetIndex);
+        VBox outgoingPage = articlePages.get(currentPageIndex).root();
+        VBox incomingPage = articlePages.get(targetIndex).root();
         double width = articlePageContainer.getWidth();
 
         // Reset scroll position to top for the incoming page
@@ -172,6 +243,23 @@ public class ArticleViewController {
         currentPageIndex = targetIndex;
         updateArrowIndicators();
         updatePageCounter();
+        notifySectionViewed();
+        loadSuggestionsForPage(currentPageIndex);
+    }
+
+    private int clampPageIndex(int pageIndex) {
+        if (articlePages == null || articlePages.isEmpty()) {
+            return 0;
+        }
+        return Math.max(0, Math.min(pageIndex, articlePages.size() - 1));
+    }
+
+    private void notifySectionViewed() {
+        if (onSectionViewed == null || currentArticle == null) {
+            return;
+        }
+
+        onSectionViewed.accept(currentArticle, currentPageIndex);
     }
 
     // This may break if the layout of article section pages changes...
@@ -186,6 +274,11 @@ public class ArticleViewController {
      * Shows/hides the left and right arrow labels based on the current page.
      */
     private void updateArrowIndicators() {
+        if (articlePages == null || articlePages.isEmpty()) {
+            leftArrowLabel.setVisible(false);
+            rightArrowLabel.setVisible(false);
+            return;
+        }
         leftArrowLabel.setVisible(currentPageIndex > 0);
         rightArrowLabel.setVisible(currentPageIndex < articlePages.size() - 1);
     }
@@ -194,7 +287,121 @@ public class ArticleViewController {
      * Updates the page counter label (e.g. "1 / 5").
      */
     private void updatePageCounter() {
+        if (articlePages == null || articlePages.isEmpty()) {
+            pageCounterLabel.setText("0 / 0");
+            return;
+        }
         pageCounterLabel.setText((currentPageIndex + 1) + " / " + articlePages.size());
+    }
+
+    private void loadSuggestionsForPage(int pageIndex) {
+        if (recommendationProvider == null || currentArticle == null
+                || articlePages == null || pageIndex < 0 || pageIndex >= articlePages.size()) {
+            return;
+        }
+
+        ArticlePageBuilder.SectionPage page = articlePages.get(pageIndex);
+        List<SearchResult> cached = cachedSuggestionsByPage.get(pageIndex);
+        if (cached != null) {
+            renderSuggestedArticles(page, pageIndex, cached);
+            return;
+        }
+
+        if (loadingSuggestionPages.contains(pageIndex)) {
+            showSuggestedArticlesLoading(page);
+            return;
+        }
+
+        Article requestArticle = currentArticle;
+        long sessionId = recommendationSessionId;
+        loadingSuggestionPages.add(pageIndex);
+        showSuggestedArticlesLoading(page);
+
+        Thread recommendationThread = new Thread(() -> {
+            List<SearchResult> recommendations;
+            try {
+                recommendations = recommendationProvider.recommend(
+                        requestArticle,
+                        pageIndex,
+                        MAX_SUGGESTED_ARTICLES);
+            } catch (RuntimeException e) {
+                recommendations = List.of();
+            }
+
+            List<SearchResult> finalRecommendations = recommendations == null ? List.of() : List.copyOf(recommendations);
+            Platform.runLater(() -> {
+                if (sessionId != recommendationSessionId || currentArticle != requestArticle
+                        || pageIndex < 0 || pageIndex >= articlePages.size()) {
+                    return;
+                }
+
+                loadingSuggestionPages.remove(pageIndex);
+                cachedSuggestionsByPage.put(pageIndex, finalRecommendations);
+
+                if (currentPageIndex == pageIndex) {
+                    renderSuggestedArticles(articlePages.get(pageIndex), pageIndex, finalRecommendations);
+                }
+            });
+        });
+        recommendationThread.setDaemon(true);
+        recommendationThread.start();
+    }
+
+    private void showSuggestedArticlesLoading(ArticlePageBuilder.SectionPage page) {
+        page.relatedArticlesBox().setVisible(true);
+        page.relatedArticlesBox().setManaged(true);
+        page.relatedArticlesContainer().getChildren().clear();
+
+        Label loadingLabel = new Label("Finding related articles...");
+        loadingLabel.getStyleClass().add("article-related-status");
+        page.relatedArticlesContainer().getChildren().add(loadingLabel);
+    }
+
+    private void renderSuggestedArticles(ArticlePageBuilder.SectionPage page,
+            int pageIndex,
+            List<SearchResult> recommendations) {
+        page.relatedArticlesContainer().getChildren().clear();
+        if (recommendations == null || recommendations.isEmpty()) {
+            page.relatedArticlesBox().setVisible(false);
+            page.relatedArticlesBox().setManaged(false);
+            return;
+        }
+
+        page.relatedArticlesBox().setVisible(true);
+        page.relatedArticlesBox().setManaged(true);
+
+        String queryHint = buildSuggestionQueryHint(pageIndex);
+        for (SearchResult recommendation : recommendations) {
+            page.relatedArticlesContainer().getChildren().add(
+                    ArticleCardFactory.createArticleCard(
+                            recommendation.article(),
+                            -1.0,
+                            queryHint,
+                            recommendation.highlightedTags(),
+                            recommendation.preferredMatchedTags(),
+                            selectedArticle -> {
+                                if (onSuggestedArticleSelected != null) {
+                                    onSuggestedArticleSelected.accept(selectedArticle);
+                                }
+                            }));
+        }
+    }
+
+    private String buildSuggestionQueryHint(int pageIndex) {
+        if (currentArticle == null || pageIndex < 0 || pageIndex >= currentArticle.getSections().size()) {
+            return "";
+        }
+
+        Article.Section currentSection = currentArticle.getSections().get(pageIndex);
+        StringBuilder hint = new StringBuilder();
+        hint.append(currentArticle.getTitle()).append(' ').append(currentSection.heading());
+        if (!currentArticle.getTags().isEmpty()) {
+            hint.append(' ').append(String.join(" ", currentArticle.getTags()));
+        }
+        if (!currentArticle.getKeywords().isEmpty()) {
+            hint.append(' ').append(String.join(" ", currentArticle.getKeywords()));
+        }
+        return hint.toString().trim();
     }
 
     @FXML
@@ -219,6 +426,16 @@ public class ArticleViewController {
         }
     }
 
+    @FXML
+    private void handleLeftArrowClick() {
+        navigateToPage(currentPageIndex - 1);
+    }
+
+    @FXML
+    private void handleRightArrowClick() {
+        navigateToPage(currentPageIndex + 1);
+    }
+
     /**
      * Returns the base heading for grouping, stripping any ": Part N" suffix.
      */
@@ -236,15 +453,6 @@ public class ArticleViewController {
         navMenuContent.getChildren().clear();
 
         List<Article.Section> sections = article.getSections();
-
-        // Title page entry
-        HBox titleRow = createNavMenuItem("\u2302", article.getTitle());
-        titleRow.setUserData(0);
-        titleRow.setOnMouseClicked(e -> {
-            navigateToPage(0);
-            hideNavMenu();
-        });
-        navMenuContent.getChildren().add(titleRow);
 
         // Group consecutive sections that share a base heading
         int i = 0;
@@ -278,7 +486,7 @@ public class ArticleViewController {
                 dotsRow.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
 
                 for (int j = groupStart; j < groupStart + groupSize; j++) {
-                    final int pageIndex = j + 1;
+                    final int pageIndex = j;
 
                     Label dot = new Label(String.valueOf(j - groupStart + 1));
                     dot.getStyleClass().add("nav-menu-dot-button");
@@ -293,7 +501,7 @@ public class ArticleViewController {
                 navMenuContent.getChildren().add(groupWrapper);
             } else {
                 // Single section – render normally
-                final int pageIndex = groupStart + 1;
+                final int pageIndex = groupStart;
                 Article.Section section = sections.get(groupStart);
 
                 HBox row = createNavMenuItem(String.valueOf(displayNumber), section.heading());
@@ -347,11 +555,12 @@ public class ArticleViewController {
             if (item instanceof VBox wrapper
                     && wrapper.getStyleClass().contains("nav-menu-group-wrapper")) {
                 for (javafx.scene.Node child : wrapper.getChildren()) {
-                    if (child instanceof HBox hbox) {
-                        for (javafx.scene.Node dot : hbox.getChildren()) {
+                    if (child instanceof FlowPane flowPane) {
+                        for (javafx.scene.Node dot : flowPane.getChildren()) {
                             dot.getStyleClass().remove("nav-menu-dot-active");
                             if (dot.getUserData() instanceof Integer dotPage
                                     && dotPage == currentPageIndex) {
+                                wrapper.getStyleClass().add("nav-menu-item-active");
                                 dot.getStyleClass().add("nav-menu-dot-active");
                                 activeChildIndex = i;
                             }

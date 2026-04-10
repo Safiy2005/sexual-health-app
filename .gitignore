@@ -153,3 +153,5 @@ coverage/
 
 # Semantic Embeddings Cache
 semantic_embeddings.cache
+src/main/resources/settings/content-preferences.json
+src/main/resources/article-state/recently-read.json

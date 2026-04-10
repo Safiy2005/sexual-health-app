@@ -85,6 +85,20 @@ public final class ArticlePersonalizationService {
                 return true;
             }
         }
+
+        String title = article.getTitle();
+        if (title != null && !title.isBlank()) {
+            String titleWords = " " + title.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]+", " ") + " ";
+            for (String blockedTag : preferences.blockedTags()) {
+                if (blockedTag == null || blockedTag.isBlank())
+                    continue;
+                String blockedWords = " " + blockedTag.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]+", " ") + " ";
+                if (titleWords.contains(blockedWords)) {
+                    return true;
+                }
+            }
+        }
+
         return false;
     }
 
