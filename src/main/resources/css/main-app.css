@@ -205,6 +205,34 @@
     -fx-background-color: rgba(61, 90, 91, 0.04); /* Very slight darken */
     -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.04), 3, 0, 0, 1); /* Shadow shrinks, card feels "pressed in" */
 }
+/* The outer circle (unselected) */
+.radio-button .radio {
+    -fx-border-color: #9AABAB;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-background-color: white;
+    -fx-padding: 5px;
+}
+
+/* The outer circle (when hovered) */
+.radio-button:hover .radio {
+    -fx-border-color: #7DBBB5;
+}
+
+/* The outer circle (when selected) */
+.radio-button:selected .radio {
+    -fx-border-color: #5F7474;
+    -fx-border-width: 2px;
+}
+
+/* The inner dot (only visible when selected) */
+.radio-button:selected .radio .dot {
+    -fx-background-color: #5F7474;
+    -fx-background-radius: 50%;
+    -fx-padding: 5.5px;
+    -fx-background-insets: 1.5px;
+}
 
 /* ============================================
    BOTTOM NAVIGATION BAR
