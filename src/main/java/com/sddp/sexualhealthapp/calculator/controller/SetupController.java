@@ -18,7 +18,10 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.util.Duration;
-
+import javafx.scene.control.CheckBox;
+import javafx.beans.binding.Bindings;
+import javafx.application.Platform;
+import javafx.scene.control.ScrollPane;
 /**
  * Controller for the combined onboarding tutorial and setup wizard.
  *
@@ -99,6 +102,28 @@ public class SetupController {
     @FXML
     private VBox videoPlaceholder3;
 
+    // --- Privacy Policy page ---
+    @FXML
+    private VBox privacyPolicyPage;
+    @FXML
+    private CheckBox storageAgree;
+    @FXML
+    private CheckBox analyticsAgree;
+    @FXML
+    private CheckBox notificationAgree;
+    @FXML
+    private CheckBox passcodeAgree;
+    @FXML
+    private Button privacyContinueBtn;
+    @FXML
+    private VBox card2;
+    @FXML
+    private VBox card3;
+    @FXML
+    private VBox card4;
+    @FXML
+    private ScrollPane privacyScrollPane;
+
     /**
      * Per-page media players, indexed by page number (0-2 for onboarding pages).
      * A slot is null if that page has no video file available.
@@ -134,13 +159,40 @@ public class SetupController {
      */
     @FXML
     private void initialize() {
-        pages = new VBox[]{onboardingPage1, onboardingPage2, onboardingPage3, setupPage};
+        pages = new VBox[]{onboardingPage1, onboardingPage2, onboardingPage3, privacyPolicyPage, setupPage};
         currentPage = 0;
 
         for (int i = 0; i < pages.length; i++) {
             pages[i].setTranslateX(i * AppConstants.APP_WIDTH);
         }
 
+        // revealing privacy p cards 1 by 1 for engagement
+        if (card2 != null && card3 != null && card4 != null) {
+            card2.visibleProperty().bind(storageAgree.selectedProperty());
+            card2.managedProperty().bind(card2.visibleProperty());
+            card3.visibleProperty().bind(analyticsAgree.selectedProperty());
+            card3.managedProperty().bind(card3.visibleProperty());
+            card4.visibleProperty().bind(notificationAgree.selectedProperty());
+            card4.managedProperty().bind(card4.visibleProperty());
+            storageAgree.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                if (!isNowSelected) {analyticsAgree.setSelected(false);} else {scrollToBottom();}
+            });
+            analyticsAgree.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                if (!isNowSelected) {notificationAgree.setSelected(false);} else {scrollToBottom();}
+            });
+            notificationAgree.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                if (!isNowSelected) {passcodeAgree.setSelected(false);} else {scrollToBottom();}
+            });
+        }
+        // cant continue if not ackowledged all of pp
+        if (privacyContinueBtn != null) {
+            privacyContinueBtn.disableProperty().bind(
+                    Bindings.not(storageAgree.selectedProperty().and(analyticsAgree.selectedProperty()).
+                            and(notificationAgree.selectedProperty()).and(passcodeAgree.selectedProperty()))
+            );
+        }
+
+        setupPrivacyPolicy();
         loadOnboardingVideos();
         updateDisplay();
         showEnteringState();
@@ -500,6 +552,58 @@ public class SetupController {
             return null;
         }
     }
+
+    // =========================================================
+    // privacy policy setup bits and bobs
+    // =========================================================
+
+
+    private void setupPrivacyPolicy() {
+        // privacy policy cards 1 by 1 for usr engagement and understanding
+        if (card2 != null && card3 != null && card4 != null) {
+            card2.visibleProperty().bind(storageAgree.selectedProperty());
+            card2.managedProperty().bind(card2.visibleProperty());
+            card3.visibleProperty().bind(analyticsAgree.selectedProperty());
+            card3.managedProperty().bind(card3.visibleProperty());
+            card4.visibleProperty().bind(notificationAgree.selectedProperty());
+            card4.managedProperty().bind(card4.visibleProperty());
+
+            // pp cards rely on previous to appear
+            storageAgree.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                if (!isNowSelected) {analyticsAgree.setSelected(false);} else {scrollToBottom();}
+            });
+
+            analyticsAgree.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                if (!isNowSelected) {notificationAgree.setSelected(false);} else {scrollToBottom();}
+            });
+
+            notificationAgree.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+                if (!isNowSelected) {passcodeAgree.setSelected(false);} else {scrollToBottom();}
+            });
+        }
+
+        // only allow user to continue once agreed to all
+        if (privacyContinueBtn != null) {
+            privacyContinueBtn.disableProperty().bind(
+                    Bindings.not(storageAgree.selectedProperty().and(analyticsAgree.selectedProperty())
+                            .and(notificationAgree.selectedProperty()).and(passcodeAgree.selectedProperty()))
+            );
+        }
+    }
+
+    private void scrollToBottom() {
+        if (privacyScrollPane != null) {
+            Platform.runLater(() -> {
+                // 1. Force JavaFX to immediately calculate the newly revealed card's height
+                privacyScrollPane.applyCss();
+                privacyScrollPane.layout();
+
+                // 2. Now that the exact height is known, snap to the absolute bottom
+                privacyScrollPane.setVvalue(privacyScrollPane.getVmax());
+            });
+        }
+    }
+
 
     /**
      * Gets the calculator model (for testing purposes).
