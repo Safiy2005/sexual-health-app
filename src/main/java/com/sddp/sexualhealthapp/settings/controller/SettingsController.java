@@ -5,6 +5,7 @@ import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
+import com.sddp.sexualhealthapp.util.AppResetService;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -25,6 +26,7 @@ import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMod
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
+
 
 /**
  * Controller for the settings hub and detail pages.
@@ -332,45 +334,116 @@ public class SettingsController {
         ReminderPreferences prefs = new ReminderPreferences(mode, customTitle, customBody);
         ReminderPreferencesService.getInstance().savePreferences(prefs);
     }
-
     private Node buildPrivacyPolicyPage() {
-        VBox page = new VBox(18); // Spacing between cards
+        VBox page = new VBox(14);
         page.getStyleClass().add("settings-page-content");
-
+        page.setPadding(new Insets(0, 0, 80, 0));
         Label intro = new Label("We believe your health data is yours alone. Here is exactly how we protect your privacy.");
         intro.getStyleClass().add("settings-page-intro");
         intro.setWrapText(true);
         page.getChildren().add(intro);
 
-        // Card 1: Local Storage
+        // --- Standard Policy Cards ---
         page.getChildren().add(createPolicyCard("Local Storage & Data",
                 "All your data, including preferences and activity, is stored strictly locally on your device. It will never be uploaded, sold, or shared with external sources."));
 
-        // Card 2: Zero Analytics
         page.getChildren().add(createPolicyCard("Zero Analytics",
                 "We do not track your usage, monitor what articles you read, or collect behavioral data. There are no tracking scripts hidden in the background."));
 
-        // Card 3: Notifications
         page.getChildren().add(createPolicyCard("Notifications & Reminders",
                 "All reminders are generated directly on your device. You have full control over how they appear, including a disguised mode to protect your privacy."));
 
-        // Card 4: Passcode & Reset
         page.getChildren().add(createPolicyCard("Passcode Encryption",
-                "Your passcode is securely encrypted. If you forget your passcode you can reset it by entering the equation 999/0 into the calculator disguise."));
+                "Your passcode is securely encrypted. You can reset your passcode by entering 999/0 into the calculator disguise."));
+
+        // --- Danger Zone: Delete All Data (Mobile Inline Style) ---
+        VBox dangerZone = createPolicyCard("Reset App",
+                "This will permanently erase all your calendar events, app preferences, and your current passcode. The app will be completely reset.");
+
+        // The initial button
+        Button deleteBtn = new Button("Delete All Data");
+        deleteBtn.setStyle("-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
+        deleteBtn.setTranslateY(4);
+
+        // The inline confirmation UI (Hidden by default)
+        VBox confirmBox = new VBox(10);
+        confirmBox.setVisible(false);
+        confirmBox.setManaged(false);
+        confirmBox.setPadding(new Insets(10, 0, 0, 0));
+
+        Label confirmLabel = new Label("Type 'I want to fully reset the app' to confirm:");
+        confirmLabel.setStyle("-fx-text-fill: #9A5151; -fx-font-size: 12px; -fx-font-weight: bold;");
+        confirmLabel.setWrapText(true);
+
+        TextField confirmInput = new TextField();
+        confirmInput.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        confirmInput.setPromptText("I want to fully reset the app");
+
+        Label errorLabel = new Label("Text does not match. Please try again.");
+        errorLabel.setStyle("-fx-text-fill: #9A5151; -fx-font-size: 11px;");
+        errorLabel.setVisible(false);
+        errorLabel.setManaged(false);
+
+        Button confirmWipeBtn = new Button("Confirm Reset");
+        confirmWipeBtn.setStyle("-fx-background-color: #9A5151; -fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 8 14; -fx-background-radius: 6; -fx-cursor: hand;");
+
+        Button cancelBtn = new Button("Cancel");
+        cancelBtn.setStyle("-fx-background-color: transparent; -fx-text-fill: #5C6B6B; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;");
+
+        HBox actionBox = new HBox(12, confirmWipeBtn, cancelBtn);
+        actionBox.setAlignment(Pos.CENTER_LEFT);
+
+        confirmBox.getChildren().addAll(confirmLabel, confirmInput, errorLabel, actionBox);
+
+        // --- Wiring the Button Actions ---
+
+        // When initial Delete button is tapped -> Hide button, Show confirm UI
+        deleteBtn.setOnAction(e -> {
+            deleteBtn.setVisible(false);
+            deleteBtn.setManaged(false);
+            confirmBox.setVisible(true);
+            confirmBox.setManaged(true);
+            errorLabel.setVisible(false);
+            errorLabel.setManaged(false);
+            confirmInput.clear();
+        });
+
+        // When Cancel is tapped -> Hide confirm UI, Show initial Delete button
+        cancelBtn.setOnAction(e -> {
+            confirmBox.setVisible(false);
+            confirmBox.setManaged(false);
+            deleteBtn.setVisible(true);
+            deleteBtn.setManaged(true);
+        });
+
+        // When Confirm Reset is tapped -> Validate and Wipe
+        confirmWipeBtn.setOnAction(e -> {
+            if ("I want to fully reset the app".equals(confirmInput.getText().trim())) {
+                AppResetService.wipeAllDataAndReset();
+            } else {
+                errorLabel.setVisible(true);
+                errorLabel.setManaged(true);
+            }
+        });
+
+        dangerZone.getChildren().addAll(deleteBtn, confirmBox);
+        page.getChildren().add(dangerZone);
 
         return page;
     }
 
-    // Helper method to create consistent cards
+
+    // Creates a card that looks exactly like a settings card but WITHOUT the hover/clickable effects
     private VBox createPolicyCard(String titleText, String bodyText) {
         VBox card = new VBox(6);
-        card.getStyleClass().add("settings-card"); // Matches the main settings cards
+        // We use inline styles here to bypass the hover effects of the .settings-card CSS class
+        card.setStyle("-fx-background-color: white; -fx-background-radius: 12px; -fx-padding: 14px 16px; -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);");
 
         Label title = new Label(titleText);
-        title.getStyleClass().add("settings-section-title"); // teal bold
+        title.getStyleClass().add("settings-section-title");
 
         Label body = new Label(bodyText);
-        body.getStyleClass().add("settings-section-body"); // gray text
+        body.getStyleClass().add("settings-section-body");
         body.setWrapText(true);
 
         card.getChildren().addAll(title, body);
