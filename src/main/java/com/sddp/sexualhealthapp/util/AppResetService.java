@@ -17,26 +17,32 @@ public class AppResetService {
 
     public static void wipeAllDataAndReset() {
         try {
-            // 1. Physically delete all persistent storage files
+            // delete persistent files. add here when making settings etc
             Files.deleteIfExists(Paths.get("src/main/resources/calendarevents/events.json"));
             Files.deleteIfExists(Paths.get("src/main/resources/settings/content-preferences.json"));
             Files.deleteIfExists(Paths.get("src/main/resources/settings/reminder-preferences.json"));
             Files.deleteIfExists(Paths.get("src/main/resources/settings/disguise-preferences.json"));
+            Files.deleteIfExists(Paths.get("src/main/resources/article-state/recently-read.json"));
 
-            // 2. Kill all background notification timers instantly
             NotificationService.clearAllTasks();
 
-            // 3. Force the Singleton Services to reload their state from the now-deleted files (defaults to empty)
+            // delete passcode
+            com.sddp.sexualhealthapp.calculator.service.SecretAuthService authService =
+                    new com.sddp.sexualhealthapp.calculator.service.SecretAuthService();
+            authService.deleteSecretEquation();
+
+            // reset singletons and services that might cache
             EventStorageService.getInstance().reloadFromDisk();
             ContentPreferencesService.getInstance().reloadFromDisk();
             ReminderPreferencesService.getInstance().reloadFromDisk();
+            new com.sddp.sexualhealthapp.article.service.RecentlyReadService().reloadFromDisk();
+            SceneManager.getInstance().clearCache();
 
-            // 4. Send the user back to the setup wizard
+
             SceneManager.getInstance().transitionToSetup();
 
         } catch (IOException ex) {
             System.err.println("CRITICAL: Failed to completely wipe data files: " + ex.getMessage());
-            // Optionally, show a JavaFX Alert to the user here that the wipe failed
         }
     }
 }

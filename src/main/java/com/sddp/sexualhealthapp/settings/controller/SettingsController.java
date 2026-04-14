@@ -416,10 +416,17 @@ public class SettingsController {
             deleteBtn.setManaged(true);
         });
 
-        // When Confirm Reset is tapped -> Validate and Wipe
+        // When Confirm Reset is tapped -> Validate, Reset UI, and Wipe
         confirmWipeBtn.setOnAction(e -> {
             if ("I want to fully reset the app".equals(confirmInput.getText().trim())) {
-                AppResetService.wipeAllDataAndReset();
+                confirmInput.clear();
+                confirmBox.setVisible(false);
+                confirmBox.setManaged(false);
+                deleteBtn.setVisible(true);
+                deleteBtn.setManaged(true);
+                showHome();
+                com.sddp.sexualhealthapp.util.AppResetService.wipeAllDataAndReset();
+
             } else {
                 errorLabel.setVisible(true);
                 errorLabel.setManaged(true);
