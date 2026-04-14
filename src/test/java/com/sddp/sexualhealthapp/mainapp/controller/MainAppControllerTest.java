@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.layout.StackPane;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -79,7 +80,8 @@ class MainAppControllerTest {
         inject(controller, "articleListContainer", new VBox());
         inject(controller, "searchField", new TextField());
         inject(controller, "articleViewController", articleViewController);
-        inject(controller, "articleView", visibleBox(false));
+        inject(controller, "articleViewNode", visibleBox(false));
+        inject(controller, "articleViewHost", new StackPane());
         inject(controller, "searchView", new VBox());
         inject(controller, "recentlyReadService", recentlyReadService);
         inject(controller, "browseRankingService", new ArticleBrowseRankingService());
@@ -284,7 +286,7 @@ class MainAppControllerTest {
 
     @Test
     void sectionViewed_whileArticleOverlayVisible_defersFeedRefreshUntilReturn() throws Exception {
-        inject(controller, "articleView", visibleBox(true));
+        inject(controller, "articleViewNode", visibleBox(true));
 
         runOnFxAndWait(() -> invokePrivate(
                 controller,
@@ -295,7 +297,7 @@ class MainAppControllerTest {
 
         assertFalse(labelTexts().contains("Recently Read"));
 
-        inject(controller, "articleView", visibleBox(false));
+        inject(controller, "articleViewNode", visibleBox(false));
         runOnFxAndWait(() -> invokePrivate(
                 controller,
                 "refreshBrowseFeedIfNeeded",
@@ -359,15 +361,24 @@ class MainAppControllerTest {
 
     private Button findButtonWithText(String text) throws Exception {
         VBox articleListContainer = get(controller, "articleListContainer", VBox.class);
-        for (Node child : articleListContainer.getChildren()) {
+        return findButtonInChildren(articleListContainer.getChildren(), text);
+    }
+
+    private Button findButtonInChildren(List<Node> children, String text) {
+        for (Node child : children) {
             if (child instanceof Button button && text.equals(button.getText())) {
                 return button;
             }
             if (child instanceof HBox hBox) {
-                for (Node hChild : hBox.getChildren()) {
-                    if (hChild instanceof Button button && text.equals(button.getText())) {
-                        return button;
-                    }
+                Button found = findButtonInChildren(new ArrayList<>(hBox.getChildren()), text);
+                if (found != null) {
+                    return found;
+                }
+            }
+            if (child instanceof VBox vBox) {
+                Button found = findButtonInChildren(new ArrayList<>(vBox.getChildren()), text);
+                if (found != null) {
+                    return found;
                 }
             }
         }
@@ -376,11 +387,25 @@ class MainAppControllerTest {
 
     private List<String> labelTexts() throws Exception {
         VBox articleListContainer = get(controller, "articleListContainer", VBox.class);
-        return articleListContainer.getChildren().stream()
-                .filter(Label.class::isInstance)
-                .map(Label.class::cast)
-                .map(Label::getText)
-                .toList();
+        List<String> labels = new ArrayList<>();
+        for (Node child : articleListContainer.getChildren()) {
+            if (child instanceof Label label) {
+                labels.add(label.getText());
+            } else if (child instanceof HBox hBox) {
+                for (Node hChild : hBox.getChildren()) {
+                    if (hChild instanceof Label label) {
+                        labels.add(label.getText());
+                    }
+                }
+            } else if (child instanceof VBox vBox) {
+                for (Node vChild : vBox.getChildren()) {
+                    if (vChild instanceof Label label) {
+                        labels.add(label.getText());
+                    }
+                }
+            }
+        }
+        return labels;
     }
 
     private static void inject(Object target, String fieldName, Object value) throws Exception {
@@ -395,7 +420,7 @@ class MainAppControllerTest {
         return type.cast(f.get(target));
     }
 
-    private static VBox visibleBox(boolean visible) {
+    private static Node visibleBox(boolean visible) {
         VBox box = new VBox();
         box.setVisible(visible);
         return box;
