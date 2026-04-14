@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
 import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
 import com.sddp.sexualhealthapp.article.model.Article;
-import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
@@ -465,7 +464,8 @@ public class MainAppController {
         if (cachedBrowseRankedArticles.size() != allArticles.size()) {
             return false;
         }
-        return cachedBrowseRankedArticles.containsAll(allArticles) && allArticles.containsAll(cachedBrowseRankedArticles);
+        return cachedBrowseRankedArticles.containsAll(allArticles)
+                && allArticles.containsAll(cachedBrowseRankedArticles);
     }
 
     private void renderBrowseFeedContent(List<Article> orderedArticles,
@@ -878,13 +878,22 @@ public class MainAppController {
      * Switches between views in the StackPane by showing one and hiding another.
      */
     private void showView(Node show, Node hide) {
-        if (hide != null) {
-            hide.setVisible(false);
-            hide.setManaged(false);
+        setHostedNodeVisible(hide, false);
+        setHostedNodeVisible(show, true);
+    }
+
+    private void setHostedNodeVisible(Node node, boolean on) {
+        if (node == null) {
+            return;
         }
-        if (show != null) {
-            show.setVisible(true);
-            show.setManaged(true);
+
+        node.setVisible(on);
+        node.setManaged(on);
+
+        Node parent = node.getParent();
+        if (parent instanceof StackPane host) {
+            host.setVisible(on);
+            host.setManaged(on);
         }
     }
 
@@ -915,27 +924,12 @@ public class MainAppController {
     }
 
     private void showOnlyCalendarView(Node toShow) {
-        if (calendarViewNode != null) {
-            calendarViewNode.setVisible(false);
-            calendarViewNode.setManaged(false);
-        }
-        if (eventFeedViewNode != null) {
-            eventFeedViewNode.setVisible(false);
-            eventFeedViewNode.setManaged(false);
-        }
-        if (createEventViewNode != null) {
-            createEventViewNode.setVisible(false);
-            createEventViewNode.setManaged(false);
-        }
-        if (eventDetailViewNode != null) {
-            eventDetailViewNode.setVisible(false);
-            eventDetailViewNode.setManaged(false);
-        }
+        setHostedNodeVisible(calendarViewNode, false);
+        setHostedNodeVisible(eventFeedViewNode, false);
+        setHostedNodeVisible(createEventViewNode, false);
+        setHostedNodeVisible(eventDetailViewNode, false);
 
-        if (toShow != null) {
-            toShow.setVisible(true);
-            toShow.setManaged(true);
-        }
+        setHostedNodeVisible(toShow, true);
 
     }
 

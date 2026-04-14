@@ -1,6 +1,5 @@
 package com.sddp.sexualhealthapp.settings.controller;
 
-import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
