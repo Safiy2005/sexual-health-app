@@ -312,16 +312,6 @@ public class ArticlePageRecommendationService {
                 || normalizedHeading.equals("introduction");
     }
 
-    private static String joinTerms(List<String> terms) {
-        if (terms == null || terms.isEmpty()) {
-            return "";
-        }
-        return terms.stream()
-                .filter(term -> term != null && !term.isBlank())
-                .distinct()
-                .reduce("", (left, right) -> left.isBlank() ? right : left + " " + right);
-    }
-
     private static String joinParts(String... parts) {
         StringBuilder builder = new StringBuilder();
         for (String part : parts) {

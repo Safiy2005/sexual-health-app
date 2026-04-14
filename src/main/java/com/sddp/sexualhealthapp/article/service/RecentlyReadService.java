@@ -8,7 +8,6 @@ import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
 import com.sddp.sexualhealthapp.article.model.Article;
 import com.sddp.sexualhealthapp.article.model.ArticleCollection;
-import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.util.AppConstants;
 
@@ -148,7 +147,8 @@ public class RecentlyReadService {
     }
 
     /**
-     * Removes a single article from the in-memory recent list without doing disk I/O.
+     * Removes a single article from the in-memory recent list without doing disk
+     * I/O.
      * Call {@link #flush()} to persist the updated state.
      */
     public void removeInMemory(String articleId) {

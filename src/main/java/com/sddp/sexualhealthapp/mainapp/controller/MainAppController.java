@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 import com.sddp.sexualhealthapp.article.controller.ArticleCardFactory;
 import com.sddp.sexualhealthapp.article.controller.ArticleViewController;
 import com.sddp.sexualhealthapp.article.model.Article;
-import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.model.SearchResult;
 import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
@@ -465,7 +464,8 @@ public class MainAppController {
         if (cachedBrowseRankedArticles.size() != allArticles.size()) {
             return false;
         }
-        return cachedBrowseRankedArticles.containsAll(allArticles) && allArticles.containsAll(cachedBrowseRankedArticles);
+        return cachedBrowseRankedArticles.containsAll(allArticles)
+                && allArticles.containsAll(cachedBrowseRankedArticles);
     }
 
     private void renderBrowseFeedContent(List<Article> orderedArticles,
