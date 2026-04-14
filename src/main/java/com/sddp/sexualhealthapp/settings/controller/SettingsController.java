@@ -113,6 +113,13 @@ public class SettingsController {
                 "Manage how and when you receive event notifications.",
                 this::buildReminderPreferencesPage));
 
+        // keep this at the bottom if youre doing a merge for more settings. just makes sense
+        pageDefinitions.add(new SettingsPageDefinition(
+                "privacy-policy",
+                "Privacy Policy",
+                "How we keep your data, storage, and notifications secure.",
+                this::buildPrivacyPolicyPage));
+
         renderSettingsCards();
         showHome();
     }
@@ -325,6 +332,51 @@ public class SettingsController {
         ReminderPreferences prefs = new ReminderPreferences(mode, customTitle, customBody);
         ReminderPreferencesService.getInstance().savePreferences(prefs);
     }
+
+    private Node buildPrivacyPolicyPage() {
+        VBox page = new VBox(18); // Spacing between cards
+        page.getStyleClass().add("settings-page-content");
+
+        Label intro = new Label("We believe your health data is yours alone. Here is exactly how we protect your privacy.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+        page.getChildren().add(intro);
+
+        // Card 1: Local Storage
+        page.getChildren().add(createPolicyCard("Local Storage & Data",
+                "All your data, including preferences and activity, is stored strictly locally on your device. It will never be uploaded, sold, or shared with external sources."));
+
+        // Card 2: Zero Analytics
+        page.getChildren().add(createPolicyCard("Zero Analytics",
+                "We do not track your usage, monitor what articles you read, or collect behavioral data. There are no tracking scripts hidden in the background."));
+
+        // Card 3: Notifications
+        page.getChildren().add(createPolicyCard("Notifications & Reminders",
+                "All reminders are generated directly on your device. You have full control over how they appear, including a disguised mode to protect your privacy."));
+
+        // Card 4: Passcode & Reset
+        page.getChildren().add(createPolicyCard("Passcode Encryption",
+                "Your passcode is securely encrypted. If you forget your passcode you can reset it by entering the equation 999/0 into the calculator disguise."));
+
+        return page;
+    }
+
+    // Helper method to create consistent cards
+    private VBox createPolicyCard(String titleText, String bodyText) {
+        VBox card = new VBox(6);
+        card.getStyleClass().add("settings-card"); // Matches the main settings cards
+
+        Label title = new Label(titleText);
+        title.getStyleClass().add("settings-section-title"); // teal bold
+
+        Label body = new Label(bodyText);
+        body.getStyleClass().add("settings-section-body"); // gray text
+        body.setWrapText(true);
+
+        card.getChildren().addAll(title, body);
+        return card;
+    }
+
 
     private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode,
             Node... extraContent) {
