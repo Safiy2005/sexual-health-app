@@ -76,7 +76,8 @@ class NotificationServiceTest {
         NotificationService.scheduleEventReminder(event, LocalDate.now(), null);
 
         // Assert: Verify we still only have 1 task, not 2 (Fixes the duplicate bug)
-        assertEquals(1, NotificationService.getActiveTaskCount(), "Editing an event should replace the old task, not duplicate it.");
+        assertEquals(1, NotificationService.getActiveTaskCount(),
+                "Editing an event should replace the old task, not duplicate it.");
     }
 
     @Test
@@ -92,7 +93,8 @@ class NotificationServiceTest {
         NotificationService.scheduleEventReminder(event, LocalDate.now(), null);
 
         // Assert
-        assertEquals(0, NotificationService.getActiveTaskCount(), "Should not schedule a task if reminderMinutes is null.");
+        assertEquals(0, NotificationService.getActiveTaskCount(),
+                "Should not schedule a task if reminderMinutes is null.");
     }
 
     @Test
@@ -111,6 +113,7 @@ class NotificationServiceTest {
         NotificationService.scheduleEventReminder(event, LocalDate.now(), null);
 
         // Assert
-        assertEquals(0, NotificationService.getActiveTaskCount(), "Should not schedule if the reminder was already sent today to prevent spam.");
+        assertEquals(0, NotificationService.getActiveTaskCount(),
+                "Should not schedule if the reminder was already sent today to prevent spam.");
     }
 }

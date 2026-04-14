@@ -264,7 +264,7 @@ public class EventStorageService {
         for (int i = 0; i < events.size(); i++) {
             if (events.get(i).getId().equals(updated.getId())) {
                 events.set(i, updated);
-                if (updated.occursOn(LocalDate.now())) {    // update notifs, prevent dupes
+                if (updated.occursOn(LocalDate.now())) { // update notifs, prevent dupes
                     NotificationService.scheduleEventReminder(updated, LocalDate.now(), this);
                 }
                 return saveToFile();
@@ -315,21 +315,25 @@ public class EventStorageService {
     }
 
     public boolean excludeOccurrence(String seriesEventId, LocalDate occurrenceDate) {
-        if (seriesEventId == null || occurrenceDate == null) return false;
+        if (seriesEventId == null || occurrenceDate == null)
+            return false;
 
         Optional<CalendarEvent> opt = getEventById(seriesEventId);
-        if (opt.isEmpty()) return false;
-        
+        if (opt.isEmpty())
+            return false;
+
         CalendarEvent series = opt.get();
         RecurrenceRule rule = series.getRecurrenceRule();
-        if (rule == null) return false;
+        if (rule == null)
+            return false;
 
         Set<LocalDate> excluded = rule.getExcludedDates();
-        if (excluded == null) excluded = new java.util.HashSet<>();
+        if (excluded == null)
+            excluded = new java.util.HashSet<>();
         excluded.add(occurrenceDate);
         rule.setExcludedDates(excluded);
 
-        if (occurrenceDate.equals(LocalDate.now())) {   // get rid of notif for that occurence
+        if (occurrenceDate.equals(LocalDate.now())) { // get rid of notif for that occurence
             NotificationService.cancelScheduledReminder(seriesEventId);
         }
 

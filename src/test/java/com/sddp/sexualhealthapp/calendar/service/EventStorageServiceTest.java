@@ -3,6 +3,8 @@ package com.sddp.sexualhealthapp.calendar.service;
 import com.sddp.sexualhealthapp.calendar.model.CalendarEvent;
 import com.sddp.sexualhealthapp.calendar.model.EventType;
 import com.sddp.sexualhealthapp.calendar.model.RecurrenceRule;
+import com.sddp.sexualhealthapp.util.NotificationService;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -34,7 +36,8 @@ class EventStorageServiceTest {
 
     @BeforeEach
     void setUp() throws IOException {
-        com.sddp.sexualhealthapp.util.NotificationService.clearAllTasks(); // clears global notifs so they dont carry across tests
+        NotificationService.clearAllTasks(); // clears global notifs so they dont carry
+                                             // across tests
         tempFile = Files.createTempFile("events-test-", ".json");
         Files.delete(tempFile); // Start with no file (test empty state)
         service = new EventStorageService(tempFile);
@@ -60,8 +63,7 @@ class EventStorageServiceTest {
     void testGetAllEvents_ReturnsUnmodifiableList() {
         service.addEvent(createTestEvent("Test", LocalDate.now(), null, EventType.APPOINTMENT));
 
-        assertThrows(UnsupportedOperationException.class, () ->
-                service.getAllEvents().add(new CalendarEvent()));
+        assertThrows(UnsupportedOperationException.class, () -> service.getAllEvents().add(new CalendarEvent()));
     }
 
     @Test
@@ -458,8 +460,7 @@ class EventStorageServiceTest {
 
     @Test
     void testGetEventTypesPerDay_EmptyMonth() {
-        Map<Integer, Set<EventType>> result =
-                service.getEventTypesPerDay(YearMonth.of(2026, 6));
+        Map<Integer, Set<EventType>> result = service.getEventTypesPerDay(YearMonth.of(2026, 6));
 
         assertTrue(result.isEmpty());
     }
@@ -551,6 +552,7 @@ class EventStorageServiceTest {
         // After the end date — excluded
         assertTrue(service.getEventsForDate(LocalDate.of(2026, 3, 6)).isEmpty());
     }
+
     @Test
     void testCreateEvent_WithReminderAndMemoryPersistsAcrossReload() {
         // 1. Create a standard medication event using the normal constructor
@@ -599,6 +601,7 @@ class EventStorageServiceTest {
         assertNull(loaded.getReminderMinutes(), "Events without reminders should stay null");
         assertNull(loaded.getLastReminderSentDate(), "Events without reminders should have a null sent date");
     }
+
     @Test
     void testUpdateEvent_preventsDuplicateNotifications() {
         // Arrange: Create and add an event
@@ -610,14 +613,14 @@ class EventStorageServiceTest {
         event.setReminderMinutes(10);
 
         service.addEvent(event); // <-- CHANGED to 'service'
-        assertEquals(1, com.sddp.sexualhealthapp.util.NotificationService.getActiveTaskCount());
+        assertEquals(1, NotificationService.getActiveTaskCount());
 
         // Act: Update the event time and save it
         event.setTime(LocalTime.now().plusHours(2));
         service.updateEvent(event); // <-- CHANGED to 'service'
 
         // Assert: Ensure we didn't duplicate the background task
-        assertEquals(1, com.sddp.sexualhealthapp.util.NotificationService.getActiveTaskCount(),
+        assertEquals(1, NotificationService.getActiveTaskCount(),
                 "Updating an event via storage service should replace, not duplicate, the notification task.");
     }
 }

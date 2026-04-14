@@ -18,7 +18,8 @@ public record ReminderPreferences(
 
     // 2. The Compact Constructor intercepts nulls from GSON or empty inputs
     public ReminderPreferences {
-        if (visibilityMode == null) visibilityMode = VisibilityMode.OFF;
+        if (visibilityMode == null)
+            visibilityMode = VisibilityMode.OFF;
 
         if (customDisguisedTitle == null || customDisguisedTitle.isBlank()) {
             customDisguisedTitle = DEFAULT_TITLE;

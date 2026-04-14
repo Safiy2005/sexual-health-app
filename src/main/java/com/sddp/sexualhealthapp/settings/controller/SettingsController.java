@@ -248,8 +248,8 @@ public class SettingsController {
         // Increased gap to 12px between the two input fields
         VBox customDisguiseBox = new VBox(12,
                 createLabeledInput("Disguise Title:", customTitleField, ReminderPreferences.DEFAULT_TITLE),
-                createLabeledInput("Disguise Body Text (Time will be appended):", customBodyField, ReminderPreferences.DEFAULT_BODY)
-        );
+                createLabeledInput("Disguise Body Text (Time will be appended):", customBodyField,
+                        ReminderPreferences.DEFAULT_BODY));
         // Indent it nicely under the "Disguised" description
         customDisguiseBox.setPadding(new Insets(12, 0, 8, 24));
         customDisguiseBox.setVisible(false);
@@ -268,11 +268,14 @@ public class SettingsController {
         radioBox.setPadding(new Insets(18));
 
         radioBox.getChildren().addAll(
-                createRadioOption(offBtn, "No pop-ups. Events will only stay in your feed.", modeGroup, VisibilityMode.OFF),
-                createRadioOption(disguisedBtn, "Mimics system alerts or calculator tasks.", modeGroup, VisibilityMode.DISGUISED, customDisguiseBox),
-                createRadioOption(discreetBtn, "Shows times only (e.g., \"Upcoming Event\").", modeGroup, VisibilityMode.DISCREET),
-                createRadioOption(explicitBtn, "Shows full event names and any notes you've written.", modeGroup, VisibilityMode.EXPLICIT)
-        );
+                createRadioOption(offBtn, "No pop-ups. Events will only stay in your feed.", modeGroup,
+                        VisibilityMode.OFF),
+                createRadioOption(disguisedBtn, "Mimics system alerts or calculator tasks.", modeGroup,
+                        VisibilityMode.DISGUISED, customDisguiseBox),
+                createRadioOption(discreetBtn, "Shows times only (e.g., \"Upcoming Event\").", modeGroup,
+                        VisibilityMode.DISCREET),
+                createRadioOption(explicitBtn, "Shows full event names and any notes you've written.", modeGroup,
+                        VisibilityMode.EXPLICIT));
 
         // --- Load Saved State ---
         ReminderPreferences currentPrefs = ReminderPreferencesService.getInstance().getPreferences();
@@ -299,11 +302,13 @@ public class SettingsController {
         });
 
         customTitleField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
-            if (!isNowFocused) saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+            if (!isNowFocused)
+                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
         });
 
         customBodyField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
-            if (!isNowFocused) saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+            if (!isNowFocused)
+                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
         });
 
         page.getChildren().addAll(intro, modeTitle, radioBox);
@@ -322,7 +327,8 @@ public class SettingsController {
         ReminderPreferencesService.getInstance().savePreferences(prefs);
     }
 
-    private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode, Node... extraContent) {
+    private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode,
+            Node... extraContent) {
         btn.getStyleClass().add("settings-subsection-label");
         btn.setToggleGroup(group);
         btn.setUserData(mode);

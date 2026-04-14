@@ -243,7 +243,8 @@ public class SceneManager {
     }
 
     /**
-     * @param afterFade optional runnable after the new root is installed (e.g. welcome toast)
+     * @param afterFade optional runnable after the new root is installed (e.g.
+     *                  welcome toast)
      */
     private void crossfadeToRoot(String sceneName, String fxmlPath, int durationMs, Runnable afterFade) {
         if (isTransitioning)
