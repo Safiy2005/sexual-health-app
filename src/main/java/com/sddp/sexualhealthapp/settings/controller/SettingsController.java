@@ -170,24 +170,29 @@ public class SettingsController {
         for (SettingsPageDefinition page : pageDefinitions) {
             VBox card = new VBox(6);
             card.getStyleClass().add("settings-card");
+            card.setMaxWidth(Double.MAX_VALUE);
 
             Label title = new Label(page.title());
             title.getStyleClass().add("settings-card-title");
             title.setWrapText(true);
+            title.setMaxWidth(Double.MAX_VALUE);
 
             Label subtitle = new Label(page.subtitle());
             subtitle.getStyleClass().add("settings-card-subtitle");
             subtitle.setWrapText(true);
+            subtitle.setMaxWidth(Double.MAX_VALUE);
 
-            HBox row = new HBox(10);
-            row.setAlignment(Pos.CENTER_LEFT);
             VBox textBox = new VBox(4, title, subtitle);
-            Region spacer = new Region();
-            HBox.setHgrow(spacer, Priority.ALWAYS);
+            textBox.setMaxWidth(Double.MAX_VALUE);
+            HBox.setHgrow(textBox, Priority.ALWAYS);
 
             Label chevron = new Label(">");
             chevron.getStyleClass().add("settings-card-chevron");
-            row.getChildren().addAll(textBox, spacer, chevron);
+            chevron.setMinWidth(Region.USE_PREF_SIZE);
+
+            HBox row = new HBox(10);
+            row.setAlignment(Pos.CENTER_LEFT);
+            row.getChildren().addAll(textBox, chevron);
 
             card.getChildren().add(row);
             card.setOnMouseClicked(event -> openPage(page));
