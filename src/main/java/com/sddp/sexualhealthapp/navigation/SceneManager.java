@@ -1,5 +1,7 @@
 package com.sddp.sexualhealthapp.navigation;
 
+import com.sddp.sexualhealthapp.settings.service.DyslexicFontManager;
+import com.sddp.sexualhealthapp.settings.service.DyslexicFontSettingsService;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.NotificationService;
 import com.sddp.sexualhealthapp.mainapp.controller.MainAppController;
@@ -265,6 +267,12 @@ public class SceneManager {
             return;
         }
 
+        // Apply global accessibility settings to the target root before its
+        // first paint. Done here (rather than per-controller) so every scene
+        // — calculator, setup, main app — picks up the dyslexic-font toggle
+        // without each screen needing its own wiring.
+        applyGlobalAccessibility(targetRoot);
+
         currentSceneName = sceneName;
 
         // If already showing this root (e.g. double-trigger), just finish
@@ -307,6 +315,30 @@ public class SceneManager {
             isTransitioning = false;
         });
         fade.play();
+    }
+
+    /**
+     * Applies the current dyslexic-font setting to the given root. Kept private
+     * and called from {@link #crossfadeToRoot} so each freshly installed root
+     * reflects the user's choice at first paint.
+     */
+    private void applyGlobalAccessibility(Parent root) {
+        DyslexicFontManager.applyMode(root, DyslexicFontSettingsService.getInstance().getMode());
+    }
+
+    /**
+     * Re-applies the dyslexic-font setting to every cached root, including the
+     * one currently attached to the scene. Invoked by the settings page so
+     * toggling the option takes effect immediately without waiting for a
+     * scene transition.
+     */
+    public void refreshDyslexicFont() {
+        for (Parent cachedRoot : rootCache.values()) {
+            applyGlobalAccessibility(cachedRoot);
+        }
+        if (persistentScene != null && persistentScene.getRoot() != null) {
+            applyGlobalAccessibility(persistentScene.getRoot());
+        }
     }
 
     private <T> T getController(String sceneName, Class<T> controllerType) {

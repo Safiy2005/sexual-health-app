@@ -150,17 +150,23 @@ public final class AppConstants {
         public static final String CSS_EVENT_DETAIL = "/css/event-detail.css";
 
         /**
+         * Accessibility overrides (dyslexic-font toggle, etc.).
+         * Included on every scene so the toggle works globally.
+         */
+        public static final String CSS_ACCESSIBILITY = "/css/accessibility.css";
+
+        /**
          * Stylesheets applied to the calculator scene.
          */
         public static final String[] CSS_CALCULATOR_SCENE = {
-                        CSS_CALCULATOR
+                        CSS_CALCULATOR, CSS_ACCESSIBILITY
         };
 
         /**
          * Stylesheets applied to the setup/onboarding scene.
          */
         public static final String[] CSS_SETUP_SCENE = {
-                        CSS_CALCULATOR, CSS_SETUP
+                        CSS_CALCULATOR, CSS_SETUP, CSS_ACCESSIBILITY
         };
 
         /**
@@ -168,7 +174,8 @@ public final class AppConstants {
          */
         public static final String[] CSS_MAIN_APP_SCENE = {
                         CSS_MAIN_APP, CSS_ARTICLE, CSS_CALENDAR,
-                        CSS_CREATE_EVENT, CSS_EVENT_FEED, CSS_EVENT_DETAIL
+                        CSS_CREATE_EVENT, CSS_EVENT_FEED, CSS_EVENT_DETAIL,
+                        CSS_ACCESSIBILITY
         };
 
         // Scene Names (for SceneManager)

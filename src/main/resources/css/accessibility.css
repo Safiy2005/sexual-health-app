@@ -1,0 +1,40 @@
+/*
+ * Accessibility overrides
+ * One stylesheet, one responsibility: make the dyslexic-font toggle apply
+ * everywhere without per-screen CSS edits.
+ *
+ * Contract:
+ *   The scene root receives the "dyslexic-font" style class via
+ *   DyslexicFontManager.applyMode(...). JavaFX always stamps the scene root
+ *   with the "root" style class as well, so combining the two gives us a
+ *   selector of specificity (0,2,0). Pairing that with the universal selector
+ *   ({@code *}) targets every descendant with specificity (0,2,1) — high
+ *   enough to beat every existing single-class font-family rule like
+ *   {@code .main-app-title} (0,1,0) without resorting to inline styles.
+ *
+ * Future maintainers: if you add a new FXML screen, you do NOT need to touch
+ * this file. The rule below already covers it.
+ *
+ * @author SDDP Group 30
+ * @version 1.0
+ */
+
+/* Set the font on the root itself (covers the root's own text, if any). */
+.root.dyslexic-font {
+    -fx-font-family: "OpenDyslexic", "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
+
+/*
+ * Propagate to every descendant. This is the "don't-forget-about-it" rule.
+ * It has to win on specificity against things like:
+ *     .main-app-title { -fx-font-family: "SF Pro Display", ...; }   (0,1,0)
+ *     .calculator-display-primary { -fx-font-family: ...; }         (0,1,0)
+ * Our selector (0,2,1) wins without needing !important.
+ *
+ * Note: this only overrides font-family. Font size, weight, and styling all
+ * remain controlled by the screen-specific stylesheets, so the text-size
+ * settings and typographic hierarchy keep working.
+ */
+.root.dyslexic-font * {
+    -fx-font-family: "OpenDyslexic", "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+}
