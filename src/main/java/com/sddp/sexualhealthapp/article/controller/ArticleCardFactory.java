@@ -120,8 +120,14 @@ public final class ArticleCardFactory {
         for (String tag : tagsToShow) {
             Label tagLabel = new Label(tag);
             tagLabel.getStyleClass().add("article-card-tag");
-            tagLabel.setMinWidth(Region.USE_PREF_SIZE);
-            tagLabel.setWrapText(false);
+            // Allow long tags to wrap within the chip. FlowPane does NOT push
+            // a width constraint down to its children, so wrapText alone is not
+            // enough — the label still uses its single-line content width and
+            // drags the whole card past the 360px viewport under OpenDyslexic.
+            // Pairing wrapText with a bounded maxWidth matching FlowPane's
+            // prefWrapLength is what actually triggers wrapping.
+            tagLabel.setWrapText(true);
+            tagLabel.setMaxWidth(240);
 
             if (preferredMatchedTags.contains(tag)) {
                 tagLabel.getStyleClass().add("article-card-tag-preferred");

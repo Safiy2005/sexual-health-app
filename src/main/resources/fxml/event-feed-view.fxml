@@ -16,10 +16,12 @@
             <Insets top="16" right="16" bottom="12" left="16"/>
         </padding>
         <Button text="Back" styleClass="calendar-action-button"
+                minWidth="-Infinity"
                 onAction="#handleBackToCalendar"/>
         <Label text="Event Feed" styleClass="search-header-title"
-               HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+               HBox.hgrow="ALWAYS" maxWidth="Infinity" wrapText="true"/>
         <Button text="Today" styleClass="calendar-today-button"
+                minWidth="-Infinity"
                 onAction="#handleJumpToToday"/>
     </HBox>
 

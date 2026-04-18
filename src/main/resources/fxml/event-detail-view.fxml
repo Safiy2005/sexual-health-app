@@ -17,10 +17,12 @@
             <Insets top="16" right="16" bottom="12" left="16"/>
         </padding>
         <Button text="Back" styleClass="calendar-action-button"
+                minWidth="-Infinity"
                 onAction="#handleBackToCalendar"/>
         <Label text="Event Details" styleClass="search-header-title"
-               HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+               HBox.hgrow="ALWAYS" maxWidth="Infinity" wrapText="true"/>
         <Button text="Edit" styleClass="calendar-action-button"
+                minWidth="-Infinity"
                 onAction="#handleEditEvent"/>
     </HBox>
 

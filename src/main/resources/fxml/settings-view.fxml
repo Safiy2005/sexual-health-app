@@ -37,9 +37,12 @@
             <padding>
                 <Insets top="16" right="16" bottom="12" left="16"/>
             </padding>
-            <Button text="Back" styleClass="article-back-button" onAction="#handleBackToSettingsHome"/>
+            <Button text="Back" styleClass="article-back-button"
+                    minWidth="-Infinity"
+                    onAction="#handleBackToSettingsHome"/>
             <Region HBox.hgrow="ALWAYS"/>
-            <Label fx:id="settingsDetailTitle" styleClass="settings-detail-title"/>
+            <Label fx:id="settingsDetailTitle" styleClass="settings-detail-title"
+                   wrapText="true" textAlignment="RIGHT"/>
         </HBox>
 
         <ScrollPane fx:id="settingsDetailScrollPane" fitToWidth="true"  VBox.vgrow="ALWAYS"

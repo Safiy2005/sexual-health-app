@@ -38,3 +38,166 @@
 .root.dyslexic-font * {
     -fx-font-family: "OpenDyslexic", "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
 }
+
+/* ============================================================
+   ZERO-ELLIPSIS RULES
+   ------------------------------------------------------------
+   Labels and labeled controls grow vertically (wrap) instead of
+   truncating their text. Applied here rather than on every
+   label in FXML/Java so that future screens inherit the
+   behaviour without anyone remembering to call setWrapText(true).
+
+   Buttons are deliberately excluded so action buttons keep
+   their single-line pill shape — their width problem is solved
+   separately with minWidth="-Infinity" in FXML.
+   ============================================================ */
+
+.settings-detail-title,
+.settings-section-title,
+.settings-card-title,
+.settings-card-subtitle,
+.settings-page-intro,
+.settings-section-body,
+.settings-subsection-label,
+.settings-display-radio {
+    -fx-wrap-text: true;
+}
+
+.settings-root .label,
+.settings-root .radio-button,
+.settings-root .check-box {
+    -fx-wrap-text: true;
+}
+
+/*
+ * When OpenDyslexic is active the extra glyph width easily pushes titles and
+ * radio labels past the 360px canvas. Allowing every label/check-box/radio
+ * in the whole app to wrap in this mode prevents ellipses anywhere, at the
+ * cost of some components occasionally taking two lines (acceptable trade).
+ */
+.root.dyslexic-font .label,
+.root.dyslexic-font .radio-button,
+.root.dyslexic-font .check-box {
+    -fx-wrap-text: true;
+}
+
+/* ============================================================
+   DYSLEXIC-FONT SIZE CALIBRATION
+   ------------------------------------------------------------
+   OpenDyslexic renders roughly 30-35% wider than SF Pro at the
+   same point size, so existing text-size scaling rules become
+   optically oversized once the toggle is on. The rules below
+   drop scalable text by about one tier per text-size level so
+   the layout stays comfortable and the optical size roughly
+   matches the default typeface.
+
+   Selector note: these use 2-class compounds on the scene root
+   (.dyslexic-font.text-size-X) for specificity (0, 3, 0), which
+   cleanly beats the baseline (0, 2, 0) rules in the screen
+   stylesheets. The .root prefix is deliberately omitted — some
+   JavaFX CSS parsers have historically been fussy about three-
+   class compounds that include .root.
+   ============================================================ */
+
+/* ---- search-header-title (top of every screen: "Articles", "Settings", etc.) */
+.dyslexic-font.text-size-small .search-header-title { -fx-font-size: 16px; }
+.dyslexic-font.text-size-standard .search-header-title { -fx-font-size: 19px; }
+.dyslexic-font.text-size-large .search-header-title { -fx-font-size: 21px; }
+.dyslexic-font.text-size-extra-large .search-header-title { -fx-font-size: 23px; }
+
+/* ---- settings chrome */
+.dyslexic-font.text-size-small .settings-detail-title { -fx-font-size: 13px; }
+.dyslexic-font.text-size-standard .settings-detail-title { -fx-font-size: 15px; }
+.dyslexic-font.text-size-large .settings-detail-title { -fx-font-size: 17px; }
+.dyslexic-font.text-size-extra-large .settings-detail-title { -fx-font-size: 20px; }
+
+.dyslexic-font.text-size-small .settings-section-title { -fx-font-size: 12px; }
+.dyslexic-font.text-size-standard .settings-section-title { -fx-font-size: 14px; }
+.dyslexic-font.text-size-large .settings-section-title { -fx-font-size: 16px; }
+.dyslexic-font.text-size-extra-large .settings-section-title { -fx-font-size: 18px; }
+
+.dyslexic-font.text-size-small .settings-page-intro,
+.dyslexic-font.text-size-small .settings-section-body,
+.dyslexic-font.text-size-small .settings-display-radio,
+.dyslexic-font.text-size-small .settings-card-subtitle { -fx-font-size: 10px; }
+
+.dyslexic-font.text-size-standard .settings-page-intro,
+.dyslexic-font.text-size-standard .settings-section-body,
+.dyslexic-font.text-size-standard .settings-display-radio,
+.dyslexic-font.text-size-standard .settings-card-subtitle { -fx-font-size: 11px; }
+
+.dyslexic-font.text-size-large .settings-page-intro,
+.dyslexic-font.text-size-large .settings-section-body,
+.dyslexic-font.text-size-large .settings-display-radio,
+.dyslexic-font.text-size-large .settings-card-subtitle { -fx-font-size: 13px; }
+
+.dyslexic-font.text-size-extra-large .settings-page-intro,
+.dyslexic-font.text-size-extra-large .settings-section-body,
+.dyslexic-font.text-size-extra-large .settings-display-radio,
+.dyslexic-font.text-size-extra-large .settings-card-subtitle { -fx-font-size: 15px; }
+
+/* ---- article list cards */
+.dyslexic-font.text-size-small .article-card-title { -fx-font-size: 12px; }
+.dyslexic-font.text-size-standard .article-card-title { -fx-font-size: 13px; }
+.dyslexic-font.text-size-large .article-card-title { -fx-font-size: 15px; }
+.dyslexic-font.text-size-extra-large .article-card-title { -fx-font-size: 17px; }
+
+.dyslexic-font.text-size-small .article-card-subtitle,
+.dyslexic-font.text-size-small .article-card-reason,
+.dyslexic-font.text-size-small .article-card-badge,
+.dyslexic-font.text-size-small .article-card-badge-amber,
+.dyslexic-font.text-size-small .article-card-tag { -fx-font-size: 9px; }
+
+.dyslexic-font.text-size-standard .article-card-subtitle,
+.dyslexic-font.text-size-standard .article-card-reason,
+.dyslexic-font.text-size-standard .article-card-badge,
+.dyslexic-font.text-size-standard .article-card-badge-amber,
+.dyslexic-font.text-size-standard .article-card-tag { -fx-font-size: 10px; }
+
+.dyslexic-font.text-size-large .article-card-subtitle,
+.dyslexic-font.text-size-large .article-card-reason,
+.dyslexic-font.text-size-large .article-card-badge,
+.dyslexic-font.text-size-large .article-card-badge-amber,
+.dyslexic-font.text-size-large .article-card-tag { -fx-font-size: 11px; }
+
+.dyslexic-font.text-size-extra-large .article-card-subtitle,
+.dyslexic-font.text-size-extra-large .article-card-reason,
+.dyslexic-font.text-size-extra-large .article-card-badge,
+.dyslexic-font.text-size-extra-large .article-card-badge-amber,
+.dyslexic-font.text-size-extra-large .article-card-tag { -fx-font-size: 12px; }
+
+/* ---- article reader (detail view) */
+.dyslexic-font.text-size-small .article-detail-title { -fx-font-size: 17px; }
+.dyslexic-font.text-size-standard .article-detail-title { -fx-font-size: 20px; }
+.dyslexic-font.text-size-large .article-detail-title { -fx-font-size: 22px; }
+.dyslexic-font.text-size-extra-large .article-detail-title { -fx-font-size: 24px; }
+
+.dyslexic-font.text-size-small .article-section-heading { -fx-font-size: 14px; }
+.dyslexic-font.text-size-standard .article-section-heading { -fx-font-size: 15px; }
+.dyslexic-font.text-size-large .article-section-heading { -fx-font-size: 17px; }
+.dyslexic-font.text-size-extra-large .article-section-heading { -fx-font-size: 19px; }
+
+.dyslexic-font.text-size-small .article-text,
+.dyslexic-font.text-size-small .article-text-bold,
+.dyslexic-font.text-size-small .article-bullet-text,
+.dyslexic-font.text-size-small .article-bullet-text-bold { -fx-font-size: 11px; }
+
+.dyslexic-font.text-size-standard .article-text,
+.dyslexic-font.text-size-standard .article-text-bold,
+.dyslexic-font.text-size-standard .article-bullet-text,
+.dyslexic-font.text-size-standard .article-bullet-text-bold { -fx-font-size: 12px; }
+
+.dyslexic-font.text-size-large .article-text,
+.dyslexic-font.text-size-large .article-text-bold,
+.dyslexic-font.text-size-large .article-bullet-text,
+.dyslexic-font.text-size-large .article-bullet-text-bold { -fx-font-size: 14px; }
+
+.dyslexic-font.text-size-extra-large .article-text,
+.dyslexic-font.text-size-extra-large .article-text-bold,
+.dyslexic-font.text-size-extra-large .article-bullet-text,
+.dyslexic-font.text-size-extra-large .article-bullet-text-bold { -fx-font-size: 16px; }
+
+.dyslexic-font.text-size-small .article-related-title { -fx-font-size: 11px; }
+.dyslexic-font.text-size-standard .article-related-title { -fx-font-size: 12px; }
+.dyslexic-font.text-size-large .article-related-title { -fx-font-size: 14px; }
+.dyslexic-font.text-size-extra-large .article-related-title { -fx-font-size: 15px; }

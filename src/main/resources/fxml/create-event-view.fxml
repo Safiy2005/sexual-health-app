@@ -15,9 +15,10 @@
             <Insets top="16" right="16" bottom="12" left="16"/>
         </padding>
         <Button text="Cancel" styleClass="calendar-action-button"
+                minWidth="-Infinity"
                 onAction="#handleBackToCalendar"/>
         <Label fx:id="headerLabel" text="New Event" styleClass="search-header-title"
-               HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+               HBox.hgrow="ALWAYS" maxWidth="Infinity" wrapText="true"/>
     </HBox>
 
     <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS"

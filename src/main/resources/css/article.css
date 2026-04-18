@@ -968,10 +968,21 @@
 
 .article-card-tag,
 .article-card-badge,
-.article-card-badge-amber,
+.article-card-badge-amber {
+    -fx-wrap-text: true;
+    -fx-content-display: center;
+    -fx-alignment: center;
+    -fx-min-height: 24px;
+}
+
+/*
+ * Single-token pills (Medication / Appointment / Test / recurrence descriptor)
+ * must keep their natural width. Wrapping them mid-word is worse than any
+ * layout issue the wrap was trying to solve, especially with OpenDyslexic.
+ */
 .calendar-event-card-type,
 .event-detail-recurrence-chip {
-    -fx-wrap-text: true;
+    -fx-wrap-text: false;
     -fx-content-display: center;
     -fx-alignment: center;
     -fx-min-height: 24px;
