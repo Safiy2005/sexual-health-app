@@ -681,8 +681,14 @@
 .theme-dark .swipe-arrow-label,
 .theme-dark .article-source-label,
 .theme-dark .article-card-subtitle,
-.theme-dark .article-card-reason {
+.theme-dark .article-card-reason,
+.theme-dark .article-related-title {
     -fx-text-fill: #F4F1EC;
+}
+
+.theme-dark .article-related-subtitle,
+.theme-dark .article-related-status {
+    -fx-text-fill: #B8C4C4;
 }
 
 /* Search field */
@@ -700,6 +706,12 @@
 
 .theme-dark .article-card:hover {
     -fx-background-color: #2B2B2B;
+}
+
+/* Suggested Articles container */
+.theme-dark .article-related-box {
+    -fx-background-color: #1E1E1E;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 6, 0, 0, 2);
 }
 
 /* Mini navigation overlay */
