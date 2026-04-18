@@ -4,15 +4,15 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Search result with article, score, and field breakdown. Sorts by descending relevance.
+ * Search result with article, score, and field breakdown. Sorts by descending
+ * relevance.
  */
 public record SearchResult(
-    Article article,
-    double score,
-    Map<String, Double> fieldScores,
-    List<String> highlightedTags,
-    List<String> preferredMatchedTags
-) implements Comparable<SearchResult> {
+        Article article,
+        double score,
+        Map<String, Double> fieldScores,
+        List<String> highlightedTags,
+        List<String> preferredMatchedTags) implements Comparable<SearchResult> {
 
     public SearchResult(Article article, double score, Map<String, Double> fieldScores) {
         this(article, score, fieldScores, List.of(), List.of());

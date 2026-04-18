@@ -5,12 +5,16 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.sddp.sexualhealthapp.article.model.Article;
+import com.sddp.sexualhealthapp.article.model.RecentlyReadEntry;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 
 import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
@@ -41,26 +45,26 @@ public final class ArticleCardFactory {
      * @return a styled VBox representing the article card
      */
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery, Consumer<Article> onArticleClick) {
+            String searchQuery, Consumer<Article> onArticleClick) {
         return createArticleCard(article, score, searchQuery, List.of(), List.of(), null, false, onArticleClick);
     }
 
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery,
-                                         List<String> highlightedTags,
-                                         List<String> preferredMatchedTags,
-                                         Consumer<Article> onArticleClick) {
+            String searchQuery,
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags,
+            Consumer<Article> onArticleClick) {
         return createArticleCard(article, score, searchQuery, highlightedTags, preferredMatchedTags,
                 null, false, onArticleClick);
     }
 
     public static VBox createArticleCard(Article article, double score,
-                                         String searchQuery,
-                                         List<String> highlightedTags,
-                                         List<String> preferredMatchedTags,
-                                         String statusText,
-                                         boolean hidden,
-                                         Consumer<Article> onArticleClick) {
+            String searchQuery,
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags,
+            String statusText,
+            boolean hidden,
+            Consumer<Article> onArticleClick) {
         VBox card = new VBox(4);
         card.getStyleClass().add("article-card");
         if (hidden) {
@@ -142,9 +146,9 @@ public final class ArticleCardFactory {
     }
 
     private static String buildReasonText(String searchQuery,
-                                          List<String> highlightedTags,
-                                          List<String> preferredMatchedTags,
-                                          String statusText) {
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags,
+            String statusText) {
         if (statusText != null && !statusText.isBlank()) {
             return statusText;
         }
@@ -158,13 +162,77 @@ public final class ArticleCardFactory {
     }
 
     /**
+     * Creates a Recently Read card that shows persisted section progress and
+     * resumes from the saved section when opened.
+     */
+    public static VBox createRecentArticleCard(Article article, RecentlyReadEntry entry,
+            Consumer<RecentlyReadEntry> onRecentClick) {
+        return createRecentArticleCard(article, entry, onRecentClick, ignored -> {
+        });
+    }
+
+    public static VBox createRecentArticleCard(Article article, RecentlyReadEntry entry,
+            Consumer<RecentlyReadEntry> onRecentClick,
+            Consumer<RecentlyReadEntry> onRemoveClick) {
+        VBox card = new VBox(8);
+        card.getStyleClass().addAll("article-card", "recent-article-card");
+        card.setPickOnBounds(true);
+
+        HBox titleRow = new HBox(8);
+        titleRow.setAlignment(Pos.CENTER_LEFT);
+
+        Label title = new Label(article.getTitle());
+        title.getStyleClass().add("article-card-title");
+        title.setWrapText(true);
+        HBox.setHgrow(title, Priority.ALWAYS);
+        title.setMaxWidth(Double.MAX_VALUE);
+        title.setMouseTransparent(true);
+
+        Button removeButton = new Button("Remove");
+        removeButton.getStyleClass().add("recent-article-remove-button");
+        removeButton.setMinWidth(Region.USE_PREF_SIZE);
+        removeButton.setFocusTraversable(false);
+        removeButton.setOnMouseClicked(event -> event.consume());
+        removeButton.setOnAction(event -> {
+            event.consume();
+            onRemoveClick.accept(entry);
+        });
+
+        titleRow.getChildren().addAll(title, removeButton);
+        card.getChildren().add(titleRow);
+
+        int totalSections = article.getSections().size();
+        int completedSections = Math.min(totalSections, Math.max(0, entry.lastReadSectionIndex() + 1));
+        double progress = totalSections > 0 ? (double) completedSections / totalSections : 0.0;
+
+        ProgressBar progressBar = new ProgressBar(progress);
+        progressBar.getStyleClass().add("article-card-progress-bar");
+        progressBar.setMaxWidth(Double.MAX_VALUE);
+        progressBar.setMouseTransparent(true);
+        card.getChildren().add(progressBar);
+
+        Label progressLabel = new Label(completedSections + " of " + totalSections + " sections");
+        progressLabel.getStyleClass().add("article-card-progress-label");
+        progressLabel.setMouseTransparent(true);
+        card.getChildren().add(progressLabel);
+
+        Label sectionCount = new Label(totalSections + " section" + (totalSections != 1 ? "s" : ""));
+        sectionCount.getStyleClass().add("article-card-subtitle");
+        sectionCount.setMouseTransparent(true);
+        card.getChildren().add(sectionCount);
+
+        card.setOnMouseClicked(e -> onRecentClick.accept(entry));
+        return card;
+    }
+
+    /**
      * Picks the top tags to display, promoting tags that match the search query
      * to the front so users see why an article was returned.
      * Respects a character budget so tags are never truncated with ellipses.
      */
     private static List<String> pickTags(List<String> allTags, String searchQuery,
-                                         List<String> highlightedTags,
-                                         List<String> preferredMatchedTags) {
+            List<String> highlightedTags,
+            List<String> preferredMatchedTags) {
         if (allTags == null || allTags.isEmpty()) {
             return List.of();
         }

@@ -67,6 +67,33 @@
     -fx-background-color: transparent;
 }
 
+.article-feed-section-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+    -fx-padding: 10px 0 2px 0;
+}
+
+.article-feed-section-header {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.article-section-action-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #7A8E8E;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 0 0 0;
+    -fx-cursor: hand;
+}
+
+.article-section-action-button:hover {
+    -fx-text-fill: #3D7A75;
+}
+
 /* Article card */
 .article-card {
     -fx-background-color: white;
@@ -129,26 +156,6 @@
     -fx-text-fill: #9A6B6B;
 }
 
-.article-card-badge {
-    -fx-background-color: #D4E8E5;
-    -fx-text-fill: #3D7A75;
-    -fx-font-size: 11px;
-    -fx-font-weight: 600;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-padding: 2px 8px;
-    -fx-background-radius: 10px;
-}
-
-.article-card-badge-amber {
-    -fx-background-color: #F0E6D2;
-    -fx-text-fill: #8A7355;
-    -fx-font-size: 11px;
-    -fx-font-weight: 600;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-padding: 2px 8px;
-    -fx-background-radius: 10px;
-}
-
 .article-card-subtitle {
     -fx-font-size: 12px;
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
@@ -174,6 +181,49 @@
 .article-card-tag-preferred {
     -fx-background-color: #F0E3D2;
     -fx-text-fill: #8A6A3D;
+}
+
+.recent-article-card {
+    -fx-spacing: 6px;
+}
+
+.recent-article-remove-button {
+    -fx-background-color: #ECE6DF;
+    -fx-text-fill: #6B8080;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 999px;
+    -fx-cursor: hand;
+}
+
+.recent-article-remove-button:hover {
+    -fx-background-color: #E3DBD3;
+    -fx-text-fill: #3D5A5B;
+}
+
+.article-card-progress-bar {
+    -fx-pref-height: 6px;
+    -fx-max-width: Infinity;
+}
+
+.article-card-progress-bar > .track {
+    -fx-background-color: #EDE5DD;
+    -fx-background-radius: 999px;
+}
+
+.article-card-progress-bar > .bar {
+    -fx-background-color: #7DBBB5;
+    -fx-background-radius: 999px;
+    -fx-background-insets: 0;
+}
+
+.article-card-progress-label {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D7A75;
+    -fx-font-weight: 600;
 }
 
 /* Empty / loading state */
@@ -229,26 +279,6 @@
 
 .article-back-button:pressed {
     -fx-background-color: #9DCBC5;
-}
-
-.article-content-container {
-    -fx-background-color: transparent;
-}
-
-.article-detail-title {
-    -fx-font-size: 22px;
-    -fx-font-weight: bold;
-    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #3D5A5B;
-    -fx-padding: 0 0 8px 0;
-}
-
-.article-source-label {
-    -fx-font-size: 13px;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #7DBBB5;
-    -fx-font-style: italic;
-    -fx-padding: 0 0 4px 0;
 }
 
 .article-section-heading {
@@ -319,30 +349,6 @@
     -fx-background-color: transparent;
 }
 
-.article-toc-header {
-    -fx-font-size: 14px;
-    -fx-font-weight: 600;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #4A7A7A;
-    -fx-padding: 12px 0 4px 0;
-}
-
-.article-toc-item {
-    -fx-font-size: 13px;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #5C6B6B;
-    -fx-padding: 4px 0 4px 8px;
-}
-
-.article-swipe-hint {
-    -fx-font-size: 13px;
-    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
-    -fx-text-fill: #9AABAB;
-    -fx-font-style: italic;
-    -fx-padding: 18px 0 0 0;
-    -fx-alignment: center;
-}
-
 .article-section-badge {
     -fx-background-color: #D4E8E5;
     -fx-text-fill: #3D7A75;
@@ -355,6 +361,36 @@
     -fx-alignment: center;
 }
 
+.article-related-box {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 16px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);
+}
+
+.article-related-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+}
+
+.article-related-subtitle {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9AABAB;
+}
+
+.article-related-list {
+    -fx-padding: 2px 0 0 0;
+}
+
+.article-related-status {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #7A8E8E;
+}
+
 /* Page indicator bar */
 .page-indicator-bar {
     -fx-background-color: transparent;
@@ -365,6 +401,19 @@
     -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
     -fx-text-fill: #9AABAB;
     -fx-font-weight: 600;
+    -fx-cursor: hand;
+    -fx-padding: 4px 8px;
+    -fx-background-radius: 10px;
+}
+
+.swipe-arrow-label:hover {
+    -fx-text-fill: #6F9693;
+    -fx-background-color: rgba(125, 187, 181, 0.16);
+}
+
+.swipe-arrow-label:pressed {
+    -fx-text-fill: #3D7A75;
+    -fx-background-color: rgba(125, 187, 181, 0.28);
 }
 
 .page-counter-label {
@@ -472,6 +521,16 @@
     -fx-background-color: #E8F4F2;
     -fx-background-radius: 10px;
     -fx-padding: 0;
+    -fx-cursor: default;
+}
+
+/* Slightly scuffed - basically, just disable the active hover/click styling for grouped sections (ones with pill children) */
+.nav-menu-group-wrapper.nav-menu-item-active:hover {
+    -fx-background-color: #E8F4F2;
+}
+
+.nav-menu-group-wrapper.nav-menu-item-active:pressed {
+    -fx-background-color: #E8F4F2;
 }
 
 .nav-menu-dots-row {

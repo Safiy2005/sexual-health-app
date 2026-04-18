@@ -5,13 +5,16 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import com.sddp.sexualhealthapp.article.model.ArticleCollection;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
 import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 
 import javafx.fxml.FXML;
@@ -57,6 +60,13 @@ public class SettingsController {
         PREFERRED
     }
 
+    private record TagPickerRefs(
+            FlowPane selectedTagsPane,
+            FlowPane availableTagsPane,
+            Label availableLabel,
+            TextField searchField) {
+    }
+
     @FXML
     private VBox settingsHomeView;
     @FXML
@@ -75,6 +85,8 @@ public class SettingsController {
     private final ContentPreferencesService preferencesService;
     private final Supplier<List<String>> curatedTagsSupplier;
     private final List<SettingsPageDefinition> pageDefinitions = new ArrayList<>();
+    private TagPickerRefs blockedTagPickerRefs;
+    private TagPickerRefs preferredTagPickerRefs;
     private String currentPageId;
     private Runnable onPreferencesChanged;
 
@@ -82,14 +94,14 @@ public class SettingsController {
         this(
                 ContentPreferencesService.getInstance(),
                 () -> ArticlePersonalizationService.buildCuratedTagList(
-                        ArticleCollection.getInstance().getArticles()));
+                        ArticleServiceRegistry.getArticleCollection().getArticles()));
     }
 
     SettingsController(ContentPreferencesService preferencesService) {
         this(
                 preferencesService,
                 () -> ArticlePersonalizationService.buildCuratedTagList(
-                        ArticleCollection.getInstance().getArticles()));
+                        ArticleServiceRegistry.getArticleCollection().getArticles()));
     }
 
     SettingsController(ContentPreferencesService preferencesService, Supplier<List<String>> curatedTagsSupplier) {
@@ -119,6 +131,12 @@ public class SettingsController {
                 "Text size",
                 "Adjust the global text size across the app",
                 this::buildTextSizePage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "reminder-preferences",
+                "Reminders & Privacy",
+                "Manage how and when you receive event notifications.",
+                this::buildReminderPreferencesPage));
 
         renderSettingsCards();
         showHome();
@@ -180,6 +198,8 @@ public class SettingsController {
     private void openPage(SettingsPageDefinition page) {
         currentPageId = page.id();
         settingsDetailTitle.setText(page.title());
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
         settingsDetailContent.getChildren().setAll(page.builder().build());
 
         settingsHomeView.setVisible(false);
@@ -191,6 +211,8 @@ public class SettingsController {
 
     private void showHome() {
         currentPageId = null;
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
         renderSettingsCards();
         settingsHomeView.setVisible(true);
         settingsHomeView.setManaged(true);
@@ -211,13 +233,15 @@ public class SettingsController {
 
         Label blockedTitle = new Label("Blocked tags");
         blockedTitle.getStyleClass().add("settings-section-title");
-        Label blockedBody = new Label("Articles with these tags will stay out of article lists, search results, and recommendations.");
+        Label blockedBody = new Label(
+                "Articles with these tags will stay out of article lists, search results, and recommendations.");
         blockedBody.getStyleClass().add("settings-section-body");
         blockedBody.setWrapText(true);
 
         Label preferredTitle = new Label("Prioritise these tags");
         preferredTitle.getStyleClass().add("settings-section-title");
-        Label preferredBody = new Label("These tags add a small ranking boost in search and receive a stronger result highlight.");
+        Label preferredBody = new Label(
+                "These tags add a small ranking boost in search and receive a stronger result highlight.");
         preferredBody.getStyleClass().add("settings-section-body");
         preferredBody.setWrapText(true);
 
@@ -226,6 +250,144 @@ public class SettingsController {
                 blockedTitle, blockedBody, buildTagPicker(TagSection.BLOCKED),
                 preferredTitle, preferredBody, buildTagPicker(TagSection.PREFERRED));
         return page;
+    }
+
+    private Node buildReminderPreferencesPage() {
+        VBox page = new VBox(20);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+
+        Label intro = new Label("Control your privacy by choosing how event reminders appear on your screen.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label modeTitle = new Label("Reminder Visibility");
+        modeTitle.getStyleClass().add("settings-section-title");
+
+        ToggleGroup modeGroup = new ToggleGroup();
+        TextField customTitleField = new TextField();
+        TextField customBodyField = new TextField();
+
+        // --- Custom Disguise Box ---
+        // Increased gap to 12px between the two input fields
+        VBox customDisguiseBox = new VBox(12,
+                createLabeledInput("Disguise Title:", customTitleField, ReminderPreferences.DEFAULT_TITLE),
+                createLabeledInput("Disguise Body Text (Time will be appended):", customBodyField,
+                        ReminderPreferences.DEFAULT_BODY));
+        // Indent it nicely under the "Disguised" description
+        customDisguiseBox.setPadding(new Insets(12, 0, 8, 24));
+        customDisguiseBox.setVisible(false);
+        customDisguiseBox.setManaged(false);
+
+        // --- Build Radio Options ---
+        RadioButton offBtn = new RadioButton("Off");
+        RadioButton disguisedBtn = new RadioButton("Disguised (Maximum Privacy)");
+        RadioButton discreetBtn = new RadioButton("Discreet");
+        RadioButton explicitBtn = new RadioButton("Detailed");
+
+        // Increased gap between the radio groups to 20px
+        VBox radioBox = new VBox(20);
+        radioBox.getStyleClass().add("settings-tag-picker");
+        // Force a bit of extra padding inside the white card
+        radioBox.setPadding(new Insets(18));
+
+        radioBox.getChildren().addAll(
+                createRadioOption(offBtn, "No pop-ups. Events will only stay in your feed.", modeGroup,
+                        VisibilityMode.OFF),
+                createRadioOption(disguisedBtn, "Mimics system alerts or calculator tasks.", modeGroup,
+                        VisibilityMode.DISGUISED, customDisguiseBox),
+                createRadioOption(discreetBtn, "Shows times only (e.g., \"Upcoming Event\").", modeGroup,
+                        VisibilityMode.DISCREET),
+                createRadioOption(explicitBtn, "Shows full event names and any notes you've written.", modeGroup,
+                        VisibilityMode.EXPLICIT));
+
+        // --- Load Saved State ---
+        ReminderPreferences currentPrefs = ReminderPreferencesService.getInstance().getPreferences();
+        customTitleField.setText(currentPrefs.customDisguisedTitle());
+        customBodyField.setText(currentPrefs.customDisguisedBody());
+
+        switch (currentPrefs.visibilityMode()) {
+            case OFF -> offBtn.setSelected(true);
+            case DISGUISED -> {
+                disguisedBtn.setSelected(true);
+                customDisguiseBox.setVisible(true);
+                customDisguiseBox.setManaged(true);
+            }
+            case DISCREET -> discreetBtn.setSelected(true);
+            case EXPLICIT -> explicitBtn.setSelected(true);
+        }
+
+        // --- Event Listeners ---
+        modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
+            boolean isDisguised = (newVal == disguisedBtn);
+            customDisguiseBox.setVisible(isDisguised);
+            customDisguiseBox.setManaged(isDisguised);
+            saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+        });
+
+        customTitleField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
+            if (!isNowFocused)
+                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+        });
+
+        customBodyField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
+            if (!isNowFocused)
+                saveReminderSettings(modeGroup, customTitleField.getText(), customBodyField.getText());
+        });
+
+        page.getChildren().addAll(intro, modeTitle, radioBox);
+        return page;
+    }
+
+    private void saveReminderSettings(ToggleGroup modeGroup, String customTitle, String customBody) {
+        VisibilityMode mode = VisibilityMode.OFF;
+
+        if (modeGroup.getSelectedToggle() != null) {
+            // Directly cast the user data back to the Enum. No string matching required!
+            mode = (VisibilityMode) modeGroup.getSelectedToggle().getUserData();
+        }
+
+        ReminderPreferences prefs = new ReminderPreferences(mode, customTitle, customBody);
+        ReminderPreferencesService.getInstance().savePreferences(prefs);
+    }
+
+    private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode,
+            Node... extraContent) {
+        btn.getStyleClass().add("settings-subsection-label");
+        btn.setToggleGroup(group);
+        btn.setUserData(mode);
+
+        Label descLabel = new Label(description);
+        descLabel.getStyleClass().add("settings-section-body");
+        descLabel.setWrapText(true);
+        // Indent the description slightly so it aligns with the radio button text
+        descLabel.setPadding(new Insets(0, 0, 0, 24));
+
+        VBox box = new VBox(4, btn, descLabel);
+        box.getChildren().addAll(extraContent);
+
+        // --- NEW UX UPGRADES ---
+        // Apply the new CSS class for padding, hover background, and hand cursor
+        box.getStyleClass().add("settings-radio-box");
+
+        // Make the entire VBox (the "red box" from your screenshot) clickable!
+        box.setOnMouseClicked(event -> {
+            btn.setSelected(true);
+            btn.requestFocus(); // Shift focus so the UI visually reacts
+        });
+
+        return box;
+    }
+
+    private VBox createLabeledInput(String labelText, TextField field, String prompt) {
+        Label label = new Label(labelText);
+        label.getStyleClass().add("settings-subsection-label");
+
+        field.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        field.setPromptText("e.g., " + prompt);
+
+        // 6px spacing between the label and the text box so they don't touch
+        return new VBox(6, label, field);
     }
 
     private FlowPane createTagPane() {
@@ -254,13 +416,17 @@ public class SettingsController {
         availableLabel.getStyleClass().add("settings-subsection-label");
         FlowPane availableTagsPane = createTagPane();
 
-        renderSelectedTagChips(selectedTagsPane, section);
-        renderAvailableTagChips(availableTagsPane, section, "");
+        TagPickerRefs refs = new TagPickerRefs(selectedTagsPane, availableTagsPane, availableLabel, searchField);
+        if (section == TagSection.BLOCKED) {
+            blockedTagPickerRefs = refs;
+        } else {
+            preferredTagPickerRefs = refs;
+        }
+
+        updateTagPicker(refs, section);
 
         searchField.textProperty().addListener((obs, oldValue, newValue) -> {
-            String label = newValue == null || newValue.isBlank() ? "Suggestions" : "Matches";
-            availableLabel.setText(label);
-            renderAvailableTagChips(availableTagsPane, section, newValue);
+            updateTagPicker(refs, section);
         });
 
         picker.getChildren().addAll(selectedLabel, selectedTagsPane, searchField, availableLabel, availableTagsPane);
@@ -352,7 +518,7 @@ public class SettingsController {
 
         preferencesService.savePreferences(new ContentPreferences(blocked, preferred));
         notifyPreferencesChanged();
-        refresh();
+        updateVisibleTagPickers();
     }
 
     private void notifyPreferencesChanged() {
@@ -459,7 +625,7 @@ public class SettingsController {
         page.getChildren().addAll(intro, modeTitle, modeBody, optionsBox, resetButton);
         return page;
     }
-    
+
     public void setOnTextSizeChanged(Consumer<TextSizeLevel> onTextSizeChanged) {
         this.onTextSizeChanged = onTextSizeChanged;
     }
@@ -516,5 +682,25 @@ public class SettingsController {
 
         page.getChildren().addAll(intro, title, body, optionsBox, resetButton);
         return page;
+    }
+
+    private void updateVisibleTagPickers() {
+        if (blockedTagPickerRefs != null) {
+            updateTagPicker(blockedTagPickerRefs, TagSection.BLOCKED);
+        }
+        if (preferredTagPickerRefs != null) {
+            updateTagPicker(preferredTagPickerRefs, TagSection.PREFERRED);
+        }
+    }
+
+    private void updateTagPicker(TagPickerRefs refs, TagSection section) {
+        if (refs == null) {
+            return;
+        }
+
+        String query = refs.searchField().getText();
+        refs.availableLabel().setText(query == null || query.isBlank() ? "Suggestions" : "Matches");
+        renderSelectedTagChips(refs.selectedTagsPane(), section);
+        renderAvailableTagChips(refs.availableTagsPane(), section, query);
     }
 }

@@ -1,8 +1,10 @@
 package com.sddp.sexualhealthapp.navigation;
 
 import com.sddp.sexualhealthapp.util.AppConstants;
+import com.sddp.sexualhealthapp.util.NotificationService;
+import com.sddp.sexualhealthapp.mainapp.controller.MainAppController;
 import javafx.animation.FadeTransition;
-import javafx.animation.PauseTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -39,6 +41,9 @@ public class SceneManager {
     /** Cached FXML roots keyed by scene name. */
     private final Map<String, Parent> rootCache;
 
+    /** Cached controllers keyed by scene name. */
+    private final Map<String, Object> controllerCache;
+
     private String currentSceneName;
     private boolean isTransitioning = false;
 
@@ -47,6 +52,7 @@ public class SceneManager {
      */
     private SceneManager() {
         this.rootCache = new HashMap<>();
+        this.controllerCache = new HashMap<>();
         this.currentSceneName = "";
     }
 
@@ -105,6 +111,10 @@ public class SceneManager {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
             Parent root = loader.load();
+            Object controller = loader.getController();
+            if (controller != null) {
+                controllerCache.put(sceneName, controller);
+            }
             for (String css : getStylesheetsForScene(sceneName)) {
                 root.getStylesheets().add(
                         getClass().getResource(css).toExternalForm());
@@ -157,7 +167,8 @@ public class SceneManager {
         crossfadeToRoot(
                 AppConstants.SCENE_CALCULATOR,
                 AppConstants.CALCULATOR_FXML,
-                durationMs);
+                durationMs,
+                () -> Platform.runLater(this::warmMainAppRoot));
     }
 
     /**
@@ -177,31 +188,35 @@ public class SceneManager {
     /**
      * Transitions to the main application scene.
      * <p>
-     * Pre-loads the main app root synchronously before the discretion delay.
-     * On first call this is heavy (FXML + controller init + article loading),
-     * but it happens while the calculator is still showing — the user just
-     * pressed '=' and expects a brief computation pause. By the time the
-     * delay finishes and the crossfade starts, the root is cached and the
-     * FX thread is free to render every frame of the animation.
+     * Keeps the calculator responsive by avoiding heavy main-app work at the
+     * moment '=' is pressed. The main app root is loaded when the reveal runs
+     * (often from cache after {@link #warmMainAppRoot()}).
      */
     public void transitionToMainApp() {
-        if (isTransitioning)
+        crossfadeToRoot(
+                AppConstants.SCENE_MAIN_APP,
+                AppConstants.MAIN_APP_FXML,
+                AppConstants.REVEAL_FADE_MS,
+                () -> {
+                    MainAppController controller = getController(
+                            AppConstants.SCENE_MAIN_APP,
+                            MainAppController.class);
+                    if (controller != null) {
+                        controller.showInitialBrowseFeed();
+                    }
+                });
+    }
+
+    /**
+     * Preloads the main app root while the calculator is already visible so the
+     * unlock path can reuse a cached tree instead of constructing it on '='.
+     */
+    public void warmMainAppRoot() {
+        if (Platform.isFxApplicationThread()) {
+            loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML);
             return;
-        isTransitioning = true;
-
-        // Pre-load now so the heavy FXML init doesn't block the fade later.
-        loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML);
-
-        PauseTransition delay = new PauseTransition(
-                Duration.millis(AppConstants.TRANSITION_DELAY_MS));
-        delay.setOnFinished(e -> {
-            isTransitioning = false;
-            crossfadeToRoot(
-                    AppConstants.SCENE_MAIN_APP,
-                    AppConstants.MAIN_APP_FXML,
-                    AppConstants.REVEAL_FADE_MS);
-        });
-        delay.play();
+        }
+        Platform.runLater(() -> loadRoot(AppConstants.SCENE_MAIN_APP, AppConstants.MAIN_APP_FXML));
     }
 
     /**
@@ -224,6 +239,14 @@ public class SceneManager {
      * @param durationMs the fade duration in milliseconds
      */
     private void crossfadeToRoot(String sceneName, String fxmlPath, int durationMs) {
+        crossfadeToRoot(sceneName, fxmlPath, durationMs, null);
+    }
+
+    /**
+     * @param afterFade optional runnable after the new root is installed (e.g.
+     *                  welcome toast)
+     */
+    private void crossfadeToRoot(String sceneName, String fxmlPath, int durationMs, Runnable afterFade) {
         if (isTransitioning)
             return;
         if (primaryStage == null) {
@@ -278,9 +301,20 @@ public class SceneManager {
             currentRoot.setOpacity(1.0);
             wrapper.getChildren().clear();
             persistentScene.setRoot(targetRoot);
+            if (afterFade != null) {
+                afterFade.run();
+            }
             isTransitioning = false;
         });
         fade.play();
+    }
+
+    private <T> T getController(String sceneName, Class<T> controllerType) {
+        Object controller = controllerCache.get(sceneName);
+        if (controllerType.isInstance(controller)) {
+            return controllerType.cast(controller);
+        }
+        return null;
     }
 
     /**
@@ -298,6 +332,7 @@ public class SceneManager {
      */
     public void clearCache() {
         rootCache.clear();
+        controllerCache.clear();
     }
 
     /**
@@ -307,6 +342,7 @@ public class SceneManager {
      */
     public void clearScene(String sceneName) {
         rootCache.remove(sceneName);
+        controllerCache.remove(sceneName);
     }
 
     /**

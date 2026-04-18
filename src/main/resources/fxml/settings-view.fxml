@@ -26,7 +26,7 @@
                     hbarPolicy="NEVER">
             <VBox fx:id="settingsCardContainer" spacing="10" styleClass="settings-card-list">
                 <padding>
-                    <Insets top="4" right="16" bottom="16" left="16"/>
+                    <Insets top="4" right="16" bottom="60" left="16"/>
                 </padding>
             </VBox>
         </ScrollPane>

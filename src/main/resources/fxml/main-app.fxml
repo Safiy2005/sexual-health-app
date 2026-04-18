@@ -53,27 +53,24 @@
                     </ScrollPane>
                 </VBox>
 
-                <!-- Layer 2: Article Detail View (loaded from separate FXML) -->
-                <fx:include fx:id="articleView" source="/fxml/article-view.fxml"/>
+                <!-- Layer 2: Article Detail View (lazy-loaded on first open) -->
+                <StackPane fx:id="articleViewHost" visible="false" managed="false"/>
 
             </StackPane>
 
             <!-- Tab 2 : Calendar -->
             <VBox fx:id="calendarRoot" visible="false" managed="false">
                 <StackPane VBox.vgrow="ALWAYS">
-                    <fx:include fx:id="calendarView" source="/fxml/calendar-view.fxml"/>
-                    <fx:include fx:id="eventFeedView" source="/fxml/event-feed-view.fxml" visible="false"/>
-                    <fx:include fx:id="createEventView" source="/fxml/create-event-view.fxml" visible="false"/>
-                    <fx:include fx:id="eventDetailView" source="/fxml/event-detail-view.fxml" visible="false"/>
+                    <StackPane fx:id="calendarHost" visible="false" managed="false"/>
+                    <StackPane fx:id="eventFeedHost" visible="false" managed="false"/>
+                    <StackPane fx:id="createEventHost" visible="false" managed="false"/>
+                    <StackPane fx:id="eventDetailHost" visible="false" managed="false"/>
                 </StackPane>
             </VBox>
 
             <!-- Tab 3: Settings -->
-            <VBox fx:id="settingsRoot"
-                visible="false"
-                managed="false">
-                <fx:include fx:id="settingsView"
-                            source="/fxml/settings-view.fxml"/>
+            <VBox fx:id="settingsRoot" visible="false" managed="false" VBox.vgrow="ALWAYS">
+                <StackPane fx:id="settingsHost" visible="false" managed="false"/>
             </VBox>
         </StackPane>
     </center>

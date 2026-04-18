@@ -26,6 +26,18 @@ class ArticlePersonalizationServiceTest {
     }
 
     @Test
+    void blockedTags_inTitle_removeArticlesFromFilteredResults() {
+        Article blockedByTitle = article("I am pregnant and scared", List.of("General"));
+        Article allowed = article("General health", List.of("General"));
+
+        List<Article> filtered = ArticlePersonalizationService.filterBlockedArticles(
+                List.of(blockedByTitle, allowed),
+                new ContentPreferences(List.of("Pregnant"), List.of()));
+
+        assertEquals(List.of(allowed), filtered);
+    }
+
+    @Test
     void preferredTags_boostRelevantResults_withoutBoostingEveryone() {
         Article preferred = article("Preferred", List.of("LGBTQ+", "Everyone"));
         Article baseline = article("Baseline", List.of("Everyone"));
