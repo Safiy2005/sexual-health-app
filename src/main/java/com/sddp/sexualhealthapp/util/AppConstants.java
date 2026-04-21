@@ -39,6 +39,11 @@ public final class AppConstants {
          */
         public static final String SECRET_EQUATION_KEY = "secret_equation_hash";
 
+        /**
+         * Key used to store the hashed parental controls PIN in Java Preferences.
+         */
+        public static final String PARENTAL_CONTROLS_PIN_KEY = "parental_controls_pin_hash";
+
         // Calculator Configuration
         /**
          * Maximum number of equations to keep in history for secret matching.

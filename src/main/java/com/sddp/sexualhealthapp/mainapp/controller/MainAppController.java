@@ -35,6 +35,7 @@ import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplayModeManager;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeManager;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 import com.sddp.sexualhealthapp.util.AppConstants;
@@ -50,12 +51,16 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
+import javafx.scene.control.Dialog;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.ButtonBar;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
@@ -138,6 +143,8 @@ public class MainAppController {
     private long browseRankingRequestId = 0L;
     private List<Article> cachedBrowseRankedArticles = List.of();
     private boolean initialBrowseRenderPending = false;
+    private boolean suppressNavSelectionListener = false;
+    private final ParentalControlsPinService parentalControlsPinService = ParentalControlsPinService.getInstance();
 
     @FXML
     private void initialize() {
@@ -171,8 +178,20 @@ public class MainAppController {
         lockTab.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
 
         navGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
+            if (suppressNavSelectionListener) {
+                return;
+            }
+
             if (newToggle == null) {
                 navGroup.selectToggle(oldToggle);
+                return;
+            }
+
+            if (newToggle == settingsTab && !requestSettingsAccessIfRequired()) {
+                ToggleButton fallbackToggle = oldToggle instanceof ToggleButton oldButton ? oldButton : articlesTab;
+                suppressNavSelectionListener = true;
+                navGroup.selectToggle(fallbackToggle);
+                suppressNavSelectionListener = false;
                 return;
             }
 
@@ -912,6 +931,66 @@ public class MainAppController {
         }
     }
 
+    private boolean requestSettingsAccessIfRequired() {
+        if (!parentalControlsPinService.hasPin()) {
+            return true;
+        }
+
+        return promptForSettingsPin();
+    }
+
+    private boolean promptForSettingsPin() {
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setTitle("Parental controls");
+        dialog.setHeaderText("Enter PIN to open Settings");
+
+        ButtonType unlockButtonType = new ButtonType("Unlock", ButtonBar.ButtonData.OK_DONE);
+        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+        dialog.getDialogPane().getButtonTypes().addAll(unlockButtonType, cancelButtonType);
+
+        Label hint = new Label("PIN must contain digits only and cannot be empty.");
+        hint.getStyleClass().add("settings-section-body");
+
+        PasswordField pinField = new PasswordField();
+        pinField.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        pinField.setPromptText("PIN");
+
+        Label error = new Label("Incorrect PIN.");
+        error.setStyle("-fx-text-fill: #9A5151;");
+        error.setVisible(false);
+        error.setManaged(false);
+
+        VBox content = new VBox(8, hint, pinField, error);
+        dialog.getDialogPane().setContent(content);
+
+        Node unlockButton = dialog.getDialogPane().lookupButton(unlockButtonType);
+        unlockButton.setDisable(true);
+        pinField.textProperty().addListener((obs, oldVal, newVal) -> {
+            unlockButton.setDisable(!ParentalControlsPinService.isValidPinFormat(newVal));
+            if (error.isVisible()) {
+                error.setVisible(false);
+                error.setManaged(false);
+            }
+        });
+
+        dialog.setResultConverter(button -> {
+            if (button != unlockButtonType) {
+                return button;
+            }
+
+            if (!parentalControlsPinService.verifyPin(pinField.getText())) {
+                error.setVisible(true);
+                error.setManaged(true);
+                return null;
+            }
+
+            return button;
+        });
+
+        Platform.runLater(pinField::requestFocus);
+        return dialog.showAndWait().filter(result -> result == unlockButtonType).isPresent();
+    }
+
     @FXML
     private void handleBackToCalculator(ActionEvent event) {
         if (SceneManager.getInstance().isTransitioning())
@@ -1067,4 +1146,3 @@ public class MainAppController {
         TextSizeManager.applyTextSize(contentStack.getScene().getRoot(), level);
     }
 }
-

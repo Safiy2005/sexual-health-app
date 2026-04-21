@@ -16,6 +16,7 @@ import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 import javafx.fxml.FXML;
@@ -24,6 +25,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -47,6 +49,7 @@ public class SettingsController {
 
     private final TextSizeSettingsService textSizeSettingsService = TextSizeSettingsService.getInstance();
     private Consumer<TextSizeLevel> onTextSizeChanged;
+    private final ParentalControlsPinService parentalControlsPinService;
 
     private record SettingsPageDefinition(String id, String title, String subtitle, PageBuilder builder) {
     }
@@ -108,6 +111,7 @@ public class SettingsController {
     SettingsController(ContentPreferencesService preferencesService, Supplier<List<String>> curatedTagsSupplier) {
         this.preferencesService = preferencesService;
         this.curatedTagsSupplier = curatedTagsSupplier;
+        this.parentalControlsPinService = ParentalControlsPinService.getInstance();
     }
 
     @FXML
@@ -138,6 +142,12 @@ public class SettingsController {
                 "Reminders & Privacy",
                 "Manage how and when you receive event notifications.",
                 this::buildReminderPreferencesPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "parental-controls",
+                "Parental controls",
+                "Set, change, or remove a PIN that protects the Settings tab.",
+                this::buildParentalControlsPage));
 
         // keep this at the bottom if youre doing a merge for more settings. just makes
         // sense
@@ -537,6 +547,179 @@ public class SettingsController {
 
         // 6px spacing between the label and the text box so they don't touch
         return new VBox(6, label, field);
+    }
+
+    private Node buildParentalControlsPage() {
+        VBox page = new VBox(18);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+
+        Label intro = new Label(
+                "Use a PIN to protect the full Settings screen. When enabled, the app asks for this PIN before opening Settings.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        VBox panel = new VBox(12);
+        panel.getStyleClass().add("settings-tag-picker");
+
+        Label status = new Label(parentalControlsPinService.hasPin() ? "Status: PIN enabled" : "Status: PIN not set");
+        status.getStyleClass().add("settings-subsection-label");
+
+        Label resultLabel = new Label();
+        resultLabel.getStyleClass().add("settings-section-body");
+        resultLabel.setWrapText(true);
+        resultLabel.setVisible(false);
+        resultLabel.setManaged(false);
+
+        panel.getChildren().add(status);
+
+        if (!parentalControlsPinService.hasPin()) {
+            panel.getChildren().add(buildSetPinForm(status, resultLabel));
+        } else {
+            panel.getChildren().addAll(
+                    buildChangePinForm(status, resultLabel),
+                    buildRemovePinForm(status, resultLabel));
+        }
+
+        panel.getChildren().add(resultLabel);
+        page.getChildren().addAll(intro, panel);
+        return page;
+    }
+
+    private Node buildSetPinForm(Label statusLabel, Label resultLabel) {
+        VBox section = new VBox(8);
+
+        Label title = new Label("Set a PIN");
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label("PIN must contain digits only and cannot be empty.");
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        PasswordField newPinField = createPinField("New PIN");
+        PasswordField confirmPinField = createPinField("Confirm PIN");
+
+        Button setPinButton = new Button("Save PIN");
+        setPinButton.getStyleClass().add("calendar-action-button");
+        setPinButton.setOnAction(event -> {
+            String newPin = newPinField.getText();
+            String confirmPin = confirmPinField.getText();
+
+            if (!ParentalControlsPinService.isValidPinFormat(newPin)) {
+                showPinResult(resultLabel, "PIN must contain digits only and cannot be empty.", true);
+                return;
+            }
+
+            if (!newPin.equals(confirmPin)) {
+                showPinResult(resultLabel, "PIN confirmation does not match.", true);
+                return;
+            }
+
+            if (!parentalControlsPinService.setPin(newPin)) {
+                showPinResult(resultLabel, "Could not save PIN. Please try again.", true);
+                return;
+            }
+
+            newPinField.clear();
+            confirmPinField.clear();
+            statusLabel.setText("Status: PIN enabled");
+            showPinResult(resultLabel, "PIN set successfully.", false);
+            openPage(getCurrentPage());
+        });
+
+        section.getChildren().addAll(title, body, newPinField, confirmPinField, setPinButton);
+        return section;
+    }
+
+    private Node buildChangePinForm(Label statusLabel, Label resultLabel) {
+        VBox section = new VBox(8);
+
+        Label title = new Label("Change PIN");
+        title.getStyleClass().add("settings-section-title");
+
+        PasswordField currentPinField = createPinField("Current PIN");
+        PasswordField newPinField = createPinField("New PIN (digits only)");
+        PasswordField confirmPinField = createPinField("Confirm new PIN");
+
+        Button changePinButton = new Button("Change PIN");
+        changePinButton.getStyleClass().add("calendar-action-button");
+        changePinButton.setOnAction(event -> {
+            String currentPin = currentPinField.getText();
+            String newPin = newPinField.getText();
+            String confirmPin = confirmPinField.getText();
+
+            if (!ParentalControlsPinService.isValidPinFormat(newPin)) {
+                showPinResult(resultLabel, "New PIN must contain digits only and cannot be empty.", true);
+                return;
+            }
+
+            if (!newPin.equals(confirmPin)) {
+                showPinResult(resultLabel, "PIN confirmation does not match.", true);
+                return;
+            }
+
+            if (!parentalControlsPinService.changePin(currentPin, newPin)) {
+                showPinResult(resultLabel, "Current PIN is incorrect or new PIN is invalid.", true);
+                return;
+            }
+
+            currentPinField.clear();
+            newPinField.clear();
+            confirmPinField.clear();
+            statusLabel.setText("Status: PIN enabled");
+            showPinResult(resultLabel, "PIN changed successfully.", false);
+        });
+
+        section.getChildren().addAll(title, currentPinField, newPinField, confirmPinField, changePinButton);
+        return section;
+    }
+
+    private Node buildRemovePinForm(Label statusLabel, Label resultLabel) {
+        VBox section = new VBox(8);
+
+        Label title = new Label("Remove PIN");
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label("Enter your current PIN to disable Settings protection.");
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        PasswordField currentPinField = createPinField("Current PIN");
+
+        Button removePinButton = new Button("Remove PIN");
+        removePinButton.setStyle(
+                "-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
+        removePinButton.setOnAction(event -> {
+            String currentPin = currentPinField.getText();
+            if (!parentalControlsPinService.removePin(currentPin)) {
+                showPinResult(resultLabel, "Current PIN is incorrect.", true);
+                return;
+            }
+
+            currentPinField.clear();
+            statusLabel.setText("Status: PIN not set");
+            showPinResult(resultLabel, "PIN removed.", false);
+            openPage(getCurrentPage());
+        });
+
+        section.getChildren().addAll(title, body, currentPinField, removePinButton);
+        return section;
+    }
+
+    private PasswordField createPinField(String promptText) {
+        PasswordField field = new PasswordField();
+        field.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        field.setPromptText(promptText);
+        return field;
+    }
+
+    private void showPinResult(Label label, String message, boolean isError) {
+        label.setText(message);
+        label.setStyle(isError
+                ? "-fx-text-fill: #9A5151;"
+                : "-fx-text-fill: #3D7A75;");
+        label.setVisible(true);
+        label.setManaged(true);
     }
 
     private Node buildDisguiseSettingsPage() {
