@@ -267,3 +267,166 @@
 .calendar-action-button-primary:pressed {
     -fx-background-color: #5A9D97;
 }
+
+/* ============================================
+   DARK AND HIGH CONTRAST THEME
+   ============================================ */
+
+.theme-dark .calendar-root {
+    -fx-background-color: linear-gradient(to bottom, #1F1F1F, #181818);
+}
+
+.theme-dark .calendar-month-label,
+.theme-dark .calendar-day-number,
+.theme-dark .calendar-selected-date-header,
+.theme-dark .calendar-dow-label,
+.theme-dark .calendar-event-card-title,
+.theme-dark .calendar-event-card-time,
+.theme-dark .calendar-event-card-date,
+.theme-dark .calendar-no-events-label {
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .calendar-event-card,
+.theme-dark .calendar-picker-row {
+    -fx-background-color: #2A2A2A;
+}
+
+.theme-dark .calendar-day-cell:hover {
+    -fx-background-color: #333333;
+}
+
+.theme-dark .calendar-day-selected {
+    -fx-background-color: #355B5A;
+}
+
+.theme-dark .calendar-action-button,
+.theme-dark .calendar-nav-button {
+    -fx-background-color: #355B5A;
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .calendar-action-button-primary,
+.theme-dark .calendar-today-button {
+    -fx-background-color: #4E908B;
+    -fx-text-fill: white;
+}
+
+.theme-high-contrast .calendar-root {
+    -fx-background-color: white;
+}
+
+.theme-high-contrast .calendar-month-label,
+.theme-high-contrast .calendar-day-number,
+.theme-high-contrast .calendar-selected-date-header,
+.theme-high-contrast .calendar-dow-label,
+.theme-high-contrast .calendar-event-card-title,
+.theme-high-contrast .calendar-event-card-time,
+.theme-high-contrast .calendar-event-card-date,
+.theme-high-contrast .calendar-no-events-label {
+    -fx-text-fill: black;
+}
+
+.theme-high-contrast .calendar-event-card,
+.theme-high-contrast .calendar-picker-row {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .calendar-day-selected {
+    -fx-background-color: black;
+}
+
+.theme-high-contrast .calendar-day-selected .calendar-day-number {
+    -fx-text-fill: white;
+}
+
+.theme-high-contrast .calendar-action-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .calendar-action-button-primary,
+.theme-high-contrast .calendar-today-button,
+.theme-high-contrast .calendar-nav-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+.text-size-small .calendar-month-label { -fx-font-size: 16px; }
+.text-size-standard .calendar-month-label { -fx-font-size: 18px; }
+.text-size-large .calendar-month-label { -fx-font-size: 21px; }
+.text-size-extra-large .calendar-month-label { -fx-font-size: 24px; }
+
+.text-size-small .calendar-day-number,
+.text-size-small .calendar-event-card-title,
+.text-size-small .calendar-selected-date-header {
+    -fx-font-size: 12px;
+}
+
+.text-size-standard .calendar-day-number,
+.text-size-standard .calendar-event-card-title,
+.text-size-standard .calendar-selected-date-header {
+    -fx-font-size: 14px;
+}
+
+.text-size-large .calendar-day-number,
+.text-size-large .calendar-event-card-title,
+.text-size-large .calendar-selected-date-header {
+    -fx-font-size: 16px;
+}
+
+.text-size-extra-large .calendar-day-number,
+.text-size-extra-large .calendar-event-card-title,
+.text-size-extra-large .calendar-selected-date-header {
+    -fx-font-size: 18px;
+}
+
+.text-size-small .calendar-event-card-time,
+.text-size-small .calendar-event-card-date,
+.text-size-small .calendar-dow-label,
+.text-size-small .calendar-no-events-label,
+.text-size-small .calendar-action-button,
+.text-size-small .calendar-action-button-primary,
+.text-size-small .calendar-today-button {
+    -fx-font-size: 10px;
+}
+
+.text-size-standard .calendar-event-card-time,
+.text-size-standard .calendar-event-card-date,
+.text-size-standard .calendar-dow-label,
+.text-size-standard .calendar-no-events-label,
+.text-size-standard .calendar-action-button,
+.text-size-standard .calendar-action-button-primary,
+.text-size-standard .calendar-today-button {
+    -fx-font-size: 12px;
+}
+
+.text-size-large .calendar-event-card-time,
+.text-size-large .calendar-event-card-date,
+.text-size-large .calendar-dow-label,
+.text-size-large .calendar-no-events-label,
+.text-size-large .calendar-action-button,
+.text-size-large .calendar-action-button-primary,
+.text-size-large .calendar-today-button {
+    -fx-font-size: 14px;
+}
+
+.text-size-extra-large .calendar-event-card-time,
+.text-size-extra-large .calendar-event-card-date,
+.text-size-extra-large .calendar-dow-label,
+.text-size-extra-large .calendar-no-events-label,
+.text-size-extra-large .calendar-action-button,
+.text-size-extra-large .calendar-action-button-primary,
+.text-size-extra-large .calendar-today-button {
+    -fx-font-size: 16px;
+}

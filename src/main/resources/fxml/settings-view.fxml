@@ -11,7 +11,8 @@
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.sddp.sexualhealthapp.settings.controller.SettingsController"
-      styleClass="settings-root">
+      styleClass="settings-root"
+      fillWidth="true">
 
     <VBox fx:id="settingsHomeView" spacing="0" VBox.vgrow="ALWAYS">
         <HBox alignment="CENTER_LEFT" styleClass="search-header">
@@ -21,7 +22,7 @@
             <Label text="Settings" styleClass="search-header-title" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
         </HBox>
 
-        <ScrollPane fx:id="settingsHomeScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
+        <ScrollPane fx:id="settingsHomeScrollPane" fitToWidth="true"  VBox.vgrow="ALWAYS"
                     hbarPolicy="NEVER">
             <VBox fx:id="settingsCardContainer" spacing="10" styleClass="settings-card-list">
                 <padding>
@@ -41,7 +42,7 @@
             <Label fx:id="settingsDetailTitle" styleClass="settings-detail-title"/>
         </HBox>
 
-        <ScrollPane fx:id="settingsDetailScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
+        <ScrollPane fx:id="settingsDetailScrollPane" fitToWidth="true"  VBox.vgrow="ALWAYS"
                     hbarPolicy="NEVER">
             <VBox fx:id="settingsDetailContent" spacing="14">
                 <padding>

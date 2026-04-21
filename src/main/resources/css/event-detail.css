@@ -145,3 +145,122 @@
 .overlay-body {
     -fx-opacity: 0.85;
 }
+
+/* ============================================
+   DARK AND HIGH CONTRAST THEME
+   ============================================ */
+
+.theme-dark .event-detail-root {
+    -fx-background-color: linear-gradient(to bottom, #1C1C1C, #151515);
+}
+
+.theme-dark .event-detail-header {
+    -fx-background-color: transparent;
+}
+
+.theme-dark .event-detail-hero,
+.theme-dark .event-detail-card,
+.theme-dark .overlay-card {
+    -fx-background-color: #242424;
+}
+
+.theme-dark .event-detail-name,
+.theme-dark .event-detail-section-title,
+.theme-dark .event-detail-section-body,
+.theme-dark .event-detail-meta,
+.theme-dark .event-detail-missing-title,
+.theme-dark .event-detail-missing-body,
+.theme-dark .overlay-title,
+.theme-dark .overlay-body {
+    -fx-text-fill: #F4F1EC;
+}
+
+/* Recurrence chip */
+.theme-dark .event-detail-recurrence-chip {
+    -fx-background-color: #567B77;
+    -fx-text-fill: #F5FBFA;
+}
+
+/* Suggested article list inside event detail */
+.theme-dark .event-detail-suggested-list .article-card {
+    -fx-background-color: #2A2A2A;
+}
+
+.theme-dark .danger-action-button {
+    -fx-background-color: #4A2424;
+    -fx-text-fill: #FFD9D9;
+    -fx-border-color: #A95C5C;
+}
+
+.theme-dark .danger-action-button:hover {
+    -fx-background-color: #5B2B2B;
+}
+
+.theme-high-contrast .event-detail-root {
+    -fx-background-color: white;
+}
+
+.theme-high-contrast .event-detail-hero,
+.theme-high-contrast .event-detail-card,
+.theme-high-contrast .overlay-card {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.theme-high-contrast .event-detail-name,
+.theme-high-contrast .event-detail-section-title,
+.theme-high-contrast .event-detail-section-body,
+.theme-high-contrast .event-detail-meta,
+.theme-high-contrast .event-detail-missing-title,
+.theme-high-contrast .event-detail-missing-body,
+.theme-high-contrast .overlay-title,
+.theme-high-contrast .overlay-body {
+    -fx-text-fill: black;
+}
+
+/* ============================================
+   GLOBAL TEXT SIZE SCALING
+   ============================================ */
+
+.text-size-small .event-detail-name { -fx-font-size: 20px; }
+.text-size-standard .event-detail-name { -fx-font-size: 24px; }
+.text-size-large .event-detail-name { -fx-font-size: 28px; }
+.text-size-extra-large .event-detail-name { -fx-font-size: 32px; }
+
+.text-size-small .event-detail-section-title { -fx-font-size: 11px; }
+.text-size-standard .event-detail-section-title { -fx-font-size: 13px; }
+.text-size-large .event-detail-section-title { -fx-font-size: 15px; }
+.text-size-extra-large .event-detail-section-title { -fx-font-size: 17px; }
+
+.text-size-small .event-detail-section-body,
+.text-size-small .event-detail-meta,
+.text-size-small .event-detail-recurrence-chip,
+.text-size-small .overlay-title,
+.text-size-small .overlay-body {
+    -fx-font-size: 12px;
+}
+
+.text-size-standard .event-detail-section-body,
+.text-size-standard .event-detail-meta,
+.text-size-standard .event-detail-recurrence-chip,
+.text-size-standard .overlay-title,
+.text-size-standard .overlay-body {
+    -fx-font-size: 14px;
+}
+
+.text-size-large .event-detail-section-body,
+.text-size-large .event-detail-meta,
+.text-size-large .event-detail-recurrence-chip,
+.text-size-large .overlay-title,
+.text-size-large .overlay-body {
+    -fx-font-size: 16px;
+}
+
+.text-size-extra-large .event-detail-section-body,
+.text-size-extra-large .event-detail-meta,
+.text-size-extra-large .event-detail-recurrence-chip,
+.text-size-extra-large .overlay-title,
+.text-size-extra-large .overlay-body {
+    -fx-font-size: 18px;
+}

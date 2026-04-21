@@ -70,7 +70,7 @@
 
             <!-- Tab 3: Settings -->
             <VBox fx:id="settingsRoot" visible="false" managed="false" VBox.vgrow="ALWAYS">
-                <StackPane fx:id="settingsHost" visible="false" managed="false"/>
+                <StackPane fx:id="settingsHost" visible="false" managed="false" VBox.vgrow="ALWAYS"/>
             </VBox>
         </StackPane>
     </center>

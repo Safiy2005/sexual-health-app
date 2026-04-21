@@ -1,10 +1,21 @@
 package com.sddp.sexualhealthapp.settings.controller;
 
-import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
+import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
+import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
+import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 import com.sddp.sexualhealthapp.util.AppResetService;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -12,20 +23,15 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
-import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
-import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Supplier;
 
 
 /**
@@ -35,6 +41,12 @@ public class SettingsController {
 
     private static final int DEFAULT_SUGGESTED_TAGS = 8;
     private static final int MAX_SEARCH_RESULTS = 12;
+
+    private final DisplaySettingsService displaySettingsService = DisplaySettingsService.getInstance();
+    private Consumer<DisplayMode> onDisplayModeChanged;
+
+    private final TextSizeSettingsService textSizeSettingsService = TextSizeSettingsService.getInstance();
+    private Consumer<TextSizeLevel> onTextSizeChanged;
 
     private record SettingsPageDefinition(String id, String title, String subtitle, PageBuilder builder) {
     }
@@ -108,6 +120,18 @@ public class SettingsController {
                 "Content preferences",
                 "Block topics and prioritise the tags most relevant to you.",
                 this::buildContentPreferencesPage));
+        
+        pageDefinitions.add(new SettingsPageDefinition(
+                "display",
+                "Display",
+                "Switch between standard, dark, and high-contrast views.",
+                this::buildDisplayPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "text-size",
+                "Text size",
+                "Adjust the global text size across the app",
+                this::buildTextSizePage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "reminder-preferences",
@@ -154,24 +178,29 @@ public class SettingsController {
         for (SettingsPageDefinition page : pageDefinitions) {
             VBox card = new VBox(6);
             card.getStyleClass().add("settings-card");
+            card.setMaxWidth(Double.MAX_VALUE);
 
             Label title = new Label(page.title());
             title.getStyleClass().add("settings-card-title");
             title.setWrapText(true);
+            title.setMaxWidth(Double.MAX_VALUE);
 
             Label subtitle = new Label(page.subtitle());
             subtitle.getStyleClass().add("settings-card-subtitle");
             subtitle.setWrapText(true);
+            subtitle.setMaxWidth(Double.MAX_VALUE);
 
-            HBox row = new HBox(10);
-            row.setAlignment(Pos.CENTER_LEFT);
             VBox textBox = new VBox(4, title, subtitle);
-            Region spacer = new Region();
-            HBox.setHgrow(spacer, Priority.ALWAYS);
+            textBox.setMaxWidth(Double.MAX_VALUE);
+            HBox.setHgrow(textBox, Priority.ALWAYS);
 
             Label chevron = new Label(">");
             chevron.getStyleClass().add("settings-card-chevron");
-            row.getChildren().addAll(textBox, spacer, chevron);
+            chevron.setMinWidth(Region.USE_PREF_SIZE);
+
+            HBox row = new HBox(10);
+            row.setAlignment(Pos.CENTER_LEFT);
+            row.getChildren().addAll(textBox, chevron);
 
             card.getChildren().add(row);
             card.setOnMouseClicked(event -> openPage(page));
@@ -673,6 +702,122 @@ public class SettingsController {
                 .filter(page -> page.id().equals(currentPageId))
                 .findFirst()
                 .orElse(null);
+    }
+
+    public void setOnDisplayModeChanged(Consumer<DisplayMode> onDisplayModeChanged) {
+        this.onDisplayModeChanged = onDisplayModeChanged;
+    }
+
+    private Node buildDisplayPage() {
+        VBox page = new VBox(18);
+        page.getStyleClass().add("settings-page-content");
+
+        Label intro = new Label(
+                "Choose the visual style that is most comfortable and readable for you.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label modeTitle = new Label("Display mode");
+        modeTitle.getStyleClass().add("settings-section-title");
+
+        Label modeBody = new Label(
+                "Standard keeps the default appearance, Dark reduces brightness, and High Contrast increases separation between text and controls.");
+        modeBody.getStyleClass().add("settings-section-body");
+        modeBody.setWrapText(true);
+
+        VBox optionsBox = new VBox(10);
+        optionsBox.getStyleClass().add("settings-tag-picker");
+
+        ToggleGroup modeGroup = new ToggleGroup();
+        DisplayMode currentMode = displaySettingsService.getDisplayMode();
+
+        for (DisplayMode mode : DisplayMode.values()) {
+            RadioButton radio = new RadioButton(mode.getDisplayName());
+            radio.setToggleGroup(modeGroup);
+            radio.getStyleClass().add("settings-display-radio");
+            radio.setWrapText(true);
+            radio.setSelected(mode == currentMode);
+
+            radio.setOnAction(event -> {
+                displaySettingsService.setDisplayMode(mode);
+                if (onDisplayModeChanged != null) {
+                    onDisplayModeChanged.accept(mode);
+                }
+            });
+
+            optionsBox.getChildren().add(radio);
+        }
+
+        Button resetButton = new Button("Reset to standard view");
+        resetButton.getStyleClass().add("calendar-action-button");
+        resetButton.setOnAction(event -> {
+            displaySettingsService.resetDisplayMode();
+            if (onDisplayModeChanged != null) {
+                onDisplayModeChanged.accept(DisplayMode.STANDARD);
+            }
+            refresh();
+        });
+
+        page.getChildren().addAll(intro, modeTitle, modeBody, optionsBox, resetButton);
+        return page;
+    }
+
+    public void setOnTextSizeChanged(Consumer<TextSizeLevel> onTextSizeChanged) {
+        this.onTextSizeChanged = onTextSizeChanged;
+    }
+
+    private Node buildTextSizePage() {
+        VBox page = new VBox(18);
+        page.getStyleClass().add("settings-page-content");
+
+        Label intro = new Label(
+                "Choose a bounded text size that makes the app easier to read.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label title = new Label("Global text size");
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label(
+                "The selected size is applied consistently across articles, calendar, event screens, and settings.");
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        VBox optionsBox = new VBox(10);
+        optionsBox.getStyleClass().add("settings-tag-picker");
+
+        ToggleGroup textSizeGroup = new ToggleGroup();
+        TextSizeLevel currentLevel = textSizeSettingsService.getTextSizeLevel();
+
+        for (TextSizeLevel level : TextSizeLevel.values()) {
+            RadioButton radio = new RadioButton(level.getDisplayName());
+            radio.setToggleGroup(textSizeGroup);
+            radio.getStyleClass().add("settings-display-radio");
+            radio.setWrapText(true);
+            radio.setSelected(level == currentLevel);
+
+            radio.setOnAction(event -> {
+                textSizeSettingsService.setTextSizeLevel(level);
+                if (onTextSizeChanged != null) {
+                    onTextSizeChanged.accept(level);
+                }
+            });
+
+            optionsBox.getChildren().add(radio);
+        }
+
+        Button resetButton = new Button("Reset to standard size");
+        resetButton.getStyleClass().add("calendar-action-button");
+        resetButton.setOnAction(event -> {
+            textSizeSettingsService.resetTextSizeLevel();
+            if (onTextSizeChanged != null) {
+                onTextSizeChanged.accept(TextSizeLevel.STANDARD);
+            }
+            refresh();
+        });
+
+        page.getChildren().addAll(intro, title, body, optionsBox, resetButton);
+        return page;
     }
 
     private void updateVisibleTagPickers() {

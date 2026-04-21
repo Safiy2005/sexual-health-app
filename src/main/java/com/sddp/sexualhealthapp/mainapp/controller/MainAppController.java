@@ -30,7 +30,13 @@ import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.controller.SettingsController;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisplayModeManager;
+import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.TextSizeManager;
+import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.SvgIcon;
 
@@ -180,6 +186,13 @@ public class MainAppController {
 
         // Default tab
         navGroup.selectToggle(articlesTab);
+
+        contentStack.sceneProperty().addListener((obs, oldScene, newScene) -> {
+            if (newScene != null) {
+                applySavedDisplayMode();
+                applySavedTextSize();
+            }
+        });
     }
 
     private void switchToTab(String tab) {
@@ -364,6 +377,8 @@ public class MainAppController {
 
         settingsViewController = loadView(settingsHost, AppConstants.SETTINGS_VIEW_FXML, controller -> {
             controller.setOnPreferencesChanged(this::refreshArticlesView);
+            controller.setOnDisplayModeChanged(this::updateDisplayMode);
+            controller.setOnTextSizeChanged(this::updateTextSize);
         });
         settingsViewNode = settingsHost.getChildren().isEmpty() ? null : settingsHost.getChildren().get(0);
     }
@@ -1013,4 +1028,43 @@ public class MainAppController {
         searchView.setVisible(false);
         isViewTransitioning = false;
     }
+
+    private void applySavedDisplayMode() {
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        DisplayMode mode = DisplaySettingsService.getInstance().getDisplayMode();
+        DisplayModeManager.applyDisplayMode(contentStack.getScene().getRoot(), mode);
+    }
+
+    private void updateDisplayMode(DisplayMode mode) {
+        DisplaySettingsService.getInstance().setDisplayMode(mode);
+
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        DisplayModeManager.applyDisplayMode(contentStack.getScene().getRoot(), mode);
+    }
+
+    private void applySavedTextSize() {
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        TextSizeLevel level = TextSizeSettingsService.getInstance().getTextSizeLevel();
+        TextSizeManager.applyTextSize(contentStack.getScene().getRoot(), level);
+    }
+
+    private void updateTextSize(TextSizeLevel level) {
+        TextSizeSettingsService.getInstance().setTextSizeLevel(level);
+
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        TextSizeManager.applyTextSize(contentStack.getScene().getRoot(), level);
+    }
 }
+
