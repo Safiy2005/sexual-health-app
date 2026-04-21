@@ -502,6 +502,10 @@ public class MainAppController {
                 && allArticles.containsAll(cachedBrowseRankedArticles);
     }
 
+    private boolean canShowBlockedArticles() {
+        return !parentalControlsPinService.hasPin();
+    }
+
     private void renderBrowseFeedContent(List<Article> orderedArticles,
             List<RecentlyReadEntry> recentEntries,
             ContentPreferences preferences,
@@ -511,9 +515,11 @@ public class MainAppController {
         List<Article> articles = ArticlePersonalizationService.filterBlockedArticles(
                 orderedArticles,
                 preferences);
-        List<Article> blockedArticles = orderedArticles.stream()
-                .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
-                .toList();
+        List<Article> blockedArticles = canShowBlockedArticles()
+                ? orderedArticles.stream()
+                        .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
+                        .toList()
+                : List.of();
 
         if (articles.isEmpty() && blockedArticles.isEmpty()) {
             showEmptyState("No articles found");
@@ -636,12 +642,14 @@ public class MainAppController {
             List<SearchResult> blockedResults) {
         articleListContainer.getChildren().clear();
 
-        if (visibleResults.isEmpty() && blockedResults.isEmpty()) {
+        List<SearchResult> visibleBlockedResults = canShowBlockedArticles() ? blockedResults : List.of();
+
+        if (visibleResults.isEmpty() && visibleBlockedResults.isEmpty()) {
             showEmptyState("No results for \"" + query + "\"");
             return;
         }
 
-        if (visibleResults.isEmpty() && !blockedResults.isEmpty()) {
+        if (visibleResults.isEmpty() && !visibleBlockedResults.isEmpty()) {
             showEmptyState("All results for \"" + query + "\" are currently hidden by blocked tags.");
         }
 
@@ -654,10 +662,15 @@ public class MainAppController {
                             this::openArticle));
         }
 
-        addBlockedArticlesToggleForSearch(query, blockedResults);
+        addBlockedArticlesToggleForSearch(query, visibleBlockedResults);
     }
 
     private void addBlockedArticlesToggleForBrowse(List<BrowseCardData> blockedCards) {
+        if (!canShowBlockedArticles()) {
+            blockedArticlesExpanded = false;
+            return;
+        }
+
         if (blockedCards.isEmpty()) {
             blockedArticlesExpanded = false;
             return;
@@ -683,6 +696,11 @@ public class MainAppController {
     }
 
     private void addBlockedArticlesToggleForSearch(String query, List<SearchResult> blockedResults) {
+        if (!canShowBlockedArticles()) {
+            blockedArticlesExpanded = false;
+            return;
+        }
+
         if (blockedResults.isEmpty()) {
             blockedArticlesExpanded = false;
             return;
