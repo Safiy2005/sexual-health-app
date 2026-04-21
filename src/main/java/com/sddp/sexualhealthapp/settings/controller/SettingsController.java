@@ -10,12 +10,14 @@ import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.model.DisguisePreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.DyslexicFontMode;
 import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
 import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
 import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.DyslexicFontSettingsService;
 import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
@@ -26,10 +28,12 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.FlowPane;
@@ -51,6 +55,9 @@ public class SettingsController {
 
     private final TextSizeSettingsService textSizeSettingsService = TextSizeSettingsService.getInstance();
     private Consumer<TextSizeLevel> onTextSizeChanged;
+
+    private final DyslexicFontSettingsService dyslexicFontSettingsService = DyslexicFontSettingsService.getInstance();
+    private Consumer<DyslexicFontMode> onDyslexicFontChanged;
     private final ParentalControlsPinService parentalControlsPinService;
 
     private record SettingsPageDefinition(String id, String title, String subtitle, boolean locked,
@@ -1093,6 +1100,10 @@ public class SettingsController {
         this.onTextSizeChanged = onTextSizeChanged;
     }
 
+    public void setOnDyslexicFontChanged(Consumer<DyslexicFontMode> onDyslexicFontChanged) {
+        this.onDyslexicFontChanged = onDyslexicFontChanged;
+    }
+
     private Node buildTextSizePage() {
         VBox page = new VBox(18);
         page.getStyleClass().add("settings-page-content");
@@ -1133,17 +1144,49 @@ public class SettingsController {
             optionsBox.getChildren().add(radio);
         }
 
-        Button resetButton = new Button("Reset to standard size");
+        Separator dyslexicFontDivider = new Separator();
+
+        Label dyslexicFontTitle = new Label("Dyslexia-friendly font");
+        dyslexicFontTitle.getStyleClass().add("settings-section-title");
+
+        Label dyslexicFontBody = new Label(
+                "Swap the app's typeface for OpenDyslexic, an open-source font "
+                        + "designed to make letters easier to distinguish.");
+        dyslexicFontBody.getStyleClass().add("settings-section-body");
+        dyslexicFontBody.setWrapText(true);
+
+        CheckBox dyslexicFontToggle = new CheckBox("Use OpenDyslexic");
+        dyslexicFontToggle.getStyleClass().add("settings-display-radio");
+        dyslexicFontToggle.setWrapText(true);
+        dyslexicFontToggle.setSelected(dyslexicFontSettingsService.isEnabled());
+        dyslexicFontToggle.setOnAction(event -> {
+            DyslexicFontMode newMode = DyslexicFontMode.fromBoolean(dyslexicFontToggle.isSelected());
+            dyslexicFontSettingsService.setMode(newMode);
+            if (onDyslexicFontChanged != null) {
+                onDyslexicFontChanged.accept(newMode);
+            }
+        });
+
+        Button resetButton = new Button("Reset to defaults");
         resetButton.getStyleClass().add("calendar-action-button");
         resetButton.setOnAction(event -> {
             textSizeSettingsService.resetTextSizeLevel();
+            dyslexicFontSettingsService.resetMode();
             if (onTextSizeChanged != null) {
                 onTextSizeChanged.accept(TextSizeLevel.STANDARD);
+            }
+            if (onDyslexicFontChanged != null) {
+                onDyslexicFontChanged.accept(DyslexicFontMode.OFF);
             }
             refresh();
         });
 
-        page.getChildren().addAll(intro, title, body, optionsBox, resetButton);
+        page.getChildren().addAll(
+                intro,
+                title, body, optionsBox,
+                dyslexicFontDivider,
+                dyslexicFontTitle, dyslexicFontBody, dyslexicFontToggle,
+                resetButton);
         return page;
     }
 

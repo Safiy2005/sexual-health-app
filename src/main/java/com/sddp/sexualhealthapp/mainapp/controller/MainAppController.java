@@ -31,10 +31,13 @@ import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.controller.SettingsController;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
+import com.sddp.sexualhealthapp.settings.model.DyslexicFontMode;
 import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplayModeManager;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.DyslexicFontManager;
+import com.sddp.sexualhealthapp.settings.service.DyslexicFontSettingsService;
 import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeManager;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
@@ -193,6 +196,7 @@ public class MainAppController {
             if (newScene != null) {
                 applySavedDisplayMode();
                 applySavedTextSize();
+                applySavedDyslexicFont();
             }
         });
     }
@@ -381,6 +385,7 @@ public class MainAppController {
             controller.setOnPreferencesChanged(this::refreshArticlesView);
             controller.setOnDisplayModeChanged(this::updateDisplayMode);
             controller.setOnTextSizeChanged(this::updateTextSize);
+            controller.setOnDyslexicFontChanged(this::updateDyslexicFont);
         });
         settingsViewNode = settingsHost.getChildren().isEmpty() ? null : settingsHost.getChildren().get(0);
     }
@@ -1085,5 +1090,25 @@ public class MainAppController {
         }
 
         TextSizeManager.applyTextSize(contentStack.getScene().getRoot(), level);
+    }
+
+    private void applySavedDyslexicFont() {
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        DyslexicFontMode mode = DyslexicFontSettingsService.getInstance().getMode();
+        DyslexicFontManager.applyMode(contentStack.getScene().getRoot(), mode);
+    }
+
+    private void updateDyslexicFont(DyslexicFontMode mode) {
+        DyslexicFontSettingsService.getInstance().setMode(mode);
+        SceneManager.getInstance().refreshDyslexicFont();
+
+        if (contentStack == null || contentStack.getScene() == null) {
+            return;
+        }
+
+        DyslexicFontManager.applyMode(contentStack.getScene().getRoot(), mode);
     }
 }

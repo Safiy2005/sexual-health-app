@@ -6,6 +6,7 @@ import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService;
 import com.sddp.sexualhealthapp.util.AppConstants;
+import com.sddp.sexualhealthapp.util.FontLoader;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -36,6 +37,10 @@ public class SexualHealthApp extends Application {
      */
     @Override
     public void start(Stage primaryStage) {
+        // Register custom fonts (OpenDyslexic) before any CSS is parsed so the
+        // dyslexic-font style class can resolve the family name at first paint.
+        FontLoader.loadCustomFonts();
+
         // Initialize the scene manager with the primary stage
         SceneManager.getInstance().initialize(primaryStage);
 

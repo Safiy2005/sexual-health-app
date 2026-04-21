@@ -534,10 +534,17 @@
    ============================================ */
 
 
-.text-size-small .search-header-title { -fx-font-size: 20px; }
-.text-size-standard .search-header-title { -fx-font-size: 24px; }
-.text-size-large .search-header-title { -fx-font-size: 28px; }
-.text-size-extra-large .search-header-title { -fx-font-size: 32px; }
+/*
+ * Header titles share their row with fixed-width action buttons (Back, Edit,
+ * Today, etc.). The growth curve below is intentionally gentle so the title
+ * still fits alongside those buttons even with the widest bundled typeface
+ * (OpenDyslexic) at Extra Large — the title label also has wrapText=true as a
+ * belt-and-braces fallback.
+ */
+.text-size-small .search-header-title { -fx-font-size: 19px; }
+.text-size-standard .search-header-title { -fx-font-size: 22px; }
+.text-size-large .search-header-title { -fx-font-size: 24px; }
+.text-size-extra-large .search-header-title { -fx-font-size: 26px; }
 
 .text-size-small .settings-detail-title { -fx-font-size: 15px; }
 .text-size-standard .settings-detail-title { -fx-font-size: 17px; }

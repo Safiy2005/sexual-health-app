@@ -414,19 +414,30 @@
 .text-size-large .calendar-event-card-time,
 .text-size-large .calendar-event-card-date,
 .text-size-large .calendar-dow-label,
-.text-size-large .calendar-no-events-label,
-.text-size-large .calendar-action-button,
-.text-size-large .calendar-action-button-primary,
-.text-size-large .calendar-today-button {
+.text-size-large .calendar-no-events-label {
     -fx-font-size: 14px;
 }
 
 .text-size-extra-large .calendar-event-card-time,
 .text-size-extra-large .calendar-event-card-date,
 .text-size-extra-large .calendar-dow-label,
-.text-size-extra-large .calendar-no-events-label,
+.text-size-extra-large .calendar-no-events-label {
+    -fx-font-size: 16px;
+}
+
+/*
+ * Chrome action buttons (Back / Edit / Today / prev / next / + New Event) share
+ * horizontal space with a header title. Their font-size is capped at 13-14px
+ * across text-size levels so the row always fits the 360px canvas, even with
+ * OpenDyslexic. The body content below still scales freely.
+ */
+.text-size-large .calendar-action-button,
+.text-size-large .calendar-action-button-primary,
+.text-size-large .calendar-today-button,
+.text-size-large .calendar-nav-button,
 .text-size-extra-large .calendar-action-button,
 .text-size-extra-large .calendar-action-button-primary,
-.text-size-extra-large .calendar-today-button {
-    -fx-font-size: 16px;
+.text-size-extra-large .calendar-today-button,
+.text-size-extra-large .calendar-nav-button {
+    -fx-font-size: 14px;
 }

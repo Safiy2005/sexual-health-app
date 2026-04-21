@@ -16,13 +16,17 @@
             <Insets top="16" right="16" bottom="4" left="16"/>
         </padding>
         <Button fx:id="prevMonthButton" text="&#x276E;" styleClass="calendar-nav-button"
+                minWidth="-Infinity"
                 onAction="#handlePreviousMonth"/>
         <!-- Clickable month/year label — opens month/year picker -->
         <Label fx:id="monthYearLabel" styleClass="calendar-month-label"
-               HBox.hgrow="ALWAYS" maxWidth="Infinity" alignment="CENTER"/>
+               HBox.hgrow="ALWAYS" maxWidth="Infinity" alignment="CENTER"
+               wrapText="true" textAlignment="CENTER"/>
         <Button fx:id="nextMonthButton" text="&#x276F;" styleClass="calendar-nav-button"
+                minWidth="-Infinity"
                 onAction="#handleNextMonth"/>
         <Button fx:id="todayButton" text="Today" styleClass="calendar-today-button"
+                minWidth="-Infinity"
                 onAction="#handleGoToToday"/>
     </HBox>
 

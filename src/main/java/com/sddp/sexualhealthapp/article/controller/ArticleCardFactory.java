@@ -120,8 +120,8 @@ public final class ArticleCardFactory {
         for (String tag : tagsToShow) {
             Label tagLabel = new Label(tag);
             tagLabel.getStyleClass().add("article-card-tag");
-            tagLabel.setMinWidth(Region.USE_PREF_SIZE);
-            tagLabel.setWrapText(false);
+            tagLabel.setWrapText(true);
+            tagLabel.setMaxWidth(240);
 
             if (preferredMatchedTags.contains(tag)) {
                 tagLabel.getStyleClass().add("article-card-tag-preferred");

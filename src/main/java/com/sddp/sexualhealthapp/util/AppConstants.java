@@ -155,7 +155,16 @@ public final class AppConstants {
         public static final String CSS_EVENT_DETAIL = "/css/event-detail.css";
 
         /**
+         * Accessibility overrides (dyslexic-font toggle, etc.).
+         * Included on every scene so the toggle works globally.
+         */
+        public static final String CSS_ACCESSIBILITY = "/css/accessibility.css";
+
+        /**
          * Stylesheets applied to the calculator scene.
+         * Accessibility CSS is deliberately excluded — the calculator must always
+         * render in the default system font to maintain the disguise and avoid
+         * text truncation from OpenDyslexic's wider glyphs.
          */
         public static final String[] CSS_CALCULATOR_SCENE = {
                         CSS_CALCULATOR
@@ -163,6 +172,8 @@ public final class AppConstants {
 
         /**
          * Stylesheets applied to the setup/onboarding scene.
+         * Accessibility CSS is deliberately excluded for the same reasons as
+         * the calculator scene above.
          */
         public static final String[] CSS_SETUP_SCENE = {
                         CSS_CALCULATOR, CSS_SETUP
@@ -173,7 +184,8 @@ public final class AppConstants {
          */
         public static final String[] CSS_MAIN_APP_SCENE = {
                         CSS_MAIN_APP, CSS_ARTICLE, CSS_CALENDAR,
-                        CSS_CREATE_EVENT, CSS_EVENT_FEED, CSS_EVENT_DETAIL
+                        CSS_CREATE_EVENT, CSS_EVENT_FEED, CSS_EVENT_DETAIL,
+                        CSS_ACCESSIBILITY
         };
 
         // Scene Names (for SceneManager)
