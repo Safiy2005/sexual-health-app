@@ -21,17 +21,15 @@ public class DisguisePreferencesService {
         return instance;
     }
 
-    private DisguisePreferencesService() {
-        this(Paths.get(DEFAULT_PATH));
-    }
-
     // added contructor that uses a path so tests can be run in temp json files
     public DisguisePreferencesService(Path customPath) {
         this.storagePath = customPath;
         this.preferences = load();
     }
 
-    public DisguisePreferences getPreferences() { return preferences; }
+    public DisguisePreferences getPreferences() {
+        return preferences;
+    }
 
     public void save(DisguisePreferences newPrefs) {
         this.preferences = newPrefs;
@@ -40,13 +38,18 @@ public class DisguisePreferencesService {
                 Files.createDirectories(storagePath.getParent());
             }
             Files.writeString(storagePath, gson.toJson(preferences));
-        } catch (IOException e) { e.printStackTrace(); }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private DisguisePreferences load() {
         try {
-            if (!Files.exists(storagePath)) return DisguisePreferences.defaultSettings();
+            if (!Files.exists(storagePath))
+                return DisguisePreferences.defaultSettings();
             return gson.fromJson(Files.readString(storagePath), DisguisePreferences.class);
-        } catch (Exception e) { return DisguisePreferences.defaultSettings(); }
+        } catch (Exception e) {
+            return DisguisePreferences.defaultSettings();
+        }
     }
 }

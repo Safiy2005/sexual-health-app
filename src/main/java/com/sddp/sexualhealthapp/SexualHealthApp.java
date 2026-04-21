@@ -14,10 +14,13 @@ import javafx.stage.Stage;
  * This app uses a calculator disguise for discretion - the calculator serves as
  * the entry point and authentication mechanism.
  *
- * <p>On first launch, users are guided to set up a "secret equation" (e.g., 5+3=8).
+ * <p>
+ * On first launch, users are guided to set up a "secret equation" (e.g.,
+ * 5+3=8).
  * On subsequent launches, the app opens as a fully functional calculator.
  * When the user enters their secret equation in the calculator, the app unlocks
- * and transitions to the main sexual health features.</p>
+ * and transitions to the main sexual health features.
+ * </p>
  *
  * @author SDDP Group 30
  * @version 1.0
@@ -41,7 +44,6 @@ public class SexualHealthApp extends Application {
         boolean hasSecretEquation = authService.hasSecretEquation();
         // check the disguise setting
         boolean isDisguiseEnabled = DisguisePreferencesService.getInstance().getPreferences().calcDisguiseEnabled();
-
 
         // Start background warm-up as early as possible so the unlock path can
         // reuse already-prepared article/search state.

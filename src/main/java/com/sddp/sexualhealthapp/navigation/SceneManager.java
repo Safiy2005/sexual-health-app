@@ -1,7 +1,6 @@
 package com.sddp.sexualhealthapp.navigation;
 
 import com.sddp.sexualhealthapp.util.AppConstants;
-import com.sddp.sexualhealthapp.util.NotificationService;
 import com.sddp.sexualhealthapp.mainapp.controller.MainAppController;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
