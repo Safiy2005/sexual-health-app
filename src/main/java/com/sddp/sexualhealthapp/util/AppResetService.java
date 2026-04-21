@@ -3,7 +3,9 @@ package com.sddp.sexualhealthapp.util;
 import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -25,6 +27,10 @@ public class AppResetService {
             Files.deleteIfExists(Paths.get("src/main/resources/article-state/recently-read.json"));
 
             NotificationService.clearAllTasks();
+
+            // wipe user settings stored via java.util.prefs. add here when new Preferences-backed settings are added
+            DisplaySettingsService.getInstance().resetDisplayMode();
+            TextSizeSettingsService.getInstance().resetTextSizeLevel();
 
             // delete passcode
             com.sddp.sexualhealthapp.calculator.service.SecretAuthService authService =
