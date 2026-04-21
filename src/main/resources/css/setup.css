@@ -271,3 +271,61 @@
     -fx-font-size: 11px;
     -fx-font-family: "SF Mono", "Menlo", "Courier New", monospace;
 }
+
+
+/* ============================================
+   DARK MODE SCROLLBAR
+   ============================================ */
+.onboarding-page .scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.onboarding-page .scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.onboarding-page .scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #48484A;
+    -fx-background-radius: 4px;
+}
+
+.onboarding-page .scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #5A5A5C;
+}
+
+/* Hide the up/down arrows entirely for a clean mobile look */
+.onboarding-page .scroll-pane .scroll-bar:vertical .increment-button,
+.onboarding-page .scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+}
+
+/* ============================================
+   DARK MODE CHECKBOX
+   ============================================ */
+.onboarding-example-box .check-box {
+    -fx-cursor: hand;
+}
+
+/* Unchecked State */
+.onboarding-example-box .check-box .box {
+    -fx-background-color: #1C1C1E;
+    -fx-border-color: #48484A;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-border-width: 2px;
+}
+
+/* Checked State */
+.onboarding-example-box .check-box:selected .box {
+    -fx-background-color: #7DBBB5;
+    -fx-border-color: #7DBBB5;
+}
+
+/* The Tick Mark */
+.onboarding-example-box .check-box:selected .mark {
+    -fx-background-color: #1C1C1E; /* Dark tick against the teal background */
+    -fx-shape: "M 0 5 L 3 8 L 8 0 L 10 1 L 3 11 L -2 6 Z"; /* Native SVG tick */
+}
