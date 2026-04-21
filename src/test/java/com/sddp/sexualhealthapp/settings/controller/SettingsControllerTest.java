@@ -1,6 +1,8 @@
 package com.sddp.sexualhealthapp.settings.controller;
 
+import com.sddp.sexualhealthapp.security.SecureStorage;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import javafx.application.Platform;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -17,6 +19,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -58,7 +61,8 @@ class SettingsControllerTest {
         tempFile = Files.createTempFile("settings-controller-", ".json");
         SettingsController controller = new SettingsController(
                 new ContentPreferencesService(tempFile),
-                () -> java.util.List.of("STIs", "LGBTQ+", "Mental Health & Wellbeing"));
+                () -> java.util.List.of("STIs", "LGBTQ+", "Mental Health & Wellbeing"),
+                new ParentalControlsPinService(new NoPinSecureStorage()));
 
         runOnFxAndWait(() -> {
             try {
@@ -126,6 +130,39 @@ class SettingsControllerTest {
 
         if (!latch.await(5, TimeUnit.SECONDS)) {
             throw new IllegalStateException("Timed out waiting for JavaFx action");
+        }
+    }
+
+    /**
+     * SecureStorage double that reports "no PIN ever set". Used so the
+     * controller never opens the real PIN prompt during this rendering test,
+     * and so we don't touch the developer's actual OS preferences.
+     * We pass a null Preferences into the parent so its no-arg constructor
+     * (which hits Preferences.userRoot()) is skipped.
+     */
+    private static final class NoPinSecureStorage extends SecureStorage {
+        NoPinSecureStorage() {
+            super((Preferences) null);
+        }
+
+        @Override
+        public boolean exists(String key) {
+            return false;
+        }
+
+        @Override
+        public boolean verifyHash(String key, String plainValue) {
+            return false;
+        }
+
+        @Override
+        public boolean saveHashed(String key, String plainValue) {
+            return true;
+        }
+
+        @Override
+        public boolean delete(String key) {
+            return true;
         }
     }
 }

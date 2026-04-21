@@ -19,6 +19,8 @@ import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
+import com.sddp.sexualhealthapp.settings.ui.ParentalControlsPinPrompt;
+import com.sddp.sexualhealthapp.util.SvgIcon;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -51,7 +53,8 @@ public class SettingsController {
     private Consumer<TextSizeLevel> onTextSizeChanged;
     private final ParentalControlsPinService parentalControlsPinService;
 
-    private record SettingsPageDefinition(String id, String title, String subtitle, PageBuilder builder) {
+    private record SettingsPageDefinition(String id, String title, String subtitle, boolean locked,
+            PageBuilder builder) {
     }
 
     @FunctionalInterface
@@ -109,9 +112,15 @@ public class SettingsController {
     }
 
     SettingsController(ContentPreferencesService preferencesService, Supplier<List<String>> curatedTagsSupplier) {
+        this(preferencesService, curatedTagsSupplier, ParentalControlsPinService.getInstance());
+    }
+
+    SettingsController(ContentPreferencesService preferencesService,
+            Supplier<List<String>> curatedTagsSupplier,
+            ParentalControlsPinService parentalControlsPinService) {
         this.preferencesService = preferencesService;
         this.curatedTagsSupplier = curatedTagsSupplier;
-        this.parentalControlsPinService = ParentalControlsPinService.getInstance();
+        this.parentalControlsPinService = parentalControlsPinService;
     }
 
     @FXML
@@ -123,30 +132,35 @@ public class SettingsController {
                 "content-preferences",
                 "Content preferences",
                 "Block topics and prioritise the tags most relevant to you.",
+                true,
                 this::buildContentPreferencesPage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "display",
                 "Display",
                 "Switch between standard, dark, and high-contrast views.",
+                false,
                 this::buildDisplayPage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "text-size",
                 "Text size",
                 "Adjust the global text size across the app",
+                false,
                 this::buildTextSizePage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "reminder-preferences",
                 "Reminders & Privacy",
                 "Manage how and when you receive event notifications.",
+                true,
                 this::buildReminderPreferencesPage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "parental-controls",
                 "Parental controls",
-                "Set, change, or remove a PIN that protects the Settings tab.",
+                "Set, change, or remove a PIN that protects sensitive settings pages.",
+                true,
                 this::buildParentalControlsPage));
 
         // keep this at the bottom if youre doing a merge for more settings. just makes
@@ -155,12 +169,14 @@ public class SettingsController {
                 "privacy-policy",
                 "Privacy Policy",
                 "How we keep your data, storage, and notifications secure.",
+                true,
                 this::buildPrivacyPolicyPage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "disguise-settings",
                 "App disguise",
                 "Choose if the app starts as a calculator or goes straight to the home screen.",
+                true,
                 this::buildDisguiseSettingsPage));
 
         renderSettingsCards();
@@ -173,15 +189,20 @@ public class SettingsController {
 
     public void refresh() {
         preferencesService.reloadFromDisk();
-        if (currentPageId == null) {
-            renderSettingsCards();
+        // Always return to the settings hub when Settings is re-entered so
+        // locked pages need the PIN again after leaving and coming back.
+        showHome();
+    }
+
+    private void refreshCurrentPageContent() {
+        SettingsPageDefinition current = getCurrentPage();
+        if (current == null) {
             return;
         }
 
-        SettingsPageDefinition currentPage = getCurrentPage();
-        if (currentPage != null) {
-            openPage(currentPage);
-        }
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
+        settingsDetailContent.getChildren().setAll(current.builder().build());
     }
 
     @FXML
@@ -191,6 +212,8 @@ public class SettingsController {
 
     private void renderSettingsCards() {
         settingsCardContainer.getChildren().clear();
+
+        boolean pinActive = parentalControlsPinService.hasPin();
 
         for (SettingsPageDefinition page : pageDefinitions) {
             VBox card = new VBox(6);
@@ -211,13 +234,24 @@ public class SettingsController {
             textBox.setMaxWidth(Double.MAX_VALUE);
             HBox.setHgrow(textBox, Priority.ALWAYS);
 
+            HBox trailing = new HBox(8);
+            trailing.setAlignment(Pos.CENTER_RIGHT);
+            trailing.setMinWidth(Region.USE_PREF_SIZE);
+
+            if (page.locked() && pinActive) {
+                Node lockIcon = SvgIcon.load("/icons/lock.svg", "settings-card-lock-icon", 14);
+                trailing.getChildren().add(lockIcon);
+                card.getStyleClass().add("settings-card-locked");
+            }
+
             Label chevron = new Label(">");
             chevron.getStyleClass().add("settings-card-chevron");
             chevron.setMinWidth(Region.USE_PREF_SIZE);
+            trailing.getChildren().add(chevron);
 
             HBox row = new HBox(10);
             row.setAlignment(Pos.CENTER_LEFT);
-            row.getChildren().addAll(textBox, chevron);
+            row.getChildren().addAll(textBox, trailing);
 
             card.getChildren().add(row);
             card.setOnMouseClicked(event -> openPage(page));
@@ -226,6 +260,15 @@ public class SettingsController {
     }
 
     private void openPage(SettingsPageDefinition page) {
+        if (page.locked() && parentalControlsPinService.hasPin()) {
+            boolean unlocked = ParentalControlsPinPrompt.requestPin(
+                    "Enter your PIN to open \"" + page.title() + "\".",
+                    settingsCardContainer);
+            if (!unlocked) {
+                return;
+            }
+        }
+
         currentPageId = page.id();
         settingsDetailTitle.setText(page.title());
         blockedTagPickerRefs = null;
@@ -555,7 +598,8 @@ public class SettingsController {
         page.setPadding(new Insets(0, 0, 80, 0));
 
         Label intro = new Label(
-                "Use a PIN to protect the full Settings screen. When enabled, the app asks for this PIN before opening Settings.");
+                "Use a PIN to protect sensitive settings pages. Display and Text size stay unlocked; "
+                        + "everything else will ask for the PIN before opening.");
         intro.getStyleClass().add("settings-page-intro");
         intro.setWrapText(true);
 
@@ -624,7 +668,7 @@ public class SettingsController {
             confirmPinField.clear();
             statusLabel.setText("Status: PIN enabled");
             showPinResult(resultLabel, "PIN set successfully.", false);
-            openPage(getCurrentPage());
+            refreshCurrentPageContent();
         });
 
         section.getChildren().addAll(title, body, newPinField, confirmPinField, setPinButton);
@@ -692,7 +736,7 @@ public class SettingsController {
 
             statusLabel.setText("Status: PIN not set");
             showPinResult(resultLabel, "PIN removed.", false);
-            openPage(getCurrentPage());
+            refreshCurrentPageContent();
         });
 
         section.getChildren().addAll(title, body, removePinButton);

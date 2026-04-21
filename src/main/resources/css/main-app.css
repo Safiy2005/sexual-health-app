@@ -111,6 +111,21 @@
     -fx-text-fill: #9AABAB;
 }
 
+.settings-card-lock-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #9AABAB;
+    -fx-stroke-width: 1.5;
+}
+
+.theme-dark .settings-card-lock-icon {
+    -fx-stroke: #C4C4C4;
+}
+
+.theme-high-contrast .settings-card-lock-icon {
+    -fx-stroke: black;
+    -fx-stroke-width: 2.25;
+}
+
 .settings-detail-title {
     -fx-font-size: 17px;
     -fx-font-weight: 700;

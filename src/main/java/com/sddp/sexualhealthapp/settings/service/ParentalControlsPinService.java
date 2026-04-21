@@ -23,7 +23,7 @@ public class ParentalControlsPinService {
         this(new SecureStorage());
     }
 
-    ParentalControlsPinService(SecureStorage secureStorage) {
+    public ParentalControlsPinService(SecureStorage secureStorage) {
         this.secureStorage = secureStorage;
     }
 

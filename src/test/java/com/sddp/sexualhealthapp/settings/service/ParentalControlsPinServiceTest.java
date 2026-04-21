@@ -1,32 +1,23 @@
 package com.sddp.sexualhealthapp.settings.service;
 
 import com.sddp.sexualhealthapp.security.SecureStorage;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.prefs.BackingStoreException;
-import java.util.prefs.Preferences;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ParentalControlsPinServiceTest {
 
-    private static final String TEST_PREFS_NODE = "/com/sddp/sexualhealthapp/test-parental-controls";
-
-    private Preferences testPreferences;
     private ParentalControlsPinService service;
 
     @BeforeEach
     void setUp() {
-        testPreferences = Preferences.userRoot().node(TEST_PREFS_NODE);
-        service = new ParentalControlsPinService(new SecureStorage(testPreferences));
-    }
-
-    @AfterEach
-    void tearDown() throws BackingStoreException {
-        testPreferences.removeNode();
+        service = new ParentalControlsPinService(new InMemorySecureStorage());
     }
 
     @Test
@@ -65,5 +56,49 @@ class ParentalControlsPinServiceTest {
 
         assertFalse(service.setPin("12a"));
         assertFalse(service.hasPin());
+    }
+
+    /**
+     * Minimal SecureStorage double that keeps "hashed" values in a HashMap.
+     * We skip the real BCrypt hashing since the pin service tests only care
+     * about the round-trip logic, not the hashing implementation.
+     */
+    private static final class InMemorySecureStorage extends SecureStorage {
+
+        private final Map<String, String> store = new HashMap<>();
+
+        @Override
+        public boolean saveHashed(String key, String plainValue) {
+            if (key == null || plainValue == null) {
+                return false;
+            }
+            store.put(key, plainValue);
+            return true;
+        }
+
+        @Override
+        public boolean verifyHash(String key, String plainValue) {
+            if (plainValue == null) {
+                return false;
+            }
+            String stored = store.get(key);
+            return stored != null && stored.equals(plainValue);
+        }
+
+        @Override
+        public Optional<String> load(String key) {
+            return Optional.ofNullable(store.get(key));
+        }
+
+        @Override
+        public boolean exists(String key) {
+            return store.containsKey(key);
+        }
+
+        @Override
+        public boolean delete(String key) {
+            store.remove(key);
+            return true;
+        }
     }
 }
