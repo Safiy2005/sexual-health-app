@@ -48,10 +48,12 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
-import javafx.scene.control.Dialog;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -59,10 +61,14 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ButtonBar;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import javafx.stage.Window;
 import javafx.util.Duration;
 
 /**
@@ -958,31 +964,70 @@ public class MainAppController {
     }
 
     private boolean promptForSettingsPin() {
-        Dialog<ButtonType> dialog = new Dialog<>();
-        dialog.setTitle("Parental controls");
-        dialog.setHeaderText("Enter PIN to open Settings");
+        Scene ownerScene = contentStack != null ? contentStack.getScene() : null;
+        Window ownerWindow = ownerScene != null ? ownerScene.getWindow() : null;
 
-        ButtonType unlockButtonType = new ButtonType("Unlock", ButtonBar.ButtonData.OK_DONE);
-        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
-        dialog.getDialogPane().getButtonTypes().addAll(unlockButtonType, cancelButtonType);
+        Stage dialogStage = new Stage();
+        dialogStage.initStyle(StageStyle.TRANSPARENT);
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        dialogStage.setTitle("Parental controls");
+        if (ownerWindow != null) {
+            dialogStage.initOwner(ownerWindow);
+        }
 
-        Label hint = new Label("PIN must contain digits only and cannot be empty.");
-        hint.getStyleClass().add("settings-section-body");
+        Label title = new Label("Parental controls");
+        title.getStyleClass().add("pin-dialog-title");
+
+        Label subtitle = new Label("Enter your PIN to open Settings.");
+        subtitle.getStyleClass().add("pin-dialog-subtitle");
+        subtitle.setWrapText(true);
 
         PasswordField pinField = new PasswordField();
-        pinField.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        pinField.getStyleClass().addAll("search-field", "pin-dialog-field");
         pinField.setPromptText("PIN");
 
-        Label error = new Label("Incorrect PIN.");
-        error.setStyle("-fx-text-fill: #9A5151;");
+        Label error = new Label("Incorrect PIN. Please try again.");
+        error.getStyleClass().add("pin-dialog-error");
+        error.setWrapText(true);
         error.setVisible(false);
         error.setManaged(false);
 
-        VBox content = new VBox(8, hint, pinField, error);
-        dialog.getDialogPane().setContent(content);
+        Button cancelButton = new Button("Cancel");
+        cancelButton.getStyleClass().add("calendar-action-button");
+        cancelButton.setCancelButton(true);
 
-        Node unlockButton = dialog.getDialogPane().lookupButton(unlockButtonType);
+        Button unlockButton = new Button("Unlock");
+        unlockButton.getStyleClass().add("calendar-action-button-primary");
+        unlockButton.setDefaultButton(true);
         unlockButton.setDisable(true);
+
+        HBox buttons = new HBox(10, cancelButton, unlockButton);
+        buttons.getStyleClass().add("pin-dialog-buttons");
+        buttons.setAlignment(Pos.CENTER_RIGHT);
+
+        VBox card = new VBox(12, title, subtitle, pinField, error, buttons);
+        card.getStyleClass().add("pin-dialog-card");
+        card.setFillWidth(true);
+        card.setMaxWidth(300);
+        card.setMaxHeight(Region.USE_PREF_SIZE);
+
+        StackPane backdrop = new StackPane(card);
+        backdrop.getStyleClass().add("pin-dialog-backdrop");
+        backdrop.setPadding(new Insets(24));
+        StackPane.setAlignment(card, Pos.CENTER);
+
+        if (ownerScene != null && ownerScene.getRoot() != null) {
+            ownerScene.getRoot().getStyleClass().stream()
+                    .filter(cls -> cls.startsWith("theme-") || cls.startsWith("text-size-"))
+                    .forEach(cls -> {
+                        if (!backdrop.getStyleClass().contains(cls)) {
+                            backdrop.getStyleClass().add(cls);
+                        }
+                    });
+        }
+
+        boolean[] accepted = { false };
+
         pinField.textProperty().addListener((obs, oldVal, newVal) -> {
             unlockButton.setDisable(!ParentalControlsPinService.isValidPinFormat(newVal));
             if (error.isVisible()) {
@@ -991,22 +1036,46 @@ public class MainAppController {
             }
         });
 
-        dialog.setResultConverter(button -> {
-            if (button != unlockButtonType) {
-                return button;
-            }
-
+        Runnable attemptUnlock = () -> {
             if (!parentalControlsPinService.verifyPin(pinField.getText())) {
                 error.setVisible(true);
                 error.setManaged(true);
-                return null;
+                pinField.selectAll();
+                pinField.requestFocus();
+                return;
             }
+            accepted[0] = true;
+            dialogStage.close();
+        };
 
-            return button;
+        unlockButton.setOnAction(event -> attemptUnlock.run());
+        pinField.setOnAction(event -> {
+            if (!unlockButton.isDisabled()) {
+                attemptUnlock.run();
+            }
         });
+        cancelButton.setOnAction(event -> dialogStage.close());
+
+        double width = ownerWindow != null && ownerWindow.getWidth() > 0 ? ownerWindow.getWidth() : 360;
+        double height = ownerWindow != null && ownerWindow.getHeight() > 0 ? ownerWindow.getHeight() : 640;
+
+        Scene scene = new Scene(backdrop, width, height);
+        scene.setFill(Color.TRANSPARENT);
+        for (String css : AppConstants.CSS_MAIN_APP_SCENE) {
+            scene.getStylesheets().add(getClass().getResource(css).toExternalForm());
+        }
+        dialogStage.setScene(scene);
+
+        if (ownerWindow != null) {
+            dialogStage.setX(ownerWindow.getX());
+            dialogStage.setY(ownerWindow.getY());
+            dialogStage.setWidth(ownerWindow.getWidth());
+            dialogStage.setHeight(ownerWindow.getHeight());
+        }
 
         Platform.runLater(pinField::requestFocus);
-        return dialog.showAndWait().filter(result -> result == unlockButtonType).isPresent();
+        dialogStage.showAndWait();
+        return accepted[0];
     }
 
     @FXML
