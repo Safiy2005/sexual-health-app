@@ -637,14 +637,12 @@ public class SettingsController {
         Label title = new Label("Change PIN");
         title.getStyleClass().add("settings-section-title");
 
-        PasswordField currentPinField = createPinField("Current PIN");
         PasswordField newPinField = createPinField("New PIN (digits only)");
         PasswordField confirmPinField = createPinField("Confirm new PIN");
 
         Button changePinButton = new Button("Change PIN");
         changePinButton.getStyleClass().add("calendar-action-button");
         changePinButton.setOnAction(event -> {
-            String currentPin = currentPinField.getText();
             String newPin = newPinField.getText();
             String confirmPin = confirmPinField.getText();
 
@@ -658,19 +656,18 @@ public class SettingsController {
                 return;
             }
 
-            if (!parentalControlsPinService.changePin(currentPin, newPin)) {
-                showPinResult(resultLabel, "Current PIN is incorrect or new PIN is invalid.", true);
+            if (!parentalControlsPinService.setPin(newPin)) {
+                showPinResult(resultLabel, "Could not change PIN. Please try again.", true);
                 return;
             }
 
-            currentPinField.clear();
             newPinField.clear();
             confirmPinField.clear();
             statusLabel.setText("Status: PIN enabled");
             showPinResult(resultLabel, "PIN changed successfully.", false);
         });
 
-        section.getChildren().addAll(title, currentPinField, newPinField, confirmPinField, changePinButton);
+        section.getChildren().addAll(title, newPinField, confirmPinField, changePinButton);
         return section;
     }
 
