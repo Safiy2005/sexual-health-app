@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.calendar.service.EventStorageService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
+import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 
@@ -28,14 +29,17 @@ public class AppResetService {
 
             NotificationService.clearAllTasks();
 
-            // wipe user settings stored via java.util.prefs. add here when new Preferences-backed settings are added
+            // wipe user settings stored via java.util.prefs. add here when new
+            // Preferences-backed settings are added
             DisplaySettingsService.getInstance().resetDisplayMode();
             TextSizeSettingsService.getInstance().resetTextSizeLevel();
 
             // delete passcode
-            com.sddp.sexualhealthapp.calculator.service.SecretAuthService authService =
-                    new com.sddp.sexualhealthapp.calculator.service.SecretAuthService();
+            com.sddp.sexualhealthapp.calculator.service.SecretAuthService authService = new com.sddp.sexualhealthapp.calculator.service.SecretAuthService();
             authService.deleteSecretEquation();
+
+            // delete parental controls PIN
+            ParentalControlsPinService.getInstance().removePinIfPresent();
 
             // reset singletons and services that might cache
             EventStorageService.getInstance().reloadFromDisk();
@@ -43,7 +47,6 @@ public class AppResetService {
             ReminderPreferencesService.getInstance().reloadFromDisk();
             new com.sddp.sexualhealthapp.article.service.RecentlyReadService().reloadFromDisk();
             SceneManager.getInstance().clearCache();
-
 
             SceneManager.getInstance().transitionToSetup();
 

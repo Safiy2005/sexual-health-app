@@ -111,6 +111,21 @@
     -fx-text-fill: #9AABAB;
 }
 
+.settings-card-lock-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #9AABAB;
+    -fx-stroke-width: 1.5;
+}
+
+.theme-dark .settings-card-lock-icon {
+    -fx-stroke: #C4C4C4;
+}
+
+.theme-high-contrast .settings-card-lock-icon {
+    -fx-stroke: black;
+    -fx-stroke-width: 2.25;
+}
+
 .settings-detail-title {
     -fx-font-size: 17px;
     -fx-font-weight: 700;
@@ -572,3 +587,103 @@
 #settingsCardContainer {
     -fx-background-color: transparent;
 }
+
+/* ============================================
+   PARENTAL CONTROLS PIN DIALOG
+   ============================================ */
+
+.pin-dialog-backdrop {
+    -fx-background-color: rgba(24, 38, 40, 0.45);
+    -fx-alignment: center;
+}
+
+.pin-dialog-card {
+    -fx-background-color: #FDF8F3;
+    -fx-background-radius: 18px;
+    -fx-padding: 22px 22px 18px 22px;
+    -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.28), 20, 0, 0, 8);
+}
+
+.pin-dialog-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: 700;
+    -fx-font-family: "SF Pro Display", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #3D5A5B;
+}
+
+.pin-dialog-subtitle {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #5C6B6B;
+}
+
+.pin-dialog-field {
+    -fx-pref-height: 38px;
+}
+
+.pin-dialog-error {
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", "Arial", sans-serif;
+    -fx-text-fill: #9A5151;
+}
+
+.pin-dialog-buttons {
+    -fx-padding: 6 0 0 0;
+}
+
+.theme-dark .pin-dialog-backdrop {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+.theme-dark .pin-dialog-card {
+    -fx-background-color: #242424;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 22, 0, 0, 10);
+}
+
+.theme-dark .pin-dialog-title {
+    -fx-text-fill: #F2F2F2;
+}
+
+.theme-dark .pin-dialog-subtitle {
+    -fx-text-fill: #CFCFCF;
+}
+
+.theme-dark .pin-dialog-error {
+    -fx-text-fill: #E69B9B;
+}
+
+.theme-high-contrast .pin-dialog-backdrop {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+
+.theme-high-contrast .pin-dialog-card {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 18px;
+    -fx-effect: null;
+}
+
+.theme-high-contrast .pin-dialog-title,
+.theme-high-contrast .pin-dialog-subtitle {
+    -fx-text-fill: black;
+}
+
+.theme-high-contrast .pin-dialog-error {
+    -fx-text-fill: #8A0000;
+    -fx-font-weight: 700;
+}
+
+.text-size-small .pin-dialog-title { -fx-font-size: 15px; }
+.text-size-standard .pin-dialog-title { -fx-font-size: 17px; }
+.text-size-large .pin-dialog-title { -fx-font-size: 20px; }
+.text-size-extra-large .pin-dialog-title { -fx-font-size: 23px; }
+
+.text-size-small .pin-dialog-subtitle,
+.text-size-small .pin-dialog-error { -fx-font-size: 11px; }
+.text-size-standard .pin-dialog-subtitle,
+.text-size-standard .pin-dialog-error { -fx-font-size: 13px; }
+.text-size-large .pin-dialog-subtitle,
+.text-size-large .pin-dialog-error { -fx-font-size: 15px; }
+.text-size-extra-large .pin-dialog-subtitle,
+.text-size-extra-large .pin-dialog-error { -fx-font-size: 17px; }
