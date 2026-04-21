@@ -1,5 +1,10 @@
 [
   {
+    "articleId": "brook-physical-health.md",
+    "lastReadSectionIndex": 7,
+    "lastReadAt": "2026-04-18T17:59:25.714680Z"
+  },
+  {
     "articleId": "brook-talking-about-condoms.md",
     "lastReadSectionIndex": 0,
     "lastReadAt": "2026-04-18T12:55:01.342167Z"
@@ -18,10 +23,5 @@
     "articleId": "brook-arguing.md",
     "lastReadSectionIndex": 0,
     "lastReadAt": "2026-04-18T12:27:14.936732Z"
-  },
-  {
-    "articleId": "brook-abortion-advice-for-partners.md",
-    "lastReadSectionIndex": 1,
-    "lastReadAt": "2026-03-16T18:14:30.872886900Z"
   }
 ]

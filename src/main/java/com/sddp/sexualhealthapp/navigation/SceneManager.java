@@ -267,11 +267,10 @@ public class SceneManager {
             return;
         }
 
-        // Apply global accessibility settings to the target root before its
-        // first paint. Done here (rather than per-controller) so every scene
-        // — calculator, setup, main app — picks up the dyslexic-font toggle
-        // without each screen needing its own wiring.
-        applyGlobalAccessibility(targetRoot);
+        if (!AppConstants.SCENE_CALCULATOR.equals(sceneName)
+                && !AppConstants.SCENE_SETUP.equals(sceneName)) {
+            applyGlobalAccessibility(targetRoot);
+        }
 
         currentSceneName = sceneName;
 
@@ -333,10 +332,15 @@ public class SceneManager {
      * scene transition.
      */
     public void refreshDyslexicFont() {
-        for (Parent cachedRoot : rootCache.values()) {
-            applyGlobalAccessibility(cachedRoot);
+        for (Map.Entry<String, Parent> entry : rootCache.entrySet()) {
+            if (!AppConstants.SCENE_CALCULATOR.equals(entry.getKey())
+                    && !AppConstants.SCENE_SETUP.equals(entry.getKey())) {
+                applyGlobalAccessibility(entry.getValue());
+            }
         }
-        if (persistentScene != null && persistentScene.getRoot() != null) {
+        if (persistentScene != null && persistentScene.getRoot() != null
+                && !AppConstants.SCENE_CALCULATOR.equals(currentSceneName)
+                && !AppConstants.SCENE_SETUP.equals(currentSceneName)) {
             applyGlobalAccessibility(persistentScene.getRoot());
         }
     }

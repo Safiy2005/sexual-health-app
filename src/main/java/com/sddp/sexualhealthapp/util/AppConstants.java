@@ -157,16 +157,21 @@ public final class AppConstants {
 
         /**
          * Stylesheets applied to the calculator scene.
+         * Accessibility CSS is deliberately excluded — the calculator must always
+         * render in the default system font to maintain the disguise and avoid
+         * text truncation from OpenDyslexic's wider glyphs.
          */
         public static final String[] CSS_CALCULATOR_SCENE = {
-                        CSS_CALCULATOR, CSS_ACCESSIBILITY
+                        CSS_CALCULATOR
         };
 
         /**
          * Stylesheets applied to the setup/onboarding scene.
+         * Accessibility CSS is deliberately excluded for the same reasons as
+         * the calculator scene above.
          */
         public static final String[] CSS_SETUP_SCENE = {
-                        CSS_CALCULATOR, CSS_SETUP, CSS_ACCESSIBILITY
+                        CSS_CALCULATOR, CSS_SETUP
         };
 
         /**
