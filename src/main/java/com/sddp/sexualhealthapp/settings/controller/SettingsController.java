@@ -677,29 +677,25 @@ public class SettingsController {
         Label title = new Label("Remove PIN");
         title.getStyleClass().add("settings-section-title");
 
-        Label body = new Label("Enter your current PIN to disable Settings protection.");
+        Label body = new Label("Remove the PIN to disable Settings protection.");
         body.getStyleClass().add("settings-section-body");
         body.setWrapText(true);
-
-        PasswordField currentPinField = createPinField("Current PIN");
 
         Button removePinButton = new Button("Remove PIN");
         removePinButton.setStyle(
                 "-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
         removePinButton.setOnAction(event -> {
-            String currentPin = currentPinField.getText();
-            if (!parentalControlsPinService.removePin(currentPin)) {
-                showPinResult(resultLabel, "Current PIN is incorrect.", true);
+            if (!parentalControlsPinService.removePinIfPresent()) {
+                showPinResult(resultLabel, "Could not remove PIN. Please try again.", true);
                 return;
             }
 
-            currentPinField.clear();
             statusLabel.setText("Status: PIN not set");
             showPinResult(resultLabel, "PIN removed.", false);
             openPage(getCurrentPage());
         });
 
-        section.getChildren().addAll(title, body, currentPinField, removePinButton);
+        section.getChildren().addAll(title, body, removePinButton);
         return section;
     }
 
