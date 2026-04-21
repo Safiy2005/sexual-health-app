@@ -8,15 +8,16 @@ import java.util.function.Supplier;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.model.DisguisePreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
 import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
 import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
 import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
-import com.sddp.sexualhealthapp.util.AppResetService;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -32,7 +33,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-
 
 /**
  * Controller for the settings hub and detail pages.
@@ -120,7 +120,7 @@ public class SettingsController {
                 "Content preferences",
                 "Block topics and prioritise the tags most relevant to you.",
                 this::buildContentPreferencesPage));
-        
+
         pageDefinitions.add(new SettingsPageDefinition(
                 "display",
                 "Display",
@@ -139,12 +139,19 @@ public class SettingsController {
                 "Manage how and when you receive event notifications.",
                 this::buildReminderPreferencesPage));
 
-        // keep this at the bottom if youre doing a merge for more settings. just makes sense
+        // keep this at the bottom if youre doing a merge for more settings. just makes
+        // sense
         pageDefinitions.add(new SettingsPageDefinition(
                 "privacy-policy",
                 "Privacy Policy",
                 "How we keep your data, storage, and notifications secure.",
                 this::buildPrivacyPolicyPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "disguise-settings",
+                "App disguise",
+                "Choose if the app starts as a calculator or goes straight to the home screen.",
+                this::buildDisguiseSettingsPage));
 
         renderSettingsCards();
         showHome();
@@ -363,11 +370,13 @@ public class SettingsController {
         ReminderPreferences prefs = new ReminderPreferences(mode, customTitle, customBody);
         ReminderPreferencesService.getInstance().savePreferences(prefs);
     }
+
     private Node buildPrivacyPolicyPage() {
         VBox page = new VBox(14);
         page.getStyleClass().add("settings-page-content");
         page.setPadding(new Insets(0, 0, 80, 0));
-        Label intro = new Label("We believe your health data is yours alone. Here is exactly how we protect your privacy.");
+        Label intro = new Label(
+                "We believe your health data is yours alone. Here is exactly how we protect your privacy.");
         intro.getStyleClass().add("settings-page-intro");
         intro.setWrapText(true);
         page.getChildren().add(intro);
@@ -391,7 +400,8 @@ public class SettingsController {
 
         // The initial button
         Button deleteBtn = new Button("Delete All Data");
-        deleteBtn.setStyle("-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
+        deleteBtn.setStyle(
+                "-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
         deleteBtn.setTranslateY(4);
 
         // The inline confirmation UI (Hidden by default)
@@ -414,10 +424,12 @@ public class SettingsController {
         errorLabel.setManaged(false);
 
         Button confirmWipeBtn = new Button("Confirm Reset");
-        confirmWipeBtn.setStyle("-fx-background-color: #9A5151; -fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 8 14; -fx-background-radius: 6; -fx-cursor: hand;");
+        confirmWipeBtn.setStyle(
+                "-fx-background-color: #9A5151; -fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 8 14; -fx-background-radius: 6; -fx-cursor: hand;");
 
         Button cancelBtn = new Button("Cancel");
-        cancelBtn.setStyle("-fx-background-color: transparent; -fx-text-fill: #5C6B6B; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;");
+        cancelBtn.setStyle(
+                "-fx-background-color: transparent; -fx-text-fill: #5C6B6B; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;");
 
         HBox actionBox = new HBox(12, confirmWipeBtn, cancelBtn);
         actionBox.setAlignment(Pos.CENTER_LEFT);
@@ -468,12 +480,14 @@ public class SettingsController {
         return page;
     }
 
-
-    // Creates a card that looks exactly like a settings card but WITHOUT the hover/clickable effects
+    // Creates a card that looks exactly like a settings card but WITHOUT the
+    // hover/clickable effects
     private VBox createPolicyCard(String titleText, String bodyText) {
         VBox card = new VBox(6);
-        // We use inline styles here to bypass the hover effects of the .settings-card CSS class
-        card.setStyle("-fx-background-color: white; -fx-background-radius: 12px; -fx-padding: 14px 16px; -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);");
+        // We use inline styles here to bypass the hover effects of the .settings-card
+        // CSS class
+        card.setStyle(
+                "-fx-background-color: white; -fx-background-radius: 12px; -fx-padding: 14px 16px; -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);");
 
         Label title = new Label(titleText);
         title.getStyleClass().add("settings-section-title");
@@ -485,7 +499,6 @@ public class SettingsController {
         card.getChildren().addAll(title, body);
         return card;
     }
-
 
     private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode,
             Node... extraContent) {
@@ -524,6 +537,100 @@ public class SettingsController {
 
         // 6px spacing between the label and the text box so they don't touch
         return new VBox(6, label, field);
+    }
+
+    private Node buildDisguiseSettingsPage() {
+        VBox page = new VBox(20);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+
+        Label intro = new Label(
+                "Control your privacy by choosing whether the app hides behind a calculator on startup.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label modeTitle = new Label("Startup Behavior");
+        modeTitle.getStyleClass().add("settings-section-title");
+
+        ToggleGroup modeGroup = new ToggleGroup();
+
+        RadioButton enabledBtn = new RadioButton("Enabled (Maximum Privacy)");
+        RadioButton disabledBtn = new RadioButton("Disabled (Direct Access)");
+
+        VBox radioBox = new VBox(20);
+        radioBox.getStyleClass().add("settings-tag-picker");
+        radioBox.setPadding(new Insets(18));
+
+        radioBox.getChildren().addAll(
+                createDisguiseRadioOption(enabledBtn,
+                        "Requires your secret equation on startup. Mimics a standard calculator.", modeGroup, true),
+                createDisguiseRadioOption(disabledBtn, "Skips the calculator and opens directly to your articles.",
+                        modeGroup, false));
+
+        // Load Saved State
+        DisguisePreferencesService service = DisguisePreferencesService.getInstance();
+        if (service.getPreferences().calcDisguiseEnabled()) {
+            enabledBtn.setSelected(true);
+        } else {
+            disabledBtn.setSelected(true);
+        }
+
+        // Event Listener
+        modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
+            if (newVal != null) {
+                boolean isEnabled = (boolean) newVal.getUserData();
+                service.save(new DisguisePreferences(isEnabled));
+            }
+        });
+
+        // Use the new helper method to build the exact box from your image
+        VBox tipBox = createInfoBox("Tip",
+                "If you ever forget your passcode, type 999/0 into the calculator screen to safely reset it.");
+
+        page.getChildren().addAll(intro, modeTitle, radioBox, tipBox);
+        return page;
+    }
+    // --- HELPER METHODS FOR DISGUISE PAGE ---
+
+    private VBox createDisguiseRadioOption(RadioButton btn, String description, ToggleGroup group, boolean isEnabled) {
+        btn.getStyleClass().add("settings-subsection-label");
+        btn.setToggleGroup(group);
+        btn.setUserData(isEnabled);
+
+        Label descLabel = new Label(description);
+        descLabel.getStyleClass().add("settings-section-body");
+        descLabel.setWrapText(true);
+        descLabel.setPadding(new Insets(0, 0, 0, 24)); // Align text under the radio button label
+
+        VBox box = new VBox(4, btn, descLabel);
+        box.getStyleClass().add("settings-radio-box");
+
+        // Make the entire box clickable, exactly like the reminders page
+        box.setOnMouseClicked(event -> {
+            btn.setSelected(true);
+            btn.requestFocus();
+        });
+
+        return box;
+    }
+
+    private VBox createInfoBox(String titleText, String bodyText) {
+        VBox box = new VBox(4);
+        box.getStyleClass().add("settings-info-box");
+
+        // Create the bold bullet point title
+        Label title = new Label("•  " + titleText);
+        title.getStyleClass().add("settings-info-title");
+
+        // Create the regular body text and indent it to align under the word, not the
+        // bullet
+        Label body = new Label(bodyText);
+        body.getStyleClass().add("settings-info-body");
+        body.setWrapText(true);
+        body.setPadding(new Insets(0, 0, 0, 16));
+
+        box.getChildren().addAll(title, body);
+        return box;
     }
 
     private FlowPane createTagPane() {
