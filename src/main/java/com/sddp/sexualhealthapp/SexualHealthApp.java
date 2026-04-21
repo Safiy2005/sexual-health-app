@@ -4,6 +4,7 @@ import com.sddp.sexualhealthapp.article.service.ArticleBrowseRankingService;
 import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.calculator.service.SecretAuthService;
 import com.sddp.sexualhealthapp.navigation.SceneManager;
+import com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService;
 import com.sddp.sexualhealthapp.util.AppConstants;
 import com.sddp.sexualhealthapp.util.FontLoader;
 import javafx.application.Application;
@@ -14,10 +15,13 @@ import javafx.stage.Stage;
  * This app uses a calculator disguise for discretion - the calculator serves as
  * the entry point and authentication mechanism.
  *
- * <p>On first launch, users are guided to set up a "secret equation" (e.g., 5+3=8).
+ * <p>
+ * On first launch, users are guided to set up a "secret equation" (e.g.,
+ * 5+3=8).
  * On subsequent launches, the app opens as a fully functional calculator.
  * When the user enters their secret equation in the calculator, the app unlocks
- * and transitions to the main sexual health features.</p>
+ * and transitions to the main sexual health features.
+ * </p>
  *
  * @author SDDP Group 30
  * @version 1.0
@@ -43,6 +47,8 @@ public class SexualHealthApp extends Application {
         // Check if a secret equation has been set up
         SecretAuthService authService = new SecretAuthService();
         boolean hasSecretEquation = authService.hasSecretEquation();
+        // check the disguise setting
+        boolean isDisguiseEnabled = DisguisePreferencesService.getInstance().getPreferences().calcDisguiseEnabled();
 
         // Start background warm-up as early as possible so the unlock path can
         // reuse already-prepared article/search state.
@@ -54,12 +60,15 @@ public class SexualHealthApp extends Application {
         articleWarmupThread.setDaemon(true);
         articleWarmupThread.start();
 
-        if (hasSecretEquation) {
-            // Returning user - go straight to calculator
+        if (!hasSecretEquation) {
+            // first time user
+            SceneManager.getInstance().transitionToSetup();
+        } else if (isDisguiseEnabled) {
+            // setting enabled, repeat user
             SceneManager.getInstance().transitionToCalculator();
         } else {
-            // First-time user - show onboarding + setup
-            SceneManager.getInstance().transitionToSetup();
+            // setting disabled
+            SceneManager.getInstance().transitionToMainApp();
         }
 
         // Configure the window

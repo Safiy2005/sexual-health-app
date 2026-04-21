@@ -38,6 +38,7 @@ import com.sddp.sexualhealthapp.settings.service.DisplayModeManager;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.settings.service.DyslexicFontManager;
 import com.sddp.sexualhealthapp.settings.service.DyslexicFontSettingsService;
+import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeManager;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
 import com.sddp.sexualhealthapp.util.AppConstants;
@@ -141,6 +142,7 @@ public class MainAppController {
     private long browseRankingRequestId = 0L;
     private List<Article> cachedBrowseRankedArticles = List.of();
     private boolean initialBrowseRenderPending = false;
+    private final ParentalControlsPinService parentalControlsPinService = ParentalControlsPinService.getInstance();
 
     @FXML
     private void initialize() {
@@ -488,6 +490,10 @@ public class MainAppController {
                 && allArticles.containsAll(cachedBrowseRankedArticles);
     }
 
+    private boolean canShowBlockedArticles() {
+        return !parentalControlsPinService.hasPin();
+    }
+
     private void renderBrowseFeedContent(List<Article> orderedArticles,
             List<RecentlyReadEntry> recentEntries,
             ContentPreferences preferences,
@@ -497,9 +503,11 @@ public class MainAppController {
         List<Article> articles = ArticlePersonalizationService.filterBlockedArticles(
                 orderedArticles,
                 preferences);
-        List<Article> blockedArticles = orderedArticles.stream()
-                .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
-                .toList();
+        List<Article> blockedArticles = canShowBlockedArticles()
+                ? orderedArticles.stream()
+                        .filter(article -> ArticlePersonalizationService.isBlocked(article, preferences))
+                        .toList()
+                : List.of();
 
         if (articles.isEmpty() && blockedArticles.isEmpty()) {
             showEmptyState("No articles found");
@@ -622,12 +630,14 @@ public class MainAppController {
             List<SearchResult> blockedResults) {
         articleListContainer.getChildren().clear();
 
-        if (visibleResults.isEmpty() && blockedResults.isEmpty()) {
+        List<SearchResult> visibleBlockedResults = canShowBlockedArticles() ? blockedResults : List.of();
+
+        if (visibleResults.isEmpty() && visibleBlockedResults.isEmpty()) {
             showEmptyState("No results for \"" + query + "\"");
             return;
         }
 
-        if (visibleResults.isEmpty() && !blockedResults.isEmpty()) {
+        if (visibleResults.isEmpty() && !visibleBlockedResults.isEmpty()) {
             showEmptyState("All results for \"" + query + "\" are currently hidden by blocked tags.");
         }
 
@@ -640,10 +650,15 @@ public class MainAppController {
                             this::openArticle));
         }
 
-        addBlockedArticlesToggleForSearch(query, blockedResults);
+        addBlockedArticlesToggleForSearch(query, visibleBlockedResults);
     }
 
     private void addBlockedArticlesToggleForBrowse(List<BrowseCardData> blockedCards) {
+        if (!canShowBlockedArticles()) {
+            blockedArticlesExpanded = false;
+            return;
+        }
+
         if (blockedCards.isEmpty()) {
             blockedArticlesExpanded = false;
             return;
@@ -669,6 +684,11 @@ public class MainAppController {
     }
 
     private void addBlockedArticlesToggleForSearch(String query, List<SearchResult> blockedResults) {
+        if (!canShowBlockedArticles()) {
+            blockedArticlesExpanded = false;
+            return;
+        }
+
         if (blockedResults.isEmpty()) {
             blockedArticlesExpanded = false;
             return;
@@ -1083,10 +1103,6 @@ public class MainAppController {
 
     private void updateDyslexicFont(DyslexicFontMode mode) {
         DyslexicFontSettingsService.getInstance().setMode(mode);
-
-        // Push the change to every cached scene root (calculator, setup, main
-        // app) so locking out of the app and re-entering doesn't need to wait
-        // for a scene reload to pick up the new font.
         SceneManager.getInstance().refreshDyslexicFont();
 
         if (contentStack == null || contentStack.getScene() == null) {
@@ -1096,4 +1112,3 @@ public class MainAppController {
         DyslexicFontManager.applyMode(contentStack.getScene().getRoot(), mode);
     }
 }
-

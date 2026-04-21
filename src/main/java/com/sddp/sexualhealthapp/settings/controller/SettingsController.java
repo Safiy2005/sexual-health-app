@@ -8,17 +8,21 @@ import java.util.function.Supplier;
 import com.sddp.sexualhealthapp.article.service.ArticlePersonalizationService;
 import com.sddp.sexualhealthapp.article.service.ArticleServiceRegistry;
 import com.sddp.sexualhealthapp.settings.model.ContentPreferences;
+import com.sddp.sexualhealthapp.settings.model.DisguisePreferences;
 import com.sddp.sexualhealthapp.settings.model.DisplayMode;
 import com.sddp.sexualhealthapp.settings.model.DyslexicFontMode;
 import com.sddp.sexualhealthapp.settings.model.ReminderPreferences;
 import com.sddp.sexualhealthapp.settings.model.ReminderPreferences.VisibilityMode;
 import com.sddp.sexualhealthapp.settings.model.TextSizeLevel;
 import com.sddp.sexualhealthapp.settings.service.ContentPreferencesService;
+import com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService;
 import com.sddp.sexualhealthapp.settings.service.DisplaySettingsService;
 import com.sddp.sexualhealthapp.settings.service.DyslexicFontSettingsService;
+import com.sddp.sexualhealthapp.settings.service.ParentalControlsPinService;
 import com.sddp.sexualhealthapp.settings.service.ReminderPreferencesService;
 import com.sddp.sexualhealthapp.settings.service.TextSizeSettingsService;
-
+import com.sddp.sexualhealthapp.settings.ui.ParentalControlsPinPrompt;
+import com.sddp.sexualhealthapp.util.SvgIcon;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -26,6 +30,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Separator;
@@ -53,8 +58,10 @@ public class SettingsController {
 
     private final DyslexicFontSettingsService dyslexicFontSettingsService = DyslexicFontSettingsService.getInstance();
     private Consumer<DyslexicFontMode> onDyslexicFontChanged;
+    private final ParentalControlsPinService parentalControlsPinService;
 
-    private record SettingsPageDefinition(String id, String title, String subtitle, PageBuilder builder) {
+    private record SettingsPageDefinition(String id, String title, String subtitle, boolean locked,
+            PageBuilder builder) {
     }
 
     @FunctionalInterface
@@ -112,8 +119,15 @@ public class SettingsController {
     }
 
     SettingsController(ContentPreferencesService preferencesService, Supplier<List<String>> curatedTagsSupplier) {
+        this(preferencesService, curatedTagsSupplier, ParentalControlsPinService.getInstance());
+    }
+
+    SettingsController(ContentPreferencesService preferencesService,
+            Supplier<List<String>> curatedTagsSupplier,
+            ParentalControlsPinService parentalControlsPinService) {
         this.preferencesService = preferencesService;
         this.curatedTagsSupplier = curatedTagsSupplier;
+        this.parentalControlsPinService = parentalControlsPinService;
     }
 
     @FXML
@@ -125,25 +139,52 @@ public class SettingsController {
                 "content-preferences",
                 "Content preferences",
                 "Block topics and prioritise the tags most relevant to you.",
+                true,
                 this::buildContentPreferencesPage));
-        
+
         pageDefinitions.add(new SettingsPageDefinition(
                 "display",
                 "Display",
                 "Switch between standard, dark, and high-contrast views.",
+                false,
                 this::buildDisplayPage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "text-size",
                 "Text size",
                 "Adjust the global text size across the app",
+                false,
                 this::buildTextSizePage));
 
         pageDefinitions.add(new SettingsPageDefinition(
                 "reminder-preferences",
                 "Reminders & Privacy",
                 "Manage how and when you receive event notifications.",
+                true,
                 this::buildReminderPreferencesPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "parental-controls",
+                "Parental controls",
+                "Set, change, or remove a PIN that protects sensitive settings pages.",
+                true,
+                this::buildParentalControlsPage));
+
+        // keep this at the bottom if youre doing a merge for more settings. just makes
+        // sense
+        pageDefinitions.add(new SettingsPageDefinition(
+                "privacy-policy",
+                "Privacy Policy",
+                "How we keep your data, storage, and notifications secure.",
+                true,
+                this::buildPrivacyPolicyPage));
+
+        pageDefinitions.add(new SettingsPageDefinition(
+                "disguise-settings",
+                "App disguise",
+                "Choose if the app starts as a calculator or goes straight to the home screen.",
+                true,
+                this::buildDisguiseSettingsPage));
 
         renderSettingsCards();
         showHome();
@@ -155,15 +196,20 @@ public class SettingsController {
 
     public void refresh() {
         preferencesService.reloadFromDisk();
-        if (currentPageId == null) {
-            renderSettingsCards();
+        // Always return to the settings hub when Settings is re-entered so
+        // locked pages need the PIN again after leaving and coming back.
+        showHome();
+    }
+
+    private void refreshCurrentPageContent() {
+        SettingsPageDefinition current = getCurrentPage();
+        if (current == null) {
             return;
         }
 
-        SettingsPageDefinition currentPage = getCurrentPage();
-        if (currentPage != null) {
-            openPage(currentPage);
-        }
+        blockedTagPickerRefs = null;
+        preferredTagPickerRefs = null;
+        settingsDetailContent.getChildren().setAll(current.builder().build());
     }
 
     @FXML
@@ -173,6 +219,8 @@ public class SettingsController {
 
     private void renderSettingsCards() {
         settingsCardContainer.getChildren().clear();
+
+        boolean pinActive = parentalControlsPinService.hasPin();
 
         for (SettingsPageDefinition page : pageDefinitions) {
             VBox card = new VBox(6);
@@ -193,13 +241,24 @@ public class SettingsController {
             textBox.setMaxWidth(Double.MAX_VALUE);
             HBox.setHgrow(textBox, Priority.ALWAYS);
 
+            HBox trailing = new HBox(8);
+            trailing.setAlignment(Pos.CENTER_RIGHT);
+            trailing.setMinWidth(Region.USE_PREF_SIZE);
+
+            if (page.locked() && pinActive) {
+                Node lockIcon = SvgIcon.load("/icons/lock.svg", "settings-card-lock-icon", 14);
+                trailing.getChildren().add(lockIcon);
+                card.getStyleClass().add("settings-card-locked");
+            }
+
             Label chevron = new Label(">");
             chevron.getStyleClass().add("settings-card-chevron");
             chevron.setMinWidth(Region.USE_PREF_SIZE);
+            trailing.getChildren().add(chevron);
 
             HBox row = new HBox(10);
             row.setAlignment(Pos.CENTER_LEFT);
-            row.getChildren().addAll(textBox, chevron);
+            row.getChildren().addAll(textBox, trailing);
 
             card.getChildren().add(row);
             card.setOnMouseClicked(event -> openPage(page));
@@ -208,6 +267,15 @@ public class SettingsController {
     }
 
     private void openPage(SettingsPageDefinition page) {
+        if (page.locked() && parentalControlsPinService.hasPin()) {
+            boolean unlocked = ParentalControlsPinPrompt.requestPin(
+                    "Enter your PIN to open \"" + page.title() + "\".",
+                    settingsCardContainer);
+            if (!unlocked) {
+                return;
+            }
+        }
+
         currentPageId = page.id();
         settingsDetailTitle.setText(page.title());
         blockedTagPickerRefs = null;
@@ -363,6 +431,135 @@ public class SettingsController {
         ReminderPreferencesService.getInstance().savePreferences(prefs);
     }
 
+    private Node buildPrivacyPolicyPage() {
+        VBox page = new VBox(14);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+        Label intro = new Label(
+                "We believe your health data is yours alone. Here is exactly how we protect your privacy.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+        page.getChildren().add(intro);
+
+        // --- Standard Policy Cards ---
+        page.getChildren().add(createPolicyCard("Local Storage & Data",
+                "All your data, including preferences and activity, is stored strictly locally on your device. It will never be uploaded, sold, or shared with external sources."));
+
+        page.getChildren().add(createPolicyCard("Zero Analytics",
+                "We do not track your usage, monitor what articles you read, or collect behavioral data. There are no tracking scripts hidden in the background."));
+
+        page.getChildren().add(createPolicyCard("Notifications & Reminders",
+                "All reminders are generated directly on your device. You have full control over how they appear, including a disguised mode to protect your privacy."));
+
+        page.getChildren().add(createPolicyCard("Passcode Encryption",
+                "Your passcode is securely encrypted. You can reset your passcode by entering 999/0 into the calculator disguise."));
+
+        // --- Danger Zone: Delete All Data (Mobile Inline Style) ---
+        VBox dangerZone = createPolicyCard("Reset App",
+                "This will permanently erase all your calendar events, app preferences, and your current passcode. The app will be completely reset.");
+
+        // The initial button
+        Button deleteBtn = new Button("Delete All Data");
+        deleteBtn.setStyle(
+                "-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
+        deleteBtn.setTranslateY(4);
+
+        // The inline confirmation UI (Hidden by default)
+        VBox confirmBox = new VBox(10);
+        confirmBox.setVisible(false);
+        confirmBox.setManaged(false);
+        confirmBox.setPadding(new Insets(10, 0, 0, 0));
+
+        Label confirmLabel = new Label("Type 'I want to fully reset the app' to confirm:");
+        confirmLabel.setStyle("-fx-text-fill: #9A5151; -fx-font-size: 12px; -fx-font-weight: bold;");
+        confirmLabel.setWrapText(true);
+
+        TextField confirmInput = new TextField();
+        confirmInput.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        confirmInput.setPromptText("I want to fully reset the app");
+
+        Label errorLabel = new Label("Text does not match. Please try again.");
+        errorLabel.setStyle("-fx-text-fill: #9A5151; -fx-font-size: 11px;");
+        errorLabel.setVisible(false);
+        errorLabel.setManaged(false);
+
+        Button confirmWipeBtn = new Button("Confirm Reset");
+        confirmWipeBtn.setStyle(
+                "-fx-background-color: #9A5151; -fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 8 14; -fx-background-radius: 6; -fx-cursor: hand;");
+
+        Button cancelBtn = new Button("Cancel");
+        cancelBtn.setStyle(
+                "-fx-background-color: transparent; -fx-text-fill: #5C6B6B; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;");
+
+        HBox actionBox = new HBox(12, confirmWipeBtn, cancelBtn);
+        actionBox.setAlignment(Pos.CENTER_LEFT);
+
+        confirmBox.getChildren().addAll(confirmLabel, confirmInput, errorLabel, actionBox);
+
+        // --- Wiring the Button Actions ---
+
+        // When initial Delete button is tapped -> Hide button, Show confirm UI
+        deleteBtn.setOnAction(e -> {
+            deleteBtn.setVisible(false);
+            deleteBtn.setManaged(false);
+            confirmBox.setVisible(true);
+            confirmBox.setManaged(true);
+            errorLabel.setVisible(false);
+            errorLabel.setManaged(false);
+            confirmInput.clear();
+        });
+
+        // When Cancel is tapped -> Hide confirm UI, Show initial Delete button
+        cancelBtn.setOnAction(e -> {
+            confirmBox.setVisible(false);
+            confirmBox.setManaged(false);
+            deleteBtn.setVisible(true);
+            deleteBtn.setManaged(true);
+        });
+
+        // When Confirm Reset is tapped -> Validate, Reset UI, and Wipe
+        confirmWipeBtn.setOnAction(e -> {
+            if ("I want to fully reset the app".equals(confirmInput.getText().trim())) {
+                confirmInput.clear();
+                confirmBox.setVisible(false);
+                confirmBox.setManaged(false);
+                deleteBtn.setVisible(true);
+                deleteBtn.setManaged(true);
+                showHome();
+                com.sddp.sexualhealthapp.util.AppResetService.wipeAllDataAndReset();
+
+            } else {
+                errorLabel.setVisible(true);
+                errorLabel.setManaged(true);
+            }
+        });
+
+        dangerZone.getChildren().addAll(deleteBtn, confirmBox);
+        page.getChildren().add(dangerZone);
+
+        return page;
+    }
+
+    // Creates a card that looks exactly like a settings card but WITHOUT the
+    // hover/clickable effects
+    private VBox createPolicyCard(String titleText, String bodyText) {
+        VBox card = new VBox(6);
+        // We use inline styles here to bypass the hover effects of the .settings-card
+        // CSS class
+        card.setStyle(
+                "-fx-background-color: white; -fx-background-radius: 12px; -fx-padding: 14px 16px; -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);");
+
+        Label title = new Label(titleText);
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label(bodyText);
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        card.getChildren().addAll(title, body);
+        return card;
+    }
+
     private VBox createRadioOption(RadioButton btn, String description, ToggleGroup group, VisibilityMode mode,
             Node... extraContent) {
         btn.getStyleClass().add("settings-subsection-label");
@@ -400,6 +597,267 @@ public class SettingsController {
 
         // 6px spacing between the label and the text box so they don't touch
         return new VBox(6, label, field);
+    }
+
+    private Node buildParentalControlsPage() {
+        VBox page = new VBox(18);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+
+        Label intro = new Label(
+                "Use a PIN to protect sensitive settings pages. Display and Text size stay unlocked; "
+                        + "everything else will ask for the PIN before opening.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        VBox panel = new VBox(12);
+        panel.getStyleClass().add("settings-tag-picker");
+
+        Label status = new Label(parentalControlsPinService.hasPin() ? "Status: PIN enabled" : "Status: PIN not set");
+        status.getStyleClass().add("settings-subsection-label");
+
+        Label resultLabel = new Label();
+        resultLabel.getStyleClass().add("settings-section-body");
+        resultLabel.setWrapText(true);
+        resultLabel.setVisible(false);
+        resultLabel.setManaged(false);
+
+        panel.getChildren().add(status);
+
+        if (!parentalControlsPinService.hasPin()) {
+            panel.getChildren().add(buildSetPinForm(status, resultLabel));
+        } else {
+            panel.getChildren().addAll(
+                    buildChangePinForm(status, resultLabel),
+                    buildRemovePinForm(status, resultLabel));
+        }
+
+        panel.getChildren().add(resultLabel);
+        page.getChildren().addAll(intro, panel);
+        return page;
+    }
+
+    private Node buildSetPinForm(Label statusLabel, Label resultLabel) {
+        VBox section = new VBox(8);
+
+        Label title = new Label("Set a PIN");
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label("PIN must contain digits only and cannot be empty.");
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        PasswordField newPinField = createPinField("New PIN");
+        PasswordField confirmPinField = createPinField("Confirm PIN");
+
+        Button setPinButton = new Button("Save PIN");
+        setPinButton.getStyleClass().add("calendar-action-button");
+        setPinButton.setOnAction(event -> {
+            String newPin = newPinField.getText();
+            String confirmPin = confirmPinField.getText();
+
+            if (!ParentalControlsPinService.isValidPinFormat(newPin)) {
+                showPinResult(resultLabel, "PIN must contain digits only and cannot be empty.", true);
+                return;
+            }
+
+            if (!newPin.equals(confirmPin)) {
+                showPinResult(resultLabel, "PIN confirmation does not match.", true);
+                return;
+            }
+
+            if (!parentalControlsPinService.setPin(newPin)) {
+                showPinResult(resultLabel, "Could not save PIN. Please try again.", true);
+                return;
+            }
+
+            newPinField.clear();
+            confirmPinField.clear();
+            statusLabel.setText("Status: PIN enabled");
+            showPinResult(resultLabel, "PIN set successfully.", false);
+            refreshCurrentPageContent();
+        });
+
+        section.getChildren().addAll(title, body, newPinField, confirmPinField, setPinButton);
+        return section;
+    }
+
+    private Node buildChangePinForm(Label statusLabel, Label resultLabel) {
+        VBox section = new VBox(8);
+
+        Label title = new Label("Change PIN");
+        title.getStyleClass().add("settings-section-title");
+
+        PasswordField newPinField = createPinField("New PIN (digits only)");
+        PasswordField confirmPinField = createPinField("Confirm new PIN");
+
+        Button changePinButton = new Button("Change PIN");
+        changePinButton.getStyleClass().add("calendar-action-button");
+        changePinButton.setOnAction(event -> {
+            String newPin = newPinField.getText();
+            String confirmPin = confirmPinField.getText();
+
+            if (!ParentalControlsPinService.isValidPinFormat(newPin)) {
+                showPinResult(resultLabel, "New PIN must contain digits only and cannot be empty.", true);
+                return;
+            }
+
+            if (!newPin.equals(confirmPin)) {
+                showPinResult(resultLabel, "PIN confirmation does not match.", true);
+                return;
+            }
+
+            if (!parentalControlsPinService.setPin(newPin)) {
+                showPinResult(resultLabel, "Could not change PIN. Please try again.", true);
+                return;
+            }
+
+            newPinField.clear();
+            confirmPinField.clear();
+            statusLabel.setText("Status: PIN enabled");
+            showPinResult(resultLabel, "PIN changed successfully.", false);
+        });
+
+        section.getChildren().addAll(title, newPinField, confirmPinField, changePinButton);
+        return section;
+    }
+
+    private Node buildRemovePinForm(Label statusLabel, Label resultLabel) {
+        VBox section = new VBox(8);
+
+        Label title = new Label("Remove PIN");
+        title.getStyleClass().add("settings-section-title");
+
+        Label body = new Label("Remove the PIN to disable Settings protection.");
+        body.getStyleClass().add("settings-section-body");
+        body.setWrapText(true);
+
+        Button removePinButton = new Button("Remove PIN");
+        removePinButton.setStyle(
+                "-fx-background-color: #F6E0E0; -fx-text-fill: #9A5151; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 10 16; -fx-background-radius: 8; -fx-cursor: hand;");
+        removePinButton.setOnAction(event -> {
+            if (!parentalControlsPinService.removePinIfPresent()) {
+                showPinResult(resultLabel, "Could not remove PIN. Please try again.", true);
+                return;
+            }
+
+            statusLabel.setText("Status: PIN not set");
+            showPinResult(resultLabel, "PIN removed.", false);
+            refreshCurrentPageContent();
+        });
+
+        section.getChildren().addAll(title, body, removePinButton);
+        return section;
+    }
+
+    private PasswordField createPinField(String promptText) {
+        PasswordField field = new PasswordField();
+        field.getStyleClass().addAll("search-field", "settings-tag-search-field");
+        field.setPromptText(promptText);
+        return field;
+    }
+
+    private void showPinResult(Label label, String message, boolean isError) {
+        label.setText(message);
+        label.setStyle(isError
+                ? "-fx-text-fill: #9A5151;"
+                : "-fx-text-fill: #3D7A75;");
+        label.setVisible(true);
+        label.setManaged(true);
+    }
+
+    private Node buildDisguiseSettingsPage() {
+        VBox page = new VBox(20);
+        page.getStyleClass().add("settings-page-content");
+        page.setPadding(new Insets(0, 0, 80, 0));
+
+        Label intro = new Label(
+                "Control your privacy by choosing whether the app hides behind a calculator on startup.");
+        intro.getStyleClass().add("settings-page-intro");
+        intro.setWrapText(true);
+
+        Label modeTitle = new Label("Startup Behavior");
+        modeTitle.getStyleClass().add("settings-section-title");
+
+        ToggleGroup modeGroup = new ToggleGroup();
+
+        RadioButton enabledBtn = new RadioButton("Enabled (Maximum Privacy)");
+        RadioButton disabledBtn = new RadioButton("Disabled (Direct Access)");
+
+        VBox radioBox = new VBox(20);
+        radioBox.getStyleClass().add("settings-tag-picker");
+        radioBox.setPadding(new Insets(18));
+
+        radioBox.getChildren().addAll(
+                createDisguiseRadioOption(enabledBtn,
+                        "Requires your secret equation on startup. Mimics a standard calculator.", modeGroup, true),
+                createDisguiseRadioOption(disabledBtn, "Skips the calculator and opens directly to your articles.",
+                        modeGroup, false));
+
+        // Load Saved State
+        DisguisePreferencesService service = DisguisePreferencesService.getInstance();
+        if (service.getPreferences().calcDisguiseEnabled()) {
+            enabledBtn.setSelected(true);
+        } else {
+            disabledBtn.setSelected(true);
+        }
+
+        // Event Listener
+        modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
+            if (newVal != null) {
+                boolean isEnabled = (boolean) newVal.getUserData();
+                service.save(new DisguisePreferences(isEnabled));
+            }
+        });
+
+        // Use the new helper method to build the exact box from your image
+        VBox tipBox = createInfoBox("Tip",
+                "If you ever forget your passcode, type 999/0 into the calculator screen to safely reset it.");
+
+        page.getChildren().addAll(intro, modeTitle, radioBox, tipBox);
+        return page;
+    }
+    // --- HELPER METHODS FOR DISGUISE PAGE ---
+
+    private VBox createDisguiseRadioOption(RadioButton btn, String description, ToggleGroup group, boolean isEnabled) {
+        btn.getStyleClass().add("settings-subsection-label");
+        btn.setToggleGroup(group);
+        btn.setUserData(isEnabled);
+
+        Label descLabel = new Label(description);
+        descLabel.getStyleClass().add("settings-section-body");
+        descLabel.setWrapText(true);
+        descLabel.setPadding(new Insets(0, 0, 0, 24)); // Align text under the radio button label
+
+        VBox box = new VBox(4, btn, descLabel);
+        box.getStyleClass().add("settings-radio-box");
+
+        // Make the entire box clickable, exactly like the reminders page
+        box.setOnMouseClicked(event -> {
+            btn.setSelected(true);
+            btn.requestFocus();
+        });
+
+        return box;
+    }
+
+    private VBox createInfoBox(String titleText, String bodyText) {
+        VBox box = new VBox(4);
+        box.getStyleClass().add("settings-info-box");
+
+        // Create the bold bullet point title
+        Label title = new Label("•  " + titleText);
+        title.getStyleClass().add("settings-info-title");
+
+        // Create the regular body text and indent it to align under the word, not the
+        // bullet
+        Label body = new Label(bodyText);
+        body.getStyleClass().add("settings-info-body");
+        body.setWrapText(true);
+        body.setPadding(new Insets(0, 0, 0, 16));
+
+        box.getChildren().addAll(title, body);
+        return box;
     }
 
     private FlowPane createTagPane() {
