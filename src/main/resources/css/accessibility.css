@@ -69,35 +69,12 @@
     -fx-wrap-text: true;
 }
 
-/*
- * When OpenDyslexic is active the extra glyph width easily pushes titles and
- * radio labels past the 360px canvas. Allowing every label/check-box/radio
- * in the whole app to wrap in this mode prevents ellipses anywhere, at the
- * cost of some components occasionally taking two lines (acceptable trade).
- */
 .root.dyslexic-font .label,
 .root.dyslexic-font .radio-button,
 .root.dyslexic-font .check-box {
     -fx-wrap-text: true;
 }
 
-/* ============================================================
-   DYSLEXIC-FONT SIZE CALIBRATION
-   ------------------------------------------------------------
-   OpenDyslexic renders roughly 30-35% wider than SF Pro at the
-   same point size, so existing text-size scaling rules become
-   optically oversized once the toggle is on. The rules below
-   drop scalable text by about one tier per text-size level so
-   the layout stays comfortable and the optical size roughly
-   matches the default typeface.
-
-   Selector note: these use 2-class compounds on the scene root
-   (.dyslexic-font.text-size-X) for specificity (0, 3, 0), which
-   cleanly beats the baseline (0, 2, 0) rules in the screen
-   stylesheets. The .root prefix is deliberately omitted — some
-   JavaFX CSS parsers have historically been fussy about three-
-   class compounds that include .root.
-   ============================================================ */
 
 /* ---- search-header-title (top of every screen: "Articles", "Settings", etc.) */
 .dyslexic-font.text-size-small .search-header-title { -fx-font-size: 16px; }
