@@ -546,8 +546,7 @@ public class SettingsController {
         VBox card = new VBox(6);
         // We use inline styles here to bypass the hover effects of the .settings-card
         // CSS class
-        card.setStyle(
-                "-fx-background-color: white; -fx-background-radius: 12px; -fx-padding: 14px 16px; -fx-effect: dropshadow(gaussian, rgba(61, 90, 91, 0.08), 6, 0, 0, 2);");
+        card.getStyleClass().add("settings-tag-picker");
 
         Label title = new Label(titleText);
         title.getStyleClass().add("settings-section-title");
