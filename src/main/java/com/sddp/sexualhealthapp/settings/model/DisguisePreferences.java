@@ -1,7 +1,8 @@
 package com.sddp.sexualhealthapp.settings.model;
 
-public record DisguisePreferences(boolean calcDisguiseEnabled) {
+public record DisguisePreferences(boolean calcDisguiseEnabled, boolean returnToCalculatorOnLock) {
     public static DisguisePreferences defaultSettings() {
-        return new DisguisePreferences(true); // default is calc on
+        // Defaults: Calculator disguise is ON, and Lock button returns to calculator (true)
+        return new DisguisePreferences(true, true);
     }
 }

@@ -941,9 +941,20 @@ public class MainAppController {
     private void handleBackToCalculator(ActionEvent event) {
         if (SceneManager.getInstance().isTransitioning())
             return;
-        SceneManager.getInstance().transitionToCalculator(AppConstants.LOCK_CROSSFADE_MS);
-    }
 
+        // Check the user's saved preference
+        boolean returnToCalc = com.sddp.sexualhealthapp.settings.service.DisguisePreferencesService
+                .getInstance().getPreferences().returnToCalculatorOnLock();
+
+        if (returnToCalc) {
+            // Standard behavior: transition to the disguise screen
+            SceneManager.getInstance().transitionToCalculator(AppConstants.LOCK_CROSSFADE_MS);
+        } else {
+            // Gracefully stop JavaFX, then forcefully close to ensure all background threads die instantly
+            Platform.exit();
+            System.exit(0);
+        }
+    }
     private void showEmptyState(String message) {
         Label empty = new Label(message);
         empty.getStyleClass().add("search-empty-label");
