@@ -39,7 +39,9 @@ class DisguisePreferencesServiceTest {
         tempFile = Files.createTempFile("disguise-preferences-", ".json");
 
         DisguisePreferencesService service = new DisguisePreferencesService(tempFile);
-        service.save(new DisguisePreferences(false)); // User disables disguise
+
+        // FIX: Add the second boolean argument here! (false for disguise, true for returnToCalc)
+        service.save(new DisguisePreferences(false, true));
 
         DisguisePreferencesService reloaded = new DisguisePreferencesService(tempFile);
 
