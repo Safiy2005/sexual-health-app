@@ -770,16 +770,15 @@ public class SettingsController {
         page.getStyleClass().add("settings-page-content");
         page.setPadding(new Insets(0, 0, 80, 0));
 
-        Label intro = new Label(
-                "Control your privacy by choosing whether the app hides behind a calculator on startup.");
+        Label intro = new Label("Control your privacy by choosing whether the app hides behind a calculator on startup.");
         intro.getStyleClass().add("settings-page-intro");
         intro.setWrapText(true);
 
+        // --- CARD 1: STARTUP BEHAVIOR ---
         Label modeTitle = new Label("Startup Behavior");
         modeTitle.getStyleClass().add("settings-section-title");
 
         ToggleGroup modeGroup = new ToggleGroup();
-
         RadioButton enabledBtn = new RadioButton("Enabled (Maximum Privacy)");
         RadioButton disabledBtn = new RadioButton("Disabled (Direct Access)");
 
@@ -788,32 +787,61 @@ public class SettingsController {
         radioBox.setPadding(new Insets(18));
 
         radioBox.getChildren().addAll(
-                createDisguiseRadioOption(enabledBtn,
-                        "Requires your secret equation on startup. Mimics a standard calculator.", modeGroup, true),
-                createDisguiseRadioOption(disabledBtn, "Skips the calculator and opens directly to your articles.",
-                        modeGroup, false));
+                createDisguiseRadioOption(enabledBtn, "Requires your secret equation on startup. Mimics a standard calculator.", modeGroup, true),
+                createDisguiseRadioOption(disabledBtn, "Skips the calculator and opens directly to your articles.", modeGroup, false)
+        );
 
-        // Load Saved State
+        // --- CARD 2: LOCK BUTTON BEHAVIOR ---
+        Label lockModeTitle = new Label("Lock Button Behavior");
+        lockModeTitle.getStyleClass().add("settings-section-title");
+
+        ToggleGroup lockModeGroup = new ToggleGroup();
+        RadioButton calcBtn = new RadioButton("Return to Calculator");
+        RadioButton closeBtn = new RadioButton("Close Application");
+
+        VBox lockRadioBox = new VBox(20);
+        lockRadioBox.getStyleClass().add("settings-tag-picker");
+        lockRadioBox.setPadding(new Insets(18));
+
+        lockRadioBox.getChildren().addAll(
+                // true = return to calculator
+                createDisguiseRadioOption(calcBtn, "The lock button returns you to the calculator disguise screen.", lockModeGroup, true),
+                // false = close the application
+                createDisguiseRadioOption(closeBtn, "The lock button immediately exits and closes the app.", lockModeGroup, false)
+        );
+
+        // --- LOAD SAVED STATE ---
         DisguisePreferencesService service = DisguisePreferencesService.getInstance();
-        if (service.getPreferences().calcDisguiseEnabled()) {
-            enabledBtn.setSelected(true);
-        } else {
-            disabledBtn.setSelected(true);
-        }
+        DisguisePreferences currentPrefs = service.getPreferences();
 
-        // Event Listener
+        if (currentPrefs.calcDisguiseEnabled()) enabledBtn.setSelected(true);
+        else disabledBtn.setSelected(true);
+
+        if (currentPrefs.returnToCalculatorOnLock()) calcBtn.setSelected(true);
+        else closeBtn.setSelected(true);
+
+        // --- EVENT LISTENERS ---
         modeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
             if (newVal != null) {
                 boolean isEnabled = (boolean) newVal.getUserData();
-                service.save(new DisguisePreferences(isEnabled));
+                DisguisePreferences latest = service.getPreferences();
+                service.save(new DisguisePreferences(isEnabled, latest.returnToCalculatorOnLock()));
             }
         });
 
-        // Use the new helper method to build the exact box from your image
-        VBox tipBox = createInfoBox("Tip",
-                "If you ever forget your passcode, type 999/0 into the calculator screen to safely reset it.");
+        lockModeGroup.selectedToggleProperty().addListener((obs, oldVal, newVal) -> {
+            if (newVal != null) {
+                boolean returnToCalc = (boolean) newVal.getUserData();
+                DisguisePreferences latest = service.getPreferences();
+                service.save(new DisguisePreferences(latest.calcDisguiseEnabled(), returnToCalc));
+            }
+        });
 
-        page.getChildren().addAll(intro, modeTitle, radioBox, tipBox);
+        // The Reset Tip Box
+        VBox tipBox = createInfoBox("Tip", "If you ever forget your passcode, type 999/0 into the calculator screen to safely reset it.");
+
+        // Add everything to the page
+        page.getChildren().addAll(intro, modeTitle, radioBox, lockModeTitle, lockRadioBox, tipBox);
         return page;
     }
     // --- HELPER METHODS FOR DISGUISE PAGE ---
