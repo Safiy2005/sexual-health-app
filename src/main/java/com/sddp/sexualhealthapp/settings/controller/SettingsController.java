@@ -807,7 +807,7 @@ public class SettingsController {
                 // true = return to calculator
                 createDisguiseRadioOption(calcBtn, "The lock button returns you to the calculator disguise screen.", lockModeGroup, true),
                 // false = close the application
-                createDisguiseRadioOption(closeBtn, "The lock button immediately exits and closes the app.", lockModeGroup, true)
+                createDisguiseRadioOption(closeBtn, "The lock button immediately exits and closes the app.", lockModeGroup, false)
         );
 
         // --- LOAD SAVED STATE ---
