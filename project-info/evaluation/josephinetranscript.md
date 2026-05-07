@@ -41,7 +41,7 @@
 
 **Participant:** Do something simple.
 
-**Participant:** Fuck. I'm gonna write that down. Ah... maybe don't do that. I'm gonna backspace. 98 plus 2. `[rapid clicking]` *Confirm*.
+**Participant:** Right. I'm gonna write that down. Ah... maybe don't do that. I'm gonna backspace. 98 plus 2. `[rapid clicking]` *Confirm*.
 
 **Interviewer:** Okay. So from here, please go into the settings and configure it as your persona would configure it.
 
@@ -59,7 +59,7 @@
 
 **Participant:** I guess that's the part, isn't it? You can't have it named Help. *Discreet*... that's the other options. Okay. Does that just save? 
 
-**Interviewer:** Hell yeah.
+**Interviewer:** Absolutely.
 
 **Participant:** Second change... *super secure*. Remember the pin you use. I will forget 1234. 1-2-3-4. `[typing]` How will we keep your data storage... I've already read that. *App disguise*... oh my goodness this... oh that's... Okay another pin. Oh! `[laughs]`
 
@@ -105,7 +105,7 @@
 
 **Interviewer:** And if there's anything else you want to experiment with you're free to do so but that is the end of... Getting to reset task actually. Yeah and then once you've done playing with it try and fully reset the app. 
 
-**Participant:** Shit, there it is. *Reminders*... *privacy policy*? I don't know, is it gonna be like wipe all my data? *Delete all data*. Yeah. Type *I want to fully reset the app* to confirm. `[typing]` I'm so funny. Awesome. Okay.
+**Participant:** Ah, there it is. *Reminders*... *privacy policy*? I don't know, is it gonna be like wipe all my data? *Delete all data*. Yeah. Type *I want to fully reset the app* to confirm. `[typing]` I'm so funny. Awesome. Okay.
 
 **Interviewer:** Any general feedback that didn't come up while you were playing with it?
 

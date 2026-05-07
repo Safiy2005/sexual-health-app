@@ -17,7 +17,7 @@
 
 **Interviewer:** Oh, Mary Hargate. Persona 4.
 
-**Participant:** Wait, have you got the camera on? Are you doing some eye tracking bullshit?
+**Participant:** Wait, have you got the camera on? Are you doing some eye tracking nonsense?
 
 **Interviewer:** There is no eye tracking going on.
 
@@ -121,7 +121,7 @@
 
 *[pause — 78s]*
 
-**Participant:** Okay, that did exclude the dates. Yeah, that worked. Okay, that's good. Uh where you can put it in the past? But I suppose for your records and stuff that could be useful. Cool. Into event feed. Might guy, who the fuck is might guy? That's quite cool having the like different views. Yeah.
+**Participant:** Okay, that did exclude the dates. Yeah, that worked. Okay, that's good. Uh where you can put it in the past? But I suppose for your records and stuff that could be useful. Cool. Into event feed. Might guy, who is that? That's quite cool having the like different views. Yeah.
 
 **Interviewer:** And if you click on it it should bring you to a details page that just shows you more details about the event.
 
@@ -169,6 +169,6 @@
 
 **Participant:** Uh I think having my main confusing was just because it's not on a phone like I feel like I know it's not like a visible thing but just a quarter hard with a mouse it didn't feel intuitive. On top I think having the, the chin bar and start to make it a lot easier to use. Um.. I mean yeah like I'm saying you should, you just the thing. No. Cool. Um... Yeah okay so. Only thing is that I think customizing multiple like box screen because if you think a lot of people have the up there is one setting which sets you skip the counter. Yeah I didn't see that so but having like a option for disguise could be nice. You could make a test switch or you could do some sort of any sort of design that you pick. Like a couple of them just keep things you know sweet. But apart from that's pretty good. It's import together. Going through it was smooth. There wasn't any points where I thought what do I do? Um.. by the working I out myself and it's it hard to pull information on smart screen like to get a lot of it and have it usable in Excel is good. I think yeah it was good. It was like a good level of resistance it wasn't like you know you could edit everything because obviously to color the phone but it wasn't super simple and base down so I think it was good. Cool.
 
-**Interviewer:** Probably reset it while we didn't add the voice memory 1.26 GB maybe I can oh yeah. Fucking up. You wait for everyone?
+**Interviewer:** Probably reset it while we didn't add the voice memory 1.26 GB maybe I can oh yeah. Messing up. You wait for everyone?
 
 **Participant:** Uh a second.

@@ -32,13 +32,13 @@
 
 **Participant:** Oh I didn't try that.
 
-**Interviewer:** The whole app gets translated into like French and shit.
+**Interviewer:** The whole app gets translated into like French and stuff.
 
 **Participant:** Yeah. Let me show you now. I should have done it to Arabic. I'm gonna disable. I don't need no secrecy. Okay. Cool.
 
 **Interviewer:** Uh, now please go to the articles page, search for an article that you're interested in, and read it, read the summary, go through the pages. And also play around with the navigation menu.
 
-**Participant:** NHS pay gap. That's not here. Damn. `[laughs]` Let's let's look at syphilis. I wanna get the angle. Undetermined. Let's go. Has anyone got right yet? Nothing on syphilis came out. Syphilis articles. Syphilis is quite a rare disease these days to be fair. Do I have an STI? Understand the disclaimer. Yeah. Yeah. Oh yeah fuck down mate. I might kill myself. Go eight no go 79. No I wanna go 82. Interesting. Oh there's a suggested I bet you're kicking yourself go 79. Or they're being pushed. Do you reckon it's the really large…
+**Participant:** NHS pay gap. That's not here. Hmm. `[laughs]` Let's let's look at syphilis. I wanna get the angle. Undetermined. Let's go. Has anyone got right yet? Nothing on syphilis came out. Syphilis articles. Syphilis is quite a rare disease these days to be fair. Do I have an STI? Understand the disclaimer. Yeah. Yeah. Oh yeah, that's messed up mate. I might kill myself. Go eight no go 79. No I wanna go 82. Interesting. Oh there's a suggested I bet you're kicking yourself go 79. Or they're being pushed. Do you reckon it's the really large…
 
 **Interviewer:** Yeah, might be.
 

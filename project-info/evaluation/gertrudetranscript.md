@@ -69,7 +69,7 @@
 
 **Interviewer:** Yeah, cool.
 
-**Participant:** Uh... alright, so everything's on. Okay. Um... I might just be... oh shit. Can I see here? *Dun, dun, dun, dun.* Now I am slightly dumb.
+**Participant:** Uh... alright, so everything's on. Okay. Um... I might just be... oh no. Can I see here? *Dun, dun, dun, dun.* Now I am slightly dumb.
 
 **Interviewer:** Yes.
 
@@ -93,11 +93,10 @@
 
 **Interviewer:** Yeah, go ahead.
 
-**Participant:** Uh, all occurrences, don't want any of them. Alright, nice. Anyway. Uh... check up. Not at the tab. Put it on my birthday. Oh wait, what happened? Oh, fuck. Um, if you guys didn't point it out I would have just like brushed it off 'cause I didn't mean... I wasn't processing that. Yeah. Um... oh, also as you can't read that.
+**Participant:** Uh... all occurrences, don't want any of them. Alright, nice. Anyway. Uh... check up. Not at the tab. Put it on my birthday. Oh wait, what happened? Oh no. Um, if you guys didn't point it out I would have just like brushed it off 'cause I didn't mean... I wasn't processing that. Yeah. Um... oh, also as you can't read that.
 
 **Interviewer:** Yeah.
-
-**Participant:** That's dark mode fucking up. Yeah.
+**Participant:** That's dark mode acting up. Yeah.
 
 **Interviewer:** Yeah, that's our fault.
 
@@ -105,13 +104,13 @@
 
 **Interviewer:** Yes. Yeah.
 
-**Participant:** Okay. That would be... that would be some that note down I think. Uh, repeat. If I die I can't even know what that says. Oh wait, I mean if I... okay, I guess some guess is daily. Maybe make the dark mode work? Yeah, maybe. Yeah, good. Um... same day each month. Exclude dates, um, not on the 21st 'cause I'm a bit busy on those ones. Um... what is this? Okay, what is... oh, if I press x... *Aha!* Yes. I see. And then I can unexclude it as well. Good, good, good. Ends never, um... small testing... oh, shit. Uh, if I, if I go to change the light mode, does this... is this save in progress or is it getting deleted?
+**Participant:** Okay. That would be... that would be some that note down I think. Uh, repeat. If I die I can't even know what that says. Oh wait, I mean if I... okay, I guess some guess is daily. Maybe make the dark mode work? Yeah, maybe. Yeah, good. Um... same day each month. Exclude dates, um, not on the 21st 'cause I'm a bit busy on those ones. Um... what is this? Okay, what is... oh, if I press x... *Aha!* Yes. I see. And then I can unexclude it as well. Good, good, good. Ends never, um... small testing... oh no. Uh, if I, if I go to change the light mode, does this... is this save in progress or is it getting deleted?
 
 **Interviewer:** Good question. Try it.
 
-**Participant:** Oh shit.
+**Participant:** Oh no.
 
-**Interviewer:** Damn, mug. Alright, that should save event.
+**Interviewer:** Wow, mug. Alright, that should save event.
 
 **Participant:** Alright. What did I... what did I call it? I called it checkup and I booked it on the 10th. Yep. Just is a mug, perfect. Oh, that's in the... yep, monthly. Oh god. *[laughs]* Is that funny? No.
 
@@ -121,7 +120,7 @@
 
 **Interviewer:** Uh, next thing. Uh, imagine someone has just walked in and you want to hide your screen real quick.
 
-**Participant:** Oh shit that... wait, did I mess up screen... did I mess up the screen recording?
+**Participant:** Oh no that... wait, did I mess up screen... did I mess up the screen recording?
 
 **Interviewer:** No, it's fine. Probably not.
 
@@ -133,7 +132,7 @@
 
 **Interviewer:** Um, dots... Uh for the audio he just closed the laptop lid.
 
-**Participant:** Yeah. I guess it would be analogous to turning off the phone. Yeah. Um... so okay, so someone's coming… boom! Oh shit, I missed the button. Boom. Alright. Yes. Now I'm doing my homework. Um... What if I'm a humanity student and my mom's like, mate, what are you doing on a calculator?
+**Participant:** Yeah. I guess it would be analogous to turning off the phone. Yeah. Um... so okay, so someone's coming… boom! Oh no, I missed the button. Boom. Alright. Yes. Now I'm doing my homework. Um... What if I'm a humanity student and my mom's like, mate, what are you doing on a calculator?
 
 **Interviewer:** Yeah, that's fair.
 
@@ -149,7 +148,7 @@
 
 **Interviewer:** Uh, now, uh, please close the app and then I will re-open it. And then make sure that everything is like, saved in the way that you set it up before. Nothing's like, reset when you re-opened it.
 
-**Participant:** No, I was just... let me just see. If I just do nine times nine, I'm hoping that my mom would do this and it would just say eighty-one. Good. I like this. Actually. Let's, okay. I... I forgot my code. Shit. Sorted. We could fully make it super base... oh wait, hang on. I might just block... completely logged out now. Mobile... I guess block see. Uh, I'll choose the same equation. No, I'll choose... couldn't make it so it brings you back to... I'll switch it around. Um, again, a UI nitpick. The button there is kind of cut off there. Oh yeah. That might be a... although I don't... it's not on my machine. I was going to say, I... I don't think that issue happened when I first did it. I will say that. I'm pretty sure it went fine the first time around. Anyway. Confirm. Um... what try again? Alright, I'll do 420. Do I have to do a natural calculation? Maybe do 420. Nope, okay cool. Uh what's a funny number? Must be 15. 12050... um, okay. Cool. That's the worst screenshot. Let to get this... *do, do, do, do, do, do, do, do, do.* I mean look, now the text space is completely fine. I think it's 'cause the top... text content... personalizing articles. Yes. I just pressed log button again. Oh, this base up.
+**Participant:** No, I was just... let me just see. If I just do nine times nine, I'm hoping that my mom would do this and it would just say eighty-one. Good. I like this. Actually. Let's, okay. I... I forgot my code. Right. Sorted. We could fully make it super base... oh wait, hang on. I might just block... completely logged out now. Mobile... I guess block see. Uh, I'll choose the same equation. No, I'll choose... couldn't make it so it brings you back to... I'll switch it around. Um, again, a UI nitpick. The button there is kind of cut off there. Oh yeah. That might be a... although I don't... it's not on my machine. I was going to say, I... I don't think that issue happened when I first did it. I will say that. I'm pretty sure it went fine the first time around. Anyway. Confirm. Um... what try again? Alright, I'll do 420. Do I have to do a natural calculation? Maybe do 420. Nope, okay cool. Uh what's a funny number? Must be 15. 12050... um, okay. Cool. That's the worst screenshot. Let to get this... *do, do, do, do, do, do, do, do, do.* I mean look, now the text space is completely fine. I think it's 'cause the top... text content... personalizing articles. Yes. I just pressed log button again. Oh, this base up.
 
 **Interviewer:** Um, is there any other feedback, uh, that you have in general?
 
@@ -165,7 +164,7 @@
 
 **Interviewer:** Oh yeah, you're right.
 
-**Participant:** Uh let part. that out out is. I said you thought. Uh Okay go let it. No... Oh shit. Privacy policy. No, that's... that's oh re-do. Delete all data. Yeah, um, I think just to instead of having a set section here.
+**Participant:** Uh let part. that out out is. I said you thought. Uh Okay go let it. No... Oh no. Privacy policy. No, that's... that's oh re-do. Delete all data. Yeah, um, I think just to instead of having a set section here.
 
 **Interviewer:** Yeah.
 
