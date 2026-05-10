@@ -1,0 +1,80 @@
+WORKING CODE
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Working Code] (0 - 50%) Code does not run or is largely incorrect/unstable. No real value or usability.
+
+I have awarded a mark of 0%
+
+WORKING CODE COMMENTS
+
+This component is currently recorded as zero for all groups. Marks and feedback will be updated after the review session with your supervisor. 
+
+USER GUIDE
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[User Guide] (70 - 80%) A good user guide is presented, clear and user-centred, including all pertinent information without unnecessary detail.
+
+I have awarded a mark of 70%
+
+USER GUIDE COMMENTS
+
+The guide is fairly task-oriented in parts (e.g. creating events, navigating the calendar), which is a strength.
+However, the guide is entirely text-based and lacks any screenshots, which makes it harder for first-time users to relate instructions to the interface.
+Some sections are also quite dense and descriptive, and could be made more concise to improve readability.
+In addition, the FAQ includes technical setup details (e.g. Java/Maven requirements), which are not necessary for end users.
+Overall, a strong and detailed user guide, but it would benefit from the inclusion of screenshots, slightly more concise wording, and a clearer focus on end-user tasks rather than technical details.
+
+DESIGN AND PLANNING
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Design and Planning] (80 - 100%) Excellent burndown/progress charts are presented and used effectively. Design decisions are well justified. Comprehensive and correct artifacts are supplied. Task summary is detailed and accurate.
+
+I have awarded a mark of 80%
+
+DESIGN AND PLANNING COMMENTS
+
+The overall increment plan is sensible and shows how the system will deliver useful features over time. The burndown chart is in the correct format and gives a clear impression of progress through the sprint. 
+
+TESTING
+
+I have judged that the most appropriate descriptions from the mark scheme for your work are:
+
+[Testing] (70 - 80%) Good automated unit tests are presented with clear evidence. A range of techniques (component, integration, boundary, regression) are used. Acceptance criteria and scenarios are tested.
+
+I have awarded a mark of 79%
+
+TESTING COMMENTS
+
+The testing section is very strong and well-developed overall. It clearly explains multiple testing strategies (unit, component, integration, boundary, partition, regression), and most follow a consistent what / why / examples structure (pages 7–12) , which is very well presented.
+
+In terms of strengths:
+The testing strategy is very clearly explained, with strong justification for each method. For example, integration testing is well motivated in terms of cross-service workflows (e.g. search + preferences + ranking), showing good depth.
+
+The unit and integration testing coverage is strong, with a detailed test directory (pages 8–9) and concrete examples such as ContentPreferencesServiceTest and NotificationServiceTest, indicating systematic testing.
+
+The scenario testing is particularly strong (from page 12 onwards) . It includes detailed user scenarios, broken down into specific test points (A1, A2, etc.), and each is explicitly linked to acceptance criteria (e.g. D7-11-03, D7-2-03), which is excellent.
+
+Additionally, scenario testing is supported by references to unit and regression tests, making it more robust than simple step descriptions.
+
+However, there are some issues:
+First, there is little to no presentation of actual testing results. The section focuses on what is tested and how, but does not clearly show outcomes (e.g. pass/fail or observed results).
+
+Second, scenario testing is partly written as test planning. Phrases like “what we will test” (page 13) make it feel more like design rather than executed testing.
+
+Overall, this is a very strong testing section in terms of structure, strategy, and alignment with acceptance criteria, but it would benefit from clearer presentation of actual results and supporting evidence.
+
+TEAMWORK
+
+It looks like you are working well as a team. 
+
+TECHNIQUES AND PROJECT MANAGEMENT
+
+It sounds like you are using group meetings to build a shared understanding and completing work together, keep doing so; productive working meetings are an important part of successful group working. 
+
+ISSUES TO ADDRESS FOR THE NEXT DELIVERABLE
+
+N/A 
+
